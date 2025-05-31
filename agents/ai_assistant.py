@@ -152,6 +152,10 @@ Remember: You're helping advance multiple myeloma research and improve patient o
     async def _search_relevant_studies(self, query: str, filters: Optional[Dict] = None) -> List[Dict[str, Any]]:
         """Search for relevant studies using vector similarity"""
         try:
+            if not self.vector_store:
+                self.logger.warning("Vector store not available for search")
+                return []
+            
             # Enhance query for better medical context
             enhanced_query = f"Multiple myeloma clinical study: {query}"
             
@@ -162,6 +166,7 @@ Remember: You're helping advance multiple myeloma research and improve patient o
                 top_k=5
             )
             
+            self.logger.info(f"Vector search returned {len(search_results)} results for query: {query}")
             return search_results
             
         except Exception as e:

@@ -2893,6 +2893,78 @@ class ASCOmindApp:
                     "processing_query": st.session_state.get('processing_query', 'None'),
                     "vector_store_session": self.vector_store.get_session_id() if self.vector_store else None
                 })
+        
+        # Debug mode - Add session and vector store information
+        if st.checkbox("🔧 Debug Mode", value=False):
+            with st.expander("🔍 Session & Vector Store Debug Information", expanded=True):
+                col1, col2 = st.columns(2)
+                
+                with col1:
+                    st.markdown("**📊 Session Information:**")
+                    session_info = {
+                        "session_id": st.session_state.session_id,
+                        "extracted_data_count": len(st.session_state.extracted_data) if st.session_state.extracted_data else 0,
+                        "ai_conversation_count": len(st.session_state.ai_conversation_history),
+                        "vector_embedding_status": getattr(st.session_state, 'vector_embedding_status', [])
+                    }
+                    st.json(session_info)
+                    
+                    # Show extracted data titles
+                    if st.session_state.extracted_data:
+                        st.markdown("**📚 Extracted Studies:**")
+                        for i, data in enumerate(st.session_state.extracted_data, 1):
+                            st.write(f"{i}. {data.study_identification.title}")
+                
+                with col2:
+                    st.markdown("**🧠 Vector Store Information:**")
+                    try:
+                        if self.vector_store:
+                            vector_stats = self.vector_store.get_statistics()
+                            st.json(vector_stats)
+                            
+                            # Test vector store search
+                            if st.button("🔍 Test Vector Search"):
+                                try:
+                                    test_results = asyncio.run(
+                                        self.vector_store.search_abstracts("test query", top_k=3)
+                                    )
+                                    st.write(f"**Search Results:** {len(test_results)} studies found")
+                                    for result in test_results:
+                                        st.write(f"- {result['study_info']['title']} (Score: {result['score']:.3f})")
+                                except Exception as e:
+                                    st.error(f"Vector search failed: {e}")
+                        else:
+                            st.warning("Vector store not initialized")
+                    except Exception as e:
+                        st.error(f"Error getting vector stats: {e}")
+                
+                # Manual embedding test
+                st.markdown("---")
+                st.markdown("**🔧 Manual Embedding Test:**")
+                if st.button("🚀 Re-embed All Abstracts"):
+                    if st.session_state.extracted_data and self.vector_store:
+                        embedding_results = []
+                        for data in st.session_state.extracted_data:
+                            try:
+                                result = asyncio.run(
+                                    self.vector_store.embed_abstract(data, force_update=True)
+                                )
+                                embedding_results.append({
+                                    "study": data.study_identification.title,
+                                    "status": result["status"],
+                                    "vectors": result.get("vectors_created", 0)
+                                })
+                            except Exception as e:
+                                embedding_results.append({
+                                    "study": data.study_identification.title,
+                                    "status": "error",
+                                    "error": str(e)
+                                })
+                        
+                        st.json(embedding_results)
+                        st.success("Re-embedding completed! Try asking questions now.")
+                    else:
+                        st.warning("No data to embed or vector store not available")
     
     def render_settings(self):
         """Render settings page"""
@@ -3449,10 +3521,56 @@ class ASCOmindApp:
             try:
                 from agents.vector_store import IntelligentVectorStore
                 session_id = getattr(st.session_state, 'session_id', None)
+                
+                # Refresh settings from secrets in case they weren't loaded initially
+                settings.refresh_from_secrets()
+                
+                # Check if we have required API keys
+                if not settings.PINECONE_API_KEY:
+                    st.error("🔑 **Pinecone API key not configured!**")
+                    st.info("""
+                    **To enable vector search:**
+                    1. Add your Pinecone API key to Streamlit secrets
+                    2. Format: `api_keys.pinecone = "your-pinecone-key"`
+                    3. Or set environment variable: `PINECONE_API_KEY`
+                    
+                    **Without vector search:** You can still use basic text analysis features.
+                    """)
+                    return None
+                
+                if not settings.OPENAI_API_KEY:
+                    st.error("🔑 **OpenAI API key not configured!**")
+                    st.info("""
+                    **To enable vector embeddings:**
+                    1. Add your OpenAI API key to Streamlit secrets
+                    2. Format: `api_keys.openai = "your-openai-key"`
+                    3. Or set environment variable: `OPENAI_API_KEY`
+                    """)
+                    return None
+                
                 self.vector_store = IntelligentVectorStore(session_id=session_id)
-                st.success(f"🧠 Vector store initialized for session: {session_id[:12]}...")
+                
+                # Test the connection and get stats
+                stats = self.vector_store.get_statistics()
+                unique_studies = stats.get('unique_studies', 0)
+                
+                if unique_studies > 0:
+                    st.success(f"🧠 Vector store connected! Session: {session_id[:12]}... | Studies: {unique_studies}")
+                else:
+                    st.info(f"🧠 Vector store ready! Session: {session_id[:12]}... | No studies embedded yet")
+                
             except Exception as e:
-                st.error(f"Vector store initialization failed: {e}")
+                st.error(f"🚨 Vector store initialization failed: {e}")
+                st.warning("AI Assistant will work with limited capabilities (no semantic search).")
+                
+                # Provide specific help based on error type
+                error_str = str(e).lower()
+                if "api" in error_str or "key" in error_str:
+                    st.info("💡 This looks like an API key issue. Check your Pinecone and OpenAI keys in Streamlit secrets.")
+                elif "pinecone" in error_str:
+                    st.info("💡 This looks like a Pinecone service issue. Check your Pinecone index configuration.")
+                
+                return None
         return self.vector_store
     
     def _get_ai_assistant(self):
