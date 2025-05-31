@@ -6,6 +6,7 @@ import logging
 from typing import Dict, List, Any, Optional, Tuple
 from datetime import datetime
 import asyncio
+import uuid
 
 import openai
 import pinecone
@@ -20,6 +21,7 @@ class VectorMetadata(BaseModel):
     """Structured metadata for vector storage"""
     abstract_id: str
     content_hash: str
+    session_id: str  # Add session isolation
     study_title: str
     study_acronym: Optional[str]
     nct_number: Optional[str]
@@ -35,11 +37,15 @@ class VectorMetadata(BaseModel):
     text_chunk_type: str  # 'full_abstract', 'study_design', 'efficacy', 'safety', etc.
 
 class IntelligentVectorStore:
-    """Advanced vector storage with Pinecone for medical abstracts"""
+    """Advanced vector storage with Pinecone for medical abstracts - Session Isolated"""
     
-    def __init__(self):
+    def __init__(self, session_id: Optional[str] = None):
         self.logger = logging.getLogger(__name__)
         self.openai_client = openai.OpenAI(api_key=settings.OPENAI_API_KEY)
+        
+        # Session management for data isolation
+        self.session_id = session_id or self._generate_session_id()
+        self.logger.info(f"Initializing vector store for session: {self.session_id}")
         
         # Initialize Pinecone
         self.pc = Pinecone(api_key=settings.PINECONE_API_KEY)
@@ -51,9 +57,16 @@ class IntelligentVectorStore:
         self._initialize_index()
         self.index = self.pc.Index(self.index_name)
         
-        # Cache for deduplication
-        self._content_hashes = set()
-        self._load_existing_hashes()
+        # Session-specific cache for deduplication
+        self._session_content_hashes = set()
+        self._load_session_hashes()
+    
+    def _generate_session_id(self) -> str:
+        """Generate unique session ID"""
+        # Use timestamp + random UUID for uniqueness
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        random_id = str(uuid.uuid4())[:8]
+        return f"session_{timestamp}_{random_id}"
     
     def _initialize_index(self):
         """Initialize Pinecone index if it doesn't exist"""
@@ -79,30 +92,31 @@ class IntelligentVectorStore:
             self.logger.error(f"Error initializing Pinecone index: {e}")
             raise
     
-    def _load_existing_hashes(self):
-        """Load existing content hashes for deduplication"""
+    def _load_session_hashes(self):
+        """Load existing content hashes for current session only"""
         try:
-            # Query all vectors to get their content hashes
+            # Query only vectors for this session
             query_response = self.index.query(
                 vector=[0.0] * self.embedding_dimension,
-                top_k=10000,  # Large number to get all vectors
-                include_metadata=True
+                top_k=10000,  # Large number to get all session vectors
+                include_metadata=True,
+                filter={"session_id": self.session_id}
             )
             
             for match in query_response['matches']:
                 if 'content_hash' in match['metadata']:
-                    self._content_hashes.add(match['metadata']['content_hash'])
+                    self._session_content_hashes.add(match['metadata']['content_hash'])
             
-            self.logger.info(f"Loaded {len(self._content_hashes)} existing content hashes")
+            self.logger.info(f"Loaded {len(self._session_content_hashes)} existing content hashes for session {self.session_id}")
             
         except Exception as e:
-            self.logger.warning(f"Could not load existing hashes: {e}")
-            self._content_hashes = set()
+            self.logger.warning(f"Could not load session hashes: {e}")
+            self._session_content_hashes = set()
     
     def _generate_content_hash(self, abstract_text: str, study_id: str) -> str:
-        """Generate unique hash for abstract content"""
-        # Use both abstract text and study identifier for uniqueness
-        content = f"{study_id}:{abstract_text}"
+        """Generate unique hash for abstract content (session-scoped)"""
+        # Include session ID in hash for session isolation
+        content = f"{self.session_id}:{study_id}:{abstract_text}"
         return hashlib.sha256(content.encode()).hexdigest()[:16]
     
     def _sanitize_metadata_for_pinecone(self, metadata_dict: Dict[str, Any]) -> Dict[str, Any]:
@@ -170,6 +184,7 @@ class IntelligentVectorStore:
         return VectorMetadata(
             abstract_id=data.abstract_id,
             content_hash=content_hash,
+            session_id=self.session_id,
             study_title=data.study_identification.title,
             study_acronym=data.study_identification.study_acronym,
             nct_number=data.study_identification.nct_number,
@@ -243,7 +258,7 @@ class IntelligentVectorStore:
             base_metadata = self._extract_metadata(data)
             
             # Check for duplicates
-            if not force_update and base_metadata.content_hash in self._content_hashes:
+            if not force_update and base_metadata.content_hash in self._session_content_hashes:
                 self.logger.info(f"Abstract already embedded: {data.study_identification.title}")
                 return {
                     "status": "skipped",
@@ -286,7 +301,7 @@ class IntelligentVectorStore:
                 self.index.upsert(vectors=vectors_to_upsert)
                 
                 # Update cache
-                self._content_hashes.add(base_metadata.content_hash)
+                self._session_content_hashes.add(base_metadata.content_hash)
                 
                 self.logger.info(f"Embedded {len(vectors_to_upsert)} chunks for: {data.study_identification.title}")
                 
@@ -313,13 +328,14 @@ class IntelligentVectorStore:
             }
     
     async def search_abstracts(self, query: str, filters: Optional[Dict] = None, top_k: int = 5) -> List[Dict[str, Any]]:
-        """Advanced semantic search with filtering"""
+        """Advanced semantic search with filtering - Session isolated"""
         try:
             # Get query embedding
             query_embedding = await self._get_embedding(query)
             
-            # Build metadata filter
-            metadata_filter = {}
+            # Build metadata filter with session isolation
+            metadata_filter = {"session_id": self.session_id}  # Always filter by session
+            
             if filters:
                 if 'study_type' in filters:
                     metadata_filter['study_type'] = filters['study_type']
@@ -331,12 +347,12 @@ class IntelligentVectorStore:
                     # Search in treatment regimens
                     metadata_filter['treatment_regimens'] = {"$in": filters['treatment_type']}
             
-            # Search vectors
+            # Search vectors with session filter
             search_results = self.index.query(
                 vector=query_embedding,
                 top_k=top_k * 2,  # Get extra results to deduplicate
                 include_metadata=True,
-                filter=metadata_filter if metadata_filter else None
+                filter=metadata_filter
             )
             
             # Process and deduplicate results
@@ -347,33 +363,34 @@ class IntelligentVectorStore:
                 metadata = match['metadata']
                 content_hash = metadata.get('content_hash')
                 
-                # Deduplicate by study
+                # Skip if we've already seen this study
                 if content_hash in seen_studies:
                     continue
+                
                 seen_studies.add(content_hash)
                 
                 # Format result
                 result = {
-                    'score': float(match['score']),
-                    'study_title': metadata.get('study_title', 'Unknown'),
-                    'study_acronym': metadata.get('study_acronym'),
-                    'nct_number': metadata.get('nct_number'),
-                    'study_type': metadata.get('study_type'),
-                    'mm_subtype': metadata.get('mm_subtype', []),
-                    'treatment_regimens': metadata.get('treatment_regimens', []),
-                    'orr_value': metadata.get('orr_value'),
-                    'pfs_median': metadata.get('pfs_median'),
-                    'enrollment': metadata.get('enrollment'),
-                    'confidence_score': metadata.get('confidence_score'),
+                    'score': match['score'],
+                    'study_info': {
+                        'title': metadata.get('study_title'),
+                        'acronym': metadata.get('study_acronym'),
+                        'nct_number': metadata.get('nct_number'),
+                        'study_type': metadata.get('study_type'),
+                        'confidence_score': metadata.get('confidence_score')
+                    },
+                    'content_preview': metadata.get('text_content', '')[:200] + "...",
                     'chunk_type': metadata.get('text_chunk_type'),
-                    'text_preview': metadata.get('text_content', '')[:300] + "..."
+                    'metadata': metadata
                 }
                 
                 results.append(result)
                 
+                # Break if we have enough unique results
                 if len(results) >= top_k:
                     break
             
+            self.logger.info(f"Found {len(results)} unique studies for session {self.session_id}")
             return results
             
         except Exception as e:
@@ -381,13 +398,14 @@ class IntelligentVectorStore:
             return []
     
     async def get_study_context(self, study_identifiers: List[str]) -> List[Dict[str, Any]]:
-        """Get full context for specific studies"""
+        """Get full context for specific studies - Session isolated"""
         try:
             results = []
             
             for identifier in study_identifiers:
-                # Search by NCT number, acronym, or title
+                # Search by NCT number, acronym, or title WITH session filter
                 search_filter = {
+                    "session_id": self.session_id,  # Always filter by session
                     "$or": [
                         {"nct_number": identifier},
                         {"study_acronym": identifier},
@@ -432,21 +450,81 @@ class IntelligentVectorStore:
             return []
     
     def get_statistics(self) -> Dict[str, Any]:
-        """Get vector store statistics"""
+        """Get vector store statistics for current session"""
         try:
-            stats = self.index.describe_index_stats()
+            # Get session-specific stats
+            session_query = self.index.query(
+                vector=[0.0] * self.embedding_dimension,
+                top_k=10000,
+                include_metadata=True,
+                filter={"session_id": self.session_id}
+            )
+            
+            session_vectors = len(session_query['matches'])
+            unique_studies = len(self._session_content_hashes)
             
             return {
-                "total_vectors": stats.get('total_vector_count', 0),
-                "unique_studies": len(self._content_hashes),
+                "total_vectors": session_vectors,
+                "unique_studies": unique_studies,
+                "session_id": self.session_id,
                 "dimension": self.embedding_dimension,
-                "index_fullness": stats.get('index_fullness', 0),
-                "namespaces": stats.get('namespaces', {})
+                "session_isolation": True
             }
             
         except Exception as e:
             self.logger.error(f"Error getting statistics: {e}")
-            return {}
+            return {
+                "total_vectors": 0,
+                "unique_studies": 0,
+                "session_id": self.session_id,
+                "error": str(e)
+            }
+    
+    async def clear_session_data(self) -> Dict[str, Any]:
+        """Clear all data for current session"""
+        try:
+            # Get all vectors for this session
+            session_vectors = self.index.query(
+                vector=[0.0] * self.embedding_dimension,
+                top_k=10000,
+                include_metadata=True,
+                filter={"session_id": self.session_id}
+            )
+            
+            # Delete vectors
+            if session_vectors['matches']:
+                vector_ids = [match['id'] for match in session_vectors['matches']]
+                self.index.delete(ids=vector_ids)
+                
+                # Clear session cache
+                self._session_content_hashes.clear()
+                
+                self.logger.info(f"Cleared {len(vector_ids)} vectors for session {self.session_id}")
+                
+                return {
+                    "status": "success",
+                    "vectors_deleted": len(vector_ids),
+                    "session_id": self.session_id
+                }
+            else:
+                return {
+                    "status": "success",
+                    "vectors_deleted": 0,
+                    "session_id": self.session_id,
+                    "message": "No data to clear"
+                }
+                
+        except Exception as e:
+            self.logger.error(f"Error clearing session data: {e}")
+            return {
+                "status": "error",
+                "error": str(e),
+                "session_id": self.session_id
+            }
+    
+    def get_session_id(self) -> str:
+        """Get current session ID"""
+        return self.session_id
     
     async def batch_embed_abstracts(self, abstracts: List[ComprehensiveAbstractMetadata]) -> Dict[str, Any]:
         """Batch embed multiple abstracts efficiently"""

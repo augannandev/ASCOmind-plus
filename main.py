@@ -638,7 +638,7 @@ class ASCOmindApp:
         
         # Initialize database and utilities (lightweight operations)
         try:
-            self.database = get_database()
+            self.database = get_database(session_id=getattr(st.session_state, 'session_id', None))
             self.file_processor = FileProcessor()
             self.abstract_extractor = AbstractExtractor()
         except Exception as e:
@@ -667,7 +667,16 @@ class ASCOmindApp:
         self.ai_assistant = None
     
     def initialize_session_state(self):
-        """Initialize session state variables"""
+        """Initialize session state variables with session isolation"""
+        
+        # Generate or retrieve session ID for data isolation
+        if 'session_id' not in st.session_state:
+            import uuid
+            from datetime import datetime
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            random_id = str(uuid.uuid4())[:8]
+            st.session_state.session_id = f"session_{timestamp}_{random_id}"
+        
         if 'extracted_data' not in st.session_state:
             st.session_state.extracted_data = []
         
@@ -702,6 +711,10 @@ class ASCOmindApp:
         
         if 'ai_context' not in st.session_state:
             st.session_state.ai_context = {}
+        
+        # Session isolation flags
+        if 'session_data_isolated' not in st.session_state:
+            st.session_state.session_data_isolated = True
     
     def run(self):
         """Main application entry point"""
@@ -1936,13 +1949,13 @@ class ASCOmindApp:
                 
                 # Step 3: Embed to vector store (30% of progress)
                 embedding_status = None
-                if self.vector_store:
+                if self._get_vector_store():
                     status_text.text("🔗 Embedding to knowledge base...")
                     progress_bar.progress(60, text="Creating vector embeddings...")
                     
                     try:
                         embedding_result = asyncio.run(
-                            self.vector_store.embed_abstract(extracted_data)
+                            self._get_vector_store().embed_abstract(extracted_data)
                         )
                         progress_bar.progress(80, text="Vector embedding complete")
                         embedding_status = embedding_result
@@ -2134,13 +2147,13 @@ class ASCOmindApp:
                             step_details.error(f"❌ Categorization failed: {str(e)}")
                     
                     # Step 4: Vector Embedding (80%)
-                    if embed_vectors and processing_results['metadata_extraction']['status'] == 'success' and self.vector_store:
+                    if embed_vectors and processing_results['metadata_extraction']['status'] == 'success' and self._get_vector_store():
                         status_text.text("🧠 Creating vector embeddings...")
                         progress_bar.progress(80)
                         
                         try:
                             embedding_result = asyncio.run(
-                                self.vector_store.embed_abstract(processing_results['metadata_extraction']['data'])
+                                self._get_vector_store().embed_abstract(processing_results['metadata_extraction']['data'])
                             )
                             processing_results['vector_embedding'] = {
                                 'status': 'success',
@@ -2477,13 +2490,13 @@ class ASCOmindApp:
                                                 st.error(f"❌ Categorization failed: {str(e)[:50]}...")
                                     
                                     # Step 4: Vector Embedding
-                                    if embed_vectors and file_results['metadata_extraction']['status'] == 'success' and self.vector_store:
+                                    if embed_vectors and file_results['metadata_extraction']['status'] == 'success' and self._get_vector_store():
                                         with file_col3:
                                             st.info("🧠 Creating embeddings...")
                                         
                                         try:
                                             embedding_result = asyncio.run(
-                                                self.vector_store.embed_abstract(file_results['metadata_extraction']['data'])
+                                                self._get_vector_store().embed_abstract(file_results['metadata_extraction']['data'])
                                             )
                                             file_results['vector_embedding'] = {
                                                 'status': 'success',
@@ -2697,45 +2710,38 @@ class ASCOmindApp:
         </div>
         """, unsafe_allow_html=True)
         
-        # Check if AI assistant is available with improved error handling
-        if not self.ai_assistant:
-            # Try to initialize if possible
-            if settings.has_required_keys():
-                try:
-                    with st.spinner("🔄 Initializing AI Assistant..."):
-                        self.vector_store = IntelligentVectorStore()
-                        self.ai_assistant = AdvancedAIAssistant()
-                    st.success("✅ AI Assistant initialized!")
-                except Exception as e:
-                    st.error(f"❌ Failed to initialize AI Assistant: {e}")
-                    return
-            else:
-                st.error("""
-                🚫 **AI Assistant Unavailable**
-                
-                Missing required API keys. Please add to your `secrets.toml`:
-                
-                ```toml
-                ANTHROPIC_API_KEY = "your_key_here"
-                OPENAI_API_KEY = "your_key_here"  
-                PINECONE_API_KEY = "your_key_here"
-                ```
-                """)
-                
-                if st.button("🔄 Retry Initialization", type="primary"):
-                    settings.refresh_from_secrets()
-                    st.rerun()
-                return
+        # Initialize components with lazy loading and session awareness
+        if not hasattr(self, '_ai_assistant_initialized'):
+            self.ai_assistant = self._get_ai_assistant()
+            self.vector_store = self._get_vector_store()
+            self._ai_assistant_initialized = True
         
-        # Simplified sidebar
+        # Session information header
+        st.markdown(f"""
+        <div style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
+                    color: white; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+            <h3 style="margin: 0; color: white;">🤖 AI Research Assistant</h3>
+            <p style="margin: 0.5rem 0 0 0; opacity: 0.9; font-size: 0.9rem;">
+                Session: {st.session_state.session_id[:12]}... | 
+                Data Isolated: ✅ Only your studies are accessible
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Simplified sidebar with session info
         with st.sidebar:
             st.markdown("### 🤖 Assistant Status")
             st.success("✅ Ready")
             
+            # Session info
+            st.markdown("### 📊 Session Info")
+            st.info(f"Session: {st.session_state.session_id[:12]}...")
+            st.metric("Studies in Session", len(st.session_state.extracted_data))
+            
             # Vector store statistics (simplified)
             if st.button("📊 Refresh Stats"):
                 try:
-                    stats = self.vector_store.get_statistics() if self.vector_store else {}
+                    stats = self._get_vector_store().get_statistics()
                     st.session_state.vector_stats = stats
                 except Exception as e:
                     st.error(f"Stats error: {e}")
@@ -2743,17 +2749,30 @@ class ASCOmindApp:
             # Show simple stats
             if hasattr(st.session_state, 'vector_stats'):
                 stats = st.session_state.vector_stats
-                st.metric("Studies", stats.get('unique_studies', 0))
-                st.metric("Vectors", stats.get('total_vectors', 0))
+                st.metric("Session Studies", stats.get('unique_studies', 0))
+                st.metric("Session Vectors", stats.get('total_vectors', 0))
             
-            # Conversation controls
-            if st.button("🗑️ Clear Chat"):
+            # Session management
+            st.markdown("### 🔧 Session Controls")
+            if st.button("🗑️ Clear Session Data"):
+                # Clear vector store data
+                try:
+                    clear_result = asyncio.run(self._get_vector_store().clear_session_data())
+                    if clear_result.get('status') == 'success':
+                        st.success(f"Cleared {clear_result.get('vectors_deleted', 0)} vectors")
+                except Exception as e:
+                    st.error(f"Vector clear error: {e}")
+                
+                # Clear session state
+                st.session_state.extracted_data = []
+                st.session_state.categorization_data = []
+                st.session_state.analysis_results = None
                 st.session_state.ai_conversation_history = []
                 if 'current_ai_query' in st.session_state:
                     del st.session_state.current_ai_query
                 if self.ai_assistant:
                     self.ai_assistant.reset_conversation()
-                st.success("Chat cleared!")
+                st.success("🧹 Session data cleared!")
                 st.rerun()
         
         # Display conversation history (optimized)
@@ -2865,11 +2884,14 @@ class ASCOmindApp:
         if st.checkbox("🔧 Debug Mode", value=False):
             with st.expander("Debug Information", expanded=False):
                 st.json({
+                    "session_id": st.session_state.session_id,
+                    "session_data_isolated": st.session_state.get('session_data_isolated', False),
                     "ai_assistant_available": self.ai_assistant is not None,
                     "vector_store_available": self.vector_store is not None,
                     "conversation_count": len(st.session_state.ai_conversation_history),
                     "session_studies": len(st.session_state.extracted_data) if st.session_state.extracted_data else 0,
-                    "processing_query": st.session_state.get('processing_query', 'None')
+                    "processing_query": st.session_state.get('processing_query', 'None'),
+                    "vector_store_session": self.vector_store.get_session_id() if self.vector_store else None
                 })
     
     def render_settings(self):
@@ -3420,6 +3442,30 @@ class ASCOmindApp:
                 st.warning(f"Visualizer initialization failed: {e}")
                 self.visualizer = AdvancedVisualizer(None)  # Fallback
         return self.visualizer
+
+    def _get_vector_store(self):
+        """Get or initialize session-isolated vector store"""
+        if not self.vector_store:
+            try:
+                from agents.vector_store import IntelligentVectorStore
+                session_id = getattr(st.session_state, 'session_id', None)
+                self.vector_store = IntelligentVectorStore(session_id=session_id)
+                st.success(f"🧠 Vector store initialized for session: {session_id[:12]}...")
+            except Exception as e:
+                st.error(f"Vector store initialization failed: {e}")
+        return self.vector_store
+    
+    def _get_ai_assistant(self):
+        """Get or initialize session-isolated AI assistant"""
+        if not self.ai_assistant:
+            try:
+                from agents.ai_assistant import AdvancedAIAssistant
+                vector_store = self._get_vector_store()
+                self.ai_assistant = AdvancedAIAssistant(vector_store=vector_store)
+                st.success("🤖 AI Assistant ready!")
+            except Exception as e:
+                st.error(f"AI Assistant initialization failed: {e}")
+        return self.ai_assistant
 
 
 def main():

@@ -72,29 +72,34 @@ class ConversationMemory:
 class AdvancedAIAssistant:
     """Intelligent AI assistant for multiple myeloma research"""
     
-    def __init__(self):
+    def __init__(self, vector_store: Optional[IntelligentVectorStore] = None):
         self.logger = logging.getLogger(__name__)
         
         # Initialize LLM clients
         self.anthropic_client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
         self.openai_client = openai.OpenAI(api_key=settings.OPENAI_API_KEY)
         
-        # Initialize vector store
-        self.vector_store = IntelligentVectorStore()
+        # Vector store for knowledge retrieval (session-isolated)
+        if vector_store:
+            self.vector_store = vector_store
+            self.logger.info(f"AI Assistant using provided vector store with session: {vector_store.get_session_id()}")
+        else:
+            # Fallback: create own vector store (should be avoided in production)
+            self.vector_store = IntelligentVectorStore()
+            self.logger.warning("AI Assistant created its own vector store - session isolation may be compromised")
         
         # Conversation memory
         self.conversation_memory = ConversationMemory()
         
         # Assistant capabilities
         self.capabilities = {
-            "study_analysis": "Analyze individual studies or compare multiple studies",
-            "treatment_insights": "Provide insights on treatment regimens and mechanisms",
-            "efficacy_comparison": "Compare efficacy outcomes across studies",
-            "safety_profiling": "Analyze safety profiles and adverse events",
-            "patient_selection": "Help with patient selection criteria",
-            "market_intelligence": "Provide competitive landscape insights",
-            "regulatory_guidance": "Offer regulatory strategy insights",
-            "protocol_assistance": "Help design clinical trial protocols"
+            "research_analysis": True,
+            "treatment_comparison": True,
+            "safety_analysis": True,
+            "clinical_insights": True,
+            "study_search": True,
+            "protocol_recommendations": True,
+            "real_time_qa": True
         }
         
         # Specialized prompts
