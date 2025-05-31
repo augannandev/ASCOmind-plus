@@ -221,30 +221,41 @@ Remember: You're helping advance multiple myeloma research and improve patient o
         context = "**Relevant Clinical Studies:**\n\n"
         
         for i, study in enumerate(search_results, 1):
-            context += f"**Study {i}: {study['study_title']}**\n"
-            if study.get('study_acronym'):
-                context += f"- Acronym: {study['study_acronym']}\n"
-            if study.get('nct_number'):
-                context += f"- NCT: {study['nct_number']}\n"
-            context += f"- Type: {study['study_type']}\n"
+            study_info = study.get('study_info', {})
+            metadata = study.get('metadata', {})
             
-            if study.get('mm_subtype'):
-                context += f"- Population: {', '.join(study['mm_subtype'])}\n"
+            context += f"**Study {i}: {study_info.get('title', 'Unknown Study')}**\n"
+            if study_info.get('acronym'):
+                context += f"- Acronym: {study_info['acronym']}\n"
+            if study_info.get('nct_number'):
+                context += f"- NCT: {study_info['nct_number']}\n"
+            context += f"- Type: {study_info.get('study_type', 'Unknown')}\n"
             
-            if study.get('treatment_regimens'):
-                context += f"- Treatments: {', '.join(study['treatment_regimens'])}\n"
+            if metadata.get('mm_subtype'):
+                mm_subtypes = metadata['mm_subtype']
+                if isinstance(mm_subtypes, list):
+                    context += f"- Population: {', '.join(mm_subtypes)}\n"
+                else:
+                    context += f"- Population: {mm_subtypes}\n"
             
-            if study.get('orr_value'):
-                context += f"- ORR: {study['orr_value']}%\n"
-            if study.get('pfs_median'):
-                context += f"- PFS: {study['pfs_median']} months\n"
-            if study.get('enrollment'):
-                context += f"- Enrollment: {study['enrollment']} patients\n"
+            if metadata.get('treatment_regimens'):
+                treatments = metadata['treatment_regimens']
+                if isinstance(treatments, list):
+                    context += f"- Treatments: {', '.join(treatments)}\n"
+                else:
+                    context += f"- Treatments: {treatments}\n"
+            
+            if metadata.get('orr_value'):
+                context += f"- ORR: {metadata['orr_value']}%\n"
+            if metadata.get('pfs_median'):
+                context += f"- PFS: {metadata['pfs_median']} months\n"
+            if metadata.get('enrollment'):
+                context += f"- Enrollment: {metadata['enrollment']} patients\n"
             
             context += f"- Relevance Score: {study['score']:.3f}\n"
             
-            if study.get('text_preview'):
-                context += f"- Context: {study['text_preview']}\n"
+            if study.get('content_preview'):
+                context += f"- Context: {study['content_preview']}\n"
             
             context += "\n"
         
@@ -346,11 +357,15 @@ Please provide a comprehensive, evidence-based response that addresses the user'
                 return "I apologize, but I'm experiencing technical difficulties. Please try again later."
     
     async def chat(self, user_message: str, user_context: Optional[Dict] = None) -> Dict[str, Any]:
-        """Main chat interface"""
+        """Main chat interface with improved error handling and debugging"""
         try:
             # Update user context
             if user_context:
                 self.conversation_memory.user_context.update(user_context)
+            
+            # Get session statistics for debugging
+            vector_stats = self.vector_store.get_statistics()
+            self.logger.info(f"Vector store stats: {vector_stats}")
             
             # Determine query type
             query_type = self._determine_query_type(user_message)
@@ -360,6 +375,59 @@ Please provide a comprehensive, evidence-based response that addresses the user'
             
             # Search for relevant studies
             search_results = await self._search_relevant_studies(user_message, search_filters)
+            self.logger.info(f"Search returned {len(search_results)} results")
+            
+            # Handle case where no studies are found - provide helpful response
+            if not search_results:
+                # Check if we have any data in the session at all
+                total_studies = vector_stats.get('unique_studies', 0)
+                
+                if total_studies == 0:
+                    helpful_response = """I don't have any clinical studies in your current session to analyze. 
+
+**To get started:**
+1. 📄 Go to the "Abstract Analysis" page
+2. Upload or paste clinical abstracts 
+3. Click "Generate Analysis" to process and embed them
+4. Return here to ask questions about your data
+
+**Example questions I can answer once you have data:**
+- "What are the main treatments mentioned in my studies?"
+- "Compare the efficacy results across studies"
+- "What safety concerns should I be aware of?"
+- "Which study had the best response rate?"
+
+Would you like me to help you get started with uploading some data?"""
+                else:
+                    helpful_response = f"""I found {total_studies} studies in your session, but none matched your specific question: "{user_message}"
+
+**Possible reasons:**
+- Your question might be too specific for the available data
+- Try asking broader questions like "What studies do I have?" or "Summarize my data"
+- The studies might not contain information relevant to your query
+
+**Try asking:**
+- "What abstracts have I uploaded?"
+- "Summarize the treatments in my studies"
+- "What are the study types in my data?"
+- "Show me the efficacy results"
+
+Would you like me to provide a general overview of your uploaded studies instead?"""
+                
+                return {
+                    "response": helpful_response,
+                    "query_type": query_type,
+                    "studies_referenced": 0,
+                    "search_results": [],
+                    "session_studies": total_studies,
+                    "context_summary": "No relevant studies found",
+                    "conversation_length": len(self.conversation_memory.messages),
+                    "timestamp": datetime.now().isoformat(),
+                    "debug_info": {
+                        "vector_stats": vector_stats,
+                        "search_filters": search_filters
+                    }
+                }
             
             # Format context
             context = self._format_study_context(search_results)
@@ -375,7 +443,7 @@ Please provide a comprehensive, evidence-based response that addresses the user'
             self.conversation_memory.add_message(
                 role="assistant", 
                 content=assistant_response,
-                context_used=[result['study_title'] for result in search_results],
+                context_used=[result['study_info']['title'] for result in search_results],
                 search_results=search_results
             )
             
@@ -392,10 +460,58 @@ Please provide a comprehensive, evidence-based response that addresses the user'
             
         except Exception as e:
             self.logger.error(f"Error in chat: {e}")
+            
+            # Provide more helpful error response based on the error type
+            if "api" in str(e).lower() or "key" in str(e).lower():
+                error_response = """I'm experiencing an API connectivity issue. This might be due to:
+
+**Possible solutions:**
+1. **API Key Issue**: Check if your Anthropic/OpenAI API keys are properly configured
+2. **Rate Limits**: You might have exceeded API rate limits - please wait a moment
+3. **Network Issue**: Check your internet connection
+
+**To configure API keys:**
+- Add them to your Streamlit secrets or environment variables
+- Ensure the keys have sufficient credits/quota
+
+Please try again in a moment, or contact support if the issue persists."""
+            
+            elif "vector" in str(e).lower() or "pinecone" in str(e).lower():
+                error_response = """I'm having trouble accessing the knowledge base. This might be due to:
+
+**Possible solutions:**
+1. **Pinecone Connection**: Check your vector database configuration
+2. **Session Data**: Your session might have expired - try uploading data again
+3. **Embedding Service**: The text embedding service might be temporarily unavailable
+
+Please try uploading your abstracts again or refresh the page."""
+            
+            else:
+                error_response = f"""I encountered a technical error while processing your request. 
+
+**Error details:** {str(e)}
+
+**Suggestions:**
+1. Try rephrasing your question in simpler terms
+2. Make sure you have uploaded some clinical abstracts first
+3. If the problem persists, try refreshing the page
+
+**Example questions that work well:**
+- "What studies do I have?"
+- "Compare the treatments"
+- "Show me efficacy results"
+
+Would you like to try a different question?"""
+            
             return {
-                "response": "I apologize, but I encountered an error processing your request. Please try rephrasing your question.",
+                "response": error_response,
                 "error": str(e),
-                "timestamp": datetime.now().isoformat()
+                "error_type": "technical_error",
+                "timestamp": datetime.now().isoformat(),
+                "debug_info": {
+                    "session_id": getattr(self.vector_store, 'session_id', 'unknown'),
+                    "vector_store_available": self.vector_store is not None
+                }
             }
     
     async def get_study_insights(self, study_identifiers: List[str]) -> Dict[str, Any]:
