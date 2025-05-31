@@ -1,0 +1,40 @@
+Title: Daratumumab, Lenalidomide, and Dexamethasone in Transplant-Ineligible Newly Diagnosed Multiple Myeloma: MAIA Study Results
+
+Authors: Thierry Facon, Saad Z. Usmani, Torben Plesner, Katja Weisel, Hartmut Goldschmidt, Andrew Spencer, Hang Quach, Cyrille Touzeau, Mohamad Mohty, Nizar J. Bahlis, Shaji Kumar, Philippe Moreau
+
+Journal: Blood
+Publication Date: 2021
+DOI: 10.1182/blood.2021011101
+Study Type: Phase 3 Randomized Controlled Trial
+
+Abstract:
+
+Background: Multiple myeloma (MM) remains incurable despite therapeutic advances. Daratumumab (DARA), a CD38-targeting monoclonal antibody, has shown significant efficacy in relapsed/refractory MM. The MAIA study evaluated DARA plus lenalidomide and dexamethasone (DRd) versus lenalidomide and dexamethasone (Rd) in transplant-ineligible newly diagnosed MM (NDMM) patients.
+
+Methods: This international, randomized, open-label, phase 3 study enrolled 737 transplant-ineligible NDMM patients. Patients were randomized 1:1 to receive DRd (n=368) or Rd (n=369). Primary endpoint was progression-free survival (PFS). Secondary endpoints included overall response rate (ORR), complete response (CR) rate, minimal residual disease (MRD) negativity, overall survival (OS), and safety.
+
+Patient Population: Median age was 73 years (range 45-90). 58% were male, 42% female. ISS stage distribution: I (28%), II (42%), III (30%). High-risk cytogenetics present in 20% of patients. ECOG performance status 0-1 in 89% of patients.
+
+Treatment Regimens:
+- DRd arm: Daratumumab 16 mg/kg IV weekly (cycles 1-2), every 2 weeks (cycles 3-6), monthly thereafter; Lenalidomide 25 mg PO days 1-21; Dexamethasone 40 mg weekly
+- Rd arm: Lenalidomide 25 mg PO days 1-21; Dexamethasone 40 mg weekly
+- Treatment continued until disease progression or unacceptable toxicity
+
+Results:
+With median follow-up of 56.2 months, DRd significantly improved PFS versus Rd (median not reached vs 34.4 months; HR 0.53, 95% CI 0.43-0.66; P<0.001). 5-year PFS rate was 53.3% vs 29.7%.
+
+ORR was significantly higher with DRd vs Rd (92.9% vs 81.3%; P<0.001). CR rates were 47.6% vs 24.9% (P<0.001). MRD negativity (10⁻⁵) was achieved in 24.2% vs 7.3% of patients (P<0.001).
+
+OS showed significant improvement with DRd (HR 0.68, 95% CI 0.53-0.86; P=0.001). 5-year OS rate was 66.3% vs 53.1%.
+
+Safety: Grade 3-4 adverse events occurred in 82.8% (DRd) vs 77.2% (Rd) of patients. Most common grade 3-4 AEs in DRd arm: neutropenia (54.1%), pneumonia (18.0%), anemia (12.0%). Infusion-related reactions occurred in 40.9% of DRd patients (grade 3-4: 5.4%). Treatment discontinuation due to AEs: 7.1% (DRd) vs 8.4% (Rd).
+
+Biomarker Analysis: High-risk cytogenetics patients showed PFS benefit with DRd (HR 0.63, 95% CI 0.39-1.01). Standard-risk patients had HR 0.49 (95% CI 0.38-0.63). MRD negativity correlated with improved PFS in both arms.
+
+Conclusions: DRd demonstrated superior efficacy versus Rd in transplant-ineligible NDMM patients, with manageable safety profile. The addition of daratumumab to standard Rd therapy represents a new standard of care for this patient population.
+
+Clinical Trial Registration: ClinicalTrials.gov NCT02252172
+
+Funding: Janssen Research & Development
+
+Conflicts of Interest: Authors report consulting fees and research funding from Janssen, Celgene, and other pharmaceutical companies as detailed in supplementary materials. 
