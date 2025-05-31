@@ -1,0 +1,2 @@
+# This file ensures the data/vector_store directory is tracked by Git
+# Vector embeddings and search indices will be stored here 
