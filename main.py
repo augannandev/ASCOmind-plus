@@ -2738,42 +2738,35 @@ class ASCOmindApp:
             st.info(f"Session: {st.session_state.session_id[:12]}...")
             st.metric("Studies in Session", len(st.session_state.extracted_data))
             
-            # Vector store statistics (simplified)
-            if st.button("📊 Refresh Stats"):
-                try:
-                    stats = self._get_vector_store().get_statistics()
-                    st.session_state.vector_stats = stats
-                except Exception as e:
-                    st.error(f"Stats error: {e}")
-            
-            # Show simple stats
-            if hasattr(st.session_state, 'vector_stats'):
-                stats = st.session_state.vector_stats
-                st.metric("Session Studies", stats.get('unique_studies', 0))
-                st.metric("Session Vectors", stats.get('total_vectors', 0))
-            
             # Session management
-            st.markdown("### 🔧 Session Controls")
-            if st.button("🗑️ Clear Session Data"):
-                # Clear vector store data
-                try:
-                    clear_result = asyncio.run(self._get_vector_store().clear_session_data())
-                    if clear_result.get('status') == 'success':
-                        st.success(f"Cleared {clear_result.get('vectors_deleted', 0)} vectors")
-                except Exception as e:
-                    st.error(f"Vector clear error: {e}")
-                
-                # Clear session state
-                st.session_state.extracted_data = []
-                st.session_state.categorization_data = []
-                st.session_state.analysis_results = None
-                st.session_state.ai_conversation_history = []
-                if 'current_ai_query' in st.session_state:
-                    del st.session_state.current_ai_query
-                if self.ai_assistant:
-                    self.ai_assistant.reset_conversation()
-                st.success("🧹 Session data cleared!")
-                st.rerun()
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("📊 Refresh Stats", key="ai_refresh_stats"):
+                    # Get fresh statistics
+                    if self.vector_store:
+                        vector_stats = self.vector_store.get_statistics()
+                        st.json(vector_stats)
+                    else:
+                        st.warning("Vector store not available")
+            
+            with col2:
+                if st.button("🗑️ Clear Session Data", key="ai_clear_session"):
+                    if self.vector_store:
+                        result = asyncio.run(self.vector_store.clear_session_data())
+                        if result["status"] == "success":
+                            st.success(f"Cleared {result['vectors_deleted']} vectors")
+                            # Also clear session state
+                            st.session_state.extracted_data = []
+                            st.session_state.ai_conversation_history = []
+                            st.rerun()
+                        else:
+                            st.error("Failed to clear session data")
+                    else:
+                        # Just clear session state if no vector store
+                        st.session_state.extracted_data = []
+                        st.session_state.ai_conversation_history = []
+                        st.success("Session data cleared")
+                        st.rerun()
         
         # Display conversation history (optimized)
         if st.session_state.ai_conversation_history:
@@ -2880,22 +2873,8 @@ class ASCOmindApp:
             **💡 Pro Tip:** Press Enter or Ctrl+Enter to submit your question quickly!
             """)
         
-        # Simplified debug mode
-        if st.checkbox("🔧 Debug Mode", value=False):
-            with st.expander("Debug Information", expanded=False):
-                st.json({
-                    "session_id": st.session_state.session_id,
-                    "session_data_isolated": st.session_state.get('session_data_isolated', False),
-                    "ai_assistant_available": self.ai_assistant is not None,
-                    "vector_store_available": self.vector_store is not None,
-                    "conversation_count": len(st.session_state.ai_conversation_history),
-                    "session_studies": len(st.session_state.extracted_data) if st.session_state.extracted_data else 0,
-                    "processing_query": st.session_state.get('processing_query', 'None'),
-                    "vector_store_session": self.vector_store.get_session_id() if self.vector_store else None
-                })
-        
         # Debug mode - Add session and vector store information
-        if st.checkbox("🔧 Debug Mode", value=False):
+        if st.checkbox("🔧 Debug Mode", value=False, key="ai_debug_mode"):
             with st.expander("🔍 Session & Vector Store Debug Information", expanded=True):
                 col1, col2 = st.columns(2)
                 
@@ -2923,7 +2902,7 @@ class ASCOmindApp:
                             st.json(vector_stats)
                             
                             # Test vector store search
-                            if st.button("🔍 Test Vector Search"):
+                            if st.button("🔍 Test Vector Search", key="debug_test_vector_search"):
                                 try:
                                     test_results = asyncio.run(
                                         self.vector_store.search_abstracts("test query", top_k=3)
@@ -2941,10 +2920,17 @@ class ASCOmindApp:
                 # Manual embedding test
                 st.markdown("---")
                 st.markdown("**🔧 Manual Embedding Test:**")
-                if st.button("🚀 Re-embed All Abstracts"):
+                if st.button("🚀 Re-embed All Abstracts", key="debug_reembed_abstracts"):
                     if st.session_state.extracted_data and self.vector_store:
                         embedding_results = []
-                        for data in st.session_state.extracted_data:
+                        progress_bar = st.progress(0)
+                        status_text = st.empty()
+                        
+                        for i, data in enumerate(st.session_state.extracted_data):
+                            progress = (i + 1) / len(st.session_state.extracted_data)
+                            progress_bar.progress(progress)
+                            status_text.text(f"Re-embedding {i+1}/{len(st.session_state.extracted_data)}: {data.study_identification.title[:50]}...")
+                            
                             try:
                                 result = asyncio.run(
                                     self.vector_store.embed_abstract(data, force_update=True)
@@ -2961,8 +2947,10 @@ class ASCOmindApp:
                                     "error": str(e)
                                 })
                         
+                        progress_bar.progress(1.0)
+                        status_text.text("Re-embedding completed!")
                         st.json(embedding_results)
-                        st.success("Re-embedding completed! Try asking questions now.")
+                        st.success("✅ Re-embedding completed! Try asking questions now.")
                     else:
                         st.warning("No data to embed or vector store not available")
     
