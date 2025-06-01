@@ -169,7 +169,7 @@ class EnhancedMetadataExtractor:
         """Extract using Claude Sonnet"""
         
         message = self.anthropic_client.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-5-sonnet-20241022",
             max_tokens=settings.MAX_TOKENS,
             temperature=settings.TEMPERATURE,
             messages=[

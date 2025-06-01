@@ -210,7 +210,7 @@ Provide a JSON response with:
 }}"""
         
         message = self.anthropic_client.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-5-sonnet-20241022",
             max_tokens=1500,
             temperature=0.1,
             messages=[{"role": "user", "content": prompt}]
@@ -249,7 +249,7 @@ Create a comprehensive protocol with:
 Format as JSON with detailed steps, rationale, and acceptance criteria for each phase."""
         
         message = self.anthropic_client.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-5-sonnet-20241022",
             max_tokens=2000,
             temperature=0.1,
             messages=[{"role": "user", "content": prompt}]

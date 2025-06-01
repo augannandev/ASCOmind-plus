@@ -2,13 +2,13 @@
 
 **Advanced Oncology Research Analytics & Clinical Insights**
 
-ASCOmind+ is a cutting-edge multi-agent AI system designed for comprehensive analysis of oncology research abstracts. Built with Claude Sonnet 4 and advanced visualization capabilities, it extracts 50+ structured data elements and provides clinical insights rivaling commercial medical intelligence platforms.
+ASCOmind+ is a cutting-edge multi-agent AI system designed for comprehensive analysis of oncology research abstracts. Built with Claude 3.5 Sonnet and advanced visualization capabilities, it extracts 50+ structured data elements and provides clinical insights rivaling commercial medical intelligence platforms.
 
 ## 🎯 Key Features
 
 ### 📊 Comprehensive Data Extraction
 - **50+ Structured Elements**: Study design, demographics, efficacy, safety, biomarkers
-- **Dual LLM Architecture**: Claude Sonnet 4 (primary) + GPT-4o (fallback)
+- **Dual LLM Architecture**: Claude 3.5 Sonnet (primary) + GPT-4o (fallback)
 - **Medical Domain Expertise**: Specialized for multiple myeloma and oncology research
 - **Confidence Scoring**: Advanced validation and quality assessment
 
@@ -32,7 +32,7 @@ ASCOmind+ is a cutting-edge multi-agent AI system designed for comprehensive ana
 ## 🛠️ Technology Stack
 
 - **Frontend**: Streamlit with custom CSS styling
-- **LLMs**: Anthropic Claude Sonnet 4, OpenAI GPT-4o
+- **LLMs**: Anthropic Claude 3.5 Sonnet, OpenAI GPT-4o
 - **Orchestration**: LangGraph for multi-agent workflows
 - **Database**: DuckDB for analytics, FAISS for vector search
 - **Visualization**: Plotly, Dash, Matplotlib, Seaborn
@@ -167,7 +167,7 @@ MIN_CONFIDENCE_THRESHOLD=0.7
 
 ### LLM Settings
 ```python
-# Primary LLM (Claude Sonnet 4)
+# Primary LLM (Claude 3.5 Sonnet)
 PRIMARY_LLM = "claude-3-sonnet"
 TEMPERATURE = 0.1
 MAX_TOKENS = 4000
@@ -219,7 +219,7 @@ For questions, issues, or feature requests:
 
 ## 🙏 Acknowledgments
 
-- Built with Anthropic Claude Sonnet 4
+- Built with Anthropic Claude 3.5 Sonnet
 - Powered by Streamlit and Plotly
 - Medical expertise from oncology research community
 
