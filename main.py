@@ -1425,11 +1425,16 @@ class ASCOmindApp:
                 st.plotly_chart(fig, use_container_width=True)
     
     def render_abstract_analyzer(self):
-        """Render enhanced abstract analysis page with modern UI"""
+        """Enhanced abstract analysis interface with comprehensive features"""
+        
+        # Developer mode indicator (for debugging)
+        if st.session_state.developer_mode:
+            st.info("🔧 **Developer Mode Active** - Advanced processing options available")
         
         st.markdown("""
-        <div class="section-header">
-            <h2>📄 Abstract Analysis Engine</h2>
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">📄 Abstract Analysis & Processing</h2>
+            <p style="color: #64748b; font-size: 1.1rem;">Extract comprehensive insights from clinical abstracts using advanced AI analysis</p>
         </div>
         """, unsafe_allow_html=True)
         
