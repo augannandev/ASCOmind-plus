@@ -106,7 +106,7 @@ class Settings(BaseSettings):
     # Model specifications for each provider
     CLAUDE_MODEL: str = "claude-3-5-sonnet-20241022"
     OPENAI_MODEL: str = "gpt-4o"
-    GEMINI_MODEL: str = "gemini-1.5-pro"
+    GEMINI_MODEL: str = "gemini-2.5-flash-preview-05-20"
     
     # Developer mode settings
     DEVELOPER_MODE: bool = False
@@ -187,7 +187,7 @@ class Settings(BaseSettings):
                 os.getenv("GEMINI_MODEL") or 
                 self._get_streamlit_secret("GEMINI_MODEL") or
                 self._get_streamlit_secret("api_keys", "GEMINI_MODEL") or
-                "gemini-1.5-pro"
+                "gemini-2.5-flash-preview-05-20"
             )
             
             self.PINECONE_ENVIRONMENT = (
@@ -254,7 +254,7 @@ class Settings(BaseSettings):
             "gemini": {
                 "api_key": self.GEMINI_API_KEY,
                 "model": self.GEMINI_MODEL,
-                "name": "Gemini 1.5 Pro",
+                "name": "Gemini 2.5 Pro Flash",
                 "icon": "✨"
             }
         }
