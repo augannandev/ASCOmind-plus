@@ -9,7 +9,10 @@ from dataclasses import dataclass
 
 import anthropic
 import openai
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
 from pydantic import BaseModel
 
 from agents.vector_store import IntelligentVectorStore
@@ -142,13 +145,15 @@ class AdvancedAIAssistant:
                 self.logger.error(f"Failed to initialize OpenAI client: {e}")
         
         # Gemini
-        if settings.GEMINI_API_KEY:
+        if settings.GEMINI_API_KEY and genai is not None:
             try:
                 genai.configure(api_key=settings.GEMINI_API_KEY)
                 self.clients['gemini'] = genai.GenerativeModel(settings.GEMINI_MODEL)
                 self.logger.info("Gemini client initialized successfully")
             except Exception as e:
                 self.logger.error(f"Failed to initialize Gemini client: {e}")
+        elif settings.GEMINI_API_KEY and genai is None:
+            self.logger.warning("Gemini API key provided but google-generativeai package not installed")
         
         # Verify we have at least one working client
         if not self.clients:

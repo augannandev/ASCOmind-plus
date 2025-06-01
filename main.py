@@ -2062,18 +2062,26 @@ class ASCOmindApp:
             with col3:
                 st.metric("File Type", uploaded_file.type)
             
-            # Processing options
-            with st.expander("⚙️ Processing Options", expanded=True):
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    extract_metadata = st.checkbox("📊 Extract Metadata", value=True, help="Extract comprehensive study metadata")
-                    categorize_study = st.checkbox("🏷️ Categorize Study", value=True, help="Intelligent study categorization")
-                    embed_vectors = st.checkbox("🧠 Vector Embedding", value=True, help="Create vector embeddings for AI search")
-                
-                with col2:
-                    confidence_threshold = st.slider("Confidence Threshold", 0.0, 1.0, 0.7, 0.1, help="Minimum confidence for extracted data")
-                    auto_correct = st.checkbox("🔧 Auto-correction", value=True, help="Automatically correct obvious errors")
+            # Processing options (Developer mode only)
+            if st.session_state.developer_mode:
+                with st.expander("⚙️ Processing Options", expanded=True):
+                    col1, col2 = st.columns(2)
+                    
+                    with col1:
+                        extract_metadata = st.checkbox("📊 Extract Metadata", value=True, help="Extract comprehensive study metadata")
+                        categorize_study = st.checkbox("🏷️ Categorize Study", value=True, help="Intelligent study categorization")
+                        embed_vectors = st.checkbox("🧠 Vector Embedding", value=True, help="Create vector embeddings for AI search")
+                    
+                    with col2:
+                        confidence_threshold = st.slider("Confidence Threshold", 0.0, 1.0, 0.7, 0.1, help="Minimum confidence for extracted data")
+                        auto_correct = st.checkbox("🔧 Auto-correction", value=True, help="Automatically correct obvious errors")
+            else:
+                # Default values when developer mode is off
+                extract_metadata = True
+                categorize_study = True
+                embed_vectors = True
+                confidence_threshold = 0.7
+                auto_correct = True
             
             # Process button
             if st.button("🚀 Process File", type="primary", use_container_width=True):
@@ -2371,25 +2379,37 @@ class ASCOmindApp:
                     with col4:
                         st.write("✅ Ready")
             
-            # Batch processing options
-            with st.expander("⚙️ Batch Processing Options", expanded=True):
-                col1, col2 = st.columns(2)
+            # Batch processing options (Developer mode only)
+            if st.session_state.developer_mode:
+                with st.expander("⚙️ Batch Processing Options", expanded=True):
+                    col1, col2 = st.columns(2)
+                    
+                    with col1:
+                        extract_metadata = st.checkbox("📊 Extract Metadata", value=True, help="Extract comprehensive study metadata for all files")
+                        categorize_studies = st.checkbox("🏷️ Categorize Studies", value=True, help="Intelligent study categorization for all files")
+                        embed_vectors = st.checkbox("🧠 Vector Embedding", value=True, help="Create vector embeddings for AI search")
+                    
+                    with col2:
+                        confidence_threshold = st.slider("Confidence Threshold", 0.0, 1.0, 0.7, 0.1, help="Minimum confidence for extracted data")
+                        parallel_processing = st.checkbox("⚡ Parallel Processing", value=True, help="Process multiple files simultaneously")
+                        auto_correct = st.checkbox("🔧 Auto-correction", value=True, help="Automatically correct obvious errors")
                 
-                with col1:
-                    extract_metadata = st.checkbox("📊 Extract Metadata", value=True, help="Extract comprehensive study metadata for all files")
-                    categorize_studies = st.checkbox("🏷️ Categorize Studies", value=True, help="Intelligent study categorization for all files")
-                    embed_vectors = st.checkbox("🧠 Vector Embedding", value=True, help="Create vector embeddings for AI search")
-                
-                with col2:
-                    confidence_threshold = st.slider("Confidence Threshold", 0.0, 1.0, 0.7, 0.1, help="Minimum confidence for extracted data")
-                    parallel_processing = st.checkbox("⚡ Parallel Processing", value=True, help="Process multiple files simultaneously")
-                    auto_correct = st.checkbox("🔧 Auto-correction", value=True, help="Automatically correct obvious errors")
-            
-            # Advanced options (moved outside the main expander to avoid nesting)
-            with st.expander("🔬 Advanced Settings", expanded=False):
-                batch_size = st.slider("Batch Size", 1, min(10, len(uploaded_files)), min(5, len(uploaded_files)), help="Number of files to process simultaneously")
-                skip_duplicates = st.checkbox("⏭️ Skip Duplicates", value=True, help="Skip files that have already been processed")
-                error_handling = st.selectbox("Error Handling", ["Stop on Error", "Continue on Error", "Retry Failed"], help="How to handle processing errors")
+                # Advanced options (moved outside the main expander to avoid nesting)
+                with st.expander("🔬 Advanced Settings", expanded=False):
+                    batch_size = st.slider("Batch Size", 1, min(10, len(uploaded_files)), min(5, len(uploaded_files)), help="Number of files to process simultaneously")
+                    skip_duplicates = st.checkbox("⏭️ Skip Duplicates", value=True, help="Skip files that have already been processed")
+                    error_handling = st.selectbox("Error Handling", ["Stop on Error", "Continue on Error", "Retry Failed"], help="How to handle processing errors")
+            else:
+                # Default values when developer mode is off
+                extract_metadata = True
+                categorize_studies = True
+                embed_vectors = True
+                confidence_threshold = 0.7
+                parallel_processing = True
+                auto_correct = True
+                batch_size = min(5, len(uploaded_files))
+                skip_duplicates = True
+                error_handling = "Continue on Error"
             
             # Processing button
             if st.button("🚀 Process All Files", type="primary", use_container_width=True):
