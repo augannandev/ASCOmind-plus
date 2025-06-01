@@ -677,6 +677,16 @@ class ASCOmindApp:
             random_id = str(uuid.uuid4())[:8]
             st.session_state.session_id = f"session_{timestamp}_{random_id}"
         
+        # Developer mode detection
+        if 'developer_mode' not in st.session_state:
+            # Check URL parameters for ?dev
+            query_params = st.query_params
+            st.session_state.developer_mode = 'dev' in query_params or query_params.get('dev') == 'true'
+        
+        # LLM Provider selection (for developer mode)
+        if 'selected_llm_provider' not in st.session_state:
+            st.session_state.selected_llm_provider = settings.DEFAULT_LLM_PROVIDER
+            
         if 'extracted_data' not in st.session_state:
             st.session_state.extracted_data = []
         
@@ -2723,10 +2733,58 @@ class ASCOmindApp:
             <h3 style="margin: 0; color: white;">🤖 AI Research Assistant</h3>
             <p style="margin: 0.5rem 0 0 0; opacity: 0.9; font-size: 0.9rem;">
                 Session: {st.session_state.session_id[:12]}... | 
-                Data Isolated: ✅ Only your studies are accessible
+                Data Isolated: ✅ Only your studies
             </p>
         </div>
         """, unsafe_allow_html=True)
+        
+        # Developer mode controls
+        if st.session_state.developer_mode:
+            with st.expander("🛠️ Developer Controls", expanded=False):
+                st.markdown("**🧠 LLM Provider Selection:**")
+                
+                # Get available providers
+                available_providers = settings.get_available_providers()
+                enabled_providers = [provider for provider, available in available_providers.items() if available]
+                
+                if enabled_providers:
+                    provider_options = {}
+                    for provider in enabled_providers:
+                        config = settings.get_provider_config(provider)
+                        provider_options[f"{config['icon']} {config['name']} ({provider})"] = provider
+                    
+                    selected_display = st.selectbox(
+                        "Choose LLM Provider:",
+                        options=list(provider_options.keys()),
+                        index=list(provider_options.values()).index(st.session_state.selected_llm_provider) 
+                        if st.session_state.selected_llm_provider in provider_options.values() else 0,
+                        key="llm_provider_select"
+                    )
+                    
+                    # Update session state when selection changes
+                    new_provider = provider_options[selected_display]
+                    if new_provider != st.session_state.selected_llm_provider:
+                        st.session_state.selected_llm_provider = new_provider
+                        st.success(f"✅ Switched to {selected_display}")
+                        st.rerun()
+                    
+                    # Show provider status
+                    col1, col2, col3 = st.columns(3)
+                    for i, (provider, available) in enumerate(available_providers.items()):
+                        col = [col1, col2, col3][i % 3]
+                        config = settings.get_provider_config(provider)
+                        status = "✅" if available else "❌"
+                        current = "🎯" if provider == st.session_state.selected_llm_provider else ""
+                        col.write(f"{status} {config['icon']} {config['name']} {current}")
+                else:
+                    st.error("❌ No LLM providers available! Check your API keys in secrets.")
+                
+                st.markdown("---")
+                st.markdown("**🔧 Quick Actions:**")
+                if st.button("🔄 Refresh API Keys", key="refresh_api_keys"):
+                    settings.refresh_from_secrets()
+                    st.success("API keys refreshed!")
+                    st.rerun()
         
         # Simplified sidebar with session info
         with st.sidebar:
@@ -3566,9 +3624,14 @@ class ASCOmindApp:
         if not self.ai_assistant:
             try:
                 from agents.ai_assistant import AdvancedAIAssistant
-                vector_store = self._get_vector_store()
-                self.ai_assistant = AdvancedAIAssistant(vector_store=vector_store)
-                st.success("🤖 AI Assistant ready!")
+                session_id = getattr(st.session_state, 'session_id', None)
+                selected_provider = getattr(st.session_state, 'selected_llm_provider', settings.DEFAULT_LLM_PROVIDER)
+                
+                self.ai_assistant = AdvancedAIAssistant(
+                    vector_store=self._get_vector_store(),
+                    llm_provider=selected_provider
+                )
+                st.success(f"🤖 AI Assistant initialized with {selected_provider.title()} for session: {session_id[:12]}...")
             except Exception as e:
                 st.error(f"AI Assistant initialization failed: {e}")
         return self.ai_assistant

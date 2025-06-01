@@ -1,4 +1,4 @@
-# agents/ai_assistant.py - ADVANCED AI RESEARCH ASSISTANT
+# agents/ai_assistant.py - MULTI-LLM AI ASSISTANT
 
 import asyncio
 import json
@@ -9,10 +9,12 @@ from dataclasses import dataclass
 
 import anthropic
 import openai
+import google.generativeai as genai
 from pydantic import BaseModel
 
 from agents.vector_store import IntelligentVectorStore
 from config.settings import settings
+from models.abstract_metadata import ComprehensiveAbstractMetadata
 
 @dataclass
 class ConversationMessage:
@@ -22,62 +24,64 @@ class ConversationMessage:
     timestamp: datetime
     context_used: Optional[List[str]] = None
     search_results: Optional[List[Dict]] = None
+    llm_provider: Optional[str] = None  # Track which LLM was used
 
 class ConversationMemory:
-    """Manages conversation history and context"""
+    """Manage conversation history and context"""
     
     def __init__(self, max_messages: int = 20):
         self.messages: List[ConversationMessage] = []
         self.max_messages = max_messages
-        self.session_id = None
-        self.user_context = {}  # Store user preferences, current studies, etc.
-    
+        self.user_context: Dict[str, Any] = {}
+
     def add_message(self, role: str, content: str, context_used: Optional[List[str]] = None, 
-                   search_results: Optional[List[Dict]] = None):
-        """Add message to conversation history"""
+                   search_results: Optional[List[Dict]] = None, llm_provider: Optional[str] = None):
+        """Add a message to conversation memory"""
         message = ConversationMessage(
             role=role,
             content=content,
             timestamp=datetime.now(),
             context_used=context_used,
-            search_results=search_results
+            search_results=search_results,
+            llm_provider=llm_provider
         )
         
         self.messages.append(message)
         
-        # Keep only recent messages
+        # Keep only the most recent messages
         if len(self.messages) > self.max_messages:
             self.messages = self.messages[-self.max_messages:]
-    
+
     def get_context_summary(self) -> str:
         """Get a summary of the conversation context"""
         if not self.messages:
-            return "New conversation about multiple myeloma research."
+            return "No conversation history."
         
-        recent_topics = []
-        for msg in self.messages[-5:]:  # Last 5 messages
-            if msg.role == 'user' and len(msg.content) > 20:
-                recent_topics.append(msg.content[:100])
+        recent_messages = self.messages[-5:]  # Last 5 messages
+        context = "Recent conversation:\n"
+        for msg in recent_messages:
+            context += f"{msg.role}: {msg.content[:100]}...\n"
         
-        return f"Recent discussion topics: {'; '.join(recent_topics)}"
-    
+        return context
+
     def get_formatted_history(self) -> List[Dict[str, str]]:
-        """Get conversation history formatted for LLM (excluding system messages)"""
+        """Get conversation history formatted for LLM context"""
         return [
             {"role": msg.role, "content": msg.content}
             for msg in self.messages[-10:]  # Last 10 messages for context
-            if msg.role in ["user", "assistant"]  # Exclude system messages
         ]
 
 class AdvancedAIAssistant:
-    """Intelligent AI assistant for multiple myeloma research"""
+    """Multi-LLM intelligent AI assistant for multiple myeloma research"""
     
-    def __init__(self, vector_store: Optional[IntelligentVectorStore] = None):
+    def __init__(self, vector_store: Optional[IntelligentVectorStore] = None, llm_provider: Optional[str] = None):
         self.logger = logging.getLogger(__name__)
         
+        # Set LLM provider
+        self.llm_provider = llm_provider or settings.DEFAULT_LLM_PROVIDER
+        
         # Initialize LLM clients
-        self.anthropic_client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
-        self.openai_client = openai.OpenAI(api_key=settings.OPENAI_API_KEY)
+        self._initialize_llm_clients()
         
         # Vector store for knowledge retrieval (session-isolated)
         if vector_store:
@@ -85,11 +89,23 @@ class AdvancedAIAssistant:
             self.logger.info(f"AI Assistant using provided vector store with session: {vector_store.get_session_id()}")
         else:
             # Fallback: create own vector store (should be avoided in production)
-            self.vector_store = IntelligentVectorStore()
-            self.logger.warning("AI Assistant created its own vector store - session isolation may be compromised")
+            try:
+                from agents.vector_store import IntelligentVectorStore
+                self.vector_store = IntelligentVectorStore()
+                self.logger.warning("AI Assistant created its own vector store - session isolation may be compromised")
+            except Exception as e:
+                self.logger.error(f"Failed to initialize vector store: {e}")
+                self.vector_store = None
         
-        # Conversation memory
+        # Conversation management
         self.conversation_memory = ConversationMemory()
+        
+        # Research context
+        self.research_domain = "multiple_myeloma"
+        self.expertise_areas = [
+            "clinical_trials", "treatment_regimens", "drug_development",
+            "patient_outcomes", "safety_profiles", "biomarkers"
+        ]
         
         # Assistant capabilities
         self.capabilities = {
@@ -105,6 +121,60 @@ class AdvancedAIAssistant:
         # Specialized prompts
         self.system_prompt = self._create_system_prompt()
     
+    def _initialize_llm_clients(self):
+        """Initialize all available LLM clients"""
+        self.clients = {}
+        
+        # Claude/Anthropic
+        if settings.ANTHROPIC_API_KEY:
+            try:
+                self.clients['claude'] = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
+                self.logger.info("Claude client initialized successfully")
+            except Exception as e:
+                self.logger.error(f"Failed to initialize Claude client: {e}")
+        
+        # OpenAI
+        if settings.OPENAI_API_KEY:
+            try:
+                self.clients['openai'] = openai.OpenAI(api_key=settings.OPENAI_API_KEY)
+                self.logger.info("OpenAI client initialized successfully")
+            except Exception as e:
+                self.logger.error(f"Failed to initialize OpenAI client: {e}")
+        
+        # Gemini
+        if settings.GEMINI_API_KEY:
+            try:
+                genai.configure(api_key=settings.GEMINI_API_KEY)
+                self.clients['gemini'] = genai.GenerativeModel(settings.GEMINI_MODEL)
+                self.logger.info("Gemini client initialized successfully")
+            except Exception as e:
+                self.logger.error(f"Failed to initialize Gemini client: {e}")
+        
+        # Verify we have at least one working client
+        if not self.clients:
+            self.logger.error("No LLM clients available - check API keys")
+            raise ValueError("No LLM providers available")
+        
+        # Ensure selected provider is available
+        if self.llm_provider not in self.clients:
+            available_providers = list(self.clients.keys())
+            self.llm_provider = available_providers[0]
+            self.logger.warning(f"Selected provider not available, falling back to: {self.llm_provider}")
+
+    def set_llm_provider(self, provider: str) -> bool:
+        """Change the LLM provider"""
+        if provider in self.clients:
+            self.llm_provider = provider
+            self.logger.info(f"Switched to LLM provider: {provider}")
+            return True
+        else:
+            self.logger.warning(f"Provider {provider} not available")
+            return False
+
+    def get_available_providers(self) -> List[str]:
+        """Get list of available LLM providers"""
+        return list(self.clients.keys())
+
     def _create_system_prompt(self) -> str:
         """Create comprehensive system prompt for the assistant"""
         return """You are Dr. ASCOmind+, an advanced AI research assistant specializing in multiple myeloma clinical research and drug development. You have access to a curated database of clinical studies and research data.
@@ -290,76 +360,104 @@ Remember: You're helping advance multiple myeloma research and improve patient o
             return "general_inquiry"
     
     async def _generate_response(self, user_message: str, context: str, query_type: str) -> str:
-        """Generate response using Claude with context"""
+        """Generate response using the selected LLM provider"""
         try:
-            # Create query-specific prompts
-            query_prompts = {
-                "comparison": "Provide a detailed comparison including efficacy, safety, patient populations, and strategic implications. Use tables or structured format when helpful.",
-                "recommendation": "Provide evidence-based recommendations with clear rationale. Consider efficacy, safety, patient factors, and practical considerations.",
-                "safety": "Focus on safety profiles, adverse events, management strategies, and risk-benefit considerations.",
-                "efficacy": "Analyze efficacy endpoints in detail. Discuss response rates, survival outcomes, and clinical significance.",
-                "mechanism": "Explain mechanisms of action, target pathways, and therapeutic rationale.",
-                "patient_selection": "Discuss patient selection criteria, biomarkers, and optimization strategies.",
-                "market_intelligence": "Provide competitive landscape analysis and strategic positioning insights.",
-                "protocol_design": "Offer protocol design recommendations including endpoints, patient selection, and regulatory considerations.",
-                "general_inquiry": "Provide a comprehensive analysis addressing all relevant aspects of the question."
-            }
+            # Prepare the prompt
+            conversation_context = self.conversation_memory.get_context_summary()
             
-            specific_prompt = query_prompts.get(query_type, query_prompts["general_inquiry"])
-            
-            # Get conversation history
-            conversation_history = self.conversation_memory.get_formatted_history()
-            
-            # Construct messages for Claude
+            prompt = f"""
+{self.system_prompt}
+
+**Current Query Type:** {query_type}
+**Conversation Context:** {conversation_context}
+**Relevant Studies:** {context}
+
+**User Question:** {user_message}
+
+Please provide a comprehensive, evidence-based response that:
+1. Directly answers the user's question
+2. References specific studies when relevant
+3. Highlights key clinical insights
+4. Maintains scientific accuracy
+5. Uses clear, professional language
+"""
+
+            # Generate response based on selected provider
+            if self.llm_provider == "claude" and "claude" in self.clients:
+                return await self._generate_claude_response(prompt)
+            elif self.llm_provider == "openai" and "openai" in self.clients:
+                return await self._generate_openai_response(prompt)
+            elif self.llm_provider == "gemini" and "gemini" in self.clients:
+                return await self._generate_gemini_response(prompt)
+            else:
+                # Fallback to any available provider
+                available_providers = list(self.clients.keys())
+                if available_providers:
+                    fallback_provider = available_providers[0]
+                    self.logger.warning(f"Using fallback provider: {fallback_provider}")
+                    if fallback_provider == "claude":
+                        return await self._generate_claude_response(prompt)
+                    elif fallback_provider == "openai":
+                        return await self._generate_openai_response(prompt)
+                    elif fallback_provider == "gemini":
+                        return await self._generate_gemini_response(prompt)
+                
+                raise Exception("No LLM providers available")
+                
+        except Exception as e:
+            self.logger.error(f"Error generating response with {self.llm_provider}: {e}")
+            return f"I apologize, but I encountered an error processing your request with {self.llm_provider}. Please try again or contact support if the issue persists."
+    
+    async def _generate_claude_response(self, prompt: str) -> str:
+        """Generate response using Claude"""
+        try:
+            response = await asyncio.to_thread(
+                self.clients['claude'].messages.create,
+                model=settings.CLAUDE_MODEL,
+                max_tokens=2000,
+                temperature=settings.TEMPERATURE,
+                system=self.system_prompt,
+                messages=[{"role": "user", "content": prompt}]
+            )
+            return response.content[0].text
+        except Exception as e:
+            self.logger.error(f"Claude API error: {e}")
+            raise e
+    
+    async def _generate_openai_response(self, prompt: str) -> str:
+        """Generate response using OpenAI"""
+        try:
             messages = [
-                *conversation_history,
-                {
-                    "role": "user", 
-                    "content": f"""**User Question:** {user_message}
-
-**Available Clinical Data:**
-{context}
-
-**Response Instructions:** {specific_prompt}
-
-Please provide a comprehensive, evidence-based response that addresses the user's question using the available clinical data. Structure your response clearly and provide actionable insights."""
-                }
+                {"role": "system", "content": self.system_prompt},
+                {"role": "user", "content": prompt}
             ]
             
-            # Generate response with Claude using system parameter
             response = await asyncio.to_thread(
-                self.anthropic_client.messages.create,
-                model="claude-3-5-sonnet-20241022",
+                self.clients['openai'].chat.completions.create,
+                model=settings.OPENAI_MODEL,
+                messages=messages,
                 max_tokens=2000,
-                temperature=0.3,
-                system=self.system_prompt,  # Use system parameter instead of message
-                messages=messages
+                temperature=settings.TEMPERATURE
             )
-            
-            return response.content[0].text
-            
+            return response.choices[0].message.content
         except Exception as e:
-            self.logger.error(f"Error generating response: {e}")
-            # Fallback to OpenAI if Claude fails
-            try:
-                messages_openai = [
-                    {"role": "system", "content": self.system_prompt},
-                    {"role": "user", "content": f"Question: {user_message}\n\nContext: {context}\n\nPlease provide a helpful response."}
-                ]
-                
-                response = await asyncio.to_thread(
-                    self.openai_client.chat.completions.create,
-                    model="gpt-4-turbo-preview",
-                    messages=messages_openai,
-                    max_tokens=1500,
-                    temperature=0.3
-                )
-                
-                return response.choices[0].message.content
-                
-            except Exception as e2:
-                self.logger.error(f"Both Claude and OpenAI failed: {e2}")
-                return "I apologize, but I'm experiencing technical difficulties. Please try again later."
+            self.logger.error(f"OpenAI API error: {e}")
+            raise e
+    
+    async def _generate_gemini_response(self, prompt: str) -> str:
+        """Generate response using Gemini"""
+        try:
+            # Combine system prompt with user prompt for Gemini
+            full_prompt = f"{self.system_prompt}\n\n{prompt}"
+            
+            response = await asyncio.to_thread(
+                self.clients['gemini'].generate_content,
+                full_prompt
+            )
+            return response.text
+        except Exception as e:
+            self.logger.error(f"Gemini API error: {e}")
+            raise e
     
     async def chat(self, user_message: str, user_context: Optional[Dict] = None) -> Dict[str, Any]:
         """Main chat interface with improved error handling and debugging"""
@@ -440,16 +538,20 @@ Would you like me to provide a general overview of your uploaded studies instead
             # Generate response
             assistant_response = await self._generate_response(user_message, context, query_type)
             
-            # Update conversation memory
+            # Store conversation
             self.conversation_memory.add_message(
                 role="user", 
-                content=user_message
-            )
-            self.conversation_memory.add_message(
-                role="assistant", 
-                content=assistant_response,
+                content=user_message, 
                 context_used=[result['study_info']['title'] for result in search_results],
                 search_results=search_results
+            )
+            
+            self.conversation_memory.add_message(
+                role="assistant", 
+                content=assistant_response, 
+                context_used=[result['study_info']['title'] for result in search_results],
+                search_results=search_results,
+                llm_provider=self.llm_provider  # Track which LLM was used
             )
             
             # Return comprehensive response
@@ -560,7 +662,7 @@ Be specific and evidence-based."""
 
                 # Generate insights
                 response = await asyncio.to_thread(
-                    self.anthropic_client.messages.create,
+                    self.clients[self.llm_provider].messages.create,
                     model="claude-3-5-sonnet-20241022",
                     max_tokens=1500,
                     temperature=0.2,
