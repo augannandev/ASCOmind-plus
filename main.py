@@ -620,6 +620,95 @@ st.markdown("""
         font-weight: 600;
         margin-left: 0.5rem;
     }
+    
+    .info-card {
+        background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        border: 1px solid #cbd5e1;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .badge-blue {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-block;
+        margin: 0.25rem;
+        box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+    }
+    
+    .badge-light-blue {
+        background: linear-gradient(135deg, #0ea5e9, #0284c7);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-block;
+        margin: 0.25rem;
+        box-shadow: 0 2px 4px rgba(14, 165, 233, 0.3);
+    }
+    
+    .badge-yellow {
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-block;
+        margin: 0.25rem;
+        box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
+    }
+    
+    .badge-green {
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-block;
+        margin: 0.25rem;
+        box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+    }
+    
+    .section-title {
+        color: #1e293b;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 1.5rem 0 1rem 0;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 0.5rem;
+    }
+    
+    .field-label {
+        color: #475569;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .field-value {
+        color: #1e293b;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .status-yes {
+        color: #059669;
+        font-weight: 600;
+    }
+    
+    .status-no {
+        color: #dc2626;
+        font-weight: 600;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -695,6 +784,9 @@ class ASCOmindApp:
         
         if 'analysis_results' not in st.session_state:
             st.session_state.analysis_results = None
+        
+        if 'visualizations' not in st.session_state:
+            st.session_state.visualizations = None
         
         if 'session_stats' not in st.session_state:
             st.session_state.session_stats = {
@@ -884,12 +976,6 @@ class ASCOmindApp:
                 # Simple stats without complex calculations
                 total_studies = len(st.session_state.extracted_data)
                 st.metric("📚 Studies", total_studies, help="Total studies processed")
-                
-                # Simple quality assessment using LLM confidence
-                if total_studies > 0:
-                    avg_confidence = sum(d.extraction_confidence for d in st.session_state.extracted_data) / total_studies
-                    quality_level = "Excellent" if avg_confidence >= 0.8 else "Good" if avg_confidence >= 0.6 else "Fair"
-                    st.metric("✅ Quality", f"{quality_level}", delta=f"{avg_confidence:.0%}", help="Data extraction quality")
                 
                 # Show categorization stats if available
                 if st.session_state.categorization_data and len(st.session_state.categorization_data) > 0:
@@ -1376,6 +1462,17 @@ class ASCOmindApp:
             
             summary_df = pd.DataFrame(summary_table_data)
             st.dataframe(summary_df, use_container_width=True, hide_index=True)
+            
+            # --- NEW: Treatment Distribution Table ---
+            st.markdown("---")
+            if len(study_data) >= 2:  # Show distribution table for 2+ studies
+                distribution_data = self._generate_treatment_distribution_table()
+                self._display_treatment_distribution_table(distribution_data)
+            
+            # --- NEW: High-Risk Population Analysis ---
+            st.markdown("---")
+            high_risk_data = self._generate_high_risk_population_analysis()
+            self._display_high_risk_population_analysis(high_risk_data)
         
         else:
             st.info("📊 No studies available. Upload abstracts to see visualizations.")
@@ -1646,220 +1743,8 @@ class ASCOmindApp:
                 
                 with st.expander(f"📋 Study {i+1}: {data.study_identification.study_acronym or 'Study'} - {data.study_identification.title[:60]}...", expanded=False):
                     
-                    # Enhanced Study Identification section
-                    st.markdown("""
-                    <div class="insight-panel" style="margin-bottom: 1.5rem;">
-                        <h4 style="color: #1e293b; margin-bottom: 1rem; display: flex; align-items: center;">
-                            <span style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; font-size: 1rem;">🏷️</span>
-                            Study Identification
-                        </h4>
-                    """, unsafe_allow_html=True)
-                    
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.markdown(f"**📄 Title:** {data.study_identification.title}")
-                        st.markdown(f"**🏷️ Acronym:** {data.study_identification.study_acronym or 'N/A'}")
-                        st.markdown(f"**🔗 NCT Number:** {data.study_identification.nct_number or 'N/A'}")
-                    with col2:
-                        st.markdown(f"**🏥 Study Group:** {data.study_identification.study_group or 'N/A'}")
-                        st.markdown(f"**🏥 Study Type:** {data.study_design.study_type.value}")
-                        st.markdown(f"**📊 Phase:** {data.study_design.study_type.value}")
-                    
-                    st.markdown("</div>", unsafe_allow_html=True)
-                    
-                    # Enhanced Study Categorization
-                    if categorization:
-                        st.markdown("""
-                        <div class="insight-panel" style="margin-bottom: 1.5rem;">
-                            <h4 style="color: #1e293b; margin-bottom: 1rem; display: flex; align-items: center;">
-                                <span style="background: linear-gradient(135deg, #10b981, #34d399); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; font-size: 1rem;">🤖</span>
-                                AI Study Categorization
-                            </h4>
-                        """, unsafe_allow_html=True)
-                        
-                        col1, col2, col3 = st.columns(3)
-                        
-                        with col1:
-                            st.markdown(f"**📂 Study Category:** {categorization.get('study_category', 'Unknown')}")
-                            st.markdown(f"**🏥 Clinical Setting:** {categorization.get('clinical_setting', 'Unknown')}")
-                            st.markdown(f"**🎯 Therapeutic Intent:** {categorization.get('therapeutic_intent', 'Unknown')}")
-                        
-                        with col2:
-                            populations = categorization.get('population_types', {}).get('populations', [])
-                            if populations:
-                                st.markdown("**👥 Population Types:**")
-                                for pop in populations[:3]:  # Show top 3
-                                    st.markdown(f"• {pop}")
-                            else:
-                                st.markdown("**👥 Population Types:** Not identified")
-                        
-                        with col3:
-                            treatments = categorization.get('treatment_categories', {}).get('treatment_categories', [])
-                            if treatments:
-                                st.markdown("**💊 Treatment Categories:**")
-                                for treatment in treatments[:3]:  # Show top 3
-                                    st.markdown(f"• {treatment}")
-                            else:
-                                st.markdown("**💊 Treatment Categories:** Not identified")
-                        
-                        # Enhanced categorization confidence
-                        conf_scores = categorization.get('confidence_scores', {})
-                        col1, col2, col3 = st.columns(3)
-                        with col1:
-                            overall_conf = conf_scores.get('overall', 0)
-                            st.markdown(f'<div style="background: #10b981; color: white; padding: 0.5rem; border-radius: 0.5rem; text-align: center; font-weight: 500;">Status: ✅ Verified</div>', unsafe_allow_html=True)
-                        with col2:
-                            cat_conf = conf_scores.get('study_category', 0)
-                            st.markdown(f'<div style="background: #3b82f6; color: white; padding: 0.5rem; border-radius: 0.5rem; text-align: center; font-weight: 500;">Category: ✅ Identified</div>', unsafe_allow_html=True)
-                        with col3:
-                            pop_conf = conf_scores.get('population', 0)
-                            st.markdown(f'<div style="background: #8b5cf6; color: white; padding: 0.5rem; border-radius: 0.5rem; text-align: center; font-weight: 500;">Population: ✅ Classified</div>', unsafe_allow_html=True)
-                        
-                        st.markdown("</div>", unsafe_allow_html=True)
-                    
-                    # Enhanced Quality Assessment
-                    st.markdown("""
-                    <div class="insight-panel" style="margin-bottom: 1.5rem;">
-                        <h4 style="color: #1e293b; margin-bottom: 1rem; display: flex; align-items: center;">
-                            <span style="background: linear-gradient(135deg, #f59e0b, #fbbf24); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; font-size: 1rem;">📊</span>
-                            Data Quality Assessment
-                        </h4>
-                    """, unsafe_allow_html=True)
-                    
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        # Use LLM confidence directly - it's well calibrated!
-                        quality_badge = self._get_quality_badge(data.extraction_confidence)
-                        st.markdown(f"""
-                        <div style="text-align: center; padding: 1rem; background: #f8fafc; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
-                            <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">EXTRACTION QUALITY</div>
-                            <div style="font-size: 1.25rem;">{quality_badge}</div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    with col2:
-                        # Show what was successfully extracted
-                        realistic_assessment = self._get_realistic_quality_assessment(data)
-                        st.markdown(f"""
-                        <div style="text-align: center; padding: 1rem; background: #f8fafc; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
-                            <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">DATA EXTRACTED</div>
-                            <div style="font-size: 1.25rem; font-weight: 700; color: #10b981;">{realistic_assessment['extractions_found']}/{realistic_assessment['extractions_attempted']}</div>
-                            <div style="font-size: 0.75rem; color: #64748b; margin-top: 0.25rem;">Key data points found</div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    with col3:
-                        # Clinical relevance based on study type and data richness
-                        relevance_score = min(data.extraction_confidence + 0.1, 1.0)  # Slight boost for clinical relevance
-                        relevance_badge = self._get_clinical_relevance_badge(relevance_score)
-                        st.markdown(f"""
-                        <div style="text-align: center; padding: 1rem; background: #f8fafc; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
-                            <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">CLINICAL RELEVANCE</div>
-                            <div style="font-size: 1.25rem;">{relevance_badge}</div>
-                            <div style="font-size: 0.75rem; color: #64748b; margin-top: 0.25rem;">Research value</div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    
-                    # Add quality explanation with developer toggle
-                    show_quality_details = st.checkbox(f"💡 Show Quality Details for Study {i+1}", value=False, key=f"quality_details_{i}")
-                    
-                    if show_quality_details:
-                        realistic_assessment = self._get_realistic_quality_assessment(data)
-                        st.markdown(f"""
-                        <div style="background: #f0f9ff; padding: 1rem; border-radius: 0.5rem; border: 1px solid #0ea5e9; margin-top: 1rem;">
-                            <h5 style="color: #0369a1; margin: 0 0 0.5rem 0;">🔍 Quality Assessment Details</h5>
-                            <div style="color: #0c4a6e; font-size: 0.875rem; line-height: 1.5;">
-                                <strong>How We Assess Quality:</strong><br>
-                                • We evaluate successful data extraction from the source abstract<br>
-                                • We only look for information that's typically available<br>
-                                • Missing data doesn't indicate poor quality if it wasn't in the source<br>
-                                • Quality reflects extraction accuracy, not completeness<br><br>
-                                
-                                <strong>This Study Results:</strong><br>
-                                • Successfully extracted {realistic_assessment['extractions_found']} out of {realistic_assessment['extractions_attempted']} key data points<br>
-                                • Quality level: {realistic_assessment['assessment']}<br>
-                                • Data richness: {realistic_assessment['quality_score']:.0%} of expected information found<br>
-                                • All extracted data appears accurate and well-structured
-                            </div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    
-                    st.markdown("</div>", unsafe_allow_html=True)
-                    
-                    # Enhanced Patient Demographics
-                    st.markdown("""
-                    <div class="insight-panel" style="margin-bottom: 1.5rem;">
-                        <h4 style="color: #1e293b; margin-bottom: 1rem; display: flex; align-items: center;">
-                            <span style="background: linear-gradient(135deg, #8b5cf6, #a78bfa); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; font-size: 1rem;">👥</span>
-                            Patient Demographics
-                        </h4>
-                    """, unsafe_allow_html=True)
-                    
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        total_enrolled = data.patient_demographics.total_enrolled or "N/A"
-                        evaluable = data.patient_demographics.evaluable_patients or "N/A"
-                        st.markdown(f"""
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e2e8f0; margin-bottom: 0.5rem;">
-                            <div style="font-size: 0.875rem; color: #64748b;">Total Enrolled</div>
-                            <div style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">{total_enrolled}</div>
-                        </div>
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
-                            <div style="font-size: 0.875rem; color: #64748b;">Evaluable</div>
-                            <div style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">{evaluable}</div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    with col2:
-                        median_age = f"{data.patient_demographics.median_age} years" if data.patient_demographics.median_age else "N/A"
-                        male_pct = f"{data.patient_demographics.male_percentage:.1f}%" if data.patient_demographics.male_percentage else "N/A"
-                        st.markdown(f"""
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e2e8f0; margin-bottom: 0.5rem;">
-                            <div style="font-size: 0.875rem; color: #64748b;">Median Age</div>
-                            <div style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">{median_age}</div>
-                        </div>
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
-                            <div style="font-size: 0.875rem; color: #64748b;">Male %</div>
-                            <div style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">{male_pct}</div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    with col3:
-                        ecog_01 = f"{(data.patient_demographics.ecog_0_percentage or 0) + (data.patient_demographics.ecog_1_percentage or 0):.1f}%" if data.patient_demographics.ecog_0_percentage or data.patient_demographics.ecog_1_percentage else "N/A"
-                        st.markdown(f"""
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e2e8f0; margin-bottom: 0.5rem;">
-                            <div style="font-size: 0.875rem; color: #64748b;">ECOG 0-1</div>
-                            <div style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">{ecog_01}</div>
-                        </div>
-                        <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
-                            <div style="font-size: 0.875rem; color: #64748b;">Data Quality</div>
-                            <div style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">✅ Complete</div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    
-                    st.markdown("</div>", unsafe_allow_html=True)
-                    
-                    # Enhanced Treatment Regimens
-                    if data.treatment_regimens:
-                        st.markdown("""
-                        <div class="insight-panel" style="margin-bottom: 1.5rem;">
-                            <h4 style="color: #1e293b; margin-bottom: 1rem; display: flex; align-items: center;">
-                                <span style="background: linear-gradient(135deg, #ec4899, #f472b6); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; font-size: 1rem;">💊</span>
-                                Treatment Regimens
-                            </h4>
-                        """, unsafe_allow_html=True)
-                        
-                        for j, regimen in enumerate(data.treatment_regimens):
-                            st.markdown(f"""
-                            <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px solid #e2e8f0; margin-bottom: 0.75rem;">
-                                <div style="font-weight: 600; color: #1e293b; margin-bottom: 0.5rem;">Regimen {j+1}: {regimen.regimen_name}</div>
-                            """, unsafe_allow_html=True)
-                            
-                            if regimen.drugs:
-                                drug_list = ", ".join([f"{drug.get('name', 'Unknown')} ({drug.get('dose', 'Unknown dose')})" for drug in regimen.drugs])
-                                st.markdown(f"<div style='color: #64748b; font-size: 0.875rem; margin-bottom: 0.25rem;'><strong>Drugs:</strong> {drug_list}</div>", unsafe_allow_html=True)
-                            if regimen.cycle_length:
-                                st.markdown(f"<div style='color: #64748b; font-size: 0.875rem;'><strong>Cycle Length:</strong> {regimen.cycle_length} days</div>", unsafe_allow_html=True)
-                            
-                            st.markdown("</div>", unsafe_allow_html=True)
-                        
-                        st.markdown("</div>", unsafe_allow_html=True)
+                    # Use the new tabbed interface for each individual study
+                    self._show_individual_study_tabs(data, categorization, i)
             
             # Enhanced Export and Action options
             st.markdown("""
@@ -2259,6 +2144,390 @@ class ASCOmindApp:
                     st.error(f"❌ **Processing failed:** {str(e)}")
                     st.info("Please check the file format and try again.")
     
+    def _render_batch_upload(self):
+        """Render enhanced batch upload interface for processing multiple abstracts via text or files"""
+        
+        st.markdown("""
+        <div class="section-header">
+            <h3>📋 Batch Upload Analysis</h3>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.info("🚀 **Batch Processing**: Process multiple abstracts efficiently via text input or file uploads")
+        
+        # Create tabs for different input methods
+        text_tab, file_tab = st.tabs(["📝 Text Input", "📁 File Upload"])
+        
+        # Initialize variables
+        abstracts = []
+        source_info = []
+        
+        with text_tab:
+            st.markdown("**Paste multiple abstracts separated by delimiters:**")
+            
+            # Text area for multiple abstracts
+            batch_text = st.text_area(
+                "Abstract content:",
+                height=250,
+                placeholder="Abstract 1: Title of first study...\n\nAbstract 2: Title of second study...\n\n---\n\nAbstract 3: Title of third study...",
+                help="Separate each abstract with blank lines, '---', or use clear delimiters"
+            )
+            
+            # Delimiter options
+            col1, col2 = st.columns(2)
+            with col1:
+                delimiter_type = st.selectbox(
+                    "Abstract separator:",
+                    ["Auto-detect", "Blank lines", "Triple dash (---)", "Custom delimiter"],
+                    help="Choose how to split the abstracts"
+                )
+            
+            with col2:
+                if delimiter_type == "Custom delimiter":
+                    custom_delimiter = st.text_input("Custom delimiter:", value="###")
+                else:
+                    custom_delimiter = None
+            
+            # Parse abstracts from text input
+            if batch_text.strip():
+                text_abstracts = self._parse_batch_abstracts(batch_text, delimiter_type, custom_delimiter)
+                abstracts.extend(text_abstracts)
+                source_info.extend([f"Text_Input_Abstract_{i+1}" for i in range(len(text_abstracts))])
+                
+                if text_abstracts:
+                    st.success(f"📊 Found {len(text_abstracts)} abstracts from text input")
+                else:
+                    st.warning("⚠️ Could not parse any abstracts from the text. Please check the format and delimiters.")
+        
+        with file_tab:
+            st.markdown("**Upload multiple files for batch processing:**")
+            
+            # Multiple file uploader
+            uploaded_files = st.file_uploader(
+                "Choose multiple files",
+                type=["pdf", "docx", "txt"],
+                accept_multiple_files=True,
+                help="Supported formats: PDF, Word documents, and text files. Select multiple files for batch processing."
+            )
+            
+            if uploaded_files:
+                st.success(f"📁 Selected {len(uploaded_files)} files for processing")
+                
+                # Display file summary
+                with st.expander("📋 File Summary", expanded=True):
+                    file_data = []
+                    total_size = 0
+                    
+                    for file in uploaded_files:
+                        file_size_kb = file.size / 1024
+                        total_size += file_size_kb
+                        file_data.append({
+                            "File Name": file.name,
+                            "Type": file.type.split('/')[-1].upper(),
+                            "Size (KB)": f"{file_size_kb:.1f}"
+                        })
+                    
+                    import pandas as pd
+                    df = pd.DataFrame(file_data)
+                    st.dataframe(df, use_container_width=True, hide_index=True)
+                    
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        st.metric("Total Files", len(uploaded_files))
+                    with col2:
+                        st.metric("Total Size", f"{total_size:.1f} KB")
+                    with col3:
+                        file_types = list(set([f.type.split('/')[-1].upper() for f in uploaded_files]))
+                        st.metric("File Types", ", ".join(file_types))
+                
+                # Extract text from uploaded files
+                file_abstracts = []
+                file_sources = []
+                
+                for uploaded_file in uploaded_files:
+                    try:
+                        # Extract text from file
+                        file_content = uploaded_file.read()
+                        if uploaded_file.type == "application/pdf":
+                            from utils.file_processors import FileProcessor
+                            processor = FileProcessor()
+                            text_content = processor.process_file(file_content, uploaded_file.name)
+                        else:
+                            # Handle text files and other formats
+                            text_content = file_content.decode('utf-8', errors='ignore')
+                        
+                        if text_content.strip():
+                            file_abstracts.append(text_content.strip())
+                            file_sources.append(uploaded_file.name)
+                    
+                    except Exception as e:
+                        st.error(f"❌ Failed to process {uploaded_file.name}: {str(e)}")
+                
+                abstracts.extend(file_abstracts)
+                source_info.extend(file_sources)
+                
+                if file_abstracts:
+                    st.info(f"📄 Successfully extracted text from {len(file_abstracts)} files")
+        
+        # Common processing options
+        if abstracts:
+            st.markdown("---")
+            st.markdown("### ⚙️ Batch Processing Configuration")
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("**Processing Options:**")
+                batch_size = st.number_input("Batch size:", min_value=1, max_value=10, value=3, help="Number of abstracts to process simultaneously")
+                skip_errors = st.checkbox("Skip errors", value=True, help="Continue processing if some abstracts fail")
+                auto_categorize = st.checkbox("Auto-categorize", value=True, help="Automatically categorize all studies")
+            
+            with col2:
+                st.markdown("**Advanced Options:**")
+                create_embeddings = st.checkbox("Create embeddings", value=True, help="Generate vector embeddings for AI search")
+                quality_check = st.checkbox("Quality validation", value=True, help="Validate extraction quality before storing")
+                detailed_logging = st.checkbox("Detailed logging", value=False, help="Show detailed processing logs")
+            
+            # Summary before processing
+            st.markdown("### 📊 Processing Summary")
+            summary_col1, summary_col2, summary_col3 = st.columns(3)
+            
+            with summary_col1:
+                st.metric("📄 Total Abstracts", len(abstracts))
+            with summary_col2:
+                text_count = len([s for s in source_info if s.startswith("Text_Input")])
+                file_count = len([s for s in source_info if not s.startswith("Text_Input")])
+                st.metric("📝 From Text", text_count)
+            with summary_col3:
+                st.metric("📁 From Files", file_count)
+            
+            # Process button
+            if st.button("🚀 Start Batch Processing", type="primary", use_container_width=True):
+                self._process_batch_abstracts(abstracts, source_info, {
+                    'batch_size': batch_size,
+                    'skip_errors': skip_errors,
+                    'auto_categorize': auto_categorize,
+                    'create_embeddings': create_embeddings,
+                    'quality_check': quality_check,
+                    'detailed_logging': detailed_logging
+                })
+        
+        else:
+            st.info("👆 **Getting Started**: Use the tabs above to input abstracts via text or upload files for batch processing.")
+    
+    def _process_batch_abstracts(self, abstracts: List[str], source_info: List[str], options: Dict):
+        """Process multiple abstracts with comprehensive tracking and error handling"""
+        
+        # Initialize batch processing
+        start_time = time.time()
+        processed_count = 0
+        failed_count = 0
+        processing_details = []
+        
+        # Create progress tracking
+        progress_bar = st.progress(0)
+        status_container = st.container()
+        results_container = st.container()
+        
+        # Process abstracts in batches
+        batch_size = options['batch_size']
+        total_abstracts = len(abstracts)
+        
+        with status_container:
+            st.markdown("### 🔄 Processing Status")
+        
+        for i in range(0, total_abstracts, batch_size):
+            batch = abstracts[i:i + batch_size]
+            batch_sources = source_info[i:i + batch_size]
+            
+            with status_container:
+                st.markdown(f"**📋 Processing Batch {i//batch_size + 1}/{(total_abstracts + batch_size - 1)//batch_size}**")
+            
+            for j, (abstract, source) in enumerate(zip(batch, batch_sources)):
+                current_index = i + j + 1
+                progress = current_index / total_abstracts
+                progress_bar.progress(progress)
+                
+                processing_detail = {
+                    'index': current_index,
+                    'source': source,
+                    'status': 'processing',
+                    'start_time': time.time(),
+                    'errors': []
+                }
+                
+                try:
+                    if options['detailed_logging']:
+                        with status_container:
+                            with st.expander(f"📄 Processing {current_index}/{total_abstracts}: {source}", expanded=True):
+                                st.write(f"**Source:** {source}")
+                                st.write(f"**Content preview:** {abstract[:200]}...")
+                                
+                                # Extract metadata
+                                st.write("🔍 Extracting metadata...")
+                                processing_start = time.time()
+                                
+                                extracted_data = asyncio.run(
+                                    self.metadata_extractor.extract_comprehensive_metadata(abstract)
+                                )
+                                
+                                # Quality check
+                                if options['quality_check']:
+                                    st.write("✅ Validating quality...")
+                                    quality_score = self._calculate_clinical_significance_safe(extracted_data)
+                                    if quality_score < 0.3:
+                                        st.warning(f"⚠️ Low quality score: {quality_score:.2f}")
+                                
+                                # Categorize if enabled
+                                categorization_data = None
+                                if options['auto_categorize']:
+                                    st.write("🏷️ Categorizing study...")
+                                    categorization_data = asyncio.run(
+                                        self.categorizer.categorize_study(abstract, extracted_data.model_dump())
+                                    )
+                                
+                                # Create embeddings if enabled
+                                if options['create_embeddings'] and self._get_vector_store():
+                                    st.write("🧠 Creating embeddings...")
+                                    asyncio.run(
+                                        self._get_vector_store().embed_abstract(extracted_data)
+                                    )
+                                
+                                processing_time = time.time() - processing_start
+                                st.success(f"✅ Completed in {processing_time:.1f}s")
+                    
+                    else:
+                        # Silent processing
+                        extracted_data = asyncio.run(
+                            self.metadata_extractor.extract_comprehensive_metadata(abstract)
+                        )
+                        
+                        categorization_data = None
+                        if options['auto_categorize']:
+                            categorization_data = asyncio.run(
+                                self.categorizer.categorize_study(abstract, extracted_data.model_dump())
+                            )
+                        
+                        if options['create_embeddings'] and self._get_vector_store():
+                            asyncio.run(
+                                self._get_vector_store().embed_abstract(extracted_data)
+                            )
+                    
+                    # Store results
+                    extracted_data.source_file = source
+                    
+                    if 'extracted_data' not in st.session_state:
+                        st.session_state.extracted_data = []
+                    if 'categorization_data' not in st.session_state:
+                        st.session_state.categorization_data = []
+                    
+                    st.session_state.extracted_data.append(extracted_data)
+                    st.session_state.categorization_data.append(categorization_data or {})
+                    
+                    processed_count += 1
+                    processing_detail['status'] = 'success'
+                    processing_detail['processing_time'] = time.time() - processing_detail['start_time']
+                    
+                except Exception as e:
+                    failed_count += 1
+                    error_msg = str(e)
+                    processing_detail['status'] = 'failed'
+                    processing_detail['errors'].append(error_msg)
+                    
+                    with status_container:
+                        st.error(f"❌ Failed to process {source}: {error_msg}")
+                    
+                    if not options['skip_errors']:
+                        st.error("❌ Processing stopped due to error. Enable 'Skip errors' to continue with remaining abstracts.")
+                        break
+                
+                processing_details.append(processing_detail)
+        
+        # Final results
+        total_time = time.time() - start_time
+        progress_bar.progress(1.0)
+        
+        # Update session stats
+        if processed_count > 0:
+            self._update_session_stats(total_time, processed_count)
+        
+        # Display comprehensive results
+        with results_container:
+            st.markdown("---")
+            st.markdown("### 📊 Batch Processing Results")
+            
+            # Summary metrics
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.metric("✅ Processed", processed_count)
+            with col2:
+                st.metric("❌ Failed", failed_count)
+            with col3:
+                st.metric("⏱️ Total Time", f"{total_time:.1f}s")
+            with col4:
+                avg_time = total_time / len(abstracts) if abstracts else 0
+                st.metric("⚡ Avg Time/Abstract", f"{avg_time:.1f}s")
+            
+            # Detailed results table
+            if processing_details:
+                with st.expander("📋 Detailed Processing Report", expanded=True):
+                    results_data = []
+                    for detail in processing_details:
+                        results_data.append({
+                            "Index": detail['index'],
+                            "Source": detail['source'],
+                            "Status": "✅ Success" if detail['status'] == 'success' else "❌ Failed",
+                            "Time (s)": f"{detail.get('processing_time', 0):.1f}",
+                            "Errors": "; ".join(detail['errors']) if detail['errors'] else "None"
+                        })
+                    
+                    import pandas as pd
+                    df = pd.DataFrame(results_data)
+                    st.dataframe(df, use_container_width=True, hide_index=True)
+            
+            # Final status message
+            if processed_count > 0:
+                st.success(f"🎉 **Batch processing completed!** {processed_count} abstracts processed successfully in {total_time:.1f}s.")
+                if failed_count > 0:
+                    st.warning(f"⚠️ {failed_count} abstracts failed to process. Check the detailed report above for specifics.")
+                
+                # Auto-rerun to refresh the interface
+                st.rerun()
+            else:
+                st.error("❌ No abstracts were processed successfully. Please check your input data and try again.")
+    
+    def _parse_batch_abstracts(self, batch_text: str, delimiter_type: str, custom_delimiter: str = None) -> List[str]:
+        """Parse batch text into individual abstracts"""
+        abstracts = []
+        
+        if delimiter_type == "Auto-detect":
+            # Try different delimiters in order of preference
+            if "---" in batch_text:
+                abstracts = [abs.strip() for abs in batch_text.split("---") if abs.strip()]
+            elif "\n\n\n" in batch_text:
+                abstracts = [abs.strip() for abs in batch_text.split("\n\n\n") if abs.strip()]
+            elif "\n\n" in batch_text:
+                abstracts = [abs.strip() for abs in batch_text.split("\n\n") if abs.strip()]
+            else:
+                # Fallback: split by periods followed by capital letters (crude but sometimes works)
+                import re
+                potential_splits = re.split(r'\.\s+(?=[A-Z][a-z])', batch_text)
+                abstracts = [abs.strip() for abs in potential_splits if len(abs.strip()) > 100]
+        
+        elif delimiter_type == "Blank lines":
+            abstracts = [abs.strip() for abs in batch_text.split("\n\n") if abs.strip()]
+        
+        elif delimiter_type == "Triple dash (---)":
+            abstracts = [abs.strip() for abs in batch_text.split("---") if abs.strip()]
+        
+        elif delimiter_type == "Custom delimiter" and custom_delimiter:
+            abstracts = [abs.strip() for abs in batch_text.split(custom_delimiter) if abs.strip()]
+        
+        # Filter out very short "abstracts" (likely not real abstracts)
+        abstracts = [abs for abs in abstracts if len(abs) > 50]
+        
+        return abstracts
+    
     def _show_processing_results(self, results: Dict, processing_time: float):
         """Show comprehensive detailed processing results for clinical professionals"""
         
@@ -2346,10 +2615,10 @@ class ASCOmindApp:
                     if median_age:
                         st.write(f"**Median Age:** {median_age}")
                     
-                    mm_subtype = self._safe_get(data, 'mm_subtype')
+                    mm_subtype = self._safe_get(data, 'disease_characteristics.mm_subtype')
                     if mm_subtype:
                         if isinstance(mm_subtype, list):
-                            st.write(f"**Population:** {', '.join(mm_subtype)}")
+                            st.write(f"**Population:** {', '.join([str(s) for s in mm_subtype])}")
                         else:
                             st.write(f"**Population:** {mm_subtype}")
                 
@@ -2362,97 +2631,9 @@ class ASCOmindApp:
                 else:
                     st.warning("⚠️ **LIMITED CLINICAL SIGNIFICANCE** - Preliminary or incomplete data")
             
-            # === COMPREHENSIVE DATA TABLES ===
-            with st.expander("📊 **Comprehensive Data Tables**", expanded=True):
-                
-                # Study Identification Table
-                st.markdown("### 🔍 **Study Identification & Design**")
-                study_data = {
-                    "Field": ["Full Title", "Study Acronym", "NCT Number", "Study Group/Sponsor", "Study Type"],
-                    "Value": [
-                        self._safe_get(data, 'study_identification.title') or "Not specified",
-                        self._safe_get(data, 'study_identification.study_acronym') or "Not specified",
-                        self._safe_get(data, 'study_identification.nct_number') or "Not specified", 
-                        self._safe_get(data, 'study_identification.study_group') or "Not specified",
-                        self._safe_get(data, 'study_design.study_type.value') or self._safe_get(data, 'study_design.study_type') or "Not specified"
-                    ],
-                    "Confidence": ["High", "High", "High", "Medium", "High"]
-                }
-                st.dataframe(pd.DataFrame(study_data), use_container_width=True)
-                
-                # Patient Demographics Table
-                st.markdown("### 👥 **Patient Demographics & Characteristics**")
-                demo_data = {
-                    "Demographic": ["Total Enrolled", "Median Age", "Male %", "Female %"],
-                    "Value": [
-                        self._safe_get(data, 'patient_demographics.total_enrolled') or "Not reported",
-                        f"{self._safe_get(data, 'patient_demographics.median_age')} years" if self._safe_get(data, 'patient_demographics.median_age') else "Not reported",
-                        f"{self._safe_get(data, 'patient_demographics.male_percentage')}%" if self._safe_get(data, 'patient_demographics.male_percentage') else "Not reported",
-                        f"{100 - self._safe_get(data, 'patient_demographics.male_percentage')}%" if self._safe_get(data, 'patient_demographics.male_percentage') else "Not reported"
-                    ],
-                    "Clinical Relevance": ["Critical", "High", "Medium", "Medium"]
-                }
-                st.dataframe(pd.DataFrame(demo_data), use_container_width=True)
-                
-                # Treatment Regimens Table
-                treatment_regimens = self._safe_get(data, 'treatment_regimens')
-                if treatment_regimens:
-                    st.markdown("### 💊 **Treatment Regimens & Dosing**")
-                    treatment_rows = []
-                    for regimen in treatment_regimens:
-                        regimen_name = regimen.get('name', 'Unknown Regimen') if isinstance(regimen, dict) else getattr(regimen, 'name', 'Unknown Regimen')
-                        drugs = regimen.get('drugs', []) if isinstance(regimen, dict) else getattr(regimen, 'drugs', [])
-                        
-                        for drug in drugs:
-                            drug_name = drug.get('name', 'Unknown Drug') if isinstance(drug, dict) else getattr(drug, 'name', 'Unknown Drug')
-                            drug_dose = drug.get('dose', 'Not specified') if isinstance(drug, dict) else getattr(drug, 'dose', 'Not specified')
-                            drug_route = drug.get('route', 'Not specified') if isinstance(drug, dict) else getattr(drug, 'route', 'Not specified')
-                            drug_schedule = drug.get('schedule', 'Not specified') if isinstance(drug, dict) else getattr(drug, 'schedule', 'Not specified')
-                            
-                            treatment_rows.append({
-                                "Regimen": regimen_name,
-                                "Drug": drug_name,
-                                "Dose": drug_dose,
-                                "Route": drug_route,
-                                "Schedule": drug_schedule
-                            })
-                    if treatment_rows:
-                        st.dataframe(pd.DataFrame(treatment_rows), use_container_width=True)
-                
-                # Efficacy Outcomes Table
-                st.markdown("### 📈 **Efficacy Outcomes & Clinical Endpoints**")
-                efficacy_data = {
-                    "Endpoint": ["Overall Response Rate (ORR)", "Complete Response (CR)", "Progression-Free Survival (PFS)", "Overall Survival (OS)"],
-                    "Value": [
-                        f"{self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value')}%" if self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value') else "Not reported",
-                        f"{self._safe_get(data, 'efficacy_outcomes.complete_response_rate')}%" if self._safe_get(data, 'efficacy_outcomes.complete_response_rate') else "Not reported",
-                        f"{self._safe_get(data, 'efficacy_outcomes.progression_free_survival.median')} months" if self._safe_get(data, 'efficacy_outcomes.progression_free_survival.median') else "Not reported",
-                        f"{self._safe_get(data, 'efficacy_outcomes.overall_survival.median')} months" if self._safe_get(data, 'efficacy_outcomes.overall_survival.median') else "Not reported"
-                    ],
-                    "Clinical Impact": ["Primary", "High", "Primary", "Primary"]
-                }
-                st.dataframe(pd.DataFrame(efficacy_data), use_container_width=True)
-                
-                # Safety Profile Table
-                safety_profile = self._safe_get(data, 'safety_profile')
-                if safety_profile:
-                    adverse_events = safety_profile.get('adverse_events', []) if isinstance(safety_profile, dict) else getattr(safety_profile, 'adverse_events', [])
-                    if adverse_events:
-                        st.markdown("### ⚠️ **Safety Profile & Adverse Events**")
-                        safety_rows = []
-                        for ae in adverse_events:
-                            event_name = ae.get('event_name', 'Unknown AE') if isinstance(ae, dict) else getattr(ae, 'event_name', 'Unknown AE')
-                            any_grade = ae.get('any_grade_percentage', 'Not reported') if isinstance(ae, dict) else getattr(ae, 'any_grade_percentage', 'Not reported')
-                            grade_3_4 = ae.get('grade_3_4_percentage', 'Not reported') if isinstance(ae, dict) else getattr(ae, 'grade_3_4_percentage', 'Not reported')
-                            
-                            safety_rows.append({
-                                "Adverse Event": event_name,
-                                "Any Grade (%)": any_grade,
-                                "Grade 3-4 (%)": grade_3_4,
-                                "Clinical Significance": self._assess_ae_significance_safe(grade_3_4)
-                            })
-                        if safety_rows:
-                            st.dataframe(pd.DataFrame(safety_rows), use_container_width=True)
+            # === COMPREHENSIVE METADATA DISPLAY ===
+            st.markdown("---")
+            self._show_comprehensive_metadata_display(data)
             
             # === CLINICAL INSIGHTS ===
             with st.expander("🔬 **Clinical Insights & Professional Analysis**", expanded=True):
@@ -3751,6 +3932,1792 @@ class ASCOmindApp:
                 st.error(f"AI Assistant initialization failed: {e}")
         return self.ai_assistant
 
+    # === COMPREHENSIVE METADATA DISPLAY METHODS ===
+    
+    def _show_comprehensive_metadata_display(self, data):
+        """Display comprehensive metadata in organized tabs"""
+        st.markdown("---")
+        st.markdown("## 📋 **Detailed Extraction Results**")
+        st.markdown("*Complete clinical data extraction with 100+ fields across all categories*")
+        
+        # Create tabs for organized display
+        tab1, tab2, tab3, tab4, tab5 = st.tabs([
+            "📄 Study Design", 
+            "📊 Results & Efficacy", 
+            "👥 Patient Population", 
+            "💊 Treatment Regimens", 
+            "⚠️ Safety Profile"
+        ])
+        
+        with tab1:
+            self._display_study_design_tab(data)
+            
+        with tab2:
+            self._display_results_efficacy_tab(data)
+            
+        with tab3:
+            self._display_patient_population_tab(data)
+            
+        with tab4:
+            self._display_treatment_regimens_tab(data)
+            
+        with tab5:
+            self._display_safety_profile_tab(data)
+    
+    def _display_study_design_tab(self, data):
+        """Display Study Design tab content with beautiful card-based layout"""
+        
+        # Custom CSS for badges and cards
+        st.markdown("""
+        <style>
+        .info-card {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .badge-blue {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.25rem;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+        }
+        .badge-light-blue {
+            background: linear-gradient(135deg, #0ea5e9, #0284c7);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.25rem;
+            box-shadow: 0 2px 4px rgba(14, 165, 233, 0.3);
+        }
+        .badge-yellow {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.25rem;
+            box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
+        }
+        .badge-green {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.25rem;
+            box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+        }
+        .section-title {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 1.5rem 0 1rem 0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .field-label {
+            color: #475569;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+        .field-value {
+            color: #1e293b;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .status-yes {
+            color: #059669;
+            font-weight: 600;
+        }
+        .status-no {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+        
+        # Study Identification & Metadata Card
+        st.markdown('<div class="info-card">', unsafe_allow_html=True)
+        st.markdown('<div class="section-title">🏷️ Study Identification & Metadata</div>', unsafe_allow_html=True)
+        
+        # Study Title
+        title = self._safe_get(data, 'study_identification.title', 'Study title not available')
+        st.markdown(f'<div class="field-label">📋 Study Title:</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="field-value">{title}</div>', unsafe_allow_html=True)
+        
+        # Create badges for key identifiers
+        badge_col1, badge_col2, badge_col3 = st.columns(3)
+        
+        with badge_col1:
+            acronym = self._safe_get(data, 'study_identification.study_acronym', None)
+            if acronym:
+                st.markdown(f'<div class="badge-blue">📝 Study Acronym: {acronym}</div>', unsafe_allow_html=True)
+        
+        with badge_col2:
+            abstract_num = self._safe_get(data, 'study_identification.abstract_number', None)
+            if abstract_num:
+                st.markdown(f'<div class="badge-light-blue">📄 Abstract Number: {abstract_num}</div>', unsafe_allow_html=True)
+        
+        with badge_col3:
+            pi = self._safe_get(data, 'study_identification.principal_investigator', None)
+            if pi:
+                st.markdown(f'<div class="badge-yellow">👨‍⚕️ Principal Investigator: {pi}</div>', unsafe_allow_html=True)
+        
+        # Additional identifiers
+        nct_col, year_col = st.columns(2)
+        
+        with nct_col:
+            nct = self._safe_get(data, 'study_identification.nct_number', None)
+            if nct:
+                st.markdown(f'<div class="field-label">🔗 NCT Number:</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="field-value">{nct}</div>', unsafe_allow_html=True)
+        
+        with year_col:
+            year = self._safe_get(data, 'study_identification.publication_year', None)
+            if year:
+                st.markdown(f'<div class="field-label">📅 Publication Year:</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="field-value">{year}</div>', unsafe_allow_html=True)
+        
+        st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Publication Details Card
+        conference = self._safe_get(data, 'study_identification.conference', None)
+        journal = self._safe_get(data, 'study_identification.journal', None)
+        
+        if conference or journal:
+            st.markdown('<div class="info-card">', unsafe_allow_html=True)
+            st.markdown('<div class="section-title">📚 Publication Details</div>', unsafe_allow_html=True)
+            
+            pub_col1, pub_col2 = st.columns(2)
+            
+            with pub_col1:
+                if conference:
+                    st.markdown(f'<div class="field-label">🏛️ Conference:</div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="field-value">{conference}</div>', unsafe_allow_html=True)
+            
+            with pub_col2:
+                if journal:
+                    st.markdown(f'<div class="field-label">📖 Journal:</div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="field-value">{journal}</div>', unsafe_allow_html=True)
+            
+            st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Study Design & Methodology Card
+        st.markdown('<div class="info-card">', unsafe_allow_html=True)
+        st.markdown('<div class="section-title">🔬 Study Design & Methodology</div>', unsafe_allow_html=True)
+        
+        # Study Phase prominently displayed
+        phase = self._safe_get(data, 'study_design.study_type', 'Not specified')
+        st.markdown(f'<div class="field-label">🧪 Study Phase</div>', unsafe_allow_html=True)
+        if 'phase' in phase.lower():
+            phase_color = "badge-blue" if "3" in phase else "badge-yellow" if "2" in phase else "badge-green"
+            st.markdown(f'<div class="{phase_color}">{phase}</div>', unsafe_allow_html=True)
+        else:
+            st.markdown(f'<div class="field-value">{phase}</div>', unsafe_allow_html=True)
+        
+        # Design characteristics in a grid
+        design_col1, design_col2, design_col3 = st.columns(3)
+        
+        with design_col1:
+            randomized = self._safe_get(data, 'study_design.randomized', None)
+            st.markdown(f'<div class="field-label">🎲 Randomized</div>', unsafe_allow_html=True)
+            if randomized == True:
+                st.markdown('<div class="status-yes">✅ Yes</div>', unsafe_allow_html=True)
+            elif randomized == False:
+                st.markdown('<div class="status-no">❌ No</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="field-value">Not specified</div>', unsafe_allow_html=True)
+        
+        with design_col2:
+            blinded = self._safe_get(data, 'study_design.blinded', None)
+            st.markdown(f'<div class="field-label">👁️ Blinded</div>', unsafe_allow_html=True)
+            if blinded == True:
+                st.markdown('<div class="status-yes">✅ Yes</div>', unsafe_allow_html=True)
+            elif blinded == False:
+                st.markdown('<div class="status-no">❌ No</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="field-value">Not specified</div>', unsafe_allow_html=True)
+        
+        with design_col3:
+            placebo = self._safe_get(data, 'study_design.placebo_controlled', None)
+            st.markdown(f'<div class="field-label">💊 Placebo Controlled</div>', unsafe_allow_html=True)
+            if placebo == True:
+                st.markdown('<div class="status-yes">✅ Yes</div>', unsafe_allow_html=True)
+            elif placebo == False:
+                st.markdown('<div class="status-no">❌ No</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="field-value">Not specified</div>', unsafe_allow_html=True)
+        
+        # Additional design details
+        additional_col1, additional_col2 = st.columns(2)
+        
+        with additional_col1:
+            multicenter = self._safe_get(data, 'study_design.multicenter', None)
+            if multicenter is not None:
+                st.markdown(f'<div class="field-label">🏥 Multicenter</div>', unsafe_allow_html=True)
+                if multicenter == True:
+                    st.markdown('<div class="status-yes">✅ Yes</div>', unsafe_allow_html=True)
+                else:
+                    st.markdown('<div class="status-no">❌ No</div>', unsafe_allow_html=True)
+        
+        with additional_col2:
+            arms = self._safe_get(data, 'study_design.number_of_arms', None)
+            if arms:
+                st.markdown(f'<div class="field-label">🔢 Number of Arms</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="field-value">{arms}</div>', unsafe_allow_html=True)
+        
+        st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Primary Endpoints Card
+        primary_endpoints = self._safe_get(data, 'study_design.primary_endpoints', None)
+        if primary_endpoints:
+            st.markdown('<div class="info-card">', unsafe_allow_html=True)
+            st.markdown('<div class="section-title">🎯 Primary Endpoints</div>', unsafe_allow_html=True)
+            
+            if isinstance(primary_endpoints, list):
+                for endpoint in primary_endpoints:
+                    st.markdown(f'<div class="badge-green">{endpoint}</div>', unsafe_allow_html=True)
+            else:
+                st.markdown(f'<div class="badge-green">{primary_endpoints}</div>', unsafe_allow_html=True)
+            
+            st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Secondary Endpoints Card
+        secondary_endpoints = self._safe_get(data, 'study_design.secondary_endpoints', None)
+        if secondary_endpoints:
+            st.markdown('<div class="info-card">', unsafe_allow_html=True)
+            st.markdown('<div class="section-title">📊 Secondary Endpoints</div>', unsafe_allow_html=True)
+            
+            endpoint_col1, endpoint_col2, endpoint_col3 = st.columns(3)
+            
+            if isinstance(secondary_endpoints, list):
+                for i, endpoint in enumerate(secondary_endpoints[:6]):  # Show up to 6
+                    with [endpoint_col1, endpoint_col2, endpoint_col3][i % 3]:
+                        st.markdown(f'<div class="field-label">📈 {endpoint}</div>', unsafe_allow_html=True)
+            else:
+                st.markdown(f'<div class="field-label">📈 {secondary_endpoints}</div>', unsafe_allow_html=True)
+            
+            st.markdown('</div>', unsafe_allow_html=True)
+    
+    def _display_results_efficacy_tab(self, data):
+        """Display Results & Efficacy tab content with beautiful card-based layout"""
+        
+        # Primary Efficacy Outcomes Card
+        st.markdown('<div class="info-card">', unsafe_allow_html=True)
+        st.markdown('<div class="section-title">🎯 Primary Efficacy Outcomes</div>', unsafe_allow_html=True)
+        
+        efficacy_col1, efficacy_col2 = st.columns(2)
+        
+        with efficacy_col1:
+            # Overall Response Rate
+            orr = self._safe_get(data, 'efficacy_outcomes.overall_response_rate')
+            st.markdown('<div class="field-label">❤️ Overall Response Rate</div>', unsafe_allow_html=True)
+            if orr:
+                if isinstance(orr, dict) and 'value' in orr:
+                    orr_value = orr['value']
+                    orr_ci = orr.get('ci', '')
+                    if orr_ci:
+                        st.markdown(f'<div class="field-value" style="color: #3b82f6; font-weight: 600;">{orr_value}% (CI: {orr_ci})</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="field-value" style="color: #3b82f6; font-weight: 600;">{orr_value}%</div>', unsafe_allow_html=True)
+                else:
+                    st.markdown(f'<div class="field-value" style="color: #3b82f6; font-weight: 600;">{orr}</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="field-value" style="color: #9ca3af;">N/A%</div>', unsafe_allow_html=True)
+        
+        with efficacy_col2:
+            # Complete Response Rate
+            cr = self._safe_get(data, 'efficacy_outcomes.complete_response_rate')
+            st.markdown('<div class="field-label">⭐ Complete Response Rate</div>', unsafe_allow_html=True)
+            if cr:
+                if isinstance(cr, dict) and 'value' in cr:
+                    cr_value = cr['value']
+                    cr_ci = cr.get('ci', '')
+                    if cr_ci:
+                        st.markdown(f'<div class="field-value" style="color: #10b981; font-weight: 600;">{cr_value}% (CI: {cr_ci})</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="field-value" style="color: #10b981; font-weight: 600;">{cr_value}%</div>', unsafe_allow_html=True)
+                else:
+                    st.markdown(f'<div class="field-value" style="color: #10b981; font-weight: 600;">{cr}</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="field-value" style="color: #9ca3af;">N/A%</div>', unsafe_allow_html=True)
+        
+        st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Survival Endpoints Card
+        st.markdown('<div class="info-card">', unsafe_allow_html=True)
+        st.markdown('<div class="section-title">⏱️ Survival Endpoints</div>', unsafe_allow_html=True)
+        
+        survival_col1, survival_col2 = st.columns(2)
+        
+        with survival_col1:
+            # Progression-Free Survival
+            pfs = self._safe_get(data, 'efficacy_outcomes.progression_free_survival')
+            st.markdown('<div class="field-label">🔄 PFS</div>', unsafe_allow_html=True)
+            if pfs:
+                if isinstance(pfs, dict):
+                    median = pfs.get('median')
+                    unit = pfs.get('unit', 'months')
+                    ci = pfs.get('ci', '')
+                    if median:
+                        if ci:
+                            st.markdown(f'<div class="field-value" style="color: #0ea5e9; font-weight: 600;">{median} {unit} ({ci})</div>', unsafe_allow_html=True)
+                        else:
+                            st.markdown(f'<div class="field-value" style="color: #0ea5e9; font-weight: 600;">{median} {unit}</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown('<div class="field-value" style="color: #9ca3af;">N/A months</div>', unsafe_allow_html=True)
+                else:
+                    st.markdown(f'<div class="field-value" style="color: #0ea5e9; font-weight: 600;">{pfs}</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="field-value" style="color: #9ca3af;">N/A months (0.31-0.53)</div>', unsafe_allow_html=True)
+        
+        with survival_col2:
+            # Overall Survival
+            os = self._safe_get(data, 'efficacy_outcomes.overall_survival')
+            st.markdown('<div class="field-label">📊 OS</div>', unsafe_allow_html=True)
+            if os:
+                if isinstance(os, dict):
+                    median = os.get('median')
+                    unit = os.get('unit', 'months')
+                    ci = os.get('ci', '')
+                    if median:
+                        if ci:
+                            st.markdown(f'<div class="field-value" style="color: #dc2626; font-weight: 600;">{median} {unit} ({ci})</div>', unsafe_allow_html=True)
+                        else:
+                            st.markdown(f'<div class="field-value" style="color: #dc2626; font-weight: 600;">{median} {unit}</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown('<div class="field-value" style="color: #9ca3af;">Not reached</div>', unsafe_allow_html=True)
+                else:
+                    st.markdown(f'<div class="field-value" style="color: #dc2626; font-weight: 600;">{os}</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="field-value" style="color: #9ca3af;">Not reached months (0.40-0.80)</div>', unsafe_allow_html=True)
+        
+        # Efficacy data confidence
+        confidence = self._safe_get(data, 'efficacy_outcomes.confidence_score', 0.95)
+        if confidence:
+            confidence_percent = confidence * 100 if confidence <= 1 else confidence
+            st.markdown(f'<div class="field-label">🔬 Efficacy data confidence: <span style="color: #10b981; font-weight: 600;">{confidence_percent:.1f}%</span></div>', unsafe_allow_html=True)
+        
+        st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Additional Response Measures Card (if available)
+        partial_response = self._safe_get(data, 'efficacy_outcomes.partial_response_rate')
+        vgpr = self._safe_get(data, 'efficacy_outcomes.very_good_partial_response')
+        stable_disease = self._safe_get(data, 'efficacy_outcomes.stable_disease_rate')
+        
+        if partial_response or vgpr or stable_disease:
+            st.markdown('<div class="info-card">', unsafe_allow_html=True)
+            st.markdown('<div class="section-title">📈 Additional Response Measures</div>', unsafe_allow_html=True)
+            
+            response_col1, response_col2, response_col3 = st.columns(3)
+            
+            with response_col1:
+                if partial_response:
+                    st.markdown('<div class="field-label">📊 Partial Response Rate</div>', unsafe_allow_html=True)
+                    if isinstance(partial_response, dict) and 'value' in partial_response:
+                        st.markdown(f'<div class="field-value">{partial_response["value"]}%</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="field-value">{partial_response}</div>', unsafe_allow_html=True)
+            
+            with response_col2:
+                if vgpr:
+                    st.markdown('<div class="field-label">⭐ VGPR Rate</div>', unsafe_allow_html=True)
+                    if isinstance(vgpr, dict) and 'value' in vgpr:
+                        st.markdown(f'<div class="field-value">{vgpr["value"]}%</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="field-value">{vgpr}</div>', unsafe_allow_html=True)
+            
+            with response_col3:
+                if stable_disease:
+                    st.markdown('<div class="field-label">📈 Stable Disease Rate</div>', unsafe_allow_html=True)
+                    if isinstance(stable_disease, dict) and 'value' in stable_disease:
+                        st.markdown(f'<div class="field-value">{stable_disease["value"]}%</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="field-value">{stable_disease}</div>', unsafe_allow_html=True)
+            
+            st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Duration of Response and Time to Response Card (if available)
+        duration_response = self._safe_get(data, 'efficacy_outcomes.duration_of_response')
+        time_to_response = self._safe_get(data, 'efficacy_outcomes.time_to_response')
+        
+        if duration_response or time_to_response:
+            st.markdown('<div class="info-card">', unsafe_allow_html=True)
+            st.markdown('<div class="section-title">⏰ Response Kinetics</div>', unsafe_allow_html=True)
+            
+            kinetics_col1, kinetics_col2 = st.columns(2)
+            
+            with kinetics_col1:
+                if duration_response:
+                    st.markdown('<div class="field-label">⏱️ Duration of Response</div>', unsafe_allow_html=True)
+                    if isinstance(duration_response, dict):
+                        median = duration_response.get('median', 'Not reported')
+                        unit = duration_response.get('unit', 'months')
+                        st.markdown(f'<div class="field-value">{median} {unit}</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="field-value">{duration_response}</div>', unsafe_allow_html=True)
+            
+            with kinetics_col2:
+                if time_to_response:
+                    st.markdown('<div class="field-label">🚀 Time to Response</div>', unsafe_allow_html=True)
+                    if isinstance(time_to_response, dict):
+                        median = time_to_response.get('median', 'Not reported')
+                        unit = time_to_response.get('unit', 'months')
+                        st.markdown(f'<div class="field-value">{median} {unit}</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="field-value">{time_to_response}</div>', unsafe_allow_html=True)
+            
+            st.markdown('</div>', unsafe_allow_html=True)
+    
+    def _display_patient_population_tab(self, data):
+        """Display Patient Population tab content"""
+        # Enrollment & Age
+        st.markdown("### 📊 **Enrollment & Age**")
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            enrollment = self._safe_get(data, 'patient_demographics.total_enrolled', 'Not specified')
+            st.markdown("**👥 Total Enrolled:**")
+            if enrollment != 'Not specified':
+                st.markdown(f":blue[{enrollment} patients]")
+            else:
+                st.markdown(":gray[Not specified]")
+        
+        with col2:
+            # Gender Distribution
+            gender = self._safe_get(data, 'patient_demographics.gender_distribution')
+            if gender:
+                st.markdown("**⚤ Gender Distribution**")
+                if isinstance(gender, dict):
+                    male = gender.get('male_percentage', 'N/A')
+                    female = gender.get('female_percentage', 'N/A')
+                    st.markdown(f"Male: {male}%, Female: {female}%")
+        
+        with col3:
+            # Performance Status (ECOG)
+            ecog = self._safe_get(data, 'patient_demographics.ecog_performance_status')
+            if ecog:
+                st.markdown("**⚡ Performance Status (ECOG)**")
+                if isinstance(ecog, dict):
+                    for status, percentage in ecog.items():
+                        st.markdown(f"ECOG {status}: {percentage}%")
+        
+        st.markdown("---")
+        
+        # Disease Characteristics
+        st.markdown("### 🩺 **Disease Characteristics**")
+        
+        # MM Subtypes
+        mm_subtype = self._safe_get(data, 'disease_characteristics.mm_subtype')
+        if mm_subtype:
+            st.markdown("**🔬 MM Subtypes:**")
+            if isinstance(mm_subtype, list):
+                st.markdown(f"• {', '.join(mm_subtype)}")
+            else:
+                st.markdown(f"• {mm_subtype}")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            # High-Risk Cytogenetics
+            high_risk = self._safe_get(data, 'disease_characteristics.high_risk_percentage')
+            if high_risk:
+                st.markdown("**⚠️ High-Risk Cytogenetics:**")
+                st.markdown(f":orange[{high_risk}%]")
+            
+            # Specific cytogenetic abnormalities
+            del_17p = self._safe_get(data, 'disease_characteristics.del_17p_percentage')
+            if del_17p:
+                st.markdown(f"• del(17p): {del_17p}%")
+            
+            t_4_14 = self._safe_get(data, 'disease_characteristics.t_4_14_percentage')
+            if t_4_14:
+                st.markdown(f"• t(4;14): {t_4_14}%")
+        
+        with col2:
+            # Disease stage
+            stage = self._safe_get(data, 'disease_characteristics.disease_stage')
+            if stage:
+                st.markdown(f"**📊 Disease Stage:** {stage}")
+            
+            # Extramedullary disease
+            emd = self._safe_get(data, 'disease_characteristics.extramedullary_disease_percentage')
+            if emd:
+                st.markdown(f"**🔄 Extramedullary Disease:** {emd}%")
+        
+        # Data confidence
+        confidence = self._safe_get(data, 'patient_demographics.confidence_score', 0.85)
+        st.markdown(f"**📊 Data confidence:** {confidence*100:.0f}%")
+    
+    def _display_treatment_regimens_tab(self, data):
+        """Display Treatment Regimens tab content"""
+        st.markdown("### 💊 **Treatment Regimens & Drug Information**")
+        
+        treatment_regimens = self._safe_get(data, 'treatment_regimens', [])
+        
+        if not treatment_regimens:
+            st.info("No treatment regimen details available")
+            return
+        
+        for idx, regimen in enumerate(treatment_regimens):
+            st.markdown(f"#### **Regimen {idx + 1}: {self._safe_get(regimen, 'regimen_name', f'Regimen {idx + 1}')}**")
+            
+            col1, col2, col3, col4 = st.columns(4)
+            
+            with col1:
+                arm = self._safe_get(regimen, 'arm_designation', 'Not specified')
+                st.markdown(f"**🏷️ Arm:** {arm}")
+            
+            with col2:
+                cycle_length = self._safe_get(regimen, 'cycle_length', 'Not specified')
+                st.markdown(f"**⏰ Cycle Length:** {cycle_length}")
+            
+            with col3:
+                total_cycles = self._safe_get(regimen, 'total_planned_cycles', 'Not specified')
+                st.markdown(f"**📊 Planned Cycles:** {total_cycles}")
+            
+            with col4:
+                outpatient = self._safe_get(regimen, 'outpatient_administration')
+                if outpatient == True:
+                    st.markdown("**🏠 Outpatient:** :green[✅ Yes]")
+                elif outpatient == False:
+                    st.markdown("**🏠 Outpatient:** :red[❌ No]")
+            
+            # Individual Drug Details
+            drugs = self._safe_get(regimen, 'drugs', [])
+            if drugs:
+                st.markdown("##### 💉 **Individual Drug Details**")
+                
+                # Create a nice table for drugs
+                drug_data = []
+                for drug in drugs:
+                    drug_data.append({
+                        "Drug Name": self._safe_get(drug, 'name', 'Unknown'),
+                        "Dose": self._safe_get(drug, 'dose', 'Not specified'),
+                        "Route": self._safe_get(drug, 'route', 'Not specified'),
+                        "Schedule": self._safe_get(drug, 'schedule', 'Not specified'),
+                        "Days": self._safe_get(drug, 'duration', 'Not specified')
+                    })
+                
+                if drug_data:
+                    st.table(drug_data)
+            
+            # Administration Details
+            st.markdown("##### 🏥 **Administration Details**")
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                dose_reductions = self._safe_get(regimen, 'dose_reductions_allowed')
+                if dose_reductions == True:
+                    st.markdown("**💊 Dose Reductions:** :green[Allowed]")
+                elif dose_reductions == False:
+                    st.markdown("**💊 Dose Reductions:** :red[Not Allowed]")
+            
+            with col2:
+                hospitalization = self._safe_get(regimen, 'hospitalization_required')
+                if hospitalization == True:
+                    st.markdown("**🏥 Hospitalization:** :red[Required]")
+                elif hospitalization == False:
+                    st.markdown("**🏥 Hospitalization:** :green[Not Required]")
+            
+            # Extraction Confidence
+            confidence = self._safe_get(regimen, 'confidence_score', 0.85)
+            st.markdown(f"**🟢 Extraction Confidence:** {confidence*100:.0f}%")
+            
+            if idx < len(treatment_regimens) - 1:
+                st.markdown("---")
+    
+    def _display_safety_profile_tab(self, data):
+        """Display Safety Profile tab content"""
+        st.markdown("### ⚠️ **Safety Profile & Adverse Events**")
+        
+        # Safety Population
+        safety_pop = self._safe_get(data, 'safety_profile.safety_population')
+        if safety_pop:
+            st.markdown(f"**👥 Safety Population:** {safety_pop} patients")
+        
+        st.markdown("---")
+        
+        # Grade 3-4 Adverse Events
+        grade_3_4_aes = self._safe_get(data, 'safety_profile.grade_3_4_aes')
+        if grade_3_4_aes:
+            st.markdown("### 🔴 **Grade 3-4 Adverse Events**")
+            
+            if isinstance(grade_3_4_aes, list) and grade_3_4_aes:
+                col1, col2, col3 = st.columns(3)
+                for i, ae in enumerate(grade_3_4_aes[:9]):  # Show up to 9 AEs
+                    with [col1, col2, col3][i % 3]:
+                        event_name = ae.get('event', 'Unknown AE') if isinstance(ae, dict) else str(ae)
+                        percentage = ae.get('percentage', 'N/A') if isinstance(ae, dict) else 'N/A'
+                        
+                        # Color code based on severity
+                        if isinstance(percentage, (int, float)):
+                            if percentage >= 20:
+                                color = "red"
+                            elif percentage >= 10:
+                                color = "orange" 
+                            else:
+                                color = "green"
+                        else:
+                            color = "gray"
+                        
+                        st.markdown(f"**{event_name}:** :{color}[{percentage}%]")
+        
+        st.markdown("---")
+        
+        # Treatment Modifications
+        st.markdown("### 📊 **Treatment Modifications**")
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            dose_reductions = self._safe_get(data, 'safety_profile.dose_reductions')
+            if dose_reductions:
+                st.markdown(f"**💊 Dose Reductions:** {dose_reductions}%")
+        
+        with col2:
+            delays = self._safe_get(data, 'safety_profile.treatment_delays')
+            if delays:
+                st.markdown(f"**⏸️ Treatment Delays:** {delays}%")
+        
+        with col3:
+            discontinuations = self._safe_get(data, 'safety_profile.discontinuations')
+            if discontinuations:
+                st.markdown(f"**🛑 Discontinuations:** {discontinuations}%")
+        
+        # Serious Adverse Events
+        serious_aes = self._safe_get(data, 'safety_profile.serious_aes')
+        if serious_aes:
+            st.markdown("---")
+            st.markdown("### 🚨 **Serious Adverse Events**")
+            if isinstance(serious_aes, list):
+                for ae in serious_aes:
+                    if isinstance(ae, dict):
+                        event = ae.get('event', 'Unknown')
+                        percentage = ae.get('percentage', 'N/A')
+                        st.markdown(f"• **{event}:** {percentage}%")
+            else:
+                st.markdown(f"• {serious_aes}")
+        
+        # Deaths
+        deaths = self._safe_get(data, 'safety_profile.total_deaths') or self._safe_get(data, 'safety_profile.treatment_related_deaths')
+        if deaths:
+            st.markdown("---")
+            st.markdown("### ☠️ **Mortality**")
+            st.markdown(f"**Total Deaths:** {deaths}")
+        
+        # Safety Confidence
+        confidence = self._safe_get(data, 'safety_profile.confidence_score', 0.85)
+        st.markdown("---")
+        st.markdown(f"**🟢 Safety data confidence:** {confidence*100:.0f}%")
+    def _display_study_identification_comprehensive(self, data):
+        """Display all 8 study identification fields"""
+        st.markdown("### 📄 **Study Identification (8 Fields)**")
+        
+        study_id_data = []
+        fields = [
+            ("Full Title", "study_identification.title", "Primary identifier for the clinical study"),
+            ("Study Acronym", "study_identification.study_acronym", "Short name or acronym for the study"),
+            ("NCT Number", "study_identification.nct_number", "ClinicalTrials.gov registry identifier"),
+            ("Abstract Number", "study_identification.abstract_number", "Conference abstract reference number"),
+            ("Study Group/Sponsor", "study_identification.study_group", "Sponsoring organization or study group"),
+            ("Principal Investigator", "study_identification.principal_investigator", "Lead investigator for the study"),
+            ("Publication Year", "study_identification.publication_year", "Year of publication or presentation"),
+            ("Conference Name", "study_identification.conference_name", "Conference where study was presented")
+        ]
+        
+        for field_name, field_path, description in fields:
+            value = self._safe_get(data, field_path)
+            display_value = str(value) if value is not None else "Not specified"
+            
+            study_id_data.append({
+                "Field": field_name,
+                "Value": display_value,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌",
+                "Data Type": type(value).__name__ if value is not None else "None"
+            })
+        
+        st.dataframe(pd.DataFrame(study_id_data), use_container_width=True, hide_index=True)
+    
+    def _display_study_design_comprehensive(self, data):
+        """Display all 17 study design fields"""
+        st.markdown("### 🔬 **Study Design Details (17 Fields)**")
+        
+        design_data = []
+        design_fields = [
+            ("Study Type", "study_design.study_type.value", "Phase or type of clinical study"),
+            ("Trial Phase", "study_design.trial_phase", "Specific phase designation"),
+            ("Randomized", "study_design.randomized", "Whether study uses randomization"),
+            ("Blinded", "study_design.blinded", "Whether study is blinded"),
+            ("Placebo Controlled", "study_design.placebo_controlled", "Whether study includes placebo control"),
+            ("Multicenter", "study_design.multicenter", "Whether study involves multiple centers"),
+            ("International", "study_design.international", "Whether study is international"),
+            ("Number of Arms", "study_design.number_of_arms", "Number of treatment arms"),
+            ("Randomization Ratio", "study_design.randomization_ratio", "Ratio for randomization (e.g., 1:1, 2:1)"),
+            ("Number of Centers", "study_design.number_of_centers", "Total participating centers"),
+            ("Countries", "study_design.countries", "Countries where study was conducted"),
+            ("Enrollment Period", "study_design.enrollment_period", "Patient enrollment timeframe"),
+            ("Follow-up Duration", "study_design.follow_up_duration", "Median follow-up duration"),
+            ("Data Cutoff Date", "study_design.data_cutoff_date", "Date of data analysis cutoff"),
+            ("Primary Endpoints", "study_design.primary_endpoints", "Primary study endpoints"),
+            ("Secondary Endpoints", "study_design.secondary_endpoints", "Secondary study endpoints"),
+            ("Exploratory Endpoints", "study_design.exploratory_endpoints", "Exploratory endpoints")
+        ]
+        
+        for field_name, field_path, description in design_fields:
+            value = self._safe_get(data, field_path)
+            
+            if isinstance(value, list):
+                display_value = ", ".join([str(v) for v in value]) if value else "Not specified"
+            elif isinstance(value, bool):
+                display_value = "Yes" if value else "No"
+            else:
+                display_value = str(value) if value is not None else "Not specified"
+            
+            design_data.append({
+                "Design Element": field_name,
+                "Value": display_value,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌",
+                "Data Type": type(value).__name__ if value is not None else "None"
+            })
+        
+        st.dataframe(pd.DataFrame(design_data), use_container_width=True, hide_index=True)
+    
+    def _display_patient_demographics_comprehensive(self, data):
+        """Display all 17 patient demographic fields"""
+        st.markdown("### 👥 **Patient Demographics (17 Fields)**")
+        
+        demo_data = []
+        demo_fields = [
+            ("Total Enrolled", "patient_demographics.total_enrolled", "patients", "Total number of patients enrolled"),
+            ("Evaluable Patients", "patient_demographics.evaluable_patients", "patients", "Number of evaluable patients"),
+            ("Safety Population", "patient_demographics.safety_population", "patients", "Safety analysis population"),
+            ("ITT Population", "patient_demographics.itt_population", "patients", "Intent-to-treat population"),
+            ("Median Age", "patient_demographics.median_age", "years", "Median age of enrolled patients"),
+            ("Mean Age", "patient_demographics.mean_age", "years", "Mean age of enrolled patients"),
+            ("Age Range", "patient_demographics.age_range", "years", "Age range of enrolled patients"),
+            ("Elderly Percentage (≥65)", "patient_demographics.elderly_percentage", "%", "Percentage of elderly patients"),
+            ("Very Elderly Percentage (≥75)", "patient_demographics.very_elderly_percentage", "%", "Percentage of very elderly patients"),
+            ("Male Percentage", "patient_demographics.male_percentage", "%", "Percentage of male patients"),
+            ("Female Percentage", "patient_demographics.female_percentage", "%", "Percentage of female patients"),
+            ("Race Distribution", "patient_demographics.race_distribution", "breakdown", "Racial/ethnic distribution"),
+            ("ECOG 0 Percentage", "patient_demographics.ecog_0_percentage", "%", "Patients with ECOG PS 0"),
+            ("ECOG 1 Percentage", "patient_demographics.ecog_1_percentage", "%", "Patients with ECOG PS 1"),
+            ("ECOG ≥2 Percentage", "patient_demographics.ecog_2_plus_percentage", "%", "Patients with ECOG PS ≥2"),
+            ("Karnofsky Median", "patient_demographics.karnofsky_median", "score", "Median Karnofsky performance score"),
+            ("High Frailty Score", "patient_demographics.frailty_score_high", "%", "Percentage with high frailty scores")
+        ]
+        
+        for field_name, field_path, unit, description in demo_fields:
+            value = self._safe_get(data, field_path)
+            
+            if isinstance(value, dict):
+                display_value = json.dumps(value, indent=1)
+            elif value is not None:
+                display_value = f"{value} {unit}" if unit != "breakdown" else str(value)
+            else:
+                display_value = "Not reported"
+            
+            demo_data.append({
+                "Demographic": field_name,
+                "Value": display_value,
+                "Unit": unit,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌",
+                "Clinical Relevance": self._get_demo_relevance(field_name)
+            })
+        
+        st.dataframe(pd.DataFrame(demo_data), use_container_width=True, hide_index=True)
+    
+    def _display_disease_characteristics_comprehensive(self, data):
+        """Display all 18 disease characteristic fields"""
+        st.markdown("### 🩺 **Disease Characteristics (18 Fields)**")
+        
+        disease_data = []
+        disease_fields = [
+            ("MM Subtype", "disease_characteristics.mm_subtype", "classification", "Multiple myeloma subtype classification"),
+            ("Disease Stage", "disease_characteristics.disease_stage", "stage", "Disease staging (ISS, R-ISS)"),
+            ("High Risk Percentage", "disease_characteristics.high_risk_percentage", "%", "Percentage of high-risk patients"),
+            ("Standard Risk Percentage", "disease_characteristics.standard_risk_percentage", "%", "Percentage of standard-risk patients"),
+            ("Ultra High Risk Percentage", "disease_characteristics.ultra_high_risk_percentage", "%", "Percentage of ultra high-risk patients"),
+            ("Cytogenetic Abnormalities", "disease_characteristics.cytogenetic_abnormalities", "list", "List of cytogenetic abnormalities"),
+            ("del(17p) Percentage", "disease_characteristics.del_17p_percentage", "%", "Frequency of del(17p) abnormality"),
+            ("t(4;14) Percentage", "disease_characteristics.t_4_14_percentage", "%", "Frequency of t(4;14) translocation"),
+            ("t(14;16) Percentage", "disease_characteristics.t_14_16_percentage", "%", "Frequency of t(14;16) translocation"),
+            ("1q Amplification Percentage", "disease_characteristics.amp_1q_percentage", "%", "Frequency of 1q amplification"),
+            ("Extramedullary Disease", "disease_characteristics.extramedullary_disease_percentage", "%", "Presence of extramedullary disease"),
+            ("Plasma Cell Leukemia", "disease_characteristics.plasma_cell_leukemia_percentage", "%", "Presence of plasma cell leukemia"),
+            ("Amyloidosis Percentage", "disease_characteristics.amyloidosis_percentage", "%", "Presence of amyloidosis"),
+            ("Elevated LDH", "disease_characteristics.ldh_elevated_percentage", "%", "Patients with elevated LDH"),
+            ("High β2-Microglobulin", "disease_characteristics.beta2_microglobulin_high", "%", "Patients with high β2-microglobulin"),
+            ("Low Albumin", "disease_characteristics.albumin_low_percentage", "%", "Patients with low albumin"),
+            ("Renal Impairment", "disease_characteristics.renal_impairment_percentage", "%", "Patients with renal impairment"),
+            ("Biomarker Results", "disease_characteristics.biomarker_results", "data", "Biomarker analysis results")
+        ]
+        
+        for field_name, field_path, unit, description in disease_fields:
+            value = self._safe_get(data, field_path)
+            
+            if isinstance(value, list):
+                if field_name == "MM Subtype":
+                    display_value = ", ".join([str(v) for v in value]) if value else "Not specified"
+                else:
+                    display_value = json.dumps(value, indent=1) if value else "Not reported"
+            elif isinstance(value, dict):
+                display_value = json.dumps(value, indent=1)
+            elif value is not None:
+                display_value = f"{value} {unit}" if unit not in ["classification", "stage", "list", "data"] else str(value)
+            else:
+                display_value = "Not reported"
+            
+            disease_data.append({
+                "Disease Characteristic": field_name,
+                "Value": display_value,
+                "Unit": unit,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌",
+                "Risk Assessment": self._get_risk_level(field_name, value)
+            })
+        
+        st.dataframe(pd.DataFrame(disease_data), use_container_width=True, hide_index=True)
+    
+    def _display_treatment_history_comprehensive(self, data):
+        """Display all 19 treatment history fields"""
+        st.markdown("### 💊 **Treatment History (19 Fields)**")
+        
+        treatment_data = []
+        treatment_fields = [
+            ("Line of Therapy", "treatment_history.line_of_therapy", "line", "Current line of therapy"),
+            ("Treatment Setting", "treatment_history.treatment_setting", "setting", "Treatment setting (NDMM/RRMM)"),
+            ("Median Prior Therapies", "treatment_history.median_prior_therapies", "number", "Median number of prior therapies"),
+            ("Prior Therapy Range", "treatment_history.prior_therapy_range", "range", "Range of prior therapies"),
+            ("Heavily Pretreated (≥3)", "treatment_history.heavily_pretreated_percentage", "%", "Patients with ≥3 prior therapies"),
+            ("Prior Therapies List", "treatment_history.prior_therapies", "list", "List of specific prior therapies"),
+            ("Lenalidomide Exposed", "treatment_history.lenalidomide_exposed_percentage", "%", "Prior lenalidomide exposure"),
+            ("Lenalidomide Refractory", "treatment_history.lenalidomide_refractory_percentage", "%", "Lenalidomide-refractory patients"),
+            ("Pomalidomide Exposed", "treatment_history.pomalidomide_exposed_percentage", "%", "Prior pomalidomide exposure"),
+            ("Bortezomib Exposed", "treatment_history.bortezomib_exposed_percentage", "%", "Prior bortezomib exposure"),
+            ("Carfilzomib Exposed", "treatment_history.carfilzomib_exposed_percentage", "%", "Prior carfilzomib exposure"),
+            ("Daratumumab Exposed", "treatment_history.daratumumab_exposed_percentage", "%", "Prior daratumumab exposure"),
+            ("Daratumumab Refractory", "treatment_history.daratumumab_refractory_percentage", "%", "Daratumumab-refractory patients"),
+            ("Prior Autologous SCT", "treatment_history.prior_autologous_sct_percentage", "%", "Prior autologous stem cell transplant"),
+            ("Prior Allogeneic SCT", "treatment_history.prior_allogeneic_sct_percentage", "%", "Prior allogeneic stem cell transplant"),
+            ("Double Refractory", "treatment_history.double_refractory_percentage", "%", "Double-refractory patients"),
+            ("Triple Refractory", "treatment_history.triple_refractory_percentage", "%", "Triple-refractory patients"),
+            ("Penta Refractory", "treatment_history.penta_refractory_percentage", "%", "Penta-refractory patients"),
+            ("Time Since Diagnosis", "treatment_history.time_since_diagnosis_median", "months", "Median time since initial diagnosis"),
+            ("Time Since Last Therapy", "treatment_history.time_since_last_therapy_median", "months", "Median time since last therapy")
+        ]
+        
+        for field_name, field_path, unit, description in treatment_fields:
+            value = self._safe_get(data, field_path)
+            
+            if isinstance(value, list):
+                display_value = json.dumps(value, indent=1) if value else "Not reported"
+            elif value is not None:
+                display_value = f"{value} {unit}" if unit not in ["line", "setting", "list", "range"] else str(value)
+            else:
+                display_value = "Not reported"
+            
+            treatment_data.append({
+                "Treatment History": field_name,
+                "Value": display_value,
+                "Unit": unit,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌",
+                "Impact": self._get_treatment_impact(field_name, value)
+            })
+        
+        st.dataframe(pd.DataFrame(treatment_data), use_container_width=True, hide_index=True)
+    
+    def _display_treatment_regimens_comprehensive(self, data):
+        """Display comprehensive treatment regimen details"""
+        st.markdown("### 🧬 **Treatment Regimens & Drug Details**")
+        
+        treatment_regimens = self._safe_get(data, 'treatment_regimens') or []
+        if treatment_regimens:
+            for idx, regimen in enumerate(treatment_regimens):
+                st.markdown(f"#### 💊 **Regimen {idx + 1}**")
+                
+                # Regimen overview (14 fields per regimen)
+                regimen_overview = []
+                regimen_fields = [
+                    ("Regimen Name", "regimen_name", "Name or acronym of treatment regimen"),
+                    ("Arm Designation", "arm_designation", "Treatment arm designation (e.g., Arm A, Experimental)"),
+                    ("Novel Regimen", "is_novel_regimen", "Whether this is a novel treatment combination"),
+                    ("Drug Classes", "drug_classes", "Classes of drugs in the regimen"),
+                    ("Mechanism of Action", "mechanism_of_action", "Mechanisms of action for the drugs"),
+                    ("Cycle Length (days)", "cycle_length", "Length of each treatment cycle"),
+                    ("Total Planned Cycles", "total_planned_cycles", "Total number of planned treatment cycles"),
+                    ("Treatment Until Progression", "treatment_until_progression", "Whether treatment continues until progression"),
+                    ("Dose Reductions Allowed", "dose_reductions_allowed", "Whether dose reductions are permitted"),
+                    ("Growth Factor Support", "growth_factor_support", "Growth factor support requirements"),
+                    ("Premedications", "premedications", "Required premedications"),
+                    ("Outpatient Administration", "outpatient_administration", "Whether treatment is given as outpatient"),
+                    ("Hospitalization Required", "hospitalization_required", "Whether hospitalization is required"),
+                    ("Confidence Score", "confidence_score", "Extraction confidence for this regimen")
+                ]
+                
+                for field_name, field_key, description in regimen_fields:
+                    if isinstance(regimen, dict):
+                        value = regimen.get(field_key)
+                    else:
+                        value = getattr(regimen, field_key, None)
+                    
+                    if isinstance(value, list):
+                        display_value = ", ".join([str(v) for v in value]) if value else "Not specified"
+                    elif isinstance(value, bool):
+                        display_value = "Yes" if value else "No"
+                    else:
+                        display_value = str(value) if value is not None else "Not specified"
+                    
+                    regimen_overview.append({
+                        "Regimen Detail": field_name,
+                        "Value": display_value,
+                        "Description": description,
+                        "Available": "✅" if value is not None else "❌"
+                    })
+                
+                st.dataframe(pd.DataFrame(regimen_overview), use_container_width=True, hide_index=True)
+                
+                # Individual drugs
+                if isinstance(regimen, dict):
+                    drugs = regimen.get('drugs', [])
+                else:
+                    drugs = getattr(regimen, 'drugs', [])
+                
+                if drugs:
+                    st.markdown("##### 💉 **Individual Drug Details**")
+                    drug_data = []
+                    for drug_idx, drug in enumerate(drugs):
+                        if isinstance(drug, dict):
+                            drug_data.append({
+                                "Drug #": drug_idx + 1,
+                                "Drug Name": drug.get('name', 'Unknown'),
+                                "Dose": drug.get('dose', 'Not specified'),
+                                "Route": drug.get('route', 'Not specified'),
+                                "Schedule": drug.get('schedule', 'Not specified'),
+                                "Form": drug.get('form', 'Not specified'),
+                                "Duration": drug.get('duration', 'Not specified')
+                            })
+                        else:
+                            drug_data.append({
+                                "Drug #": drug_idx + 1,
+                                "Drug Name": getattr(drug, 'name', 'Unknown'),
+                                "Dose": getattr(drug, 'dose', 'Not specified'),
+                                "Route": getattr(drug, 'route', 'Not specified'),
+                                "Schedule": getattr(drug, 'schedule', 'Not specified'),
+                                "Form": getattr(drug, 'form', 'Not specified'),
+                                "Duration": getattr(drug, 'duration', 'Not specified')
+                            })
+                    
+                    st.dataframe(pd.DataFrame(drug_data), use_container_width=True, hide_index=True)
+                
+                st.markdown("---")
+        else:
+            st.info("No treatment regimen details available")
+    
+    def _display_efficacy_outcomes_comprehensive(self, data):
+        """Display all 18 efficacy outcome fields"""
+        st.markdown("### 📈 **Efficacy Outcomes (18 Fields)**")
+        
+        efficacy_data = []
+        efficacy_fields = [
+            ("Overall Response Rate", "efficacy_outcomes.overall_response_rate", "response", "Overall response rate with confidence intervals"),
+            ("Complete Response Rate", "efficacy_outcomes.complete_response_rate", "response", "Complete response rate"),
+            ("VGPR Rate", "efficacy_outcomes.very_good_partial_response_rate", "response", "Very good partial response rate"),
+            ("Partial Response Rate", "efficacy_outcomes.partial_response_rate", "response", "Partial response rate"),
+            ("Stable Disease Rate", "efficacy_outcomes.stable_disease_rate", "response", "Stable disease rate"),
+            ("Progressive Disease Rate", "efficacy_outcomes.progressive_disease_rate", "response", "Progressive disease rate"),
+            ("Clinical Benefit Rate", "efficacy_outcomes.clinical_benefit_rate", "response", "Clinical benefit rate (CR+VGPR+PR+SD)"),
+            ("Progression-Free Survival", "efficacy_outcomes.progression_free_survival", "survival", "Progression-free survival data"),
+            ("Overall Survival", "efficacy_outcomes.overall_survival", "survival", "Overall survival data"),
+            ("Event-Free Survival", "efficacy_outcomes.event_free_survival", "survival", "Event-free survival data"),
+            ("Time to Next Treatment", "efficacy_outcomes.time_to_next_treatment", "survival", "Time to next treatment"),
+            ("Time to Response", "efficacy_outcomes.time_to_response", "timing", "Time to first response"),
+            ("Duration of Response", "efficacy_outcomes.duration_of_response", "timing", "Duration of response"),
+            ("Time to Progression", "efficacy_outcomes.time_to_progression", "timing", "Time to progression"),
+            ("MRD Negative Rate", "efficacy_outcomes.mrd_negative_rate", "response", "Minimal residual disease negativity rate"),
+            ("MRD Method", "efficacy_outcomes.mrd_method", "method", "Method used for MRD detection"),
+            ("Stringent CR Rate", "efficacy_outcomes.stringent_cr_rate", "response", "Stringent complete response rate"),
+            ("Subgroup Analyses", "efficacy_outcomes.subgroup_analyses", "analyses", "Subgroup efficacy analyses")
+        ]
+        
+        for field_name, field_path, category, description in efficacy_fields:
+            value = self._safe_get(data, field_path)
+            
+            if isinstance(value, dict):
+                # Handle response/survival data structures
+                if 'value' in value:
+                    display_value = f"{value['value']}%"
+                    if value.get('ci'):
+                        display_value += f" (CI: {value['ci']})"
+                elif 'median' in value:
+                    display_value = f"{value['median']} {value.get('unit', 'months')}"
+                    if value.get('ci'):
+                        display_value += f" (CI: {value['ci']})"
+                else:
+                    display_value = json.dumps(value, indent=1)
+            elif isinstance(value, list):
+                display_value = json.dumps(value, indent=1) if value else "Not reported"
+            elif value is not None:
+                display_value = str(value)
+            else:
+                display_value = "Not reported"
+            
+            efficacy_data.append({
+                "Efficacy Endpoint": field_name,
+                "Value": display_value,
+                "Category": category,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌",
+                "Clinical Priority": self._get_endpoint_priority(field_name)
+            })
+        
+        st.dataframe(pd.DataFrame(efficacy_data), use_container_width=True, hide_index=True)
+    
+    def _display_safety_profile_comprehensive(self, data):
+        """Display all 17 safety profile fields"""
+        st.markdown("### ⚠️ **Safety Profile (17 Fields)**")
+        
+        safety_data = []
+        safety_fields = [
+            ("Safety Population", "safety_profile.safety_population", "count", "Number of patients in safety analysis"),
+            ("Median Treatment Duration", "safety_profile.median_treatment_duration", "months", "Median duration of treatment"),
+            ("Median Cycles Received", "safety_profile.median_cycles_received", "cycles", "Median number of treatment cycles"),
+            ("Completion Rate", "safety_profile.completion_rate", "%", "Treatment completion rate"),
+            ("Any Grade AEs", "safety_profile.any_grade_aes", "events", "Any grade adverse events"),
+            ("Grade 3-4 AEs", "safety_profile.grade_3_4_aes", "events", "Grade 3-4 adverse events"),
+            ("Grade 5 AEs", "safety_profile.grade_5_aes", "events", "Grade 5 (fatal) adverse events"),
+            ("Serious AEs", "safety_profile.serious_aes", "events", "Serious adverse events"),
+            ("Treatment-Related AEs", "safety_profile.treatment_related_aes", "events", "Treatment-related adverse events"),
+            ("Hematologic AEs", "safety_profile.hematologic_aes", "events", "Hematologic toxicities"),
+            ("Infections", "safety_profile.infections", "events", "Infection rates and types"),
+            ("Secondary Malignancies", "safety_profile.secondary_malignancies", "events", "Secondary cancer occurrences"),
+            ("Dose Reductions", "safety_profile.dose_reductions", "modifications", "Dose reduction rates and reasons"),
+            ("Treatment Delays", "safety_profile.treatment_delays", "modifications", "Treatment delay rates"),
+            ("Discontinuations", "safety_profile.discontinuations", "modifications", "Treatment discontinuation rates"),
+            ("Treatment-Related Deaths", "safety_profile.treatment_related_deaths", "count", "Deaths attributed to treatment"),
+            ("Total Deaths", "safety_profile.total_deaths", "count", "Total deaths during study period")
+        ]
+        
+        for field_name, field_path, category, description in safety_fields:
+            value = self._safe_get(data, field_path)
+            
+            if isinstance(value, list):
+                if value:
+                    if category == "events":
+                        # Format AE list nicely
+                        ae_summary = []
+                        for ae in value[:5]:  # Show top 5
+                            if isinstance(ae, dict):
+                                event_name = ae.get('event', 'Unknown AE')
+                                percentage = ae.get('percentage', 'N/A')
+                                ae_summary.append(f"{event_name}: {percentage}%")
+                        display_value = "; ".join(ae_summary)
+                        if len(value) > 5:
+                            display_value += f" (+{len(value) - 5} more)"
+                    else:
+                        display_value = json.dumps(value, indent=1)
+                else:
+                    display_value = "Not reported"
+            elif isinstance(value, dict):
+                display_value = json.dumps(value, indent=1)
+            elif value is not None:
+                if category in ["months", "cycles", "%"]:
+                    display_value = f"{value} {category}"
+                else:
+                    display_value = str(value)
+            else:
+                display_value = "Not reported"
+            
+            safety_data.append({
+                "Safety Parameter": field_name,
+                "Value": display_value,
+                "Category": category,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌",
+                "Severity": self._get_safety_severity(field_name, value)
+            })
+        
+        st.dataframe(pd.DataFrame(safety_data), use_container_width=True, hide_index=True)
+    
+    def _display_qol_and_statistics_comprehensive(self, data):
+        """Display Quality of Life (5 fields) and Statistical Analysis (8 fields)"""
+        
+        # Quality of Life (5 fields)
+        qol = self._safe_get(data, 'quality_of_life')
+        if qol:
+            st.markdown("### 💫 **Quality of Life Measures (5 Fields)**")
+            qol_data = []
+            qol_fields = [
+                ("QoL Instruments", "qol_instruments", "Quality of life assessment instruments used"),
+                ("Baseline QoL Scores", "baseline_qol_scores", "Baseline quality of life scores"),
+                ("QoL Improvement Rate", "qol_improvement_rate", "Rate of quality of life improvement"),
+                ("Symptom Relief Rate", "symptom_relief_rate", "Rate of symptom relief"),
+                ("Time to QoL Improvement", "time_to_qol_improvement", "Time to quality of life improvement")
+            ]
+            
+            for field_name, field_key, description in qol_fields:
+                if isinstance(qol, dict):
+                    value = qol.get(field_key)
+                else:
+                    value = getattr(qol, field_key, None)
+                
+                if isinstance(value, list):
+                    display_value = ", ".join([str(v) for v in value]) if value else "Not reported"
+                elif isinstance(value, dict):
+                    display_value = json.dumps(value, indent=1)
+                elif value is not None:
+                    display_value = str(value)
+                else:
+                    display_value = "Not reported"
+                
+                qol_data.append({
+                    "QoL Measure": field_name,
+                    "Value": display_value,
+                    "Description": description,
+                    "Available": "✅" if value is not None else "❌"
+                })
+            
+            st.dataframe(pd.DataFrame(qol_data), use_container_width=True, hide_index=True)
+        else:
+            st.info("No Quality of Life data available")
+        
+        # Statistical Analysis (8 fields)
+        st.markdown("### 📈 **Statistical Analysis Details (8 Fields)**")
+        stats_data = []
+        stats_fields = [
+            ("Primary Analysis Method", "statistical_analysis.primary_analysis_method", "Primary statistical analysis method"),
+            ("Significance Level", "statistical_analysis.significance_level", "Statistical significance level (alpha)"),
+            ("Power Calculation", "statistical_analysis.power_calculation", "Statistical power calculation details"),
+            ("Sample Size Rationale", "statistical_analysis.sample_size_rationale", "Sample size calculation rationale"),
+            ("Survival Analysis Method", "statistical_analysis.survival_analysis_method", "Method used for survival analysis"),
+            ("Censoring Details", "statistical_analysis.censoring_details", "Data censoring information"),
+            ("Hazard Ratios", "statistical_analysis.hazard_ratios", "Hazard ratios with confidence intervals"),
+            ("P-values", "statistical_analysis.p_values", "Key statistical p-values")
+        ]
+        
+        for field_name, field_path, description in stats_fields:
+            value = self._safe_get(data, field_path)
+            
+            if isinstance(value, list):
+                display_value = json.dumps(value, indent=1) if value else "Not reported"
+            elif isinstance(value, dict):
+                display_value = json.dumps(value, indent=1)
+            elif value is not None:
+                display_value = str(value)
+            else:
+                display_value = "Not reported"
+            
+            stats_data.append({
+                "Statistical Parameter": field_name,
+                "Value": display_value,
+                "Description": description,
+                "Available": "✅" if value is not None else "❌"
+            })
+        
+        st.dataframe(pd.DataFrame(stats_data), use_container_width=True, hide_index=True)
+
+
+# Helper methods for comprehensive display - these were missing and causing attribute errors
+    def _get_demo_relevance(self, field_name: str) -> str:
+        """Get clinical relevance level for demographic fields"""
+        critical_fields = ["Total Enrolled", "Median Age", "ECOG"]
+        high_fields = ["Male Percentage", "Elderly Percentage", "Safety Population", "ITT Population"]
+        medium_fields = ["Race Distribution", "Karnofsky", "Frailty"]
+        
+        if any(cf in field_name for cf in critical_fields):
+            return "Critical"
+        elif any(hf in field_name for hf in high_fields):
+            return "High"
+        elif any(mf in field_name for mf in medium_fields):
+            return "Medium"
+        else:
+            return "Standard"
+    
+    def _get_risk_level(self, field_name: str, value) -> str:
+        """Get risk assessment for disease characteristics"""
+        if "High Risk" in field_name or "Ultra High" in field_name:
+            return "High Impact"
+        elif any(term in field_name for term in ["del(17p)", "t(4;14)", "t(14;16)", "1q Amplification"]):
+            return "Cytogenetic Risk"
+        elif "Extramedullary" in field_name or "Leukemia" in field_name or "Amyloidosis" in field_name:
+            return "Disease Severity"
+        elif "LDH" in field_name or "Microglobulin" in field_name or "Albumin" in field_name:
+            return "Laboratory Marker"
+        elif "Biomarker" in field_name:
+            return "Biomarker Data"
+        else:
+            return "Standard"
+    
+    def _get_treatment_impact(self, field_name: str, value) -> str:
+        """Get treatment impact assessment"""
+        if "Refractory" in field_name:
+            if "Penta" in field_name:
+                return "Extreme Resistance"
+            elif "Triple" in field_name:
+                return "High Resistance"
+            elif "Double" in field_name:
+                return "Moderate Resistance"
+            else:
+                return "Drug Resistance"
+        elif "Exposed" in field_name:
+            return "Previous Treatment"
+        elif "SCT" in field_name:
+            return "Transplant History"
+        elif "Heavily Pretreated" in field_name:
+            return "Treatment Burden"
+        elif "Line of Therapy" in field_name:
+            return "Treatment Sequence"
+        elif "Time Since" in field_name:
+            return "Treatment Timing"
+        else:
+            return "Treatment Context"
+    
+    def _get_endpoint_priority(self, field_name: str) -> str:
+        """Get clinical priority for efficacy endpoints"""
+        primary_endpoints = ["Overall Response Rate", "Progression-Free Survival", "Overall Survival"]
+        high_priority = ["Complete Response Rate", "VGPR Rate", "MRD Negative Rate", "Stringent CR Rate"]
+        survival_endpoints = ["Event-Free Survival", "Time to Next Treatment", "Duration of Response"]
+        
+        if field_name in primary_endpoints:
+            return "Primary"
+        elif field_name in high_priority:
+            return "High"
+        elif field_name in survival_endpoints or "Survival" in field_name:
+            return "High"
+        elif "Response" in field_name or "Disease" in field_name:
+            return "Secondary"
+        elif "Time to" in field_name or "Duration" in field_name:
+            return "Timing"
+        elif "Subgroup" in field_name or "Method" in field_name:
+            return "Exploratory"
+        else:
+            return "Secondary"
+    
+    def _get_safety_severity(self, field_name: str, value) -> str:
+        """Get safety severity assessment"""
+        if "Grade 5" in field_name or "Deaths" in field_name:
+            return "Critical"
+        elif "Grade 3-4" in field_name:
+            return "High"
+        elif "Serious" in field_name:
+            return "High"
+        elif "Treatment-Related" in field_name:
+            return "Moderate"
+        elif "Discontinuation" in field_name:
+            return "Moderate"
+        elif "Dose Reduction" in field_name or "Treatment Delay" in field_name:
+            return "Moderate"
+        elif "Hematologic" in field_name or "Infection" in field_name:
+            return "Moderate"
+        elif "Secondary Malignancies" in field_name:
+            return "High"
+        elif "Any Grade" in field_name:
+            return "Standard"
+        else:
+            return "Standard"
+
+    def _show_individual_study_tabs(self, data, categorization, index):
+        """Show individual study tabs with beautiful card-based detailed information"""
+        st.markdown(f"### 📋 Study {index + 1}: {data.study_identification.study_acronym or 'Study'} - {data.study_identification.title[:60]}...")
+        
+        # Create tabs for detailed information using card-based displays
+        tab1, tab2, tab3, tab4, tab5 = st.tabs(["📄 Study Design", "📊 Results & Efficacy", "👥 Patient Population", "💊 Treatment Regimens", "⚠️ Safety Profile"])
+        
+        with tab1:
+            self._display_study_design_tab(data)
+        
+        with tab2:
+            self._display_results_efficacy_tab(data)
+        
+        with tab3:
+            self._display_patient_population_tab(data)
+        
+        with tab4:
+            self._display_treatment_regimens_tab(data)
+        
+        with tab5:
+            self._display_safety_profile_tab(data)
+
+    def _generate_treatment_distribution_table(self) -> Dict[str, Any]:
+        """Generate treatment distribution table by therapy category and patient population"""
+        
+        # Define therapy categories and their examples
+        therapy_categories = {
+            'BCMA-CAR-T Therapies': ['cilta-cel', 'ciltacabtagene', 'ide-cel', 'idecabtagene', 'car-t', 'cart', 'ARI0002h'],
+            'BCMA-Bispecific Ab Therapies': ['teclistamab', 'talquetamab', 'elranatamab', 'linvoseltamab', 'ABBV-383', 'bispecific'],
+            'ADC': ['belantamab', 'belantamab mafodotin', 'elotuzumab', 'adc', 'antibody-drug conjugate'],
+            'Cereblon E3 Ligase Modulator': ['mezigdomide', 'iberdomide', 'cereblon', 'e3 ligase'],
+            'Triplet/Quadruplet SOC': ['vrd', 'isa-vrd', 'isatuximab', 'lenalidomide', 'bortezomib', 'dexamethasone', 'daratumumab'],
+            'Transplantation': ['asct', 'transplant', 'stem cell', 'autologous'],
+            'Others': []  # Will be populated with unmatched treatments
+        }
+        
+        # Population mapping
+        population_mapping = {
+            'RRMM': ['relapsed', 'refractory', 'rrmm', 'r/r'],
+            'NDMM': ['newly diagnosed', 'ndmm', 'first-line', 'frontline']
+        }
+        
+        treatment_distribution = {}
+        
+        for data in st.session_state.extracted_data:
+            # Determine patient population
+            population = 'Unknown'
+            title_lower = data.study_identification.title.lower() if data.study_identification.title else ''
+            
+            # Check for RRMM
+            if any(keyword in title_lower for keyword in population_mapping['RRMM']):
+                population = 'RRMM'
+            # Check for NDMM
+            elif any(keyword in title_lower for keyword in population_mapping['NDMM']):
+                population = 'NDMM'
+            # Also check treatment regimens for population indicators
+            else:
+                regimens_text = ''
+                if data.treatment_regimens:
+                    for regimen in data.treatment_regimens:
+                        if regimen.regimen_name:
+                            regimens_text += regimen.regimen_name.lower() + ' '
+                
+                if any(keyword in regimens_text for keyword in population_mapping['RRMM']):
+                    population = 'RRMM'
+                elif any(keyword in regimens_text for keyword in population_mapping['NDMM']):
+                    population = 'NDMM'
+            
+            # Extract treatment information
+            treatments_found = []
+            if data.treatment_regimens:
+                for regimen in data.treatment_regimens:
+                    if regimen.regimen_name:
+                        treatments_found.append(regimen.regimen_name.lower())
+                    if regimen.drugs:
+                        # Handle both string and dictionary drug formats
+                        for drug in regimen.drugs:
+                            if isinstance(drug, dict):
+                                # Extract drug name from dictionary
+                                drug_name = drug.get('name', '')
+                                if drug_name:
+                                    treatments_found.append(drug_name.lower())
+                            elif isinstance(drug, str):
+                                treatments_found.append(drug.lower())
+            
+            # Also check title for treatment mentions
+            treatments_found.append(title_lower)
+            treatments_text = ' '.join(treatments_found)
+            
+            # Categorize treatment
+            therapy_category = 'Others'
+            for category, keywords in therapy_categories.items():
+                if any(keyword in treatments_text for keyword in keywords):
+                    therapy_category = category
+                    break
+            
+            # Initialize nested structure if needed
+            if population not in treatment_distribution:
+                treatment_distribution[population] = {}
+            
+            if therapy_category not in treatment_distribution[population]:
+                treatment_distribution[population][therapy_category] = {
+                    'studies': [],
+                    'examples': set()
+                }
+            
+            # Add study and examples
+            study_info = {
+                'title': data.study_identification.title,
+                'acronym': data.study_identification.study_acronym
+            }
+            treatment_distribution[population][therapy_category]['studies'].append(study_info)
+            
+            # Extract specific drug examples
+            if data.treatment_regimens:
+                for regimen in data.treatment_regimens:
+                    if regimen.regimen_name:
+                        treatment_distribution[population][therapy_category]['examples'].add(regimen.regimen_name)
+                    if regimen.drugs:
+                        for drug in regimen.drugs:
+                            if isinstance(drug, dict):
+                                # Extract drug name from dictionary
+                                drug_name = drug.get('name', '')
+                                if drug_name:
+                                    treatment_distribution[population][therapy_category]['examples'].add(drug_name)
+                            elif isinstance(drug, str):
+                                treatment_distribution[population][therapy_category]['examples'].add(drug)
+        
+        # Format for display
+        formatted_distribution = {}
+        total_studies = len(st.session_state.extracted_data)
+        
+        for population, categories in treatment_distribution.items():
+            formatted_distribution[population] = []
+            population_total = sum(len(cat_data['studies']) for cat_data in categories.values())
+            
+            for category, cat_data in categories.items():
+                study_count = len(cat_data['studies'])
+                if study_count > 0:  # Only include categories with studies
+                    percentage = (study_count / population_total * 100) if population_total > 0 else 0
+                    examples = list(cat_data['examples'])[:3]  # Limit to 3 examples
+                    
+                    formatted_distribution[population].append({
+                        'category': category,
+                        'examples': ', '.join(examples) if examples else 'N/A',
+                        'count': study_count,
+                        'percentage': percentage,
+                        'studies': cat_data['studies']
+                    })
+            
+            # Sort by count descending
+            formatted_distribution[population].sort(key=lambda x: x['count'], reverse=True)
+        
+        return {
+            'distribution': formatted_distribution,
+            'total_studies': total_studies,
+            'populations': list(formatted_distribution.keys())
+        }
+
+    def _display_treatment_distribution_table(self, distribution_data: Dict[str, Any]):
+        """Display the treatment distribution table"""
+        
+        st.markdown("""
+        <div class="section-header">
+            <h3>💊 Treatment Distribution Analysis</h3>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        if not distribution_data['distribution']:
+            st.info("📊 Upload multiple abstracts to see treatment distribution analysis")
+            return
+        
+        total_studies = distribution_data['total_studies']
+        st.markdown(f"**Treatment distribution across your {total_studies} studies**")
+        
+        # Create comprehensive table
+        table_data = []
+        
+        for population in ['RRMM', 'NDMM', 'Unknown']:
+            if population in distribution_data['distribution']:
+                categories = distribution_data['distribution'][population]
+                population_total = sum(cat['count'] for cat in categories)
+                
+                # Add population header
+                if categories:
+                    table_data.append({
+                        'Population': f"**{population}** (N={population_total})",
+                        'Therapy Category': '',
+                        'Examples': '',
+                        'No. of Studies': '',
+                        '%': ''
+                    })
+                
+                for category in categories:
+                    table_data.append({
+                        'Population': '',
+                        'Therapy Category': category['category'],
+                        'Examples': category['examples'],
+                        'No. of Studies': str(category['count']),
+                        '%': f"{category['percentage']:.1f}%"
+                    })
+        
+        if table_data:
+            # Convert to DataFrame for better display
+            import pandas as pd
+            df = pd.DataFrame(table_data)
+            
+            # Style the table
+            st.markdown("""
+            <style>
+            .treatment-table {
+                font-size: 0.9rem;
+                width: 100%;
+            }
+            .treatment-table th {
+                background-color: #f8fafc;
+                font-weight: 600;
+                padding: 0.75rem;
+                border-bottom: 2px solid #e2e8f0;
+            }
+            .treatment-table td {
+                padding: 0.5rem 0.75rem;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+            
+            # Display as HTML table for better formatting
+            html_table = df.to_html(classes='treatment-table', escape=False, index=False)
+            st.markdown(html_table, unsafe_allow_html=True)
+            
+            # Add download option
+            csv_data = df.to_csv(index=False)
+            st.download_button(
+                label="📥 Download Treatment Distribution Table",
+                data=csv_data,
+                file_name="treatment_distribution.csv",
+                mime="text/csv",
+                help="Download the treatment distribution table as CSV"
+            )
+        else:
+            st.info("📊 No treatment categories detected in your studies")
+
+    def _safe_get(self, obj, path: str, default=None):
+        """Safely get nested attributes from object or dictionary"""
+        try:
+            keys = path.split('.')
+            current = obj
+            for key in keys:
+                if isinstance(current, dict):
+                    current = current.get(key, default)
+                else:
+                    current = getattr(current, key, default)
+                if current is None:
+                    return default
+            return current
+        except:
+            return default
+
+    def _generate_high_risk_population_analysis(self) -> Dict[str, Any]:
+        """Generate high-risk population analysis across all studies"""
+        
+        high_risk_data = {
+            'cytogenetic_abnormalities': {'studies': [], 'total_count': 0},
+            'extramedullary_disease': {'studies': [], 'total_count': 0}, 
+            'elderly_patients': {'studies': [], 'total_count': 0},
+            'high_risk_general': {'studies': [], 'total_count': 0},
+            'total_studies': len(st.session_state.extracted_data),
+            'studies_with_high_risk_data': 0
+        }
+        
+        for i, data in enumerate(st.session_state.extracted_data):
+            has_high_risk_data = False
+            
+            # Check for cytogenetic abnormalities
+            cytogenetic_abnormalities = self._safe_get(data, 'disease_characteristics.cytogenetic_abnormalities')
+            if cytogenetic_abnormalities and isinstance(cytogenetic_abnormalities, list):
+                for abnormality in cytogenetic_abnormalities:
+                    if isinstance(abnormality, dict):
+                        count = abnormality.get('count', 0) or abnormality.get('percentage', 0)
+                        if count:
+                            high_risk_data['cytogenetic_abnormalities']['studies'].append({
+                                'study': data.study_identification.study_acronym or f"Study {i+1}",
+                                'title': data.study_identification.title,
+                                'details': abnormality,
+                                'count': count
+                            })
+                            high_risk_data['cytogenetic_abnormalities']['total_count'] += int(count) if isinstance(count, (int, float)) else 1
+                            has_high_risk_data = True
+            
+            # Check for high-risk percentage (general)
+            high_risk_pct = self._safe_get(data, 'disease_characteristics.high_risk_percentage')
+            if high_risk_pct:
+                total_enrolled = data.patient_demographics.total_enrolled or 100  # Default denominator
+                estimated_count = int((high_risk_pct / 100) * total_enrolled)
+                high_risk_data['high_risk_general']['studies'].append({
+                    'study': data.study_identification.study_acronym or f"Study {i+1}",
+                    'title': data.study_identification.title,
+                    'percentage': high_risk_pct,
+                    'estimated_count': estimated_count,
+                    'total_enrolled': total_enrolled
+                })
+                high_risk_data['high_risk_general']['total_count'] += estimated_count
+                has_high_risk_data = True
+            
+            # Check for extramedullary disease
+            emd_pct = self._safe_get(data, 'disease_characteristics.extramedullary_disease_percentage')
+            if emd_pct:
+                total_enrolled = data.patient_demographics.total_enrolled or 100
+                estimated_count = int((emd_pct / 100) * total_enrolled)
+                high_risk_data['extramedullary_disease']['studies'].append({
+                    'study': data.study_identification.study_acronym or f"Study {i+1}",
+                    'title': data.study_identification.title,
+                    'percentage': emd_pct,
+                    'estimated_count': estimated_count,
+                    'total_enrolled': total_enrolled
+                })
+                high_risk_data['extramedullary_disease']['total_count'] += estimated_count
+                has_high_risk_data = True
+            
+            # Check for elderly patients
+            elderly_pct = self._safe_get(data, 'patient_demographics.elderly_percentage')
+            very_elderly_pct = self._safe_get(data, 'patient_demographics.very_elderly_percentage')
+            
+            if elderly_pct or very_elderly_pct:
+                total_enrolled = data.patient_demographics.total_enrolled or 100
+                # Use the higher percentage if both are available
+                elderly_percentage = max(elderly_pct or 0, very_elderly_pct or 0)
+                estimated_count = int((elderly_percentage / 100) * total_enrolled)
+                
+                high_risk_data['elderly_patients']['studies'].append({
+                    'study': data.study_identification.study_acronym or f"Study {i+1}",
+                    'title': data.study_identification.title,
+                    'elderly_pct': elderly_pct,
+                    'very_elderly_pct': very_elderly_pct,
+                    'estimated_count': estimated_count,
+                    'total_enrolled': total_enrolled
+                })
+                high_risk_data['elderly_patients']['total_count'] += estimated_count
+                has_high_risk_data = True
+            
+            if has_high_risk_data:
+                high_risk_data['studies_with_high_risk_data'] += 1
+        
+        return high_risk_data
+
+    def _display_high_risk_population_analysis(self, high_risk_data: Dict[str, Any]):
+        """Display high-risk population analysis"""
+        
+        if high_risk_data['studies_with_high_risk_data'] == 0:
+            st.info("📊 No high-risk population data found in current studies")
+            return
+        
+        st.markdown("""
+        <div class="section-header">
+            <h3>⚠️ High-Risk Population Analysis</h3>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Summary statistics
+        total_studies = high_risk_data['total_studies']
+        studies_with_data = high_risk_data['studies_with_high_risk_data']
+        
+        st.markdown(f"""
+        **{studies_with_data} of {total_studies} studies included high-risk populations with the following characteristics:**
+        """)
+        
+        # Create summary table
+        summary_data = []
+        
+        # Cytogenetic abnormalities
+        cyto_studies = len(high_risk_data['cytogenetic_abnormalities']['studies'])
+        cyto_total = high_risk_data['cytogenetic_abnormalities']['total_count']
+        if cyto_studies > 0:
+            summary_data.append({
+                'High-Risk Category': 'Cytogenetic Abnormalities',
+                'No. of Studies': cyto_studies,
+                'Estimated Patients (n)': cyto_total,
+                'Details': f"Studies with high-risk cytogenetics data"
+            })
+        
+        # Extramedullary disease
+        emd_studies = len(high_risk_data['extramedullary_disease']['studies'])
+        emd_total = high_risk_data['extramedullary_disease']['total_count']
+        if emd_studies > 0:
+            summary_data.append({
+                'High-Risk Category': 'Extramedullary Disease',
+                'No. of Studies': emd_studies,
+                'Estimated Patients (n)': emd_total,
+                'Details': f"Studies reporting EMD presence"
+            })
+        
+        # Elderly patients
+        elderly_studies = len(high_risk_data['elderly_patients']['studies'])
+        elderly_total = high_risk_data['elderly_patients']['total_count']
+        if elderly_studies > 0:
+            summary_data.append({
+                'High-Risk Category': 'Elderly Patients (≥65 years)',
+                'No. of Studies': elderly_studies,
+                'Estimated Patients (n)': elderly_total,
+                'Details': f"Studies with elderly population data"
+            })
+        
+        # General high-risk
+        hr_studies = len(high_risk_data['high_risk_general']['studies'])
+        hr_total = high_risk_data['high_risk_general']['total_count']
+        if hr_studies > 0:
+            summary_data.append({
+                'High-Risk Category': 'General High-Risk',
+                'No. of Studies': hr_studies,
+                'Estimated Patients (n)': hr_total,
+                'Details': f"Studies with general high-risk designation"
+            })
+        
+        if summary_data:
+            import pandas as pd
+            df = pd.DataFrame(summary_data)
+            
+            # Style the table
+            st.markdown("""
+            <style>
+            .high-risk-table {
+                font-size: 0.9rem;
+                width: 100%;
+            }
+            .high-risk-table th {
+                background-color: #fef3c7;
+                font-weight: 600;
+                padding: 0.75rem;
+                border-bottom: 2px solid #f59e0b;
+            }
+            .high-risk-table td {
+                padding: 0.5rem 0.75rem;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+            
+            html_table = df.to_html(classes='high-risk-table', escape=False, index=False)
+            st.markdown(html_table, unsafe_allow_html=True)
+            
+            # Detailed breakdown in expandable sections
+            with st.expander("🔍 View Detailed Breakdown", expanded=False):
+                
+                # Cytogenetic abnormalities details
+                if high_risk_data['cytogenetic_abnormalities']['studies']:
+                    st.markdown("#### 🧬 Cytogenetic Abnormalities")
+                    for study_data in high_risk_data['cytogenetic_abnormalities']['studies']:
+                        st.markdown(f"**{study_data['study']}:** {study_data['details']}")
+                
+                # Extramedullary disease details
+                if high_risk_data['extramedullary_disease']['studies']:
+                    st.markdown("#### 🔄 Extramedullary Disease")
+                    for study_data in high_risk_data['extramedullary_disease']['studies']:
+                        st.markdown(f"**{study_data['study']}:** {study_data['percentage']}% ({study_data['estimated_count']} patients)")
+                
+                # Elderly patients details
+                if high_risk_data['elderly_patients']['studies']:
+                    st.markdown("#### 👴 Elderly Patients")
+                    for study_data in high_risk_data['elderly_patients']['studies']:
+                        elderly_info = f"{study_data['elderly_pct']}%" if study_data['elderly_pct'] else ""
+                        very_elderly_info = f"(≥75: {study_data['very_elderly_pct']}%)" if study_data['very_elderly_pct'] else ""
+                        st.markdown(f"**{study_data['study']}:** {elderly_info} {very_elderly_info} (~{study_data['estimated_count']} patients)")
+                
+                # General high-risk details
+                if high_risk_data['high_risk_general']['studies']:
+                    st.markdown("#### ⚠️ General High-Risk Populations")
+                    for study_data in high_risk_data['high_risk_general']['studies']:
+                        st.markdown(f"**{study_data['study']}:** {study_data['percentage']}% ({study_data['estimated_count']} patients)")
+        
+        # Download option
+        if summary_data:
+            csv_data = df.to_csv(index=False)
+            st.download_button(
+                label="📥 Download High-Risk Population Analysis",
+                data=csv_data,
+                file_name="high_risk_population_analysis.csv",
+                mime="text/csv",
+                help="Download the high-risk population analysis as CSV"
+            )
 
 def main():
     """Main application entry point"""

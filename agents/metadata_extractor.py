@@ -228,25 +228,42 @@ class EnhancedMetadataExtractor:
             },
             "study_design": {
                 "study_type": "Phase 2",
+                "randomized": true,
+                "blinded": false,
+                "multicenter": true,
+                "number_of_arms": 2,
+                "primary_endpoints": ["ORR", "Safety"],
                 "confidence_score": 0.9
             },
             "patient_demographics": {
                 "total_enrolled": 70,
                 "median_age": 76,
+                "male_percentage": 55.2,
                 "confidence_score": 0.9
             },
             "treatment_regimens": [{
                 "regimen_name": "extracted regimen name",
-                "drugs": [{"name": "drug1", "dose": "dose1"}],
+                "arm_designation": "Experimental Arm",
+                "is_novel_regimen": true,
+                "drugs": [{"name": "drug1", "dose": "dose1", "route": "IV", "schedule": "Days 1,8"}],
+                "cycle_length": 21,
+                "total_planned_cycles": 8,
+                "treatment_until_progression": false,
+                "dose_reductions_allowed": true,
+                "outpatient_administration": true,
+                "hospitalization_required": false,
                 "confidence_score": 0.9
             }],
             "efficacy_outcomes": {
-                "overall_response_rate": {"value": 64, "ci": "confidence interval"},
-                "progression_free_survival": {"median": 13, "unit": "months"},
+                "overall_response_rate": {"value": 64, "ci": "52-75%"},
+                "progression_free_survival": {"median": 13, "unit": "months", "ci": "10.2-15.8"},
                 "confidence_score": 0.9
             },
             "safety_profile": {
                 "grade_3_4_aes": [{"event": "neutropenia", "percentage": 46}],
+                "serious_aes": [{"event": "infection", "percentage": 15}],
+                "treatment_related_aes": [{"event": "ocular toxicity", "percentage": 25}],
+                "discontinuations": {"rate": 15, "reasons": ["toxicity", "progression"]},
                 "confidence_score": 0.9
             }
         }
@@ -258,30 +275,94 @@ class EnhancedMetadataExtractor:
         - study_acronym: Study name/acronym  
         - nct_number: NCT identifier
         - study_group: Sponsoring organization
+        - principal_investigator: Lead investigator name
+        - conference_name: Conference (ASCO, ASH, etc.)
+        - publication_year: Year of publication/presentation
 
         STUDY DESIGN:
-        - study_type: Phase 1/2/3, etc.
-        - number_of_centers: Number of centers
+        - study_type: Phase 1/2/3, Retrospective, etc.
+        - randomized: true/false if randomized
+        - blinded: true/false if blinded
+        - multicenter: true/false if multicenter
+        - international: true/false if international
+        - number_of_arms: Number of treatment arms
+        - randomization_ratio: e.g., "1:1", "2:1"
+        - number_of_centers: Number of participating centers
         - primary_endpoints: List of primary endpoints
+        - secondary_endpoints: List of secondary endpoints
 
         PATIENT DEMOGRAPHICS:
-        - total_enrolled: Total patients
-        - median_age: Median age in years
+        - total_enrolled: Total patients enrolled
         - evaluable_patients: Evaluable population
+        - safety_population: Safety population
+        - median_age: Median age in years
+        - male_percentage: Percentage of male patients
+        - ecog_0_percentage: ECOG PS 0 percentage
+        - ecog_1_percentage: ECOG PS 1 percentage
+        - elderly_percentage: Patients ≥65 years (%)
 
-        TREATMENT REGIMENS:
-        - regimen_name: Treatment regimen name
-        - drugs: List of drugs with doses
-        - cycle_length: Cycle length in days
+        TREATMENT REGIMENS (extract for EACH regimen/arm):
+        - regimen_name: Treatment regimen name/acronym
+        - arm_designation: "Experimental Arm", "Control Arm", "Arm A", "Arm B", etc.
+        - is_novel_regimen: true if novel/investigational, false if standard
+        - drugs: List with detailed drug information:
+          * name: Drug name
+          * dose: Dose amount and unit
+          * route: Administration route (IV, PO, SC, etc.)
+          * schedule: Dosing schedule (Days 1,8; Q3W; etc.)
+        - cycle_length: Cycle length in days (21, 28, etc.)
+        - total_planned_cycles: Total number of planned cycles
+        - treatment_until_progression: true if treatment continues until progression
+        - dose_reductions_allowed: true if dose reductions are permitted
+        - outpatient_administration: true if outpatient treatment
+        - hospitalization_required: true if hospitalization required
+        - growth_factor_support: Growth factor support details
+        - premedications: Required premedications
 
         EFFICACY OUTCOMES:
-        - overall_response_rate: ORR with value and CI
-        - progression_free_survival: PFS data
-        - overall_survival: OS data
+        - overall_response_rate: ORR with value, confidence interval, p-value
+        - complete_response_rate: CR rate with details
+        - very_good_partial_response_rate: VGPR rate
+        - partial_response_rate: PR rate
+        - progression_free_survival: PFS median, CI, HR, p-value
+        - overall_survival: OS median, CI, HR, p-value
+        - time_to_response: Time to first response
+        - duration_of_response: Duration of response
+        - mrd_negative_rate: MRD negativity rate
+        - mrd_method: MRD detection method
 
         SAFETY PROFILE:
-        - grade_3_4_aes: Grade 3-4 adverse events
-        - discontinuations: Treatment discontinuations
+        - safety_population: Safety evaluable population
+        - median_treatment_duration: Median treatment duration
+        - median_cycles_received: Median cycles received
+        - any_grade_aes: List of any grade adverse events: [{"event": "nausea", "percentage": 60}]
+        - grade_3_4_aes: List of Grade 3-4 adverse events: [{"event": "neutropenia", "percentage": 46}]
+        - serious_aes: List of serious adverse events: [{"event": "infection", "percentage": 15}]
+        - treatment_related_aes: List of treatment-related AEs: [{"event": "ocular toxicity", "percentage": 25}]
+        - dose_reductions: Dose reduction rates and reasons
+        - treatment_delays: Treatment delay information
+        - discontinuations: Discontinuation rates and reasons
+        - treatment_related_deaths: Number of treatment-related deaths
+
+        CRITICAL SAFETY FORMAT RULES:
+        - ALL adverse event fields MUST be lists of objects with "event" and "percentage" keys
+        - NEVER use single objects like {"percentage": 50} - always use [{"event": "name", "percentage": 50}]
+        - If no events found, use [] (empty list), not null
+        - Each event must have both "event" (string) and "percentage" (number) fields
+        - Example: "serious_aes": [{"event": "pneumonia", "percentage": 12}, {"event": "sepsis", "percentage": 8}]
+
+        IMPORTANT FOR SAFETY DATA:
+        - ALL adverse event fields (any_grade_aes, grade_3_4_aes, serious_aes, treatment_related_aes) must be LISTS
+        - Each list item should be: {"event": "event_name", "percentage": number}
+        - If no events found, use: [] (empty list)
+        - Never use single dictionaries for these fields
+
+        IMPORTANT: 
+        - For treatment regimens, extract ALL arms/regimens mentioned
+        - Pay special attention to arm designations (Experimental vs Control)
+        - Extract complete dosing information including schedule details
+        - Look for cycle length and planned duration information
+        - Note whether treatment is outpatient vs requires hospitalization
 
         Return ONLY the JSON object with extracted data.
         """
@@ -383,11 +464,11 @@ class EnhancedMetadataExtractor:
             study_design = StudyDesign(
                 study_type=StudyType(study_design_data.get("study_type", "Phase 2")),
                 trial_phase=study_design_data.get("trial_phase"),
-                randomized=study_design_data.get("randomized", False),
-                blinded=study_design_data.get("blinded", False),
-                placebo_controlled=study_design_data.get("placebo_controlled", False),
-                multicenter=study_design_data.get("multicenter", False),
-                international=study_design_data.get("international", False),
+                randomized=study_design_data.get("randomized") if study_design_data.get("randomized") is not None else False,
+                blinded=study_design_data.get("blinded") if study_design_data.get("blinded") is not None else False,
+                placebo_controlled=study_design_data.get("placebo_controlled") if study_design_data.get("placebo_controlled") is not None else False,
+                multicenter=study_design_data.get("multicenter") if study_design_data.get("multicenter") is not None else False,
+                international=study_design_data.get("international") if study_design_data.get("international") is not None else False,
                 number_of_arms=study_design_data.get("number_of_arms"),
                 randomization_ratio=study_design_data.get("randomization_ratio"),
                 number_of_centers=study_design_data.get("number_of_centers"),
@@ -496,18 +577,18 @@ class EnhancedMetadataExtractor:
                     regimen = TreatmentRegimen(
                         regimen_name=regimen_data["regimen_name"],
                         arm_designation=regimen_data.get("arm_designation"),
-                        is_novel_regimen=regimen_data.get("is_novel_regimen", False),
+                        is_novel_regimen=regimen_data.get("is_novel_regimen") if regimen_data.get("is_novel_regimen") is not None else False,
                         drugs=regimen_data.get("drugs", []),
                         drug_classes=regimen_data.get("drug_classes"),
                         mechanism_of_action=regimen_data.get("mechanism_of_action"),
                         cycle_length=regimen_data.get("cycle_length"),
                         total_planned_cycles=regimen_data.get("total_planned_cycles"),
-                        treatment_until_progression=regimen_data.get("treatment_until_progression", False),
-                        dose_reductions_allowed=regimen_data.get("dose_reductions_allowed", True),
+                        treatment_until_progression=regimen_data.get("treatment_until_progression") if regimen_data.get("treatment_until_progression") is not None else False,
+                        dose_reductions_allowed=regimen_data.get("dose_reductions_allowed") if regimen_data.get("dose_reductions_allowed") is not None else True,
                         growth_factor_support=regimen_data.get("growth_factor_support"),
                         premedications=regimen_data.get("premedications"),
-                        outpatient_administration=regimen_data.get("outpatient_administration", True),
-                        hospitalization_required=regimen_data.get("hospitalization_required", False),
+                        outpatient_administration=regimen_data.get("outpatient_administration") if regimen_data.get("outpatient_administration") is not None else True,
+                        hospitalization_required=regimen_data.get("hospitalization_required") if regimen_data.get("hospitalization_required") is not None else False,
                         confidence_score=regimen_data.get("confidence_score", 0.0)
                     )
                     treatment_regimens.append(regimen)
@@ -544,28 +625,91 @@ class EnhancedMetadataExtractor:
                 confidence_score=efficacy_data.get("confidence_score", confidence_scores.get("efficacy_outcomes", 0.0))
             )
             
-            # Build safety profile with safe handling
+            # Build safety profile with safe handling and validation
             safety_data = validated_data.get("safety_profile", {})
-            safety_profile = SafetyProfile(
-                safety_population=safety_data.get("safety_population"),
-                median_treatment_duration=safety_data.get("median_treatment_duration"),
-                median_cycles_received=safety_data.get("median_cycles_received"),
-                completion_rate=safety_data.get("completion_rate"),
-                any_grade_aes=safety_data.get("any_grade_aes"),
-                grade_3_4_aes=safety_data.get("grade_3_4_aes"),
-                grade_5_aes=safety_data.get("grade_5_aes"),
-                serious_aes=safety_data.get("serious_aes"),
-                treatment_related_aes=safety_data.get("treatment_related_aes"),
-                hematologic_aes=safety_data.get("hematologic_aes"),
-                infections=safety_data.get("infections"),
-                secondary_malignancies=safety_data.get("secondary_malignancies"),
-                dose_reductions=safety_data.get("dose_reductions"),
-                treatment_delays=safety_data.get("treatment_delays"),
-                discontinuations=safety_data.get("discontinuations"),
-                treatment_related_deaths=safety_data.get("treatment_related_deaths"),
-                total_deaths=safety_data.get("total_deaths"),
-                confidence_score=safety_data.get("confidence_score", confidence_scores.get("safety_profile", 0.0))
-            )
+            
+            # Debug logging for safety data format issues
+            if safety_data:
+                logger.info(f"Debug - Safety data keys: {list(safety_data.keys())}")
+                for key in ['serious_aes', 'treatment_related_aes', 'grade_3_4_aes']:
+                    if key in safety_data:
+                        logger.info(f"Debug - {key}: {safety_data[key]} (type: {type(safety_data[key])})")
+            
+            # Helper function to ensure safety events are in correct list format
+            def _validate_safety_events(data):
+                """Convert safety event data to proper list format"""
+                try:
+                    if data is None:
+                        return None
+                    elif isinstance(data, list):
+                        # Validate each item in the list
+                        validated_list = []
+                        for item in data:
+                            if isinstance(item, dict) and 'event' in item and 'percentage' in item:
+                                validated_list.append(item)
+                            elif isinstance(item, dict) and 'percentage' in item:
+                                validated_list.append({"event": "unspecified", "percentage": item['percentage']})
+                        return validated_list if validated_list else None
+                    elif isinstance(data, dict):
+                        # Convert single dict to list with one item
+                        if 'event' in data and 'percentage' in data:
+                            return [data]  # Single event dict
+                        elif 'percentage' in data and isinstance(data['percentage'], (int, float)):
+                            # Generic percentage without event name
+                            return [{"event": "unspecified", "percentage": data['percentage']}]
+                        else:
+                            # Complex nested dict - extract what we can
+                            events = []
+                            for key, value in data.items():
+                                if key == 'percentage' and isinstance(value, (int, float)):
+                                    # Skip percentage-only entries, handle above
+                                    continue
+                                elif isinstance(value, (int, float)):
+                                    events.append({"event": key, "percentage": value})
+                                elif isinstance(value, dict):
+                                    # Nested data like {'BVd': 79, 'DVd': 29}
+                                    for subkey, subval in value.items():
+                                        if isinstance(subval, (int, float)):
+                                            events.append({"event": f"{key}_{subkey}", "percentage": subval})
+                                elif isinstance(value, str) and key != 'confidence_score':
+                                    # String values might be event names without percentages
+                                    events.append({"event": value, "percentage": None})
+                            return events if events else None
+                    else:
+                        return None
+                except Exception as e:
+                    logger.warning(f"Error validating safety events: {e}")
+                    return None
+            
+            # Create safety profile with enhanced error handling
+            try:
+                safety_profile = SafetyProfile(
+                    safety_population=safety_data.get("safety_population"),
+                    median_treatment_duration=safety_data.get("median_treatment_duration"),
+                    median_cycles_received=safety_data.get("median_cycles_received"),
+                    completion_rate=safety_data.get("completion_rate"),
+                    any_grade_aes=_validate_safety_events(safety_data.get("any_grade_aes")),
+                    grade_3_4_aes=_validate_safety_events(safety_data.get("grade_3_4_aes")),
+                    grade_5_aes=_validate_safety_events(safety_data.get("grade_5_aes")),
+                    serious_aes=_validate_safety_events(safety_data.get("serious_aes")),
+                    treatment_related_aes=_validate_safety_events(safety_data.get("treatment_related_aes")),
+                    hematologic_aes=_validate_safety_events(safety_data.get("hematologic_aes")),
+                    infections=_validate_safety_events(safety_data.get("infections")),
+                    secondary_malignancies=_validate_safety_events(safety_data.get("secondary_malignancies")),
+                    dose_reductions=safety_data.get("dose_reductions"),
+                    treatment_delays=safety_data.get("treatment_delays"),
+                    discontinuations=safety_data.get("discontinuations"),
+                    treatment_related_deaths=safety_data.get("treatment_related_deaths"),
+                    total_deaths=safety_data.get("total_deaths"),
+                    confidence_score=safety_data.get("confidence_score", confidence_scores.get("safety_profile", 0.0))
+                )
+            except Exception as e:
+                logger.warning(f"Error creating SafetyProfile, using minimal version: {e}")
+                # Create minimal safety profile if validation fails
+                safety_profile = SafetyProfile(
+                    safety_population=safety_data.get("safety_population"),
+                    confidence_score=0.0  # Low confidence due to validation issues
+                )
             
             # Build quality of life (optional)
             qol_data = validated_data.get("quality_of_life", {})
