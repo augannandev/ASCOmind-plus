@@ -1249,28 +1249,20 @@ class ASCOmindApp:
         
         summary_stats = st.session_state.analysis_results.get('dataset_overview', {}).get('summary_statistics', {})
         
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3 = st.columns(3)
         
         with col1:
             total_studies = summary_stats.get('total_studies', len(st.session_state.extracted_data))
             st.markdown(f"""
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                 <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{total_studies}</div>
-                <div style="font-size: 0.875rem; opacity: 0.9;">Total Studies</div>
+                <div style="font-size: 0.875rem; opacity: 0.9;">Studies Analyzed</div>
             </div>
             """, unsafe_allow_html=True)
         
         with col2:
-            avg_enrollment = summary_stats.get('avg_enrollment', 0)
-            st.markdown(f"""
-            <div style="background: linear-gradient(135deg, #10b981, #34d399); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{avg_enrollment:.0f}</div>
-                <div style="font-size: 0.875rem; opacity: 0.9;">Avg Enrollment</div>
-            </div>
-            """, unsafe_allow_html=True)
-        
-        with col3:
-            randomized_pct = summary_stats.get('randomized_percentage', 0)
+            randomized_count = sum(1 for data in st.session_state.extracted_data if data.study_design.randomized)
+            randomized_pct = (randomized_count / total_studies * 100) if total_studies > 0 else 0
             st.markdown(f"""
             <div style="background: linear-gradient(135deg, #f59e0b, #fbbf24); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                 <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{randomized_pct:.1f}%</div>
@@ -1278,13 +1270,13 @@ class ASCOmindApp:
             </div>
             """, unsafe_allow_html=True)
         
-        with col4:
-            avg_confidence = summary_stats.get('avg_confidence', 0)
-            confidence_color = "#10b981" if avg_confidence >= 0.75 else "#3b82f6" if avg_confidence >= 0.65 else "#f59e0b" if avg_confidence >= 0.5 else "#ef4444"  # Updated thresholds
+        with col3:
+            total_enrollment = sum(data.patient_demographics.total_enrolled for data in st.session_state.extracted_data if data.patient_demographics.total_enrolled)
+            enrollment_display = f"{total_enrollment:,}" if total_enrollment > 0 else "N/A"
             st.markdown(f"""
-            <div style="background: linear-gradient(135deg, {confidence_color}, {confidence_color}dd); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{avg_confidence:.1%}</div>
-                <div style="font-size: 0.875rem; opacity: 0.9;">Data Quality</div>
+            <div style="background: linear-gradient(135deg, #10b981, #10b981dd); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{enrollment_display}</div>
+                <div style="font-size: 0.875rem; opacity: 0.9;">Total Patients</div>
             </div>
             """, unsafe_allow_html=True)
         
@@ -2269,24 +2261,35 @@ class ASCOmindApp:
                 if file_abstracts:
                     st.info(f"📄 Successfully extracted text from {len(file_abstracts)} files")
         
-        # Common processing options
+        # Common processing options (Developer mode only)
         if abstracts:
             st.markdown("---")
-            st.markdown("### ⚙️ Batch Processing Configuration")
             
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                st.markdown("**Processing Options:**")
-                batch_size = st.number_input("Batch size:", min_value=1, max_value=10, value=3, help="Number of abstracts to process simultaneously")
-                skip_errors = st.checkbox("Skip errors", value=True, help="Continue processing if some abstracts fail")
-                auto_categorize = st.checkbox("Auto-categorize", value=True, help="Automatically categorize all studies")
-            
-            with col2:
-                st.markdown("**Advanced Options:**")
-                create_embeddings = st.checkbox("Create embeddings", value=True, help="Generate vector embeddings for AI search")
-                quality_check = st.checkbox("Quality validation", value=True, help="Validate extraction quality before storing")
-                detailed_logging = st.checkbox("Detailed logging", value=False, help="Show detailed processing logs")
+            # Show batch processing configuration only in developer mode
+            if st.session_state.developer_mode:
+                st.markdown("### ⚙️ Batch Processing Configuration")
+                
+                col1, col2 = st.columns(2)
+                
+                with col1:
+                    st.markdown("**Processing Options:**")
+                    batch_size = st.number_input("Batch size:", min_value=1, max_value=10, value=3, help="Number of abstracts to process simultaneously")
+                    skip_errors = st.checkbox("Skip errors", value=True, help="Continue processing if some abstracts fail")
+                    auto_categorize = st.checkbox("Auto-categorize", value=True, help="Automatically categorize all studies")
+                
+                with col2:
+                    st.markdown("**Advanced Options:**")
+                    create_embeddings = st.checkbox("Create embeddings", value=True, help="Generate vector embeddings for AI search")
+                    quality_check = st.checkbox("Quality validation", value=True, help="Validate extraction quality before storing")
+                    detailed_logging = st.checkbox("Detailed logging", value=False, help="Show detailed processing logs")
+            else:
+                # Default values when developer mode is off
+                batch_size = 3
+                skip_errors = True
+                auto_categorize = True
+                create_embeddings = True
+                quality_check = True
+                detailed_logging = False
             
             # Summary before processing
             st.markdown("### 📊 Processing Summary")
