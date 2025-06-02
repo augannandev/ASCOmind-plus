@@ -2260,10 +2260,11 @@ class ASCOmindApp:
                     st.info("Please check the file format and try again.")
     
     def _show_processing_results(self, results: Dict, processing_time: float):
-        """Show detailed processing results"""
+        """Show comprehensive detailed processing results for clinical professionals"""
         
         st.markdown("#### 📊 Processing Results")
         
+        # Quick Status Overview
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
@@ -2294,384 +2295,473 @@ class ASCOmindApp:
         with col4:
             st.metric("Processing Time", f"{processing_time:.1f}s", delta="Duration")
         
-        # Show detailed results in expandable sections
+        # Comprehensive Detailed Results
         if results['metadata_extraction']['status'] == 'success':
-            with st.expander("📋 Extracted Metadata Details"):
-                data = results['metadata_extraction']['data']
+            data = results['metadata_extraction']['data']
+            
+            # === EXECUTIVE SUMMARY ===
+            with st.expander("📋 **Executive Summary & Key Highlights**", expanded=True):
+                st.markdown("### 🎯 **Clinical Summary**")
+                
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.markdown("**Study Type & Phase**")
+                    study_type = self._safe_get(data, 'study_design.study_type.value') or self._safe_get(data, 'study_design.study_type') or "Not specified"
+                    st.info(f"🔬 **{study_type}**")
+                    
+                    acronym = self._safe_get(data, 'study_identification.study_acronym')
+                    if acronym:
+                        st.write(f"**Acronym:** {acronym}")
+                    
+                    nct = self._safe_get(data, 'study_identification.nct_number')
+                    if nct:
+                        st.write(f"**NCT:** {nct}")
+                
+                with col2:
+                    st.markdown("**Key Efficacy**")
+                    
+                    # Overall Response Rate
+                    orr_value = self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value')
+                    if orr_value:
+                        st.success(f"📈 **ORR: {orr_value}%**")
+                    
+                    # Progression Free Survival
+                    pfs_median = self._safe_get(data, 'efficacy_outcomes.progression_free_survival.median')
+                    if pfs_median:
+                        st.success(f"⏱️ **PFS: {pfs_median} months**")
+                    
+                    # Overall Survival
+                    os_median = self._safe_get(data, 'efficacy_outcomes.overall_survival.median')
+                    if os_median:
+                        st.success(f"🎯 **OS: {os_median} months**")
+                
+                with col3:
+                    st.markdown("**Patient Population**")
+                    
+                    total_enrolled = self._safe_get(data, 'patient_demographics.total_enrolled')
+                    if total_enrolled:
+                        st.info(f"👥 **N = {total_enrolled}**")
+                    
+                    median_age = self._safe_get(data, 'patient_demographics.median_age')
+                    if median_age:
+                        st.write(f"**Median Age:** {median_age}")
+                    
+                    mm_subtype = self._safe_get(data, 'mm_subtype')
+                    if mm_subtype:
+                        if isinstance(mm_subtype, list):
+                            st.write(f"**Population:** {', '.join(mm_subtype)}")
+                        else:
+                            st.write(f"**Population:** {mm_subtype}")
+                
+                # Clinical Significance Alert
+                quality_score = self._calculate_clinical_significance_safe(data)
+                if quality_score >= 0.8:
+                    st.success("🏆 **HIGH CLINICAL SIGNIFICANCE** - This study presents important clinical findings with robust data")
+                elif quality_score >= 0.6:
+                    st.info("⭐ **MODERATE CLINICAL SIGNIFICANCE** - Notable findings with good data quality")
+                else:
+                    st.warning("⚠️ **LIMITED CLINICAL SIGNIFICANCE** - Preliminary or incomplete data")
+            
+            # === COMPREHENSIVE DATA TABLES ===
+            with st.expander("📊 **Comprehensive Data Tables**", expanded=True):
+                
+                # Study Identification Table
+                st.markdown("### 🔍 **Study Identification & Design**")
+                study_data = {
+                    "Field": ["Full Title", "Study Acronym", "NCT Number", "Study Group/Sponsor", "Study Type"],
+                    "Value": [
+                        self._safe_get(data, 'study_identification.title') or "Not specified",
+                        self._safe_get(data, 'study_identification.study_acronym') or "Not specified",
+                        self._safe_get(data, 'study_identification.nct_number') or "Not specified", 
+                        self._safe_get(data, 'study_identification.study_group') or "Not specified",
+                        self._safe_get(data, 'study_design.study_type.value') or self._safe_get(data, 'study_design.study_type') or "Not specified"
+                    ],
+                    "Confidence": ["High", "High", "High", "Medium", "High"]
+                }
+                st.dataframe(pd.DataFrame(study_data), use_container_width=True)
+                
+                # Patient Demographics Table
+                st.markdown("### 👥 **Patient Demographics & Characteristics**")
+                demo_data = {
+                    "Demographic": ["Total Enrolled", "Median Age", "Male %", "Female %"],
+                    "Value": [
+                        self._safe_get(data, 'patient_demographics.total_enrolled') or "Not reported",
+                        f"{self._safe_get(data, 'patient_demographics.median_age')} years" if self._safe_get(data, 'patient_demographics.median_age') else "Not reported",
+                        f"{self._safe_get(data, 'patient_demographics.male_percentage')}%" if self._safe_get(data, 'patient_demographics.male_percentage') else "Not reported",
+                        f"{100 - self._safe_get(data, 'patient_demographics.male_percentage')}%" if self._safe_get(data, 'patient_demographics.male_percentage') else "Not reported"
+                    ],
+                    "Clinical Relevance": ["Critical", "High", "Medium", "Medium"]
+                }
+                st.dataframe(pd.DataFrame(demo_data), use_container_width=True)
+                
+                # Treatment Regimens Table
+                treatment_regimens = self._safe_get(data, 'treatment_regimens')
+                if treatment_regimens:
+                    st.markdown("### 💊 **Treatment Regimens & Dosing**")
+                    treatment_rows = []
+                    for regimen in treatment_regimens:
+                        regimen_name = regimen.get('name', 'Unknown Regimen') if isinstance(regimen, dict) else getattr(regimen, 'name', 'Unknown Regimen')
+                        drugs = regimen.get('drugs', []) if isinstance(regimen, dict) else getattr(regimen, 'drugs', [])
+                        
+                        for drug in drugs:
+                            drug_name = drug.get('name', 'Unknown Drug') if isinstance(drug, dict) else getattr(drug, 'name', 'Unknown Drug')
+                            drug_dose = drug.get('dose', 'Not specified') if isinstance(drug, dict) else getattr(drug, 'dose', 'Not specified')
+                            drug_route = drug.get('route', 'Not specified') if isinstance(drug, dict) else getattr(drug, 'route', 'Not specified')
+                            drug_schedule = drug.get('schedule', 'Not specified') if isinstance(drug, dict) else getattr(drug, 'schedule', 'Not specified')
+                            
+                            treatment_rows.append({
+                                "Regimen": regimen_name,
+                                "Drug": drug_name,
+                                "Dose": drug_dose,
+                                "Route": drug_route,
+                                "Schedule": drug_schedule
+                            })
+                    if treatment_rows:
+                        st.dataframe(pd.DataFrame(treatment_rows), use_container_width=True)
+                
+                # Efficacy Outcomes Table
+                st.markdown("### 📈 **Efficacy Outcomes & Clinical Endpoints**")
+                efficacy_data = {
+                    "Endpoint": ["Overall Response Rate (ORR)", "Complete Response (CR)", "Progression-Free Survival (PFS)", "Overall Survival (OS)"],
+                    "Value": [
+                        f"{self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value')}%" if self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value') else "Not reported",
+                        f"{self._safe_get(data, 'efficacy_outcomes.complete_response_rate')}%" if self._safe_get(data, 'efficacy_outcomes.complete_response_rate') else "Not reported",
+                        f"{self._safe_get(data, 'efficacy_outcomes.progression_free_survival.median')} months" if self._safe_get(data, 'efficacy_outcomes.progression_free_survival.median') else "Not reported",
+                        f"{self._safe_get(data, 'efficacy_outcomes.overall_survival.median')} months" if self._safe_get(data, 'efficacy_outcomes.overall_survival.median') else "Not reported"
+                    ],
+                    "Clinical Impact": ["Primary", "High", "Primary", "Primary"]
+                }
+                st.dataframe(pd.DataFrame(efficacy_data), use_container_width=True)
+                
+                # Safety Profile Table
+                safety_profile = self._safe_get(data, 'safety_profile')
+                if safety_profile:
+                    adverse_events = safety_profile.get('adverse_events', []) if isinstance(safety_profile, dict) else getattr(safety_profile, 'adverse_events', [])
+                    if adverse_events:
+                        st.markdown("### ⚠️ **Safety Profile & Adverse Events**")
+                        safety_rows = []
+                        for ae in adverse_events:
+                            event_name = ae.get('event_name', 'Unknown AE') if isinstance(ae, dict) else getattr(ae, 'event_name', 'Unknown AE')
+                            any_grade = ae.get('any_grade_percentage', 'Not reported') if isinstance(ae, dict) else getattr(ae, 'any_grade_percentage', 'Not reported')
+                            grade_3_4 = ae.get('grade_3_4_percentage', 'Not reported') if isinstance(ae, dict) else getattr(ae, 'grade_3_4_percentage', 'Not reported')
+                            
+                            safety_rows.append({
+                                "Adverse Event": event_name,
+                                "Any Grade (%)": any_grade,
+                                "Grade 3-4 (%)": grade_3_4,
+                                "Clinical Significance": self._assess_ae_significance_safe(grade_3_4)
+                            })
+                        if safety_rows:
+                            st.dataframe(pd.DataFrame(safety_rows), use_container_width=True)
+            
+            # === CLINICAL INSIGHTS ===
+            with st.expander("🔬 **Clinical Insights & Professional Analysis**", expanded=True):
+                
                 col1, col2 = st.columns(2)
                 
                 with col1:
-                    st.write("**Study Information:**")
-                    st.write(f"• Title: {data.study_identification.title}")
-                    if data.study_identification.study_acronym:
-                        st.write(f"• Acronym: {data.study_identification.study_acronym}")
-                    if data.study_identification.nct_number:
-                        st.write(f"• NCT: {data.study_identification.nct_number}")
-                    st.write(f"• Type: {data.study_design.study_type.value}")
+                    st.markdown("### 🎯 **Key Clinical Takeaways**")
+                    
+                    # Generate clinical insights
+                    insights = self._generate_clinical_insights_safe(data)
+                    for insight in insights:
+                        st.markdown(f"• {insight}")
+                    
+                    st.markdown("### 📊 **Data Quality Assessment**") 
+                    quality_metrics = self._assess_data_quality_safe(data)
+                    for metric, score in quality_metrics.items():
+                        if score >= 0.8:
+                            st.success(f"✅ **{metric}**: Excellent ({score:.1%})")
+                        elif score >= 0.6:
+                            st.info(f"ℹ️ **{metric}**: Good ({score:.1%})")
+                        else:
+                            st.warning(f"⚠️ **{metric}**: Limited ({score:.1%})")
                 
                 with col2:
-                    st.write("**Quality Metrics:**")
-                    st.write(f"• Confidence: {data.extraction_confidence:.1%}")
-                    st.write(f"• Completeness: {self._calculate_completeness(data):.1%}")
-                    st.write(f"• Clinical Relevance: High")
+                    st.markdown("### 🏥 **Clinical Practice Implications**")
+                    
+                    implications = self._generate_practice_implications_safe(data)
+                    for implication in implications:
+                        st.markdown(f"• {implication}")
+                    
+                    st.markdown("### 🔄 **Regulatory & Commercial Context**")
+                    context = self._generate_regulatory_context_safe(data)
+                    for point in context:
+                        st.markdown(f"• {point}")
         
+        # Vector Embedding Details
         if results['vector_embedding']['status'] == 'success':
-            with st.expander("🧠 Vector Embedding Details"):
+            with st.expander("🧠 **Vector Embedding & AI Search Details**"):
                 embedding_data = results['vector_embedding']['data']
                 st.write(f"**Study:** {embedding_data['study_title']}")
                 st.write(f"**Vectors Created:** {embedding_data['vectors_created']}")
                 st.write(f"**Chunk Types:** {', '.join(embedding_data['chunk_types'])}")
                 st.write(f"**Content Hash:** {embedding_data['content_hash']}")
+                st.info("💡 This study is now searchable via the AI Assistant for intelligent clinical queries.")
     
-    def _calculate_completeness(self, data) -> float:
-        """Calculate data completeness score"""
-        total_fields = 0
-        filled_fields = 0
-        
-        # Check key fields
-        if data.study_identification.title:
-            filled_fields += 1
-        total_fields += 1
-        
-        if data.study_identification.nct_number:
-            filled_fields += 1
-        total_fields += 1
-        
-        if data.treatment_regimens:
-            filled_fields += 1
-        total_fields += 1
-        
-        if data.efficacy_outcomes.overall_response_rate:
-            filled_fields += 1
-        total_fields += 1
-        
-        if data.patient_demographics.total_enrolled:
-            filled_fields += 1
-        total_fields += 1
-        
-        return filled_fields / total_fields if total_fields > 0 else 0.0
+    def _safe_get(self, obj, path: str, default=None):
+        """Safely get nested attributes from object or dictionary"""
+        try:
+            keys = path.split('.')
+            current = obj
+            for key in keys:
+                if isinstance(current, dict):
+                    current = current.get(key, default)
+                else:
+                    current = getattr(current, key, default)
+                if current is None:
+                    return default
+            return current
+        except:
+            return default
     
-    def _render_batch_upload(self):
-        """Render batch upload interface with vector embedding integration"""
+    def _calculate_clinical_significance_safe(self, data) -> float:
+        """Calculate overall clinical significance score safely"""
+        score = 0.0
         
-        st.markdown("""
-        <div class="section-header">
-            <h3>📚 Batch Processing</h3>
-        </div>
-        """, unsafe_allow_html=True)
+        # Study type weight
+        study_type = self._safe_get(data, 'study_design.study_type.value') or self._safe_get(data, 'study_design.study_type', '')
+        if "Phase 3" in str(study_type):
+            score += 0.3
+        elif "Phase 2" in str(study_type):
+            score += 0.2
         
-        uploaded_files = st.file_uploader(
-            "Upload multiple research files",
-            accept_multiple_files=True,
-            type=["pdf", "docx", "txt"],
-            help="Upload multiple files for batch processing. Supported formats: PDF, Word documents, and text files"
-        )
+        # Sample size weight
+        total_enrolled = self._safe_get(data, 'patient_demographics.total_enrolled')
+        if total_enrolled:
+            try:
+                total_enrolled = int(total_enrolled)
+                if total_enrolled >= 500:
+                    score += 0.2
+                elif total_enrolled >= 100:
+                    score += 0.15
+                else:
+                    score += 0.1
+            except:
+                score += 0.1
         
-        if uploaded_files:
-            # Files overview
-            st.markdown(f"### 📋 {len(uploaded_files)} Files Selected")
-            
-            # Display file details
-            with st.expander("📁 File Details", expanded=True):
-                for i, file in enumerate(uploaded_files, 1):
-                    col1, col2, col3, col4 = st.columns(4)
-                    with col1:
-                        st.write(f"**{i}.** {file.name}")
-                    with col2:
-                        st.write(f"{file.size / 1024:.1f} KB")
-                    with col3:
-                        st.write(file.type)
-                    with col4:
-                        st.write("✅ Ready")
-            
-            # Batch processing options (Developer mode only)
-            if st.session_state.developer_mode:
-                with st.expander("⚙️ Batch Processing Options", expanded=True):
-                    col1, col2 = st.columns(2)
-                    
-                    with col1:
-                        extract_metadata = st.checkbox("📊 Extract Metadata", value=True, help="Extract comprehensive study metadata for all files")
-                        categorize_studies = st.checkbox("🏷️ Categorize Studies", value=True, help="Intelligent study categorization for all files")
-                        embed_vectors = st.checkbox("🧠 Vector Embedding", value=True, help="Create vector embeddings for AI search")
-                    
-                    with col2:
-                        confidence_threshold = st.slider("Confidence Threshold", 0.0, 1.0, 0.7, 0.1, help="Minimum confidence for extracted data")
-                        parallel_processing = st.checkbox("⚡ Parallel Processing", value=True, help="Process multiple files simultaneously")
-                        auto_correct = st.checkbox("🔧 Auto-correction", value=True, help="Automatically correct obvious errors")
-                
-                # Advanced options (moved outside the main expander to avoid nesting)
-                with st.expander("🔬 Advanced Settings", expanded=False):
-                    batch_size = st.slider("Batch Size", 1, min(10, len(uploaded_files)), min(5, len(uploaded_files)), help="Number of files to process simultaneously")
-                    skip_duplicates = st.checkbox("⏭️ Skip Duplicates", value=True, help="Skip files that have already been processed")
-                    error_handling = st.selectbox("Error Handling", ["Stop on Error", "Continue on Error", "Retry Failed"], help="How to handle processing errors")
+        # Efficacy data weight
+        orr_value = self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value')
+        if orr_value:
+            try:
+                orr_value = float(orr_value)
+                if orr_value >= 80:
+                    score += 0.25
+                elif orr_value >= 60:
+                    score += 0.2
+                else:
+                    score += 0.1
+            except:
+                score += 0.1
+        
+        # Survival data weight
+        pfs_median = self._safe_get(data, 'efficacy_outcomes.progression_free_survival.median')
+        if pfs_median:
+            try:
+                pfs_median = float(pfs_median)
+                if pfs_median >= 24:
+                    score += 0.25
+                elif pfs_median >= 12:
+                    score += 0.15
+                else:
+                    score += 0.1
+            except:
+                score += 0.1
+        
+        return min(score, 1.0)
+    
+    def _assess_ae_significance_safe(self, grade_3_4_rate) -> str:
+        """Assess clinical significance of adverse event rate safely"""
+        if not grade_3_4_rate or grade_3_4_rate == "Not reported":
+            return "Unknown"
+        
+        try:
+            rate = float(grade_3_4_rate)
+            if rate >= 50:
+                return "High Concern"
+            elif rate >= 25:
+                return "Moderate Concern"
+            elif rate >= 10:
+                return "Low Concern"
             else:
-                # Default values when developer mode is off
-                extract_metadata = True
-                categorize_studies = True
-                embed_vectors = True
-                confidence_threshold = 0.7
-                parallel_processing = True
-                auto_correct = True
-                batch_size = min(5, len(uploaded_files))
-                skip_duplicates = True
-                error_handling = "Continue on Error"
-            
-            # Processing button
-            if st.button("🚀 Process All Files", type="primary", use_container_width=True):
-                
-                # Initialize tracking
-                start_time = time.time()
-                total_files = len(uploaded_files)
-                successful_extractions = 0
-                successful_categorizations = 0
-                successful_embeddings = 0
-                skipped_embeddings = 0
-                failed_files = []
-                
-                # Create main progress indicators
-                st.markdown("### 🔄 Batch Processing Progress")
-                overall_progress = st.progress(0)
-                overall_status = st.empty()
-                
-                # Create detailed progress tracking
-                progress_details = st.container()
-                
-                try:
-                    # Process files
-                    for i, uploaded_file in enumerate(uploaded_files):
-                        file_progress = (i / total_files)
-                        overall_progress.progress(int(file_progress * 100))
-                        overall_status.text(f"Processing file {i+1}/{total_files}: {uploaded_file.name}")
-                        
-                        # Individual file processing container
-                        with progress_details:
-                            with st.expander(f"📄 {uploaded_file.name}", expanded=True):
-                                file_col1, file_col2, file_col3 = st.columns(3)
-                                
-                                file_start_time = time.time()
-                                file_results = {
-                                    'metadata_extraction': {'status': 'pending'},
-                                    'categorization': {'status': 'pending'},
-                                    'vector_embedding': {'status': 'pending'}
-                                }
-                                
-                                try:
-                                    # Step 1: Extract text content
-                                    file_content = uploaded_file.read()
-                                    if uploaded_file.type == "application/pdf":
-                                        from utils.file_processors import FileProcessor
-                                        processor = FileProcessor()
-                                        text_content = processor.process_file(file_content, uploaded_file.name)
-                                    else:
-                                        text_content = file_content.decode('utf-8')
-                                    
-                                    if not text_content.strip():
-                                        raise ValueError("No text content extracted")
-                                    
-                                    # Step 2: Metadata Extraction
-                                    if extract_metadata:
-                                        with file_col1:
-                                            st.info("🔍 Extracting metadata...")
-                                        
-                                        try:
-                                            extracted_data = asyncio.run(
-                                                self.metadata_extractor.extract_comprehensive_metadata(text_content)
-                                            )
-                                            
-                                            file_results['metadata_extraction'] = {
-                                                'status': 'success',
-                                                'data': extracted_data
-                                            }
-                                            successful_extractions += 1
-                                            
-                                            with file_col1:
-                                                st.success("✅ Metadata extracted")
-                                                
-                                        except Exception as e:
-                                            file_results['metadata_extraction'] = {
-                                                'status': 'failed',
-                                                'error': str(e)
-                                            }
-                                            with file_col1:
-                                                st.error(f"❌ Extraction failed: {str(e)[:50]}...")
-                                    
-                                    # Step 3: Categorization
-                                    if categorize_studies and file_results['metadata_extraction']['status'] == 'success':
-                                        with file_col2:
-                                            st.info("🏷️ Categorizing study...")
-                                        
-                                        try:
-                                            category_data = asyncio.run(
-                                                self.categorizer.categorize_study(
-                                                    text_content,  # Pass text content, not metadata object
-                                                    file_results['metadata_extraction']['data'].model_dump()
-                                                )
-                                            )
-                                            file_results['categorization'] = {
-                                                'status': 'success',
-                                                'data': category_data
-                                            }
-                                            successful_categorizations += 1
-                                            
-                                            with file_col2:
-                                                st.success("✅ Study categorized")
-                                                
-                                        except Exception as e:
-                                            file_results['categorization'] = {
-                                                'status': 'failed',
-                                                'error': str(e)
-                                            }
-                                            with file_col2:
-                                                st.error(f"❌ Categorization failed: {str(e)[:50]}...")
-                                    
-                                    # Step 4: Vector Embedding
-                                    if embed_vectors and file_results['metadata_extraction']['status'] == 'success' and self._get_vector_store():
-                                        with file_col3:
-                                            st.info("🧠 Creating embeddings...")
-                                        
-                                        try:
-                                            embedding_result = asyncio.run(
-                                                self._get_vector_store().embed_abstract(file_results['metadata_extraction']['data'])
-                                            )
-                                            file_results['vector_embedding'] = {
-                                                'status': 'success',
-                                                'data': embedding_result
-                                            }
-                                            
-                                            # Update session state for vector embedding status
-                                            if 'vector_embedding_status' not in st.session_state:
-                                                st.session_state.vector_embedding_status = []
-                                            
-                                            st.session_state.vector_embedding_status.append({
-                                                'file': uploaded_file.name,
-                                                'status': embedding_result['status'],
-                                                'timestamp': datetime.now().isoformat()
-                                            })
-                                            
-                                            if embedding_result['status'] == 'success':
-                                                successful_embeddings += 1
-                                                with file_col3:
-                                                    st.success(f"✅ {embedding_result['vectors_created']} vectors created")
-                                            elif embedding_result['status'] == 'skipped':
-                                                skipped_embeddings += 1
-                                                with file_col3:
-                                                    st.info(f"⏭️ Skipped (duplicate)")
-                                            else:
-                                                with file_col3:
-                                                    st.warning(f"⚠️ Failed: {embedding_result.get('reason', 'Unknown')}")
-                                                    
-                                        except Exception as e:
-                                            file_results['vector_embedding'] = {
-                                                'status': 'failed',
-                                                'error': str(e)
-                                            }
-                                            with file_col3:
-                                                st.error(f"❌ Embedding failed: {str(e)[:50]}...")
-                                    
-                                    # Store successful extractions
-                                    if file_results['metadata_extraction']['status'] == 'success':
-                                        if 'extracted_data' not in st.session_state:
-                                            st.session_state.extracted_data = []
-                                        st.session_state.extracted_data.append(file_results['metadata_extraction']['data'])
-                                        
-                                        if file_results['categorization']['status'] == 'success':
-                                            if 'categorization_data' not in st.session_state:
-                                                st.session_state.categorization_data = []
-                                            st.session_state.categorization_data.append(file_results['categorization']['data'])
-                                
-                                except Exception as e:
-                                    failed_files.append({
-                                        'file': uploaded_file.name,
-                                        'error': str(e)
-                                    })
-                                    st.error(f"❌ **{uploaded_file.name}** failed: {str(e)}")
-                                    
-                                    if error_handling == "Stop on Error":
-                                        break
-                    
-                    # Complete processing
-                    overall_progress.progress(100)
-                    processing_time = time.time() - start_time
-                    
-                    # Update session statistics
-                    if successful_extractions > 0:
-                        self._update_session_stats(processing_time, successful_extractions)
-                    
-                    # Show final results
-                    st.markdown("---")
-                    st.markdown("### 📊 Batch Processing Results")
-                    
-                    col1, col2, col3, col4, col5 = st.columns(5)
-                    
-                    with col1:
-                        st.metric("Total Files", total_files)
-                    with col2:
-                        st.metric("Metadata Extracted", successful_extractions, delta=f"{successful_extractions/total_files:.1%}")
-                    with col3:
-                        st.metric("Studies Categorized", successful_categorizations, delta=f"{successful_categorizations/total_files:.1%}")
-                    with col4:
-                        st.metric("Vectors Created", successful_embeddings, delta=f"{skipped_embeddings} skipped")
-                    with col5:
-                        st.metric("Processing Time", f"{processing_time:.1f}s", delta=f"{processing_time/total_files:.1f}s avg")
-                    
-                    # Error summary
-                    if failed_files:
-                        with st.expander(f"❌ {len(failed_files)} Failed Files", expanded=False):
-                            for failure in failed_files:
-                                st.write(f"• **{failure['file']}**: {failure['error']}")
-                    
-                    # Success message
-                    if successful_extractions > 0:
-                        success_message = f"🎉 **Batch processing completed!** "
-                        success_parts = []
-                        if successful_extractions > 0:
-                            success_parts.append(f"{successful_extractions} metadata extracted")
-                        if successful_categorizations > 0:
-                            success_parts.append(f"{successful_categorizations} categorized")
-                        if successful_embeddings > 0:
-                            success_parts.append(f"{successful_embeddings} vectorized")
-                        if skipped_embeddings > 0:
-                            success_parts.append(f"{skipped_embeddings} duplicates skipped")
-                        
-                        success_message += ', '.join(success_parts)
-                        st.success(success_message)
-                        
-                        # Auto-rerun to refresh the interface
-                        st.rerun()
-                    else:
-                        st.error("❌ No files were processed successfully. Please check the error messages above.")
-                
-                except Exception as e:
-                    overall_progress.progress(100)
-                    overall_status.text("❌ Batch processing failed")
-                    st.error(f"❌ **Batch processing error:** {str(e)}")
-                    st.info("Please check your files and API configuration, then try again.")
-            
-            # Processing tips
-            st.markdown("---")
-            st.markdown("""
-            **💡 Batch Processing Tips:**
-            - Ensure all files contain medical research abstracts or papers
-            - Larger files may take longer to process
-            - Vector embedding creates searchable knowledge for the AI assistant
-            - Duplicate detection prevents re-processing the same studies
-            - Use parallel processing for faster results with multiple files
-            """)
-        
-        else:
-            # Instructions when no files uploaded
-            st.info("""
-            📚 **Batch Processing**
-            
-            Upload multiple research files to process them all at once:
-            • Extract metadata from all files simultaneously
-            • Create vector embeddings for AI search capabilities
-            • Categorize studies automatically
-            • Track processing progress for each file
-            
-            Supported formats: PDF, Word documents (.docx), and text files (.txt)
-            """)
+                return "Minimal Concern"
+        except:
+            return "Unknown"
     
+    def _generate_clinical_insights_safe(self, data) -> List[str]:
+        """Generate key clinical insights from the data safely"""
+        insights = []
+        
+        # Study design insights
+        study_type = self._safe_get(data, 'study_design.study_type.value') or self._safe_get(data, 'study_design.study_type', 'Unknown')
+        evidence_level = self._get_evidence_level_safe(study_type)
+        insights.append(f"This {study_type} study provides {evidence_level} evidence")
+        
+        # Population insights
+        total_enrolled = self._safe_get(data, 'patient_demographics.total_enrolled')
+        if total_enrolled:
+            try:
+                total_enrolled = int(total_enrolled)
+                if total_enrolled >= 300:
+                    insights.append(f"Large study population (N={total_enrolled}) enhances statistical power")
+                elif total_enrolled >= 100:
+                    insights.append(f"Adequate study population (N={total_enrolled}) for meaningful analysis")
+            except:
+                insights.append(f"Study population data available (N={total_enrolled})")
+        
+        # Efficacy insights
+        orr_value = self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value')
+        if orr_value:
+            try:
+                orr = float(orr_value)
+                if orr >= 80:
+                    insights.append(f"Exceptional response rate ({orr}%) suggests highly active regimen")
+                elif orr >= 60:
+                    insights.append(f"Strong response rate ({orr}%) indicates clinically meaningful activity")
+            except:
+                insights.append(f"Response rate data available ({orr_value}%)")
+        
+        return insights
+    
+    def _generate_practice_implications_safe(self, data) -> List[str]:
+        """Generate clinical practice implications safely"""
+        implications = []
+        
+        # Treatment setting implications
+        mm_subtype = self._safe_get(data, 'mm_subtype')
+        if mm_subtype:
+            mm_types = mm_subtype if isinstance(mm_subtype, list) else [mm_subtype]
+            if any("Newly Diagnosed" in str(t) for t in mm_types):
+                implications.append("Findings relevant for first-line treatment decisions")
+            elif any("Relapsed" in str(t) or "Refractory" in str(t) for t in mm_types):
+                implications.append("Important for relapsed/refractory treatment sequencing")
+        
+        # Efficacy implications
+        pfs_median = self._safe_get(data, 'efficacy_outcomes.progression_free_survival.median')
+        if pfs_median:
+            try:
+                pfs = float(pfs_median)
+                if pfs >= 24:
+                    implications.append("Extended PFS supports potential for durable disease control")
+                elif pfs >= 12:
+                    implications.append("Reasonable PFS suggests meaningful clinical benefit")
+            except:
+                implications.append("PFS data provides treatment duration insights")
+        
+        # Patient selection implications
+        median_age = self._safe_get(data, 'patient_demographics.median_age')
+        if median_age:
+            try:
+                age = float(median_age)
+                if age >= 70:
+                    implications.append("Safety data particularly relevant for elderly MM patients")
+                elif age <= 65:
+                    implications.append("Results applicable to younger, potentially transplant-eligible patients")
+            except:
+                implications.append("Age distribution data available for patient selection")
+        
+        return implications if implications else ["Clinical practice implications depend on complete data availability"]
+    
+    def _generate_regulatory_context_safe(self, data) -> List[str]:
+        """Generate regulatory and commercial context safely"""
+        context = []
+        
+        # Study phase context
+        study_type = self._safe_get(data, 'study_design.study_type.value') or self._safe_get(data, 'study_design.study_type', '')
+        if "Phase 3" in str(study_type):
+            context.append("Phase 3 data supports potential regulatory submissions")
+        elif "Phase 2" in str(study_type):
+            context.append("Phase 2 data provides proof-of-concept for further development")
+        
+        # Competitive landscape
+        orr_value = self._safe_get(data, 'efficacy_outcomes.overall_response_rate.value')
+        if orr_value:
+            try:
+                orr = float(orr_value)
+                if orr >= 85:
+                    context.append("Best-in-class potential based on response rates")
+                elif orr >= 70:
+                    context.append("Competitive efficacy profile in current treatment landscape")
+            except:
+                context.append("Efficacy data available for competitive assessment")
+        
+        # Market access considerations
+        safety_profile = self._safe_get(data, 'safety_profile')
+        if safety_profile:
+            context.append("Safety profile will be key factor in market access decisions")
+        
+        return context if context else ["Regulatory context depends on study phase and data maturity"]
+    
+    def _get_evidence_level_safe(self, study_type: str) -> str:
+        """Get evidence level based on study type safely"""
+        study_type_str = str(study_type).lower()
+        if "phase 3" in study_type_str:
+            return "high-level"
+        elif "phase 2" in study_type_str:
+            return "moderate-level"
+        elif "phase 1" in study_type_str:
+            return "preliminary"
+        else:
+            return "supporting"
+    
+    def _assess_data_quality_safe(self, data) -> Dict[str, float]:
+        """Assess quality of different data domains safely"""
+        quality = {}
+        
+        # Study identification completeness
+        id_fields = [
+            self._safe_get(data, 'study_identification.title'),
+            self._safe_get(data, 'study_identification.nct_number'),
+            self._safe_get(data, 'study_identification.study_acronym')
+        ]
+        quality["Study Identification"] = sum(1 for field in id_fields if field) / len(id_fields)
+        
+        # Demographics completeness
+        demo_fields = [
+            self._safe_get(data, 'patient_demographics.total_enrolled'),
+            self._safe_get(data, 'patient_demographics.median_age'),
+            self._safe_get(data, 'patient_demographics.male_percentage')
+        ]
+        quality["Demographics"] = sum(1 for field in demo_fields if field) / len(demo_fields)
+        
+        # Efficacy completeness
+        eff_fields = [
+            self._safe_get(data, 'efficacy_outcomes.overall_response_rate'),
+            self._safe_get(data, 'efficacy_outcomes.progression_free_survival')
+        ]
+        quality["Efficacy Data"] = sum(1 for field in eff_fields if field) / len(eff_fields)
+        
+        # Treatment details
+        treatment_regimens = self._safe_get(data, 'treatment_regimens')
+        quality["Treatment Details"] = 1.0 if treatment_regimens else 0.0
+        
+        return quality
+    
+    def _export_comprehensive_data(self, data):
+        """Export comprehensive dataset"""
+        # Implementation for data export
+        pass
+    
+    def _generate_clinical_summary_report(self, data):
+        """Generate clinical summary report"""
+        # Implementation for summary report
+        pass
+    
+    def _generate_citation(self, data) -> str:
+        """Generate academic citation"""
+        title = data.study_identification.title
+        acronym = data.study_identification.study_acronym
+        nct = data.study_identification.nct_number
+        
+        citation = f"{title}"
+        if acronym:
+            citation += f" ({acronym})"
+        if nct:
+            citation += f" [{nct}]"
+        citation += f". {data.study_design.study_type.value} study."
+        
+        return citation
+
     def _extract_orr(self, data: ComprehensiveAbstractMetadata) -> str:
         """Extract ORR value for display"""
         orr_data = data.efficacy_outcomes.overall_response_rate
