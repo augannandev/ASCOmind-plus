@@ -359,25 +359,26 @@ class EnhancedMetadataExtractor:
     def _structure_metadata(self, validated_data: Dict[str, Any], 
                           confidence_scores: Dict[str, float], 
                           source_text: str) -> ComprehensiveAbstractMetadata:
-        """Structure validated data into pydantic model"""
+        """Structure validated data into pydantic model with robust error handling"""
         
         abstract_id = str(uuid.uuid4())
         
         try:
-            # Create individual components
+            # Create individual components with safe data extraction
+            study_id_data = validated_data.get("study_identification", {})
             study_id = StudyIdentification(
-                title=validated_data.get("study_identification", {}).get("title", ""),
-                study_acronym=validated_data.get("study_identification", {}).get("study_acronym"),
-                nct_number=validated_data.get("study_identification", {}).get("nct_number"),
-                abstract_number=validated_data.get("study_identification", {}).get("abstract_number"),
-                study_group=validated_data.get("study_identification", {}).get("study_group"),
-                principal_investigator=validated_data.get("study_identification", {}).get("principal_investigator"),
-                publication_year=validated_data.get("study_identification", {}).get("publication_year"),
-                conference_name=validated_data.get("study_identification", {}).get("conference_name"),
-                confidence_score=confidence_scores.get("extraction_quality", 0.75)
+                title=study_id_data.get("title", "Unknown Study"),
+                study_acronym=study_id_data.get("study_acronym"),
+                nct_number=study_id_data.get("nct_number"),
+                abstract_number=study_id_data.get("abstract_number"),
+                study_group=study_id_data.get("study_group"),
+                principal_investigator=study_id_data.get("principal_investigator"),
+                publication_year=study_id_data.get("publication_year"),
+                conference_name=study_id_data.get("conference_name"),
+                confidence_score=study_id_data.get("confidence_score", confidence_scores.get("extraction_quality", 0.0))
             )
             
-            # Build study design
+            # Build study design with safe defaults
             study_design_data = validated_data.get("study_design", {})
             study_design = StudyDesign(
                 study_type=StudyType(study_design_data.get("study_type", "Phase 2")),
@@ -397,11 +398,17 @@ class EnhancedMetadataExtractor:
                 primary_endpoints=study_design_data.get("primary_endpoints", []),
                 secondary_endpoints=study_design_data.get("secondary_endpoints", []),
                 exploratory_endpoints=study_design_data.get("exploratory_endpoints", []),
-                confidence_score=confidence_scores.get("extraction_quality", 0.75)
+                confidence_score=study_design_data.get("confidence_score", confidence_scores.get("extraction_quality", 0.0))
             )
             
-            # Build patient demographics
+            # Build patient demographics with safe handling
             demographics_data = validated_data.get("patient_demographics", {})
+            
+            # Handle case where LLM only returned confidence_score or minimal data
+            if len(demographics_data) <= 1 and "confidence_score" in demographics_data:
+                # LLM couldn't extract meaningful demographics, use empty structure
+                demographics_data = {"confidence_score": demographics_data.get("confidence_score", 0.0)}
+            
             patient_demographics = PatientDemographics(
                 total_enrolled=demographics_data.get("total_enrolled"),
                 evaluable_patients=demographics_data.get("evaluable_patients"),
@@ -420,10 +427,10 @@ class EnhancedMetadataExtractor:
                 ecog_2_plus_percentage=demographics_data.get("ecog_2_plus_percentage"),
                 karnofsky_median=demographics_data.get("karnofsky_median"),
                 frailty_score_high=demographics_data.get("frailty_score_high"),
-                confidence_score=confidence_scores.get("patient_demographics", 0.0)
+                confidence_score=demographics_data.get("confidence_score", 0.0)
             )
             
-            # Build disease characteristics
+            # Build disease characteristics with safe handling
             disease_data = validated_data.get("disease_characteristics", {})
             mm_subtypes = []
             if disease_data.get("mm_subtype"):
@@ -451,10 +458,10 @@ class EnhancedMetadataExtractor:
                 albumin_low_percentage=disease_data.get("albumin_low_percentage"),
                 renal_impairment_percentage=disease_data.get("renal_impairment_percentage"),
                 biomarker_results=disease_data.get("biomarker_results"),
-                confidence_score=confidence_scores.get("disease_characteristics", 0.0)
+                confidence_score=disease_data.get("confidence_score", confidence_scores.get("disease_characteristics", 0.0))
             )
             
-            # Build treatment history
+            # Build treatment history with safe handling
             treatment_hist_data = validated_data.get("treatment_history", {})
             treatment_history = TreatmentHistory(
                 line_of_therapy=treatment_hist_data.get("line_of_therapy"),
@@ -477,10 +484,10 @@ class EnhancedMetadataExtractor:
                 penta_refractory_percentage=treatment_hist_data.get("penta_refractory_percentage"),
                 time_since_diagnosis_median=treatment_hist_data.get("time_since_diagnosis_median"),
                 time_since_last_therapy_median=treatment_hist_data.get("time_since_last_therapy_median"),
-                confidence_score=confidence_scores.get("treatment_history", 0.0)
+                confidence_score=treatment_hist_data.get("confidence_score", confidence_scores.get("treatment_history", 0.0))
             )
             
-            # Build treatment regimens
+            # Build treatment regimens with safe handling
             regimens_data = validated_data.get("treatment_regimens", [])
             treatment_regimens = []
             
@@ -513,7 +520,7 @@ class EnhancedMetadataExtractor:
                     confidence_score=0.0
                 )]
             
-            # Build efficacy outcomes
+            # Build efficacy outcomes with safe handling
             efficacy_data = validated_data.get("efficacy_outcomes", {})
             efficacy_outcomes = EfficacyOutcomes(
                 overall_response_rate=efficacy_data.get("overall_response_rate"),
@@ -534,10 +541,10 @@ class EnhancedMetadataExtractor:
                 mrd_method=efficacy_data.get("mrd_method"),
                 stringent_cr_rate=efficacy_data.get("stringent_cr_rate"),
                 subgroup_analyses=efficacy_data.get("subgroup_analyses"),
-                confidence_score=confidence_scores.get("efficacy_outcomes", 0.0)
+                confidence_score=efficacy_data.get("confidence_score", confidence_scores.get("efficacy_outcomes", 0.0))
             )
             
-            # Build safety profile
+            # Build safety profile with safe handling
             safety_data = validated_data.get("safety_profile", {})
             safety_profile = SafetyProfile(
                 safety_population=safety_data.get("safety_population"),
@@ -557,7 +564,7 @@ class EnhancedMetadataExtractor:
                 discontinuations=safety_data.get("discontinuations"),
                 treatment_related_deaths=safety_data.get("treatment_related_deaths"),
                 total_deaths=safety_data.get("total_deaths"),
-                confidence_score=confidence_scores.get("safety_profile", 0.0)
+                confidence_score=safety_data.get("confidence_score", confidence_scores.get("safety_profile", 0.0))
             )
             
             # Build quality of life (optional)
