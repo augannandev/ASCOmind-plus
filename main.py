@@ -709,6 +709,30 @@ st.markdown("""
         color: #dc2626;
         font-weight: 600;
     }
+    
+    .chat-container {
+        max-height: 400px;
+        overflow-y: auto;
+        padding: 1rem;
+        background: #fafafa;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #e2e8f0;
+    }
+    .chat-input-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        border-top: 1px solid #e2e8f0;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    .chat-content-wrapper {
+        margin-bottom: 120px; /* Space for fixed input */
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -806,10 +830,13 @@ class ASCOmindApp:
         
         # Vector store and AI assistant session state
         if 'vector_embedding_status' not in st.session_state:
-            st.session_state.vector_embedding_status = []
+            st.session_state.vector_embedding_status = {}
         
         if 'ai_conversation_history' not in st.session_state:
             st.session_state.ai_conversation_history = []
+        
+        if 'pending_ai_question' not in st.session_state:
+            st.session_state.pending_ai_question = None
         
         if 'ai_context' not in st.session_state:
             st.session_state.ai_context = {}
@@ -817,6 +844,10 @@ class ASCOmindApp:
         # Session isolation flags
         if 'session_data_isolated' not in st.session_state:
             st.session_state.session_data_isolated = True
+        
+        # Protocol generator results
+        if 'protocol_results' not in st.session_state:
+            st.session_state.protocol_results = None
     
     def run(self):
         """Main application entry point"""
@@ -912,9 +943,9 @@ class ASCOmindApp:
                 {"icon": "📄", "name": "Abstract Analysis", "key": "abstract", "badge": len(st.session_state.extracted_data) if st.session_state.extracted_data else None},
                 {"icon": "🤖", "name": "AI Assistant", "key": "ai", "badge": len(st.session_state.ai_conversation_history) if len(st.session_state.ai_conversation_history) > 0 else None},
                 {"icon": "🔬", "name": "Protocol Generator", "key": "protocol", "badge": None},
-                {"icon": "🔍", "name": "Research Explorer", "key": "research", "badge": "Soon"},
-                {"icon": "💊", "name": "Treatment Intelligence", "key": "treatment", "badge": "Soon"},
-                {"icon": "📈", "name": "Market Analytics", "key": "market", "badge": "Soon"},
+                #{"icon": "🔍", "name": "Research Explorer", "key": "research", "badge": "Soon"},
+                #{"icon": "💊", "name": "Treatment Intelligence", "key": "treatment", "badge": "Soon"},
+                #{"icon": "📈", "name": "Market Analytics", "key": "market", "badge": "Soon"},
                 {"icon": "⚙️", "name": "Settings", "key": "settings", "badge": None}
             ]
             
@@ -1035,58 +1066,58 @@ class ASCOmindApp:
         </div>
         """, unsafe_allow_html=True)
         
-        # Main welcome section
-        st.markdown("""
-        <div class="insight-panel" style="text-align: center; margin-bottom: 2rem;">
-            <h3 style="color: #1e293b; margin-bottom: 1rem;">🚀 Your AI-Powered Medical Research Platform</h3>
-            <p style="color: #64748b; font-size: 1.1rem; margin-bottom: 1.5rem;">
-                Transform medical abstracts into actionable insights with advanced AI analysis
-            </p>
-            <div style="background: linear-gradient(135deg, #667eea20, #f093fb20); padding: 1.5rem; border-radius: 0.75rem; display: inline-block;">
-                <span style="font-size: 3rem;">🧬</span>
-                <div style="margin-top: 0.5rem; font-weight: 600; color: #1e293b;">Ready to get started?</div>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        # Show current session info if data exists
+        if st.session_state.extracted_data:
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                st.success(f"📊 **Active Session:** {len(st.session_state.extracted_data)} studies loaded")
+            with col2:
+                if st.button("📈 View Dashboard", type="primary", use_container_width=True):
+                    st.session_state.current_nav_page = 'dashboard'
+                    st.rerun()
         
-        # Getting started workflow
-        st.markdown("""
-        <div class="section-header">
-            <h3>🎯 Quick Start Guide</h3>
-        </div>
-        """, unsafe_allow_html=True)
+        # Compact Quick Start - much smaller cards
+        st.markdown("### 🚀 Quick Start")
         
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(4)
         
         with col1:
             st.markdown("""
-            <div class="metric-card" style="text-align: center; height: 200px; display: flex; flex-direction: column; justify-content: center;">
-                <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">📄</div>
-                <h4 style="margin-bottom: 0.5rem; color: #1e293b;">1. Upload Abstracts</h4>
-                <p style="color: #64748b; font-size: 0.9rem; margin: 0;">Upload research papers, abstracts, or text files for AI analysis</p>
+            <div style="text-align: center; padding: 0.75rem; background: #f8fafc; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">📄</div>
+                <h6 style="margin: 0; color: #1e293b;">1. Upload</h6>
+                <p style="color: #64748b; font-size: 0.75rem; margin: 0;">Add abstracts</p>
             </div>
             """, unsafe_allow_html=True)
         
         with col2:
             st.markdown("""
-            <div class="metric-card" style="text-align: center; height: 200px; display: flex; flex-direction: column; justify-content: center;">
-                <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🤖</div>
-                <h4 style="margin-bottom: 0.5rem; color: #1e293b;">2. AI Processing</h4>
-                <p style="color: #64748b; font-size: 0.9rem; margin: 0;">Automatic extraction of 50+ data elements with intelligent categorization</p>
+            <div style="text-align: center; padding: 0.75rem; background: #f8fafc; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">🤖</div>
+                <h6 style="margin: 0; color: #1e293b;">2. Process</h6>
+                <p style="color: #64748b; font-size: 0.75rem; margin: 0;">AI extraction</p>
             </div>
             """, unsafe_allow_html=True)
         
         with col3:
             st.markdown("""
-            <div class="metric-card" style="text-align: center; height: 200px; display: flex; flex-direction: column; justify-content: center;">
-                <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">📊</div>
-                <h4 style="margin-bottom: 0.5rem; color: #1e293b;">3. View Insights</h4>
-                <p style="color: #64748b; font-size: 0.9rem; margin: 0;">Interactive dashboards, AI chat, and comprehensive analytics</p>
+            <div style="text-align: center; padding: 0.75rem; background: #f8fafc; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">📊</div>
+                <h6 style="margin: 0; color: #1e293b;">3. Analyze</h6>
+                <p style="color: #64748b; font-size: 0.75rem; margin: 0;">View insights</p>
             </div>
             """, unsafe_allow_html=True)
         
-        # Quick action buttons
-        st.markdown("---")
+        with col4:
+            st.markdown("""
+            <div style="text-align: center; padding: 0.75rem; background: #f8fafc; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">💬</div>
+                <h6 style="margin: 0; color: #1e293b;">4. Chat</h6>
+                <p style="color: #64748b; font-size: 0.75rem; margin: 0;">Ask AI</p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        # Compact action buttons
         st.markdown("### ⚡ Ready to Start?")
         
         col1, col2, col3 = st.columns(3)
@@ -1102,88 +1133,58 @@ class ASCOmindApp:
                 st.rerun()
         
         with col3:
-            if st.button("📊 View Demo Dashboard", use_container_width=True, help="See what the dashboard looks like", disabled=not st.session_state.extracted_data):
+            if st.button("📊 View Dashboard", use_container_width=True, help="See what the dashboard looks like", disabled=not st.session_state.extracted_data):
                 if st.session_state.extracted_data:
                     st.session_state.current_nav_page = 'dashboard'
                     st.rerun()
                 else:
-                    st.info("Upload and process abstracts first to view the dashboard!")
+                    st.info("📝 Upload some abstracts first to see the dashboard")
         
-        # Platform capabilities
-        st.markdown("""
-        <div class="section-header" style="margin-top: 2rem;">
-            <h3>🌟 Platform Capabilities</h3>
-        </div>
-        """, unsafe_allow_html=True)
+        # Platform capabilities - compact expandable section
+        with st.expander("✨ Platform Capabilities", expanded=False):
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("""
+                **🔬 Advanced Analysis:**
+                - Automated data extraction
+                - Clinical significance scoring
+                - Treatment efficacy comparison
+                - Safety profile analysis
+                """)
+            
+            with col2:
+                st.markdown("""
+                **🤖 AI-Powered Features:**
+                - Intelligent Q&A assistant
+                - Study recommendations
+                - Competitive landscape analysis
+                - Protocol optimization insights
+                """)
         
-        col1, col2 = st.columns(2)
+        # Quick tips for new users
+        if not st.session_state.extracted_data:
+            st.info("""
+            💡 **New to ASCOmind+?** Start by uploading a few abstracts to see the platform in action. 
+            You can paste text directly or upload PDF/DOC files.
+            """)
         
-        with col1:
-            st.markdown("""
-            <div class="insight-panel">
-                <h4 style="color: #1e293b; margin-bottom: 1rem;">📊 Advanced Analytics</h4>
-                <ul style="color: #64748b; line-height: 1.6;">
-                    <li>✅ 50+ data elements extracted automatically</li>
-                    <li>✅ Study categorization and classification</li>
-                    <li>✅ Efficacy and safety analysis</li>
-                    <li>✅ Treatment landscape mapping</li>
-                    <li>✅ Publication-quality visualizations</li>
-                </ul>
-            </div>
-            """, unsafe_allow_html=True)
-        
-        with col2:
-            st.markdown("""
-            <div class="insight-panel">
-                <h4 style="color: #1e293b; margin-bottom: 1rem;">🤖 AI-Powered Features</h4>
-                <ul style="color: #64748b; line-height: 1.6;">
-                    <li>🧠 Intelligent research assistant</li>
-                    <li>🔍 Semantic search across studies</li>
-                    <li>📝 Automated protocol generation</li>
-                    <li>💡 Clinical insights and recommendations</li>
-                    <li>⚡ Real-time question answering</li>
-                </ul>
-            </div>
-            """, unsafe_allow_html=True)
-        
-        # Current session status
-        if st.session_state.extracted_data:
+        # Development mode info
+        if st.session_state.developer_mode:
             st.markdown("---")
-            st.markdown("### 📈 Your Current Session")
-            
-            col1, col2, col3, col4 = st.columns(4)
-            
-            with col1:
-                st.metric("📚 Studies Processed", len(st.session_state.extracted_data))
-            with col2:
-                total_patients = sum(d.patient_demographics.total_enrolled for d in st.session_state.extracted_data if d.patient_demographics.total_enrolled)
-                st.metric("👥 Total Patients", f"{total_patients:,}" if total_patients else "N/A")
-            with col3:
-                ai_conversations = len(st.session_state.ai_conversation_history)
-                st.metric("💬 AI Conversations", ai_conversations)
-            with col4:
-                if hasattr(st.session_state, 'session_stats'):
-                    session_time = time.time() - st.session_state.session_stats.get('session_start_time', time.time())
-                    st.metric("⏱️ Session Time", f"{session_time/60:.1f}m")
-                else:
-                    st.metric("⏱️ Session Time", "0m")
-            
-            # Continue working buttons
-            st.markdown("### 🚀 Continue Your Analysis")
-            col1, col2, col3 = st.columns(3)
-            
-            with col1:
-                if st.button("📊 View Dashboard", type="primary", use_container_width=True):
-                    st.session_state.current_nav_page = 'dashboard'
-                    st.rerun()
-            with col2:
-                if st.button("📄 Add More Studies", use_container_width=True):
-                    st.session_state.current_nav_page = 'abstract'
-                    st.rerun()
-            with col3:
-                if st.button("🤖 Ask AI Questions", use_container_width=True):
-                    st.session_state.current_nav_page = 'ai'
-                    st.rerun()
+            with st.expander("🛠️ Developer Info", expanded=False):
+                st.markdown(f"""
+                **Session Details:**
+                - Session ID: `{st.session_state.session_id}`
+                - Developer Mode: ✅ Enabled
+                - Studies Loaded: {len(st.session_state.extracted_data)}
+                - Navigation State: {st.session_state.current_nav_page}
+                
+                **Quick Actions:**
+                - Add `?dev` to URL for developer features
+                - Check Settings page for API configuration
+                - Debug information available in AI Assistant
+                """)
     
     def render_dashboard(self):
         """Render enhanced main dashboard with modern UI - Data visualization focused"""
@@ -1238,25 +1239,19 @@ class ASCOmindApp:
         self._render_dashboard_content()
     
     def _render_dashboard_content(self):
-        """Render enhanced dashboard content with modern visualizations"""
+        """Render main dashboard content with compact layout"""
         
-        # Enhanced key metrics row with modern styling
-        st.markdown("""
-        <div class="section-header">
-            <h3>📈 Key Performance Indicators</h3>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        summary_stats = st.session_state.analysis_results.get('dataset_overview', {}).get('summary_statistics', {})
-        
+        # Compact Quick Stats - smaller cards with tighter spacing
         col1, col2, col3 = st.columns(3)
+        
+        summary_stats = self._get_session_summary()
         
         with col1:
             total_studies = summary_stats.get('total_studies', len(st.session_state.extracted_data))
             st.markdown(f"""
-            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{total_studies}</div>
-                <div style="font-size: 0.875rem; opacity: 0.9;">Studies Analyzed</div>
+            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 1rem; border-radius: 0.75rem; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">{total_studies}</div>
+                <div style="font-size: 0.75rem; opacity: 0.9;">Studies Analyzed</div>
             </div>
             """, unsafe_allow_html=True)
         
@@ -1264,9 +1259,9 @@ class ASCOmindApp:
             randomized_count = sum(1 for data in st.session_state.extracted_data if data.study_design.randomized)
             randomized_pct = (randomized_count / total_studies * 100) if total_studies > 0 else 0
             st.markdown(f"""
-            <div style="background: linear-gradient(135deg, #f59e0b, #fbbf24); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{randomized_pct:.1f}%</div>
-                <div style="font-size: 0.875rem; opacity: 0.9;">Randomized Studies</div>
+            <div style="background: linear-gradient(135deg, #f59e0b, #fbbf24); color: white; padding: 1rem; border-radius: 0.75rem; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">{randomized_pct:.1f}%</div>
+                <div style="font-size: 0.75rem; opacity: 0.9;">Randomized Studies</div>
             </div>
             """, unsafe_allow_html=True)
         
@@ -1274,18 +1269,14 @@ class ASCOmindApp:
             total_enrollment = sum(data.patient_demographics.total_enrolled for data in st.session_state.extracted_data if data.patient_demographics.total_enrolled)
             enrollment_display = f"{total_enrollment:,}" if total_enrollment > 0 else "N/A"
             st.markdown(f"""
-            <div style="background: linear-gradient(135deg, #10b981, #10b981dd); color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">{enrollment_display}</div>
-                <div style="font-size: 0.875rem; opacity: 0.9;">Total Patients</div>
+            <div style="background: linear-gradient(135deg, #10b981, #10b981dd); color: white; padding: 1rem; border-radius: 0.75rem; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">{enrollment_display}</div>
+                <div style="font-size: 0.75rem; opacity: 0.9;">Total Patients</div>
             </div>
             """, unsafe_allow_html=True)
         
-        # Simple, data-driven visualizations based on extracted studies only
-        st.markdown("""
-        <div class="section-header" style="margin-top: 2rem;">
-            <h3>📊 Your Study Data Analysis</h3>
-        </div>
-        """, unsafe_allow_html=True)
+        # Compact analysis section
+        st.markdown("### 📊 Your Study Data Analysis")
         
         # Extract actual data from user's studies
         study_data = []
@@ -1332,12 +1323,11 @@ class ASCOmindApp:
                 'confidence': data.extraction_confidence
             })
         
-        # Only show visualizations if we have actual data
+        # Compact study display
         if len(study_data) == 1:
-            # Single study view
+            # Single study view - more compact
             study = study_data[0]
-            st.markdown(f"### 📋 Analysis of: {study['name']}")
-            st.markdown(f"**Title:** {study['title']}")
+            st.markdown(f"**Study:** {study['name']} | {study['title']}")
             
             col1, col2, col3, col4 = st.columns(4)
             with col1:
@@ -1351,31 +1341,12 @@ class ASCOmindApp:
                 st.metric("👥 Enrolled", enroll_display)
             with col4:
                 st.metric("✅ Quality", f"{study['confidence']:.0%}")
-            
-            # Show what data was actually found
-            st.markdown("#### 📊 Data Availability")
-            data_found = []
-            if study['orr'] is not None:
-                data_found.append(f"✅ Response Rate: {study['orr']:.1f}%")
-            if study['pfs'] is not None:
-                data_found.append(f"✅ PFS: {study['pfs']:.1f} months")
-            if study['enrollment']:
-                data_found.append(f"✅ Enrollment: {study['enrollment']} patients")
-            
-            if data_found:
-                for item in data_found:
-                    st.markdown(item)
-            else:
-                st.info("ℹ️ Limited quantitative data available in this abstract")
         
         elif len(study_data) > 1:
-            # Multiple studies comparison
+            # Multiple studies comparison - side by side charts
             col1, col2 = st.columns(2)
             
             with col1:
-                st.markdown("#### 🎯 Response Rates")
-                
-                # Only show studies with ORR data
                 studies_with_orr = [s for s in study_data if s['orr'] is not None]
                 
                 if studies_with_orr:
@@ -1390,22 +1361,20 @@ class ASCOmindApp:
                     ])
                     
                     fig_orr.update_layout(
-                        title="Your Studies: Overall Response Rate",
+                        title="Response Rates",
                         xaxis_title="Study",
                         yaxis_title="ORR (%)",
-                        height=400,
+                        height=350,  # Reduced height
                         showlegend=False,
-                        template="plotly_white"
+                        template="plotly_white",
+                        margin=dict(t=40, b=40, l=40, r=40)  # Tighter margins
                     )
                     
                     st.plotly_chart(fig_orr, use_container_width=True)
                 else:
-                    st.info("📊 No ORR data available in your studies")
+                    st.info("📊 No ORR data available")
             
             with col2:
-                st.markdown("#### 👥 Study Sizes")
-                
-                # Only show studies with enrollment data
                 studies_with_enrollment = [s for s in study_data if s['enrollment']]
                 
                 if studies_with_enrollment:
@@ -1426,92 +1395,76 @@ class ASCOmindApp:
                     ])
                     
                     fig_enroll.update_layout(
-                        title="Your Studies: Patient Enrollment",
+                        title="Patient Enrollment",
                         xaxis_title="Study",
-                        yaxis_title="Patients Enrolled",
-                        height=400,
+                        yaxis_title="Patients",
+                        height=350,  # Reduced height
                         showlegend=False,
-                        template="plotly_white"
+                        template="plotly_white",
+                        margin=dict(t=40, b=40, l=40, r=40)  # Tighter margins
                     )
                     
                     st.plotly_chart(fig_enroll, use_container_width=True)
                 else:
-                    st.info("📊 No enrollment data available in your studies")
-            
-            # Summary table with actual data
-            # st.markdown("#### 📋 Study Comparison")
-            # summary_table_data = []
-            # for study in study_data:
-            #     summary_table_data.append({
-            #         'Study': study['name'],
-            #         'Phase': study['phase'],
-            #         'Category': study['category'],
-            #         'Patients (N)': study['enrollment'] if study['enrollment'] else 'N/A',
-            #         'ORR (%)': f"{study['orr']:.1f}" if study['orr'] is not None else 'N/A',
-            #         'PFS (months)': f"{study['pfs']:.1f}" if study['pfs'] is not None else 'N/A',
-            #         'Data Quality': f"{study['confidence']:.0%}"
-            #     })
-            
-            # summary_df = pd.DataFrame(summary_table_data)
-            # st.dataframe(summary_df, use_container_width=True, hide_index=True)
-            
-            # --- NEW: Treatment Distribution Table ---
-            st.markdown("---")
-            if len(study_data) >= 2:  # Show distribution table for 2+ studies
+                    st.info("📊 No enrollment data available")
+        
+        # Compact extraction summary
+        if len(study_data) > 1:
+            with st.expander("📊 Data Extraction Summary", expanded=False):
+                col1, col2, col3 = st.columns(3)
+                
+                with col1:
+                    studies_with_orr = len([s for s in study_data if s['orr'] is not None])
+                    st.metric("🎯 Studies with ORR", f"{studies_with_orr}/{len(study_data)}")
+                
+                with col2:
+                    studies_with_pfs = len([s for s in study_data if s['pfs'] is not None])
+                    st.metric("📈 Studies with PFS", f"{studies_with_pfs}/{len(study_data)}")
+                
+                with col3:
+                    studies_with_enrollment = len([s for s in study_data if s['enrollment']])
+                    st.metric("👥 Studies with Enrollment", f"{studies_with_enrollment}/{len(study_data)}")
+        
+        # Advanced analysis sections - compact and expandable
+        if len(study_data) >= 2:
+            with st.expander("🧬 Treatment Distribution Analysis", expanded=False):
                 distribution_data = self._generate_treatment_distribution_table()
                 self._display_treatment_distribution_table(distribution_data)
             
-            # --- NEW: High-Risk Population Analysis ---
-            st.markdown("---")
-            high_risk_data = self._generate_high_risk_population_analysis()
-            self._display_high_risk_population_analysis(high_risk_data)
+            with st.expander("⚠️ High-Risk Population Analysis", expanded=False):
+                high_risk_data = self._generate_high_risk_population_analysis()
+                self._display_high_risk_population_analysis(high_risk_data)
         
-        else:
-            st.info("📊 No studies available. Upload abstracts to see visualizations.")
-        
-        # Show data extraction summary
-        st.markdown("#### 📈 Extraction Summary")
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            studies_with_orr = len([s for s in study_data if s['orr'] is not None])
-            st.metric("🎯 Studies with ORR", f"{studies_with_orr}/{len(study_data)}")
-        
-        with col2:
-            studies_with_pfs = len([s for s in study_data if s['pfs'] is not None])
-            st.metric("📈 Studies with PFS", f"{studies_with_pfs}/{len(study_data)}")
-        
-        with col3:
-            studies_with_enrollment = len([s for s in study_data if s['enrollment']])
-            st.metric("👥 Studies with Enrollment", f"{studies_with_enrollment}/{len(study_data)}")
-    
-        # Show all visualizer plots (skip empty/placeholder plots)
+        # Advanced visualizations - compact and expandable
         if st.session_state.visualizations:
-            with st.expander('📊 Advanced Visualizations (AI Visualizer)', expanded=True):
+            with st.expander('📊 AI-Generated Visualizations', expanded=False):
                 for viz_name, fig in st.session_state.visualizations.items():
                     # Skip if figure has no data traces (placeholder)
                     if hasattr(fig, 'data') and len(fig.data) == 0:
                         continue
-                    st.markdown(f"#### {viz_name.replace('_', ' ').title()}")
+                    st.markdown(f"**{viz_name.replace('_', ' ').title()}**")
                     st.plotly_chart(fig, use_container_width=True)
-    
-        # --- NEW: Analyzer-based advanced visualizations ---
-        analyzer_results = st.session_state.analysis_results
-        from agents.visualizer import AdvancedVisualizer
-        adv_viz = AdvancedVisualizer()
-        with st.expander('🤖 AI Advanced Analytics (Analyzer Results)', expanded=False):
-            # Efficacy Benchmarks
-            efficacy_benchmarks = analyzer_results.get('efficacy_benchmarks', {})
-            if efficacy_benchmarks:
-                st.markdown('#### Efficacy Benchmarks by Line of Therapy')
-                fig = adv_viz._create_efficacy_analysis_chart_from_analyzer(efficacy_benchmarks)
-                st.plotly_chart(fig, use_container_width=True)
-            # Safety Patterns
-            safety_patterns = analyzer_results.get('safety_patterns', {})
-            if safety_patterns:
-                st.markdown('#### Safety Patterns by Line of Therapy')
-                fig = adv_viz._create_safety_analysis_chart_from_analyzer(safety_patterns)
-                st.plotly_chart(fig, use_container_width=True)
+        
+        # Analyzer-based advanced analytics - compact and expandable
+        if hasattr(st.session_state, 'analysis_results') and st.session_state.analysis_results:
+            with st.expander('🤖 AI Advanced Analytics', expanded=False):
+                analyzer_results = st.session_state.analysis_results
+                from agents.visualizer import AdvancedVisualizer
+                adv_viz = AdvancedVisualizer()
+                
+                # Efficacy Benchmarks
+                efficacy_benchmarks = analyzer_results.get('efficacy_benchmarks', {})
+                if efficacy_benchmarks:
+                    st.markdown('**Efficacy Benchmarks by Line of Therapy**')
+                    fig = adv_viz._create_efficacy_analysis_chart_from_analyzer(efficacy_benchmarks)
+                    st.plotly_chart(fig, use_container_width=True)
+                
+                # Safety Patterns
+                safety_patterns = analyzer_results.get('safety_patterns', {})
+                if safety_patterns:
+                    st.markdown('**Safety Patterns by Line of Therapy**')
+                    fig = adv_viz._create_safety_analysis_chart_from_analyzer(safety_patterns)
+                    st.plotly_chart(fig, use_container_width=True)
     
     def render_abstract_analyzer(self):
         """Enhanced abstract analysis interface with comprehensive features"""
@@ -1738,62 +1691,14 @@ class ASCOmindApp:
                     # Use the new tabbed interface for each individual study
                     self._show_individual_study_tabs(data, categorization, i)
             
-            # Enhanced Export and Action options
-            st.markdown("""
-            <div class="section-header" style="margin-top: 2rem;">
-                <h3>⚡ Actions & Export</h3>
-            </div>
-            """, unsafe_allow_html=True)
-            
-            col1, col2, col3 = st.columns(3)
-            
-            with col1:
-                if st.button("📊 Generate Analysis", type="primary", help="Generate comprehensive clinical analysis"):
-                    with st.spinner("🧠 Generating comprehensive clinical analysis..."):
-                        try:
-                            # Get analyzer using lazy loading
-                            analyzer = self._get_analyzer()
-                            
-                            # Generate comprehensive analysis
-                            st.session_state.analysis_results = analyzer.analyze_comprehensive_dataset(
-                                st.session_state.extracted_data
-                            )
-                            
-                            # Generate visualizations using lazy loading
-                            visualizer = self._get_visualizer()
-                            
-                            st.session_state.visualizations = visualizer.create_comprehensive_dashboard(
-                                st.session_state.extracted_data  # Use extracted_data instead of analysis_results
-                            )
-                            
-                            st.success("✅ Analysis completed! Check the insights in the Dashboard.")
-                            st.rerun()
-                            
-                        except Exception as e:
-                            st.error(f"❌ Analysis failed: {str(e)}")
-                            # Fallback: Generate basic summary
-                            st.session_state.analysis_results = self._generate_basic_analysis()
-                            st.rerun()
-            
-            with col2:
-                if st.button("📥 Export Data", help="Export extracted data to CSV"):
-                    self._export_data()
-            
-            with col3:
-                if st.button("🗑️ Clear Data", help="Clear all extracted data"):
-                    if st.session_state.extracted_data:
-                        st.session_state.extracted_data = []
-                        st.session_state.categorization_data = []
-                        st.session_state.analysis_results = None
-                        st.session_state.visualizations = {}
-                        st.session_state.session_stats = {
-                            'total_processing_time': 0.0,
-                            'abstracts_processed': 0,
-                            'session_start_time': time.time(),
-                            'processing_history': []
-                        }
-                        st.success("🗑️ All data cleared successfully!")
-                        st.rerun()
+            # Show uploaded data and results
+            if st.session_state.extracted_data:
+                # Brief Insights Section - NEW ADDITION
+                self._render_brief_insights_summary()
+                
+                # Actions & Export section
+                st.markdown("---")
+                self._render_actions_and_export()
     
     def _render_text_input(self):
         """Render text input interface with timing and progress"""
@@ -1801,10 +1706,19 @@ class ASCOmindApp:
         abstract_text = st.text_area(
             "Paste abstract text:",
             height=200,
-            placeholder="Enter multiple myeloma research abstract text here..."
+            placeholder="Enter multiple myeloma research abstract text here...",
+            key="abstract_text_input"
         )
         
-        if abstract_text and st.button("🔍 Process Abstract", type="primary"):
+        # Show button always, but enable/disable based on text content
+        has_text = abstract_text and abstract_text.strip()
+        
+        # Show helpful message
+        if not has_text:
+            st.info("📝 Paste your abstract text above to enable processing.")
+        
+        # Always show button, but disable when no text
+        if st.button("🔍 Process Abstract", type="primary", disabled=not has_text):
             # Start timing
             start_time = time.time()
             
@@ -1852,7 +1766,9 @@ class ASCOmindApp:
                         progress_bar.progress(80, text="Vector embedding complete")
                         embedding_status = embedding_result
                         
-                        # Store embedding status
+                        # Store embedding status - fix: use dictionary instead of list indexing
+                        if 'vector_embedding_status' not in st.session_state:
+                            st.session_state.vector_embedding_status = {}
                         st.session_state.vector_embedding_status[extracted_data.abstract_id] = embedding_result
                         
                     except Exception as e:
@@ -1944,6 +1860,20 @@ class ASCOmindApp:
             with col3:
                 st.metric("File Type", uploaded_file.type)
             
+            # PDF-specific processing options
+            process_pdf_pages_separately = False
+            if uploaded_file.type == "application/pdf":
+                st.markdown("---")
+                st.markdown("### 📄 PDF Processing Options")
+                process_pdf_pages_separately = st.checkbox(
+                    "🔄 Process each page as separate abstract",
+                    value=False,
+                    help="Enable this if your PDF contains multiple abstracts (one per page). Each page will be processed individually."
+                )
+                
+                if process_pdf_pages_separately:
+                    st.info("📋 **Page-by-page processing enabled**: Each page will be treated as a separate abstract with individual metadata extraction, categorization, and vector embedding.")
+            
             # Processing options (Developer mode only)
             if st.session_state.developer_mode:
                 with st.expander("⚙️ Processing Options", expanded=True):
@@ -1965,176 +1895,199 @@ class ASCOmindApp:
                 confidence_threshold = 0.7
                 auto_correct = True
             
+            # Dynamic button text based on PDF processing mode
+            if process_pdf_pages_separately:
+                button_text = "🚀 Process PDF Pages Separately"
+                button_help = "Process each page of the PDF as a separate abstract"
+            else:
+                button_text = "🚀 Process File"
+                button_help = "Process the entire file as a single document"
+            
             # Process button
-            if st.button("🚀 Process File", type="primary", use_container_width=True):
+            if st.button(button_text, type="primary", use_container_width=True, help=button_help):
                 # Initialize processing tracking
                 start_time = time.time()
-                processing_results = {
-                    'metadata_extraction': {'status': 'pending', 'data': None},
-                    'categorization': {'status': 'pending', 'data': None}, 
-                    'vector_embedding': {'status': 'pending', 'data': None}
-                }
+                file_content = uploaded_file.read()
                 
-                # Create progress tracking
-                progress_bar = st.progress(0)
-                status_text = st.empty()
-                step_details = st.empty()
-                
-                try:
-                    # Step 1: Text Extraction (10%)
-                    status_text.text("📄 Extracting text from file...")
-                    progress_bar.progress(10)
+                if process_pdf_pages_separately and uploaded_file.type == "application/pdf":
+                    # Process PDF pages separately
+                    self._process_pdf_pages_separately(file_content, uploaded_file.name, {
+                        'extract_metadata': extract_metadata,
+                        'categorize_study': categorize_study,
+                        'embed_vectors': embed_vectors,
+                        'confidence_threshold': confidence_threshold,
+                        'auto_correct': auto_correct
+                    })
+                else:
+                    # Standard single file processing
+                    processing_results = {
+                        'metadata_extraction': {'status': 'pending', 'data': None},
+                        'categorization': {'status': 'pending', 'data': None}, 
+                        'vector_embedding': {'status': 'pending', 'data': None}
+                    }
                     
-                    # Extract text
-                    file_content = uploaded_file.read()
-                    if uploaded_file.type == "application/pdf":
-                        from utils.file_processors import FileProcessor
-                        processor = FileProcessor()
-                        text_content = processor.process_file(file_content, uploaded_file.name)
-                    else:
-                        # Handle other file types
-                        text_content = file_content.decode('utf-8')
+                    # Create progress tracking
+                    progress_bar = st.progress(0)
+                    status_text = st.empty()
+                    step_details = st.empty()
                     
-                    if not text_content.strip():
-                        st.error("❌ Could not extract text from the file.")
-                        return
-                    
-                    # Step 2: Metadata Extraction (30%)
-                    if extract_metadata:
-                        status_text.text("🔍 Extracting comprehensive metadata...")
-                        progress_bar.progress(30)
+                    try:
+                        # Step 1: Text Extraction (10%)
+                        status_text.text("📄 Extracting text from file...")
+                        progress_bar.progress(10)
                         
-                        try:
-                            extracted_data = asyncio.run(
-                                self.metadata_extractor.extract_comprehensive_metadata(text_content)
-                            )
+                        # Extract text
+                        if uploaded_file.type == "application/pdf":
+                            from utils.file_processors import FileProcessor
+                            processor = FileProcessor()
+                            text_content = processor.process_file(file_content, uploaded_file.name)
+                        else:
+                            # Handle other file types
+                            text_content = file_content.decode('utf-8')
+                        
+                        if not text_content.strip():
+                            st.error("❌ Could not extract text from the file.")
+                            return
+                        
+                        # Step 2: Metadata Extraction (30%)
+                        if extract_metadata:
+                            status_text.text("🔍 Extracting comprehensive metadata...")
+                            progress_bar.progress(30)
+                            
+                            try:
+                                extracted_data = asyncio.run(
+                                    self.metadata_extractor.extract_comprehensive_metadata(text_content)
+                                )
+                                extracted_data.source_file = uploaded_file.name
+                                
+                                processing_results['metadata_extraction'] = {
+                                    'status': 'success',
+                                    'data': extracted_data
+                                }
+                                step_details.success("✅ Metadata extraction completed")
+                            except Exception as e:
+                                processing_results['metadata_extraction'] = {
+                                    'status': 'failed',
+                                    'error': str(e)
+                                }
+                                step_details.error(f"❌ Metadata extraction failed: {str(e)}")
+                        
+                        # Step 3: Categorization (50%)
+                        if categorize_study and processing_results['metadata_extraction']['status'] == 'success':
+                            status_text.text("🏷️ Categorizing study...")
+                            progress_bar.progress(50)
+                            
+                            try:
+                                category_data = asyncio.run(
+                                    self.categorizer.categorize_study(
+                                        text_content,  # Pass text content, not metadata object
+                                        processing_results['metadata_extraction']['data'].model_dump()
+                                    )
+                                )
+                                processing_results['categorization'] = {
+                                    'status': 'success',
+                                    'data': category_data
+                                }
+                                step_details.success("✅ Study categorization completed")
+                            except Exception as e:
+                                processing_results['categorization'] = {
+                                    'status': 'failed',
+                                    'error': str(e)
+                                }
+                                step_details.error(f"❌ Categorization failed: {str(e)}")
+                        
+                        # Step 4: Vector Embedding (80%)
+                        if embed_vectors and processing_results['metadata_extraction']['status'] == 'success' and self._get_vector_store():
+                            status_text.text("🧠 Creating vector embeddings...")
+                            progress_bar.progress(80)
+                            
+                            try:
+                                embedding_result = asyncio.run(
+                                    self._get_vector_store().embed_abstract(processing_results['metadata_extraction']['data'])
+                                )
+                                processing_results['vector_embedding'] = {
+                                    'status': 'success',
+                                    'data': embedding_result
+                                }
+                                
+                                # Update session state for vector embedding status
+                                if 'vector_embedding_status' not in st.session_state:
+                                    st.session_state.vector_embedding_status = {}
+                                
+                                # Use the extracted data from processing_results
+                                abstract_data = processing_results['metadata_extraction']['data']
+                                st.session_state.vector_embedding_status[abstract_data.abstract_id] = embedding_result
+                                
+                                if embedding_result['status'] == 'success':
+                                    step_details.success(f"✅ Vector embedding completed - {embedding_result['vectors_created']} chunks created")
+                                elif embedding_result['status'] == 'skipped':
+                                    step_details.info(f"ℹ️ Vector embedding skipped - {embedding_result['reason']}")
+                                else:
+                                    step_details.warning(f"⚠️ Vector embedding failed - {embedding_result.get('reason', 'Unknown error')}")
+                            
+                            except Exception as e:
+                                processing_results['vector_embedding'] = {
+                                    'status': 'failed',
+                                    'error': str(e)
+                                }
+                                step_details.error(f"❌ Vector embedding failed: {str(e)}")
+                        
+                        # Step 5: Finalization (100%)
+                        status_text.text("✅ Processing complete!")
+                        progress_bar.progress(100)
+                        
+                        # Calculate processing time
+                        processing_time = time.time() - start_time
+                        
+                        # Store results in session state
+                        if processing_results['metadata_extraction']['status'] == 'success':
+                            if 'extracted_data' not in st.session_state:
+                                st.session_state.extracted_data = []
+                            
+                            # Add file metadata
+                            extracted_data = processing_results['metadata_extraction']['data']
                             extracted_data.source_file = uploaded_file.name
                             
-                            processing_results['metadata_extraction'] = {
-                                'status': 'success',
-                                'data': extracted_data
-                            }
-                            step_details.success("✅ Metadata extraction completed")
-                        except Exception as e:
-                            processing_results['metadata_extraction'] = {
-                                'status': 'failed',
-                                'error': str(e)
-                            }
-                            step_details.error(f"❌ Metadata extraction failed: {str(e)}")
-                    
-                    # Step 3: Categorization (50%)
-                    if categorize_study and processing_results['metadata_extraction']['status'] == 'success':
-                        status_text.text("🏷️ Categorizing study...")
-                        progress_bar.progress(50)
-                        
-                        try:
-                            category_data = asyncio.run(
-                                self.categorizer.categorize_study(
-                                    text_content,  # Pass text content, not metadata object
-                                    processing_results['metadata_extraction']['data'].model_dump()
-                                )
-                            )
-                            processing_results['categorization'] = {
-                                'status': 'success',
-                                'data': category_data
-                            }
-                            step_details.success("✅ Study categorization completed")
-                        except Exception as e:
-                            processing_results['categorization'] = {
-                                'status': 'failed',
-                                'error': str(e)
-                            }
-                            step_details.error(f"❌ Categorization failed: {str(e)}")
-                    
-                    # Step 4: Vector Embedding (80%)
-                    if embed_vectors and processing_results['metadata_extraction']['status'] == 'success' and self._get_vector_store():
-                        status_text.text("🧠 Creating vector embeddings...")
-                        progress_bar.progress(80)
-                        
-                        try:
-                            embedding_result = asyncio.run(
-                                self._get_vector_store().embed_abstract(processing_results['metadata_extraction']['data'])
-                            )
-                            processing_results['vector_embedding'] = {
-                                'status': 'success',
-                                'data': embedding_result
-                            }
+                            st.session_state.extracted_data.append(extracted_data)
                             
-                            # Update session state for vector embedding status
-                            if 'vector_embedding_status' not in st.session_state:
-                                st.session_state.vector_embedding_status = []
-                            
-                            st.session_state.vector_embedding_status.append({
-                                'file': uploaded_file.name,
-                                'status': embedding_result['status'],
-                                'timestamp': datetime.now().isoformat()
-                            })
-                            
-                            if embedding_result['status'] == 'success':
-                                step_details.success(f"✅ Vector embedding completed - {embedding_result['vectors_created']} chunks created")
-                            elif embedding_result['status'] == 'skipped':
-                                step_details.info(f"ℹ️ Vector embedding skipped - {embedding_result['reason']}")
-                            else:
-                                step_details.warning(f"⚠️ Vector embedding failed - {embedding_result.get('reason', 'Unknown error')}")
+                            # Update session statistics
+                            self._update_session_stats(processing_time, 1)
                         
-                        except Exception as e:
-                            processing_results['vector_embedding'] = {
-                                'status': 'failed',
-                                'error': str(e)
-                            }
-                            step_details.error(f"❌ Vector embedding failed: {str(e)}")
-                    
-                    # Step 5: Finalization (100%)
-                    status_text.text("✅ Processing complete!")
-                    progress_bar.progress(100)
-                    
-                    # Calculate processing time
-                    processing_time = time.time() - start_time
-                    
-                    # Store results in session state
-                    if processing_results['metadata_extraction']['status'] == 'success':
-                        if 'extracted_data' not in st.session_state:
-                            st.session_state.extracted_data = []
+                        # Clear progress indicators
+                        progress_bar.empty()
+                        status_text.empty()
+                        step_details.empty()
                         
-                        # Add file metadata
-                        extracted_data = processing_results['metadata_extraction']['data']
-                        extracted_data.source_file = uploaded_file.name
+                        # Show detailed results
+                        self._show_processing_results(processing_results, processing_time)
                         
-                        st.session_state.extracted_data.append(extracted_data)
+                        # Success message with summary
+                        success_parts = []
+                        if processing_results['metadata_extraction']['status'] == 'success':
+                            success_parts.append("metadata extracted")
+                        if processing_results['categorization']['status'] == 'success':
+                            success_parts.append("study categorized")
+                        if processing_results['vector_embedding']['status'] == 'success':
+                            success_parts.append("vectors created")
+                        elif processing_results['vector_embedding']['status'] == 'skipped':
+                            success_parts.append("vectors skipped (duplicate)")
                         
-                        # Update session statistics
-                        self._update_session_stats(processing_time, 1)
-                    
-                    # Clear progress indicators
-                    progress_bar.empty()
-                    status_text.empty()
-                    step_details.empty()
-                    
-                    # Show detailed results
-                    self._show_processing_results(processing_results, processing_time)
-                    
-                    # Success message with summary
-                    success_parts = []
-                    if processing_results['metadata_extraction']['status'] == 'success':
-                        success_parts.append("metadata extracted")
-                    if processing_results['categorization']['status'] == 'success':
-                        success_parts.append("study categorized")
-                    if processing_results['vector_embedding']['status'] == 'success':
-                        success_parts.append("vectors created")
-                    elif processing_results['vector_embedding']['status'] == 'skipped':
-                        success_parts.append("vectors skipped (duplicate)")
-                    
-                    st.success(f"🎉 **File processed successfully!** {', '.join(success_parts).capitalize()}")
-                    
-                    # Auto-rerun to refresh the interface
-                    st.rerun()
-                    
-                except Exception as e:
-                    progress_bar.empty()
-                    status_text.empty()
-                    step_details.empty()
-                    st.error(f"❌ **Processing failed:** {str(e)}")
-                    st.info("Please check the file format and try again.")
+                        st.success(f"🎉 **File processed successfully!** {', '.join(success_parts).capitalize()}")
+                        
+                        # Auto-rerun to refresh the interface
+                        st.rerun()
+                        
+                    except Exception as e:
+                        # Clear progress indicators
+                        progress_bar.empty()
+                        status_text.empty()
+                        step_details.empty()
+                        
+                        st.error(f"❌ Processing failed: {str(e)}")
+                        
+                        # Log error for debugging
+                        import traceback
+                        st.error(f"Full error: {traceback.format_exc()}")
     
     def _render_batch_upload(self):
         """Render enhanced batch upload interface for processing multiple abstracts via text or files"""
@@ -2995,321 +2948,262 @@ class ASCOmindApp:
             mime="text/csv"
         )
     
-    def render_research_explorer(self):
-        """Render research explorer page"""
-        st.title("🔍 Research Data Explorer")
-        st.info("🚧 Advanced research exploration interface coming soon!")
+    # def render_research_explorer(self):
+    #     """Render research explorer page"""
+    #     st.title("🔍 Research Data Explorer")
+    #     st.info("🚧 Advanced research exploration interface coming soon!")
     
-    def render_treatment_intelligence(self):
-        """Render treatment intelligence page"""
-        st.title("💊 Treatment Landscape Intelligence")
-        st.info("🚧 Treatment intelligence dashboard coming soon!")
+    # def render_treatment_intelligence(self):
+    #     """Render treatment intelligence page"""
+    #     st.title("💊 Treatment Landscape Intelligence")
+    #     st.info("🚧 Treatment intelligence dashboard coming soon!")
     
-    def render_market_analytics(self):
-        """Render market analytics page"""
-        st.title("📈 Market Analytics & Commercial Intelligence")
-        st.info("🚧 Market analytics platform coming soon!")
+    # def render_market_analytics(self):
+    #     """Render market analytics page"""
+    #     st.title("📈 Market Analytics & Commercial Intelligence")
+    #     st.info("🚧 Market analytics platform coming soon!")
     
     def render_ai_assistant(self):
-        """Render AI assistant chatbot page with improved performance and UX"""
+        """Render AI assistant with working sticky input using Streamlit components"""
         
+        # CSS for sticky positioning
         st.markdown("""
-        <div class="section-header">
-            <h2>🤖 Dr. ASCOmind+ | AI Research Assistant</h2>
-        </div>
+        <style>
+        /* Main content adjustments */
+        .main .block-container {
+            padding-bottom: 160px !important;
+        }
+        
+        /* Chat messages styling */
+        .user-message {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 18px 18px 4px 18px;
+            margin: 8px 0 8px 25%;
+            text-align: left;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+        .ai-message {
+            background: #f8fafc;
+            color: #1e293b;
+            padding: 12px 16px;
+            border-radius: 18px 18px 18px 4px;
+            margin: 8px 25% 8px 0;
+            border-left: 4px solid #10b981;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .thinking-message {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 12px 16px;
+            border-radius: 18px;
+            margin: 8px 25% 8px 0;
+            border-left: 4px solid #f59e0b;
+            font-style: italic;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Sticky input container */
+        .stForm {
+            position: fixed !important;
+            bottom: 0 !important;
+            left: 21rem !important;
+            width: calc(100vw - 21rem) !important;
+            max-width: calc(1200px - 21rem) !important;
+            background: white !important;
+            padding: 16px !important;
+            border-top: 2px solid #e2e8f0 !important;
+            box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.12) !important;
+            z-index: 1000 !important;
+            margin: 0 !important;
+        }
+        
+        @media (max-width: 1024px) {
+            .stForm {
+                left: 0 !important;
+                width: 100vw !important;
+                max-width: none !important;
+            }
+        }
+        </style>
         """, unsafe_allow_html=True)
         
-        # Initialize components with lazy loading and session awareness
+        st.markdown('<h2>🤖 Dr. ASCOmind+ | AI Research Assistant</h2>', unsafe_allow_html=True)
+        
+        # Initialize AI components
         if not hasattr(self, '_ai_assistant_initialized'):
             self.ai_assistant = self._get_ai_assistant()
             self.vector_store = self._get_vector_store()
             self._ai_assistant_initialized = True
         
-        # Session information header
-        st.markdown(f"""
-        <div style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
-                    color: white; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
-            <h3 style="margin: 0; color: white;">🤖 AI Research Assistant</h3>
-            <p style="margin: 0.5rem 0 0 0; opacity: 0.9; font-size: 0.9rem;">
-                Session: {st.session_state.session_id[:12]}... | 
-                Data Isolated: ✅ Only your studies
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
+        # Quick stats header
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("📚 Studies", len(st.session_state.extracted_data))
+        with col2:
+            st.metric("💬 Conversations", len(st.session_state.ai_conversation_history))
+        with col3:
+            if st.button("🗑️ Clear Chat", type="secondary"):
+                st.session_state.ai_conversation_history = []
+                st.rerun()
         
-        # Developer mode controls
-        if st.session_state.developer_mode:
-            with st.expander("🛠️ Developer Controls", expanded=False):
-                st.markdown("**🧠 LLM Provider Selection:**")
-                
-                # Get available providers
-                available_providers = settings.get_available_providers()
-                enabled_providers = [provider for provider, available in available_providers.items() if available]
-                
-                if enabled_providers:
-                    provider_options = {}
-                    for provider in enabled_providers:
-                        config = settings.get_provider_config(provider)
-                        provider_options[f"{config['icon']} {config['name']} ({provider})"] = provider
-                    
-                    selected_display = st.selectbox(
-                        "Choose LLM Provider:",
-                        options=list(provider_options.keys()),
-                        index=list(provider_options.values()).index(st.session_state.selected_llm_provider) 
-                        if st.session_state.selected_llm_provider in provider_options.values() else 0,
-                        key="llm_provider_select"
-                    )
-                    
-                    # Update session state when selection changes
-                    new_provider = provider_options[selected_display]
-                    if new_provider != st.session_state.selected_llm_provider:
-                        st.session_state.selected_llm_provider = new_provider
-                        st.success(f"✅ Switched to {selected_display}")
-                        st.rerun()
-                    
-                    # Show provider status
-                    col1, col2, col3 = st.columns(3)
-                    for i, (provider, available) in enumerate(available_providers.items()):
-                        col = [col1, col2, col3][i % 3]
-                        config = settings.get_provider_config(provider)
-                        status = "✅" if available else "❌"
-                        current = "🎯" if provider == st.session_state.selected_llm_provider else ""
-                        col.write(f"{status} {config['icon']} {config['name']} {current}")
-                else:
-                    st.error("❌ No LLM providers available! Check your API keys in secrets.")
-                
-                st.markdown("---")
-                st.markdown("**🔧 Quick Actions:**")
-                if st.button("🔄 Refresh API Keys", key="refresh_api_keys"):
-                    settings.refresh_from_secrets()
-                    st.success("API keys refreshed!")
-                    st.rerun()
+        # Chat conversation area
+        chat_container = st.container()
         
-        # Simplified sidebar with session info
-        with st.sidebar:
-            st.markdown("### 🤖 Assistant Status")
-            st.success("✅ Ready")
+        with chat_container:
+            if st.session_state.ai_conversation_history:
+                for exchange in st.session_state.ai_conversation_history:
+                    # User message
+                    user_msg = exchange.get('user_message', '')
+                    st.markdown(f'''
+                    <div class="user-message">
+                        <strong>🙋‍♀️ You:</strong><br>{user_msg}
+                    </div>
+                    ''', unsafe_allow_html=True)
+                    
+                    # AI response
+                    response_data = exchange.get('response_data', {})
+                    ai_response = response_data.get('response', 'No response available')
+                    studies_count = response_data.get('studies_referenced', 0)
+                    
+                    st.markdown(f'''
+                    <div class="ai-message">
+                        <strong>🤖 Dr. ASCOmind+:</strong><br>
+                        {ai_response}
+                        {f'<br><small style="color: #64748b;">📚 Referenced {studies_count} studies</small>' if studies_count > 0 else ''}
+                    </div>
+                    ''', unsafe_allow_html=True)
+            else:
+                st.markdown('''
+                <div style="text-align: center; padding: 3rem; color: #64748b;">
+                    <h3>👋 Welcome! I'm Dr. ASCOmind+</h3>
+                    <p>I'm your AI research assistant specialized in multiple myeloma clinical data.</p>
+                    <p style="margin-top: 2rem;"><strong>💡 Try asking:</strong></p>
+                    <ul style="text-align: left; display: inline-block; margin-top: 1rem;">
+                        <li>"What studies do I have?"</li>
+                        <li>"Compare efficacy results"</li>
+                        <li>"What are the main safety concerns?"</li>
+                        <li>"Which study had the best ORR?"</li>
+                    </ul>
+                </div>
+                ''', unsafe_allow_html=True)
+        
+        # Show thinking indicator if processing
+        if st.session_state.get('ai_processing', False):
+            st.markdown('''
+            <div class="thinking-message">
+                🧠 Dr. ASCOmind+ is analyzing your question...
+            </div>
+            ''', unsafe_allow_html=True)
+        
+        # Spacer for fixed input
+        st.markdown('<div style="height: 120px;"></div>', unsafe_allow_html=True)
+        
+        # STICKY INPUT using Streamlit form with CSS positioning
+        with st.form("ai_chat_form", clear_on_submit=True):
+            col1, col2 = st.columns([5, 1])
             
-            # Session info
-            st.markdown("### 📊 Session Info")
-            st.info(f"Session: {st.session_state.session_id[:12]}...")
-            st.metric("Studies in Session", len(st.session_state.extracted_data))
-            
-            # Session management
-            col1, col2 = st.columns(2)
             with col1:
-                if st.button("📊 Refresh Stats", key="ai_refresh_stats"):
-                    # Get fresh statistics
-                    if self.vector_store:
-                        vector_stats = self.vector_store.get_statistics()
-                        st.json(vector_stats)
-                    else:
-                        st.warning("Vector store not available")
+                user_input = st.text_input(
+                    "Ask your question:",
+                    placeholder="Ask me anything about your multiple myeloma research...",
+                    key="ai_user_input",
+                    label_visibility="collapsed",
+                    disabled=st.session_state.get('ai_processing', False)
+                )
             
             with col2:
-                if st.button("🗑️ Clear Session Data", key="ai_clear_session"):
+                submit_btn = st.form_submit_button(
+                    "🚀 Ask",
+                    type="primary",
+                    use_container_width=True,
+                    disabled=st.session_state.get('ai_processing', False)
+                )
+        
+        # Process the question
+        if submit_btn and user_input.strip() and not st.session_state.get('ai_processing', False):
+            # Set processing state immediately and rerun to show thinking indicator
+            st.session_state.ai_processing = True
+            st.session_state.pending_ai_question = user_input.strip()
+            st.rerun()
+        
+        # Process pending question if exists
+        if st.session_state.get('pending_ai_question') and st.session_state.get('ai_processing', False):
+            user_question = st.session_state.pending_ai_question
+            st.session_state.pending_ai_question = None  # Clear pending question
+            
+            # Process the AI request
+            try:
+                user_context = {
+                    'session_studies': len(st.session_state.extracted_data)
+                }
+                
+                response_data = asyncio.run(
+                    asyncio.wait_for(
+                        self.ai_assistant.chat(user_question, user_context),
+                        timeout=60.0
+                    )
+                )
+                
+                # Store the conversation
+                conversation_entry = {
+                    'user_message': user_question,
+                    'response_data': response_data,
+                    'timestamp': datetime.now().strftime("%H:%M:%S")
+                }
+                
+                st.session_state.ai_conversation_history.append(conversation_entry)
+                st.session_state.ai_processing = False
+                st.rerun()
+                
+            except asyncio.TimeoutError:
+                st.session_state.ai_processing = False
+                st.error("⏰ Request timed out. Please try a simpler question.")
+            except Exception as e:
+                st.session_state.ai_processing = False
+                st.error(f"❌ Error: {str(e)}")
+        
+        # Advanced settings in expandable section
+        with st.expander("⚙️ Advanced Settings", expanded=False):
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("**🛠️ Session Management**")
+                if st.button("📊 View Session Stats"):
+                    if self.vector_store:
+                        stats = self.vector_store.get_statistics()
+                        st.json(stats)
+                
+                if st.button("🔄 Reset Session"):
                     if self.vector_store:
                         result = asyncio.run(self.vector_store.clear_session_data())
-                        if result["status"] == "success":
-                            st.success(f"Cleared {result['vectors_deleted']} vectors")
-                            # Also clear session state
-                            st.session_state.extracted_data = []
-                            st.session_state.ai_conversation_history = []
-                            st.rerun()
-                        else:
-                            st.error("Failed to clear session data")
-                    else:
-                        # Just clear session state if no vector store
-                        st.session_state.extracted_data = []
-                        st.session_state.ai_conversation_history = []
-                        st.success("Session data cleared")
-                        st.rerun()
-        
-        # Display conversation history (optimized)
-        if st.session_state.ai_conversation_history:
-            st.markdown("### 💬 Conversation History")
+                        st.success(f"Cleared {result.get('vectors_deleted', 0)} vectors")
+                    st.session_state.extracted_data = []
+                    st.session_state.ai_conversation_history = []
+                    st.rerun()
             
-            # Show only last 2 exchanges to improve performance
-            recent_exchanges = st.session_state.ai_conversation_history[-2:]
-            
-            for i, exchange in enumerate(recent_exchanges):
-                with st.chat_message("user"):
-                    st.write(exchange.get('user_message', ''))
-                
-                with st.chat_message("assistant"):
-                    response_data = exchange.get('response_data', {})
-                    st.write(response_data.get('response', 'No response available'))
+            with col2:
+                st.markdown("**🧠 AI Configuration**")
+                if hasattr(st.session_state, 'developer_mode') and st.session_state.developer_mode:
+                    providers = ["claude", "openai", "gemini"]
+                    current_provider = st.session_state.get('selected_llm_provider', 'claude')
                     
-                    # Show studies count if available
-                    if response_data.get('studies_referenced', 0) > 0:
-                        st.caption(f"📚 Referenced {response_data['studies_referenced']} studies")
-            
-            if len(st.session_state.ai_conversation_history) > 2:
-                st.caption(f"... and {len(st.session_state.ai_conversation_history) - 2} earlier exchanges")
-        
-        # Chat input with form for Enter key support
-        st.markdown("### 💬 Ask Dr. ASCOmind+")
-        
-        # Use form to enable Enter key submission
-        with st.form("ai_chat_form", clear_on_submit=True):
-            user_query = st.text_area(
-                "Your question:",
-                height=80,
-                placeholder="Ask about multiple myeloma research, treatment comparisons, or study insights...",
-                key="ai_chat_input_form"
-            )
-            
-            # Submit button
-            submitted = st.form_submit_button("🚀 Get AI Analysis", type="primary", use_container_width=True)
-        
-        # Process query when form is submitted
-        if submitted and user_query.strip():
-            # Store the query for processing
-            st.session_state.processing_query = user_query.strip()
-            
-            # Create a single container for the entire response process
-            response_container = st.container()
-            
-            with response_container:
-                # Simple progress indicator
-                with st.spinner("🧠 AI is analyzing your question..."):
-                    try:
-                        # Simple user context
-                        user_context = {
-                            'session_studies': len(st.session_state.extracted_data) if st.session_state.extracted_data else 0
-                        }
-                        
-                        # Get AI response with timeout
-                        response_data = asyncio.run(
-                            asyncio.wait_for(
-                                self.ai_assistant.chat(st.session_state.processing_query, user_context),
-                                timeout=60.0
-                            )
-                        )
-                        
-                        # Store conversation immediately
-                        conversation_entry = {
-                            'user_message': st.session_state.processing_query,
-                            'response_data': response_data,
-                            'timestamp': datetime.now().strftime("%H:%M:%S")
-                        }
-                        
-                        if 'ai_conversation_history' not in st.session_state:
-                            st.session_state.ai_conversation_history = []
-                        
-                        st.session_state.ai_conversation_history.append(conversation_entry)
-                        
-                        # Clear the processing query
-                        if 'processing_query' in st.session_state:
-                            del st.session_state.processing_query
-                        
-                        # Show success and immediately rerun to display new conversation
-                        st.success("✨ Response generated!")
-                        st.rerun()
-                        
-                    except asyncio.TimeoutError:
-                        st.error("⏰ Request timed out. Please try a simpler question.")
-                        if 'processing_query' in st.session_state:
-                            del st.session_state.processing_query
-                    except Exception as e:
-                        st.error(f"❌ AI Error: {str(e)}")
-                        if 'processing_query' in st.session_state:
-                            del st.session_state.processing_query
-        
-        elif submitted and not user_query.strip():
-            st.warning("⚠️ Please enter a question.")
-        
-        # Quick tips (only show if no conversation history to reduce clutter)
-        if not st.session_state.ai_conversation_history:
-            st.info("""
-            💡 **Quick Start Tips:**
-            - Ask about study comparisons: "Compare the efficacy of my uploaded studies"
-            - Get safety insights: "What are the main safety concerns?"
-            - Request recommendations: "What treatment would you recommend?"
-            
-            **💡 Pro Tip:** Press Enter or Ctrl+Enter to submit your question quickly!
-            """)
-        
-        # Debug mode - Add session and vector store information
-        if st.checkbox("🔧 Debug Mode", value=False, key="ai_debug_mode"):
-            with st.expander("🔍 Session & Vector Store Debug Information", expanded=True):
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    st.markdown("**📊 Session Information:**")
-                    session_info = {
-                        "session_id": st.session_state.session_id,
-                        "extracted_data_count": len(st.session_state.extracted_data) if st.session_state.extracted_data else 0,
-                        "ai_conversation_count": len(st.session_state.ai_conversation_history),
-                        "vector_embedding_status": getattr(st.session_state, 'vector_embedding_status', [])
-                    }
-                    st.json(session_info)
+                    new_provider = st.selectbox(
+                        "LLM Provider:",
+                        providers,
+                        index=providers.index(current_provider) if current_provider in providers else 0
+                    )
                     
-                    # Show extracted data titles
-                    if st.session_state.extracted_data:
-                        st.markdown("**📚 Extracted Studies:**")
-                        for i, data in enumerate(st.session_state.extracted_data, 1):
-                            st.write(f"{i}. {data.study_identification.title}")
-                
-                with col2:
-                    st.markdown("**🧠 Vector Store Information:**")
-                    try:
-                        if self.vector_store:
-                            vector_stats = self.vector_store.get_statistics()
-                            st.json(vector_stats)
-                            
-                            # Test vector store search
-                            if st.button("🔍 Test Vector Search", key="debug_test_vector_search"):
-                                try:
-                                    test_results = asyncio.run(
-                                        self.vector_store.search_abstracts("test query", top_k=3)
-                                    )
-                                    st.write(f"**Search Results:** {len(test_results)} studies found")
-                                    for result in test_results:
-                                        st.write(f"- {result['study_info']['title']} (Score: {result['score']:.3f})")
-                                except Exception as e:
-                                    st.error(f"Vector search failed: {e}")
-                        else:
-                            st.warning("Vector store not initialized")
-                    except Exception as e:
-                        st.error(f"Error getting vector stats: {e}")
-                
-                # Manual embedding test
-                st.markdown("---")
-                st.markdown("**🔧 Manual Embedding Test:**")
-                if st.button("🚀 Re-embed All Abstracts", key="debug_reembed_abstracts"):
-                    if st.session_state.extracted_data and self.vector_store:
-                        embedding_results = []
-                        progress_bar = st.progress(0)
-                        status_text = st.empty()
-                        
-                        for i, data in enumerate(st.session_state.extracted_data):
-                            progress = (i + 1) / len(st.session_state.extracted_data)
-                            progress_bar.progress(progress)
-                            status_text.text(f"Re-embedding {i+1}/{len(st.session_state.extracted_data)}: {data.study_identification.title[:50]}...")
-                            
-                            try:
-                                result = asyncio.run(
-                                    self.vector_store.embed_abstract(data, force_update=True)
-                                )
-                                embedding_results.append({
-                                    "study": data.study_identification.title,
-                                    "status": result["status"],
-                                    "vectors": result.get("vectors_created", 0)
-                                })
-                            except Exception as e:
-                                embedding_results.append({
-                                    "study": data.study_identification.title,
-                                    "status": "error",
-                                    "error": str(e)
-                                })
-                        
-                        progress_bar.progress(1.0)
-                        status_text.text("Re-embedding completed!")
-                        st.json(embedding_results)
-                        st.success("✅ Re-embedding completed! Try asking questions now.")
-                    else:
-                        st.warning("No data to embed or vector store not available")
+                    if new_provider != current_provider:
+                        st.session_state.selected_llm_provider = new_provider
+                        st.success(f"✅ Switched to {new_provider.title()}")
+                else:
+                    st.info("Enable developer mode (?dev) for AI configuration")
     
     def render_settings(self):
         """Render settings page"""
@@ -3899,10 +3793,10 @@ class ASCOmindApp:
                 stats = self.vector_store.get_statistics()
                 unique_studies = stats.get('unique_studies', 0)
                 
-                if unique_studies > 0:
-                    st.success(f"🧠 Vector store connected! Session: {session_id[:12]}... | Studies: {unique_studies}")
-                else:
-                    st.info(f"🧠 Vector store ready! Session: {session_id[:12]}... | No studies embedded yet")
+                # if unique_studies > 0:
+                #     st.success(f"🧠 Vector store connected! Session: {session_id[:12]}... | Studies: {unique_studies}")
+                # else:
+                #     st.info(f"🧠 Vector store ready! Session: {session_id[:12]}... | No studies embedded yet")
                 
             except Exception as e:
                 st.error(f"🚨 Vector store initialization failed: {e}")
@@ -5696,7 +5590,9 @@ class ASCOmindApp:
             st.markdown(html_table, unsafe_allow_html=True)
             
             # Detailed breakdown in expandable sections
-            with st.expander("🔍 View Detailed Breakdown", expanded=False):
+            show_details = st.checkbox("🔍 Show Detailed Breakdown", value=False, help="Show detailed breakdown of high-risk populations")
+            
+            if show_details:
                 
                 # Cytogenetic abnormalities details
                 if high_risk_data['cytogenetic_abnormalities']['studies']:
@@ -5734,6 +5630,459 @@ class ASCOmindApp:
                 mime="text/csv",
                 help="Download the high-risk population analysis as CSV"
             )
+
+    def _render_brief_insights_summary(self):
+        """Render simple clinical insights summary - 4-5 key bullet points"""
+        st.markdown("""
+        <div class="section-header">
+            <h3>💡 Key Clinical Insights</h3>
+            <p>Quick overview of your uploaded studies</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        if not st.session_state.extracted_data:
+            return
+        
+        # Generate 4-5 key insights
+        insights = []
+        
+        try:
+            # Insight 1: Dataset overview
+            total_studies = len(st.session_state.extracted_data)
+            study_types = []
+            treatments = set()
+            
+            for d in st.session_state.extracted_data:
+                try:
+                    # Study types
+                    if hasattr(d, 'study_design') and d.study_design and hasattr(d.study_design, 'study_type'):
+                        study_types.append(d.study_design.study_type)
+                    
+                    # Key treatments
+                    if hasattr(d, 'treatment_regimens') and d.treatment_regimens:
+                        if hasattr(d.treatment_regimens, 'regimens') and d.treatment_regimens.regimens:
+                            for regimen in d.treatment_regimens.regimens[:1]:  # First regimen only
+                                if hasattr(regimen, 'agents') and regimen.agents:
+                                    for agent in regimen.agents[:2]:  # First 2 agents
+                                        if hasattr(agent, 'name') and agent.name:
+                                            treatments.add(agent.name.lower())
+                        elif isinstance(d.treatment_regimens, list):
+                            for regimen in d.treatment_regimens[:1]:
+                                if hasattr(regimen, 'agents') and regimen.agents:
+                                    for agent in regimen.agents[:2]:
+                                        if hasattr(agent, 'name') and agent.name:
+                                            treatments.add(agent.name.lower())
+                except Exception:
+                    continue
+            
+            # Build overview insight
+            phase_counts = {}
+            for st_type in study_types:
+                if st_type:
+                    phase_counts[st_type] = phase_counts.get(st_type, 0) + 1
+            
+            phase_summary = ", ".join([f"{count} {phase}" for phase, count in phase_counts.items()])
+            insights.append(f"📊 **Dataset Overview:** {total_studies} studies analyzed ({phase_summary})")
+            
+            # Insight 2: Key treatments
+            key_treatments = list(treatments)[:3]  # Top 3 treatments
+            if key_treatments:
+                treatment_text = ", ".join([t.title() for t in key_treatments])
+                insights.append(f"💊 **Key Treatments:** Focus on {treatment_text} and combination regimens")
+            
+            # Insight 3: Efficacy snapshot
+            orr_values = []
+            pfs_values = []
+            
+            for d in st.session_state.extracted_data:
+                try:
+                    if hasattr(d, 'efficacy_outcomes') and d.efficacy_outcomes:
+                        # ORR
+                        if hasattr(d.efficacy_outcomes, 'overall_response_rate') and d.efficacy_outcomes.overall_response_rate:
+                            orr = d.efficacy_outcomes.overall_response_rate.value
+                            if orr and isinstance(orr, (int, float)) and orr > 0:
+                                orr_values.append(orr)
+                        
+                        # PFS
+                        if hasattr(d.efficacy_outcomes, 'progression_free_survival') and d.efficacy_outcomes.progression_free_survival:
+                            pfs = d.efficacy_outcomes.progression_free_survival.median
+                            if pfs and isinstance(pfs, (int, float)) and pfs > 0:
+                                pfs_values.append(pfs)
+                except Exception:
+                    continue
+            
+            if orr_values:
+                avg_orr = sum(orr_values) / len(orr_values)
+                orr_range = f"{min(orr_values):.0f}-{max(orr_values):.0f}%"
+                insights.append(f"📈 **Efficacy Highlights:** ORR ranges {orr_range} (avg {avg_orr:.0f}%), showing strong response rates")
+            
+            # Insight 4: Patient populations
+            populations = set()
+            for d in st.session_state.extracted_data:
+                try:
+                    if hasattr(d, 'disease_characteristics') and d.disease_characteristics:
+                        if hasattr(d.disease_characteristics, 'mm_subtype') and d.disease_characteristics.mm_subtype:
+                            populations.add(d.disease_characteristics.mm_subtype)
+                except Exception:
+                    continue
+            
+            if populations:
+                pop_text = ", ".join(list(populations)[:2])  # Top 2 populations
+                insights.append(f"👥 **Patient Focus:** Primarily {pop_text} populations")
+            
+            # Insight 5: Clinical significance
+            has_safety_data = False
+            has_biomarker_data = False
+            
+            for d in st.session_state.extracted_data:
+                try:
+                    if hasattr(d, 'safety_profile') and d.safety_profile:
+                        if hasattr(d.safety_profile, 'grade_3_4_aes') and d.safety_profile.grade_3_4_aes:
+                            has_safety_data = True
+                    
+                    # Check for biomarker mentions in title or other fields
+                    if hasattr(d, 'study_identification') and d.study_identification:
+                        if hasattr(d.study_identification, 'title') and d.study_identification.title:
+                            title_lower = d.study_identification.title.lower()
+                            if any(term in title_lower for term in ['mrd', 'biomarker', 'minimal residual', 'mutation']):
+                                has_biomarker_data = True
+                except Exception:
+                    continue
+            
+            if has_safety_data and has_biomarker_data:
+                insights.append("🔬 **Clinical Value:** Comprehensive safety profiles and biomarker data support evidence-based decision making")
+            elif has_safety_data:
+                insights.append("⚕️ **Safety Focus:** Detailed safety profiles available for risk-benefit assessment")
+            elif has_biomarker_data:
+                insights.append("🧬 **Precision Medicine:** Biomarker and MRD data support personalized treatment approaches")
+            else:
+                insights.append("📋 **Research Ready:** Studies provide solid foundation for treatment comparison and protocol development")
+            
+        except Exception as e:
+            insights.append("📊 Studies successfully processed and ready for detailed analysis")
+        
+        # Display insights as bullet points
+        for insight in insights[:5]:  # Max 5 insights
+            st.markdown(f"• {insight}")
+        
+        st.markdown("---")
+
+    def _render_actions_and_export(self):
+        """Render actions and export options for uploaded abstracts"""
+        st.markdown("### ⚡ Actions & Export")
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            if st.button("📊 Generate Analysis", type="primary", help="Generate comprehensive clinical analysis"):
+                with st.spinner("🧠 Generating comprehensive clinical analysis..."):
+                    try:
+                        # Get analyzer using lazy loading
+                        analyzer = self._get_analyzer()
+                        
+                        # Generate comprehensive analysis
+                        st.session_state.analysis_results = analyzer.analyze_comprehensive_dataset(
+                            st.session_state.extracted_data
+                        )
+                        
+                        # Generate visualizations using lazy loading
+                        visualizer = self._get_visualizer()
+                        
+                        st.session_state.visualizations = visualizer.create_comprehensive_dashboard(
+                            st.session_state.extracted_data  # Use extracted_data instead of analysis_results
+                        )
+                        
+                        st.success("✅ Analysis completed! Check the insights in the Dashboard.")
+                        st.rerun()
+                        
+                    except Exception as e:
+                        st.error(f"❌ Analysis failed: {str(e)}")
+                        # Fallback: Generate basic summary
+                        st.session_state.analysis_results = self._generate_basic_analysis()
+                        st.rerun()
+        
+        with col2:
+            if st.button("📥 Export Data", help="Export extracted data to CSV"):
+                self._export_data()
+        
+        with col3:
+            if st.button("🗑️ Clear Data", help="Clear all extracted data"):
+                if st.session_state.extracted_data:
+                    st.session_state.extracted_data = []
+                    st.session_state.categorization_data = []
+                    st.session_state.analysis_results = None
+                    st.session_state.visualizations = {}
+                    st.session_state.session_stats = {
+                        'total_processing_time': 0.0,
+                        'abstracts_processed': 0,
+                        'session_start_time': time.time(),
+                        'processing_history': []
+                    }
+                    st.success("🗑️ All data cleared successfully!")
+                    st.rerun()
+
+
+    def _process_pdf_pages_separately(self, file_content: bytes, filename: str, options: Dict):
+        """Process PDF file page by page as separate abstracts"""
+        from utils.file_processors import FileProcessor
+        import asyncio
+        import time
+        import streamlit as st
+    
+        # Initialize
+        start_time = time.time()
+        processor = FileProcessor()
+    
+        # Create main progress tracking
+        main_progress = st.progress(0)
+        main_status = st.empty()
+        details_container = st.container()
+    
+        try:
+            # Step 1: Extract pages
+            main_status.text("📄 Extracting pages from PDF...")
+            main_progress.progress(10)
+        
+            page_texts = processor._process_pdf_by_pages(file_content)
+        
+            if not page_texts:
+                st.error("❌ No valid pages found in PDF or pages too short (minimum 100 characters)")
+                return
+        
+            total_pages = len(page_texts)
+            main_status.text(f"📋 Found {total_pages} pages to process...")
+            main_progress.progress(20)
+        
+            # Initialize results tracking
+            all_processing_results = []
+            successful_extractions = 0
+            failed_extractions = 0
+        
+            # Process each page
+            for page_num, page_text in enumerate(page_texts, 1):
+                with details_container:
+                    st.markdown(f"#### Processing Page {page_num} of {total_pages}")
+                
+                    page_progress = st.progress(0)
+                    page_status = st.empty()
+                
+                    # Page processing results
+                    page_results = {
+                        'page_number': page_num,
+                        'metadata_extraction': {'status': 'pending', 'data': None},
+                        'categorization': {'status': 'pending', 'data': None},
+                        'vector_embedding': {'status': 'pending', 'data': None},
+                        'source': f"{filename} (Page {page_num})"
+                    }
+                
+                    try:
+                        # Metadata Extraction
+                        if options['extract_metadata']:
+                            page_status.text(f"🔍 Extracting metadata from page {page_num}...")
+                            page_progress.progress(30)
+                        
+                            try:
+                                extracted_data = asyncio.run(
+                                    self.metadata_extractor.extract_comprehensive_metadata(page_text)
+                                )
+                                extracted_data.source_file = f"{filename} (Page {page_num})"
+                            
+                                page_results['metadata_extraction'] = {
+                                    'status': 'success',
+                                    'data': extracted_data
+                                }
+                                successful_extractions += 1
+                                st.success(f"✅ Page {page_num}: Metadata extracted")
+                            except Exception as e:
+                                page_results['metadata_extraction'] = {
+                                    'status': 'failed',
+                                    'error': str(e)
+                                }
+                                failed_extractions += 1
+                                st.error(f"❌ Page {page_num}: Metadata extraction failed - {str(e)}")
+                    
+                        # Study Categorization
+                        if options['categorize_study'] and page_results['metadata_extraction']['status'] == 'success':
+                            page_status.text(f"🏷️ Categorizing study on page {page_num}...")
+                            page_progress.progress(60)
+                        
+                            try:
+                                category_data = asyncio.run(
+                                    self.categorizer.categorize_study(
+                                        page_text,
+                                        page_results['metadata_extraction']['data'].model_dump()
+                                    )
+                                )
+                                page_results['categorization'] = {
+                                    'status': 'success',
+                                    'data': category_data
+                                }
+                                st.success(f"✅ Page {page_num}: Study categorized")
+                            except Exception as e:
+                                page_results['categorization'] = {
+                                    'status': 'failed',
+                                    'error': str(e)
+                                }
+                                st.warning(f"⚠️ Page {page_num}: Categorization failed - {str(e)}")
+                    
+                        # Vector Embedding
+                        if options['embed_vectors'] and page_results['metadata_extraction']['status'] == 'success' and self._get_vector_store():
+                            page_status.text(f"🧠 Creating embeddings for page {page_num}...")
+                            page_progress.progress(90)
+                        
+                            try:
+                                embedding_result = asyncio.run(
+                                    self._get_vector_store().embed_abstract(page_results['metadata_extraction']['data'])
+                                )
+                                page_results['vector_embedding'] = {
+                                    'status': 'success',
+                                    'data': embedding_result
+                                }
+                            
+                                # Update session state for vector embedding status
+                                if 'vector_embedding_status' not in st.session_state:
+                                    st.session_state.vector_embedding_status = {}
+                            
+                                abstract_data = page_results['metadata_extraction']['data']
+                                st.session_state.vector_embedding_status[abstract_data.abstract_id] = embedding_result
+                            
+                                if embedding_result['status'] == 'success':
+                                    st.success(f"✅ Page {page_num}: Vector embedding completed - {embedding_result['vectors_created']} chunks")
+                                else:
+                                    st.info(f"ℹ️ Page {page_num}: Vector embedding skipped - {embedding_result.get('reason', 'Unknown')}")
+                            except Exception as e:
+                                page_results['vector_embedding'] = {
+                                    'status': 'failed',
+                                    'error': str(e)
+                                }
+                                st.warning(f"⚠️ Page {page_num}: Vector embedding failed - {str(e)}")
+                    
+                        # Complete page processing
+                        page_status.text(f"✅ Page {page_num} processing complete!")
+                        page_progress.progress(100)
+                    
+                    except Exception as e:
+                        st.error(f"❌ Page {page_num}: Critical error - {str(e)}")
+                        page_results['error'] = str(e)
+                
+                    # Store page results
+                    all_processing_results.append(page_results)
+                
+                    # Update main progress
+                    overall_progress = 20 + int((page_num / total_pages) * 70)
+                    main_progress.progress(overall_progress)
+                    main_status.text(f"📊 Processed {page_num}/{total_pages} pages...")
+        
+            # Finalize processing
+            main_status.text("✅ All pages processed!")
+            main_progress.progress(100)
+        
+            # Store successful extractions in session state
+            if 'extracted_data' not in st.session_state:
+                st.session_state.extracted_data = []
+        
+            for result in all_processing_results:
+                if result['metadata_extraction']['status'] == 'success':
+                    st.session_state.extracted_data.append(result['metadata_extraction']['data'])
+        
+            # Calculate processing time
+            processing_time = time.time() - start_time
+        
+            # Update session statistics
+            self._update_session_stats(processing_time, successful_extractions)
+        
+            # Clear progress indicators
+            main_progress.empty()
+            main_status.empty()
+        
+            # Show comprehensive results
+            self._show_pdf_pages_results(all_processing_results, processing_time, filename)
+        
+        except Exception as e:
+            # Clear progress indicators
+            main_progress.empty()
+            main_status.empty()
+        
+            st.error(f"❌ PDF page processing failed: {str(e)}")
+            import traceback
+            st.error(f"Full error: {traceback.format_exc()}") 
+    def _show_pdf_pages_results(self, all_processing_results, processing_time, filename):
+        """Show results summary for PDF page-by-page processing"""
+        
+        st.markdown("---")
+        st.markdown("### 📊 PDF Page Processing Results")
+        
+        # Summary metrics
+        total_pages = len(all_processing_results)
+        successful_pages = len([r for r in all_processing_results if r['metadata_extraction']['status'] == 'success'])
+        failed_pages = total_pages - successful_pages
+        
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            st.metric("📄 Total Pages", total_pages)
+        with col2:
+            st.metric("✅ Successful", successful_pages)
+        with col3:
+            st.metric("❌ Failed", failed_pages)
+        with col4:
+            st.metric("⏱️ Processing Time", f"{processing_time:.1f}s")
+        
+        # Detailed results per page
+        if successful_pages > 0:
+            st.success(f"🎉 **Successfully processed {successful_pages} pages from {filename}**")
+            
+            with st.expander("📋 Page-by-Page Results", expanded=True):
+                for result in all_processing_results:
+                    page_num = result['page_number']
+                    
+                    if result['metadata_extraction']['status'] == 'success':
+                        data = result['metadata_extraction']['data']
+                        title = data.study_identification.title if hasattr(data.study_identification, 'title') else "Unknown Study"
+                        
+                        st.markdown(f"**Page {page_num}:** {title[:80]}...")
+                        
+                        # Show key metrics if available
+                        col1, col2, col3 = st.columns(3)
+                        with col1:
+                            study_type = data.study_design.study_type if hasattr(data.study_design, 'study_type') else "Unknown"
+                            st.markdown(f"📋 Type: {study_type}")
+                        with col2:
+                            if hasattr(data, 'efficacy_outcomes') and data.efficacy_outcomes:
+                                orr = data.efficacy_outcomes.overall_response_rate
+                                if orr and hasattr(orr, 'value') and orr.value:
+                                    st.markdown(f"📈 ORR: {orr.value}%")
+                                else:
+                                    st.markdown("📈 ORR: N/A")
+                            else:
+                                st.markdown("📈 ORR: N/A")
+                        with col3:
+                            embedding_status = result.get('vector_embedding', {}).get('status', 'not processed')
+                            if embedding_status == 'success':
+                                st.markdown("🧠 ✅ Embedded")
+                            else:
+                                st.markdown("🧠 ❌ Not embedded")
+                    else:
+                        st.markdown(f"**Page {page_num}:** ❌ Processing failed")
+                        if 'error' in result['metadata_extraction']:
+                            st.error(f"Error: {result['metadata_extraction']['error']}")
+                    
+                    st.markdown("---")
+        
+        if failed_pages > 0:
+            st.warning(f"⚠️ **{failed_pages} pages failed to process** - they may not contain valid abstract content")
+        
+        st.info("💡 **Tip:** Each successfully processed page is now available as a separate study in your session data.")
+
+    def _update_session_stats(self, processing_time: float, abstracts_count: int):
+        """Update session statistics with new processing data"""
+        st.session_state.session_stats['total_processing_time'] += processing_time
+        st.session_state.session_stats['abstracts_processed'] += abstracts_count
+        st.session_state.session_stats['processing_history'].append({
+            'timestamp': datetime.now().isoformat(),
+            'processing_time': processing_time,
+            'abstracts_count': abstracts_count
+        })
 
 def main():
     """Main application entry point"""

@@ -100,7 +100,7 @@ class Settings(BaseSettings):
     MAX_SEARCH_RESULTS: int = 10
     
     # LLM Provider Configuration
-    DEFAULT_LLM_PROVIDER: str = "claude"  # Options: "claude", "openai", "gemini"
+    DEFAULT_LLM_PROVIDER: str = "gemini"  # Options: "claude", "openai", "gemini"
     AVAILABLE_LLM_PROVIDERS: List[str] = ["claude", "openai", "gemini"]
     
     # Model specifications for each provider

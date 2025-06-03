@@ -85,6 +85,30 @@ class FileProcessor:
             logger.error(f"Error processing PDF file: {e}")
             raise
     
+    def _process_pdf_by_pages(self, file_content: bytes) -> List[str]:
+        """Process PDF file and extract text from each page separately"""
+        if not PDF_AVAILABLE:
+            raise ImportError("PyPDF2 not available. Install with: pip install PyPDF2")
+        
+        try:
+            pdf_file = io.BytesIO(file_content)
+            pdf_reader = PyPDF2.PdfReader(pdf_file)
+            
+            page_texts = []
+            for page_num in range(len(pdf_reader.pages)):
+                page = pdf_reader.pages[page_num]
+                page_text = page.extract_text()
+                if page_text.strip():  # Only include non-empty pages
+                    cleaned_text = self._clean_extracted_text(page_text)
+                    if len(cleaned_text) > 100:  # Minimum abstract length
+                        page_texts.append(cleaned_text)
+            
+            return page_texts
+            
+        except Exception as e:
+            logger.error(f"Error processing PDF by pages: {e}")
+            raise
+    
     def _process_docx(self, file_content: bytes) -> str:
         """Process DOCX file and extract text"""
         if not DOCX_AVAILABLE:
