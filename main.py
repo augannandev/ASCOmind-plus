@@ -1439,21 +1439,21 @@ class ASCOmindApp:
                     st.info("📊 No enrollment data available in your studies")
             
             # Summary table with actual data
-            st.markdown("#### 📋 Study Comparison")
-            summary_table_data = []
-            for study in study_data:
-                summary_table_data.append({
-                    'Study': study['name'],
-                    'Phase': study['phase'],
-                    'Category': study['category'],
-                    'Patients (N)': study['enrollment'] if study['enrollment'] else 'N/A',
-                    'ORR (%)': f"{study['orr']:.1f}" if study['orr'] is not None else 'N/A',
-                    'PFS (months)': f"{study['pfs']:.1f}" if study['pfs'] is not None else 'N/A',
-                    'Data Quality': f"{study['confidence']:.0%}"
-                })
+            # st.markdown("#### 📋 Study Comparison")
+            # summary_table_data = []
+            # for study in study_data:
+            #     summary_table_data.append({
+            #         'Study': study['name'],
+            #         'Phase': study['phase'],
+            #         'Category': study['category'],
+            #         'Patients (N)': study['enrollment'] if study['enrollment'] else 'N/A',
+            #         'ORR (%)': f"{study['orr']:.1f}" if study['orr'] is not None else 'N/A',
+            #         'PFS (months)': f"{study['pfs']:.1f}" if study['pfs'] is not None else 'N/A',
+            #         'Data Quality': f"{study['confidence']:.0%}"
+            #     })
             
-            summary_df = pd.DataFrame(summary_table_data)
-            st.dataframe(summary_df, use_container_width=True, hide_index=True)
+            # summary_df = pd.DataFrame(summary_table_data)
+            # st.dataframe(summary_df, use_container_width=True, hide_index=True)
             
             # --- NEW: Treatment Distribution Table ---
             st.markdown("---")
@@ -5286,28 +5286,41 @@ class ASCOmindApp:
         treatment_distribution = {}
         
         for data in st.session_state.extracted_data:
-            # Determine patient population
+            # Determine patient population - Use extracted mm_subtype data first
             population = 'Unknown'
+            
+            # Define title_lower at the beginning so it's always available
             title_lower = data.study_identification.title.lower() if data.study_identification.title else ''
             
-            # Check for RRMM
-            if any(keyword in title_lower for keyword in population_mapping['RRMM']):
-                population = 'RRMM'
-            # Check for NDMM
-            elif any(keyword in title_lower for keyword in population_mapping['NDMM']):
-                population = 'NDMM'
-            # Also check treatment regimens for population indicators
-            else:
-                regimens_text = ''
-                if data.treatment_regimens:
-                    for regimen in data.treatment_regimens:
-                        if regimen.regimen_name:
-                            regimens_text += regimen.regimen_name.lower() + ' '
-                
-                if any(keyword in regimens_text for keyword in population_mapping['RRMM']):
+            # First, check the extracted disease characteristics data
+            if data.disease_characteristics and data.disease_characteristics.mm_subtype:
+                # Get the first mm_subtype (most relevant one)
+                mm_subtype = data.disease_characteristics.mm_subtype[0].value
+                if 'Relapsed' in mm_subtype or 'Refractory' in mm_subtype:
                     population = 'RRMM'
-                elif any(keyword in regimens_text for keyword in population_mapping['NDMM']):
+                elif 'Newly Diagnosed' in mm_subtype:
                     population = 'NDMM'
+            
+            # Fallback to title-based detection if no extracted data
+            if population == 'Unknown':
+                # Check for RRMM
+                if any(keyword in title_lower for keyword in population_mapping['RRMM']):
+                    population = 'RRMM'
+                # Check for NDMM
+                elif any(keyword in title_lower for keyword in population_mapping['NDMM']):
+                    population = 'NDMM'
+                # Also check treatment regimens for population indicators
+                else:
+                    regimens_text = ''
+                    if data.treatment_regimens:
+                        for regimen in data.treatment_regimens:
+                            if regimen.regimen_name:
+                                regimens_text += regimen.regimen_name.lower() + ' '
+                    
+                    if any(keyword in regimens_text for keyword in population_mapping['RRMM']):
+                        population = 'RRMM'
+                    elif any(keyword in regimens_text for keyword in population_mapping['NDMM']):
+                        population = 'NDMM'
             
             # Extract treatment information
             treatments_found = []
