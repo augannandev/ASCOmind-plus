@@ -1097,7 +1097,7 @@ class ASCOmindApp:
                     st.session_state.current_nav_page = 'dashboard'
                     st.rerun()
         
-        # Clean Flow-Based Quick Start
+        # Ultra-Compact Quick Start
         st.markdown("### 🚀 Quick Start")
         
         # Progress indicator
@@ -1109,72 +1109,73 @@ class ASCOmindApp:
                 if st.session_state.get('ai_chat_history'):
                     current_step = 4
         
-        # Simple flow using columns with progress styling
-        col1, arrow1, col2, arrow2, col3, arrow3, col4 = st.columns([2, 0.3, 2, 0.3, 2, 0.3, 2])
+        # Super compact flow with smaller cards
+        col1, arrow1, col2, arrow2, col3, arrow3, col4 = st.columns([2, 0.2, 2, 0.2, 2, 0.2, 2])
         
         # Step 1 - Upload
         with col1:
             step1_style = "🔵" if current_step >= 1 else "⚪"
             st.markdown(f"""
-            <div style="text-align: center; padding: 1rem; background: {'#e3f2fd' if current_step >= 1 else '#f5f5f5'}; border-radius: 10px; border: 2px solid {'#2196f3' if current_step >= 1 else '#ddd'};">
-                <div style="font-size: 2rem;">📄</div>
-                <div style="font-weight: bold; margin: 0.5rem 0;">1. Upload</div>
-                <div style="color: #666; font-size: 0.8rem;">Add abstracts</div>
-                <div style="margin-top: 0.5rem;">{step1_style}</div>
+            <div style="text-align: center; padding: 0.5rem; background: {'#e3f2fd' if current_step >= 1 else '#f8f9fa'}; border-radius: 6px; border: 1px solid {'#2196f3' if current_step >= 1 else '#ddd'};">
+                <div style="font-size: 1.2rem;">📄</div>
+                <div style="font-weight: 600; margin: 0.2rem 0; font-size: 0.75rem;">Upload</div>
+                <div style="color: #666; font-size: 0.6rem;">Add files</div>
+                <div style="margin-top: 0.2rem; font-size: 0.8rem;">{step1_style}</div>
             </div>
             """, unsafe_allow_html=True)
         
         with arrow1:
-            st.markdown("<div style='text-align: center; font-size: 1.5rem; color: #999; margin-top: 2rem;'>→</div>", unsafe_allow_html=True)
+            st.markdown("<div style='text-align: center; font-size: 1rem; color: #999; margin-top: 1rem;'>→</div>", unsafe_allow_html=True)
         
         # Step 2 - Process
         with col2:
             step2_style = "🔵" if current_step >= 2 else "⚪"
             st.markdown(f"""
-            <div style="text-align: center; padding: 1rem; background: {'#e3f2fd' if current_step >= 2 else '#f5f5f5'}; border-radius: 10px; border: 2px solid {'#2196f3' if current_step >= 2 else '#ddd'};">
-                <div style="font-size: 2rem;">🤖</div>
-                <div style="font-weight: bold; margin: 0.5rem 0;">2. Process</div>
-                <div style="color: #666; font-size: 0.8rem;">AI extracts data</div>
-                <div style="margin-top: 0.5rem;">{step2_style}</div>
+            <div style="text-align: center; padding: 0.5rem; background: {'#e3f2fd' if current_step >= 2 else '#f8f9fa'}; border-radius: 6px; border: 1px solid {'#2196f3' if current_step >= 2 else '#ddd'};">
+                <div style="font-size: 1.2rem;">🤖</div>
+                <div style="font-weight: 600; margin: 0.2rem 0; font-size: 0.75rem;">Process</div>
+                <div style="color: #666; font-size: 0.6rem;">AI extracts</div>
+                <div style="margin-top: 0.2rem; font-size: 0.8rem;">{step2_style}</div>
             </div>
             """, unsafe_allow_html=True)
         
         with arrow2:
-            st.markdown("<div style='text-align: center; font-size: 1.5rem; color: #999; margin-top: 2rem;'>→</div>", unsafe_allow_html=True)
+            st.markdown("<div style='text-align: center; font-size: 1rem; color: #999; margin-top: 1rem;'>→</div>", unsafe_allow_html=True)
         
         # Step 3 - Analyze
         with col3:
             step3_style = "🔵" if current_step >= 3 else "⚪"
             st.markdown(f"""
-            <div style="text-align: center; padding: 1rem; background: {'#e3f2fd' if current_step >= 3 else '#f5f5f5'}; border-radius: 10px; border: 2px solid {'#2196f3' if current_step >= 3 else '#ddd'};">
-                <div style="font-size: 2rem;">📊</div>
-                <div style="font-weight: bold; margin: 0.5rem 0;">3. Analyze</div>
-                <div style="color: #666; font-size: 0.8rem;">View insights</div>
-                <div style="margin-top: 0.5rem;">{step3_style}</div>
+            <div style="text-align: center; padding: 0.5rem; background: {'#e3f2fd' if current_step >= 3 else '#f8f9fa'}; border-radius: 6px; border: 1px solid {'#2196f3' if current_step >= 3 else '#ddd'};">
+                <div style="font-size: 1.2rem;">📊</div>
+                <div style="font-weight: 600; margin: 0.2rem 0; font-size: 0.75rem;">Analyze</div>
+                <div style="color: #666; font-size: 0.6rem;">View insights</div>
+                <div style="margin-top: 0.2rem; font-size: 0.8rem;">{step3_style}</div>
             </div>
             """, unsafe_allow_html=True)
         
         with arrow3:
-            st.markdown("<div style='text-align: center; font-size: 1.5rem; color: #999; margin-top: 2rem;'>→</div>", unsafe_allow_html=True)
+            st.markdown("<div style='text-align: center; font-size: 1rem; color: #999; margin-top: 1rem;'>→</div>", unsafe_allow_html=True)
         
         # Step 4 - Chat
         with col4:
             step4_style = "🔵" if current_step >= 4 else "⚪"
             st.markdown(f"""
-            <div style="text-align: center; padding: 1rem; background: {'#e3f2fd' if current_step >= 4 else '#f5f5f5'}; border-radius: 10px; border: 2px solid {'#2196f3' if current_step >= 4 else '#ddd'};">
-                <div style="font-size: 2rem;">💬</div>
-                <div style="font-weight: bold; margin: 0.5rem 0;">4. Chat</div>
-                <div style="color: #666; font-size: 0.8rem;">Ask questions</div>
-                <div style="margin-top: 0.5rem;">{step4_style}</div>
+            <div style="text-align: center; padding: 0.5rem; background: {'#e3f2fd' if current_step >= 4 else '#f8f9fa'}; border-radius: 6px; border: 1px solid {'#2196f3' if current_step >= 4 else '#ddd'};">
+                <div style="font-size: 1.2rem;">💬</div>
+                <div style="font-weight: 600; margin: 0.2rem 0; font-size: 0.75rem;">Chat</div>
+                <div style="color: #666; font-size: 0.6rem;">Ask AI</div>
+                <div style="margin-top: 0.2rem; font-size: 0.8rem;">{step4_style}</div>
             </div>
             """, unsafe_allow_html=True)
         
-                # Compact action buttons
-        st.markdown("### ⚡ Ready to Start?")
+        # Compact action buttons with better colors
+        st.markdown("<br>", unsafe_allow_html=True)  # Small spacing
         
         col1, col2, col3 = st.columns(3)
         
         with col1:
+            # Give it a nice blue color with type="primary" (not red)
             if st.button("📄 Upload Abstracts", type="primary", use_container_width=True, help="Go to Abstract Analysis to upload your research files"):
                 st.session_state.current_nav_page = 'abstract'
                 st.rerun()
