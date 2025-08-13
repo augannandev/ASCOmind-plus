@@ -1,0 +1,18 @@
+Title: NF1 may serve as a novel genetic biomarker of response to treatment and prognosis in glioblastoma (GBM).
+Abstract Number: e14539
+URL: https://meetings.asco.org/abstracts-presentations/189883
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Bin Huang
+
+================================================================================
+
+Full Abstract:
+Authors person Bin Huang Drum Tower Hospital, Medical School of Nanjing University & Clinical Cancer Institute of Nanjing University, Nanjing, China info_outline Bin Huang, Ju Yang, Kongcheng Wang, Weitao Chen, Hongbin Ni, Jing Yan Organizations Drum Tower Hospital, Medical School of Nanjing University & Clinical Cancer Institute of Nanjing University, Nanjing, China; The Comprehensive Cancer Center of Drum Tower Hospital, Medical School of Nanjing University and Clinical Cancer Institute of Nanjing University, Nanjing, China; Department of Neurosurgery of Drum Tower Hospital, Medical School of Nanjing University, Nanjing, China, Nanjing, China; The Comprehensive Cancer Center of Drum Tower Hospital, Medical School of Nanjing University & Clinical Cancer Institute of Nanjing University, Nanjing, China Abstract Disclosures Research Funding No funding received None Background: The intrinsic capacity of glioblastoma (GBM) tumor cells to infiltrate normal brain predictably results in high rates of early recurrence. Little has changed over the last decade in the treatment available for GBM with survival remaining poor and a novel genetic biomarker is necessary found to predict response to treatment and prognosis in GBM. Methods: Biomarker discovery was performed by a genome-wide screen using DNA extracted from tissue and blood samples of GBM patients. The biomarker was then evaluated for its predictability in OS of GBM patients compared with the Chinese Glioma Genome Atlas (CGGA) and revealed the relationship with tumor-associated macrophages (TAMs). Results: Median OS for NF1-deleted/mutated GBM patients (n = 11) treated with surgery and Chemoradiotherapy was 9.1 mon vs 17.2 mon for NF1 wildtype ones(n = 47), HR (95% CI) 1.83 (0.8753,3.817), p = 0.1. In addition, NF1-deleted/mutated GBMs showed reduced tumor purity and more infiltration of tumor-associated macrophages through pathological stainings. Conclusions: These data suggest that NF1-deleted/mutated GBM patients have a poor prognosis and NF1 may play a role in organizing the tumor microenvironment. NF1 in GBM will be further evaluated in a planned randomized ph 2b study in newly diagnosed GBM patients.
+
+--------------------------------------------------
+Search Results Summary:
+The intrinsic capacity of glioblastoma (GBM) tumor cells to infiltrate normal brain predictably results in high rates of early recurrence. Little has changed over the last decade in the treatment available for GBM with survival remaining poor and a novel genetic biomarker is necessary found to predict response to treatment and prognosis in GBM.

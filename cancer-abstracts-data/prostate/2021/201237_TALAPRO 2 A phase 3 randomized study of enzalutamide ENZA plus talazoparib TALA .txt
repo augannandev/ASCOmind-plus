@@ -1,0 +1,22 @@
+Title: TALAPRO-2: A phase 3 randomized study of enzalutamide (ENZA) plus talazoparib (TALA) versus placebo in patients with new metastatic castration-resistant prostate cancer (mCRPC).
+Abstract Number: 201237
+URL: https://meetings.asco.org/abstracts-presentations/201237
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Neeraj Agarwal, MD, FASCO
+
+================================================================================
+
+Full Abstract:
+Background:
+TALA blocks poly(ADP-ribose) polymerase (PARP) activity and traps PARP on single-strand DNA breaks, preventing DNA damage repair (DDR) and causing death of cells with DDR alterations (eg, BRCA1/2).a TALA is approved in multiple countries as monotherapy for germline BRCA1/2-mutated human epidermal growth factor receptor 2 (HER2)-negative advanced breast cancer. Olaparib and rucaparib are PARP inhibitors approved for use in mCRPC. ENZA is an androgen receptor (AR) inhibitor and an established therapy for mCRPC. As PARP activity has been shown to support AR function, inhibition of PARP is expected to increase sensitivity to AR-directed therapies. In addition, AR blockade downregulates homologous recombination repair gene transcription, which induces a “BRCAness” phenotype. A proof-of-concept study combining olaparib and abiraterone (abi) in pts with mCRPC demonstrated improved median radiographic progression-free survival (rPFS) vs placebo plus abi (13.8 vs 8.2 months) and a tolerable safety profile. Therefore, ENZA may be efficacious regardless of DDR alterations. TALAPRO-2 (NCT03395197) is a Phase 3, 2-part study evaluating the efficacy, safety, pharmacokinetics, and patient-reported outcomes (PROs) of TALA plus ENZA in pts with mCRPC with or without DDR alterations.
+Methods:
+Enrollment goal is 1037 patients (pts; 19 pts, part 1 dose-finding [completed]; 1018 pts, part 2 placebo-controlled [ongoing; accrual completed in unselected cohort]). Key eligibility criteria: age ≥18 years; asymptomatic/mildly symptomatic mCRPC; ECOG performance status ≤1; metastatic disease (no brain metastases); and no prior life-prolonging systemic therapy for nonmetastatic CRPC or mCRPC. Prior therapies (excluding novel AR inhibitors) in the castration-sensitive (CSPC) setting are allowed. ADT must continue throughout the study. The randomized double-blind portion (part 2) will evaluate safety, efficacy, and PROs of TALA (0.5 mg once daily [QD]) + ENZA (160 mg QD) vs placebo + ENZA (160 mg QD). Pts are stratified by prior novel hormonal therapy or docetaxel for CSPC or mCSPC (yes or no) and DDR alteration status (deficient vs nondeficient/unknown). The primary endpoint is rPFS, defined as time to progression in soft tissue per RECIST v.1.1 or in bone per PCWG3 criteria by independent central review or death. The key secondary endpoint is overall survival. Efficacy is assessed radiographically every 8 weeks up to Week 25 and every 8–12 weeks thereafter. rPFS will be compared between the two arms by a one-sided stratified log-rank test. Pt recruitment is ongoing at 223 sites in 26 countries, including 32 states across the US, and Europe, Israel, South America, South Africa, and Asia-Pacific region. aDDR alterations are defined as known/likely pathogenic variants or homozygous deletions. Clinical trial information: NCT03395197
+
+--------------------------------------------------
+Search Results Summary:
+

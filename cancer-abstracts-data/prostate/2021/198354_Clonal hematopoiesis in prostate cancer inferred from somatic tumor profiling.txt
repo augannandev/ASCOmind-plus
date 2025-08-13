@@ -1,0 +1,45 @@
+Title: Clonal hematopoiesis in prostate cancer inferred from somatic tumor profiling.
+Abstract Number: 198354
+URL: https://meetings.asco.org/abstracts-presentations/198354
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Catherine Handy Marshall, MD, MPH
+
+================================================================================
+
+Full Abstract:
+Background:
+Clonal hematopoiesis (CH) is a process associated with normal aging and may complicate the interpretation of liquid-biopsy genomic testing in oncology. Little is known about the prevalence of CH in prostate cancer as detected on somatic tumor profiling, or its association with clinical parameters and outcomes in prostate cancer. We sought to estimate the prevalence and clinical characteristics of patients with CH identified from tissue-based prostate cancer specimens.
+Methods:
+This was a retrospective study of men with prostate adenocarcinoma who underwent clinical somatic tissue-based next-generation sequencing using commercial platforms (n = 364). Patients with known hematologic malignancies (n = 7), and those with only liquid biopsies were excluded (n = 34), leaving 323 cases. Classical CH mutations were defined as those in DNMT3A, TET2 or ASXL1. Additional CH mutations included were defined as those in BCORL1, GNAS, SF3B1, JAK2 or PPM1D. Chi-squared tests were used to compare prevalence by categorical variables, Kruskal-Wallis tests to compare means across groups, and Cox proportional hazards were used for time-to-event analyses.
+Results:
+The prevalence of CH mutations in prostate cancer was 9% (30/323), and the prevalence of classical CH mutations was 7% (22/323)(Table). The most common mutations were in DNMT3A (n = 9), TET2 (n = 8) and ASXL1 (n = 5); other less common CH alterations were in GNAS and SF3B1 (n = 3 each), followed by CBL and JAK2 (n = 1 each). The most common site of tumor biopsy was the prostate (N = 266) followed by visceral (n = 19) and lymph node (N = 19) metastases. Men with any CH mutation were not significantly older at age of prostate cancer diagnosis (64 vs 62 years; p = 0.19) than those without; however, men with classical CH mutations were statistically older at diagnosis than those without (66 vs 62 years; p = 0.04). There was no difference in prevalence of CH mutations by Gleason sum (P = 0.67). Among men with localized disease at diagnosis, the median metastasis-free survival was 3.9 years in those with overall CH mutations and 6.6 years in those without CH mutations (HR [adjusted for age and Gleason] 1.3; 95% CI 0.7-2.3; p = 0.4). OS from the time of diagnosis to death was also numerically shorter in those with any CH mutation (median 9.7 years in those with and 14.2 years in those without CH mutations; HR 1.2, 95% CI 0.6-2.5; p = 0.6).
+Conclusions:
+CH can be detected in about 7-9% of prostate cancer patients from tissue-based tumor samples, is associated with older age, and may be linked to adverse oncological outcomes. The prognostic impact of CH in the context of specific systemic therapies (hormonal, chemotherapeutic) remains to be elucidated.
+Classical CH mutations DNMT3A, TET2, ASXL1
+Overall DNMT3A, TET2, ASXL1,BCORL1, GNAS, SF3B1, JAK2,PPM1D
+P-value
+30 of 323 (9%)
+P-value
+Prevalence
+22 of 323 (7%)
+Age at testing
+< 55
+55-60
+> = 65
+0 of 46 (0%)
+6 of 134 (4%)
+16 of 143 (11%)
+0.01
+1 of 46 (2%)
+10 of 134 (7%)
+19 of 143 (13%)
+0.05
+
+--------------------------------------------------
+Search Results Summary:
+

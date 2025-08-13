@@ -1,0 +1,18 @@
+Title: Characterization of hypoxia signature to evaluate the tumor immune microenvironment and predict prognosis in glioma.
+Abstract Number: e14534
+URL: https://meetings.asco.org/abstracts-presentations/189856
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Shihong Wu
+
+================================================================================
+
+Full Abstract:
+Authors person Shihong Wu Fujian Medical University Cancer Hospital & Fujian Cancer Hospital, Fuzhou, China info_outline Shihong Wu, Wanzun Lin, Youliang Weng, Yuhui Pan, Zongwei Huang, Miaomiao Li, Ting Lin, Xiaochuan Chen, Lurong Zhang, Sufang Qiu Organizations Fujian Medical University Cancer Hospital & Fujian Cancer Hospital, Fuzhou, China; Department of Radiation Oncology, Fujian Medical University Cancer Hospital & Fujian Cancer Hospital, Fuzhou, China; Laboratory of Radiation Oncology and Radiobiology, Fujian Cancer Hospital and Fujian Medical University Cancer Hospital, Fuzhou, China Abstract Disclosures Research Funding Other Government Agency United Fujian Provincial Health and Education Project for Tackling the Key Research,China(2019-WJ-03); Joint Funds for the innovation of science and Technology, Fujian province (2018Y9105) Background: Glioma, the most common primary brain tumor, accounts for more than 50% of all primary brain tumors. Malignant gliomas, especially glioblastomas, are associated with a dismal prognosis. Hypoxia is a driver of the malignant phenotype in glioma; it triggers a cascade of immunosuppressive processes and malignant cellular responses (tumor progression, metastases, and resistance to chemoradiotherapy), which result in disease progression and poor prognosis. However, approaches to determine the extent of hypoxia in the tumor microenvironment are still unclear. Methods: Here, we enrolled 1626 glioma patients with RNA sequence and survival data in two independent cohorts, and developed a hypoxia risk model to reflect the immune microenvironment in glioma and predict prognosis. Results: High hypoxia risk score was associated with poor prognosis and indicated an immunosuppressive microenvironment. Hypoxia signature significantly correlated with clinical and molecular features and could serve as an independent prognostic factor for glioma patients. Moreover, Gene Set Enrichment Analysis showed that gene sets associated with the high-risk group were involved in carcinogenesis and immunosuppression signaling. Conclusions: In conclusion, we developed and validated a novel hypoxia risk model, which served as an independent prognostic indicator and reflected overall immune response intensity in the glioma microenvironment.
+
+--------------------------------------------------
+Search Results Summary:
+Glioma, the most common primary brain tumor, accounts for more than 50% of all primary brain tumors. Malignant gliomas, especially glioblastomas, are associated with a dismal prognosis. Hypoxia is a driver of the malignant phenotype in glioma; it triggers a cascade of immunosuppressive processes and malignant cellular responses (tumor progression, metastases, and resistance to chemoradiotherapy), which result in disease progression and poor prognosis. However, approaches to determine the extent of hypoxia in the tumor microenvironment are still unclear.

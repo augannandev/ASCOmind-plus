@@ -1,0 +1,26 @@
+Title: The association of ATM alterations with clinical and molecular features in metastatic castration-resistant prostate cancer.
+Abstract Number: 198465
+URL: https://meetings.asco.org/abstracts-presentations/198465
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Guo Xi
+
+================================================================================
+
+Full Abstract:
+Background:
+Ataxia telangiectasia-mutated（ATM）is a serine/threonine kinase involved in DNA-damage repair (DDR) system and regulating cell cycle checkpoints, senescence, and apoptosis. Several clinical studies provide evidence about the DDR-mutated metastatic castration-resistant prostate cancer (mCRPC) benefit from PARP inhibitors (PARPi). However. the efficacy of PARPi was limited for mCRPC patients harboring ATM aberrations. We aimed to determine the association of ATM mutations with clinical and molecular features in patients with mCRPC.
+Methods:
+A total of three independent prostate cancer cohorts (MCTP, N = 61; SU2C-PCF, N = 429; MSKCC, N = 451) were used for analysis. We selected patients with characteristics “mCRPC” and “histology type: prostate adenocarcinoma”. Both the somatic and germline pathogenic alterations were analyzed, including single nucleotide variations (SNVs), in-frame insertions or deletions (Indels), frameshifts, homozygous deletions and fusions. The statistical analysis was conducted by R software (v.3.6.2).
+Results:
+We merged the three mCRPC cohorts, generating a new cohort consisting of 507 mCRPC patients. The median age was 62 (range, 38.6-89). The number of biopsies was 1-3 per patient. Of the 527 sequenced specimens, 39% were lymph node, 27% were bone, and 14% were liver. Forty percent of the patients had exposed to or on-treatment with next-generation androgen receptor signaling inhibitor (ARSI). A total of 44 patients (8.7%) harbored deleterious variations in ATM, including 10 homozygous deletions. The coexistence mutations were most commonly located in androgen receptor (AR), followed by TTN/KMT2C/MUC16/TP53. Furthermore, we explored the association of pathogenic ATM alterations with clinical features. Compared with noncarriers of ATM mutations , carriers were diagnosed at a younger age (median: 59 vs 62.4, P = 0.022). In the subgroup from SU2C-PCF cohort, prostate specific antigen (PSA) at diagnosis and the proportion of Gleason score between 8-10 were analyzed, both showed no significant differences between the two groups. Notably, we observed a statistically significant higher TMB in ATM-altered group than ATM wildtype group (median, 2.04 vs 1.61, P = 0.013). Overall survival (OS) was not compared because of the limited clinical outcomes in ATM-mutated population.
+Conclusions:
+This study involving 3 cohorts identified the prevalence of pathogenic somatic or germline ATM mutations and explored the association of ATM alterations with both clinical and molecular features. Patients with ATM mutations tended to diagnose prostate cancer at an earlier age. Meanwhile, significantly higher TMB might imply potential immunotherapy opportunities in ATM-altered mCRPC without standard-of-care approaches.
+
+--------------------------------------------------
+Search Results Summary:
+

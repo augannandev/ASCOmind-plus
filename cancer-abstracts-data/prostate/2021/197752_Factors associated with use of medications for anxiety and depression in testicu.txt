@@ -1,0 +1,26 @@
+Title: Factors associated with use of medications for anxiety and depression in testicular cancer survivors after cisplatin-based chemotherapy.
+Abstract Number: 197752
+URL: https://meetings.asco.org/abstracts-presentations/197752
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Shirin Ardeshirrouhanifard, PhD, MPH, PharmD
+
+================================================================================
+
+Full Abstract:
+Background:
+Cancer survivors are at increased risk of anxiety and depression that can affect health-related quality of life. There is no study to date that has examined the characteristics of testicular cancer survivors (TCS) taking medications for anxiety or depression since pharmacological interventions are typically reserved for more severe cases of these disorders. In this study, we aimed to examine sociodemographic factors, cisplatin-related adverse health outcomes (AHOs), and cumulative burden of morbidity (CBMPt) scores associated with medication use for anxiety and/or depression in TCS.
+Methods:
+A total of 1,802 TCS who completed CBCT ≥12 months previously completed validated questionnaires regarding sociodemographic features and cisplatin-related AHOs (hearing impairment, tinnitus, peripheral sensory neuropathy (PSN), kidney disease). Patients were recognized as users of medications for anxiety and/or depression if they used pharmacological classes of these medications and also indicated that the reason for use was for anxiety or depression. Individual AHOs were graded 0-to-4 based on severity according to NCI Common Terminology Criteria for Adverse Events version 4.03. A CBMPt score encompassed the number and severity of cisplatin-related AHOs. Multivariable logistic regression models assessed the relationship of individual AHOs and CBMPt with medication use for anxiety and/or depression.
+Results:
+A total of 151 TCS (8.4%) used medications for anxiety and/or depression. Any grade of HL, tinnitus, PSN, and kidney disease were reported by 37.9%, 39.5%, 55.2%, and 2.4% of 1,802 participants, respectively. No cisplatin-related AHO were reported by 511 (28.4%) participants, whereas 622 (34.5%), 334 (18.5%), 287 (15.9%), and 48 (2.7%), respectively, had very low, low, medium, and high CBMPt scores. Higher CBMPt scores were significantly associated with greater medication use for anxiety and/or depression (CBMPt scores of low (OR = 2.96, 95%CI, 1.67-5.24), medium (OR = 3.47, 95%CI, 1.95-6.18), and high (OR = 3.18, 95%CI, 1.22-8.3). A multivariable model including individual AHOs indicated that tinnitus (P= 0.0009), PSN (P= 0.02), and having health insurance (OR = 2.15, 95%CI, 1.01-4.56) were associated with significantly greater use of these medications; whereas being employed (OR = 0.39, 95%CI, 0.23-0.66) and vigorous physical activity (OR = 0.63, 95%CI,0.44-0.89) were associated with significantly diminished use.
+Conclusions:
+We found that TCS with higher CBMPt scores had a higher probability of using medications for anxiety and/or depression and conversely, those who were employed and physically active tended to have reduced use. These findings deserve further investigation in longitudinal studies. In the interim, healthcare providers should be aware of these associations in formulating survivorship care plans.
+
+--------------------------------------------------
+Search Results Summary:
+

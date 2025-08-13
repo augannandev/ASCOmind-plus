@@ -1,0 +1,41 @@
+Title: Differential responses to taxanes and PARP inhibitors (PARPi) in ATM- versus BRCA2-mutated metastatic castrate-resistant prostate cancer (mCRPC) patients (pts).
+Abstract Number: 198159
+URL: https://meetings.asco.org/abstracts-presentations/198159
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Christopher Su, MD, MPH
+
+================================================================================
+
+Full Abstract:
+Background:
+PARPi have shown promise in mCRPC pts with mutations in DNA repair, but ATM- and BRCA2-altered pts may respond differently to PARPi. We hypothesized that differences may also exist for taxane therapy, aiding in treatment sequencing decisions.
+Methods:
+mCRPC pts (N = 137) with deleterious ATM or BRCA2 mutations who received taxanes, PARPi, or both were identified from 8 US academic centers. Demographic, treatment, and survival data were collected. Kaplan-Meier analyses were performed for time-to-treatment-discontinuation (TTD), as well as overall survival (OS), from time of first taxane or PARPi therapy. Cox hazard ratio (HR) regression analyses were performed, adjusting for Gleason sum (≤7 vs. 8-10). For OS, receipt of subsequent therapies following first taxane or PARPi was also included as a covariate.
+Results:
+50 ATM- and 87 BRCA2-mutated pts were identified. 40/50 (80%) of ATM-mutated pts received taxane only or taxane prior to PARPi, while 10/50 (20%) received PARPi only or PARPi prior to taxane. ATM-mutated pts showed a trend towards longer TTD when taxane was given first vs PARPi given first (P = 0.08, adjusted HR for taxane treatment 0.50 [95% CI: 0.24–1.08]). Considering all pts who received taxane first, ATM-mutated pts had longer TTD than BRCA2-mutated pts who received taxane first (P= 0.04, adjusted HR for ATM 0.61 [CI: 0.37–0.99]). Among ATM-mutated pts, OS was longer in those receiving taxane first (P= 0.06, adjusted HR for taxane treatment 0.33 [CI: 0.10–1.05]). Among BRCA2-mutated pts, 43/87 (49%) received taxane first and 44/87 (51%) received PARPi first. BRCA2-mutated pts had longer TTD when PARPi was given first vs taxane given first (P< 0.0001, adjusted HR for PARPi treatment 0.32 [CI: 0.19–0.56]). Considering all pts who received PARPi first, BRCA2-mutated pts also had longer TTD than ATM-mutated pts who received PARPi first (P= 0.0031, adjusted HR for BRCA2 0.29 [CI: 0.12–0.66]). There was no significant OS difference in BRCA2-mutated pts regarding which treatment was given first (P= 0.63, adjusted HR for PARPi treatment 1.18 [CI: 0.59–2.35]).
+Conclusions:
+Our data in ATM- and BRCA2-mutated mCRPC pts suggests a trend towards improved clinical outcomes when taxanes are used prior to PARPi in ATM-mutated pts, while the reverse sequence appears to be better for BRCA2-mutated pts.
+Taxane given first
+PARPi given first
+Adjusted Cox p
+Median duration of therapy in ATM-mutated pts (95% CI) 126 days (105-165)
+N = 40 87 days (17-222)
+N = 9 0.08
+Median overall survival in ATM-mutated pts from time of first taxane or PARPi therapy 509 days (319-987)
+N = 25 279 days (18-not reached)
+N = 5 0.06
+Median duration of therapy in BRCA2-mutated pts 122 days (84-136)
+N = 43 224 days (111-335)
+N = 33 < 0.0001
+Median overall survival in BRCA2-mutated pts from time of first taxane or PARPi therapy 545 days (394-828)
+N = 32 453 days (343-632)
+N = 15 0.63
+
+--------------------------------------------------
+Search Results Summary:
+

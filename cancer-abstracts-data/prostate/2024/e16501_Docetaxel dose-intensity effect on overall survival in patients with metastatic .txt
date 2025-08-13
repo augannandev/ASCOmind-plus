@@ -1,0 +1,18 @@
+Title: Docetaxel dose-intensity effect on overall survival in patients with metastatic castrate-sensitive prostate cancer.
+Abstract Number: e16501
+URL: https://meetings.asco.org/abstracts-presentations/176730
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Igal Kushnir, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Igal Kushnir Ottawa Hospital Cancer Centre, Ottawa, ON, Canada info_outline Igal Kushnir, Ranjeeta Mallick, Michael Ong, Christina Canil, Dominick Bossé, Kim Koczka, M. Neil Reaume Organizations Ottawa Hospital Cancer Centre, Ottawa, ON, Canada; Ottawa Hospital Research Institute, Ottawa, ON, Canada; The Ottawa Hospital Cancer Centre, Ottawa, ON, Canada; Ottawa Hospital, Ottawa, ON, Canada Abstract Disclosures Research Funding Other Background: Several studies assessed the association of docetaxel dose intensity (DI) and efficacy in metastatic castrate-resistant prostate cancer (mCRPC) patients with contradicting conclusions. In this retrospective analysis we will assess whether the docetaxel DI used in patients with metastatic castrate-sensitive prostate cancer (mCSPC) is associated with overall survival (OS). Methods: We have identified all the patients with mCSPC treated at The Ottawa Hospital Cancer Centre that received docetaxel chemotherapy between June 2014 - September 2017. For each patient we calculated the relative dose intensity (RDI) and assessed whether it’s associated with OS using univariate and multivariate cox-proportional hazards analysis. Results: Eighty-0ne patients were included in the analysis. Nineteen patients (23.5%) had their body surface area capped at 2 which resulted with de facto median dose reduction of 7% (IQR 6% - 9%). Ten patients had upfront dose reduction (usually due to significant co-morbidities) with a median dose reduction of 20% (IQR 19.25 – 20.75). Only 35 patients (43.2%) were able to complete the planned treatment with a RDI of at least 90%. After a median follow-up of 29.4 months, 32 patients (39.5%) died. The median OS was 43.9 months. On a univariate analysis RDI and number of cycles of docetaxel received were found to be statistically significant associated with OS. For every 10% decrease in RDI the risk of death increased by 23% (HR 1.23, 95% CI 1.09 – 1.4, P = 0.0011). For every incremental cycle (up to a total of 6) the risk of death decreased by 27% (HR 0.73, 95% CI 0.61- 0.88, P = 0.001). On multivariate analysis we included age, Gleason score, burden of disease, visceral involvement and baseline PSA. Reduced RDI remained the only significant variable associated with OS (HR 1.2, 95% CI 1.04 – 1.39, P = 0.0117). Conclusions: Reduced docetaxel DI administrated to mCSPC patients is associated with worse survival. Therefore unnecessary docetaxel dose reductions, treatments delays and early discontinuation should be avoided. Granulocyte-colony stimulating factor should be considered in order help maintain standard DI.
+
+--------------------------------------------------
+Search Results Summary:
+Several studies assessed the association of docetaxel dose intensity (DI) and efficacy in metastatic castrate-resistant prostate cancer (mCRPC) patients with contradicting conclusions. In this retrospective analysis we will assess whether the docetaxel DI used in patients with metastatic castrate-sensitive prostate cancer (mCSPC) is associated with overall survival (OS).

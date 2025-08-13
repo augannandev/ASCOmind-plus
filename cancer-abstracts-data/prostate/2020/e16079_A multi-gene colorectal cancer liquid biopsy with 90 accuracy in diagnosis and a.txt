@@ -1,0 +1,18 @@
+Title: A multi-gene colorectal cancer liquid biopsy with >90% accuracy in diagnosis and assessment of disease status.
+Abstract Number: e16079
+URL: https://meetings.asco.org/abstracts-presentations/188845
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Irvin Mark Modlin, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Irvin Mark Modlin Yale School of Medicine, New Haven, CT info_outline Irvin Mark Modlin, Mark S. Kidd, Alexandra Kitz, Ignat A. Drozdov, Anna Malczewska, Katarzyna Kusnierz, Harry Aslanian Organizations Yale School of Medicine, New Haven, CT; Wren Laboratories LLC, Branford, CT; Medical University of Silesia, Katowice, Poland Abstract Disclosures Research Funding No funding received None Background: There are few blood-based biomarkers for colorectal cancer (CRC). We report a 13-gene colon cancer circulating-free mRNA to diagnose CRC. Clinical utility was assessed in surgical and chemotherapy patients. Methods: Gene identification/validation: Publicly available colon cancer transcriptomes (E-MTAB-57) to identify candidate markers using gene co-expression network enrichment, differential expression and functional enrichment analyses. Cell line/tumor tissue gene expression: Candidate gene expression was evaluated in 3 CRC cell-lines (LOVO, LS-180 and COLO320DM) and surgical resection samples (CRC adenocarcinomas: n= 33) and biomarkers validated in the TCGA-COAD database (n= 261 adenocarcinomas, 41 mucinous adenocarcinomas). Blood gene expression: CRC set (cancers: n= 312, controls n= 117) and a CRC artificial intelligence model constructed. Normalized gene expression algorithmically scored (0-100). Matched tumor/ blood samples were available in 33 patients. RECIST criteria Clinical score assessment: Score utility was assessed in surgical and treated cohorts: Surgical: n= 37, follow>7 days. Chemotherapy: n= 75; stable disease (SD): n= 20, progressive disease (PD): n= 55). The relationship to CEA and CA-19-9 were assessed. Statistics: Non-parametric (Mann-Whitney), Pearson-correlation, Fisher’s and AUROC analyses (Mean±SEM). Results: Transcriptomic analysis: Thirteen candidate CRC genes blood were identified. Cell lines and tumor tissue: Expression levels were significantly elevated (p< 0.001, 20-100-fold) in cell lines and CRC tumors. All 13 markers were confirmed in TCGA-COAD samples (average TPM ranged from 692-4405). Blood gene expression: All 13 CRC marker genes were identified in CRC blood. Levels were 54.4±1.5 (p< 0.0001) compared to controls (9.5±1.7); AUROC:0.91±0.02, accuracy 90.5% (sensitivity 93.1%, specificity 81.2%). The matched tissue/blood correlation was r = 0.80 (p= 0.002). Clinical Utility: In the surgical cohort, accuracy was 100% vs CEA (35%) or CA-19-9 (17%) (both p< 0.0001). Resection (R0–92%) significantly decreased levels (47±2) at follow-up (p< 0.006). In the treated cohort, levels were elevated in PD (63±4.1) vs SD (30±3.2, p< 0.0001). Conclusions: A CRC gene marker panel in blood identified colon cancer with a diagnostic accuracy of 91%. This was significantly greater than CEA or CA-19 in CRCs. Surgical resection decreased levels. CRC score was elevated in progressive vs stable disease. A colorectal cancer liquid biopsy will facilitate image-based management.
+
+--------------------------------------------------
+Search Results Summary:
+There are few blood-based biomarkers for colorectal cancer (CRC). We report a 13-gene colon cancer circulating-free mRNA to diagnose CRC. Clinical utility was assessed in surgical and chemotherapy patients.

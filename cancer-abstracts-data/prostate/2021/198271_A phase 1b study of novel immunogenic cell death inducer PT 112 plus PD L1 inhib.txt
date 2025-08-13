@@ -1,0 +1,26 @@
+Title: A phase 1b study of novel immunogenic cell death inducer PT-112 plus PD-L1 inhibitor avelumab in metastatic castrate-resistant prostate cancer (mCRPC) patients.
+Abstract Number: 198271
+URL: https://meetings.asco.org/abstracts-presentations/198271
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Alan Haruo Bryce, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+PT-112 is a novel pyrophosphate-platinum conjugate that induces immunogenic cell death, reaches highest concentrations in bone (osteotropism), and synergizes with immune checkpoint inhibitors (ICIs) in preclinical models. Phase I studies in solid tumors, as monotherapy and in combination with PD-L1 inhibitor avelumab (“PAVE”), as well as in multiple myeloma as monotherapy have demonstrated that PT-112 is well-tolerated and active. We present updated safety and exploratory efficacy findings in a mCRPC sub-population treated with PAVE, including a cohort of patients at a lower-frequency dosing schedule.
+Methods:
+A total of 32 mCRPC patients (pts) received 800 mg of avelumab on days 1 and 15 of a 28-day cycle, of whom 18 received PT-112 on days 1, 8 and 15 at 200mg/m2 (n = 17) or 150 mg/m2 (n = 1); a separate cohort of 14 received PT-112 on days 1 and 15 at 300 mg/m2 (n = 13) or 200mg/m2 (n = 1).
+Results:
+Median age was 68 (range 47-87) and number of prior lines of therapy (Tx) was 7 (2-12), including prior platinum-containing therapy in 11 (34%) and ICI Tx in 9 pts (28%). Baseline grade 2 anemia was seen in 7 (22%) pts. The most common treatment-related adverse events (TRAEs) were anemia (47%) and thrombocytopenia (41%); 23 pts (72%) had ≥1 grade 3-4 TRAE, with no cases of bleeding, sepsis, or grade 5 TRAEs. Antitumor effects included 8 (25%) pts with a PSA reduction of ≥50% (PSA50); 5 (16%) were maintained through ≥1 follow-up. Of ten pts with RECIST-measurable disease, 3 had tumor volume reductions, one with a confirmed partial response (PR). Twenty-four (75%) pts experienced a reduction in serum alkaline phosphatase (ALP) (median reduction 15%), and improvement in patient-reported pain and quality of life was observed. For the 13 pts given 300 mg/m2 PT-112 bi-weekly, 7 (54%) had prior platinum-containing Tx and 4 (31%) had baseline grade 2 anemia. The most common TRAEs were anemia (69%) and thrombocytopenia (54%), with 11 (85%) pts having ≥1 grade 3-4 TRAE. Four pts (31%) had PSA50 reductions; 3 (23%) were maintained through ≥1 follow-up.
+Conclusions:
+PAVE is safe and generally well tolerated in mCRPC patients at the doses and schedules tested, providing meaningful antitumor effects in heavily pre-treated patients, including tumor volume, PSA and ALP reductions. Reductions in ALP may be indicative of anti-cancer activity at bone sites of disease. Although the sample sizes are small, the frequency of confirmed PSA50 responses and of grade 3-4 TRAEs was slightly higher in the group receiving biweekly 300 mg/m2 PT-112, and higher rates of TRAEs may be explained by higher baseline anemia and/or prior platinum Tx. Further clinical investigation of the combination of PT-112 plus ICIs in a less heavily pre-treated mCRPC population is warranted. A phase 2 study of PT-112 monotherapy in mCRPC is ongoing. Clinical trial information: NCT03409458
+
+--------------------------------------------------
+Search Results Summary:
+

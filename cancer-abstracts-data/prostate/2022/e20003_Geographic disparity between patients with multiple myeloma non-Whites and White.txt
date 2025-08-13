@@ -1,0 +1,18 @@
+Title: Geographic disparity between patients with multiple myeloma (non-Whites and Whites).
+Abstract Number: e20003
+URL: https://meetings.asco.org/abstracts-presentations/207353
+Source: ASCO Selenium Scraper
+Year: 2022
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Christian S Cheung
+
+================================================================================
+
+Full Abstract:
+Authors person Christian S. Cheung HealthTree Foundation, Lehi, UT info_outline Christian S. Cheung, Nathan W. Sweeney, Thomas H. Molina, Jennifer M. Ahlstrom Organizations HealthTree Foundation, Lehi, UT Abstract Disclosures Research Funding No funding received Background: People that live in rural areas experience significant health disparities from higher incidences of disease and disability, increased mortality rates, and lower life expectancies. Rural risk factors for health disparities include geographic isolation, lower socioeconomic status, limited access to healthcare specialists and sub-specialists, and limited job opportunities. Interestingly, we often see other, non-white, races experience delays in care, are under-treated, and lack of access to MM specialists. We, therefore, investigated whether there was a relationship between race and where one lives geographically. Methods: Validated real-world (RW) MM patient data was collected through HealthTree Cure Hub for Multiple Myeloma (healthtree.org). We examined the patient’s race which was either Caucasian American (White) or any other race (Black American, Asian, American Indian, East Indian, Middle Eastern, or Native Hawaiian) which was categorized as “non-White” and where they lived geographically (Rural, Urbanized Cluster, or Urban Areas). The association between race and geographic classification was compared by using a chi-squared test. Results: In this retrospective analysis of 2,687 MM patients, we compared the geographical classification of Whites (n = 2403) and non-Whites (n = 284). Our analysis revealed a significant association between the two groups and where they lived with a chi-square value of 20.455 (2, n = 2,687, p < 0.001). We found that Whites are 1.9 times more likely to live in urbanized cluster areas and 2.7 times more likely to live in a rural area compared to non-Whites. Conclusions: The results of this RW analysis identified a disparity among races and where one lives geographically. While there is strong evidence of health disparities our findings revealed that where one lives geographically is not a probable reason why non-Whites experience delays in care, are under-treated, or lack access to MM specialists.
+
+--------------------------------------------------
+Search Results Summary:
+People that live in rural areas experience significant health disparities from higher incidences of disease and disability, increased mortality rates, and lower life expectancies. Rural risk factors for health disparities include geographic isolation, lower socioeconomic status, limited access to healthcare specialists and sub-specialists, and limited job opportunities. Interestingly, we often see other, non-white, races experience delays in care, are under-treated, and lack of access to MM specialists. We, therefore, investigated whether there was a relationship between race and where one lives geographically.

@@ -1,0 +1,26 @@
+Title: Presence of CTCs and its prognostic potential compared to AR-V7 expression in mCRPC undergoing androgen-deprivation therapy.
+Abstract Number: 198357
+URL: https://meetings.asco.org/abstracts-presentations/198357
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Katrin Schlack, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Biomarkers predicting response to mCRPC treatment are rare. CTCs and AR-V7 status have been discussed as potential prognosticators.
+Methods:
+We evaluated 64 patients (pts.) treated with abiraterone (n=47) or enzalutamide (n=17), determined CTCs and analyzed AR-V7 status in correlation with survival using Kaplan-Meier-estimates and Cox-regression-models.
+Results:
+For PSA response, CTC- vs. CTC+ were not different (p=0.25) whereas AR-V7 status was predictive (68.2% AR-V7- and 33.3% AR-V7+ pts. (p=0.01)). Median PSA PFS was 17 mo. (CI 9.5-24.5) for CTC- and 6 (CI 5.2-6.9) for CTC+ pts. (p<0.01) with 9 mo. (CI 4.2-13.8) for CTC+/AR-V7- and 5 (CI 3.0–7.0) for CTC+/AR-V7+ pts. (p=0.04). In univariate cox regression analysis (UV), prior abiraterone or enzalutamide (A/E) (p=0.01), bone metastases (p=0.03), CTC+ (p=0.01), AR-V7+ (p=0.01), Hb ≤12 g/dl (p=0.01) and PSA decline ≥50% (p<0.01) were significant prognosticators. Within the CTC+ subgroup, AR-V7+ (p=0.02) and PSA decline ≥50% (p=0.03) showed a relevant difference. In multivariate analysis (MV), for CTC+ pts, AR-V7+ (p=0.02), PSA decline ≥50% (p=0.02) and visceral metastases (p=0.02) remained independent prognosticators. The analysis for PFS resulted in 22 mo. (CI NA) for CTC- compared to 9 (CI 7.7-10.3) for CTC+ (p=0.01) and 10 mo. (CI 8.2-11.8) for CTC+/AR-V7- vs. 6 (CI 1.9-10.1) for CTC+/AR-V7+ (p=0.07). Performing UV, prior A/E (p<0.01), CTC+ (p=0.01), AR-V7+ (p=0.01), Hb ≤12 (p<0.01), PSA decline ≥50% (p<0.01) and ALP elevated at baseline (p=0.03) showed statistically significant differences. Within the CTC+ subgroup, prior A/E (p=0.01), visceral metastases (p=0.02), Hb ≤12 (p=0.01) and PSA decline ≥50% (p=0.03) were significant prognosticators, whereas AR-V7+ was not. In MV of CTC+ pts, visceral metastases (p=0.02), PSA decline ≥50% (p=0.02) and Hb ≤12 (p=0.05) remained independent prognosticators. Median OS was not reached for CTC- and 17 mo. (CI 9.8–24.2) for CTC+ (p<0.01) with 27 (CI 10.6-43.4) vs. 14 (CI 10.4-17.7) mo. for AR-V7- and AR-V7+, respectively (p=0.06). UV resulted in statistically relevant differences for prior docetaxel (p=0.01), prior A/E (p<0.01), visceral metastases (p=0.02), CTC+ (p=0.01), AR-V7+ (p<0.01) and Hb ≤12 (p< 0.01). Within CTC+, prior docetaxel (p<0.01), prior A/E (p=0.01), visceral metastases (p<0.01) and Hb ≤12 (p<0.01) were statistically relevant parameters. UV for AR-V7 status did not result in a significant difference for OS either. In MV, CTC status as well as Hb ≤12 remained independent prognosticators (p=0.04 and p<0.01, respectively). For MV of CTC+, visceral metastases (p=0.01), Hb ≤12 (p<0.01) and prior docetaxel (p=0.01) were independent prognosticators of OS.
+Conclusions:
+Presence of CTCs seems to prognosticate PFS and OS in mCRPC patients undergoing Androgen-deprivation while presence of AR-V7 does not despite its predictive potential.
+
+--------------------------------------------------
+Search Results Summary:
+

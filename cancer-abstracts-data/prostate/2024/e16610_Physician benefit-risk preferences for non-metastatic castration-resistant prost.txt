@@ -1,0 +1,18 @@
+Title: Physician benefit-risk preferences for non-metastatic castration-resistant prostate cancer treatment (nmCRPC).
+Abstract Number: e16610
+URL: https://meetings.asco.org/abstracts-presentations/176663
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Sandy Srinivas, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Sandy Srinivas Stanford University Medical Center, Palo Alto, CA info_outline Sandy Srinivas, Ateesha F. Mohamed, Sreevalsa Appukkuttan, Marc Botteman, Xinyi Ng, Namita Joshi, Erica Horodniceanu, Reg Waldeck, Stacey J. Simmons Organizations Stanford University Medical Center, Palo Alto, CA; Bayer U.S. LLC, Whippany, NJ; Pharmerit International, Bethesda, MD; Bayer U.S. LLC, Whipanny, NJ; Bayer HealthCare Pharmaceuticals Inc, Whippany, NJ Abstract Disclosures Research Funding Pharmaceutical/Biotech Company Background: Second-generation androgen receptor inhibitors (SGARIs) are now available for the management of nmCRPC based on improvements in metastasis-free survival. We used a discrete choice experiment (DCE) to explore how U.S. oncologists and urologists may balance different SGARIs’ risks (i.e., adverse events [AEs]) against survival, when treating an otherwise asymptomatic patient population. Methods: We invited oncologists and urologists treating nmCRPC patients via online panels to participate. The survey included 14 treatment choice questions, each comparing 2 hypothetical medication profiles, which varied in terms of 5 safety and 2 efficacy attributes. These attributes were selected via qualitative interviews and pre-testing with physicians, patients, and caregivers. We described safety attributes (fatigue, skin rash, cognitive problems, falls, and fractures) in terms of severity and frequency and efficacy attributes (overall survival [OS] and time to pain progression) in terms of duration of effect. We used a main-effects random parameters logit model to estimate preference weights and importance scores for each attribute. Results: 74 oncologists and 75 urologists completed the survey. Among safety attributes, physicians were most concerned with cognitive problems, fractures, and fatigue. Physicians placed 36% more importance on reducing cognitive problems from severe to none compared to improving OS by 12 months instead of 3 months. On average, physicians were willing to trade off 7.1 months of OS for a reduction in fatigue severity from severe to mild/moderate and 0.8 months of OS for a reduction in fatigue from mild/moderate to none. Physicians were willing to trade off approximately 4.2 and 5.0 months of OS for reduction in fracture risk from 8% to 5%, and 5% to 0%, respectively. Conclusions: As shown in this DCE, physicians making treatment decisions for largely asymptomatic nmCRPC patients, were willing to trade substantial amounts of survival to avoid AEs. These results emphasize the importance of carefully balancing the risk-benefit profiles of SGARI therapy when treating this patient population, to ultimately optimize the overall quality of the patients’ survival.
+
+--------------------------------------------------
+Search Results Summary:
+Second-generation androgen receptor inhibitors (SGARIs) are now available for the management of nmCRPC based on improvements in metastasis-free survival. We used a discrete choice experiment (DCE) to explore how U.S. oncologists and urologists may balance different SGARIs’ risks (i.e., adverse events [AEs]) against survival, when treating an otherwise asymptomatic patient population.

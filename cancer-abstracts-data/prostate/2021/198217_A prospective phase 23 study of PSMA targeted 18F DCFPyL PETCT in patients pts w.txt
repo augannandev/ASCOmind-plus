@@ -1,0 +1,26 @@
+Title: A prospective phase 2/3 study of PSMA-targeted 18F-DCFPyL-PET/CT in patients (pts) with prostate cancer (PCa) (OSPREY): A sub-analysis of disease staging changes in PCa pts with recurrence or metastases on conventional imaging.
+Abstract Number: 198217
+URL: https://meetings.asco.org/abstracts-presentations/198217
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Jeremy C. Durack, MD, MS
+
+================================================================================
+
+Full Abstract:
+Background:
+Conventional imaging and bone scintigraphy are suboptimal modalities for identifying PCa. PSMA-based imaging is highly promising for PCa detection. 18F-DCFPyL is a novel PSMA-targeted radiopharmaceutical for positron emission tomography (PET) that may be useful in staging of PCa. The diagnostic performance, detection rate, and potential impact of 18F-DCFPyL on staging of pts with high-risk PCa have been previously reported. Here we report on the impact of 18F-DCFPyL on staging of pts with PCa recurrence or metastases on conventional imaging.
+Methods:
+18F-DCFPyL-PET/CT was evaluated in 117 men with radiologic evidence of local recurrence or metastatic disease on baseline anatomical imaging (CT, MRI) or whole-body bone scintigraphy and in whom at least one lesion was deemed amenable to biopsy. A single dose of 9 mCi (333 MBq) of 18F-DCFPyL was administered via intravenous injection, followed by PET/CT acquisition 1 to 2 hours thereafter. Based on TNM staging: prostatic (T), pelvic LN (N), extra-pelvic LN (M1a), bone (M1b) and other visceral organs/soft tissue (M1c), 18F-DCFPyL-PET/CT detection rates including lesion counts were systematically analyzed. Three central, blinded, and independent readers evaluated the 18F-DCFPyL scans.
+Results:
+In this study, 82 (70%) patients had baseline radiographic M1 stage disease (14 patients with M1a, 50 patients with M1b, 18 patients with M1c) and 33 (28%) patients were M0 stage at baseline by central conventional imaging review; two patients were unevaluable. 18F-DCFPyL-PET/CT up-staged 58% (19/33) of pts from M0 to M1, of whom 91% (10/11) who underwent an extra-pelvic biopsy were confirmed to have M1 disease by pathology, including 9 patients with M1b and 1 patient with M1a. Of the patients who were staged M1 at baseline, 18F-DCFPyL-PET/CT upstaged 16% (10/64; M1a to M1b or M1c: n = 4; M1b to M1c: n = 6) of pts to a higher M1 sub-stage and down-staged 22% (18/82) to M0.
+Conclusions:
+18F-DCFPyL-PET/CT identified M1 disease in the majority of patients examined who otherwise had locoregional disease. These data suggest that 18F-DCFPyL-PET/CT may be a useful tool in properly staging men with both metastatic and nonmetastatic relapsed disease, which could lead to superior treatment paradigms than currently exist using conventional imaging. Clinical trial information: NCT02981368
+
+--------------------------------------------------
+Search Results Summary:
+

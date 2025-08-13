@@ -1,0 +1,18 @@
+Title: The mutational landscape of the adjacent paracancerous tissues confirmed the safe margin of 2-5cm in colorectal cancer resection.
+Abstract Number: e16060
+URL: https://meetings.asco.org/abstracts-presentations/188843
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Jin Gu
+
+================================================================================
+
+Full Abstract:
+Authors person Jin Gu Beijing Cancer Hospital, Beijing, China info_outline Jin Gu, Jianfei Yao, Lele Song, Dandan Huang, Zhaoya Gao, Qingkun Gao, Pengfei Niu, Qingmin Zeng, Yanzhao Wang, Denglin Wang, Danni Liu, Zhang Jing, Fuming Lei Organizations Beijing Cancer Hospital, Beijing, China; HaploX Biotechnology Co., Ltd, Beijing, China; Department of Medical Oncology, Shougang Hospital, School of Life Sciences, Peking University, Beijing, China; Department of General Surgery, Shougang Hospital, School of Life Sciences, Peking University, Beijing, China; Peking university Shougang hospital, Beijing, China; HaploX Biotechnology, Shenzhen, China Abstract Disclosures Research Funding Other The capital medical special project (No.Z171100001017087) supported by the Beijing Science and Technology Committee, the Special Funds for Strategic Emerging Industry Development of Shenzhen (grant number 20170922151538732), the Science and Technology Project of Shenzhen (grant number JSGG20180703164202084) Background: Margin of 2-5cm is regarded as the safe margin in surgical resection of colorectal cancer (CRC) by macroscopic pathological examinations. However, whether 2-5cm is safe has never been verified by molecular evidence. Methods: We systematically analyzed the mutational profile of 35 CRC tissues and paired adjacent paracancerous tissues 2-3cm and 5cm adjacent to the cancer margin by whole-exome sequencing. Results: The number of SNV/INDEL mutations in the adjacent 2-3cm and 5cm tissues was much less than that in cancer. The number of common SNV/INDEL mutations between cancer and the adjacent tissues ranged from 0 to 2. Although TP53, APC and KRAS SNV/INDEL mutations exhibited the highest frequency in CRC, the APC SNV/INDEL mutations were observed in only one adjacent 5cm tissue, and no TP53 or KRAS SNV/INDEL mutations were observed in any adjacent tissues. We further determined the potential driver gene mutations in adjacent tissues by searching databases including COSMIC CGC, IntOGen, OncoKB, TCGA and Vogelstein databases. A certain mutation was determined as a driver gene mutation if all five databases predict it to be a driver gene mutation. As a result, 9 SNV/INDEL driver gene mutations (1 ATM, 1 BRCA1, 1 BRCA2, 1 MET, 1 NF1, 3 PTEN and 1 STAG2 mutations) were found in the adjacent 2-3cm group, and 9 SNV/INDEL driver gene mutations (1 APC, 1 ARID1A, 1 FBXW7, 3 PTEN, 2 STAG2 and 1 BRCA2 mutations) were found in the adjacent 5cm group. No common SNV/INDEL driver gene mutations were found between cancer tissues and the paired 2-3cm or 5cm tissues, suggesting the driver gene mutations predicted in adjacent normal tissues may not be cancer-relevant. Conclusions: We established the mutational landscape of the adjacent 2-3cm and 5cm tissues to CRC, and found almost no key driver gene SNV/INDEL mutations in adjacent tissues. No common SNV/INDEL driver gene mutations were found between cancer and the adjacent tissues, supporting a safe resection with a margin at 2 to 5cm.
+
+--------------------------------------------------
+Search Results Summary:
+Margin of 2-5cm is regarded as the safe margin in surgical resection of colorectal cancer (CRC) by macroscopic pathological examinations. However, whether 2-5cm is safe has never been verified by molecular evidence.

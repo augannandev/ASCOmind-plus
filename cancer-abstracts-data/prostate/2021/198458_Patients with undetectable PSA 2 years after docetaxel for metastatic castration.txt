@@ -1,0 +1,26 @@
+Title: Patients with undetectable PSA 2 years after docetaxel for metastatic castration sensitive prostate cancer (mCSPC).
+Abstract Number: 198458
+URL: https://meetings.asco.org/abstracts-presentations/198458
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Mohammad O. Atiq, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Patients with mCPSC have multiple treatment options to combine with androgen deprivation therapy (ADT) including docetaxel, abiraterone, enzalutamide and apalutamide, all of which have demonstrated a survival advantage. While oral anti-androgens are administered daily until progression but are less toxic, docetaxel has more upfront side effects. One of the advantages of using docetaxel is that the 6-cycle regimen (over approximately 4 months) potentially affords patients a respite from daily therapies thereafter. Furthermore, docetaxel may be more cost-effective. In this prospective study, mCSPC patients were treated with docetaxel and Prostvac, a therapeutic cancer vaccine. Since this study was initiated, Prostvac did not demonstrate independent clinical activity in a phase 3 trial in metastatic castration resistant prostate cancer. Nonetheless, this study provides an opportunity to evaluate responses to docetaxel-based therapy in mCSPC.
+Methods:
+Eligible patients included those with mCSPC and ECOG of ≤ 2. All patients were treated with docetaxel and were planned to receive 75mg/m2 for 6 cycles within 4 months of starting ADT, as per the CHAARTED regimen. Patients were randomized to receive Prostvac prior to, concurrent with or after docetaxel. Patients were restaged annually with CT and Tc99 bone scan. The study was powered to evaluate immunologic responses, which is ongoing. For the purposes of this analysis, all patients were analyzed as one group and long-term PSA responses were evaluated.
+Results:
+The study enrolled 73 patients. Age range was 41-86 with a median of 63 years. Race distribution was 71.6% White, 20.3% Black, 4.1% other, and 4.1% unknown. Gleason scores were 6 (4.1%), 7 (21.6%), and 8-10 (68.9%), with 5.4% being unknown. Median pre-ADT PSA was 34.75 ng/mL. Low-volume disease represented 41.1% of patients and high-volume was 58.9%. After 2 years from the start of ADT, 22% of all patients had PSA values of ≤ 0.2 ng/mL. This included 37% of the low-volume group and 12% of the high-volume group. Three years from the start of ADT, 14% of all patients had PSA values ≤ 0.2 ng/mL (20% of the low-volume group, 9% of the high-volume group).
+Conclusions:
+These data highlight long-term outcomes of 6 cycles of docetaxel for men with mCSPC. Although there are concerns about the short-term toxicity of docetaxel, there is potential for prolonged stable disease after ̃4 months of chemotherapy that allows these patients to defer additional oral anti-androgen therapy for years in some patients. The proportions of patients presented here are an underestimate of those who could continue to be monitored for slowly rising, but low PSAs, before starting the next line of therapy. Additional research is required to determine the optimal therapeutic sequence for men diagnosed with mCSPC and long-term implications for quality of life and cost-effectiveness. Clinical trial information: NCT02649855
+
+--------------------------------------------------
+Search Results Summary:
+

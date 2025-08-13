@@ -1,0 +1,26 @@
+Title: The impact of prior radiation therapy on outcome in a phase 2 trial combining sipuleucel-T (SipT) and ipilimumab (Ipi) in patients (pts) with metastatic castration resistant prostate cancer (mCRPC).
+Abstract Number: 198129
+URL: https://meetings.asco.org/abstracts-presentations/198129
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Li Zhang, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+SipT is an FDA-approved autologous cellular immunotherapy targeting Prostatic Acid Phosphatase (PAP) that improves survival in patients with mCRPC. Combining immunotherapies could provide opportunities to enhance efficacy. We performed a randomized phase II trial adding CTLA-4 blockade with Ipi following SipT treatment and assessed whether timing of this sequence could modify immune and/or clinical responses to this treatment.
+Methods:
+Fifty chemotherapy-naïve mCRPC pts were randomized to receive ipi (4 doses of 3mg/kg every 3 weeks) either immediately (n = 24) or 3 weeks (n = 26) following completion of sipT. Blood was collected at various time points of the study. Immune-related adverse events (irAE) were recorded. The primary endpoint was to determine the proportion of pts who achieved an antibody titer of ³1:400 to PA2024, the targeting cassette in SipT and/or PAP. Clinical response was defined as ³30% reduction in serum prostate specific antigen (PSA) compared to pre-treatment levels. Radiographic progression-free survival (rPFS) and overall survival (OS) were defined as from the date of randomization to the date of radiographic progression and the date of death, respectively, or last follow-up date. Luminex assays for anti-PAP and anti-PA2024 specific serum IgG and ELISpot for IFN-g production against PAP and PA2024 were used to assess antigen-specific B and T cells responses, respectively. Modulation of circulating immune cells was evaluated by CyTOF.
+Results:
+SipT + Ipi did not induce any unexpected irAEs. The timing of Ipi did not significantly alter the rates of clinical response, rPFS, OS, toxicity, nor antigen-specific B and T cell responses. Clinical responses were observed in 6 of 50 (12%) pts and were often durable (median 140 days, range 55-689 days). Pts experiencing irAEs were more likely to have a PSA response (P = 0.001). The median rPFS was 5.7 months (mos). The median OS was 31.9 mos. This treatment induced antibody and T cell immune responses irrespective of treatment arm. Single cell assessment bt CyTOF demonstrated that treatment induced CD4 and CD8 T cell activation that was more pronounced with the immediate schedule. Lower frequencies of CTLA-4 positive circulating T cells were associated with better clinical outcomes even at baseline. Lower frequencies of CTLA-4 positive T cells was associated with prior radiation therapy. Prior radiation treatment was associated with improved rPFS (6.5 vs. 3.9 mos, P = 0.004).
+Conclusions:
+These findings suggest that pre-existing immunity may help dictate responsiveness to Ipi and SipT combination immunotherapy in mCRPC pts. Prior radiation therapy seems to leave not only a lasting impression on the T cell compartment, but also can associate with improved clinical outcomes with subsequent immunotherapy. Clinical trial information: NCT01804465
+
+--------------------------------------------------
+Search Results Summary:
+

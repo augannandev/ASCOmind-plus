@@ -1,0 +1,26 @@
+Title: Surveillance after complete response in patients with metastatic non-seminomatous germ-cell tumor (NSGCT).
+Abstract Number: 196416
+URL: https://meetings.asco.org/abstracts-presentations/196416
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Jennifer King, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+The optimal management of patients (pts) with complete response (CR) after first-line chemotherapy remains unsettled with guidelines recommending either surveillance or retroperitoneal LN dissection (RPLND). We present long-term outcomes from a large dataset of pts managed with surveillance after achieving CR to first-line chemotherapy.
+Methods:
+The prospectively maintained Indiana University testicular cancer database was queried for pts with metastatic NSGCT treated between 1990-2017 who achieved a CR after first-line chemotherapy. CR was defined as normalization of tumor markers (AFP+hCG) and no residual mass > 1cm. Kaplan-Meier methods were used to analyze progression-free survival (PFS) and overall survival (OS).
+Results:
+388 pts met eligibility and were included in this analysis. Median age at diagnosis was 28.4 (range, 13-61.5). Primary site was testis in 385 pts (99%). Primary tumor predominant histology was embryonal ca (241), mixed (61), seminoma (31), yolk sac tumor (20), choriocarcinoma (10), and teratoma (14). 126 pts (32.5%) had teratoma in the primary tumor. Metastasis sites were retroperitoneum (295), mediastinal LN (15), pulmonary (149), liver (15), bone (7), and brain (6). IGCCCG risk was good in 325, intermediate in 25, and poor in 32 pts. Pre-chemotherapy retroperitoneal LN size was available in 232 pts: < 3cm in 170 and ≥3cm in 62. Median pre-chemo AFP was 10.7 (1-31,000) and hCG was 16.5 (0-595,930). First-line chemo was BEPx3 in 274, BEPx4 in 30, other regimens in 82 pts. With a median follow-up of 3.9 yrs, 34 pts (8.8%) progressed. At most recent follow-up, 363 (93.6%) pts were alive with no evidence of disease and 10 pts (2.6%) died of their disease. The estimated 2-yr PFS was 90.1% (95% CI: 86.2-93%) and 2-yr OS was 97.8% (95% CI: 95.2-99%). The estimated 2-yr PFS by IGCCCG risk category was 90.4% for good vs 90.4% for intermediate vs 86.5% for poor risk (p = 0.23), and the estimated 2-yr OS was 98.6% for good vs 95.5% for intermediate vs 92.9% for poor risk disease respectively (p = 0.002). For the 34 pts who progressed on surveillance, 16 (4%) progressed in the retroperitoneum only. 3 pts had malignant transformation of teratoma to PNET, adenocarcinoma, or other elements. 11 of progressed pts were treated with surgery, 12 were treated with salvage chemo, and 11 were treated with surgery+chemo. At most recent follow up, 21 of progressed pts had NED, 10 had died of disease, and 3 were lost to follow up.
+Conclusions:
+Pts with metastatic NSGCT who achieve CR after first-line chemotherapy can be safely observed with surveillance. Most pts who relapse can be salvaged with surgery and/or chemotherapy.
+
+--------------------------------------------------
+Search Results Summary:
+

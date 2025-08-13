@@ -1,0 +1,68 @@
+Title: Associations of pre-existing cardiovascular disease (CVD) with treatment patterns and survival outcomes in patients with metastatic prostate cancer: A real-world, population-based study.
+Abstract Number: 198237
+URL: https://meetings.asco.org/abstracts-presentations/198237
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Atul Batra, MD, DM
+
+================================================================================
+
+Full Abstract:
+Background:
+Prior cardio-oncology research has focused on examining the future risk of CVD as a result of cancer treatments. The impact of pre-existing CVD on cancer treatments is less clear. This study aimed to identify the associations of baseline CVD on treatment patterns and survival outcomes in metastatic prostate cancer where older age and exposure to androgen deprivation therapy can potentiate cardiac risks.
+Methods:
+We identified all patients diagnosed with metastatic prostate cancer in a large Canadian province from 2004 to 2017 using the population-based cancer registry. Administrative claims were linked to ascertain any diagnoses of pre-existing CVD, defined as any of arrythmias [AR], cerebrovascular accidents [CVAs], myocardial infarctions [MIs], or congestive heart failure [CHF] that preceded the diagnosis of metastatic prostate cancer. Logistic and Cox regression models were constructed to determine the associations of baseline CVD with receipt of cancer treatments (such as radiation, or systemic therapy) and overall survival (OS).
+Results:
+A total of 3,257 patients were included. The median age was 66 years (interquartile range, 46-95 years). At diagnosis of advanced prostate cancer, 993 (30.5%) had pre-existing CVD: 10.0% AR, 4.3% CVAs, 3.0% MIs, 2.8% CHF and 10.4% multiple CVDs. The Charlson comorbidity index (CCI) was 0, 1 and >1 in 53.4%, 27.3% and 19.3%, respectively. Overall, 2078 (63.8%) patients received chemotherapy, while 747 (22.9%) received radiotherapy. After adjusting for age and CCI, pre-existing CVD was associated with a lower likelihood of chemotherapy (odds ratio [OR], 0.67; 95% confidence interval [CI], 0.61-0.75; P=0.001) and radiotherapy (OR, 0.87; 95% CI, 0.85-0.91; P<0.001). Likewise, CVD was associated with worse OS, after adjusting for measured confounding variables (see table).
+Conclusions:
+One-third of patients with metastatic prostate cancer had pre-existing CVD, which was associated with a lower likelihood of chemotherapy and worse OS. In the context of an aging general population, early cardio-oncology consultations to optimize CVD management may lead to safer and broader uptake of appropriate prostate cancer treatments.
+Hazard ratio
+95% confidence interval
+p-value
+Age at diagnosis
+< 65
+> 65
+Ref
+2.43
+2.29-2.83
+<0.001
+Charlson’s Comorbidity Index
+0
+1
+>1
+Ref
+1.96
+2.56
+1.88-2.12
+2.43-2.67
+<0.001
+<0.001
+Chemotherapy
+No
+Yes
+Ref
+0.62
+0.48-0.56
+<0.001
+Radiotherapy
+No
+Yes
+Ref
+0.97
+0.95-1.01
+0.110
+Baseline cardiovascular disease
+No
+Yes
+Ref
+1.67
+1.32-2.10
+<0.001
+
+--------------------------------------------------
+Search Results Summary:
+

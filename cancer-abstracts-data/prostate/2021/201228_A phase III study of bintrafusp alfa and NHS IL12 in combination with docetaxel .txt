@@ -1,0 +1,22 @@
+Title: A phase I/II study of bintrafusp alfa and NHS-IL12 in combination with docetaxel in adults with metastatic castration sensitive (mCSPC) and castration-resistant prostate cancer (mCRPC).
+Abstract Number: 201228
+URL: https://meetings.asco.org/abstracts-presentations/201228
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Mohammad O. Atiq, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Immune checkpoint inhibition is successful in a small subpopulation of men with prostate cancer. This could be related to barriers to immune response in the tumor microenvironment. Immunocytokines present an opportunity to specifically target the pleiotropic tumor microenvironment impacting immune cells beyond T-cells. NHS-IL12 is an immunocytokine that carries IL-12 (shown to impact natural killer and myeloid cells) and binds to necrotic tissue with exposed histones. Phase 1 studies have indicated immune and even PSA responses in prostate cancer to NHS-IL12 (Strauss J, CCR 2019). Preclinical data has demonstrated synergy with docetaxel, which is standard therapy in both mCSPC and mCRPC. Further synergy has been shown with a novel first-in-class bifunctional fusion protein (bintrafusp alfa) composed of the extracellular domain of human TGF-β receptor II (TGFβRII), which effectively functions to sequester or “trap” all three TGF-β isoforms (Lind H, JITC 2020), fused to a monoclonal antibody against PD-L1. This study will examine the potential of a novel combination of chemotherapy, checkpoint inhibition, and immunocytokines in metastatic prostate cancer.
+Methods:
+The study will evaluate safety of NHS-IL12 with docetaxel at escalating doses followed by the addition of bintrafusp alfa in all metastatic patients. Once safety of the combination is established, patients will enroll in 2 cohorts with either mCSPC or mCRPC. Eligible patients include mCSPC (≤134 days of starting ADT) and mCRPC (must have been previously treated with abiraterone or enzalutamide), with good performance status (ECOG of ≤ 2). Patients with brain metastases or who are immunocompromised are excluded. For mCSPC, the primary endpoint will evaluate the increase in the proportion of patients who have a PSA less than 0.2 ng/mL 7 months after the start of ADT, which is based on the prognostic value of PSA less than 0.2 ng/mL at 7 months in mCSPC (Harshman L, JCO 2017). The secondary endpoint is biochemical and radiographic time to progression. The primary endpoint for the mCRPC patients will evaluate progression free survival with secondary endpoints examining the percentage of patients with a 50% PSA decline from baseline and radiographic response rates per RECIST. Exploratory analysis will analyze changes in immune cell subsets after treatment as well as immune status of the tumor microenvironment. Clinical trial information: NCT04633252
+
+--------------------------------------------------
+Search Results Summary:
+

@@ -1,0 +1,18 @@
+Title: The correlation between molecular characteristics and treatment outcomes in patients (pts) with grade 2-3 (G2-3) gliomas.
+Abstract Number: e14551
+URL: https://meetings.asco.org/abstracts-presentations/190099
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Jaleh Fallah, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Jaleh Fallah Cleveland Clinic Foundation, Cleveland, OH info_outline Jaleh Fallah, Vineeth Tatineni, Martin C. Tom, Wei Wei, Deborah Park, Surabhi Tewari, Glen Stevens, Samuel T. Chao, John H. Suh, David M. Peereboom, Erin Sennett Murphy, Manmeet Singh Ahluwalia Organizations Cleveland Clinic Foundation, Cleveland, OH; Summa Health, Akron, OH; Cleveland Clinic, Cleveland, OH; Cleveland Clinic Taussig Cancer Institute, Cleveland, OH; Cleveland Clinic Lerner College of Medicine, Cleveland, OH; Cleveland Clinic, University Heights, OH; Rose Ella Burkhardt Brain Tumor and Neuro-Oncology Center, Neurological Institute, Taussig Cancer Institute and Cleveland Clinic, Cleveland, OH Abstract Disclosures Research Funding Other Foundation Cleveland Clinic Foundation Background: In a retrospective study, we investigated the correlation between the molecular characteristics and treatment outcomes in pts with G2-3 glioma. Methods: Pts with G2-3 glioma and known IDH mutation status who were diagnosed between 1994 and 2017 were analyzed. In most of the pts, IDH mutation was determined by immunohistochemistry only. Overall survival (OS) was defined as the date of biopsy/surgical resection to the date of last follow up or death. OS was estimated by Kaplan-Meier method and compared by log rank test. Results: 606 pts with G2 (81%) or G3 (19%) glioma were included. The median age at diagnosis was 38 years (Interquartile range 27-52), 55% of the pts were male, 83% were white, 47% had IDH-mt tumor and 67% underwent surgical resection. The median follow-up was 55.6 months (mo). The median OS (mOS) in pts with IDH mutated (mt) and IDH wild type (wt) tumor were 201 and 128 mo, respectively. The predictors of worse OS in pts with IDH-mt tumor included G3, receipt of chemotherapy or radiation therapy (RT), bilateral disease and lack of 1p/19q codeletion. The determinants of worse OS in pts with IDH-wt tumor included male gender, receipt of chemotherapy or RT, history of prior malignancy, smoking, G3, astrocytoma histology, no surgical resection, EGFR amplification, and lack of 1p/19q codeletion. The mOS by IDH, 1p/19q, and MGMT status is summarized in the table. RT and chemotherapy were more commonly used among pts who had G3 glioma and those who underwent biopsy only. Conclusions: Tumor grade continues to be a determinant of pt outcomes in the setting of molecularly defined gliomas. Presence of 1p/19q codeletion is a predictor of favorable OS in pts with G2-3 glioma. Surgical resection is a determinant of OS in pts with IDH-wt G2-3 gliomas, but not in pts with IDH-mt tumor. The worse OS in pts who were treated with RT or chemotherapy is likely due to the use of these treatment modalities in more aggressive tumors and in those who only had biopsy. variable 1p/19q codeleted 1p/19q non-codeleted P-Value for 1p/19q MGMT methylated MGMT non-methylated P-value for MGMT mOS in IDH-mt (mo) 208 (N = 102) 147 (N = 160) 0.042 208 (N = 76) 78 (N = 21) 0.31 mOS in IDH-wt (mo) 207 (N = 19) 76 (N = 222) < 0.0001 46 (N = 41) 27 (n = 66) 0.11
+
+--------------------------------------------------
+Search Results Summary:
+In a retrospective study, we investigated the correlation between the molecular characteristics and treatment outcomes in pts with G2-3 glioma.

@@ -1,0 +1,18 @@
+Title: Contrast-enhanced CT radiomics for predicting calcification in metastatic colorectal cancer: Based on machine learning.
+Abstract Number: e16095
+URL: https://meetings.asco.org/abstracts-presentations/188871
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Yuwen Zhou
+
+================================================================================
+
+Full Abstract:
+Authors person Yuwen Zhou Department of Biotherapy, Cancer Center, Chengdu, China info_outline Yuwen Zhou, Qiu Meng Organizations Department of Biotherapy, Cancer Center, Chengdu, China; Department of Medical Oncology, Cancer Center, the State Key Laboratory of Biotherapy, West China Hospital, West China Medical School, Sichuan University, Chengdu, China Abstract Disclosures Research Funding No funding received None Background: In patients with metastatic colorectal cancer (mCRC), calcification is a predictive factor and associated with a better prognosis. This study was aimed to estimate the textural features performance derived from contrast-enhanced CT in prediction of calcification in mCRC. Methods: Four hundred fifty patients from a single center with pathologically diagnosed colorectal adenocarcinoma (training dataset, n = 159; validation dataset, n = 31) were enrolled in our retrospective study. A three-dimensional region of interest (ROI) around the margin of the lesion was manually assessed by two radiologists on the basis of CT scans, and all textural parameters were retrieved from the ROI. The least absolute shrinkage and selection operator (LASSO) method was applied to select the textural feature. The differential diagnostic capabilities of textural features, morphological features, and their combination were analyzed by receiver operating characteristic (ROC). AUC was used as the main indicator. Results: Twenty-one radiomics features extracted from contrast-enhanced CT were screened as a calcification-associated radiomics signature of mCRC. They were able to predict calcification in both the training group (slice thickness of 5 mm, sensitivity 0.84, specificity 0.71, accuracy 0.81, AUC 0.916, 95%CI 0.87-0.97) and the validation group (slice thickness of 5 mm, sensitivity 1.00, specificity 0.88, accuracy 0.77, AUC 0.964, 95%CI 0.904-1.0). Conclusions: In summary, a noninvasive radiomics signature derived from contrast-enhanced CT images was conveniently used for the prediction of calcification in mCRC before therapy, which might be a non-invasive approach in clinical practice to determine whether surgery is needed. However, multi-center studies with larger sample size are needed to confirm these results.
+
+--------------------------------------------------
+Search Results Summary:
+In patients with metastatic colorectal cancer (mCRC), calcification is a predictive factor and associated with a better prognosis. This study was aimed to estimate the textural features performance derived from contrast-enhanced CT in prediction of calcification in mCRC.

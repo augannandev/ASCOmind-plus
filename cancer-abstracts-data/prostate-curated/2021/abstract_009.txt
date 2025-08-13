@@ -1,0 +1,26 @@
+Title: A morphological subset of circulating tumor cells in advanced prostate cancer reveals a potential biomarker for clinical outcomes.
+Abstract Number: 198447
+URL: https://meetings.asco.org/abstracts-presentations/198447
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Jasmine Jiemei Wang, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+A morphological subset of prostate cancer (PCa) circulating tumor cells (CTCs) with particularly small nuclei (< 8.5 μm), named very-small-nuclear CTCs (vsnCTCs), were found to be correlated with the presence of visceral metastases. It is reported that the depletion of nuclear envelope protein emerin promotes PCa metastasis and is associated with nuclear shape instability. In this study, we hypothesize vsnCTCs as prognostic biomarkers in metastatic castration resistant PCa (mCRPC), and aim to investigate the correlation between emerin level and vsnCTCs.
+Methods:
+PCa CTCs were enriched using the NanoVelcro CTC Assay from 76 patients with mCRPC. The Kaplan-Meier analysis and log-rank test were used to estimate and compare the overall survival (OS) and progression free survival (PFS) of androgen receptor signaling inhibitor (ARSI), taxanes and other therapy in patients stratified by the presence of vsnCTCs. The correlation between the presence of vsnCTCs and OS and PFS were evaluated using the Cox proportional hazard regression. The expression level of emerin in patients with and without vsnCTC were compared using Mann-Whitney U test, and the correlation between emerin level and CTC nuclear size was tested by Pearson correlation coefficient.
+Results:
+Patients with vsnCTC (i.e, vsnCTC+) had significantly shortened OS and PFS compared with those without vsnCTC (i.e, vsnCTC-). The median OS was 34 (vsnCTC+, n= 49) vs. 149 (vsnCTC-, n= 27) weeks (hazard ratio [HR] = 2.6, 95% confidence interval [CI]: 1.5-4.5, P< 0.001). The median PFS was 12 (vsnCTC+, n= 32) vs. 26 (vsnCTC-, n= 18) weeks (HR = 2.2, 95% CI: 1.3 -4.0, P= 0.004). The emerin expression level was significantly higher in vsnCTC+ compared to vsnCTC- (P= 0.009). In addition, we observed a significantly positive correlation between emerin expression and CTC nuclear size (r = 0.52, P< 0.001).
+Conclusions:
+This study casts light on the importance of the vsnCTCs in patients with mCRPC, as vsnCTC+ patients represented a group at risk for faster clinical progression who are at the highest risk for mortality. vsnCTC represents a new hallmark of an aggressive subtype of mCRPC and is related to emerin dysregulation, which promotes lethal progression and metastasis of PCa.
+
+--------------------------------------------------
+Search Results Summary:
+

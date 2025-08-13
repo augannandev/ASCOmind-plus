@@ -1,0 +1,18 @@
+Title: Real-world cardiovascular outcomes with novel anti-androgen agents in prostate cancer patients.
+Abstract Number: e16510
+URL: https://meetings.asco.org/abstracts-presentations/177808
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Amit Kulkarni, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Amit Kulkarni University of Minnesota, Minneapolis, MN info_outline Amit Kulkarni, Nathan Rubin, Tony Tholkes, Anna Prizment, Charles J. Ryan, Arpit Rao Organizations University of Minnesota, Minneapolis, MN; University of New Mexico Comprehensive Cancer Center, Albuquerque, NM Abstract Disclosures Research Funding Other Background: Abiraterone use is associated with significant cardiovascular (CV) morbidity in clinical trials, but the magnitude of this morbidity in contemporary US prostate cancer (PC) population remains unknown. We examined a large medical claims database to answer this important question. Methods: We retrospectively reviewed Marketscan claims database (1/1/2013 to 9/30/2015) to identify adults with diagnosis of localized PC, recurrent localized PC, biochemically recurrent non-metastatic PC and metastatic PC who received treatment with androgen deprivation therapy (ADT) alone or ADT with novel antiandrogen agents (abiraterone or enzalutamide). The primary outcome measure was composite severe CV outcome of acute myocardial infarction (MI), stroke or heart failure (HF). We used Cox regression model with time dependent covariates to estimate the CV risk of various therapies. Results: A total of 7030 patients of PC were identified- 1285 received ADT for localized PC, 424 received ADT for recurrent localized PC, 554 received ADT for biochemically recurrent non-metastatic PC, 256 received ADT alone for metastatic PC and 1366 received abiraterone or enzalutamide with ADT for metastatic PC. During the study period, 143 severe CV events occurred, resulting in an incidence rate of 0.74 per 100 patient-years. In multivariate analysis, abiraterone use was associated with a trend towards increased risk of severe CV compared to non-abiraterone users (HR = 1.58; 95% CI: 0.98-2.59, p= 0.06). No such increased risk was detected for ADT (HR = 1.35; 95% CI: 0.92-2.00, p= 0.12) or enzalutamide (HR = 0.84 95% CI: 0.34-2.11, p= 0.71). Conclusions: To our knowledge, this is the first study to present real-world data on CV outcomes of PC patients receiving novel anti-androgens. Our findings support the trend towards increased severe CV risk seen in abiraterone trials. No such association was seen for enzalutamide. Additional analyses with a longer follow-up duration are planned.
+
+--------------------------------------------------
+Search Results Summary:
+Abiraterone use is associated with significant cardiovascular (CV) morbidity in clinical trials, but the magnitude of this morbidity in contemporary US prostate cancer (PC) population remains unknown. We examined a large medical claims database to answer this important question.

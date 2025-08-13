@@ -1,0 +1,18 @@
+Title: Hsa-miR-196a2 Rs 11614913 C>T polymorphism and CRC susceptibility: A case-control study.
+Abstract Number: e16066
+URL: https://meetings.asco.org/abstracts-presentations/188214
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Li-zhu Chen
+
+================================================================================
+
+Full Abstract:
+Authors person Li-zhu Chen Department of Medical Oncology, Fujian Medical University Cancer Hospital & Fujian Cancer Hospital, Fuzhou, Fujian Province, China, Fuzhou, China info_outline Li-zhu Chen, Yu Chen, Wei-feng Tang, Lin Chen, Jin Lin, Zeng-qing Guo, Yufang Huang, Xuefeng Xia Organizations Department of Medical Oncology, Fujian Medical University Cancer Hospital & Fujian Cancer Hospital, Fuzhou, Fujian Province, China, Fuzhou, China; Cancer Bio-immunotherapy Center, Fujian Medical University Cancer Hospital & Fujian Cancer Hospital, Fuzhou, Fujian Province, China, Fuzhou, China; Department of Cardiothoracic Surgery, Affiliated People’s Hospital of Jiangsu University, Zhenjiang, Jiangsu Province, China, Zhenjiang, China; Fujian Cancer Hospital, Fuzhou, China; Cancer Bio-immunotherapy Center, Fujian Medical University Cancer Hospital & Fujian Cancer Hospital, Fuzhou, China; Houston Methodist Research Institute, Weill Cornell School of Medicine, Houston, TX Abstract Disclosures Research Funding No funding received None Background: The incidence and mortality rate of Colorectal cancer (CRC) is high worldwide. Many genetic studies have suggested that single nucleotide polymorphisms (SNPS) in genes encoding small molecule RNAs were associated with CRC risk, but the results were different in different studies. In our study, we investigated the general demographic characteristics and the relationship of hsa-mir-196a2 rs11614913 C > T polymorphism and CRC susceptibility in Chinese CRC. Methods: Our study included 1,003 CRC patients and 1,303 controls. Restriction fragment length polymorphism (RFLP-PCR) method was used for genotyping and SAS version 9.4 software for statistical analysis. Results: The incidence of smoking status,alcohol use and BMI in the CRC group (25.82%,17.35%,66.80%) were much higher than that in the control subjects (20.34%,10.44%,52.80%) respectively(P < 0.05). After adjusting age and other factors, hsa-mir-196a2 rs11614913 C > T genotypes were not statistically correlated with CRC risk and tumor location.But the TT genotype in the hsa-mir-196a2 rs11614913 C > T polymorphism reduced the risk of CRC in women (OR = 0.64, 95 CI: 0.42-0.97, P = 0.036). Conclusions: Smoking status,alcohol use and BMI may be main risk factors for CRC development in our study population.The polymorphism of hsa-mir-196a2 rs11614913 C > T gene may affect the risk of CRC in women, which requires further investigation in a larger cohort in the future.
+
+--------------------------------------------------
+Search Results Summary:
+The incidence and mortality rate of Colorectal cancer (CRC) is high worldwide. Many genetic studies have suggested that single nucleotide polymorphisms (SNPS) in genes encoding small molecule RNAs were associated with CRC risk, but the results were different in different studies. In our study, we investigated the general demographic characteristics and the relationship of hsa-mir-196a2 rs11614913 C > T polymorphism and CRC susceptibility in Chinese CRC.

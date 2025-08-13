@@ -1,0 +1,34 @@
+Title: Impact of age on efficacy and safety of relugolix: A subgroup analysis from the randomized, phase 3 hero study versus leuprolide in men with advanced prostate cancer.
+Abstract Number: 198132
+URL: https://meetings.asco.org/abstracts-presentations/198132
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Michael Cookson, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+In the phase 3 HERO study, the oral GnRH receptor antagonist relugolix demonstrated sustained testosterone suppression superior to that of leuprolide and a comparative 54% decrease in risk of major adverse cardiovascular events. Relugolix was recently approved for use in the US for the treatment of adult patients with advanced prostate cancer. Here, we further characterize the impact of age on the use of relugolix in advanced prostate cancer from the HERO study.
+Methods:
+The HERO study was a randomized, open-label, parallel group study evaluating relugolix in men with advanced prostate cancer. Overall, 934 men with advanced prostate cancer underwent 2:1 randomization to receive relugolix 120 mg orally once daily after a single loading dose of 360 mg or leuprolide 3-month injections for 48 weeks. Subgroups analyzed by age were <65 years or ≥65 years and ≤75 years or >75 years. Assessments analyzed included sustained testosterone suppression to castrate levels (<50 ng/dL) from day 29 through 48 weeks, early and profound (<20 ng/dL) castration rates, prostate-specific antigen (PSA) levels, and safety. Testosterone recovery (≥280 ng/dL) was evaluated in 184 patients who enrolled in the testosterone recovery substudy.
+Results:
+Of the 930 patients (relugolix:622;leuprolide:308) that received study drug in the HERO study, 173 (18.6%) were <65 years and 757 (81.4%) were ≥65 years of age, while 664 (71.4%) were ≤75 years and 266 (28.6%) were >75 years of age. Across all age subgroups, point estimates for sustained castration rates through 48 weeks for relugolix patients were consistent with the overall estimate of relugolix sustained castration rate observed in the overall population. Differences in sustained castrations rates at week 48 between relugolix and leuprolide groups were similar regardless of the age subgroup (table). The likelihood of testosterone recovery at 90 days after completion of treatment was higher in the relugolix group versus the leuprolide group in all age subgroups: <65 (79.1% vs 16.7%), ≥65 (48.6% vs 0%), ≤75 (60.0% vs 4.0%),and >75 years (40.7% vs 0%). No clinically relevant differences were noted in the incidence or types of adverse events within treatment groups in all the age subgroups analyzed.
+Conclusions:
+In this subgroup analysis of the HERO study, relugolix was effective regardless of age, and the benefit/risk profile remained favorable for relugolix compared with leuprolide, consistent with the overall population. Testosterone recovery was higher in the relugolix group than the leuprolide group for all age subgroups analyzed, with higher rates of recovery in younger versus older men. Clinical trial information: NCT03085095
+Castration rates.
+Differences Between Relugolix and Leuprolide Groups
+<65 years
+≥65 years 6.8% (95% CI: -4.3%, 17.9%)
+8.2% (95% CI: 4.2%, 12.2%)
+≤75 years
+>75 years 6.3% (95% CI: 1.7%, 10.8%)
+12.1% (95% CI: 5.0%, 19.2%)
+
+--------------------------------------------------
+Search Results Summary:
+

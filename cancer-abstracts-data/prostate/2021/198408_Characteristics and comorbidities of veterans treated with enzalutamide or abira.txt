@@ -1,0 +1,26 @@
+Title: Characteristics and comorbidities of veterans treated with enzalutamide or abiraterone.
+Abstract Number: 198408
+URL: https://meetings.asco.org/abstracts-presentations/198408
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Mukti Patel
+
+================================================================================
+
+Full Abstract:
+Background:
+Prostate cancer (PCa) is the most common male malignancy and is the fourth leading cause of cancer-related death in males worldwide. Enzalutamide (ENZ) and Abiraterone (AA) are used in the treatment of castrate resistant PCa after androgen deprivation therapy (ADT), however these agents have not been directly compared. These drugs have various adverse effects with different mechanisms of action and may be selected based on comorbid conditions. In this study, we aim to identify patient characteristics and comorbidities of patients treated with ENZ versus AA.
+Methods:
+Patients treated with AA or ENZ between September 10, 2014 and June 3, 2017 were identified in the Veterans Health Administration and followed until April 2020. Only patients with a pathologic diagnosis of PCa and treatment with ADT prior to AA or ENZ were included. Age at initiation of treatment, Elixhauser comorbidity score, PSA at initiation of AA or ENZ, Gleason score at diagnosis, treatment with ADT, docetaxel, and cabazitaxel was collected. Months of filled prescriptions were used to determine length of treatment.
+Results:
+Of 2575 patients, 1095 (42.5%) were initially treated with ENZ, 1480 (57.5%) with AA, and 1330 (51.7%) received both agents. Overall, 756 (29.4%) of patients were of black race. Docetaxel was used in 32.3% of patients and cabazitaxel in 11.7% of patients, with no differences between ENZ or AA cohorts. There were no significant differences in time from pathologic diagnosis to initial ADT therapy, or subsequently to treatment with ENZ or AA in either group. Furthermore, there were no differences in PSA (n = 1243, median AA 33.7 vs ENZ 30.7, p = 0.538) or Gleason scores (n = 1816, mean AA 7.85 vs ENZ 7.94, p = 0.142). Patients initially treated with ENZ compared to AA were older (mean 74.2 vs. 73.7 years, p = 0.032), had higher mean comorbidity score (7.1 vs. 6.7, p = 0.002), and had a longer duration of first treatment (median 10.5 months vs. 9.0 months, p < 0.001). As a second agent, ENZ also had a longer duration of treatment (median 5.0 vs. 4.2 months, p < 0.001). Patients treated initially with ENZ were more likely to have heart failure (18.2% vs. 13.7%, p = 0.002), cardiac arrhythmia (42.1% vs 36.6%, p = 0.004), valvular disease (13.7% vs 10.3%, p = 0.009), peripheral vascular disorders (26.8% vs 22.7%, p = 0.016), uncomplicated hypertension (86.8% vs 83.6%, p = 0.024), complicated hypertension (20.2% vs 16.9%, p = 0.033), uncomplicated diabetes (43.9% vs 37.4%, p = 0.001), complicated diabetes (26.0% vs 19.9%, p = 0.000), renal failure (28.3% vs 22.6%, p = 0.001).
+Conclusions:
+Overall, we found that patients initially treated with ENZ were older and had higher rates of cardiovascular disease and diabetes compared to those initially treated with AA. Assessment of comorbidities may be helpful in treatment selection to facilitate personalized medicine in prostate cancer, prevent adverse events, and improve outcomes.
+
+--------------------------------------------------
+Search Results Summary:
+

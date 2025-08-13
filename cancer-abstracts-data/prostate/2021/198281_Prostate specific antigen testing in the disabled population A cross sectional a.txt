@@ -1,0 +1,26 @@
+Title: Prostate-specific antigen testing in the disabled population: A cross-sectional analysis of the Health Information National Trends Survey (HINTS).
+Abstract Number: 198281
+URL: https://meetings.asco.org/abstracts-presentations/198281
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Joon Yau Leong, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Disabled patients are a unique minority population that may have lower literacy levels and difficulty communicating with physicians. Furthermore, their knowledge for cancer prevention recommendations is unknown. Herein, we aim to compare prostate-specific antigen (PSA) testing rates and associated predictors among disabled men and non-disabled men in the USA.
+Methods:
+We performed a cross-sectional study utilizing the Health Information National Trends Survey (HINTS) to analyze factors predicting PSA testing rates in men with disabilities (disabled, deaf, blind). Multivariable logistic regression models were used to determine clinically significant predictors of PSA testing in men with disabilities compared to that of the healthy cohort.
+Results:
+A total of 782 (14.6%) disabled men were compared to 4,569 (85.4%) non-disabled men. Disabled men were older with a mean age of 65.0 ± 14.2 vs. 55.0 ± 15.9 years (p < 0.001). On multivariable analysis, after adjusting for all available confounders including race, age, geographical region, survey year, marital status, health insurance, healthcare provider, amongst others, men with any disability were less likely to undergo PSA screening (OR 0.772, 95% CI 0.623-0.956, p = 0.018). Variables associated with increased PSA screening rates included age, having a healthcare provider or health insurance, and living with a partner. Although prostate cancer detection rates were shown to be higher among disabled men, this did not reach statistical significance.
+Conclusions:
+Our data suggests that significant inequalities in PSA screening exist among men with disabilities in the USA, with disabled men, especially the deaf and the blind, being less likely to be offered PSA screening. There is a clear need to implement strategies to reduce existing gaps in the care of disabled men and strive to reach equality in PSA screening in this unique population.
+
+--------------------------------------------------
+Search Results Summary:
+

@@ -1,0 +1,26 @@
+Title: Real-world outcomes among prostate cancer patients with BRCA2 gene variants compared to variants in other homologous DNA repair genes.
+Abstract Number: 198412
+URL: https://meetings.asco.org/abstracts-presentations/198412
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Meghan Price
+
+================================================================================
+
+Full Abstract:
+Background:
+PARP inhibitors (PARPis) were approved by the FDA for the treatment of advanced prostate cancer (PC) among patients (pts) harboring mutations in genes responsible for homologous DNA repair. Increasing evidence has suggested that pts with BRCA2 gene alterations may derive the most benefit from these drugs. Study objectives were to evaluate real-world treatment outcomes among Veterans prescribed PARPis for PC and to compare outcomes between pts with BRCA2 gene variants and those with variants in other homologous DNA repair genes.
+Methods:
+The U.S. Department of Veterans Affairs (VA) National Precision Oncology Program database was reviewed to identify PC pts who successfully underwent tumor DNA sequencing and were prescribed olaparib, rucaparib, niraparib or talazaporib prior to FDA approval for PARPi use in PC (May 15, 2020). Only pts who received a PARPi for > 4 weeks were included in outcome assessments The VA’s Corporate Data Warehouse was reviewed to obtain clinical and disease characteristics, laboratory and imaging reports, and treatments administered. Assessed outcomes included PSA30, defined as the percentage of pts achieving 30% reduction in prostate-specific antigen (PSA) level, and composite progression-free survival (PFS), which included time to radiographic progression per RECIST criteria, discontinuation of therapy, and/or death. Pts who discontinued therapy due to toxicity were censored for PFS analyses. PSA30 and PFS were compared between pts bearing BRCA2 gene variants and those with variants in other homologous DNA repair genes using t-testing and log-rank testing, respectively.
+Results:
+48 pts were prescribed a PARPi for PC; 43 (89.6%) received therapy for > 4 weeks. BRCA2 gene variants (43.8%) were most commonly observed followed by ATM (23.0%) and BRCA1 (16.7%). Forty-two pts (87.5%) received prior systemic therapy beyond androgen deprivation. Forty (83.3%) pts received olaparib, 6 (12.5%) received rucaparib, and 2 (4.2%) received both. Eleven (22.9%) discontinued therapy due to toxicity, with anemia being most common toxicity. Of the 43 pts treated for > 4 weeks, pts with BRCA2 variants had a higher rate of PSA30 than those without (47.9% vs. 4.5%; p = 0.004). The median PFS for all pts was 4.0 months. Pts with BRCA2 gene variants had longer PFS than those without BRCA2 gene variants (7.2 vs 3.3 months; p = 0.037). Pts with BRCA2 gene variants also had longer PFS than those with BRCA1 variants (7.2 vs 3.3, p = 0.031). No difference was observed in PFS between those with BRCA2 variants and those with ATM variants (p = 0.51).
+Conclusions:
+Approximately one-quarter of PC pts with variants in homologous DNA repair genes treated with PARPis achieve a 30% reduction in PSA, and the median PFS is 4 months. Pts harboring BRCA2 gene variants have a significantly higher rate of PSA30 and a longer PFS than those with variants in other homologous DNA repair genes.
+
+--------------------------------------------------
+Search Results Summary:
+

@@ -1,0 +1,37 @@
+Title: Association of elevated serum CEA with visceral metastasis and distinctive circulating tumor DNA alterations in castrate-resistant prostate cancer.
+Abstract Number: 198253
+URL: https://meetings.asco.org/abstracts-presentations/198253
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Alexander Bray, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Serum carcinoembryonic antigen (CEA) is elevated in certain subtypes of castrate resistant prostate cancer (CRPC) such as aggressive variant prostate cancer (AVPC). Independent association of CEA expression with clinical stage and specific tumor gene variants could enable its use as a prognostic indicator and non-invasive biomarker of therapeutic response.
+Methods:
+Circulating tumor DNA (ctDNA) alterations in a commercially available panel of genes (Guardant Health) and serum CEA from 178 CRPC patients were retrospectively analyzed. These patients were defined as AVPC or non-AVPC based on the presence of 1 or more of the published Aparicio criteria (Aparicio et al, 2013). Clinical characteristics and ctDNA alterations were compared in patients with elevated and normal CEA. AVPC and non-AVPC patients were then compared to evaluate the uniqueness of CEA associated findings.
+Results:
+Patients with CRPC and elevated serum CEA were more likely to have liver (36.1% vs 12.0%, p = 0.002) and lung metastasis (19.4% vs 6.4%, p = 0.0441) compared to patients with normal CEA. When ctDNA profiles were analyzed there were no significant differences in rates of single nucleotide variants (SNVs) between patients with elevated and normal CEA. In contrast, patients with elevated CEA were significantly more likely to harbor copy number amplifications (CNAs) in BRAF, CDK6, FGR1, MET, CCNE1, MYC, KIT, CCND2, PIK3CA, RAF1, and KRAS. Of these, only PIK3CA and KRAS were significantly elevated in AVPC patients compared to non-AVPC patients. Relative to non-AVPC CRPC, patients with AVPC were significantly more likely to have clonal SNVs in TP53, PTEN, or RB (p = 0.0131). They were also more likely to have clonal SNVs in TP53 (p = 0.06).
+Conclusions:
+1.) Elevated serum CEA is independently associated with visceral metastases in patients with CRPC. 2.) Elevated serum CEA in CRPC is associated with specific gene amplifications which are detectable by ctDNA analysis and not associated with AVPC as a whole. 3.) The ctDNA findings in patients with AVPC mirror previous tissue-based studies which documented recurrent genetic variations in TP53, PTEN, and RB (Aparicio et al, 2016). Together these findings outline a potential role for ctDNA profiling and serum CEA as non-invasive biomarkers in CRPC. They also suggest that elevated serum CEA may be associated with a genetically distinct subtype of AVPC.
+
+--------------------------------------------------
+Full Abstract:
+Background:
+Serum carcinoembryonic antigen (CEA) is elevated in certain subtypes of castrate resistant prostate cancer (CRPC) such as aggressive variant prostate cancer (AVPC). Independent association of CEA expression with clinical stage and specific tumor gene variants could enable its use as a prognostic indicator and non-invasive biomarker of therapeutic response.
+Methods:
+Circulating tumor DNA (ctDNA) alterations in a commercially available panel of genes (Guardant Health) and serum CEA from 178 CRPC patients were retrospectively analyzed. These patients were defined as AVPC or non-AVPC based on the presence of 1 or more of the published Aparicio criteria (Aparicio et al, 2013). Clinical characteristics and ctDNA alterations were compared in patients with elevated and normal CEA. AVPC and non-AVPC patients were then compared to evaluate the uniqueness of CEA associated findings.
+Results:
+Patients with CRPC and elevated serum CEA were more likely to have liver (36.1% vs 12.0%, p = 0.002) and lung metastasis (19.4% vs 6.4%, p = 0.0441) compared to patients with normal CEA. When ctDNA profiles were analyzed there were no significant differences in rates of single nucleotide variants (SNVs) between patients with elevated and normal CEA. In contrast, patients with elevated CEA were significantly more likely to harbor copy number amplifications (CNAs) in BRAF, CDK6, FGR1, MET, CCNE1, MYC, KIT, CCND2, PIK3CA, RAF1, and KRAS. Of these, only PIK3CA and KRAS were significantly elevated in AVPC patients compared to non-AVPC patients. Relative to non-AVPC CRPC, patients with AVPC were significantly more likely to have clonal SNVs in TP53, PTEN, or RB (p = 0.0131). They were also more likely to have clonal SNVs in TP53 (p = 0.06).
+Conclusions:
+1.) Elevated serum CEA is independently associated with visceral metastases in patients with CRPC. 2.) Elevated serum CEA in CRPC is associated with specific gene amplifications which are detectable by ctDNA analysis and not associated with AVPC as a whole. 3.) The ctDNA findings in patients with AVPC mirror previous tissue-based studies which documented recurrent genetic variations in TP53, PTEN, and RB (Aparicio et al, 2016). Together these findings outline a potential role for ctDNA profiling and serum CEA as non-invasive biomarkers in CRPC. They also suggest that elevated serum CEA may be associated with a genetically distinct subtype of AVPC.
+
+--------------------------------------------------
+Search Results Summary:
+

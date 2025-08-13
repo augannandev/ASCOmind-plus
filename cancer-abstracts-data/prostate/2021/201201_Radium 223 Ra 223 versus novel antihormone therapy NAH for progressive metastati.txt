@@ -1,0 +1,22 @@
+Title: Radium-223 (Ra-223) versus novel antihormone therapy (NAH) for progressive metastatic castration-resistant prostate cancer (mCRPC) after 1 line of NAH: RADIANT, an international phase 4, randomized, open-label study.
+Abstract Number: 201201
+URL: https://meetings.asco.org/abstracts-presentations/201201
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Karim Fizazi, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Men with mCRPC often receive sequential NAH (abiraterone and enzalutamide) despite reported cross-resistance, indicating a need for further life-prolonging options for progressive disease after prior NAH. Ra-223 is a targeted alpha therapy approved for mCRPC with symptomatic bone metastases based on the phase 3 ALSYMPCA study, in which it demonstrated significantly increased overall survival (OS), reduced symptomatic skeletal event (SSE) risk, improved quality of life, and reduced treatment-emergent adverse event rates vs placebo. As life-prolonging therapy is increasingly used in hormone-sensitive settings, this study has been designed to assess Ra-223 outcomes in patients with mCRPC that progressed after prior treatment with NAH and docetaxel for metastatic hormone-sensitive prostate cancer (mHSPC) or mCRPC.
+Methods:
+This study is conducted in accordance with the Declaration of Helsinki, international ethical and good clinical practice guidelines, and local laws and regulations, with institutional review board/ethics committee approval at each site and written informed consent from patients before participation. This trial is registered with EudraCT: 2019-000476-42. Participants must be ≥18 years old, with an Eastern Cooperative Oncology Group performance status of 0/1; they must have mCRPC that progressed on/after ≥3 months of NAH for mHSPC or mCRPC and ≥2 cycles of docetaxel unless they refused or were ineligible, with ≥2 bone metastases on bone scan, no visceral metastases, and a worst pain score ≥1 on the Brief Pain Inventory-Short Form. Patients are randomized 1:1 to Ra-223 or NAH: Ra-223 55 kBq/kg intravenously every 4 weeks for 6 cycles or until disease progression, death, or withdrawal of consent if earlier; or abiraterone 1000 mg + prednisone 10 mg daily (if prior enzalutamide) or enzalutamide 160 mg daily (if prior abiraterone) until disease progression, death, or withdrawal of consent. NAH dosing may be modified to manage adverse events. Patients must use luteinizing hormone-releasing hormone analogs, if not surgically castrated, and bone health agents (bisphosphonates or denosumab) throughout the study. The primary endpoint is OS. Secondary endpoints are time to first SSE, radiologic progression-free survival, time to pain progression, adverse events, fracture incidence, and time to deterioration in quality of life (FACT-P total score). Using a test with a two-sided alpha of 0.05, 90% power, and randomization ratio of 1:1, approximately 508 events are required to detect a 33% increase in OS with Ra-223 vs NAH, assuming a median OS of 10 months with NAH. The expected study duration is 55 months, with a target of 696 patients to be randomized. The first patient was enrolled on November 9, 2020; 5 patients have been randomized and 2 have started treatment to date. Clinical trial information: 2019-000476-42.
+
+--------------------------------------------------
+Search Results Summary:
+

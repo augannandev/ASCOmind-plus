@@ -1,0 +1,18 @@
+Title: An open-label, single-arm, phase I study to assess the safety, efficacy, and biomarker effects of OMT-110 in patients with refractory colorectal cancer.
+Abstract Number: e16027
+URL: https://meetings.asco.org/abstracts-presentations/188857
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Soobong Park, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Soobong Park MetiMedi Pharmaceuticals, Incheon, South Korea info_outline Soobong Park, Haejun Lee, Keun-Yeong Jeong, Jeong-Heum Baek, Chong-Hwan Chang Organizations MetiMedi Pharmaceuticals, Incheon, South Korea; Gil Medical Center, Incheon, South Korea; Gachon University Gil Medical Center, Incheon, South Korea; MetiMedi Phamaceuticals, Incheon, South Korea Abstract Disclosures Research Funding Pharmaceutical/Biotech Company MetiMedi Pharmaceuticals Background: A metabolism modulatory anticancer durg candidate, OMT-110, has been applied for phase I clinical trial to evaluate the effect of OMT-110 on safety, efficacy, and biomarker in patients with refractory colorectal cancer resistant to standard therapies. FDG PET-CT has been suggested to be a resonable biomarker for a metabolism modulator and tested as a possible biomarker for OMT-110 in the clinical trial. Methods: The study was composed of 4 cohorts with a specified dose of 12.5, 25, 50, and 100 mg, and each cycle consisted of daily subcutaneous injections for 3 consecutive weeks and had a resting period of 1 week. 3 subjects were enrolled in each cohort in a total of 12 patients. FDG-PET/CT was utilized as a biomarker and the SUVmax was evaluated according to European Organisation for Research and Treatment of Cancer (EORTC) criteria. Results: None of the subjects permanently discontinued or reduced the dose of the investigational drug due to dose-limiting toxicity. Serious drug adverse reactions that resulted in permanent discontinuation of investigational drugs were not reported. Biomarker evaluation using FDG-PET/CT revealed that the tumor responses of 9 from total 9 subjects who completed FDG-PET/CT evaluation by Cycle 2 (8 weeks) were stable metabolic disease (SMD) or higher . In particular, four subjects showed a clear tendency for a decrease in glucose transporting and were evaluated by partial metabolic response (PMR). The result was compatible with the response of Chest CT and APCT according to RECIST. Conclusions: In the study, the results of FDG/PET-CT show OMT-110 modulates the cancer-specific metabolism and thus reduces glucose transportation. Based on the study outcome, FDG PET-CT is possibly considered as a biomarker of OMT-110 and further study is warranted.
+
+--------------------------------------------------
+Search Results Summary:
+A metabolism modulatory anticancer durg candidate, OMT-110, has been applied for phase I clinical trial to evaluate the effect of OMT-110 on safety, efficacy, and biomarker in patients with refractory colorectal cancer resistant to standard therapies. FDG PET-CT has been suggested to be a resonable biomarker for a metabolism modulator and tested as a possible biomarker for OMT-110 in the clinical trial.

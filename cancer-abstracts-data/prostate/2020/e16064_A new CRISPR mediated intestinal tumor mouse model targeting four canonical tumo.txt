@@ -1,0 +1,18 @@
+Title: A new CRISPR mediated intestinal tumor mouse model targeting four canonical tumor suppressor genes.
+Abstract Number: e16064
+URL: https://meetings.asco.org/abstracts-presentations/189076
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Hajime Kashima, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Hajime Kashima Washington University in St. Louis, St Louis, MO info_outline Hajime Kashima, Daniel Veronese-Paniagua, Anthony Fischer, Blair Madison, Deborah Rubin Organizations Washington University in St. Louis, St Louis, MO; Washington University School of Medicine, St. Louis, MO Abstract Disclosures Research Funding U.S. National Institutes of Health U.S. National Institutes of Health Background: Mouse models of intestinal tumorigenesis have been developed and many of them involve mutations in the Apc gene. However, human intestinal tumors contain multiple additional sporadic mutations in tumor suppressor genes (TSGs). Our goal is to develop a novel mouse model of intestinal tumorigenesis that can recapitulate the natural history of mutations in diverse stages of tumor development. Methods: We used multiple guide RNAs to achieve random mutations in the canonical TSGs, Apc, Pten, Smad4, and Tp53. We generated transgenic (PPAS) mice that constitutively express the appropriate guide RNAs. Moreover, we achieved inducible Cas9 expression in icCas9N mice intestine using the Villin promoter to drive both a doxycycline-dependent activator and a doxycycline-inactivated repressor. We fed the doxycycline chow to PPAS:icCas9 double transgenic mice from the age of 6 to 8 weeks, and harvested intestine at 12 weeks. Results: We examined seven PPAS;icCas9 mice, and detected intestinal tumors in all the mice. Two mice had small intestinal tumor, three mice had colonic tumor, and two mice had tumors in both small and large intestine. The average number of tumors were 0.86, 1.57, 2.43 in small intestine, colon, and both respectively. We analyzed mutations in 11 tumors in 6 mice. The mutation patterns of Apc, Pten, Smad4 and Tp53 in tumors shared three distinct patterns. One was characterized by mutations in all four TSGs (n = 9). The second showed mutation in APC and Smad4 and Pten (n = 1). The third showed mutation only in Tp53 (n = 1). Normal intestine and colon in PPAS:icCas9 mice had no mutations. Conclusions: This model provides a powerful platform for modeling intestinal tumorigenesis driven by the canonical signaling pathway which are commonly dysregulated in colon cancer. This model provides a means for rapid development of intestinal tumors in mice, enabling an investigation of the relationship between novel candidate regulators of tumorigenesis and the canonical signaling pathways regulated by these four common TSGs. Tumors from PPAS;icCas9 mice. mouse ID small bowel colon total 1954 1 0 1 2377 2 4 6 2380 0 4 4 2376 1 0 1 2406 0 1 1 2427 0 1 1 2647 2 1 3 average 0.86 1.57 2.43
+
+--------------------------------------------------
+Search Results Summary:
+Mouse models of intestinal tumorigenesis have been developed and many of them involve mutations in the Apc gene. However, human intestinal tumors contain multiple additional sporadic mutations in tumor suppressor genes (TSGs). Our goal is to develop a novel mouse model of intestinal tumorigenesis that can recapitulate the natural history of mutations in diverse stages of tumor development.

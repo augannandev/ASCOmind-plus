@@ -1,0 +1,18 @@
+Title: Anti-VEGF versus Anti-EGFR in the real world in metastatic colorectal cancer.
+Abstract Number: e16040
+URL: https://meetings.asco.org/abstracts-presentations/187765
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Fernando Namuche, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Fernando Namuche Oncosalud-Auna, Lima, Peru info_outline Fernando Namuche, Claudio J. Flores Organizations Oncosalud-Auna, Lima, Peru; Unidad de Investigación Básica y Traslacional, Oncosalud-AUNA, Lima, Peru Abstract Disclosures Research Funding No funding received None Background: The incidence of colorectal cancer (CRC) in Peru has increased in the last decades. But the use of monoclonal antibodies is restricted in our population because of insureance issues. Approximately 20% of patients with CRC already have metastases at diagnosis. There is a lack of data in the benefits of our population with the use of anti-VEGF and anti-EGFR that this study intents to fill. Methods: We retrospectively reviewed the electronic medical records of 58 patients with metastatic CRC, KRAS, NRAS and BRAF wild type from one specialized Peruvian cancer center between 2006 and 2017 Descriptive results for numeric variables were presented as means with standard deviation (SD) or medians with interquartile range (IQR), depending on their distributions; otherwise, we expressed the qualitative variables as numbers with percentages. The survival analysis was performed with Kaplan Meier method for PFS and OS, comparing the curves with Log Rank test. A multivariate analysis was performed using the Cox regression model with the statistically significant variables found in the univariate analysis. Results: There was 29 patients in the anti-EGFR arm, and 29 patients in the anti-VEGF arm. Patients that received first anti-EGFR and then anti-VEGF had better OS [HR, 0.87; 95% CI,0.019-0.811; p < 0.001] than patients that received first anti-VEGF and then anti-EGFR. Multpile Cox regressión analysis demonstrated that metastasectomy, debut with less thant 2 metastasis site, left side tumor, and histologic grade were associated with better OS. Conclusions: Patients with mCRC RAS and BRAF wild type that received anti-EGFR and then anti-VEGF had better OS than patients that received anti-VEGF and then anti-EGFR.
+
+--------------------------------------------------
+Search Results Summary:
+The incidence of colorectal cancer (CRC) in Peru has increased in the last decades. But the use of monoclonal antibodies is restricted in our population because of insureance issues. Approximately 20% of patients with CRC already have metastases at diagnosis. There is a lack of data in the benefits of our population with the use of anti-VEGF and anti-EGFR that this study intents to fill.

@@ -1,0 +1,18 @@
+Title: Upfront or delayed radiation with next generation tyrosine kinase inhibitor therapy in driver mutation positive NACLC brain metastasis.
+Abstract Number: e14503
+URL: https://meetings.asco.org/abstracts-presentations/190138
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Mike Yang
+
+================================================================================
+
+Full Abstract:
+Authors person Mike Yang Ohio State University College of Medicine, Columbus, OH info_outline Mike Yang, Joshua David Palmer, Xiaokui Mo, David Paul Carbone, Meng XU Welliver Organizations Ohio State University College of Medicine, Columbus, OH; The James Cancer Hospital at The Ohio State University, Columbus, OH; The Ohio State University, Center for Biostatistics, Columbus, OH; The Ohio State University Comprehensive Cancer Center, Columbus, OH; The Ohio State University, Columbus, OH Abstract Disclosures Research Funding No funding received None Background: NSCLC with driver mutations may be managed with SRS, WBRT, and TKIs. Prior studies have demonstrated a worse survival with a delay in brain radiotherapy. We sought to determine if there is a difference in CNS PFS, OS, and cumulative incidence of intracranial brain failure (CI IBF) with next generation TKIs. Methods: A total of 69 patients with driver mutation NSCLC patients with brain metastasis were included. CNS PFS was measured from brain metastasis diagnosis. CI ICF was measured as any new or progressive disease on MRI Brain imaging. Results: The 1 year OS was 65.7% vs 60% (p = 0.9) for the RT and TKI arms. The CNS PFS was 82% vs 72% and CI ICF 13.5% vs 22% in the RT vs TKI arms, respectively. Conclusions: There was no difference in overall survival in our cohort when giving TKI therapy upfront or delayed with radiation. There was a clinically meaningful improvement in CNS PFS at 1 year but was not significant. There findings warrant further study.
+
+--------------------------------------------------
+Search Results Summary:
+NSCLC with driver mutations may be managed with SRS, WBRT, and TKIs. Prior studies have demonstrated a worse survival with a delay in brain radiotherapy. We sought to determine if there is a difference in CNS PFS, OS, and cumulative incidence of intracranial brain failure (CI IBF) with next generation TKIs.

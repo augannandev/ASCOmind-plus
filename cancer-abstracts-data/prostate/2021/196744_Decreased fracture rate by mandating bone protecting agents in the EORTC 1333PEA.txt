@@ -1,0 +1,39 @@
+Title: Decreased fracture rate by mandating bone protecting agents in the EORTC 1333/PEACEIII trial combining Ra223 with enzalutamide versus enzalutamide alone: An updated safety analysis.
+Abstract Number: 196744
+URL: https://meetings.asco.org/abstracts-presentations/196744
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Silke Gillessen, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+The randomized phase III EORTC-1333-GUCG (NCT02194842) trial compares enzalutamide vs. a combination of Radium 223 and enzalutamide in asymptomatic or mildly symptomatic metastatic castration resistant prostate cancer (mCRPC) patients. The premature unblinding of ERA223 (NCT02043678) in Nov 2017 due to a significant increase in the rate of fractures in the combination of abiraterone and Ra223 arm led to the implementation of the mandatory use of bone protecting agents (BPA) in the EORTC-1333-GUCG trial. Skeletal fractures, pathological or not, are a frequent and underestimated adverse event of systemic treatment of advanced prostate cancer. Whether this mandated use of BPA (zoledronic acid or denosumab) would mitigate the risk of fractures in this patient population was unclear. An early safety analysis (Tombal, ASCO, 2019) suggested that the risk of fractures was well controlled in both arms when patients receive BPA. We present here an updated analysis of fracture incidence with longer follow-up.
+Methods:
+As of 28/01/2021, a total of 253 patients (134 after making BPA mandatory) were randomized between enzalutamide/Ra223 and enzalutamide. The fracture rate was estimated with the cumulative incidence method in the safety population of 237 (122 after making BPA mandatory) treated patients. Death in absence of fracture was analyzed as competing risk and censoring was applied at last follow-up.
+Results:
+Overall, 69.5% of enzalutamide/Ra223 patients (95.2% after making BPA mandatory) and 73.1% of enzalutamide patients (95% after making BPA mandatory) received BPA on treatment: 13.6% in the enzalutamide/Ra223 arm and 21.8% in the enzalutamide arm did not use BPA at registration, but started during protocol treatment and 55.9% and 51.3% respectively, received BPA since entry. At 36.7 months median follow-up in patients without BPA and 23.1 months median follow-up in patients receiving BPA, a total of 39 patients reported a fracture. Among them, 30 patients (20 in enzalutamide/Ra223 arm) did not receive BPA and 9 (4 in the enzalutamide/Ra223 arm) received BPA (see table).
+Conclusions:
+The updated safety analysis confirms the early fracture rate results. In the absence of BPA, the risk of fracture is increased when RA223 is added to enzalutamide. Strikingly, in both arms, the risk remains almost abolished by a preventive continuous administration of BPA, thus stressing the importance of complying to international recommendations in terms of giving BPA to mCRPC patients. This study is sponsored by EORTC and supported by Bayer and Astellas. Clinical trial information: NCT02194842
+Cumulative incidence (%) of fractures (95% CI).
+Received BPA
+No BPA
+Enza+Ra223
+(N=82)
+Enza
+(N=87)
+Enza+Ra223
+(N=36)
+Enza
+(N=32)
+At 1 year 2.8 (0.5-8.8) 3.9 (1.0-10.1) 37.1 (21.3-53.0) 15.8 (5.6-30.7)
+At 1.5 years 2.8 (0.5-8.8) 3.9 (1.0-10.1) 45.9 (28.6-61.6) 22.3 (9.6-38.2)
+
+--------------------------------------------------
+Search Results Summary:
+

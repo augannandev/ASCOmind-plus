@@ -1,0 +1,18 @@
+Title: Predictors and rates of adverse events (AEs) among non-metastatic prostate cancer (nmPC) patients (pts) treated with bicalutamide, abiraterone, or enzalutamide following surgical/medical castration.
+Abstract Number: e16556
+URL: https://meetings.asco.org/abstracts-presentations/176481
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Anuj Shah
+
+================================================================================
+
+Full Abstract:
+Authors person Anuj Shah Pharmerit International, Bethesda, MD info_outline Anuj Shah, Arif Hussain, Ruchit Shah, Shelly Ikeme, Ateesha F. Mohamed, Marc Botteman, Reg Waldeck Organizations Pharmerit International, Bethesda, MD; University of Maryland Cancer Center, Baltimore, MD; Thomas Jefferson University, Philladelphia, PA; Bayer U.S. LLC, Whippany, NJ; Bayer U.S. LLC, Whipanny, NJ Abstract Disclosures Research Funding Pharmaceutical/Biotech Company Background: The castration-resistant nmPC treatment landscape has evolved following the recent approval of enzalutamide and abiraterone. Skin rash, fractures, and central nervous system (CNS) AEs have been reported among pts treated with these drugs as well as other antiandrogens (eg. bicalutamide). We assessed the rate and predictors of AEs among nmPC pts treated with abiraterone, enzalutamide, or bicalutamide (“study drugs”) in a real-world setting. Methods: nmPC pts initiating one of the study drugs ≥1 year after medical/surgical castration were identified in the MarketScan Commercial database (2012-17). We included pts who had all the following: a claim for a prostate-specific antigen test or an oncologist visit ≤6 months (mos) before study drug initiation (baseline period), no claim for hormonal therapies (except castration) nor metastasis before study drug, and ≥3-mos metastasis-free follow-up while on study drug. Kaplan Meier analyses were used to describe the rates and median time to onset for 18 CNS AEs (including, but not limited to, fatigue, cognitive impairment, or falls) or any AE (i.e., CNS AE, skin rash, or fracture). Baseline period AE predictors were identified using multivariate Cox-proportional hazards models. Results: 532 pts were included (bicalutamide: 89.7%, enzalutamide: 4.3%, abiraterone: 6.0%). The percentages of pts experiencing CNS AEs/any AE were 19%/22% at 3 mos, 28%/35% at 6 mos, and 43%/52% at 12 mos. Median time to AE onset since study drug initiation was 17.9 mos (CNS AE) and 11.0 mos (any AE) respectively. Significant predictors of having any AEs included baseline period AEs (hazard ratio [HR]: 3.07 [2.35-4.02]), Charlson comorbidity index (1 vs 0) (HR: 1.51 [1.04-1.19]), surgical castration (HR: 1.50 [1.07-2.08]), and older age (HR: 1.021 [1.002-1.040]). Similar predictors were found for CNS AE. Conclusions: nmPC pts treated with bicalutamide, enzalutamide or abiraterone experience high AE rates. Balancing the risks/benefits of treatment in this largely asymptomatic population is paramount to maintaining their quality of survival while optimizing survival outcomes.
+
+--------------------------------------------------
+Search Results Summary:
+The castration-resistant nmPC treatment landscape has evolved following the recent approval of enzalutamide and abiraterone. Skin rash, fractures, and central nervous system (CNS) AEs have been reported among pts treated with these drugs as well as other antiandrogens (eg. bicalutamide). We assessed the rate and predictors of AEs among nmPC pts treated with abiraterone, enzalutamide, or bicalutamide (“study drugs”) in a real-world setting.

@@ -1,0 +1,26 @@
+Title: Stereotactic body radiation therapy (SBRT) versus conventionally fractionated external beam radiation therapy in unfavorable intermediate-risk prostate cancer: An inverse propensity matched analysis.
+Abstract Number: 198286
+URL: https://meetings.asco.org/abstracts-presentations/198286
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Neal Andruska
+
+================================================================================
+
+Full Abstract:
+Background:
+Conventionally fractionated radiotherapy (CFRT) or moderately hypofractionated radiotherapy (MFRT) ± short-course androgen deprivation therapy (ADT) is commonly employed for unfavorable intermediate-risk (UIR) prostate cancer. Stereotactic body radiation therapy (SBRT) has not been widely adopted, but may have radiobiologic advantages over more conventionally fractionated treatments. We hypothesized that radiotherapy dose-escalation with SBRT (35-40Gy in ≤5 fractions) is associated with improved overall survival (OS) relative to biologically equivalent doses of CFRT (72-86.4Gy in 1.8-2.0Gy/fraction) or MFRT (≥60Gy in 2.4-3.2Gy/fraction) ± ADT.
+Methods:
+The National Cancer Database (NCDB) was used to identify 28,028 men with UIR prostate cancer who received CFRT with (n = 12,872) or without ADT (n = 12,984), MFRT with (n = 251) or without ADT (n = 281), and SBRT with (n = 212) or without ADT (n = 1,428). SBRT+ADT patients were excluded due to low patient numbers. Inverse probability of treatment weighting was used to balance measured confounders. Unweighted- and weighted- multivariable analysis (MVA) using Cox regression was used to compare OS hazard ratios.
+Results:
+Relative to CFRT without ADT, CFRT+ADT (Hazard Ratio (HR): 0.92, [95% Confidence Interval: 0.87-0.97], P = .002) and SBRT without ADT (HR: 0.74 [0.61-0.89], P = .002) were both associated with improved OS on MVA. Relative to CFRT+ADT, SBRT without ADT correlated with improved OS on MVA (HR: 0.81 [0.67-0.99], P = .04). Weight-adjusted MVA demonstrated that SBRT (HR: 0.80 [0.65-0.98], P = .036) and ADT (HR: 0.91 [0.86-0.97], P = .002) correlated with improved OS. SBRT was not associated with improved OS relative to MFRT.
+Conclusions:
+Using inverse propensity treatment weighting, we adjusted for age, comorbidity score, and tumor factors, and observed a significant overall survival benefit in favor of administering dose-escalated SBRT over CFRT+ADT. To our knowledge, this is the first study to show that SBRT is associated with improved OS relative to CFRT for men with UIR prostate cancer. Together, this suggests that SBRT offers a cheaper and shorter course of therapy that mitigates COVID-19 exposure, which also is associated with improved OS relative to CFRT for UIR prostate cancer and may obviate the need for ADT in this population. While we await results from several ongoing clinical trials, we believe this study lends support to the use of SBRT in men with UIR prostate cancer.
+
+--------------------------------------------------
+Search Results Summary:
+

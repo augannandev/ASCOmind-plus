@@ -1,0 +1,18 @@
+Title: Prostate image-guided transperineal elastic-registration biopsy, a new diagnostic tool to refine the risk-stratification of prostate cancer and improve therapeutic decisions.
+Abstract Number: e16595
+URL: https://meetings.asco.org/abstracts-presentations/176368
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Pierre Graff-Cailleaud
+
+================================================================================
+
+Full Abstract:
+Authors person Pierre Graff-Cailleaud Institut Universitaire du Cancer de Toulouse-Oncopole, Toulouse, France info_outline Pierre Graff-Cailleaud, Bertrand Covin, Daniel Portalez, Richard Aziza, Jonathan Khalifa, Mathieu Roumiguié, Bernard Malavaud Organizations Institut Universitaire du Cancer de Toulouse-Oncopole, Toulouse, France; Institut Universitaire du Cancer de Toulouse Oncopole CHU, Toulouse, France Abstract Disclosures Research Funding Other Background: To evaluate image-guided Transperineal Elastic-Registration biopsy (TPER-B) in the risk-stratification of low-to-intermediate risk prostate cancer detected by Transrectal-ultrasound biopsy (TRUS-B) when estimates of cancer grade and volume discorded with multiparametric Magnetic Resonance Imaging (MRI). Methods: All patients referred for active surveillance or organ-conservative management were collegially reviewed for consistency between TRUS-B results and MRI. Image-guided TPER-B of the index target (IT) defined as the largest Prostate Imaging-Reporting Data System-v2 ≥3 abnormality were organized for discordant cases. Pathology reported Gleason grade, maximum cancer core length (MCCL) and total CCL (TCCL). Results: Of 237 prostate cancer patients (1-7/2018), 42 required TPER-B for risk-stratification. Eight cores were obtained [Median&IQR: 8 (6-10)] including five (IQR: 4-6) in the IT. TPER-B of the IT yielded longer MCCL [Mean&(95%CI): 5.4(3.9-6.9) vs. 2.5mm(1.9-3.1), p = 0.002] and TCCL [16.7(10.6-22.8) vs. 3.9mm(3.1-4.8), p = 0.0001] than TRUS-B of the gland. On TPER-B cores, longer TCCL [Mean&(95%CI): 28.9mm(19.1-38.7) vs. 12.3mm(4.8-19.7), p = 0.02] were measured in Gleason score-7 than score-6 cancers (no cancers detected on IT TPER-B in 11 patients, all but one score 6 < 4mm on TRUS-B). TPER-B cores of the IT upgraded 16/42(38.1%) patients. 21/42(50.0%) met University College London-definition 1 (Gleason score≥4+3 and/or MCL≥6mm) and 27/42(64.3%) definition 2 (Gleason score≥3+4 and/or MCL≥4mm), which correlate to clinically significant cancers > 0.5mL and > 0.2mL, respectively. Allocation to higher risk groups than anticipated from TRUS-B spurred adaptation of treatment protocols (active surveillance n = 15, prostatectomy n = 11, ionizing radiation n = 13, pending n = 3). Conclusions: Image-guided TPER-B of the index target provided more cancer material for pathology. Subsequent re-evaluation of cancer volume and grade switched a majority of patients towards higher risk groups and treatments with curative intent.
+
+--------------------------------------------------
+Search Results Summary:
+To evaluate image-guided Transperineal Elastic-Registration biopsy (TPER-B) in the risk-stratification of low-to-intermediate risk prostate cancer detected by Transrectal-ultrasound biopsy (TRUS-B) when estimates of cancer grade and volume discorded with multiparametric Magnetic Resonance Imaging (MRI).

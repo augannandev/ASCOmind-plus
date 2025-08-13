@@ -1,0 +1,18 @@
+Title: MiR-1271-5p: An AR-modulatory microRNA with a distinct role in prostate cancer progression, through SND1 and MORF4L1 interaction.
+Abstract Number: e16562
+URL: https://meetings.asco.org/abstracts-presentations/176525
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Foteini Kalofonou, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Foteini Kalofonou Imperial College London, London, United Kingdom info_outline Foteini Kalofonou, Damien Leach, Mark Hamilton, Sean Eric Mcguire, Claire Fletcher, Jonathan Waxman, Charlotte L Bevan Organizations Imperial College London, London, United Kingdom; Stanford University, Stanford, CA; The University of Texas MD Anderson Cancer Center, Houston, TX Abstract Disclosures Research Funding Other Foundation Background: Current screening methodologies for prostate cancer (PCa) are relatively insensitive and there is a need for new treatments for castrate resistant disease. MicroRNAs (miRs) are considered to be master regulators of the genome. We have investigated the role of miRs in modulating androgen receptor function and their potential as treatments of PCa. We report that the AR-modulatory miR-1271-5p also targets SND1 and MORF4L1 and may have a role in PCa progression and screening. Methods: AGO2-PAR-CLIP analysis was performed to ascertain miR-1271-5p target genes in human PCa cell lines. MiR-1271-5p levels were manipulated in cell lines by transfection with miR mimic and or antisense inhibitor. SND1 and MORF4L1 were confirmed as targets by real-time qPCR and western blotting. The functional role of miR-1271-5p and its target genes was assessed by SRB growth assays. Immunohistochemical detection of SND1 and MORF4L1 expression was studied in a cohort of 63 PCa patients and compared with normal controls. Results: MORF4L1 mRNA levels were significantly reduced with the use of miR-1271-5p mimic in 22RV1 cells (p = 0.001), while SND1 mRNA levels were significantly decreased with the use of miR-1271-5p inhibitor in C42 cells (p = 0.0014). Targeting SND1 or MORF4L1, in combination with miR inhibition, significantly reduced C42 (p = 0.0003) and 22RV1 (p = 0.0014) cell growth. MORF4L1 expression was higher in patients with Gleason score (GS) 4+3 relative to those with GS 3+4 and in PCa tissue, as compared with normal prostatic tissue, but did not reach significance. SND1 immunostaining was significantly higher in patients with GS 4+3 or GS 3+4 PCa, compared with normal prostatic tissue (p = 0.0211, p = 0.0007 respectively). SND1 staining was significantly higher in patients with GS 4+3, compared to GS 3+4 (p = 0.0431) or GS 3+3 (p = 0.0251). Conclusions: MiR-1271-5p is an AR-modulatory microRNA, which shows great potential as a biomarker and therapeutic target in PCa. The interaction of miR-1271-5p with its target genes SND1 and MORF4L1 could provide the basis for therapeutic advance in screening and in the treatment of castrate resistant PCa.
+
+--------------------------------------------------
+Search Results Summary:
+Current screening methodologies for prostate cancer (PCa) are relatively insensitive and there is a need for new treatments for castrate resistant disease. MicroRNAs (miRs) are considered to be master regulators of the genome. We have investigated the role of miRs in modulating androgen receptor function and their potential as treatments of PCa. We report that the AR-modulatory miR-1271-5p also targets SND1 and MORF4L1 and may have a role in PCa progression and screening.

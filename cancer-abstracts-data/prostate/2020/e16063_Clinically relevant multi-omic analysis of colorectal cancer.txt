@@ -1,0 +1,18 @@
+Title: Clinically relevant multi-omic analysis of colorectal cancer.
+Abstract Number: e16063
+URL: https://meetings.asco.org/abstracts-presentations/188610
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Silvia von der Heyde
+
+================================================================================
+
+Full Abstract:
+Authors person Silvia von der Heyde Indivumed GmbH, Hamburg, Germany info_outline Silvia von der Heyde, Margarita Krawczyk, Julia Bischof, Thomas Corwin, Peter Frommolt, Jonathan Woodsmith, Hartmut Juhl Organizations Indivumed GmbH, Hamburg, Germany; INDIVUMED GMBH, Hamburg, Germany; Indivumed, Hamburg, Germany Abstract Disclosures Research Funding Pharmaceutical/Biotech Company Indivumed GmbH Background: Cancer is a highly heterogeneous disease, both intra- and inter-individually consisting of complex phenotypes and systems biology. Although genomic data has contributed greatly towards the identification of cancer-specific mutations and the progress of precision medicine, genomic alterations are only one of several important biological drivers of cancer. Furthermore, single-layer omics represent only a small piece of the cancer biology puzzle and provide only partial clues to connecting genotype with clinically relevant phenotypic data. A more integrated approach is urgently needed to unravel the underpinnings of molecular signatures and the phenotypic manifestation of cancer hallmarks. Methods: Here we characterize a colorectal cancer (CRC) cohort of 500 patients across multiple distinct omic data types. Across this CRC cohort, we defined clinically relevant whole genome sequencing based metrics such as micro-satellite-instability (MSI) status, and furthermore investigate gene expression at the transcript level using RNA-Seq, as well as at the proteomic level using tandem mass spectrometry. We further characterized a subgroup of 100 of these patients through 16s rRNA sequencing to identify associated microbiome profiles. Results: We combined these analyses with comprehensive clinical data to observe the impact of ascertained molecular signatures on the CRC patient cohort. Here, we report how patient survival correlates both with specific molecular events across individual omic data types, as well as with combined multi-omic analyses. Conclusions: This project highlights the utility of integrating multiple distinct data types to obtain a more comprehensive overview of the molecular mechanisms underpinning colo-rectal cancer. Furthermore, through combining identified aberrant molecular mechanisms with clinical reports, multi-omic data can be prioritized through their impact on patient cohort survival.
+
+--------------------------------------------------
+Search Results Summary:
+Cancer is a highly heterogeneous disease, both intra- and inter-individually consisting of complex phenotypes and systems biology. Although genomic data has contributed greatly towards the identification of cancer-specific mutations and the progress of precision medicine, genomic alterations are only one of several important biological drivers of cancer. Furthermore, single-layer omics represent only a small piece of the cancer biology puzzle and provide only partial clues to connecting genotype with clinically relevant phenotypic data. A more integrated approach is urgently needed to unravel the underpinnings of molecular signatures and the phenotypic manifestation of cancer hallmarks.

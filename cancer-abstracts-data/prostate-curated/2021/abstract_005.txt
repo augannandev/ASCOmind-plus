@@ -1,0 +1,37 @@
+Title: Serial ctDNA profiling in patients with metastatic prostate cancer undergoing treatment with radium-223.
+Abstract Number: 198329
+URL: https://meetings.asco.org/abstracts-presentations/198329
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Dena Rhinehart, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Assessment of the anti-tumor response to radium-223 (Ra-223) treatment is difficult in individuals. PSA levels seldom fall and imaging of existing bone metastases is imprecise. Circulating tumor DNA (ctDNA) is a non-invasive marker of prostate tumor DNA, with static measurements demonstrating high concordance rates with tumor DNA. Serial monitoring of ctDNA levels may provide insights into therapy response, targetable mutations, and progression of disease. We report changes in ctDNA profiles and clinical associations of 10 patients who had serial ctDNA profiles during Ra-223 treatment.
+Methods:
+Serial ctDNA analyses of mutations (73 genes) and amplifications (18 genes) were performed via a commercial provider (Guardant 360; Guardant Health). Assays were performed before treatment, after the third Ra-223 dose, and after the final Ra-223 dose. ctDNA data (minor allele frequencies for mutations, copy number for amplifications) were reviewed to identify clonal mutations with at least 50% change in highest allelic frequency or 30% change in copy number during treatment. Clinical data (performance status (PS), PSA, pain score, prescribed oral morphine equivalents (OME), imaging, progression free survival (PFS), and overall survival) were gathered via chart review. Clinical progression was defined by an increase in at least 2 bone lesions on bone scan, progression of soft tissue disease by RECIST, worsening PS, or at least 20% increase in OME.
+Results:
+Three of 10 patients had a reduction in the proportion of mutated or amplified tumor DNA as measured by ctDNA profiling, after receiving Ra-223 (response group). Median PFS defined by time to PSA rise of at least 25% in this group was 120 days (95% CI 83 to 237) compared to 29 days (95% CI 21 to 145) in the group without a reduction (no response group). Median clinical PFS defined as above was 266 days (95% CI 109 to 291) in the response group compared to 83 days (95% CI 33 to 182) in the no response group. There was no difference in baseline pain score between the two groups, though median baseline PSA was higher in the no-response group (97.14 compared to 20.05). Reductions in allelic frequency were noted in several mutated genes, including AR, ARID1A, CDK12, and TP53(G245C), during Ra-223 therapy of subjects in the response group. Decreases in copy number were also seen in several amplified genes, including AR, CCNE1, CDK6, FGFR1. In the no-response group, 4/7 patients had an increase in AR amplification; 3/7 patients had an increase in variant allele fraction of TP53 mutations. In the response group of 3 patients who had a reduction in clonal mutations, none had an increase in the AR amplification.
+Conclusions:
+A reduction in proportion of clonal mutations or gene amplification measured in ctDNA may be associated with a longer PFS in patients treated with Ra-223. Mutations in the TP53 gene and amplification of AR gene were associated with shorter PFS.
+
+--------------------------------------------------
+Full Abstract:
+Background:
+Assessment of the anti-tumor response to radium-223 (Ra-223) treatment is difficult in individuals. PSA levels seldom fall and imaging of existing bone metastases is imprecise. Circulating tumor DNA (ctDNA) is a non-invasive marker of prostate tumor DNA, with static measurements demonstrating high concordance rates with tumor DNA. Serial monitoring of ctDNA levels may provide insights into therapy response, targetable mutations, and progression of disease. We report changes in ctDNA profiles and clinical associations of 10 patients who had serial ctDNA profiles during Ra-223 treatment.
+Methods:
+Serial ctDNA analyses of mutations (73 genes) and amplifications (18 genes) were performed via a commercial provider (Guardant 360; Guardant Health). Assays were performed before treatment, after the third Ra-223 dose, and after the final Ra-223 dose. ctDNA data (minor allele frequencies for mutations, copy number for amplifications) were reviewed to identify clonal mutations with at least 50% change in highest allelic frequency or 30% change in copy number during treatment. Clinical data (performance status (PS), PSA, pain score, prescribed oral morphine equivalents (OME), imaging, progression free survival (PFS), and overall survival) were gathered via chart review. Clinical progression was defined by an increase in at least 2 bone lesions on bone scan, progression of soft tissue disease by RECIST, worsening PS, or at least 20% increase in OME.
+Results:
+Three of 10 patients had a reduction in the proportion of mutated or amplified tumor DNA as measured by ctDNA profiling, after receiving Ra-223 (response group). Median PFS defined by time to PSA rise of at least 25% in this group was 120 days (95% CI 83 to 237) compared to 29 days (95% CI 21 to 145) in the group without a reduction (no response group). Median clinical PFS defined as above was 266 days (95% CI 109 to 291) in the response group compared to 83 days (95% CI 33 to 182) in the no response group. There was no difference in baseline pain score between the two groups, though median baseline PSA was higher in the no-response group (97.14 compared to 20.05). Reductions in allelic frequency were noted in several mutated genes, including AR, ARID1A, CDK12, and TP53(G245C), during Ra-223 therapy of subjects in the response group. Decreases in copy number were also seen in several amplified genes, including AR, CCNE1, CDK6, FGFR1. In the no-response group, 4/7 patients had an increase in AR amplification; 3/7 patients had an increase in variant allele fraction of TP53 mutations. In the response group of 3 patients who had a reduction in clonal mutations, none had an increase in the AR amplification.
+Conclusions:
+A reduction in proportion of clonal mutations or gene amplification measured in ctDNA may be associated with a longer PFS in patients treated with Ra-223. Mutations in the TP53 gene and amplification of AR gene were associated with shorter PFS.
+
+--------------------------------------------------
+Search Results Summary:
+

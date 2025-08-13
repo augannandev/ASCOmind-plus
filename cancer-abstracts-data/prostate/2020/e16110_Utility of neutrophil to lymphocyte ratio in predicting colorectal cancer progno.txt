@@ -1,0 +1,18 @@
+Title: Utility of neutrophil to lymphocyte ratio in predicting colorectal cancer prognosis at a VA hospital: Do stage and sidedness matter?
+Abstract Number: e16110
+URL: https://meetings.asco.org/abstracts-presentations/188128
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Kee-Hwan Michael Kim, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Kee-Hwan Michael Kim Albany Medical College, Albany, NY info_outline Kee-Hwan Michael Kim, Darren Gemoets, Maithao N. Le Organizations Albany Medical College, Albany, NY; VAMC, Albany, NY; Albany Medcl Coll, Albany, NY Abstract Disclosures Research Funding No funding received None Background: Pretreatment neutrophil-lymphocyte ratio (pNLR) has been shown to associate with prognosis in patients with colorectal cancer (CRC). We asked if pNLR equally predicted prognosis in CRC regardless of stage and tumor location. We also asked if pNLR changed with time, especially within one year of diagnosis. Methods: Retrospective clinical data including age at diagnosis, pathological stage, location of tumors, treatments, disease free survival, NLR at one week, three months, and one year (if available) pretreatment of 934 veterans treated for CRC at one Veteran Affair Medical Center between July 1995 and December 2011 were collected. Disease-free survival (DFS) were analyzed using Kaplan-Meier analysis and compared using the log-rank test. pNLRs were grouped into three categories: less than or equal to three, greater than three and less than or equal to five, and greater than five. Univariate and multivariate Cox regression analyses were used to identify the prognostic value of pNLR. Boxplot analysis was used to evaluate the changes in pNLR over time. Results: In patients with stage 1 or stage 4 CRC, pNLRs of more than 5 and not between 3 and 5 predicted worse prognosis. In patients with stage 2 or 3 CRC, pNLRs did not correlate with prognosis. Interestingly, for patients with recurrent CRC after curative treatment, NLRs obtained prior to treatment of recurrent disease of more than 3 associated with worse prognosis. In subgroup analysis, we found that in patients with stage 1 or 4 left side colon or rectal cancer (LCRC), pNLRs of more than 5 but not between 3 and 5 predicted worse prognosis. In patients with stage 2 or 3 LCRC, NLRs obtained prior to treatment of recurrent disease did not correlate with prognosis. Similarly, for patients with recurrent LCRC after curative treatment, NLRs obtained prior to treatment of recurrent disease of more than 3 associated with worse prognosis. pNLRs did not correlate with prognosis in patients with right side colon cancer (RCC) regardless of stage. When comparing NLRs obtained at 1 year, 3 months, and 1-week pretreatment, boxplots showed a gradual increase leading up to the time of treatment suggesting that NLR changes according to the time of collection. Conclusions: In our large retrospective study, the role of pNLR in predicting oncologic prognosis differed according to the stage and the sidedness of the CRC. In addition, the value of pNLR varied depending on the time of collection. These findings suggested a complex relationship between immunologic parameters and oncologic survival.
+
+--------------------------------------------------
+Search Results Summary:
+Pretreatment neutrophil-lymphocyte ratio (pNLR) has been shown to associate with prognosis in patients with colorectal cancer (CRC). We asked if pNLR equally predicted prognosis in CRC regardless of stage and tumor location. We also asked if pNLR changed with time, especially within one year of diagnosis.

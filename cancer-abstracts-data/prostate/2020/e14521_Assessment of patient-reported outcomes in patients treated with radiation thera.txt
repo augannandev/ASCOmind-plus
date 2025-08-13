@@ -1,0 +1,18 @@
+Title: Assessment of patient-reported outcomes in patients treated with radiation therapy to brain malignant tumors.
+Abstract Number: e14521
+URL: https://meetings.asco.org/abstracts-presentations/189842
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Li Yang
+
+================================================================================
+
+Full Abstract:
+Authors person Li Yang The University of Hong Kong-Shenzhen Hospital, Shenzhen, China info_outline Li Yang, Zhiyuan Xu, Hang Zhang, Feng-Ming Spring Kong Organizations The University of Hong Kong-Shenzhen Hospital, Shenzhen, China; Indiana University Department of Radiation Oncology, Indianapolis, IN Abstract Disclosures Research Funding Other Government Agency Shenzhen Special Fund for innovation and Entrepreneurship of overseas high-level talents (NO. KQTD20180411185028798) Background: Patient reported outcome is limited in patients with radiation therapy (RT) to brain tumors. The purpose of this study is to exam Patient Reported Outcome Measures (PROM) at baseline and end for RT in patients receiving RT to brain malignant tumors. Methods: This is a prospective study of quality of life. Patients ≥ 18-year old requiring RT to brain primary or metastatic malignant tumors were eligible. The PROM was assessed by self-administrated questionnaire PROMIS-29 Profile v2.1 and was completed prior to and at end of RT. Raw scores directly got from the PROMIS questionnaire were translated to T-scores according to the recommendation by the PROMIS INSTRUMENTS. A T-score of 50 is the average for general population and a higher PROMIS T-score represents more of the concept being measured. Results: Between July 2019 and December 2019, a total of 23 patients enrolled and completed PROMIS questionnaire and 19 completed questionnaire at end of RT. The median age was 55 (range 21-67), fifteen were men. The median doses of local brain RT and WBRT were 60Gy (range 40.05-60Gy) and 25Gy (range 20-36Gy), respectively. For the seven domain teams, physical function, anxiety, depression, fatigue, sleep disturbance, ability to participate in social roles and activities and pain interference, the number of patients with each T-score greater than 50 was 8 (34.8%), 13 (56.5%), 8 (34.8%), 6 (26.1%), 6 (26.1%), 13 (56.5%) and 9 (39.1%) at baseline and 7 (36.8%), 9 (47.4%), 7 (36.8%), 6 (31.6%), 6 (31.6%), 9 (47.4%) and 5 (26.3%) at end of RT, respectively. Physical function and sleep disturbance at end of RT was correlated with the corresponding value at baseline (Fisher’s exact test P = 0.045 and 0.017, respectively). None of the 7 domain teams’ T-scores changed significantly at end of RT. Pain intensity evaluated by NRS decreased significantly (mean 0.89 vs 1.53, P = 0.048). There is no difference in the mean T-score for all the 7 domain teams and NRS pain intensity between the local or whole brain RT patients at baseline and end of RT. Conclusions: This preliminary study demonstrated that brain RT did not alter PROM significantly in patients with primary or metastatic malignant brain tumors but decreased pain intensity in those patients.
+
+--------------------------------------------------
+Search Results Summary:
+Patient reported outcome is limited in patients with radiation therapy (RT) to brain tumors. The purpose of this study is to exam Patient Reported Outcome Measures (PROM) at baseline and end for RT in patients receiving RT to brain malignant tumors.

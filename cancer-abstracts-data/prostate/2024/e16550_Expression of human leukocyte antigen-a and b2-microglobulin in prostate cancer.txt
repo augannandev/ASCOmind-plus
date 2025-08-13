@@ -1,0 +1,18 @@
+Title: Expression of human leukocyte antigen-a and b2-microglobulin in prostate cancer.
+Abstract Number: e16550
+URL: https://meetings.asco.org/abstracts-presentations/177555
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Ying-Chun Shen, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Ying-Chun Shen Department of Oncology, National Taiwan University Hospital, Taipei, Taiwan info_outline Ying-Chun Shen, Yung-Ming Jeng, Jhe-Cyuang Kuo, Yu-Chieh Tsai, Chung-Hsin Chen, Kuo-How Huang, Chao-Yuan Huang, Yeong-Shiau Pu, Ann-Lii Cheng Organizations Department of Oncology, National Taiwan University Hospital, Taipei, Taiwan; Department of Pathology, National Taiwan University Hospital, National Taiwan University College of Medicine, National Taiwan University, Taipei, Taiwan; Department of Oncology, National Taiwan University Hospital, Taipei City, Taiwan; National Taiwan University Hospital, Department of Urology, Taipei City, Taiwan; Department of Urology, National Taiwan University Hospital, Taipei City, Taiwan; Department of Urology, National Taiwan University Hospital, Taipei, Taiwan; National Taiwan University Hospital, Taipei, Taiwan Abstract Disclosures Research Funding Other Background: Prostate cancer (PC) is generally resistant to current immune checkpoint blockade. Reduced expression of human leukocyte antigen-A (HLA-A) and b2-microglobulin (B2M) of cancer cells can cause deficit immune recognition and attack by cytotoxic T cells, and may be the major mechanism of intrinsic resistance to immune checkpoint blockade in PC patients. Methods: Formalin-fixed paraffin-embedded tissue of human localized or metastatic PC was used for evaluation of expression of HLA-A and B2M by Immunohistochemical staining. The expression was scored as: 0, no tumor cells stained; 1+, < 10% of tumor cells stained; 2+, 10-50% of tumor cells stained; and 3+, > 50% of tumor cells stained. Differences in HLA-A or B2M expression among groups were assessed by Chi-Square or Fisher’s exact test. Results: A total of 134 PC specimens [69 localized PC (LPC), 32 metastatic castration-naïve PC (mCNPC), and 33 metastatic castration-resistant PC (mCRPC)] from 115 patients were assessed. Significant loss (0 or 1+) of HLA-A was found in 56 (81.2%) LPCs, 30 (93.8 %) mCNPCs and 29 (87.9%) mCRPCs; while significant loss of B2M was found in 22 (32.6%) LPC, 11 (34.4%) mCNPCs, and 17 (51.2%) mCRPCs. In localized PCs, the expression of HLA-A or B2M was similar between high-grade prostate intraepithelial neoplasia foci and corresponding malignant counterpart, and did not significantly correlate to biochemical failure. In 14 patients with paired CN and CR PC specimens, significant loss of HLA-A was found in all tumors. B2M expression varied between CN and CR PCs, and progressive loss of B2M was found in 7 (50%) patients. Among 3 patients receiving immune checkpoint blockade, 1 patient with intact expression of HLA-A and B2M in pre-treatment tumor specimen achieved partial response; whereas the others with reduced expression of HLA-A (0) and B2M (1+) did not. Conclusions: Reduced expression of HLA-A or B2M is an early event in prostate carcinogenesis.
+
+--------------------------------------------------
+Search Results Summary:
+Prostate cancer (PC) is generally resistant to current immune checkpoint blockade. Reduced expression of human leukocyte antigen-A (HLA-A) and b2-microglobulin (B2M) of cancer cells can cause deficit immune recognition and attack by cytotoxic T cells, and may be the major mechanism of intrinsic resistance to immune checkpoint blockade in PC patients.

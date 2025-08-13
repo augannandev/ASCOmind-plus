@@ -1,0 +1,18 @@
+Title: Effect of early integration of diabetic services in primary brain tumor patients receiving radical radiotherapy on steroid-induced diabetic complications and hospital admission.
+Abstract Number: e14522
+URL: https://meetings.asco.org/abstracts-presentations/190070
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Karim Keshwani, MBBS
+
+================================================================================
+
+Full Abstract:
+Authors person Karim Keshwani St Bartholomew’s Hospital, London, United Kingdom info_outline Karim Keshwani, Lorna Raymond, Marianne Shawe-Taylor, Hannah Lowe, Piers N. Plowman, Rachel Lewis Organizations St Bartholomew’s Hospital, London, United Kingdom; St Bartholomew's Hospital, London, United Kingdom; Barts Health NHS Trust, London, United Kingdom Abstract Disclosures Research Funding No funding received None Background: Corticosteroids are commonly used in neuro-oncology both in the perioperative setting and with chemotherapy and radiotherapy to manage cancer and treatment-associated cerebral oedema and neurological deficits. Corticosteroids are associated with significant morbidity. We sought to identify primary brain tumour patients affected by steroid complications within our centre, the repercussions on their treatment and whether these consequences are avoidable. Methods: This retrospective study curated the last 50 primary brain tumour patients treated radically and therefore at risk of long term steroid use between November 2018 and August 2019. Patient demographics, tumour and treatment type, as well as diabetic and steroid history were collected. A second cohort of primary brain patients undergoing radical radiotherapy were recruited between November 2019 and January 2020. HbA1c blood tests were performed and NICE guidelines used for HbA1c diagnostic criteria with referral to diabetic services and outcomes recorded. Results: Tumour types ranged from Glioblastoma (36%), meningioma (32%), oligodendroglioma (16%), astrocytoma (14%) and hemangioblastoma (2%). 12 (24%) had a known diabetes diagnosis. Forty-two (84%) had an operation (biopsy (30%), partial (18%) or full debulking (16%). 82% of patients were exposed to dexamethasone at some point during their neurosurgical or oncological treatment. Initial doses varied but 36% were placed on 8mg twice daily. Steroid-induced hyperglycaemia occurred in 8 (16% of the cohort) with admission to hospital as a consequence in half of these cases, of whom two were newly diagnosed diabetes patients. HbA1c testing prior to or during treatment occurred in 16 (32%) patients. In the second cohort, All 15 patients (100%) had HbA1c testing with 5 (33%) patients diagnosed with diabetes or at risk of diabetes. Diabetic team advice was sought and recommended blood glucose testing in all these patients with oral hypoglycaemic and/or insulin dose modification in 3 (60%). There were no hyperglycaemic recordings or subsequent admissions to hospital in this cohort. Conclusions: We therefore recommend HbA1c testing and early diabetic team involvement in all primary brain tumour patients receiving radical radiotherapy.
+
+--------------------------------------------------
+Search Results Summary:
+Corticosteroids are commonly used in neuro-oncology both in the perioperative setting and with chemotherapy and radiotherapy to manage cancer and treatment-associated cerebral oedema and neurological deficits. Corticosteroids are associated with significant morbidity. We sought to identify primary brain tumour patients affected by steroid complications within our centre, the repercussions on their treatment and whether these consequences are avoidable.

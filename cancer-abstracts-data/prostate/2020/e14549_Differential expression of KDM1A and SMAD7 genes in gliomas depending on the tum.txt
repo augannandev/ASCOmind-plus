@@ -1,0 +1,18 @@
+Title: Differential expression of KDM1A and SMAD7 genes in gliomas depending on the tumor grade.
+Abstract Number: e14549
+URL: https://meetings.asco.org/abstracts-presentations/190137
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Anton Pushkin
+
+================================================================================
+
+Full Abstract:
+Authors person Anton A. Pushkin Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation info_outline Anton A. Pushkin, Ilya A. Alliluev, Eduard E. Rostorguev, Sergey E. Kavitskiy, Natalya S. Kuznetsova, Natalya N. Timoshkina, Oleg I. Kit Organizations Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation Abstract Disclosures Research Funding No funding received None Background: Gliomas are the most common type of primary brain tumors characterized by pronounced proliferation and aggressive infiltration. The purpose of the study was to analyze the expression of genes participating in the EGFR, TGF-B, HH/GLI, NOTCH and HIF1-alpha signaling pathways, transcription factors HBP1, MSI1/2 and demethylating agents in samples of various glioma types. Methods: The study included paired samples (tumor and physiologically unchanged neural tissue) obtained from 75 patients with histologically verified glial tumors of various grades (G2 - 21, G3 - 11, G4 - 43 patients). Relative expression of 15 genetic loci (EGFR, SMAD4, SMAD7, SMO, NOTCH1, NOTCH2, HBP1, HIF1A, EGLN1, EGLIN3, KDM1B, KDM1A, MSI1, MSI2, TET1) was measured by RT-qPCR. The PSMC, TBP and RPLO genes were used as the reference sequences. The 2−ΔΔСt method was used to analyze the qPCR data. Statisical processing of the results was performed with the Statistica 10 program (StatSoft Inc., USA). Results: G2 gliomas showed a significant change in the relative expression of the KDM1A gene (p = 0.00572); G3 - a significant change in the relative expression of the HIF1A gene (p = 0.012726); G4 - significant changes in the relative expression of the EGFR (p = 0.021324), SMAD4 (p = 0.016534), SMAD7 (p = 0.000003), HBP1 (p = 0.003264), HIF1A (p = 0.007612), EGLN1 (p = 0.001623), EGLN3 (p = 0.004231) genes. Registered changes in the expression of the KDM1A and SMAD7 genes in the studied sample significantly differentiated the G2 and G4 glial tumors (p = 0.013 and p = 0.049, respectively). G2 tumors were characterized with increased expression of the KDM1A gene and decreased by more than 1.1 times in 95% of patients. 88% of patients with G4 tumors demonstrated no changes or a decrease in the KDM1A gene expression and decreased SMAD7 expression by more than 1.5 times. Conclusions: The established significant change in the expression of the KDM1A and SMAD7 genes depending on the tumor grade can be used for the differential diagnosis of gliomas.
+
+--------------------------------------------------
+Search Results Summary:
+Gliomas are the most common type of primary brain tumors characterized by pronounced proliferation and aggressive infiltration. The purpose of the study was to analyze the expression of genes participating in the EGFR, TGF-B, HH/GLI, NOTCH and HIF1-alpha signaling pathways, transcription factors HBP1, MSI1/2 and demethylating agents in samples of various glioma types.

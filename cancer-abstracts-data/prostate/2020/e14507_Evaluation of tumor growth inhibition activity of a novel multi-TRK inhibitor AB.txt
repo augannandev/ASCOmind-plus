@@ -1,0 +1,18 @@
+Title: Evaluation of tumor growth inhibition activity of a novel multi-TRK inhibitor ABP-1130 on glioblastoma xenograft model.
+Abstract Number: e14507
+URL: https://meetings.asco.org/abstracts-presentations/189896
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Zheng-Yun James Zhan
+
+================================================================================
+
+Full Abstract:
+Authors person Zheng-Yun James Zhan AB Pharma Co., Ltd, Shanghai, China info_outline Zheng-Yun James Zhan, Wanlong Pan, Hao Zhang Organizations AB Pharma Co., Ltd, Shanghai, China Abstract Disclosures Research Funding Pharmaceutical/Biotech Company AB Pharma Co., Ltd. Background: Glioblastoma, also known as glioblastoma multiforme (GBM), is the most aggressive cancer that begins within the brain. Glioblastoma is a difficult to treat tumor with therapeutics limited by their ability to cross the blood brain barrier. Receptor tyrosine kinases (TRK) inhibitor is reported one of therapies for glioblastoma. ABP-1130 is a novel and potent small molecular multi-TRK Inhibitor for several prime tyrosine kinases (TRKs), such as EGFR, HER2, C-Met, and BTK with potential to treat glioblastoma. Pre-clinical studies with ABP-1130, especially study to evaluate its tumor growth inhibition effect on glioblastoma xenograft model, are planned in progress. Methods: (1) Mobility-Shift Assay used to Analyze the multi-TRK (such as EGFR, HER2, C-Met, and BTK) Inhibition activity of new anti-tumor compounds, (2) CTG Assay used to analyze the inhibition activity of LN-229 Cell Line, (3) Anti-tumor inhibition study of ABP-1130 with the brain cancer nude mice, (4) Safety studies of ABP-1130 for Ames, hERG, and MTD. Results: It was determined that its multi-TRK inhibition activity (IC50) of ABP-1130 was 7nM to EGFR, 3.6nM to HER2, 3.2nM to C-Met, and 3.7nM to BTK, respectively. Its inhibition activity for Cell Line LN-229 was 0.02 µM. In anti-tumor inhibition study with the LN-229 tumor nude mice for 28 days, the anti-tumor inhibition activity of ABP-1130 (40 mg/kg, QD) was significantly observed, and the average volume of brain tumors in nude mice (six mice/each group) was reduced from 122 mm3 to < 10mm3 (vs Pazopanib as a positive control, 50mg/kg, tumor volume increased from 123 to 867mm3). Moreover, for other safety issues, its Ames is negative and hERG is > 30µM, and no test-article related death or adverse events occurred in maximum tolerated dose (MTD) studies with ABP-1130 (100mg/kg, QD) for 14 days. ABP-1130 also had very good metabolic stability in Human (T1/2 = 193min). Conclusions: Based on our completed preclinical study results, ABP-1130 is a novel and potent multi-TRK Inhibitor, showing excellent enzymatic activity, prominent in-vitro anti-cancer activity, and significant tumor growth inhibition activity with tolerable toxicity in glioblastoma tumor xenograft in nude mice model. It is highly warranted to continue further investigation in glioblastoma.
+
+--------------------------------------------------
+Search Results Summary:
+Glioblastoma, also known as glioblastoma multiforme (GBM), is the most aggressive cancer that begins within the brain. Glioblastoma is a difficult to treat tumor with therapeutics limited by their ability to cross the blood brain barrier. Receptor tyrosine kinases (TRK) inhibitor is reported one of therapies for glioblastoma. ABP-1130 is a novel and potent small molecular multi-TRK Inhibitor for several prime tyrosine kinases (TRKs), such as EGFR, HER2, C-Met, and BTK with potential to treat glioblastoma. Pre-clinical studies with ABP-1130, especially study to evaluate its tumor growth inhibition effect on glioblastoma xenograft model, are planned in progress.

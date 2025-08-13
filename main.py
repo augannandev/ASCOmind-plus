@@ -3086,7 +3086,7 @@ class ASCOmindApp:
         </style>
         """, unsafe_allow_html=True)
         
-        st.markdown('<h2>🤖 Dr. ASCOmind+ | AI Research Assistant</h2>', unsafe_allow_html=True)
+        st.markdown('<h2>🤖 Dr. ASCOmind | ASCOmind Assistant</h2>', unsafe_allow_html=True)
         
         # Initialize AI components
         if not hasattr(self, '_ai_assistant_initialized'):
@@ -3126,7 +3126,7 @@ class ASCOmindApp:
                     
                     st.markdown(f'''
                     <div class="ai-message">
-                        <strong>🤖 Dr. ASCOmind+:</strong><br>
+                        <strong>🤖 Dr. ASCOmind:</strong><br>
                         {ai_response}
                         {f'<br><small style="color: #64748b;">📚 Referenced {studies_count} studies</small>' if studies_count > 0 else ''}
                     </div>
@@ -3134,7 +3134,7 @@ class ASCOmindApp:
             else:
                 st.markdown('''
                 <div style="text-align: center; padding: 3rem; color: #64748b;">
-                    <h3>👋 Welcome! I'm Dr. ASCOmind+</h3>
+                    <h3>👋 Welcome! I'm Dr. ASCOmind</h3>
                     <p>I'm your AI research assistant specialized in multiple myeloma clinical data.</p>
                     <p style="margin-top: 2rem;"><strong>💡 Try asking:</strong></p>
                     <ul style="text-align: left; display: inline-block; margin-top: 1rem;">
@@ -3150,7 +3150,7 @@ class ASCOmindApp:
         if st.session_state.get('ai_processing', False):
             st.markdown('''
             <div class="thinking-message">
-                🧠 Dr. ASCOmind+ is analyzing your question...
+                🧠 Dr. ASCOmind is analyzing your question...
             </div>
             ''', unsafe_allow_html=True)
         

@@ -1,0 +1,56 @@
+Title: Darolutamide (DARO) tolerability from extended follow up and treatment response in the phase 3 ARAMIS trial.
+Abstract Number: 197743
+URL: https://meetings.asco.org/abstracts-presentations/197743
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Karim Fizazi, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Patients (pts) with nonmetastatic castration-resistant prostate cancer (nmCRPC) need therapy that prolongs survival with little added toxicity, thus preserving quality of life. The second-generation androgen receptor inhibitors (ARIs) including DARO, apalutamide, and enzalutamide offer durable survival in nmCRPC but differences exist in AE profiles (eg, fatigue, falls, fractures, rash, mental impairment, and hypertension) that can limit daily activities. These AEs may require dose modifications and limit pts’ willingness to continue treatment, with an adverse impact on efficacy. DARO is a structurally distinct ARI that significantly extended metastasis-free survival and overall survival (OS) vs placebo (PBO) in ARAMIS (NCT02200614), with minimal AE risk. We report tolerability from extended follow-up and treatment response analyses from ARAMIS.
+Methods:
+Pts with nmCRPC (N=1509) were randomized 2:1 to DARO or PBO with androgen deprivation therapy. The ARAMIS trial was unblinded at the primary analysis, after which all pts could receive open-label (OL) DARO. Tolerability was assessed every 16 weeks. Pharmacodynamic modeling investigated the association between treatment response (maximum prostate-specific antigen [PSA] decline from baseline) and OS at 2 years using a Cox proportional hazards model.
+Results:
+As shown in the table, DARO remained well tolerated over the double-blind (DB) and OL periods: 98.8% of pts on DARO received the full planned dose and almost all pts with dose modifications were able to resume and re-establish the planned dose (DARO 89.6% vs PBO 89.7%). Discontinuation of DARO due to AEs increased slightly from the DB period (9.0%) to the DB+OL period (10.5%). Pharmacodynamic modeling showed that longer OS was positively associated with maximum PSA decline in DARO-treated pts.
+Conclusions:
+DARO remained well tolerated with extended treatment at the recommended dose of 600 mg twice daily. Almost all pts with nmCRPC were able to receive the full planned dose, increasing the likelihood of clinical benefit from effective disease control (PSA decline) and prolonged survival. Tolerability of different ARIs in the real world should be assessed. Clinical trial information: NCT02200614
+DARO DB
+(n=954)
+PBO DB
+(n=554)
+DARO DB+OL
+(n=954)
+PBO crossover to DARO OL
+(n=170)
+Median (range) time on treatment, mo 18.5 (0–48) 11.6 (0–45) 25.8 (0–59) 11.0 (1–12)
+Mean % planned dose received 98.8 99.3 98.8 99.7
+Treatment discontinuation, %a
+Due to Disease progression
+AEs 38.0
+12.5
+9.0 69.3
+25.3
+8.7 51.1
+12.6
+10.6 13.5
+0
+4.7
+Dose modifications
+Patients, n (%)
+158 (16.6)
+58 (10.5)
+183 (19.2)
+12 (7.1)
+Pts with dose modification who re-escalated
+to full dose, %b 89.9 89.7 89.6 83.3
+aIncludes 1 additional randomized but untreated pt in the DARO DB/DB+OL cohorts. bDenominator is pts with dose modifications.
+
+--------------------------------------------------
+Search Results Summary:
+

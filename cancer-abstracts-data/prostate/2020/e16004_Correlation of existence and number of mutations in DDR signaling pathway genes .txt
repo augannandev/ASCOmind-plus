@@ -1,0 +1,18 @@
+Title: Correlation of existence and number of mutations in DDR signaling pathway genes with poor survival after resection of colorectal liver metastases.
+Abstract Number: e16004
+URL: https://meetings.asco.org/abstracts-presentations/188662
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: KUN WANG, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Kun Wang Beijing Cancer Hospital, Beijing, China info_outline Kun Wang, Hongwei Wang, Kemin Jin, Xiaoyu Zhang, Chunhe Yang, Baocai Xing Organizations Beijing Cancer Hospital, Beijing, China; GloriousMed Technology Co., Ltd., Shanghai, China Abstract Disclosures Research Funding No funding received None Background: Patients of colorectal cancer with liver metastatic (CRLM) show various in recurrence and prognosis. Previous researches have revealed that the disfunction of DNA damage repair (DDR) signaling pathways was correlative with oncogenesis and poor prognosis. Here we aimed to determine the impact of DDR gene mutations on survival in patients undergoing CRLM resection. Methods: Tumor tissues from 164 patients with CRLM were collected for next generation sequencing (NGS). Single nucleotide variants, indels, and copy number variations were obtained from a 620-gene panel, including 68 genes in 7 DDR signaling pathways. Correlations of mutations in DDR genes with overall survival (OS) and recurrence-free survival (RFS) were determined by using Kaplan-Meier analysis. Results: 152/164 of patients carried at least one of DDR gene alternations. The most frequently mutated gene was TP53 (132/164), followed by CHEK2 (21/164), BRCA2 (10/164), ATM (9/164), PRKDC (8/164), FANCM (8/164), ATR (7/164), POLE (5/164), BRCA1 (4/164), POLD (3/164). Survival analysis indicated that TP53 mutations were not correlated with OS and RFS (P = 0.38 and 0.21). Further analysis in the TP53mut subgroup showed that the patients with other DDR gene mutations (64/132, 48.48%) exhibited a significantly worse OS than the wild type ones (P = 0.04). Especially, gene alternations involving in the Fanconi anemia (FA) pathway were significantly associated with worse OS and RFS (P = 0.0014 and 0.006). Interestingly, besides the TP53 mutation, patients carrying more than 2 other DDR gene mutations (10/64, 15.63%) also showed worse OS and RFS than patients with single mutation and wild type in DDR genes. (OS: 19 vs 35 months, P = 0.053; RFS: 3 vs 11 months, P = 0.084). Conclusions: Mutations in DDR signaling pathways predicted worse survival in TP53-mutated CRLM patients after surgery. These findings may be useful for clinical decision making in patients with tumor characteristics associated with poor prognosis and for risk stratification of patients in future clinical studies.
+
+--------------------------------------------------
+Search Results Summary:
+Patients of colorectal cancer with liver metastatic (CRLM) show various in recurrence and prognosis. Previous researches have revealed that the disfunction of DNA damage repair (DDR) signaling pathways was correlative with oncogenesis and poor prognosis. Here we aimed to determine the impact of DDR gene mutations on survival in patients undergoing CRLM resection.

@@ -1,0 +1,22 @@
+Title: A phase 1/2a, open-label, multicenter study of intramuscular (IM) abiraterone decanoate (PRL-02) depot in patients with advanced prostate cancer (NCT04729114).
+Abstract Number: 201212
+URL: https://meetings.asco.org/abstracts-presentations/201212
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Tim Warneke, MS
+
+================================================================================
+
+Full Abstract:
+Background:
+PRL-02 is a long-acting IM formulation of a lipophilic abiraterone prodrug being developed for the treatment of patients with metastatic castration-sensitive (mCSPC) and metastatic castration-resistant prostate cancer (mCRPC). In nonclinical models, PRL-02 has a longer effective half-life and duration of action compared to oral abiraterone acetate (AA), due to slow release of the prodrug into circulation. PRL-02 is expected to provide greater abiraterone bioavailability and less variability in pharmacokinetics than oral AA. Based upon results in non-human primate models, PRL-02 should provide efficacy (e.g., testosterone [T] suppression) comparable to oral AA, but with lower abiraterone peak plasma concentrations and overall exposures, potentially leading to a superior therapeutic index and safety profile. The current trial is a phase 1/2a, open-label, dose escalation and subsequent dose expansion study of PRL-02 in men with metastatic prostate cancer. Study Objectives: The primary objective of this study is to determine a recommended phase 2 dose (RP2D) of PRL-02 that provides adequate T suppression up to 84 days. The secondary objectives of this study include the evaluation of safety and tolerability, the pharmacokinetic profile following IM administration and the pharmacodynamic effects of PRL-02.
+Methods:
+The phase 1 portion (Dose Escalation) is a standard 3+3 design intended to identify a RP2D that adequately suppresses T up to 84 days. The phase 2a portion (Dose Expansion) will confirm the safety, tolerability and pharmacodynamic effects of the RP2D. Main inclusion criteria are orchiectomy or ongoing GnRH analogue therapy for at least 3 months and a screening T level <50 ng/dL but >2 ng/dL. Prior treatment with abiraterone (or any other CYP17 inhibitor) and current treatment with enzalutamide or any other AR blocking agents are excluded. Patients will undergo scheduled periodic assessments of T levels. Patients may remain on study unless their T is >1 ng/dL on two sequential determinations starting on Day 28 through Day 77 of the first dosing cycle. In phase 1, three patients will initially be enrolled at each dose. The starting dose is 180 mg (i.e., 1.0 mL of PRL-02) and dose escalation will proceed with a modified Fibonacci sequence. If none of the patients in a cohort experience a dose-limiting toxicity (DLT), the dose will be escalated in the next cohort of 3 patients. A DLT is defined as a drug-related Grade 3 or higher toxicity on the Common Terminology Criteria for Adverse Events v5.0, or meets drug-induced liver injury criteria, occurring during the first 28 days following the first dose. In phase 2a, 12 mCSPC and 12 mCRPC patients will be enrolled to receive up to 4 cycles of PRL-02 at the RP2D. The results of this phase 1/2a study will be presented at a future ASCO conference. Clinical trial information: NCT04729114
+
+--------------------------------------------------
+Search Results Summary:
+

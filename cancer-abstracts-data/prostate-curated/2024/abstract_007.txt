@@ -1,0 +1,18 @@
+Title: Comparison of enzalutamide versus abiraterone in castration-resistant prostate cancer before docetaxel: Results of a propensity score-matched analysis.
+Abstract Number: e16540
+URL: https://meetings.asco.org/abstracts-presentations/176534
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Marcelle Goldner Cesca, I, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Marcelle Goldner Cesca A.C. Camargo Cancer Center, São Paulo, Brazil info_outline Marcelle Goldner Cesca, Maysa Tamara Silveira, Natasha Carvalho Pandolfi, Thiago Bueno Oliveira, José Augusto Rinck Jr., Alexandre Andre B. A. Da Costa, Marcelo Corassa, Maria Nirvana Formiga, Aldo A. Dettino Organizations A.C. Camargo Cancer Center, São Paulo, Brazil; University of Campinas, Campinas, Brazil; A.C. Carmago Cancer Center, São Paulo, Brazil Abstract Disclosures Research Funding Other Foundation Background: Metastatic castration-resistant prostate cancer (mCRPC) phenotype involves androgen-receptor signalling mechanisms that support the use of enzalutamide (EZ) and abiraterone (Abi). These therapies improve overall survival (OS) and quality-of-life, with a favourable safety profile. There is no validated data defining the best drug or sequence to be used. Methods: A retrospective cohort of mCRPC patients (pts) was analysed at AC Camargo Cancer Center. The primary objective was to compare progression-free survival (PFS) and OS in patients treated with EZ or Abi as first line (docetaxel naïve pts). Kaplan-Meier, Log-Rank Test and Cox Regression were used for survival analysis. To address unbalanced characteristics between the two treatment groups treatment efficacy was compared in a propensity score matched cohort. Results: From May, 2002 to September, 2017, 120 pts were treated with Abi (84%) or EZ (36%). Median follow-up was 21.2 months. Median age at diagnosis was 66 (48-84), the majority were Gleason score 7 (34%) and median baseline PSA was 14. Median PFS was 17.4 months in EZ and 10.6 months in Abi group (HR = 0.65; 95%CI: 0.39-1.10; p = 0.11). Median OS was not reached and 31.6 months for EZ and Abi, respectively (HR = 0.60; 95%CI: 0.27-1.36; p = 0.22). EZ was associated with a better PSA response in the first 4 months of treatment (p < 0.001). Independent prognostic factors for worse OS and PFS were ECOG ≥ 1, treatment toxicity ≥ G1 and lower PSA doubling time before treatment and for better OS and PFS were PSA response in the first 4 months and alkaline phosphatase and lactate dehydrogenase response at any time. In the propensity score matched cohort including 72 patients PFS was better in EZ group (HR = 0.36; 95%CI: 0.20-0.64; p < 0.001) but there was no difference in OS (HR = 0.66; 95%CI: 0.27-1.63; p = 0.37). Conclusions: EZ was associated with prolonged PFS and better PSA response, with no OS improvement when compared with Abi for mCRPC before docetaxel, in a propensity score matched analysis.
+
+--------------------------------------------------
+Search Results Summary:
+Metastatic castration-resistant prostate cancer (mCRPC) phenotype involves androgen-receptor signalling mechanisms that support the use of enzalutamide (EZ) and abiraterone (Abi). These therapies improve overall survival (OS) and quality-of-life, with a favourable safety profile. There is no validated data defining the best drug or sequence to be used.

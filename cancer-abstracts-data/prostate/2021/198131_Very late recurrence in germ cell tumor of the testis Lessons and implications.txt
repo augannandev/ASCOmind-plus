@@ -1,0 +1,26 @@
+Title: Very late recurrence in germ cell tumor of the testis: Lessons and implications.
+Abstract Number: 198131
+URL: https://meetings.asco.org/abstracts-presentations/198131
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Joseph A Moore, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Up to 30% of patients with germ cell tumor of the testis (TGCT) develop recurrent disease after initial treatment. The majority of recurrences occur in the first 2 years after treatment. Very late recurrence (LR), i.e. > 5 years after initial presentation, occurs in about 1% of patients with TGCT and is associated with poor prognosis. Current guideline does not require follow-up after 5 years to detect LR, except in those presenting with metastatic NSGCT.
+Methods:
+We retrospectively reviewed the records of patients from the Genitourinary Medical Oncology clinic at the M. D. Anderson Cancer Center, who developed recurrent disease > 5 years after their initial diagnosis of TGCT. Specifically, we examined the pathology and location of their primary and recurrent tumors, treatments rendered (e.g., surgery, radiotherapy, chemotherapy), and overall survival after LR. Overall survival from the time of LR was estimated using Kaplan-Meier estimates and compared for patient subgroups with log rank tests. Fisher’s exact test was used to compare proportions in patient subgroups.
+Results:
+We identified 25 patients who developed LR between July 2007 and August 2020. Age at time of LR: median 46 years (range, 29-61); time of late LR: median 16.1 years (range, 6.8-33.1 years) after diagnosis. Stage at time of diagnosis: I – 5, II-IIIA – 13, IIIB-C – 7. Pathology of primary: nonseminoma with yolk sac tumor or teratoma – 15, nonseminoma without yolk sac tumor or teratoma – 1, not available – 9. Pathology of LR: somatic transformation to carcinoma – 9, somatic transformation to sarcoma – 2, nonseminoma with yolk sac tumor or teratoma – 10, nonseminoma without yolk sac tumor or teratoma – 2, not available – 2. Overall, 5 patients (20%) had LR in retroperitoneum alone, 6 patients (24%) had non-retroperitoneal nodal or pulmonary metastases, and 14 patients (56%) had non-pulmonary visceral metastases. Nine patients (36%) are deceased, ten patients (40%) are alive without evidence of disease (NED), and 6 patients are alive with disease (24%). With a median follow-up of 42 months, 68% of patients are alive 3 years after LR. Patients with prior post-chemotherapy consolidation surgery have longer survival, 80% vs. 53% at 3 years, respectively (p = 0.01). Additionally, at their last follow-up 9/12 vs. 1/13 patients were NED with vs. without prior post-chemotherapy consolidation surgery, respectively (p = 0.001).
+Conclusions:
+Patients with LR > 5 years after initial presentation tend to harbor nonseminoma (with yolk sac tumor and or teratoma). Among these patients, a majority who did not undergo surgery to remove residual disease after chemotherapy developed somatic transformation and succumbed to their LR. Further investigation into rates of LR among all patients may be warranted given the poor survival after LR.
+
+--------------------------------------------------
+Search Results Summary:
+

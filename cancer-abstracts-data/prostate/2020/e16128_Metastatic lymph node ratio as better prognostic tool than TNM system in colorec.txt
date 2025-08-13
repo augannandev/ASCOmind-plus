@@ -1,0 +1,18 @@
+Title: Metastatic lymph node ratio as better prognostic tool than TNM system in colorectal cancer.
+Abstract Number: e16128
+URL: https://meetings.asco.org/abstracts-presentations/188896
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Filipa Macedo
+
+================================================================================
+
+Full Abstract:
+Authors person Filipa Macedo Oncology Portuguese Institute Coimbra, Braga, Portugal info_outline Filipa Macedo, Hugo Sequeira, Katia Ladeira, Nuno Bonito, Charlene Viana, Sandra Martins Organizations Oncology Portuguese Institute Coimbra, Braga, Portugal; Life and Health Science Research Institute, School of Health Sciences, University of Minho, Braga, Portugal; Portuguese Oncology Institute of Coimbra, Coimbra, Portugal; Surgery Department, Coloproctology Unit, Braga Hospital, Braga, Portugal Abstract Disclosures Research Funding No funding received None Background: Colorectal cancer (CRC) is the third leading cause of cancer death in the world. Lymph node metastasis is an important prognostic factor; however, the minimum number of lymph nodes that should be evaluated for adequately categorizing lymph node status is still a controversial theme. The TNM staging system has limitations in defining the pN category. The lymph node ratio (LNR) may be a better prognostic indicator. Objectives: Evaluate the impact on the prognosis of patients operated for CRC, comparing the LNR with the pN category of TNM system. Methods: We studied 1065 patients treated at a General Surgery Department from 01/01/2000 to 08/31/2012. The LNR was separated into 5 categories based on three previously calculated cut-off values: LNR0 (0), LNR1 (0.01-0.17), LNR2 (0.18- 0.41), LNR3 (0.42-0.69) and LNR4 (≥0.70). Results: The results of the univariate analysis indicated significant differences in survival according to age (p < 0.001), tumor size (p < 0.001), serosal invasion (p < 0.001), histological type (p = 0.002), differentiation (p < 0.001), pT (p < 0.001), pN (p < 0.001), LNR (p < 0.001), M (p = 0.001), TNM stage (p < 0.001), venous invasion (p < 0.001). Multivariate analysis confirmed the LRN, pN, age, venous invasion and pT as independent prognostic factors. The survival analysis showed significant differences between the categories of pN (p < .001) and LNR (p < .001). Spearman correlation analysis showed a significant correlation between the total number of dissected lymph nodes and the number of metastatic lymph nodes (rs = 0.167, p < 0.001). The total number of dissected lymph nodes is not significantly correlated with LNR (rs = -0.019, p = 0.550). Conclusions: In this study LNR seems to demonstrate a superior prognostic value when compared to the pN categories, in part due to its greater independence regarding the extent of lymphadenectomy.
+
+--------------------------------------------------
+Search Results Summary:
+Colorectal cancer (CRC) is the third leading cause of cancer death in the world. Lymph node metastasis is an important prognostic factor; however, the minimum number of lymph nodes that should be evaluated for adequately categorizing lymph node status is still a controversial theme. The TNM staging system has limitations in defining the pN category. The lymph node ratio (LNR) may be a better prognostic indicator. Objectives: Evaluate the impact on the prognosis of patients operated for CRC, comparing the LNR with the pN category of TNM system.

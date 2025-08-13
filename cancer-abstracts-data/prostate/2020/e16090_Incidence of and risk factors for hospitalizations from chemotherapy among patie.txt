@@ -1,0 +1,18 @@
+Title: Incidence of and risk factors for hospitalizations from chemotherapy among patients with stage III and stage IV colorectal cancer.
+Abstract Number: e16090
+URL: https://meetings.asco.org/abstracts-presentations/189097
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: April Falconi
+
+================================================================================
+
+Full Abstract:
+Authors person April Falconi HealthCore Inc, Alexandria, VA info_outline April Falconi, Ezra Fishman, John Barron, Michael Eleff, Michael Jordan Fisch, Winnie Chi Organizations HealthCore Inc, Alexandria, VA; HealthCore Inc, Wilmington, DE; HealthCore, Inc., Wilmington, DE; Anthem, Inc., New York, NY; AIM Specialty Health, Chicago, IL; Healthcore, Inc, Wilmington, DE Abstract Disclosures Research Funding No funding received None Background: Despite the decreasing colorectal cancer (CRC) mortality rate over the past decade, complications from CRC treatment remain a challenge. Prior research has shown that a majority of patients with stage III CRC in the adjuvant setting experience hospitalizations due to chemotherapy-related toxicity. Minimal research, however, has examined risk factors of these events and the prevalence of hospitalization among stage IV CRC patients. Methods: We used claims data from a geographically-diverse private health insurer—including both commercially-insured and Medicare Advantage patients—to estimate and characterize risk factors of hospitalizations among Stage III or IV CRC patients. We compared sociodemographic, clinical, as well as provider characteristics and cancer treatment regimens between patients with and without hospitalizations from the initiation of chemotherapy to 60 days after the end of chemotherapy. Results: Incidence rates for hospitalization from chemotherapy were 49% and 70% for stage III and IV CRC patients, respectively. Although the oldest stage III CRC patients (age 75+) were the most likely to experience hospitalizations, the youngest age group (age 18-49) of stage IV patients experienced the highest incidence (74%) of hospitalizations (p < 0.05). Higher values of the Elixhauser comorbidity index was associated with a higher risk for hospitalizations among patients with stage III CRC (p < 0.001). Both stage III and stage IV patients with diabetes were more likely (p < 0.05) to have hospitalizations from chemotherapy (55% and 73%, respectively). Conclusions: Hospitalization from chemotherapy is very common among stage III and IV CRC patients. These data identify subgroups at higher risk. Study findings may inform choice of cancer treatment regimen and focus on key underlying medical needs
+
+--------------------------------------------------
+Search Results Summary:
+Despite the decreasing colorectal cancer (CRC) mortality rate over the past decade, complications from CRC treatment remain a challenge. Prior research has shown that a majority of patients with stage III CRC in the adjuvant setting experience hospitalizations due to chemotherapy-related toxicity. Minimal research, however, has examined risk factors of these events and the prevalence of hospitalization among stage IV CRC patients.

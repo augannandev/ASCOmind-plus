@@ -1,0 +1,56 @@
+Title: Genomic landscape of MSH6-mutated clinically advanced castrate-resistant prostate cancer (mCRPC).
+Abstract Number: 197745
+URL: https://meetings.asco.org/abstracts-presentations/197745
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Gennady Bratslavsky, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Loss-of-function genomic alterations (GAs) in MSH6 have been associated with a unique subtype of hypermutated mCRPC that is often microsatellite stable (MSS) and may occur in either a sporadic or familial Lynch Syndrome-like clinical setting.
+Methods:
+5,617 mCRPC cases were sequenced to evaluate all classes of GA using a hybrid capture-based FDA-approved comprehensive genomic profiling (CGP) assay. Tumor mutational burden (TMB) was determined on 0.8 Mb of sequenced DNA and microsatellite instability high (MSI-High) was determined on 95 loci. MSI-low status was not assessed.
+Results:
+78 (1.4%) mCRPC were MSH6mut (Table). MSH6mut mCRPC included 73.1% short variant mutations, 23.1% biallelic deletions, 2.6% genomic rearrangements, and 1.3% multiple GAs/sample. Co-mutation of MSH2 was found in 28% of MSH6mut cases vs. 2% in MSH6wt cases (P <.0001) and was most frequently caused by biallelic co-deletion of both genes (73% of co-mutated cases). MSI-High status was present in 46% of MSH6mut mCRPC, which was significantly greater than the 2% seen in MSH6wt cases (P <.0001). An MMR single nucleotide mutational signature was observed in 65% of MSH6mut cases, compared to 3% MSH6wt cases (P <.0001). Among MSH6mut cases with neither MSI-High nor MMR mutational signature, 87% did not have biallelic loss of MSH6 or any other MMR gene, confirming that monoallelic pathogenic mutations are insufficient to cause the MMR-D phenotype. For subjects whose variants could be classified, 45% (19/42) of pathogenic MSH6 alleles were germline; of these, 58% (11/19) had neither MSI-High nor an MMR single nucleotide signature. MSH6mut cases had fewer TMPRSS2:ERG fusions (P =.01), but harbored significantly higher frequencies of GAs in AR (P =.0002), ATM (P =.04), PIK3CA (P =.0003), APC (P =.005), ERBB2 (P =.001), and CDK6 (p =.046), likely at least partially attributable to the higher TMB in MSH6mutcases (P <.0001).
+Conclusions:
+MSH6mut mCRPC is a unique disease that often features a hypermutated genomic signature, although only 46% of cases exhibited MSI-high status. This complex phenotype highlights the potential utility of multiple rather than single biomarkers to understand tumor biology and determine patients who may benefit from immunotherapy.
+MSH6mut mCRPC
+MSH6wt mCRPC
+P Value
+Number of Cases 78 5539
+Median age (range) years 69 (44-89+) 67 (38-89+) NS
+GAs/tumor 11.3 3.9 <.0001
+MSH2 28% 2% <.0001
+TMPRSS2:ERG 19% 33% =.01
+AR 32% 15% =.0002
+TP53 46% 42% NS
+PTEN 39% 31% NS
+BRCA1 6% 1% =.001
+BRCA2 9% 9% NS
+ATM 12% 6% =.04
+RAD21 10% 11% NS
+PIK3CA 17% 7% =.003
+RB1 6% 6% NS
+APC 19% 9% =.005
+BRAF 3% 4% NS
+ERBB2 6% 1% =.001
+CDK12 12% 6% NS
+CDK6 3% 1% =.046
+MSI High 32/69 (46%) 2% <.0001
+MMR Signature 65% 3% <.0001
+Median TMB 21.3 2.5 <.0001
+Mean TMB 69.7 3.6 <.0001
+TMB ≥10 mt/Mb 67% 4% <.0001
+TMB ≥20 mt/Mb 52% 2% <.0001
+PD-L1 Low Positive 2/20 (10%) 155/1,683 (9%) NS
+PD-L1 High Positive 0/20 (0%) 15/1,683 (1%) NS
+
+--------------------------------------------------
+Search Results Summary:
+

@@ -1,0 +1,18 @@
+Title: Correlation between DIDO1 variation and MSI-status in colorectal cancer.
+Abstract Number: e16054
+URL: https://meetings.asco.org/abstracts-presentations/187941
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Xingwei Zhang
+
+================================================================================
+
+Full Abstract:
+Authors person Xingwei Zhang The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, China info_outline Xingwei Zhang, Yonghua Cai, Yujie Hou, Huanxin Hu, Yaoxu Chen, Mengli Huang, Liang Kang Organizations The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, China; The Sixth Affiliated Hospital, Sun Yat-sen University, Guangdong Provincial Key Laboratory of Colorectal and Pelvic Floor Disease, Guangzhou, China; The Medical Department, 3D Medicines Inc., Shanghai, China; Medical Department, 3D Medicines Inc., Shanghai, China Abstract Disclosures Research Funding Other Foundation Sun Yat-sen University Background: Several studies have displayed a sustained clinical response to immune checkpoint inhibitors with profound clinical improvement in patients with microsatellite instability-high (MSI-H) metastatic colorectal cancer (CRC). MSI-H tumors may display higher numbers of TILs, many of which can be directed against tumor-related neoantigens. We set out to examine the underline mechanism in gene level to further explain the differences between MSI-H and MSS CRC. Methods: Whole exome sequencing(WES) was performed on 68 CRC patient.MSI status of these patients were determined using a targeted next generation sequencing panel covering 100 MSI loci. TCGA database was used to analyze WES data of 364 CRC patients with different MSI states, and immune signature was used to analyze the corresponding relationship of immune cell expression in different populations. Results: Of 56 MSS patients, 58.9% (33/56) had copy number variants (CNV) in DIDO1, and 1.8 (1/56) had single nucleotide variants(SNV) in DIDO1. Of 12 MSI-H patients, 33.3% (4/12) had SNV in DIDO1 gene, None had CNV in DIDO1. TCGA database showed that of 308 MSS patients, 8% (24/308) had CNV in DIDO1 and 3% (9/308) had SNV in DIDO1. Of 56 MSI-H patient, 39% (22/56) had SNV in DIDO1 and only one patent had both SNV and CNV in DIDO1. Gene variation of DIDO1 of 68 CRC patients showed a correlation with TCGA database. Gene variation of DIDO1 in MSI-H patients are mainly SNV, and the incidence of CNV is very small (4.3% of DIDO variation).While, gene variation of DIDO1 in MSS patients are mainly CNV, followed by SNV, indicating DIDO1 CNV are highly possible occurring in MSS patients. Furthermore we analyzed the relationship between the copy number of DIDO1 and immune signature through CRC TCGA database. The results showed increase of DIDO1 copy number was negatively correlated with the abundance of NK cells (P = 0.00048), T cells (P = 8.23×10-5) and macrophages (P = 1.75×10-8). Conclusions: Our results showed that different MSI status display unique patent of DIDO1 gene variation, which may be related to different immune micro environment among MSI-H/MSS patients.
+
+--------------------------------------------------
+Search Results Summary:
+Several studies have displayed a sustained clinical response to immune checkpoint inhibitors with profound clinical improvement in patients with microsatellite instability-high (MSI-H) metastatic colorectal cancer (CRC). MSI-H tumors may display higher numbers of TILs, many of which can be directed against tumor-related neoantigens. We set out to examine the underline mechanism in gene level to further explain the differences between MSI-H and MSS CRC.

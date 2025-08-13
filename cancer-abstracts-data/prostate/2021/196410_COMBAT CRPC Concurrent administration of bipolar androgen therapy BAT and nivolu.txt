@@ -1,0 +1,44 @@
+Title: COMBAT-CRPC: Concurrent administration of bipolar androgen therapy (BAT) and nivolumab in men with metastatic castration-resistant prostate cancer (mCRPC).
+Abstract Number: 196410
+URL: https://meetings.asco.org/abstracts-presentations/196410
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Mark Christopher Markowski, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+During BAT, intramuscular (IM) testosterone (T) is administered, which results in rapid cycling of serum T levels from supraphysiologic to near-castrate in men with metastatic castration resistant prostate cancer (mCRPC). We previously observed anecdotal clinical responses to immune checkpoint blockade (ICB) in mCRPC patients (pts) previously treated with BAT and hypothesized that that a BAT/ICB combination would be synergistic. Here we report a prospective phase 2 study of men with mCRPC treated with BAT in combination with nivolumab.
+Methods:
+This was a multi-center, single arm, open label phase 2 trial (NCT03554317) of men with mCRPC who received T cypionate 400mg IM (BAT) every 28 days and nivolumab 480mg IV every 28 days. LHRH agonist treatment was continued. All pts received BAT as single agent therapy for a 12-week lead-in prior to the addition of nivolumab. Eligible pts were those with asymptomatic mCRPC who had soft tissue disease amenable to biopsy and progressed on at least one prior novel AR targeted therapy. Up to one line of chemotherapy was allowed for the treatment of mCRPC disease. The primary endpoint was confirmed PSA50 response rate. Key secondary endpoints included safety, objective response rate (ORR), and radiographic progression-free survival (rPFS). The trial was designed to detect a 20% absolute increase in PSA50 response rate from the null of 25%.
+Results:
+45 pts were enrolled on study and treated. The confirmed PSA50 response rate was 40.0% (N=18/45, 95% CI: 26-56%, P=0.02 against the 25% null hypothesis). For pts with measureable disease, the ORR was 23.8% (N=10/42). Median rPFS on BAT and nivolumab was estimated at 5.7 months (95% CI: 4.9-7.8 months). 11.1% (N=5/45) of pts were free from radiographic progression for 11 or more months. One patient achieved a complete radiographic response, which is ongoing (>13 months). The majority of adverse events (AE) were Grade <2. The most common AEs were edema (20%), nausea (20%), and back pain (13%). Immune related AE (irAE) were generally mild (Grade <2) with N=2 Grade 3 irAE observed (pericarditis, lipase elevation). Serial biopsies were obtained on trial for translational studies.
+Conclusions:
+BAT plus nivolumab was well tolerated without concerning safety signals. The combination met the pre-specified primary endpoint of confirmed PSA50 response in a heavily treated population. Durable responses were observed in a subset of pts. Biomarker analysis is ongoing to identify a molecular signature predictive of response. Clinical trial information: NCT03554317
+N = 45
+Age (years)
+Median 69
+Baseline PSA (ng/mL)
+Median 57.6
+Lines of Prior Novel AR Targeted Therapy, N (%)
+1
+>2 21 (46.7%)
+24 (53.3%)
+Prior Taxane Chemotherapy, N (%)
+Yes
+No
+20 (44.4%)
+25 (55.6%)
+Confirmed PSA50 RR
+40.0% (N=18)
+Objective RR (N=41) 23.8% (N=10)
+Radiographic PFS (months) 5.7 (95% CI:4.9-7.8)
+
+--------------------------------------------------
+Search Results Summary:
+

@@ -1,0 +1,18 @@
+Title: Stereotatic radiosurgery for residual lesions of pineal nongerminomatous germ cell tumors after conventional radiotherapy: A retrospective study.
+Abstract Number: e14516
+URL: https://meetings.asco.org/abstracts-presentations/190119
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Mingyao Lai, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Mingyao Lai Department of Neuro-Oncology, Guangdong San Jiu Brain Hospital, Guangzhou, China info_outline Mingyao Lai, Juan Li, Qingjun Hu, Jiangfen Zhou, Lei Wen, Cheng Zhou, Zhaoming Zhou, Shaoqun Li, Changguo Shan, Linbo Cai Organizations Department of Neuro-Oncology, Guangdong San Jiu Brain Hospital, Guangzhou, China; Department of Neuro-Oncology, Guangdong Sanjiu Brain Hospital, Guangzhou, China; Department of Neuro-oncology, Guangdong Sanjiu Brain Hospital, Guangzhou, China Abstract Disclosures Research Funding No funding received None Background: To evaluate the safety and efficacy of stereotatic radiosurgery (SRS) in treating residual lesions of pineal non-germinomatous germ cell tumors (NGGCTs) after conventional radiotherapy. Methods: The patients admitted to Guangdong Sanjiu Brain Hospital from 1 January 2008 to 31 December 2018 who diagnosed with pineal NGGCTs pathologically or clinically were retrospectively analyzed. Among those, the patients received conventional radiotherapy with or without SRS were included. The residual lesions after radiotherapy were defined with a maximum diameter > 10mm. Prognosis related parameters such as local control rate, progress-free survival, overall survival and treatment-related toxicity were determined. Results: The median follow-up time was 34 months (range 8-142 months). The objective response rate and disease control rate were 71.4% and 95.2%, respectively. Three-year progression-free survival rate was 85.2% and 3-year total survival rate was 88.0%. The univariate analysis revealed that both age and concurrent chemotherapy were not correlated with the prognosis (P = 0.286, 0.824). Partial tumor resection before radiotherapy and chemotherapy, AFP>500ng/ml, and no more than 4 cycles of adjuvant chemotherapy were poor prognostic factors (P = 0.037, 0.010, 0.006). Moreover, no acute radiation response was observed after treatment with SRS. Only 1 out of 27 patients (3.7%) had brain neurotoxicity related to a prolonged course of radiochemotherapy. Conclusions: SRS for residual lesions of NGGCTs following conventional radiotherapy appears to be well tolerant and improved local control. However, the combination of conventional radiotherapy and SRS warrants further investigations in a large-scale randomized controlled clinical trials.
+
+--------------------------------------------------
+Search Results Summary:
+To evaluate the safety and efficacy of stereotatic radiosurgery (SRS) in treating residual lesions of pineal non-germinomatous germ cell tumors (NGGCTs) after conventional radiotherapy.

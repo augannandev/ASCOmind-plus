@@ -1,0 +1,18 @@
+Title: Bevacizumab associated calcifications might be a prognostic marker in patients with metastatic colorectal cancer.
+Abstract Number: e16108
+URL: https://meetings.asco.org/abstracts-presentations/188121
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Yuwen Zhou
+
+================================================================================
+
+Full Abstract:
+Authors person Yuwen Zhou Department of Biotherapy, Cancer Center, Chengdu, China info_outline Yuwen Zhou, Qiu Meng Organizations Department of Biotherapy, Cancer Center, Chengdu, China; Department of Medical Oncology, West China Hospital, Sichuan University, Chengdu, China Abstract Disclosures Research Funding No funding received None Background: Cetuximab associated calcifications is a positive predictive factor in metastatic colorectal cancer (mCRC). In patients with glioblastoma, bevacizumab-induced calcifications are also related to a better prognosis. However, tumor calcifications are rarely recognized in mCRC patients treated with bevacizumab. This study was to investigate the correlation between clinical outcome and calcification in mCRC who received bevacizumab and chemotherapy as the first-line treatment. Methods: A single retrospective cohort study was conducted with all diagnosed mCRC cases who received bevacizumab and chemotherapy as the first-line therapy in our hospital from January 2016 to January 2019. Clinical variables were retrieved from medical records and tumor calcification were evaluated independently by radiologists on the basis of computed tomography scans. A univariate and multivariate COX regression analysis was performed to evaluate the association between calcification and outcome. Results: 159 patients with an average age of 59.0 years were included. Median follow-up was 29.6 months. Among all enrolled patients, 31 had tumor calcification [31/159 (19.5%)]. The median overall survival (OS) and progression-free survival (PFS) was significantly better in patients with calcification than those without calcification (28.0 vs. 24.9 months, p= 0.024; 12.0 vs. 10.0 months, p= 0.026). A higher objective response rate (61.3% vs. 50.0%) was also observed in calcification group. On multivariate analysis, tumor calcification was independently associated with OS (hazard ratio 1.799, 95% CI 1.002–3.230) and PFS (hazard ratio 1.609, 95% CI 1.013–2.557). Conclusions: Tumor calcification was independently associated with improved prognosis in colorectal cancer. It might be a potential prognostic marker.
+
+--------------------------------------------------
+Search Results Summary:
+Cetuximab associated calcifications is a positive predictive factor in metastatic colorectal cancer (mCRC). In patients with glioblastoma, bevacizumab-induced calcifications are also related to a better prognosis. However, tumor calcifications are rarely recognized in mCRC patients treated with bevacizumab. This study was to investigate the correlation between clinical outcome and calcification in mCRC who received bevacizumab and chemotherapy as the first-line treatment.

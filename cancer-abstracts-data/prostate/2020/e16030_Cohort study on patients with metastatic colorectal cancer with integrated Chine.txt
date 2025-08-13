@@ -1,0 +1,18 @@
+Title: Cohort study on patients with metastatic colorectal cancer with integrated Chinese and western medicine.
+Abstract Number: e16030
+URL: https://meetings.asco.org/abstracts-presentations/189092
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Tong Zhang
+
+================================================================================
+
+Full Abstract:
+Authors person Tong Zhang Xiyuan Hospital, China Academy of Chinese Medical Sciences, Beijing, China info_outline Tong Zhang, Wenting He, Mo Tang, Yufei Yang Organizations Xiyuan Hospital, China Academy of Chinese Medical Sciences, Beijing, China; Traditional Chinese Medicine Hospital of Xinjiang Uyghur Autonomous Region, Second Department of Oncology, Urumchi, China; Xiyuan Hospital China Academy of Chinese Medicine Science, Beijing, China Abstract Disclosures Research Funding Other Foundation National Natural Science Foundation of China Background: To investigate the efficacy of integrated Chinese and Western medicine in the treatment of mCRC in a cohort study (Registry No. ChiCTR-IOR-17010497). Methods: The survival outcome of patients receiving integrated Chinese and Western medicine was compared with that of patients receiving Western medicine alone. The study design was adopted with "continuous administration of traditional Chinese medicine for ≥ 3 months" as the exposure factor. Patients who met this exposure factor were assigned to the integrated Chinese and Western medicine cohort. Patients who did not meet this exposure factor were assigned to the Western medicine cohort. The overall survival, 5-year survival rate in the two cohorts were compared. Results: 335 subjects were assigned into two groups (Group A 129 patients, Group B 206 patients). The median overall survival (OS) in Group A and B were 19.2 months (95% CI 16.2–23.2) and 15.2 months (95% CI 13.3–17.2), P= 0.019. Group A demonstrated significantly longer OS and PFS than Group B in the following subgroups: female patients, right-side colon, first-line treatment, RAS mutation. Conclusions: Integrated traditional Chinese and Western medicine can prolong the survival of patients with mCRC. Clinical trial information: ChiCTR-IOR-17010497.
+
+--------------------------------------------------
+Search Results Summary:
+To investigate the efficacy of integrated Chinese and Western medicine in the treatment of mCRC in a cohort study (Registry No. ChiCTR-IOR-17010497).

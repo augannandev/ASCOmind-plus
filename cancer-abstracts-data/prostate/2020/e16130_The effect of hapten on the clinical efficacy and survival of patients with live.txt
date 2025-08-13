@@ -1,0 +1,18 @@
+Title: The effect of hapten on the clinical efficacy and survival of patients with liver cancer treated by UMIPIC.
+Abstract Number: e16130
+URL: https://meetings.asco.org/abstracts-presentations/188653
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Feng Gao, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Feng Gao Taimei Baofa Cancer Hospital, Taian City, China info_outline Feng Gao, Peng Jing, Jian Liu, Wei Han, Xingyou Xu, Wei Shang, Jianbin Feng, Peicheng Zhang, Xiaomin Zhang, Guangyong He, Yanfei Wu, Baofa Yu Organizations Taimei Baofa Cancer Hospital, Taian City, China; Shandong Baofa Cancer Institute, Inc., Taian City, China; Jinan Xicheng Hospital, Jinan City, China; Jinan Xicheng hospital, Jinan, China; Jinan Jiazou Pharma, Inc., Jinan City, China; Jinan Baofa Cancer Hospital, Jinan, Shandong, China Abstract Disclosures Research Funding No funding received None Background: To observe the effect of adjuvant on the clinical efficacy and survival period of patients with liver cancer treated by UMIPIC (Ultra-minimum Incision personalized intratumoral chemoimmunotherapy). Methods: 156 liver cancer patients who were treated with UMIPIC with hapten or without hapten from January 2011 to December 2015 were selected for the study objects, including 124 cases with hapten as studying group and 32 cases without hapten as comparing group. All patients signed the treatment consent, treated according to the treatment guidelines of UMIPIC, followed up for the efficacy and the survival period of all patients more than 3 months, and observed whether there was effect on the clinical efficacy, adverse reactions, survival period and survival rate of patients with liver cancer patients treated with UMIPIC. Results: The common side effects of hapten group were fever 45.16%, pain 27.42%, hemoglobin reduction 14.78%, leucopenia 11.97%, thrombocytopenia 10.26%, liver function damage 5.26%, nausea 4.03%, renal dysfunction 2.61%. No rash, neurotoxicity and hair loss were found; The common adverse reactions in the non hapten group were fever 40.63%, pain 25.00%, hemoglobin reduction 17.24%, leucopenia 13.79%, thrombocytopenia 10.34%, nausea 6.25%. No other adverse reactions were found; there was no difference between the two groups (P > 0.05). The benefit rate of hapten group was 89.06% lower than that of non hapten group (94.74%) (P > 0.05). According to the follow-up results, the mean and median survival time of hapten group was 26.421 and 9.930 months, significantly higher than that of non hapten (16.473 and 7.230 months) (P < 0.05).The 1-year, 2-year, 3-year and 5-year survival rates of adjuvant group respectively were 45.69%, 33.33%, 25.68% and 20.83%,The 1-year, 2-year, 3-year and 5-year survival rates in the adjuvant free group respectively were 27.50%, 20.59%, 14.81% and 14.29%, The 1-year survival rate of hapten group was significantly higher than that of non hapten group (P < 0.05). Conclusions: There is no significant difference in the adverse reactions and clinical efficacy of UMIPIC in the treatment of liver cancer patients with and without hapten. Adding hapten can significantly prolong the survival time and improve the survival rate of patients with liver cancer patients treated with UMIPIC.
+
+--------------------------------------------------
+Search Results Summary:
+To observe the effect of adjuvant on the clinical efficacy and survival period of patients with liver cancer treated by UMIPIC (Ultra-minimum Incision personalized intratumoral chemoimmunotherapy).

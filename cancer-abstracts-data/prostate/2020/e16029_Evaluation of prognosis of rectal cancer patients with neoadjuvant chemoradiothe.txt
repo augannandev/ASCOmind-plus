@@ -1,0 +1,18 @@
+Title: Evaluation of prognosis of rectal cancer patients with neoadjuvant chemoradiotherapy by clinical TNM stage: Is it suitable?
+Abstract Number: e16029
+URL: https://meetings.asco.org/abstracts-presentations/188594
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Yue Chen
+
+================================================================================
+
+Full Abstract:
+Authors person Yue Chen Cancer Hospital of China Medical University, Liaoning Cancer Hospital & Institute, Shenyang, China info_outline Yue Chen, Rui Zhang, Xinxin Dong, Fang Liu Organizations Cancer Hospital of China Medical University, Liaoning Cancer Hospital & Institute, Shenyang, China; Liaoning Cancer Hospital, Shenyang, China Abstract Disclosures Research Funding Other Foundation Science Public Welfare Research Fund of Liaoning Province (No. 2016003002) and the Science Planned Population and Health Applied Technology Research Fund of Shenyang Background: In the Union for International Cancer Control /American Joint Committee on Cancer TNM classification system, the prognosis of rectal cancer patients with adjuvant treatment are based on pre-radiotherapy clinical TNM stage. However, the value of this classification system is still debated. Here, we find that neoadjuvant pathologic TNM stage may be better than clinical TNM stage in patients with rectal cancer. Furthermore, we propose a novel risk stratification which may be more accurate in the assessment of prognosis of these patients. Methods: Between 2010 and 2015, 316 patients with rectal cancer who underwent neoadjuvant chemoradiotherapy followed by radical surgery were included for analysis. The clinicopathological factors for developing recurrences that affected prognosis were analyzed. Results: Our findings showed that the pathological complete response group had significantly better overall survival and recurrence-free survival than did the non-pCR group. Clinical N stage was not only an independent factor for developing recurrences but was also a significant prognostic factor in the pCR group, just as neoadjuvant pathologic TNM stage in the non-pCR group. Based on the independent prognostic factors, pCR patients were stratified into two recurrence risk categories: pCR with cN0 stage or pCR with cN+ stage. Non-pCR patients were stratified into three recurrence risk categories: non-pCR with ypTNM I stage, ypTNM II stage or ypTNM III stage, which might offer greater potential for the prognosis of patients with rectal cancer. Conclusions: Neoadjuvant pathologic TNM stage, rather than pre-radiotherapy clinical TNM stage, was an independent factor for developing recurrences in the non-pCR group. Furthermore, a novel risk stratification, which may be more accurate in the assessment of prognosis of rectal cancer patients, was proposed.
+
+--------------------------------------------------
+Search Results Summary:
+In the Union for International Cancer Control /American Joint Committee on Cancer TNM classification system, the prognosis of rectal cancer patients with adjuvant treatment are based on pre-radiotherapy clinical TNM stage. However, the value of this classification system is still debated. Here, we find that neoadjuvant pathologic TNM stage may be better than clinical TNM stage in patients with rectal cancer. Furthermore, we propose a novel risk stratification which may be more accurate in the assessment of prognosis of these patients.

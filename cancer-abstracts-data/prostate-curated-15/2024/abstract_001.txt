@@ -1,0 +1,18 @@
+Title: Radium 223 (Ra-223) experience in twenty-four castration resistant prostate cancer (CRPC) patients treated at West Virginia University (WVU) 2014-2018.
+Abstract Number: e16502
+URL: https://meetings.asco.org/abstracts-presentations/177579
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Zeeshan Ahmad, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Zeeshan Ahmad West Virginia University, Morgantown, WV info_outline Zeeshan Ahmad, Ruta Arays, Kenneth Veselicky, Joanna Amy Kolodney, Thomas F. Hogan Organizations West Virginia University, Morgantown, WV; Mary Babb Randolph Cancer Center, West Virginia University School of Medicine, Morgantown, WV Abstract Disclosures Research Funding Other Background: Ra-223 was FDA approved for CRPC with symptomatic bone metastases without visceral metastatic disease. Methods: De-identified IRB exempted records were abstracted for demographic, clinical, and laboratory data from CRPC men treated with Ra-223 at WVU 2014-2018. Results: 24 men had in total 95 Ra-223 infusions; 20 men (83%) were referred from outside institutions. Average ages (yrs; ranges) were 63 (48-87) at initial PC diagnosis; 68 (49-89) at first WVU-visit; and 69 (54-89) at first Ra-223 infusion. At diagnosis, 4 men (17%) had prostatectomy; 12 (50%) were M1/stage 4; PSAs ranged from 7-9,600 ng/mL. In 24 men, there were 73 courses of different androgen deprivation therapies (ADT); all had one, 22 (92%) two, 17 (71%) three, & 10 (42%) four or more; 68 (93%) of the 73 ADT trials preceded Ra-223. In 24 men, 19 (79%) had docetaxel or cabazitaxel chemoRx; 10 of 19 (53%) had 2nd line and 2 of 19 (11%) had 3rd - 4th line; chemoRx preceded Ra-223 in 18 of the 19 men (95%). In 24 men, 19 (79%) received 33 courses of radiation; in 9 of 33 (27%) the prostate was targeted; another 24 (73%) were palliative; 18 of 19 men (95%) had radiation before Ra-223. In 24 men, 24 had a 1st Ra-223 infusion, 21 (88%) a 2nd, 16 (67%) a 3rd, 12 (50%) a 4th, 12 (50%) a 5th, and 10 (42%) a 6th infusion; 14 men (58%) did not complete 6 infusions, most stopping for clinical decline or death. In 24 men, median overall survival (OS) from first Ra-223 infusion to last visit or death was 4.9 months (0-33); OS from last Ra-223 infusion was 1.2 months (0-28); 13 men (54%) remain alive & 3 (13%) continue Ra-223. Conclusions: Our CRPC patients’ best OS of 4.9 months with Ra-223 does not match the 14.9 months first reported (NEJM 2013; 369:213-223). Fourteen of our 24 men (58%) did not complete 6 planned Ra-223 infusions because of clinical decline or death. This may represent a “real world referral bias” of heavily pre-treated patients as documented above. Selecting more appropriate patients for Ra-223 is currently under review (https://www.esmo.org/Oncology-News/EMA-PRAC-Recommends-Restricting-Use-of-Prostate-Cancer-Medicine-Radium-223-Dichloride)
+
+--------------------------------------------------
+Search Results Summary:
+Ra-223 was FDA approved for CRPC with symptomatic bone metastases without visceral metastatic disease.

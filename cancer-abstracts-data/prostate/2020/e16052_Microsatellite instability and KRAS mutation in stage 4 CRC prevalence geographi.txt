@@ -1,0 +1,18 @@
+Title: Microsatellite instability and KRAS mutation in stage 4 CRC: prevalence, geographic discrepancies and outcomes from the National Cancer Database.
+Abstract Number: e16052
+URL: https://meetings.asco.org/abstracts-presentations/187931
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Johannes Uhlig, MD, MPH
+
+================================================================================
+
+Full Abstract:
+Authors person Johannes Uhlig Section of Interventional Radiology, Yale School of Medicine, New Haven, CT info_outline Johannes Uhlig, Michael Cecchini, Stacey Stein, Jill Lacy, Kevin Kim Organizations Section of Interventional Radiology, Yale School of Medicine, New Haven, CT; Yale University, New Haven, CT; Yale School of Medicine, New Haven, CT; Smilow Cancer Hospital, Yale University, New Haven, CT Abstract Disclosures Research Funding No funding received None Background: To assess microsatellite instability (MSI) and KRAS mutation prevalence, discrepancies and their impact on outcome in AJCC stage IV colorectal adenocarcinoma (colorectal cancer; CRC). Methods: The 2010-2016 United States National Cancer Database was queried for stage IV CRC patients > 18yo and information on MSI and KRAS mutation. Microsatellite status was stratified as stable microsatellites (MSS, including low instability) and microsatellite instability high (MSI-H). KRAS status was stratified as mutation and wildtype. Prevalence and discrepancies were evaluated according to patient demographics, US geography and CRC factors. Overall survival (OS) was assessed using Cox proportional hazards models adjusting for age, gender, race, comorbidities, metastatic burden, CRC treatment, treatment center type, and year of CRC diagnosis. A priori, a statistical interaction test between microsatellite status, KRAS status and primary CRC site was planned. Results: Microsatellite/KRAS status was available for n = 10,844/n = 25,712 patients, respectively. OS was assessed in n = 5,904 patients with data on both microsatellite and KRAS status, and follow-up. Overall prevalence of MSI-H was 3.1% and KRAS mutation 42.4%. Microsatellite and KRAS status varied according to primary CR site, as presented in Table. Further variation was evident according to US-geography, with MSI-H rates ranging from 1.6% to 4.1%, and KRAS mutation rates ranging from 41.1% to 44%. On multivariable analyses, longer OS was observed in patients with KRAS wildtype versus mutation (HR = 0.91, 95% CI: 0.85-0.97 p = 0.004), MSS versus MSI-H (HR = 0.75, 95% CI: 0.62-0.9, p = 0.003), and left-sided versus right-sided CRC (HR = 0.65, 95% CI: 0.6-0.7, p < 0.001). The effect of KRAS mutation further varied with CRC site and microsatellite status (interaction p = 0.002). Conclusions: Depending on its primary site and US geography, stage IV CRC shows distinct mutational behavior. KRAS mutation, MSI-H, MSI-H and primary CRC sidedness independently affect overall survival and interact with distinct prognostic profiles. Generically classifying adenocarcinomas of different site as “CRC” might deprecate this diversity. Primary cancer site KRAS mutation MSI high cecum 58.2% 4.3% ascending 48.2% 4% transverse 37.9% 5.2% descending 36.8% 3.3% sigmoid 34.7% 2.2% rectosigmoid junction 37.5% 1.6% rectum 42.3% 1.8%
+
+--------------------------------------------------
+Search Results Summary:
+To assess microsatellite instability (MSI) and KRAS mutation prevalence, discrepancies and their impact on outcome in AJCC stage IV colorectal adenocarcinoma (colorectal cancer; CRC).

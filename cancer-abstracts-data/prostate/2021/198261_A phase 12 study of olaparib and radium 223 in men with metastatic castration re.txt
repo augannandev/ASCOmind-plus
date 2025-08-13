@@ -1,0 +1,44 @@
+Title: A phase 1/2 study of olaparib and radium-223 in men with metastatic castration-resistant prostate cancer (mCRPC) with bone metastases (COMRADE): Results of the phase 1 study.
+Abstract Number: 198261
+URL: https://meetings.asco.org/abstracts-presentations/198261
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Rana R. McKay, MD, FASCO
+
+================================================================================
+
+Full Abstract:
+Background:
+Radium-223 is an α-emitting radioisotope that induces DNA double-stranded breaks leading to cell death and has improved survival in mCRPC. In preclinical models, PARP inhibitors have shown efficacy as radiosensitizing agents. We designed a phase 1/2 trial to test the hypothesis that radium-223 + olaparib will demonstrate anti-tumor activity in mCRPC irrespective of homologous recombination repair deficiency (HRD) status.
+Methods:
+This is an open label, multi-center, phase 1/2 study (NCT03317392) evaluating the dosing, safety and efficacy of radium-223 + olaparib. Eligible patients (pts) had mCRPC with ≥2 bone metastases without visceral metastases or lymphadenopathy > 4 cm. There was no limit on prior therapy. All pts had a baseline biopsy. The phase 1 used a 3+3 dose escalation design with fixed dose radium-223 (55 kBq/kg IV every 4 weeks x 6). Dose level 1 (DL1) was olaparib 200 mg PO BID; DL2 was olaparib 300 mg PO BID. The primary objective was to determine the recommended phase 2 dose (RP2D) and safety. The dose limiting toxicities (DLT) evaluation period was 2 cycles (1 cycle=28 days). Secondary endpoints included radiographic progression-free survival (rPFS) defined by PCWG3 criteria, PSA response (50% decline from baseline), and alkaline phosphatase response (30% decline from baseline).
+Results:
+12 pts were enrolled on the phase 1. Median age was 68 (range 59-81) years. Median prior lines of CRPC therapies was 2 (1-5), including 3 (25%) who had received prior chemotherapy and 100% a prior novel hormone therapy. 6 pts were enrolled at DL1. 1 patient experienced a DLT outside the DLT evaluation period. 3 pts had grade (G) 3-4 treatment-related adverse events (TrAE) including G3 anemia (n=2) and G3 thrombocytopenia (n=1). No patient underwent dose reductions at DL1. 6 pts were enrolled at DL2. 1 patient experienced a DLT outside the DLT evaluation period. 2 pts had G3-4 TrAE including G3 anemia and G4 lymphocytopenia (n=1) and G3 stroke (n=1). 5 underwent dose reductions at DL2. There were no G5 events. Reason for treatment discontinuation is in the table below. After review of safety data, the safety monitoring committee deemed the RP2D of olaparib at 200 mg BID when combined with radium-223. Overall, PSA response and alkaline phosphatase response were 16.7% (n=2, 1 at DL1, 1 at DL2) and 67% (n=8, 3 at DL1, 5 at DL2), respectively. Median follow-up was 6.5 (range 2.8, 11.8) months, and 6-month rPFS was 57% (95% CI: 25%, 80%).
+Conclusions:
+We demonstrate that olaparib can be safety combined with radium-223 with RP2 dose of 200 mg BID. The phase 2 study of radium-223 +/- olaparib is accruing (target 120 pts). Outcomes by HRD status will be presented. Clinical trial information: NCT03317392
+DL1, N=6
+DL2, N=6
+Reason off treatment
+Still on treatment
+1
+1
+Adverse events
+.
+3
+Disease progression
+5
+2
+Olaparib cycles, median (range)
+3 (3-8)
+6.5 (3-13)
+Radium-223 cycles, median (range)
+3.5 (3-6)
+6 (3-6)
+
+--------------------------------------------------
+Search Results Summary:
+

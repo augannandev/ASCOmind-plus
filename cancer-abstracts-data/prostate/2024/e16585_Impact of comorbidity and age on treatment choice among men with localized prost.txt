@@ -1,0 +1,18 @@
+Title: Impact of comorbidity and age on treatment choice among men with localized prostate cancer.
+Abstract Number: e16585
+URL: https://meetings.asco.org/abstracts-presentations/176423
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Paul F. Pinsky
+
+================================================================================
+
+Full Abstract:
+Authors person Paul F Pinsky National Cancer Institute, Bethesda, MD info_outline Paul F Pinsky, Dudith Pierre-Victor, Iman K. Martin, Eric Miller, Worta J. McCaskill-Stevens, Robert L. Grubb III Organizations National Cancer Institute, Bethesda, MD; National Cancer Institute, Silver Spring, MD; Univ of Illinois At Chicago, Philadelphia, PA; National Cancer Institute, Rockville, MD; Washington University School of Medicine in St. Louis, St. Louis, MO Abstract Disclosures Research Funding U.S. National Institutes of Health Background: Prostate cancer (PCa) is the most commonly diagnosed cancer among men in the United States. A substantial proportion of PCa patients has at least one comorbidity. Comorbidities have a meaningful impact on cancer treatment choice. The objective of this study was to investigate the effect of comorbidity, as well as age, on treatment choice among men with localized PCa. Methods: From the Prostate, Lung, Colorectal, and Ovarian Cancer Screening Trial, men with localized PCa diagnosed from 1994-2014 were selected (N = 10, 281). Comorbidity score was determined based on a modified Charlson index. Treatment was classified as curative, either radical prostatectomy (RP) or radiation therapy with curative intent (RT), or non-curative (all other modalities). We used multivariate logistic regression to assess the association of treatment choice with age and comorbidity score (including their interaction), controlling for D’Amico risk group, demographics and diagnosis year. Results: About half (48.3%) of patients had comorbidity score ≥ 1. Most men received curative treatment (75.2%); RT (55.2%) was more common than RP (44.8%). The likelihood of curative treatment decreased with increasing age; odds ratios (OR) for curative treatment were 0.63 (95%CI: 0.52-0.76), 0.36 (95%CI: 0.30-0.43) and 0.13 (95%CI: 0.11-0.16) for men aged 65-69, 70-74 and 75+, respectively, compared to men aged 55-64. Men with a comorbidity score of 2+ (OR = 0.84; 95%CI: 0.74-0.96) were less likely to receive curative treatment than men with a score of 0. Within curative treatment, older age was strongly associated with RT. Compared to men aged 55-64 years, men aged 65-69 years (OR = 2.0; 95% CI: 1.72-2.3), 70-74 years (OR = 5.3; 95% CI: 4.5-6.3), and 75+ years (OR = 25.0; 95% CI: 17-33) were more likely to receive RT than RP. Men with a comorbidity score of 1 (OR = 1.16; 95%CI: 1.03-1.30) or 2+ (OR = 1.92; 95%CI: 1.6-2.3) were also more likely to receive RT. The interaction between age and comorbidity score was not significant. Conclusions: In this cohort, age was a strong independent predictor of treatment choice for localized PCa. Although comorbidity was not a strong predictor of curative treatment, it was associated with receipt of RT.
+
+--------------------------------------------------
+Search Results Summary:
+Prostate cancer (PCa) is the most commonly diagnosed cancer among men in the United States. A substantial proportion of PCa patients has at least one comorbidity. Comorbidities have a meaningful impact on cancer treatment choice. The objective of this study was to investigate the effect of comorbidity, as well as age, on treatment choice among men with localized PCa.

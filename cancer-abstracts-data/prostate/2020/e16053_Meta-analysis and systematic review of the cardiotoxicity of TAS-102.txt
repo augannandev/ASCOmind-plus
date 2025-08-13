@@ -1,0 +1,18 @@
+Title: Meta-analysis and systematic review of the cardiotoxicity of TAS-102.
+Abstract Number: e16053
+URL: https://meetings.asco.org/abstracts-presentations/187816
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Carlos Alberto Lopez, MD, MPH
+
+================================================================================
+
+Full Abstract:
+Authors person Carlos Alberto Lopez Northwell Cancer Institute, New Hyde Park, NY info_outline Carlos Alberto Lopez, Elham Azimi-Nekoo, Su Yun Chung, James Newman, Janice Shen, Wasif M. Saif Organizations Northwell Cancer Institute, New Hyde Park, NY Abstract Disclosures Research Funding No funding received None Background: Fluoropyrimidines such as 5-FU and capecitabine are known to be cardiotoxic drugs. TAS-102 (trifluridine-tipiracil) is a novel oral fluoropyrimidine that was recently FDA approved to treat gastric and colon cancer. However, the incidence of cardiac related events of TAS-102 is not fully ascertained. We performed a meta-analysis and systematic review to determine the incidence of cardiotoxic events associated with TAS-102. Methods: We performed a literature search through PubMed, Embase, and Web of Science to identify any publications in any language up to December 31st, 2019 where TAS-102 (and equivalent terms such as “trifluridine-tipiracil” and “Lonsurf”) was used. These were then manually reviewed to identify any publications reporting cardiac events. Randomized controlled trials (RCTs) were included for meta-analysis to determine the incidence of cardiotoxic events, which were summarized as pooled odds ratios (OR) when compared to placebo. Non-randomized, non-controlled clinical trials (phase I and phase II studies) were included in the systematic review but excluded from the pooled OR calculation. Results: 869 publications were identified in the initial literature search, of which 17 trials (3 Phase III studies, 6 Phase II studies, and 8 phase I studies) met inclusion criteria. A total of 1,877 patients among 4 RCTs were included in the meta-analysis. Compared with placebo, TAS-102 did not increase the risk of myocardial infarction (OR 1.97 95% CI [0.22-17.89]), hypertension (OR 0.73 95% CI [0.37, 1.44]), palpitations (OR 1.51 95% CI [0.30, 7.56]), cardio-pulmonary arrest (OR 0.83 95% CI [0.11-6.32]), or syncope (OR 1.50 95% CI [0.06-37.14]). Among the 1,252 patients receiving TAS-102, the overall incidence of cardiovascular events was low, with hypertension being the most common side effect (21 events), followed by palpitations (6 events), cardiopulmonary arrest (2 events), and myocardial infarction (3 events), though there was no statistically significant increased risk compared to placebo. No deaths were reported. Conclusions: Unlike other fluoropyrimidines, TAS-102 appears to be a cardiogentle drug, with no increased risk of cardiac events compared to placebo. Since fluoropyrimidines remain the backbone of treatment for gastrointestinal malignancies, TAS-102 can offer an alternative to patients who developed cardiotoxicities from other agents. Prospective studies with consideration of cardiac risk factors are required.
+
+--------------------------------------------------
+Search Results Summary:
+Fluoropyrimidines such as 5-FU and capecitabine are known to be cardiotoxic drugs. TAS-102 (trifluridine-tipiracil) is a novel oral fluoropyrimidine that was recently FDA approved to treat gastric and colon cancer. However, the incidence of cardiac related events of TAS-102 is not fully ascertained. We performed a meta-analysis and systematic review to determine the incidence of cardiotoxic events associated with TAS-102.

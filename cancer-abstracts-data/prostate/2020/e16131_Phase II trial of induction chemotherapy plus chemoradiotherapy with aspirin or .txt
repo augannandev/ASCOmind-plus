@@ -1,0 +1,18 @@
+Title: Phase II trial of induction chemotherapy plus chemoradiotherapy with aspirin or placebo in high-risk rectal cancer (ICAR).
+Abstract Number: e16131
+URL: https://meetings.asco.org/abstracts-presentations/189091
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Juliana Souza, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Juliana Souza Instituto Nacional do Cáncer (INCA), Rio de Janeiro, Brazil info_outline Juliana Souza, Rodrigo Otavio Araujo, Marcus Valadão, Victor Marcondes Lopes Santos, Jamille Gonzaga, Monica Luciana Agostinho Padoan, Monique Alvares Barbosa, Claudia Torres, Raquel Guimarães, Juliana Carvalho, Roberto de Almeida Gil, Isabele Small, Maria Aparecida Ferreira, João Pedro Araujo Simões Correa, Ivanir Martins Oliveira, Eduardo Linhares Rielo Mello, Andreia Cristina De Melo, Luiz H. Araujo Organizations Instituto Nacional do Cáncer (INCA), Rio de Janeiro, Brazil; Instituto Nacional de Câncer (INCA), Rio de Janeiro, Brazil; Instituto Nacional do Cáncer, Rio de Janeiro, Brazil; Instituto Nacional de Cancer (INCA), Rio de Janeiro, Brazil Abstract Disclosures Research Funding No funding received None Background: Induction chemotherapy (IC) followed by chemoradiation (CRT) is an attractive approach in locally-advanced, high-risk rectal cancer. Additionally, aspirin has shown potential to lower recurrence rate in colorectal cancer, and improve outcomes alongside CRT in rectal cancer, with higher rate of tumor downstaging. Methods: Randomized, double-blind phase 2 trial to evaluate induction treatment with XELOX, followed by capecitabine-based chemoradiotherapy with aspirin or placebo in a high risk population selected by MRI. The aim of this study was to evaluate MRI response after total neoadjuvant treatment with aspirin or placebo. Results: Of the 25 pts who started treatment between January 2018 and March 2019, 4 pts did not complete (1 pt grade 5 diarrhea; 1pt treatment adherence). Median age was 55yo (32.9 - 73.6), 8 pts (32%) were women, and 80% had 3 or more high-risk criteria. 20 pts (80%) showed symptom improvement in the first cycle of IC. Of the 21 patients who finished treatment until interim analysis, 11 pts received aspirin (2 pts had MRI complete response (CR), 3 pts had minor/no response, and 3 pts had progression disease (PD)). 10 pts received placebo (4 MRI CR, 3 pts had minor/no response, and no PD). Conclusions: Aspirin added to chemoradiotherapy was safe but did not improve response to total neoadjuvant treatment. The study was closed due absence of benefit. Clinical trial information: NCT03170115.
+
+--------------------------------------------------
+Search Results Summary:
+Induction chemotherapy (IC) followed by chemoradiation (CRT) is an attractive approach in locally-advanced, high-risk rectal cancer. Additionally, aspirin has shown potential to lower recurrence rate in colorectal cancer, and improve outcomes alongside CRT in rectal cancer, with higher rate of tumor downstaging.

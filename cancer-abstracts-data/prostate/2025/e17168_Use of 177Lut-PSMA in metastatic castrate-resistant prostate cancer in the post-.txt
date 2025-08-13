@@ -1,0 +1,18 @@
+Title: Use of 177Lut-PSMA in metastatic castrate-resistant prostate cancer in the post-chemotherapy setting: Early vs late treatment.
+Abstract Number: e17168
+URL: https://meetings.asco.org/abstracts-presentations/247255
+Source: ASCO Selenium Scraper
+Year: 2025
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Eman E. Ahmed
+
+================================================================================
+
+Full Abstract:
+Authors person Eman Ahmed Mayo Clinic, Rochester, MN info_outline Eman Ahmed, Milad Bonakdarhashemi, Mohamed Ahmed, Kelly Lehner, Jack Andrews, Eugene Kwon Organizations Mayo Clinic, Rochester, MN; Department of Urology, Mayo Clinic in Rochester, Rochester, MN; Mayo Clinic Arizona, Phoenix, AZ; Mayo Clinic Rochester, Rochester, MN Abstract Disclosures Research Funding No funding sources reported Background: Prostate cancer is the most prevalent cancer and the second leading cancer related death in men in the USA. Radical prostatectomy represents the mainstay treatment for patients with localized prostate cancer. Management of metastatic disease requires multidisciplinary practice and innovative approach for individualized favorable outcomes. Treatment sequencing in patients with advanced prostate cancer has been reported to impact patient’s response to subsequent treatment as well as overall survival outcomes. Here in, we thought to investigate the impact of prior chemotherapy treatment on PSA response rates to 177Lut PSMA. Methods: We conduct a single center retrospective study including 164 patients diagnosed with advanced prostate cancer and treated with 177Lut PSMA for metastatic hormone resistant prostate cancer. 92 patients received 177Lut PSMA as a salvage treatment late after chemotherapy (group A), and we compared them with 70 patients received 177Lut PSMA early in an adjuvant fashion within 3 months after chemotherapy (group B). Favorable PSA response was defined by 50% or more reduction in PSA value after complete treatment with 177Lut PSMA. Results: Approximately 43 % of patients in (group B) received their 177Lut PSMA within six months. The average number of chemo cycles received by patients of (group B) is between 3 to 6 cycles. Median patients’ age (IQR) 63 years (57.75 - 68), median (IQR) number of cycles of 177Lut PSMA 5 (5 - 6). Statistical analyses were performed to determine any differences in post lut PSA response in both groups of patients. Approximately 49 % of patients in (group A) had favorable PSA response versus 44 % of patients in (group B) (p-value 0.3853). Conclusions: The use of 177Lut-PSMA in the post-chemotherapy setting demonstrated similar outcomes whether administered early or late. These findings suggest that the timing of treatment may not significantly impact its effectiveness, but further research is needed to confirm these results and explore potential optimizations for patient care.
+
+--------------------------------------------------
+Search Results Summary:
+Prostate cancer is the most prevalent cancer and the second leading cancer related death in men in the USA. Radical prostatectomy represents the mainstay treatment for patients with localized prostate cancer. Management of metastatic disease requires multidisciplinary practice and innovative approach for individualized favorable outcomes. Treatment sequencing in patients with advanced prostate cancer has been reported to impact patient’s response to subsequent treatment as well as overall survival outcomes. Here in, we thought to investigate the impact of prior chemotherapy treatment on PSA response rates to 177Lut PSMA.

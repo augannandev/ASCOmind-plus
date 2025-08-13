@@ -1,0 +1,18 @@
+Title: Stage II high-risk colon cancer: A retrospective analysis of the benefit of chemotherapy in patient subgroups based on the risk factor.
+Abstract Number: e16068
+URL: https://meetings.asco.org/abstracts-presentations/187974
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Linu Abraham Jacob, MD, DM, MBBS
+
+================================================================================
+
+Full Abstract:
+Authors person Linu Abraham Jacob Kidwai Memorial Institute of Oncology, Bangalore, Karnataka, India info_outline Linu Abraham Jacob Organizations Kidwai Memorial Institute of Oncology, Bangalore, Karnataka, India Abstract Disclosures Research Funding No funding received None Background: Adjuvant chemotherapy is routinely recommended for patients with high risk stage II colon cancer. However the risk conferred by each high risk feature (HRF) may be different. This study was done to analyze the magnitude of benefit of chemotherapy in individual HRF patient subgroups. Methods: Resected stage II colon cancer patients during the period January 2012 to March 2018 were retrospectively analyzed for risk features, chemotherapy treatment and survival. Statistical analysis was done with SPSS 16.0. Results: A total of 41 patients were identified as having pathological stage II colon cancer during the study period - 63.4% were males and 36.6%, females. 68.3% had left sided tumor while 31.7% had right sided tumor. 29.3% had none of the high risk features and received no adjuvant chemotherapy. 70.7% patients had at least one of the high risk features and received adjuvant chemotherapy with fluoropyrimidine ± oxaliplatin. 90.2%, 7.3% and 2.5% had stage IIA, IIB and IIC disease respectively. 36.6%, 43.9% and 19.5% had grade I, II and III tumors respectively. Lymphovascular invasion (LVI) and perineural invasion (PNI) were present in 14.6% and 19.5% patients respectively. 29.3% had inadequate lymph node dissection. 22.0% patients had elevated CEA prior to surgery and 4.9% patients had presented with intestinal obstruction. After a minimum follow up period of 20 months the median disease free survival (DFS) was 26 months for the entire cohort. Left sided tumors had significantly prolonged median DFS compared to the right sided tumors (31 vs 26 months; p = 0.05). Median DFS was 24 months for the high risk group compared to 33 months for the low risk group (p = 0.002). On subset analysis T4 HRF subgroup had superior DFS, while LVI HRF subgroup had inferior DFS both of which were statistically significant. Conclusions: Magnitude of chemotherapy benefit was highest in the T4 subgroup, while it was lowest in the LVI subgroup in resected stage II high risk colon cancer Risk feature N Median DFS (months) p value T4 4 29 0.003 Grade 3 8 26 0.421 LVI 6 21 0.006 PNI 8 24 0.22 Inadequate LN dissection 12 24 0.16 Elevated CEA 9 27 0.73 Obstruction 2 18 0.31
+
+--------------------------------------------------
+Search Results Summary:
+Adjuvant chemotherapy is routinely recommended for patients with high risk stage II colon cancer. However the risk conferred by each high risk feature (HRF) may be different. This study was done to analyze the magnitude of benefit of chemotherapy in individual HRF patient subgroups.

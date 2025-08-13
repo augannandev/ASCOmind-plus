@@ -1,0 +1,22 @@
+Title: CYCLONE 1: A phase 2 study of abemaciclib in patients with metastatic castration-resistant prostate cancer (mCRPC) previously treated with a novel hormonal agent and taxane-based chemotherapy.
+Abstract Number: 201266
+URL: https://meetings.asco.org/abstracts-presentations/201266
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Neeraj Agarwal, MD, FASCO
+
+================================================================================
+
+Full Abstract:
+Background:
+In cancer cells, the cyclin-dependent kinases 4 and 6 (CDK4 & 6)/retinoblastoma protein (Rb) pathway is commonly altered, resulting in uncontrolled cell cycle entry and proliferation. CDK4 & 6 inhibitors represent a major advance in the management of hormone receptor-positive (HR+), human epidermal growth factor receptor 2-negative (HER2-) advanced or metastatic breast cancer (ABC or MBC, respectively). Abemaciclib is an oral selective inhibitor of CDK4 & 6 administered on a continuous dosing schedule, approved in combination with endocrine therapy for HR+, HER2- ABC or MBC. In addition, abemaciclib is also approved by the FDA as monotherapy for HR+, HER2- ABC or MBC following endocrine therapy and prior chemotherapy in the metastatic setting. Similar to the estrogen receptor signaling pathway in breast cancer cells, there is evidence that the androgen receptor axis activates CDK4 & 6 to sustain prostate cancer cell proliferation and survival. Preclinical studies in prostate cancer cell lines and xenograft models showed that abemaciclib exhibits single agent activity by inducing cell cycle arrest and tumor growth inhibition. Clinical activity of abemaciclib in combination with abiraterone and prednisone is investigated in a randomized phase 2 study in the first-line mCRPC setting (CYCLONE 2, NCT03706365). Despite recent advances, management of heavily pretreated mCRPC remains a major clinical challenge. Herein, we hypothesize that mCRPC patients whose disease progressed after novel hormonal agents (NHA) and taxane therapies may derive therapeutic benefit from single agent abemaciclib.
+Methods:
+CYCLONE 1 is a phase 2, single-arm, multicenter study to assess the safety and efficacy of abemaciclib monotherapy in 40 patients with mCRPC progressing after ≥1 NHA and 2 taxane regimens. Patients will be enrolled at time of prostate specific antigen (PSA) or radiographic progression per PCWG3 criteria and have at least 1 measurable lesion per RECIST 1.1. Metastatic tumor tissue (fresh biopsy or archival material <12 weeks) is required at baseline for biomarker analysis. Patients will receive abemaciclib 200 mg twice daily until unacceptable adverse events or disease progression. The primary objective is investigator-assessed objective response rate (ORR). Key secondary objectives include safety, radiographic progression-free survival, overall survival, PSA response rate, time to PSA progression, time to symptomatic progression, Ki-67 expression, patient-reported outcomes, and pharmacokinetics. Assuming an ORR of 15%, the study has over 73% power to observe a response rate of at least 12.5%. Accrual began in January 2021. Clinical trial information: NCT04408924.
+
+--------------------------------------------------
+Search Results Summary:
+

@@ -1,0 +1,18 @@
+Title: The predictive power of free (vs. total) testosterone in aggressive prostate cancer.
+Abstract Number: e16570
+URL: https://meetings.asco.org/abstracts-presentations/177873
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Maxwell M Towe, BS
+
+================================================================================
+
+Full Abstract:
+Authors person Maxwell M Towe University of California, Irvine, Orange, CA info_outline Maxwell M Towe, Linda My Huynh, Farouk El Khatib, Mohamad M Osman, Faysal A Yafi, Thomas Edward Ahlering Organizations University of California, Irvine, Orange, CA Abstract Disclosures Research Funding Other Background: The role of testosterone in prostate growth and the development of prostate cancer is a controversial topic. Most current data suggest that lower testosterone leads to higher grade conversion, whereas higher testosterone may serve a protective role in preventing both development and recurrence. We seek to analyze whether free testosterone (FT) values can predict aggressiveness in prostate cancers. Methods: We retrospectively reviewed 830 patients who presented to a single surgeon for evaluation and management of prostate cancer. Total Testosterone (TT) and FT values were obtained on each patient at initial visit. All patients underwent radical prostatectomy and samples from surgery were sent for grading and staging. Patients were stratified by FT quartile (25th [≤ 4.42 ng/dL], 50th [4.43 – 5.60 ng/dL], 75th [5.61 – 6.95 ng/dL], and 100th [≥ 6.96 ng/dL]). Results: Of 830 patients, 168 (22.2%), 330 (39.8%), 188 (22.7%), 46 (5.5%), and 98 (11.8%) had GS 3+3, 3+4, 4+3, 4+4, and ≥4+5, respectively. Mean FT values for each Gleason grade group (GGG) were significantly different (p = 0.008). Mean FT was also lower in patients with higher stage disease (p = 0.01). In contrast, TT did not differ significantly among GGG (p = 0.489) or stage (p = 0.670). Patients who had a FT level in the lowest quartile (≤ 4.42 ng/dL) had a higher proportion of GGG 5 (15.6%) than patients in the highest quartile (≥ 6.96 ng/dL) (6.2%) (p = 0.002). After adjusting for age, prostate specific antigen (PSA), and body mass index (BMI) in multivariate analysis, lower FT was a significant predictor of high-risk score 9-10 (OR: 0.912, 95% CI: 0.836-0.994, p = 0.036). These trends showed strong correlation in pathologic stage (p = 0.057), but larger numbers are needed to gauge effect size. Conclusions: Based on our data, biochemically low FT may be a risk factor for high grade and high stage cancer. These results have implications for the current recommendations for testosterone therapy, which is contraindicated in men with prostate cancer. Multivariate analysis examining the effect of FT on GGG, adjusting for age, PSA, and BMI. B S.E. Sig. Exp(B) 95% C.I.for EXP(B) Lower Upper Free Testosterone -0.080 0.045 0.036 0.923 0.846 0.994 Age 0.037 0.014 0.007 1.038 1.010 1.067 Preoperative PSA 0.089 0.015 < 0.001 1.093 1.062 1.124 BMI 0.016 0.027 0.554 1.016 0.964 1.071 Constant -4.681 1.284 0.000 0.009
+
+--------------------------------------------------
+Search Results Summary:
+The role of testosterone in prostate growth and the development of prostate cancer is a controversial topic. Most current data suggest that lower testosterone leads to higher grade conversion, whereas higher testosterone may serve a protective role in preventing both development and recurrence. We seek to analyze whether free testosterone (FT) values can predict aggressiveness in prostate cancers.

@@ -1,0 +1,18 @@
+Title: Toxicity and tolerance profile of ANTI-EGFRS in metastatic colorectal cancer RAS wild type from the east of Algeria.
+Abstract Number: e16032
+URL: https://meetings.asco.org/abstracts-presentations/188994
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Abdelaziz Ammari, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Ammari Abdelaziz Faculty of Medicine, University 3, Constantine, Algeria info_outline Ammari Abdelaziz, Linda Djebnoune, Besma Khater, Aicha Benmansour, Assia Bensalem Organizations Faculty of Medicine, University 3, Constantine, Algeria; CAC Batna, Batna, Algeria; Faculté de Médecine, Université 3, Constantine, Algeria Abstract Disclosures Research Funding No funding received None Background: The results of the different studies showed that the use of anti-EGFRs (Epidermal Growth Factor Receptor) in the management of mCRCs, confront the healthcare team to a new toxicity which until then, were unknown before the era of anti EGFRs. knowing that there were no Algerian patients in these studies, reason for us to do this work. Methods: Between October 2015 and October 2018, our work consists of an epidemiological, observational, descriptive, longitudinal prospective study, including all patients with metastatic colorectal cancer RAS wild type, receiving specific medical treatment with anti EGFR (Panitumumab or Cetuximab) from Medical Oncology Department of Didouche Mourad Hospital of Constantine and the Medical Oncology Department of Batna’s Anti Cancer Center, performance status 0-2, and age 18-75 years. We have completed this work whose main objective is to evaluate the toxicity of anti EGFRs in patients with mCRC RAS wild-type from the east of Algeria. Results: 60 patients received an anti EGFR (Panitumumab or Cetuximab), in our study the most common toxicity was folliculitis with an average onset time of 3.36 weeks and a frequency of 83% of grade 2 and 3. Xerosis was observed in 71% of patients. Paronychia was observed in 50% of patients, in addition to the classical toxicities observed with the different chemotherapy regimens used in mCRCs. For secondary objectives, the median progression free survival in our study was 12 months, with a 95% confidence interval [10,787-13,213]. This median progression-free survival is comparable to those reported in the major anti-EGFR trials. Conclusions: Our results suggest that the Algerian patients with metastatic colorectal cancer RAS wild-type have the same profile of toxicity comparing to the results from different international trials studying anti EGFRs.
+
+--------------------------------------------------
+Search Results Summary:
+The results of the different studies showed that the use of anti-EGFRs (Epidermal Growth Factor Receptor) in the management of mCRCs, confront the healthcare team to a new toxicity which until then, were unknown before the era of anti EGFRs. knowing that there were no Algerian patients in these studies, reason for us to do this work.

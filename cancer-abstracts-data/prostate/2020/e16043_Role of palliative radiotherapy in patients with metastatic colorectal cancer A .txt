@@ -1,0 +1,18 @@
+Title: Role of palliative radiotherapy in patients with metastatic colorectal cancer: A propensity score matching analysis.
+Abstract Number: e16043
+URL: https://meetings.asco.org/abstracts-presentations/188467
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Zhenyu Lin, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Zhenyu Lin Cancer Center, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China info_outline Zhenyu Lin, Li Ba, Jinghua Ren, Tao Zhang Organizations Cancer Center, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China Abstract Disclosures Research Funding Other National Natural Science Foundation of China (NSFC) Background: To explore whether palliative radiotherapy can further improve overall survival (OS) of patients with metastatic colorectal cancer (mCRC) receiving systemic treatment and analyze its survival prognostic factors. Methods: The demographics, tumor characteristics, and survival outcomes of 484 mCRC patients who underwent systemic treatment with or without palliative radiotherapy from December 2014 to September 2019 were analyzed. A propensity-score model was used to compare the group of patients receiving systemic treatment plus palliative radiotherapy (PR) or simple systemic treatment (ST). Results: There were 334 ST patients and 154 PR patients in total, and 288 cases (144 cases/group) after paired matching. The OS (1 year, 2 years, 3 years) in PR group were 73.6%, 40.3%, 16.0% and, respectively, which were higher than those in ST group (61.1%, 22.9%, 6.9%). The median survival times were 50.8 months and 32.2 months, respectively (P = 0.003). Multivariate analysis showed that the site of primary tumor, patient surgery status, local treatment of metastasis as well as whether or not radiotherapy are independent prognostic factors of survival time. Conclusions: We definitely demonstrated that palliative radiotherapy on the basis of systemic chemotherapy is expected to increase OS in mCRC patients. Left colon, primary surgery, local treatment of metastasis and radiotherapy are the independent prognostic factors of mCRC.
+
+--------------------------------------------------
+Search Results Summary:
+To explore whether palliative radiotherapy can further improve overall survival (OS) of patients with metastatic colorectal cancer (mCRC) receiving systemic treatment and analyze its survival prognostic factors.

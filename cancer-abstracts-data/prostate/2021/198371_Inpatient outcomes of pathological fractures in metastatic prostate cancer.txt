@@ -1,0 +1,37 @@
+Title: Inpatient outcomes of pathological fractures in metastatic prostate cancer.
+Abstract Number: 198371
+URL: https://meetings.asco.org/abstracts-presentations/198371
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Kriti Ahuja, MBBS
+
+================================================================================
+
+Full Abstract:
+Background:
+Bone is a frequent site of metastasis in prostate cancer and is involved in 88% of patients with metastatic prostate cancer. Metastasis to bone increases the risk of pathological fractures, which are associated with increased morbidity and mortality. We performed a retrospective analysis on inpatient outcomes of pathological fractures in prostate cancer metastatic to bone in comparison to men with osteoporotic fractures. We also examined the disposition of these patients.
+Methods:
+We queried the Nationwide Inpatient Sample between 2016 and 2018 to retrospectively identify adult males with osteoporotic fractures and those with pathological fractures secondary to metastatic prostate cancer. We used T-test and chi-square test to compare means of continuous variables and compare proportions of categorical variables respectively. Multivariate analysis of predictors of mortality, length of stay, hospitalization costs and disposition in this group were performed.
+Results:
+A total of 22,800 fractures, combining osteoporotic fractures and pathological fractures due to metastatic prostate cancer were identified, of which the latter accounted for 13.6%. Patients with pathological fractures secondary to metastatic prostate cancer were younger (mean age 73.5 vs 77.5 years, p < 0.0001) and more likely to be black (16.4% vs 4.6%, p < 0.0001) or Hispanic (8.4% vs 5.1%, p < 0.0001). Adjusting for demographic variables and comorbidity burden, pathological fractures in patients with prostate cancer metastasis to the bone were not associated with a significant increase in mortality (aOR 1.46, 95% CI 0.82-2.60, p = 0.20) or length of hospital stay. However, they did have higher hospitalization costs by $2,610 per admission (p = 0.01). Patients with pathological fractures secondary to prostate cancer are less likely to be discharged to a nursing facility (aOR 0.50, 95% CI 0.40-0.62, p < 0.001) and are more likely to be transitioned to home health care (aOR 1.49, 95% CI 1.20-1.84, p < 0.001).
+Conclusions:
+Pathological fractures secondary to prostate cancer are less frequent than osteoporotic fractures in men and are not independent predictors of mortality or length of stay. This is in keeping with the relatively indolent course of prostate cancer. However, there is an increased cost of hospital stay associated with pathological fractures in metastatic prostate cancer. Interestingly, these patients are more likely to be discharged with home health care and are less likely to go to a nursing facility, making disposition a crucial aspect in the care of these patients.
+
+--------------------------------------------------
+Full Abstract:
+Background:
+Bone is a frequent site of metastasis in prostate cancer and is involved in 88% of patients with metastatic prostate cancer. Metastasis to bone increases the risk of pathological fractures, which are associated with increased morbidity and mortality. We performed a retrospective analysis on inpatient outcomes of pathological fractures in prostate cancer metastatic to bone in comparison to men with osteoporotic fractures. We also examined the disposition of these patients.
+Methods:
+We queried the Nationwide Inpatient Sample between 2016 and 2018 to retrospectively identify adult males with osteoporotic fractures and those with pathological fractures secondary to metastatic prostate cancer. We used T-test and chi-square test to compare means of continuous variables and compare proportions of categorical variables respectively. Multivariate analysis of predictors of mortality, length of stay, hospitalization costs and disposition in this group were performed.
+Results:
+A total of 22,800 fractures, combining osteoporotic fractures and pathological fractures due to metastatic prostate cancer were identified, of which the latter accounted for 13.6%. Patients with pathological fractures secondary to metastatic prostate cancer were younger (mean age 73.5 vs 77.5 years, p < 0.0001) and more likely to be black (16.4% vs 4.6%, p < 0.0001) or Hispanic (8.4% vs 5.1%, p < 0.0001). Adjusting for demographic variables and comorbidity burden, pathological fractures in patients with prostate cancer metastasis to the bone were not associated with a significant increase in mortality (aOR 1.46, 95% CI 0.82-2.60, p = 0.20) or length of hospital stay. However, they did have higher hospitalization costs by $2,610 per admission (p = 0.01). Patients with pathological fractures secondary to prostate cancer are less likely to be discharged to a nursing facility (aOR 0.50, 95% CI 0.40-0.62, p < 0.001) and are more likely to be transitioned to home health care (aOR 1.49, 95% CI 1.20-1.84, p < 0.001).
+Conclusions:
+Pathological fractures secondary to prostate cancer are less frequent than osteoporotic fractures in men and are not independent predictors of mortality or length of stay. This is in keeping with the relatively indolent course of prostate cancer. However, there is an increased cost of hospital stay associated with pathological fractures in metastatic prostate cancer. Interestingly, these patients are more likely to be discharged with home health care and are less likely to go to a nursing facility, making disposition a crucial aspect in the care of these patients.
+
+--------------------------------------------------
+Search Results Summary:
+

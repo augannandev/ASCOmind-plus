@@ -1,0 +1,18 @@
+Title: Gender disparities in anal cancer incidence and mortality: A long-term US population-based analysis.
+Abstract Number: e16059
+URL: https://meetings.asco.org/abstracts-presentations/188872
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Firas Baidoun, MD, FACP
+
+================================================================================
+
+Full Abstract:
+Authors person Firas Baidoun Cleveland Clinic Foundation, Cleveland, OH info_outline Firas Baidoun, Anas M Saad, Mohamed Gad, Mohammad Maysara Asfari, Muhammad Talal Sarmini, Yasmine Elkeraie, Yazan Alkehef, Muneer J. Al-Husseini, Muhamad Alhaj Moustafa Organizations Cleveland Clinic Foundation, Cleveland, OH; Medical College of Georgia-Augusta University, Augusta, GA; High institute of Public Health-Alexandria University, Alexandria, Egypt; Medicine School-The University of Jordan, Amman, Jordan; Ascension St. John Hospital, Detroit, MI; Mayo Clinic, Jacksonville, FL Abstract Disclosures Research Funding No funding received None Background: Anal cancer is an uncommon malignancy accounting for less than 3% of gastrointestinal malignancies in the US. In this large database study, we aimed to re-evaluate the difference in the incidence and mortality trend in both genders. Methods: We used SEER 18 database to study anal cancer cases in the US during 2000-2016. Incidence and mortality rates of anal cancer were calculated by gender and were expressed by 1,000,000 person-years. Annual percent change (APC) was calculated using join point regression software. Results: We reviewed 25,418 patients with anal cancer, of which 61.4% were females. Incidence of anal cancers was 14.375 and 19.427 per 1,000,000 person-years, in males and females, respectively. Incidence rates of anal cancer significantly increased over the study period, but this increase was sharper in females (APC = 2.220%, 95%CI [1.924-2.517], P < .001) when compared to males (APC = 0.915%, 95%CI [0.303-1.531], P = .006). Mortality rates from anal cancer over the study period were 7.425 and 7.532 per 1,000,000 person-years, in males and females, respectively. Overall anal cancer mortality rates did not change between 2000-2009 but started to decrease starting from 2010 and this decrease became sharpest between 2014-2016; APC = -44.905%, 95%CI [-57.572- -28.457], P = .001). Mortality rates followed the same trend in both genders. Conclusions: Anal cancer incidence is increasing with significant increase in the incidence trend is noticed in females compared to males which is a change from the previous trend that was seen from 1973-2000. On the other hand, anal cancer mortality has started to decrease for the first time starting from 2010 with no difference in the mortality trend between males and females. This improvement in mortality rate can be explained by the improvement in early detection rate and possibly improvement in the treatment approach for these high-risk patients.
+
+--------------------------------------------------
+Search Results Summary:
+Anal cancer is an uncommon malignancy accounting for less than 3% of gastrointestinal malignancies in the US. In this large database study, we aimed to re-evaluate the difference in the incidence and mortality trend in both genders.

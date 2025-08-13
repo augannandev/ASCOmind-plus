@@ -1,0 +1,18 @@
+Title: Does extent of resection of glioblastoma multiforme affect survival?
+Abstract Number: e14514
+URL: https://meetings.asco.org/abstracts-presentations/190218
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: emad nabil hassan
+
+================================================================================
+
+Full Abstract:
+Authors person Emad Eldin Nabil Clinical Oncology Department, Sohag University, Sohag, Egypt info_outline Emad Eldin Nabil, Ashraf Elyamany Organizations Clinical Oncology Department, Sohag University, Sohag, Egypt; Medical Oncology Department, South Egypt Cancer Institute, Assiut University, Egypt/KSMC, Riyadh, Saudi Arabia Abstract Disclosures Research Funding No funding received None Background: Glioblastoma Multiforme (GBM) is the most common primary intracranial tumor. The effect on survival of extent of tumor resection for GBM tumors remains controversial. Our study aims to detect the role of extent of tumor resection in improvement of survival in patients with GBM. Methods: A prospective study for 84 patients with GBM, was conducted between March 2013 and September 2016 in Sohag University Hospital and Sohag Cancer Center. For all of them surgery was done. Either biopsy (stereotactic or open), debulking or gross total resection (complete). All patients received radical radiotherapy concurrent with Temozolomide chemotherapy followed by six to eight cycles of Temozolomide. All patients were followed by clinical examination and brain imaging. Results: 59% of our patients were males and 41% were females. About 78% of the patients had either Eastern Cooperative Oncology Group (ECOG) Performance Status 1 or 2. Median age was 51years with a range (25-70 years). In 38 patients (45.8%) debulking was done, while complete resection was done in 20 patients (24.1%). only biopsy was done in 30% of patients. We found a statistically significant effect for the extent of resection on overall survival (OS)(22 vs 19.5 months) and progression free survival (PFS)(18.25 vs17.42 months) for patients with complete resection vs patients with debulking only. In addition younger age patients had a statistically significant longer survival. Conclusions: Gross total resection (complete resection) of intracranial GBM was associated with longer survival. Gross total resection should be performed whenever possible.
+
+--------------------------------------------------
+Search Results Summary:
+Glioblastoma Multiforme (GBM) is the most common primary intracranial tumor. The effect on survival of extent of tumor resection for GBM tumors remains controversial. Our study aims to detect the role of extent of tumor resection in improvement of survival in patients with GBM.

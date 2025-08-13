@@ -1,0 +1,53 @@
+Title: Immunity to childhood vaccines following high dose chemotherapy (HDCT) and autologous stem cell transplantation (ASCT) for germ cell tumors (GCT) with comparison to Hodgkin lymphoma (HL).
+Abstract Number: 196415
+URL: https://meetings.asco.org/abstracts-presentations/196415
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Darren R. Feldman, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+HDCT/ASCT represents a curative salvage treatment for patients with GCT but is rarely used for other solid tumors. Patients undergoing HDCT/ASCT for hematologic neoplasms require revaccination for their childhood immunizations. Whether this is necessary in patients with GCT is unknown.
+Methods:
+In this prospective longitudinal study, patients with GCT undergoing HDCT-ASCT from 11/2010 to 5/2018 had serologies for Measles, Mumps, Rubella, Diphtheria, Tetanus, Polio, and Varicella Zoster measured before HDCT and at 3, 6, and in a subset, 12+ months after the last HDCT with results at these timepoints compared using descriptive statistics. In addition, titer levels at ≥6 months post-transplant were matched 1:1 for age and gender with HL patients who underwent HDCT/ASCT during the same time period. Immunity was compared between cohorts using the Cochran-Mantel-Haenszel test.
+Results:
+Of 80 patients with GCT (median age 30, 84% nonseminoma), 91% received 3 sequential transplants and 68 had repeat titers at ≥6 months. Immunity at baseline was >95% for Diphtheria, Tetanus and Polio and 89% for Varicella Zoster but lower for Measles (74%), Mumps (85%), and Rubella (83%) (Table). Compared to baseline, proportional immunity for all infections was similar at 3, 6, and 12 months post-transplant in the GCT population (≥6 months shown in Table). Matching resulted in 58 GCT-HL pairs. One-year immunity was numerically lower for most infections in the HL vs. GCT patients and significantly decreased for Measles and Rubella (Table).
+Conclusions:
+To our knowledge, this is the first study to assess vaccine titers following HDCT/ASCT for GCT. We demonstrate that HDCT/ASCT does not result in loss of immunity to childhood vaccines and that GCT patients retain protective titers more frequently than those with HL. However, 15-31% of GCT patients lack MMR immunity at baseline and at 1-year post-ASCT. Therefore, we recommend checking MMR titers at 1-year post-ASCT with revaccination of those lacking immunity. Titer evaluation and revaccination is not necessary for other childhood immunizations.
+Proportion of patients with immunity to childhood vaccines.
+Disease/Vaccine
+GCT Cohort
+Matched GCT/HL Cohorts at ≥ 6 months
+Baseline
+≥ 6 months
+GCT
+HL
+P
+N
+N (%)
+N
+N (%)
+N
+N (%)
+N
+N (%)
+Diphtheria 78 78 (100) 68 68 (100) 58 58 (100) 58 57 (98) 0.32
+Tetanus 80 78 (98) 67 66 (99) 58 57 (98) 57 54 (95) 0.30
+Polio 1 79 75 (95) 68 64 (94) 58 55 (95) 58 52 (90) 0.29
+Polio 3 79 77 (98) 68 68 (100) 58 58 (100) 58 58 (100) -
+Measles 80 59 (74) 65 47 (69) 58 42 (72) 58 28 (48)
+0.03
+Mumps 79 67 (85) 68 56 (82) 58 49 (85) 58 43 (74) 0.37
+Rubella 80 80 (83) 68 52 (77) 58 48 (83) 58 37 (64)
+0.05
+Var. zoster 80 71 (89) 68 58 (87) 58 50 (86) 55 45 (82) 0.57
+
+--------------------------------------------------
+Search Results Summary:
+

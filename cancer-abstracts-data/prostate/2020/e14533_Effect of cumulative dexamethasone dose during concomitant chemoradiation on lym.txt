@@ -1,0 +1,18 @@
+Title: Effect of cumulative dexamethasone dose during concomitant chemoradiation on lymphopenia in patients with newly diagnosed glioblastoma.
+Abstract Number: e14533
+URL: https://meetings.asco.org/abstracts-presentations/190149
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Stephen Ahn
+
+================================================================================
+
+Full Abstract:
+Authors person Stephen Ahn Seoul St. Mary's Hospital, Seoul, South Korea info_outline Stephen Ahn, Jae-Sung Park, Jin Ho Song, Sin-Soo Jeun, Yong-Kil Hong Organizations Seoul St. Mary's Hospital, Seoul, South Korea; Seoul St.Mary's Hospital, Seoul, South Korea; Seoul St. Mary's Hospital, Catholic University of Korea, Seoul, South Korea Abstract Disclosures Research Funding No funding received None Background: Lymphopenia frequently occurs after concomitant chemoradiation (CCRT) in patients with glioblastoma (GBM) and is associated with worse overall survival (OS). A few studies have tried to identify risk factors for lymphopenia; however, the results were not clear. We aimed to identify potential risk factors for lymphopenia, focusing on the use of dexamethasone to control cerebral edema in patients with GBM. Methods: The electronic medical records of 180 patients with newly diagnosed GBM treated at our institution between 2009 and 2017 were retrospectively examined. Acute lymphopenia was defined as TLC (total lymphocyte count) less than 1,000 cells/mm3 at 4 weeks after completion of CCRT. Multivariate logistic regression analysis was used to identify independent risk factors for lymphopenia, and Cox regression analysis was used to identify independent risk factors for OS. Results: Of the 125 eligible patients, 40 patients (32.0%) developed acute lymphopenia. Female sex and median daily dexamethasone dose > 2mg after initiation of CCRT were independent risk factors for acute lymphopenia on multivariate analysis. Acute lymphopenia, extent of surgical resection, and performance status were associated with OS; however, dexamethasone use itself was not an independent risk factor for poor OS. Conclusions: Female sex, median daily dexamethasone dose > 2 mg after initiation of CCRT until four weeks after completion of CCRT may be associated with acute lymphopenia. However, dexamethasone use itself did not affect OS in patients newly diagnosed with GBM. These results should be validated by further prospective studies controlling for other confounding factors.
+
+--------------------------------------------------
+Search Results Summary:
+Lymphopenia frequently occurs after concomitant chemoradiation (CCRT) in patients with glioblastoma (GBM) and is associated with worse overall survival (OS). A few studies have tried to identify risk factors for lymphopenia; however, the results were not clear. We aimed to identify potential risk factors for lymphopenia, focusing on the use of dexamethasone to control cerebral edema in patients with GBM.

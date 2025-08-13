@@ -1,0 +1,37 @@
+Title: PTEN loss as a potential biomarker in patients with castration resistant prostate cancer M0.
+Abstract Number: 198319
+URL: https://meetings.asco.org/abstracts-presentations/198319
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Javier Puente, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Until 2018, there were no approved agents for high risk non-metastatic castration-resistant prostate cancer (nmCRPC). Recently, three second-generation anti-androgens (apalutamide, enzalutamide and darolutamide), in combination with ADT, have demonstrated a significant benefit in metastasis-free survival (MFS) and overall survival.According to conventional imaging, nmCRPC state is the opposite to mCRPC. Nevertheless, CRPC is a continuous in which nmCRPC may share similar biology and biomarkers such as PTEN loss, which has proven to be a useful and targetable biomarker in mCRPC.
+Methods:
+We performed a prospective and multicenter analysis of 77 patients (pts) with nmCRPC. We collected blood samples as well as prostate cancer diagnostic biopsy whenever they were available. The aim of this study is to find potential biomarkers that could identify pts at a higher risk of metastasis development. Here we report preliminary results according to PTEN status.
+Results:
+We have analyzed 32 patients for PTEN loss. We report preliminary results using an IHC assay based on the IPATENTIAL150 PTEN score. Median age was 66 years and 50% of patients had a Gleason score > 8 irrespectively of PTEN status. We identified 24 patients (75%) with PTEN loss with a median PSA at diagnosis of 13,1 ng/ml, and a PSA doubling time (PSA-DT) of 6,3 months vs. 37,35 ng/ml and 3,5 months respectively in the PTEN non-loss pts. In the PTEN loss population, 9 pts (37,5%) did not receive any local treatment vs. 2 pts in the PTEN non-loss (25%). Mediantime from diagnosis to CRPC was 11.5 vs 8.0 yrs in PTEN loss vs. non-loss pts. In the PTEN loss population 2 patients received apalutamide plus ADT and 2 darolutamide plus ADT, these patients were excluded for the MFS analysis. Median MFS was 37 months in the PTEN loss population vs. 23 months in the PTEN non-loss. However, with a median follow-up of 38 months, 54% of PTEN loss pts had developed metastasis and 50% of PTEN non-loss pts. Skeleton was by far the first site of metastasis in PTEN non-loss pts (75%), while PTEN loss pts developed metastasis in lymph nodes (38,5%) nearly as much as in the skeleton (46%).
+Conclusions:
+To our knowledge, this is the first data of PTEN loss as a biomarker in nmCRPC. In our study, PTEN loss in primary tumor is more frequent than previously documented for mCRPC. PTEN loss appears to provide a better prognosis and higher lymph node involvement. Further analysis will be performed to corroborate these results and identify other factors involved.
+
+--------------------------------------------------
+Full Abstract:
+Background:
+Until 2018, there were no approved agents for high risk non-metastatic castration-resistant prostate cancer (nmCRPC). Recently, three second-generation anti-androgens (apalutamide, enzalutamide and darolutamide), in combination with ADT, have demonstrated a significant benefit in metastasis-free survival (MFS) and overall survival.According to conventional imaging, nmCRPC state is the opposite to mCRPC. Nevertheless, CRPC is a continuous in which nmCRPC may share similar biology and biomarkers such as PTEN loss, which has proven to be a useful and targetable biomarker in mCRPC.
+Methods:
+We performed a prospective and multicenter analysis of 77 patients (pts) with nmCRPC. We collected blood samples as well as prostate cancer diagnostic biopsy whenever they were available. The aim of this study is to find potential biomarkers that could identify pts at a higher risk of metastasis development. Here we report preliminary results according to PTEN status.
+Results:
+We have analyzed 32 patients for PTEN loss. We report preliminary results using an IHC assay based on the IPATENTIAL150 PTEN score. Median age was 66 years and 50% of patients had a Gleason score > 8 irrespectively of PTEN status. We identified 24 patients (75%) with PTEN loss with a median PSA at diagnosis of 13,1 ng/ml, and a PSA doubling time (PSA-DT) of 6,3 months vs. 37,35 ng/ml and 3,5 months respectively in the PTEN non-loss pts. In the PTEN loss population, 9 pts (37,5%) did not receive any local treatment vs. 2 pts in the PTEN non-loss (25%). Mediantime from diagnosis to CRPC was 11.5 vs 8.0 yrs in PTEN loss vs. non-loss pts. In the PTEN loss population 2 patients received apalutamide plus ADT and 2 darolutamide plus ADT, these patients were excluded for the MFS analysis. Median MFS was 37 months in the PTEN loss population vs. 23 months in the PTEN non-loss. However, with a median follow-up of 38 months, 54% of PTEN loss pts had developed metastasis and 50% of PTEN non-loss pts. Skeleton was by far the first site of metastasis in PTEN non-loss pts (75%), while PTEN loss pts developed metastasis in lymph nodes (38,5%) nearly as much as in the skeleton (46%).
+Conclusions:
+To our knowledge, this is the first data of PTEN loss as a biomarker in nmCRPC. In our study, PTEN loss in primary tumor is more frequent than previously documented for mCRPC. PTEN loss appears to provide a better prognosis and higher lymph node involvement. Further analysis will be performed to corroborate these results and identify other factors involved.
+
+--------------------------------------------------
+Search Results Summary:
+

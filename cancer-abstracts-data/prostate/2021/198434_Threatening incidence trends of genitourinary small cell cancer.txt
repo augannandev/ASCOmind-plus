@@ -1,0 +1,26 @@
+Title: Threatening incidence trends of genitourinary small cell cancer.
+Abstract Number: 198434
+URL: https://meetings.asco.org/abstracts-presentations/198434
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Bohdan Baralo, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Genitourinary localization (GU) is the most frequent extrapulmonary localization of small cell cancer (SCC). The goal of our study was to evaluate incidence trends of GU SCC (bladder (BC) and prostate (PC) in recent years, compare odds ratio (OR) and survival trends.
+Methods:
+SEER research data 18 registries, November 2019 Submission (2000-2017) was assessed for SCC histology codes 8041-8043. Patients 20 years and older were included. Age adjusted ratio for 2000 US standard population were used to calculate trends. Race groups were defined as Caucasians (White), African Americans (Black) and Other (included Asians and Native Americans). Stages were defined as localized, regional and distant. Linear regression, chi-square, log-rank test were used to estimate linear trends, OR and hazard ratios (HR). GraphPad Prism 9 (San Diego, CA) was used for analysis.
+Results:
+1423 BC, 544 PC cases were identified. Both BC (R2 0.6151, p 0.0001) and PC (R2 0.8409, p < 0.0001) showed statistically significant (SS) growth of cases. Annual percent change (APC) was 7.2% for PC and 6.8% for BC (p < 0.05 for both groups). PC showed increase number of cases among Caucasians (R2 0.6236, p < 0.0001) and African-Americans (R2 0.3293, p 0.0128). BC showed increase number of cases only among Caucasians (R2 0.8556, p < 0.0001). Caucasian had SS increased OR compared to African Americans and Other for BC (3,503, p 0.0021 and 3.277, p 0.018 respectively). Trend analysis among the disease extend showed that in BC has SS growth was among localized (R2 0.7337, p < 0.0001), regional (R2 0.4212, p 0.0036) and distant (R2 0.7801, < 0.0001). For PC SS growth in number of cases was observed only in regional (R2 0.34565, 0.0109), and distant stage (R2 0.565, p 0.0003). Patients with BC had SS better survival compared to BC (HR 0.69, p < 0.0001). The analysis within both groups showed worse survival with more advanced stage (HR 1.52, p 0.0236 in regional, HR 2.28, p < 0.0001 in distant for PC; HR 1.27, p 0.0038 in regional, HR 2.93, p < 0.0001 in distant for BC). Differentiation of the tumor grade was associated with worse survival in PC group (HR 4.46, p < 0.0001 for poorly differentiated and HR 4.8, P < 0.0001 for undifferentiated compared to moderately differentiated). African American and Other races had better survival compared to Caucasians in patients with BC (HR 0.29, p 0.0021 and HR 0.31, p 0.0018 respectively).
+Conclusions:
+GU SCC is a rare type of cancer, that is rapidly growing (APC 7.2% (PC) and 6.8% (BC). The number of cases is growing among Caucasians (BC and PC) and African Americans (PC). Caucasian is a risk factor for developing BC SCC, as well as worse outcomes compared to the other racial groups. The analysis showed that increase of distant stage of GU SCC at the time of diagnosis increase among both BC and PC. Patients with PC had worse survival compared to the BC. Survival tend to be worse in more advanced stages in both groups, but differentiation of the tumor affect survival only in PC patients.
+
+--------------------------------------------------
+Search Results Summary:
+

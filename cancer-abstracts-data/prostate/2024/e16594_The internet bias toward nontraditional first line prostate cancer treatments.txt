@@ -1,0 +1,18 @@
+Title: The internet bias toward nontraditional first line prostate cancer treatments.
+Abstract Number: e16594
+URL: https://meetings.asco.org/abstracts-presentations/177884
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Danny Landau, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Danny Landau University of Florida Health Cancer Center–Orlando Health, Orlando, FL info_outline Danny Landau, Alec Landau Organizations University of Florida Health Cancer Center–Orlando Health, Orlando, FL; Orlando Health UF Health Cancer Center, Orlando, FL Abstract Disclosures Research Funding Other Background: Despite relegation to relapsed localized disease per National Comprehensive Cancer Guidelines, we have noticed upticks in cryotherapy and High-intensity focused ultrasound (HIFU) as initial therapy for prostate cancer in Orlando. We believe internet advertisements play a role in this. When directly questioned, patients confirm our belief. We conducted internet searches to analyze the information available to patients. Methods: Utilizing common search engines, Google and Bing, searches were conducted using the terms “cryotherapy prostate cancer” and “HIFU”. The first three pages of general results and sponsored results were broken into categories. The categories include verified information (VI) properly describing the therapies and their indications, advertisement for traditional care (TC) centers, centers that promote nontraditional care (NTC), or information that is unclassifiable/ misleading (other). A final search was done for “alternative prostate cancer treatments”. The results that mentioned HIFU or cryotherapy were counted manually. Results: Cryotherapy Google general search In total, unverified information or advertisements for centers practicing outside of traditional norms were represented in: General search combined: 26/82: 32% Sponsored searches: 54/75: 73% The general search term “alternative prostate cancer” search including HIFU or Cryotherapy General Search: 3/55 (0.05%) Sponsored Search: 8/39 (21%). Conclusions: Using general search terms, it seems that there is a wealth of information that can influence a patient’s decision making on prostate cancer treatment. While there is more information promoting HIFU/ cryotherapy on sponsored searches, general searches have potential for misunderstanding and abuse in nearly a third of cases. VI TC NTC Other 19/29 7/29 3/29 0 Cryotherapy Google sponsored results VI TC NTC Other 4/21 5/21 8/21 4/21 Cryotherapy Bing general search VI TC NTC Other 13/24 7/24 3/24 1/24 Cryotherapy Bing sponsored search VI TC NTC Other 0/19 8/19 5/19 6/19 HIFU Google general search VI TC NTC Other 23/29 3/29 5/29 1/29 HIFU Google sponsored search VI TC NTC Other 0/17 2/17 12/17 5/17 HIFU Bing general search VI TC NTC Other 10/27 4/27 8/27 5/27 HIFU Bing sponsored search VI TC NTC Other 3/18 1/18 3/18 11/18
+
+--------------------------------------------------
+Search Results Summary:
+Despite relegation to relapsed localized disease per National Comprehensive Cancer Guidelines, we have noticed upticks in cryotherapy and High-intensity focused ultrasound (HIFU) as initial therapy for prostate cancer in Orlando. We believe internet advertisements play a role in this. When directly questioned, patients confirm our belief. We conducted internet searches to analyze the information available to patients.

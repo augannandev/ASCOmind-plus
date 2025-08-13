@@ -1,0 +1,18 @@
+Title: Retrospective review of 250 gallium-68 PSMA scans in prostate cancer patients in Health Canada Special Access Program.
+Abstract Number: e17035
+URL: https://meetings.asco.org/abstracts-presentations/223280
+Source: ASCO Selenium Scraper
+Year: 2023
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer—Prostate, Testicular, and Penile
+Session Type: Publication Only
+Authors: Philip Cohen
+
+================================================================================
+
+Full Abstract:
+Authors person Philip Frank Cohen Lions Gate Hospital, North Vancouver, BC, Canada, North Vancouver, BC, Canada info_outline Philip Frank Cohen, Robert Tarzwell, Jason Leong Organizations Lions Gate Hospital, North Vancouver, BC, Canada, North Vancouver, BC, Canada; INITIO MEDICAL, Burnaby, BC, Canada, Burnaby, BC, Canada Abstract Disclosures Research Funding No funding received None. Background: Prostate Cancer is the most common malignancy in men, and until recently has been staged using standard imaging tests, such as ultrasound, CT, bone scan, and MRI. A novel imaging test targeting the membrane receptor, Prostate Specific Membrane Antigen (PSMA) using the PET tracer Ga-68 PSMA-11 has recently been approved in several countries for staging and assessing potential for radionuclide therapy. This agent was only recently approved in Canada, but has been available through the Health Canada Special Access (SA) Program for over a year, until it was approved (Illuccix, Telix Pharmaceuticals). Methods: In the past year, 275 prostate cancer patients were scanned at our facility (INITIO Medical Imaging, Burnaby BC) through Health Canada SA. All patients were required to have positive prostate cancer biopsies, with negative or indeterminate CT and bone scan, and rising PSA (prostate specific antigen) blood test in order to qualify for SA, or high risk Gleason Score prostate cancer. Results: Of the 275 patients, 71 had high risk cancers and 28/71 had positive PSMA studies (39%). 185 of the patients had biochemical evidence of recurrence and negative /indeterminate conventional imaging tests, and 101/185 or 55% had positive PSMA scans. All other patients were scanned for metastatic castrate resistant prostate cancer (MCRPC). Conclusions: Ga-68 PSMA scans are highly sensitive for upstaging patients at high risk of prostate cancer metastasis or recurrence, even with negative conventional imaging studies.
+
+--------------------------------------------------
+Search Results Summary:
+Prostate Cancer is the most common malignancy in men, and until recently has been staged using standard imaging tests, such as ultrasound, CT, bone scan, and MRI. A novel imaging test targeting the membrane receptor, Prostate Specific Membrane Antigen (PSMA) using the PET tracer Ga-68 PSMA-11 has recently been approved in several countries for staging and assessing potential for radionuclide therapy. This agent was only recently approved in Canada, but has been available through the Health Canada Special Access (SA) Program for over a year, until it was approved (Illuccix, Telix Pharmaceuticals).

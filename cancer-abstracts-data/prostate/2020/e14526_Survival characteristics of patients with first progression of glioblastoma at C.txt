@@ -1,0 +1,18 @@
+Title: Survival characteristics of patients with first progression of glioblastoma at Cleveland Clinic Foundation.
+Abstract Number: e14526
+URL: https://meetings.asco.org/abstracts-presentations/190007
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Yasmeen Rauf, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Yasmeen Rauf Cleveland Clinic, Cleveland, OH info_outline Yasmeen Rauf, Jimmy Yao, Addison Barnett, Yanwen Chen, Brian Hobbs, Glen Stevens, David M. Peereboom, Manmeet Singh Ahluwalia Organizations Cleveland Clinic, Cleveland, OH; Cleveland Clinic Foundation, Cleveland, OH; Case Comprehensive Cancer Center, Case Western Reserve University, Cleveland, OH; Cleveland Clinic Taussig Cancer Institute, Cleveland, OH; Rose Ella Burkhardt Brain Tumor and Neuro-Oncology Center, Neurological Institute, Taussig Cancer Institute and Cleveland Clinic, Cleveland, OH Abstract Disclosures Research Funding No funding received None Background: Glioblastoma (GBM) is the most common primary central nervous system malignancy, with a median overall survival of 14 to 17 months. First progression refers to progressive disease after initial radiation with or without chemotherapy. The median overall survival of patients with the first progression of GBM is nine months. Currently, there is no standard treatment for progressive GBM. Common treatment options include clinical trials, surgical resection, re-irradiation, stereotactic radiosurgery, cytotoxic chemotherapies, bevacizumab, and tumor treating fields. Methods: This retrospective study reviewed 244 patients with the first progression of GBM who were treated at CCF between Jan 2012 to Jan 2020. Statistical analyses included patients who had biopsy-proven GBM, a known MGMT methylation status, a KPS of more than 70 and presented with the first progression on MRI brain. Four cohorts of patients were evaluated: Group 1 received cytotoxic chemotherapy, Group 2 received bevacizumab alone, Group 3 received surgical or radiation therapy alone, Group 4 received experimental treatments. Results: The median overall survival (OS) and progression-free survival (PFS) was 12.4 months (95% CI: 10.9 to 14.3) and 4.3 months (95% CI: 3.9 to 5.4), respectively. The cohorts demonstrate statistical significant differentiation for PFS (p = 0.021) but not OS (p = 0.19). Second progression was noted at a median interval of 5.6 months in Group 4, 4.3 months in Group 2, 3.8 months Group 3 and 3.2 months in Group 1. Conclusions: Patients with the first progression of GBM had a better progression-free survival on experimental clinical trials than those in other cohorts.
+
+--------------------------------------------------
+Search Results Summary:
+Glioblastoma (GBM) is the most common primary central nervous system malignancy, with a median overall survival of 14 to 17 months. First progression refers to progressive disease after initial radiation with or without chemotherapy. The median overall survival of patients with the first progression of GBM is nine months. Currently, there is no standard treatment for progressive GBM. Common treatment options include clinical trials, surgical resection, re-irradiation, stereotactic radiosurgery, cytotoxic chemotherapies, bevacizumab, and tumor treating fields.

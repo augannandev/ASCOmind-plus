@@ -1,0 +1,26 @@
+Title: Immune checkpoint inhibitor plus anti-EGFR target therapy plus chemotherapy in patients with locally advanced penile squamous cell carcinoma.
+Abstract Number: 198466
+URL: https://meetings.asco.org/abstracts-presentations/198466
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Hui Han
+
+================================================================================
+
+Full Abstract:
+Background:
+Locally advanced penile squamous cell carcinomas (PSCCs) have poor prognosis and limited therapeutic options. We aim to evaluate the safety and the efficacy of neoadjuvant therapy with anti-PD-1 immune therapy (toripalimab) plus anti-EGFR target therapy (nimotuzumab) plus chemotherapy (TIP) in locally advanced PSCCs.
+Methods:
+We retrospectively reviewed chemotherapy-naive, unresectable locally advanced PSCCs (T4NanyM0 or TanyN3M0) who received combined neoadjuvant therapy and subsequently radical surgery in Sun Yat-sen University Cancer Center between 2018 and 2020. All patients received toripalimab 240mg on day 1 plus nimotuzumab 400mg on day 1 plus standard-of-care TIP (Cisplatin 25mg/m2 on day 1 to day 3; ifosfamide 1.2g/m2 on day 1 to day 3; paclitaxel 175mg/m2 or albumin-bound paclitaxel 260mg/m2 on day 1) every 3-4 weeks. Pathologic complete response(pCR) rate and toxicity were evaluated. Progression-free survival (PFS) and overall survival (OS) were calculated by Kaplan-Meier estimation.
+Results:
+We screened 12 patients in total who had performed toripalimab plus nimotuzumab plus TIP (TNTIP) as neoadjuvant treatment and subsequently radical surgery. Median age was 51 (95% confidence interval [CI]: 44-60.5) years old. 10(83.3%) patients received 3 or 4 courses of TNTIP neoadjuvant treatment. After neoadjuvant treatment and radical surgery, 8(66.7%) patients had a pCR. 2(16.7%) patients died of disease progress or recurrence, which 1(8.3%) patient occurred bone metastases after 2 courses of TNTIP, and 1(8.3%) patient appeared recurrence after 6 months of radical surgery. The median follow-up time was 21.3 months (95%CI 19.9-22.6). Median PFS and OS were not reached. The 1-year PFS rate was 83.3% and 1-year OS rate was 91.7%. 3(25%) patients experienced grade 3 treatment-related adverse events of fatigue, anemia and neutropenia. No grade 4 or 5 adverse events or death associated with treatment.
+Conclusions:
+Compared with other therapeutic options, our results suggest that TNTIP in neoadjuvant stage effectively improve the disease control and prognosis in locally advanced PSCCs. Based on this result, we are conducting a phase II study in Sun Yat-sen University Cancer Center to further validate the efficacy and safety of TNTIP neoadjuvant regimen in locally advanced PSCCs. (ClinicalTrials.gov No. NCT04475016).
+
+--------------------------------------------------
+Search Results Summary:
+

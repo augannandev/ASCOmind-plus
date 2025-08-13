@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Chimeric Antigen Receptor T-Cell and Bispecific Antibody Therapy in Multiple Myeloma: Moving Into the Future.",
+    "authors": "Sarah A Holstein; Shakira J Grant; Tanya M Wildes",
+    "abstract_text": "Historically, the outcomes for individuals with triple-class refractory and penta-drug refractory multiple myeloma (MM) have been poor because of a dearth of effective treatment options. However, the advent of chimeric antigen receptor (CAR) T-cell and T-cell redirecting bispecific antibody (BsAb) therapies has led to unprecedented response rates and durations of response in heavily relapsed/refractory (R/R) populations. Currently, two B-cell maturation antigen (BCMA)-directed CAR T-cell therapies (idecabtagene vicleucel and ciltacabtagene autoleucel) as well as one BCMA/CD3 BsAb (teclistamab) have been approved for late-line (greater than four previous lines) R/R MM in the United States. The purpose of this review is to analyze the recent data for these approved therapies as well as provide an overview of other related CAR T-cell and BsAb therapies under development, including non-BCMA-targeting agents. We review efficacy and safety considerations, with particular focus on cytokine release syndrome, neurotoxicity, and infection risk. The relative merits and limitations of each class of therapy are discussed, as well as the areas of unmet need with respect to optimal sequencing and supportive care measures. We examine the factors that challenge equitable access to these novel therapies across minoritized racial, ethnic, and socioeconomic populations. Although it is evident that CAR T-cell and BsAb therapies will transform treatment paradigms in MM for years to come, significant work remains to identify the optimal utilization of these novel therapies and ensure equitable access.",
+    "pmid": "37471687",
+    "doi": "10.1200/JCO.23.00512",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:05:42.867018",
+    "pdf_url": "https://doi.org/10.1200/JCO.23.00512"
+  },
+  {
+    "title": "Epcoritamab, a Novel, Subcutaneous CD3xCD20 Bispecific T-Cell-Engaging Antibody, in Relapsed or Refractory Large B-Cell Lymphoma: Dose Expansion in a Phase I/II Trial.",
+    "authors": "Catherine Thieblemont; Tycel Phillips; Herve Ghesquieres; Chan Y Cheah; Michael Roost Clausen; David Cunningham; Young Rok Do; Tatyana Feldman; Robin Gasiorowski; Wojciech Jurczak; Tae Min Kim; David John Lewis; Marjolein van der Poel; Michelle Limei Poon; Mariana Cota Stirner; Nurgul Kilavuz; Christopher Chiu; Menghui Chen; Mariana Sacchi; Brian Elliott; Tahamtan Ahmadi; Martin Hutchings; Pieternella J Lugtenburg",
+    "abstract_text": "Epcoritamab is a subcutaneously administered CD3xCD20 T-cell-engaging, bispecific antibody that activates T cells, directing them to kill malignant CD20",
+    "pmid": "36548927",
+    "doi": "10.1200/JCO.22.01725",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:05:42.867108",
+    "pdf_url": "https://doi.org/10.1200/JCO.22.01725"
+  },
+  {
+    "title": "Niraparib and Abiraterone Acetate for Metastatic Castration-Resistant Prostate Cancer.",
+    "authors": "Kim N Chi; Dana Rathkopf; Matthew R Smith; Eleni Efstathiou; Gerhardt Attard; David Olmos; Ji Youl Lee; Eric J Small; Andrea J Pereira de Santana Gomes; Guilhem Roubaud; Marniza Saad; Bogdan Zurawski; Valerii Sakalo; Gary E Mason; Peter Francis; George Wang; Daphne Wu; Brooke Diorio; Angela Lopez-Gitlitz; Shahneen Sandhu",
+    "abstract_text": "Metastatic castration-resistant prostate cancer (mCRPC) remains a lethal disease with current standard-of-care therapies. Homologous recombination repair (HRR) gene alterations, including ",
+    "pmid": "36952634",
+    "doi": "10.1200/JCO.22.01649",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:05:42.867211",
+    "pdf_url": "https://doi.org/10.1200/JCO.22.01649"
+  },
+  {
+    "title": "Bispecific antibodies targeting BCMA, GPRC5D, and FcRH5 for multiple myeloma therapy: latest updates from ASCO 2023 Annual Meeting.",
+    "authors": "Juanjuan Zhao; Quan Ren; Xinyuan Liu; Xiangqian Guo; Yongping Song",
+    "abstract_text": "Several bispecific antibodies (bsAbs) targeting BCMA, GPRC5D, and FcRH5 are in clinical trials for heavily pretreated multiple myeloma (MM) patients. Teclistamab was approved for relapsed/refractory MM therapy in 2022, while elranatamab, linvoseltamab, F182112, talquetamab, and cevostamab are currently undergoing clinical trials. This study summarizes several latest reports on bsAbs for the treatment of MM from the ASCO 2023 Annual Meeting.",
+    "pmid": "37537597",
+    "doi": "10.1186/s13045-023-01489-3",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:05:42.867246",
+    "pdf_url": "https://doi.org/10.1186/s13045-023-01489-3"
+  },
+  {
+    "title": "Overall Survival With Daratumumab, Bortezomib, and Dexamethasone in Previously Treated Multiple Myeloma (CASTOR): A Randomized, Open-Label, Phase III Trial.",
+    "authors": "Pieter Sonneveld; Asher Chanan-Khan; Katja Weisel; Ajay K Nooka; Tamas Masszi; Meral Beksac; Ivan Spicka; Vania Hungria; Markus Munder; Maria-Victoria Mateos; Tomer M Mark; Mark-David Levin; Tahamtan Ahmadi; Xiang Qin; Wendy Garvin Mayo; Xue Gai; Jodi Carey; Robin Carson; Andrew Spencer",
+    "abstract_text": "At the primary analysis of CASTOR (median follow-up, 7.4 months), daratumumab plus bortezomib and dexamethasone (D-Vd) significantly prolonged progression-free survival versus bortezomib and dexamethasone (Vd) alone in relapsed or refractory multiple myeloma (RRMM). We report updated efficacy and safety results at the final analysis for overall survival (OS).",
+    "pmid": "36413710",
+    "doi": "10.1200/JCO.21.02734",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:05:42.867292",
+    "pdf_url": "https://doi.org/10.1200/JCO.21.02734"
+  }
+]

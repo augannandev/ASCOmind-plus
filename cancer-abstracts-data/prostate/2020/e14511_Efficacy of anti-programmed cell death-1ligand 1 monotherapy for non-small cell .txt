@@ -1,0 +1,18 @@
+Title: Efficacy of anti-programmed cell death-1/ligand 1 monotherapy for non-small cell lung cancer patients with active brain metastases.
+Abstract Number: e14511
+URL: https://meetings.asco.org/abstracts-presentations/189891
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Takehiro Tozuka, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Takehiro Tozuka The Cancer Institute Hospital, Japanese Foundation for Cancer Research, Tokyo, Japan info_outline Takehiro Tozuka, Satoru Kitazono, Hiroaki Sakamoto, Hiroshi Yoshida, Yoshiaki Amino, Shinya Uematsu, Takahiro Yoshizawa, Tsukasa Hasegawa, Ryo Ariyasu, Ken Uchibori, Noriko Yanagitani, Takeshi Horai, Makoto Nishio Organizations The Cancer Institute Hospital, Japanese Foundation for Cancer Research, Tokyo, Japan; Thoracic Medical Oncology, The Cancer Institute Hospital of Japanese Foundation for Cancer Research, Tokyo, Japan; Japanese Foundation For Cancer Research, Tokyo, Japan; Department of Thoracic Medical Oncology, The Cancer Institute Hospital of Japanese Foundation for Cancer Research, Tokyo, Japan; Thoracic Oncology Center, Cancer Institute Hospital, Japanese Foundation for Cancer Research, Tokyo, Japan Abstract Disclosures Research Funding No funding received None Background: The efficacy of anti-programmed cell death-1/ligand 1 (anti-PD-(L)1) for active brain metastases (BMs) is not established, because most clinical trials excluded patients (pts) with active BMs such as untreated, symptomatic, or unstable BMs. The aim of this study was to evaluate the efficacy of anti-PD-(L)1 monotherapy in non-small cell lung cancer (NSCLC) pts with active BMs. Methods: This retrospective study included NSCLC pts who had received anti-PD-(L)1 monotherapy in 2nd or later line between December 2015 and August 2019. Pts who had not evaluated BMs by CT/MRI before anti-PD-(L)1 were excluded. Pts were classified into those with or without active BMs which were defined as untreated or symptomatic BMs or BMs requiring systemic steroids. Progression free survival (PFS) and overall survival (OS) of pts with or without active BMs were compared. Intra-cranial and extra-cranial tumor responses were evaluated in pts with active BMs. Results: In this study, 242 pts who had received anti-PD-(L)1 monotherapy were identified and 197 pts were analyzed. Twenty-four pts were classified to pts with active BMs. Among pts without active BMs, 145 pts had no BMs and 28 pts had treated asymptomatic BMs. PFS of pts with active BMs was significantly shorter than that of pts without active BMs (1.3 versus 2.7 months; p < 0.001). OS of pts with active BMs was significantly shorter than that of pts without active BMs (4.5 vs 16.3 months; p = 0.001). Intracranial response rate (RR) was 13.3% (2/15) and extracranial RR was 26.7% (4/15) in pts with active BMs. In multivariate Cox regression analysis, active BM, poor PS and EGFR/ALK(+) were selected as significant factors associated with poor PFS. Active BM and poor PS were selected as significant factors associated with poor OS. Conclusions: Anti-PD-(L)1 monotherapy is not recommend for pts with active BMs.
+
+--------------------------------------------------
+Search Results Summary:
+The efficacy of anti-programmed cell death-1/ligand 1 (anti-PD-(L)1) for active brain metastases (BMs) is not established, because most clinical trials excluded patients (pts) with active BMs such as untreated, symptomatic, or unstable BMs. The aim of this study was to evaluate the efficacy of anti-PD-(L)1 monotherapy in non-small cell lung cancer (NSCLC) pts with active BMs.

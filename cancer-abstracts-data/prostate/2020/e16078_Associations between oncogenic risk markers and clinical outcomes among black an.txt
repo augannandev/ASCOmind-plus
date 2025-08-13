@@ -1,0 +1,18 @@
+Title: Associations between oncogenic risk markers and clinical outcomes among black and white colorectal cancer patients.
+Abstract Number: e16078
+URL: https://meetings.asco.org/abstracts-presentations/188992
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Victoria Starks
+
+================================================================================
+
+Full Abstract:
+Authors person Victoria Starks Sidney Kimmel Medical College, Philadelphia, PA info_outline Victoria Starks, Edith P. Mitchell Organizations Sidney Kimmel Medical College, Philadelphia, PA; Sidney Kimmel Cancer Center, Thomas Jefferson University, Philadelphia, PA Abstract Disclosures Research Funding No funding received None Background: Blacks have a 25% higher incidence of colorectal cancer compared to their white societal counterparts1. Additionally, the overall mortality rate among black colorectal cancer patients is 50% higher than that of whites2. However, little is known about the biomarkers prevalent among blacks and their possible correlation to treatment response and patient outcomes. Objective: The objective of this study is to explore disease trends that may unveil a correlation between molecular markers, pathologic stage at presentation and poor clinical outcomes among black colorectal cancer patients. Methods: De-identified patient data was obtained from The Oncology Data Services Department (Cancer Registry) of TJUH. The population cohort (n = 836) included newly diagnosed colorectal cancer patients treated at TJUH from 2000-2019, & included information regarding patient race, sex, age at presentation, stage at presentation, histological code, tumor markers: KRAS, NRAS, BRAF, MS1, treatment received, surgical findings: tumor size, lymph node involvement, presence of distant metastases at first surgery, response to chemotherapy & disease-free survival. Results: Findings reveal a higher prevalence of BRAF mutations among whites compared to blacks within this population, while black patients were diagnosed later according to AJCC pathological stage at presentation. Future analysis of this cohort will further divide the population by age ( < 50, 50-65, &> 65). This facet of the study will explore relationships between age & stage at presentation among patients of different races. Conclusions: Both oncogenic risk markers and AJCC stage at presentation differ between black and white colorectal cancer patients within this population. Additional analysis regarding age at presentation will further inform us as to how these findings may contribute to the comparatively higher incidence and mortality rates among black colorectal cancer patients. Researchers should continue to explore possible etiologies for the prevalent racial disparities seen among black colorectal cancer patients.
+
+--------------------------------------------------
+Search Results Summary:
+Blacks have a 25% higher incidence of colorectal cancer compared to their white societal counterparts1. Additionally, the overall mortality rate among black colorectal cancer patients is 50% higher than that of whites2. However, little is known about the biomarkers prevalent among blacks and their possible correlation to treatment response and patient outcomes. Objective: The objective of this study is to explore disease trends that may unveil a correlation between molecular markers, pathologic stage at presentation and poor clinical outcomes among black colorectal cancer patients.

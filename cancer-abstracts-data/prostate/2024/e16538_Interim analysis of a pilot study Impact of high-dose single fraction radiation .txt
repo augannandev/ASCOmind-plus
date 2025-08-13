@@ -1,0 +1,18 @@
+Title: Interim analysis of a pilot study: Impact of high-dose, single fraction radiation on immunogenicity of sipuleucel-T in metastatic castration resistant prostate cancer patients.
+Abstract Number: e16538
+URL: https://meetings.asco.org/abstracts-presentations/177755
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Yuanquan (Aaron) Yang, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Yuanquan Yang Roswell Park Comprehensive Cancer Center, Buffalo, NY info_outline Yuanquan Yang, Saby George, Ellis Glenn Levine, Thomas Schwaab, Jason Muhitch, Qiang Li, Kristopher Attwood, Adrienne Groman, Scott I Abrams, Pawel Kalinski, Anurag K Singh, Khurshid Guru, Gurkamal S. Chatta Organizations Roswell Park Comprehensive Cancer Center, Buffalo, NY; Roswell Park Cancer Institute, Buffalo, NY Abstract Disclosures Research Funding Pharmaceutical/Biotech Company U.S. National Institutes of Health Background: Sipuleucel-T is known to have modest anti-tumor activity in pts with metastatic castration resistant prostate cancer (mCRPC). Synergy of radiotherapy and immunotherapy has been reported. We conducted a pilot study to assess the impact of radiation on immunogenicity of Sipuleucel-T. Methods: Pts with minimally symptomatic mCRPC and bone metastases were eligible. Pts received Sipuleucel-T every 2 wks x 3 infusions. 8 Gy RT to 1 bone lesion was given 2 days after the first infusion. Peripheral blood was collected at D0, 7d after each infusion, 3 and 6 m. Primary endpoint is the effect of RT on immunogenicity of Sipuleucel-T. Secondary endpoints were safety, PSA changes and survival. We will evaluate T cell proliferation and cytolytic response at baseline and post-treatment using thymidine incorporation assay, IFN-y ELISPOT and flow cytometry. Results: From 10/2013 to 7/2018, a total of 15 pts were enrolled. Median age was 69 years (59-77). 10 pts (67%) had GS > = 8 disease. 7 pts (47%) failed prior abiraterone or enzalutamide. 13 pts completed treatment per protocol (2 withdrew). During a median follow-up of 48 mos, the 3-year overall survival was 48% (95% CI, 21-71); median survival was 30.7 mos (95% CI, 14.6-NR). No PSA responses were observed. 11 pts had post-treatment imaging (non-mandatory). 10 had PD and 1 had SD. 10 pts (67%) had Grade 1-2 drug-related AEs (most common: dizziness and hematoma 20%). No DLT or grade 3-5 drug-related AEs were observed. Conclusions: Sipuleucel-T plus RT is well tolerated. Median overall survival in this limited subset of pts was encouraging, when compared with historical data (25.8 mos in IMPACT trial). The evaluation of immune response is ongoing. (Funded by DENDREON; ClinicalTrials.gov ID: NCT01833208) Clinical trial information: NCT01833208
+
+--------------------------------------------------
+Search Results Summary:
+Sipuleucel-T is known to have modest anti-tumor activity in pts with metastatic castration resistant prostate cancer (mCRPC). Synergy of radiotherapy and immunotherapy has been reported. We conducted a pilot study to assess the impact of radiation on immunogenicity of Sipuleucel-T.

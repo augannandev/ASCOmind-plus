@@ -1,0 +1,33 @@
+Title: Efficacy of TIP (paclitaxel, ifosfamide and cisplatin) as salvage chemotherapy for relapsed germ cell cancer patients stratified by the modified International Prognostic Factors Study Group (IPFSG) score: The Northern Ireland (NI) Experience.
+Abstract Number: 198152
+URL: https://meetings.asco.org/abstracts-presentations/198152
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Adam Uprichard
+
+================================================================================
+
+Full Abstract:
+Background:
+Salvage therapy for relapsed or refractory germ cell tumours (GCTs) after first-line treatment (1LT) failure remain controversial. The ongoing TIGER trial aims to compare conventional-dose chemotherapy (CDCT) using TIP with high-dose chemotherapy (HDCT) and to validate a modified version of the IPFSG stratification system as a secondary objective. We retrospectively analysed data from patients treated with TIP at our institution and stratified by the modified IPFSG (mIPFSG) groupings, correlating this with clinical outcomes.
+Methods:
+Data from all GCT patients who received TIP in NI between 2005 and 2014 was collected. Patients were scored using known IPFSG factors including progression-free interval (0-1), metastasis site (0-3), response to 1LT (0-2), primary tumour site (0-3), HCG (0-1), AFP (0-2), and histology (-1 to 0), and categorised into the modified strata. Descriptive and inferential statistics using SPSS compared survival measure outcomes and the favourable response rate (FRR) i.e the proportion of patients achieving either a complete response or partial response with normal serum tumour markers, according to mIPFSG group.
+Results:
+Thirty patients were identified, all of whom received 4 cycles of TIP. The median age was 37 years (range 17-57), 28 patients were non-seminoma histology with 2 patients seminoma. The cohort comprised predominantly of patients with more adverse mIPFSG features and the FRR of the group was 30%, with a median progression-free survival (PFS) of 9 months and 2-year overall survival (OS) of 50%. Clinical outcomes differed by mIPFSG score as shown below.
+Conclusions:
+Our study shows TIP efficacy comparable to published data, and to our knowledge is the first to show correlation between clinical outcomes with the regimen and the new mIPFSG model. The differences in outcomes to CDCT using TIP across risk groups in real world practice shows potential for a stratified approach to patient selection for salvage therapy, as is under investigation by the TIGER study.
+mIPFSG point score
+FRR
+2-year OS
+Low (-1 to 0), n= 5 80% 80%
+P <0.05
+Intermediate (1-2), n= 11 36.4% 72.7%
+High (3+), n= 14 7.1% 21.4%
+
+--------------------------------------------------
+Search Results Summary:
+

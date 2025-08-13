@@ -1,0 +1,32 @@
+{
+  "start_time": "2025-08-13T11:11:28.417156",
+  "cancer_results": {
+    "multiple_myeloma": {
+      "cancer_type": "multiple_myeloma",
+      "total_abstracts": 0,
+      "years_processed": [],
+      "processing_results": [],
+      "vector_store_session": "cancer_multiple_myeloma_20250813_111128",
+      "analytics_summary": {},
+      "visualizations": {},
+      "cache_status": {
+        "status": "success",
+        "abstracts_cached": 0,
+        "analytics_cached": false,
+        "visualizations_cached": false
+      }
+    },
+    "prostate": {
+      "status": "error",
+      "error": "AdvancedVisualizer.create_comprehensive_dashboard() takes 2 positional arguments but 3 were given"
+    }
+  },
+  "summary": {
+    "total_cancer_types": 2,
+    "successful_cancer_types": 0,
+    "total_abstracts_processed": 0,
+    "cancer_types_processed": [],
+    "end_time": "2025-08-13T11:30:04.513966"
+  },
+  "status": "success"
+}

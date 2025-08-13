@@ -1,0 +1,18 @@
+Title: Post-operative disposition and readmission rates in repeat resections for glioblastoma.
+Abstract Number: e14543
+URL: https://meetings.asco.org/abstracts-presentations/189893
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Alex Guzner
+
+================================================================================
+
+Full Abstract:
+Authors person Alex Guzner Northwestern University Feinberg School of Medicine, Chicago, IL info_outline Alex Guzner, Omar Bushara, Alexander Hou, Denise M. Scholtens, Kirsten Bell Burdett, Matthew Tate, Priya Kumthekar Organizations Northwestern University Feinberg School of Medicine, Chicago, IL; Department of Preventive Medicine, Feinberg School of Medicine, Chicago, IL; Northwestern Memorial Hospital, Chicago, IL Abstract Disclosures Research Funding No funding received None Background: Glioblastoma Multiforme is an aggressive primary brain tumor that will inevitably recur despite initial resection and maximal medical treatment, and re-resection is often pursued. Surgical resection has been shown to impact survival both in the upfront and recurrent settings, but it is unknown if subsequent resections impart worsened neurologic outcomes. The goal of this study was to evaluate patient’s post-operative disposition, hospital length of stay, and readmission within 30 days of discharge as a function of number of resections. Methods: This project was a retrospective chart review. Demographic information was collected regarding patients’ age, sex, IDH-1 mutation, and MGMT methylation status, and each patient’s discharge summary and hospital encounters were reviewed to determine length of hospital stay, location of disposition (home, acute rehabilitation facility, or skilled nursing facility), and readmission within 30 days of initial release. Univariate associations between each clinical predictor and outcome of interest were evaluated. Results: 162 patients with Glioblastoma as indicated on initial surgical pathology report met the inclusion criteria. 108 patients underwent two resections, 48 underwent three resections, and 6 underwent four resections. No statistically significant associations were observed between resection number and age, sex, MGMT methylation status, IDH-1 mutational status, disposition category, hospital length of stay, or readmission within 30 days. Disposition category after first resection was significantly associated with disposition category after second resection (p = 0.041) and readmission within 30 days after second resection was significantly associated with readmission within 30 days after third resection (p = 0.003). Hospital length of stay after second or third resections was not significantly different than a patient’s length of stay after first resection. Conclusions: These data demonstrate for the first time that subsequent resections are not associated with worse patient outcomes and that patient disposition after initial resection is an important predictor of disposition with subsequent resections.
+
+--------------------------------------------------
+Search Results Summary:
+Glioblastoma Multiforme is an aggressive primary brain tumor that will inevitably recur despite initial resection and maximal medical treatment, and re-resection is often pursued. Surgical resection has been shown to impact survival both in the upfront and recurrent settings, but it is unknown if subsequent resections impart worsened neurologic outcomes. The goal of this study was to evaluate patient’s post-operative disposition, hospital length of stay, and readmission within 30 days of discharge as a function of number of resections.

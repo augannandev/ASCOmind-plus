@@ -1,0 +1,18 @@
+Title: Predictive evaluation of quantitative spatial profiling of the tumor microenvironment by multiplex immunofluorescence in recurrent glioblastoma treated with PD-1 inhibitors.
+Abstract Number: e14524
+URL: https://meetings.asco.org/abstracts-presentations/190081
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: David Cieremans, BA
+
+================================================================================
+
+Full Abstract:
+Authors person David Cieremans Columbia University Irving Medical Center, New York City, NY info_outline David Cieremans, Ju Young Kim, Ariana Valencia, Justin Santos, Jennifer Bordeaux, Thai Tran, Christine Vaupel, Naveen Dakappagari, Shabnam Tangri, Fabio Massaiti Iwamoto Organizations Columbia University Irving Medical Center, New York City, NY; Navigate BioPharma Services, Inc., a Novartis Subsidiary, Carlsbad, CA; Navigate BioPharma Services, Inc., Carlsbad, CA; Navigate BioPharma Services, Inc, Carlsbad, CA; Navigate BioPharma Services, Inc., a Novartis Company, Carlsbad, CA; Columbia University Irving Medical Center, New York, NY Abstract Disclosures Research Funding No funding received None Background: PD-1 inhibitors have shown limited efficacy in glioblastoma (GBM) due to microenvironment immunosuppression and low tumor mutational burden. In GBM, PD-L1 expression is not a predictive marker for response to PD-1 or PD-L1 inhibitors. Multiplex immunostaining panel technology allows for detailed analyses of tumor microenvironment cells and their interaction. Methods: Pre-treatment tumor tissue was collected retrospectively from 27 patients in our neurooncology database at Columbia University Irving Medical Center with primary glioblastoma who were diagnosed within the past three years, had surgery here, and were either treated with SOC therapy (n = 8) or PD-1 inhibitors at recurrence (n = 19). Multiplex immunofluorescence was done for 1) CD11b/IDO1/HLADR/GFAP, 2) PD1/PD-L1/GFAP, and 3) CD4/CD8/CD25/FoxP3/Ki67/GFAP. Results: Multiplex immunofluorescence panels did not show any correlation with outcomes in patients treated with SOC therapy (non-immunotherapy). Among the 19 patients treated with PD-1 inhibitors, those with more HLA-DR positive cells had worse outcomes (p = 0.02). PD-L1 expression on tumor cells was not predictive of outcomes. There was a correlation trend between PD-1/PD-L1 interaction score (p = 0.08), which measures density of PD-1-positive cells in proximity to PD-L1-positive cells, and outcomes. This assay allowed us to evaluate tumor-associated macrophages, myeloid-derived suppressor cells, CD8+ lymphocytes, and CD4+ T regulatory cells; however, none of these were predictive of survival. Conclusions: Quantitative spatial profiling by multiplex immunofluorescence is feasible in FFPE glioblastoma tissue. More refined and extensive quantitative and spatial microenvironment analyses may allow for the development of biomarkers for immunotherapy in GBM.
+
+--------------------------------------------------
+Search Results Summary:
+PD-1 inhibitors have shown limited efficacy in glioblastoma (GBM) due to microenvironment immunosuppression and low tumor mutational burden. In GBM, PD-L1 expression is not a predictive marker for response to PD-1 or PD-L1 inhibitors. Multiplex immunostaining panel technology allows for detailed analyses of tumor microenvironment cells and their interaction.

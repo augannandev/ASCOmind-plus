@@ -1,0 +1,26 @@
+Title: The impact of COVID-19 on delivery of systemic anti-cancer treatment in urological cancer patients: A comparison with 2019 data from Guy’s Cancer Center.
+Abstract Number: 198318
+URL: https://meetings.asco.org/abstracts-presentations/198318
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Christina Karampera
+
+================================================================================
+
+Full Abstract:
+Background:
+The provision of cancer services has been strongly impacted by the outbreak of SARS-CoV-2. Our Cancer Centre in South-East London treats approximately 8,800 patients annually and is one of the largest Comprehensive Cancer Centres in the UK. When dealing with the second wave of COVID-19, it is important to further evaluate the safety of cancer treatments whilst balancing the risks of COVID-19 infection and complications. Here, we report on the patient/tumour characteristics of those patients undergoing SACT for a urological cancer diagnosis during the first wave, so as to help establish clinical guidelines for the management of these patients in a SARS-CoV-2 epidemic.
+Methods:
+All urological cancer patients receiving at least one SACT between 1st March- 31st May 2020 (COVID-19 period) were compared to the same timeframe in 2019. SARS-CoV2 infection was defined as a positive RT-PCR test; patients with symptoms or radiological changes alone were excluded. As part of Guy’s Cancer Cohort, we collected information on demographics, and cancer type, stage, and treatment.
+Results:
+A total of 455 patients (305 prostate, 102 renal, 38 bladder, and 10 testicular) received SACT in 2020 as compared to 535 (353 prostate, 129 renal, 37 bladder, and 15 testicular) in 2019 (15% overall decline). Patient characteristics in terms of demographics were fairly comparable, with 10% female patients in 2019 and 9% in 2020; 49% aged 70+ vs 45%; and 77% in the low socio-economic category vs 78%. There was an increase in patients with stage 4 (89% vs 95% in 2020) and a slight change in distribution of SACT types (2019 vs 2020): chemotherapy (18% vs 14%), immunotherapy (7% vs 10%), biological or targeted (63% vs 66%), combination of biological/targeted (6% vs 5%), other combinations (5% vs 5%). The proportion of SACT delivered as part of radical treatment declined from 3% to 0.2% in 2020. A total of 5 patients (1%) developed COVID-19 (2 prostate, 2 renal, and 1 bladder). All were male and aged 60+; three had 2+ comorbidities. One patient was on immunotherapy and four on biological or targeted treatment. Four patients had severe pneumonia and one died of their COVID-19 (bladder cancer).
+Conclusions:
+Whilst there was a decline of number of patients receiving SACT during COVID-19, we were still able to provide a safe high-quality urological cancer SACT pathway during the peak of the COVID-19 pandemic, with very few COVID-19 positive patients. In a next step we will evaluate oncological outcomes at 6 months follow-up
+
+--------------------------------------------------
+Search Results Summary:
+

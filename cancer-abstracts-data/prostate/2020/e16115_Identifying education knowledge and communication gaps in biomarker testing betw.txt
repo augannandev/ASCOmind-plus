@@ -1,0 +1,18 @@
+Title: Identifying education, knowledge and communication gaps in biomarker testing between YO-CRC patients, caregivers, and their medical team.
+Abstract Number: e16115
+URL: https://meetings.asco.org/abstracts-presentations/188459
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Kimberley Lynn Newcomer, BS
+
+================================================================================
+
+Full Abstract:
+Authors person Kim Lynn Newcomer Colorectal Cancer Alliance, Washington, DC info_outline Kim Lynn Newcomer, Danielle Peterson, Ronit Yarden Organizations Colorectal Cancer Alliance, Washington, DC Abstract Disclosures Research Funding Other Foundation Colorectal Cancer Alliance Background: The proportion of new young-onset colorectal cancer (YO-CRC) cases diagnosed in young people (20-49) had doubled over the past 3 decades, and it is becoming an alarming public health issue. YO-CRC patients face unique clinical challenges, as many are diagnosed at advanced stages of the disease and subjected to aggressive treatments. With the increase of targeted therapies and precision medicine available, NCCN and ASCO guidelines recommend that all stage IV, metastatic CRC patients be tested for 4 biomarkers in addition to MSI-H. However, not all eligible patients benefit from biomarker testing and biomarker-driven therapies. Methods: We conducted an online survey to assess patients, survivors and caregivers’ knowledge and understanding of biomarker testing and whether they feel empowered to discuss with their doctor different treatment options based on their unique tumor characteristics and their preferences. Results: The cross-sectional study was completed by patients and survivors (N = 885) and unrelated caregivers of YO-CRC patients (N = 203). The median age of patients and survivors was 42, and the median age of caregivers was also 42. The majority of the participants were college graduates. Although 82% of stage IV, YO-CRC patients felt informed before treatment began, only 70% indicated their tumor was tested for biomarkers, and 54% of them received biomarker testing before treatment initiation. Only 33% of patients reported they became aware of biomarkers by their medical team while others indicated resources such as internet searches, family and friends, or patient navigators. Many of the caregivers who reported that they served as a liaison between patients and medical information retrieval felt that they did not fully understand the critical aspects of the patients' medical treatment plan. Conclusions: Multiple studies have shown that patient-centered care improves patients’ outcomes. Our organization encourages patients and their families to use medical information to navigate their journey. Our patient-reported study suggests that there are gaps in patients’ and caregiver’s understanding of biomarker testing that may hinder patient's empowerment for reaching evidence-based shared-decision treatment plan together with their physicians.
+
+--------------------------------------------------
+Search Results Summary:
+The proportion of new young-onset colorectal cancer (YO-CRC) cases diagnosed in young people (20-49) had doubled over the past 3 decades, and it is becoming an alarming public health issue. YO-CRC patients face unique clinical challenges, as many are diagnosed at advanced stages of the disease and subjected to aggressive treatments. With the increase of targeted therapies and precision medicine available, NCCN and ASCO guidelines recommend that all stage IV, metastatic CRC patients be tested for 4 biomarkers in addition to MSI-H. However, not all eligible patients benefit from biomarker testing and biomarker-driven therapies.

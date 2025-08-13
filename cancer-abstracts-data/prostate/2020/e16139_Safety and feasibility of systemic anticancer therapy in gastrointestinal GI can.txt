@@ -1,0 +1,18 @@
+Title: Safety and feasibility of systemic anticancer therapy in gastrointestinal (GI) cancer patients on hemodialysis (HD): The largest retrospective study.
+Abstract Number: e16139
+URL: https://meetings.asco.org/abstracts-presentations/188731
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Jennifer Park, MD, MS
+
+================================================================================
+
+Full Abstract:
+Authors person Jennifer Park Monter Cancer Center, Lake Success, NY info_outline Jennifer Park, Kerri McGovern, Leslie Ledbetter, Kristin Kaley, Teresa Rodriguez, Antonia Maloney, Wasif M. Saif Organizations Monter Cancer Center, Lake Success, NY; Northwell Health Cancer Institute, Lake Success, NY; University of Alabama at Birmingham, Birmingham, AL; Yale University, New Haven, CT; Columbia University Medical Center, New York, NY; Tufts Medical Center, Boston, MA; Northwell Cancer Institute, New Hyde Park, NY Abstract Disclosures Research Funding No funding received None Background: There is an increasing incidence of malignancies in patients with chronic kidney disease including patients on HD. Minimal reports exist in the literature regarding optimal management of chemotherapy in HD patients. This study investigates the feasibility of chemotherapy for patients with GI malignancies who were on HD. Methods: We collected retrospective data on 37 patients on HD who were treated for a GI malignancy from 2002-2018. Data points collected included demographics, cancer type, treatment regimens, toxicity and treatment outcomes. Results: Of the 37 patients, 28 patients were male and 9 female. Ethnicity consisted of White (25), African American (7), Hispanic (2) and other (4). Diagnoses included colorectal cancer (11), gastric cancer (7), pancreatic cancer (5), carcinoma of unknown primary (3), esophageal cancer (2), gallbladder cancer (2), peritoneal cancer (2), cholangiocarcinoma (2) and others (3). 7 patients received neoadjuvant chemotherapy with 4 undergoing successful resection of tumor. The following chemotherapies were administered post-HD: 5-FU, capecitabine, carboplatin, cisplatin, epirubicin, irinotecan, oxaliplatin and navelbine. Gemcitabine, docetaxel, paclitaxel and etoposide was given prior to HD. Grade > 3 toxicities included anemia, nausea, vomiting and fatigue. Etiology of anemia was partly attributed to renal etiology. Response rate of treatments for HD patients were comparable to that of treatments for patients with normal renal function. 32 patients (86%) completed treatment as planned. Conclusions: Our data constitutes the largest set of patients with GI malignancies who received chemotherapy while on HD. Chemotherapy was feasible and needed a multi-modality approach. Our data calls for larger studies to further investigate pharmacokinetic parameters of cytotoxic drugs in hemodialysis patients to provide strong evidence based guidelines.
+
+--------------------------------------------------
+Search Results Summary:
+There is an increasing incidence of malignancies in patients with chronic kidney disease including patients on HD. Minimal reports exist in the literature regarding optimal management of chemotherapy in HD patients. This study investigates the feasibility of chemotherapy for patients with GI malignancies who were on HD.

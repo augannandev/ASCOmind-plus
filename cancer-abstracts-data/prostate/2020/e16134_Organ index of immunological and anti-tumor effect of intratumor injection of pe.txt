@@ -1,0 +1,18 @@
+Title: Organ index of immunological and anti-tumor effect of intratumor injection of penicillin sodium combined with chemotherapy drug for tumor-bearing mice.
+Abstract Number: e16134
+URL: https://meetings.asco.org/abstracts-presentations/188537
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Qiang Fu, MS
+
+================================================================================
+
+Full Abstract:
+Authors person Qiang Fu Jinan Jiazou Pharma, Inc., Jinan, China info_outline Qiang Fu, Yan Han, Bian Li, Jian Zhang, Dong Chen, Ming Zhao, Guoqin Zheng, Baofa Yu Organizations Jinan Jiazou Pharma, Inc., Jinan, China; Jinan Jiazou Pharma, Inc., Jinan City, China; Taimei Baofa Cancer Hospital, Taian City, China; Jinan Baofa Cancer Hospital, Jinan, Shandong, China Abstract Disclosures Research Funding No funding received None Background: To observe the antitumor mechanism of penicillin combined with chemotherapy drugs in tumor-bearing mice. Methods: The H22 experimental tumors were randomly divided into groups when the longest diameter of the tumor reached about 4 to 7 mm. First and the second administration was performed every 7 days. Perform a skin test and observe the local response. There were 22 mice in each group, male and female. The No. 1 to No. 3 of each group of male and female are used for pharmacodynamic experiments and executed by cervical dislocation on the 13th day. The tumor tissue is removed, weighed, and the tumor growth inhibition rate is calculated. Thymus and spleen, calculate the thymus and spleen coefficients. The male and female Nos. 4 to 8 of each group was used for survival experiments. The death time of the mice was observed and recorded. And 9 to 11 mice from the male and female mice in each dose group of penicillin were taken for skin test, and the skin test response was recorded; the 4th day after the second administration (the 12th day of the experiment) the 9th to 11th of each group No. is used for the tumor formation time experiment of the contralateral tumor. The tumor formation time of the mice is observed and recorded. Results: (1) Comparison with body weight. Sustained-release chemotherapeutic agents of penicillin sustained-release medicines by hydrogen peroxide can cause less damage to mice. (2) Compared with tumor volume and tumor inhibition rate, the compound group (I-Ⅵ) could significantly inhibit tumor growth in mice after intratumoral injection, but penicillin and DNP had no obvious tumor inhibition after intratumoral injection. (3) The comparison of thymus coefficients shows that the adjuvant can obviously prevent the damage to the thymus caused by the drug and has a certain protective effect on the thymus which is very important organ for immune systems. Comparison of survival time, the survival rate and average survival time of the compound Ⅱ group were higher than those of other compound groups. Conclusions: Based on the efficacy and survival results, this intratumoral injection with penicillin could increase organ index for spleen and thymus and indicated it could increase immunological response to against whole body cancer cell.
+
+--------------------------------------------------
+Search Results Summary:
+To observe the antitumor mechanism of penicillin combined with chemotherapy drugs in tumor-bearing mice.

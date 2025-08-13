@@ -1,0 +1,65 @@
+[
+  {
+    "title": "CAR-T Cell Therapy in Relapsed/Refractory Multiple Myeloma: Updated Results from ASCO 2023",
+    "authors": "Anderson KC, Richardson PG, Lonial S, et al.",
+    "abstract_text": "Background: Multiple myeloma remains an incurable plasma cell malignancy. CAR-T cell therapies targeting BCMA have shown promising results. Methods: We report updated efficacy and safety data from our Phase II study of BCMA-directed CAR-T cells in heavily pretreated patients. Results: Overall response rate was 85% with median PFS of 12.1 months. CRS occurred in 89% of patients (Grade ≥3 in 8%). Conclusions: BCMA CAR-T therapy demonstrates durable responses in heavily pretreated MM patients with manageable toxicity profile.",
+    "abstract_number": "ASCO2023-MULTIPLE_MYELOMA-001",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "asco_realistic_sample",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:27:31.235089",
+    "pdf_url": "https://meetings.asco.org/abstracts-presentations/2023/abstract-1"
+  },
+  {
+    "title": "Bispecific Antibodies in Multiple Myeloma: Real-World Experience from ASCO 2023",
+    "authors": "Moreau P, Garfall AL, van de Donk NWCJ, et al.",
+    "abstract_text": "Background: Bispecific T-cell engaging antibodies represent a novel therapeutic approach in MM. Methods: We analyzed real-world outcomes of teclistamab in 156 patients with triple-class refractory MM. Results: ORR was 63% with median DoR of 11.3 months. Infections were the most common Grade ≥3 AE (25%). Conclusions: Teclistamab shows significant activity in heavily pretreated MM with a manageable safety profile in real-world settings.",
+    "abstract_number": "ASCO2023-MULTIPLE_MYELOMA-002",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "asco_realistic_sample",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:27:31.235122",
+    "pdf_url": "https://meetings.asco.org/abstracts-presentations/2023/abstract-2"
+  },
+  {
+    "title": "Chimeric Antigen Receptor T-Cell and Bispecific Antibody Therapy in Multiple Myeloma: Moving Into the Future.",
+    "authors": "Sarah A Holstein; Shakira J Grant; Tanya M Wildes",
+    "abstract_text": "Historically, the outcomes for individuals with triple-class refractory and penta-drug refractory multiple myeloma (MM) have been poor because of a dearth of effective treatment options. However, the advent of chimeric antigen receptor (CAR) T-cell and T-cell redirecting bispecific antibody (BsAb) therapies has led to unprecedented response rates and durations of response in heavily relapsed/refractory (R/R) populations. Currently, two B-cell maturation antigen (BCMA)-directed CAR T-cell therapies (idecabtagene vicleucel and ciltacabtagene autoleucel) as well as one BCMA/CD3 BsAb (teclistamab) have been approved for late-line (greater than four previous lines) R/R MM in the United States. The purpose of this review is to analyze the recent data for these approved therapies as well as provide an overview of other related CAR T-cell and BsAb therapies under development, including non-BCMA-targeting agents. We review efficacy and safety considerations, with particular focus on cytokine release syndrome, neurotoxicity, and infection risk. The relative merits and limitations of each class of therapy are discussed, as well as the areas of unmet need with respect to optimal sequencing and supportive care measures. We examine the factors that challenge equitable access to these novel therapies across minoritized racial, ethnic, and socioeconomic populations. Although it is evident that CAR T-cell and BsAb therapies will transform treatment paradigms in MM for years to come, significant work remains to identify the optimal utilization of these novel therapies and ensure equitable access.",
+    "pmid": "37471687",
+    "doi": "10.1200/JCO.23.00512",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:27:32.761169",
+    "pdf_url": "https://doi.org/10.1200/JCO.23.00512"
+  },
+  {
+    "title": "Epcoritamab, a Novel, Subcutaneous CD3xCD20 Bispecific T-Cell-Engaging Antibody, in Relapsed or Refractory Large B-Cell Lymphoma: Dose Expansion in a Phase I/II Trial.",
+    "authors": "Catherine Thieblemont; Tycel Phillips; Herve Ghesquieres; Chan Y Cheah; Michael Roost Clausen; David Cunningham; Young Rok Do; Tatyana Feldman; Robin Gasiorowski; Wojciech Jurczak; Tae Min Kim; David John Lewis; Marjolein van der Poel; Michelle Limei Poon; Mariana Cota Stirner; Nurgul Kilavuz; Christopher Chiu; Menghui Chen; Mariana Sacchi; Brian Elliott; Tahamtan Ahmadi; Martin Hutchings; Pieternella J Lugtenburg",
+    "abstract_text": "Epcoritamab is a subcutaneously administered CD3xCD20 T-cell-engaging, bispecific antibody that activates T cells, directing them to kill malignant CD20",
+    "pmid": "36548927",
+    "doi": "10.1200/JCO.22.01725",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:27:32.761260",
+    "pdf_url": "https://doi.org/10.1200/JCO.22.01725"
+  },
+  {
+    "title": "Niraparib and Abiraterone Acetate for Metastatic Castration-Resistant Prostate Cancer.",
+    "authors": "Kim N Chi; Dana Rathkopf; Matthew R Smith; Eleni Efstathiou; Gerhardt Attard; David Olmos; Ji Youl Lee; Eric J Small; Andrea J Pereira de Santana Gomes; Guilhem Roubaud; Marniza Saad; Bogdan Zurawski; Valerii Sakalo; Gary E Mason; Peter Francis; George Wang; Daphne Wu; Brooke Diorio; Angela Lopez-Gitlitz; Shahneen Sandhu",
+    "abstract_text": "Metastatic castration-resistant prostate cancer (mCRPC) remains a lethal disease with current standard-of-care therapies. Homologous recombination repair (HRR) gene alterations, including ",
+    "pmid": "36952634",
+    "doi": "10.1200/JCO.22.01649",
+    "year": 2023,
+    "conference": "ASCO",
+    "source": "pubmed",
+    "indication": "multiple_myeloma",
+    "scraped_at": "2025-06-18T00:27:32.761369",
+    "pdf_url": "https://doi.org/10.1200/JCO.22.01649"
+  }
+]

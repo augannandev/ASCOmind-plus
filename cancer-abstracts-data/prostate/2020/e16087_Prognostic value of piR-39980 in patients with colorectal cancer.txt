@@ -1,0 +1,18 @@
+Title: Prognostic value of piR-39980 in patients with colorectal cancer.
+Abstract Number: e16087
+URL: https://meetings.asco.org/abstracts-presentations/189161
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Wei Peng
+
+================================================================================
+
+Full Abstract:
+Authors person Wei Peng Jiangsu Cancer Hospital, Nanjing, China info_outline Wei Peng, Jingfeng Mei, Jianwei Lu, Jun Bao, Guoren Zhou Organizations Jiangsu Cancer Hospital, Nanjing, China Abstract Disclosures Research Funding No funding received None Background: Colorectal cancer (CRC) accounts for a common gastrointestinal malignancy all over world. Piwi-interacting RNAs (piRNAs) show a substantial role in the oncogenesis of a variety of tumors. The objective of this work was to uncover the expression profile of piR-39980 and its prognostic value in CRC. Methods: The levels of piR-39980 expression in CRC tissues and paired normal tissues was determined by quantitative real-time polymerase chain reaction (qRT-PCR). Association of piR-39980 with CRC clinical feathers was assessed by Chi-square test. Overall survival curve was built via log-rank test by Kaplan–Meier analysis. The prognostic significance of piR-39980 in CRC was measured by Cox regression model. Results: piR-39980 was upregulated in CRC specimens than the paired normal specimens (P< 0.001). Importantly, upregulation of piR-39980 was related to tumor size and T stage (all P< 0.05). Survival evaluation suggested that CRC folks with high expression of piR-39980 went through poorer overall survival than folks with low piR-39980 expression (log rank test, P = 0.0429). piR-39980 could be an independent indicator for CRC patients’ prognosis (HR = 3.308, 95% CI = 1.762-6.594, P = 0.043). Conclusions: piR-39980 plays oncogenic roles in CRC tumorigenesis and may be an independent indicator for CRC prognosis.
+
+--------------------------------------------------
+Search Results Summary:
+Colorectal cancer (CRC) accounts for a common gastrointestinal malignancy all over world. Piwi-interacting RNAs (piRNAs) show a substantial role in the oncogenesis of a variety of tumors. The objective of this work was to uncover the expression profile of piR-39980 and its prognostic value in CRC.

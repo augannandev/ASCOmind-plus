@@ -1,0 +1,18 @@
+Title: Effectiveness and tolerability of depot formulations of leuprorelin acetate in real life: Analysis of 932 patients with prostate cancer from Brazil.
+Abstract Number: e16552
+URL: https://meetings.asco.org/abstracts-presentations/176602
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Carla Simone Moreira Freitas, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Carla Simone Moreira Freitas Hospital Do Cancer De Muriae, Muriae, Minas Gerais, Brazil info_outline Carla Simone Moreira Freitas, Aleida Nazareth Soares Organizations Hospital Do Cancer De Muriae, Muriae, Minas Gerais, Brazil; Instituto de Ensino e Pesquisa Santa Casa de BH, Belo Horizonte, Brazil Abstract Disclosures Research Funding Other Background: Clinical trials have shown that androgen deprivation therapy (ADT) is a mainstay of treatment for locally advanced and metastatic prostate cancer. Real-life studies with broader selection criteria may help inform clinical practice. Methods: We reviewed the medical records of 1890 patients with prostate cancer seen at our institution between 01/07 and 07/18. We analyzed patients treated with long-acting leuprorelin acetate, grouping these patients into three strata according to the administration of ADT every 1, 3 or 6 months. The primary outcome was the prostate specific antigen (PSA) levels at 6 and 12 months after treatment initiation. We used Friedman test to compare the distribution of PSA levels over time within each treatment stratum, considering two-sided P values < 0.05 as statistically significant. Results: We analyzed a total of 932 eligible patients, with a median age of 72 years and a median time since diagnosis of prostate cancer of 8.5 months. ADT was administered every 1, 3 and 6 months in 115, 637, and 180 patients, respectively. Nearly half of the patients had locally advanced disease. The table presents PSA levels in each stratum at the three time points. Sexual impotence and hot flashes were the most frequently reported toxicities. Conclusions: Our study confirms that serum PSA levels can be effectively reduced, with a favorable toxicity profile, in most patients treated with long-acting leuprorelin acetate. Administration every 6 months may bring the added benefit of convenience and cost savings in clinical practice. Frequency of injections (months) Median PSA (interquartile range), ng/mL P value Baseline 6 months 12 months 1 25.6 (13.7 to 86.0) 0.2 (0.1 to 1.6) 0.1 (0.1 to 0.7) < 0.001 3 28.8 (13.0 to 87.0) 0.5 (0.1 to 3.6) 0.1 (0.0 to 1.0) < 0.001 6 23.2 (9.4 to 70.5) 0.4 (0.0 to 2.1) 0.0 (0.0 to 0.4) < 0.001
+
+--------------------------------------------------
+Search Results Summary:
+Clinical trials have shown that androgen deprivation therapy (ADT) is a mainstay of treatment for locally advanced and metastatic prostate cancer. Real-life studies with broader selection criteria may help inform clinical practice.

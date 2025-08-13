@@ -1,0 +1,26 @@
+Title: Schlafen 11 (SLFN11), a putative predictive biomarker of platinum/PARPi response, is frequently detected on circulating tumor cells (CTCs) in advanced prostate cancer.
+Abstract Number: 198448
+URL: https://meetings.asco.org/abstracts-presentations/198448
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Howard I. Scher, MD, FASCO
+
+================================================================================
+
+Full Abstract:
+Background:
+Schlafen 11 (SLFN11) is a DNA repair protein (DNA/RNA helicase homology) that is recruited to stressed replication forks and leads to cell death. Recent ph II trial data in Extensive Stage Small-Cell Lung Cancer (ES-SCLC) [Byers et al. JCO 2018 PMID: 29906251] and a retrospective analysis of Circulating Tumor Cells (CTCs) and tumor tissue in patients (Pts) with advanced prostate cancer [Conteduca et al. Mol Cancer Therapeutics 2020 PMID: 32127465] suggested that SLFN11 expression predicts sensitivity to DNA damage targeting agents. In both contexts, metastatic tumor biopsies may not provide adequate material for profiling. We assessed the frequency of SLFN11 expression in CTCs isolated from blood in men with progressing metastatic Castration Resistant Prostate Cancer (mCRPC) and related expression to Homologous Recombination Repair (HRR) alterations identified in metastatic tumor biopsies profiled by MSK-IMPACT.
+Methods:
+95 patients with progressing mCRPC about to start a new systemic therapy who had undergone pre-treatment metastatic tumor profiling by MSK-IMPACT and a matched blood draw for CTC profiling were selected. Blood was sent overnight to Epic Sciences and processed onto glass pathology slides and bio-banked until analysis. Detected CTCs (cytokeratin (CK) positive and leukocyte (CD45) negative) were analyzed for SLFN11 protein expression by immunofluorescence and correlated to Homologous Recombination Repair (HRR) alterations in metastatic biopsy from the bone, lymph node, or visceral metastases (15 PROFOUND genes). A mean of 1.2 mL of blood was analyzed per patient.
+Results:
+CTCs with SLFN11 expression (DAPI+, CK+, CD45-, SLFN11+) were detected in 28.4% (27/95) of the patient sample analyzed. SLFN11 signal was found to overlap with the nuclear DAPI signal. Individual CTC expression of SLFN11 in a sample was heterogeneous and ranged from a minimum of 2.9% to 100%. Seven of 10 (70%) of patients with a BRCA1/2 or ATM alteration had a least one SLFN11 expressing CTC. In contrast, in patients with other HRR alterations, only 20% (1/5) had CTCs with SLFN11. Sequencing of single CTCs is ongoing.
+Conclusions:
+SLFN11 expression is detected with high frequency in CTCs in men with progressing mCRPC. In whom CTCs are detected, the majority of patients with BRCA1/2 or ATM altered tumors also had SLFN11 expressing CTCs. The results support the prospective evaluation of CTC SLFN11 expression as a predictive biomarker for PARPi or platinum agents.
+
+--------------------------------------------------
+Search Results Summary:
+

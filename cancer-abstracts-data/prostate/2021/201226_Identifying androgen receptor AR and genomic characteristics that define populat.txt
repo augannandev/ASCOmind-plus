@@ -1,0 +1,22 @@
+Title: Identifying androgen receptor (AR) and genomic characteristics that define populations of patients with mHSPC who benefit from early PARP inhibition therapy with talazoparib.
+Abstract Number: 201226
+URL: https://meetings.asco.org/abstracts-presentations/201226
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Saro Kasparian, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+A minority of men with mCRPC, those with DNA repair mutations, can benefit from PARP inhibitor therapy. In addition to DNA repair, PARP is used by cancer cells to interact with other cellular mechanisms including androgen receptors (AR). The next generation PARP inhibitor talazoparib can, in addition to inhibiting DNA repair, trap PARP, preventing it from carrying out its other functions. As progression in mHSPC is based on AR escape mechanisms, we predict that early exposure to PARP inhibition will delay progression. In addition, AR characteristics and function vary by ethnic populations. AR expression is inversely related with the number of polymorphic CAG repeats. As African American (AfrAm) men commonly have shorter CAG repeats in their AR, they may experience different response duration, but have been under-represented in clinical trials. Furthermore, CAG repeats may be associated with greater signaling through pathways such as wnt and Myc, which is associated with aggressive disease. Thus, studying intensified up-front therapy in a diverse prostate cancer population is a critical unmet need.
+Methods:
+70 subjects will be treated with ADT + abiraterone + talazoparib. Outreach by our Division of Health Equities and accrual at community satellites located near diverse populations will be enlisted to accrue a target of 30% African American. Talazoparib will be dosed at 1mg daily (0.75 mg in renal insufficiency). LHRH and abiraterone formulations will be left to physician’s choice. PSA and safety labs will be checked every 4 weeks for the first 12 weeks. Imaging will be performed every 12 weeks for the first year then every 24 weeks if PSA is decreasing, or 12 weeks if rising. Data safety monitoring for toxicity after every 10 subjects have been accrued. Diversity of accrual will be evaluated after 30 subjects are enrolled; amendments will be made if the diversity goal is not achieved. Tissue genomics and ctDNA will be measured at baseline; ctDNA will be repeated after 4 weeks and at castration resistance. Endpoints: Primary: PSA nadir at 7 months has been found to be associated with overall survival and is achieved by 55% of men with mHSPC with ADT + abiraterone. With 70 subjects there is 97% power to confirm improved nadir rate of 75%, and 83% power to determine a nadir rate >70%. Secondary endpoints include objective response by RECIST 1.1 for subjects with measurable disease. radiographic progression free survival. Correlative objectives include comparing outcomes in subsets of men with high vs low number of AR CAG repeats, men with genomic alterations, and the change in ctDNA alteration fractions from baseline to 4 weeks and at progression. Progress: The trial is open to accrual as of Feb 2021. Sponsor: Pfizer/ Prostate Cancer Foundation RFP Clinical trial information: NCT04734730
+
+--------------------------------------------------
+Search Results Summary:
+

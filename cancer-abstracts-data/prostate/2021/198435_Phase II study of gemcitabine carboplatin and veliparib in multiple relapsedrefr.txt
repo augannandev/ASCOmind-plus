@@ -1,0 +1,26 @@
+Title: Phase II study of gemcitabine, carboplatin and veliparib in multiple relapsed/refractory germ cell tumors (GCTs).
+Abstract Number: 198435
+URL: https://meetings.asco.org/abstracts-presentations/198435
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Michal Mego, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+GCTs represent a model for the cure of cancer. Nonetheless, a small proportion of patients develop disease recurrence. PARP is overexpressed in GCTs compared to normal testis and PARP overexpression is early event in GCTs development. Gemcitabine and carboplatin showed activity in refractory GCTs. This study aimed to determine the efficacy and toxicity of gemcitabine, carboplatin and PARP inhibitor, veliparib, in patients with multiple relapsed/refractory GCTs.
+Methods:
+Fifteen patients with multiple relapsed/refractory GCTs were enrolled in the phase II study from October 2016 to October 2020. All patients were pretreated with at least 2 cisplatin-based therapies (median 2, range 2 – 4); 3 tumors (20.0%) were absolutely refractory to cisplatin and 5 patients (33.3%) had visceral non-pulmonary metastases. Gemcitabine was administered at a dose 800mg/m2 day 1 and 8 every 3 weeks; carboplatin AUC = 4, day 1, every 3 weeks and veliparib 250mg bid day continuously. The primary end point was 12-months progression-free survival (PFS), if < 8 patients experienced 12-months PFS, the treatment will be considered ineffective.
+Results:
+Median age was 31 years (range: 22 – 48 months). Median number of treatment cycles was 4 (range 2 – 8). During a median follow-up period of 9.2 months (range: 1.9 – 23.8), all (100%) patients experienced disease progression and 14 patients (93.3%) died. Twelve-months PFS was achieved in 1 (6.7%) patient. Median PFS was 3.1 months, 95%CI (2.2 – 3.9) and median OS was 10.5 months, 95% CI (8.9 – 11.1). Partial remission was observed in 4 (26.7%) and disease stabilization in 5 (33.3%) of patients. Favorable response (complete or partial remission with negative serum tumor markers) experienced 3 (20%) patients. Treatment was well tolerated, however, 12 (80%) of patients experienced grade 3/4 neutropenia, 9 (60%) anemia, 14 (93.3%) thrombocytopenia and 2 (13.3%) febrile neutropenia.
+Conclusions:
+This study failed to achieve its primary end point and our data suggest limited efficacy of gemcitabine, carboplatin and veliparib in multiple relapsed/refractory germ cell tumors. Clinical trial information: NCT02860819
+
+--------------------------------------------------
+Search Results Summary:
+

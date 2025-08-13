@@ -1,0 +1,22 @@
+Title: A phase III trial of docetaxel versus docetaxel and radium-223 (Ra-223) in patients with metastatic castration-resistant prostate cancer (mCRPC): DORA.
+Abstract Number: 201214
+URL: https://meetings.asco.org/abstracts-presentations/201214
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Michael J. Morris, MD, FASCO
+
+================================================================================
+
+Full Abstract:
+Background:
+Ra-223, a bone-targeted alpha therapy, prolongs survival in patients (pts) with symptomatic mCRPC to bone. Docetaxel targets microtubule trafficking improving survival in the mCRPC and metastatic hormone-sensitive settings. We hypothesized that simultaneously targeting the tumor and bone compartment yields superior outcomes than targeting either alone. We previously determined the dose and schedule of co-administering Ra-223 + docetaxel in a randomized phase I/IIa trial. The combination appeared to have improved declines in prostate specific antigen (PSA) and bone markers, delayed PSA progression, and was better tolerated (with adjusted dose/schedule) relative to standard docetaxel alone. We are now conducting a phase III study to determine the clinical benefit of the regimen.
+Methods:
+Randomization (1:1) of 738 men with mCRPC to docetaxel or docetaxel + Ra-223 is planned with a projected hazard ratio for treatment effect (15 vs 20 months median survival) of 0.75. Pts with ≥2 bone lesions and progression by Prostate Cancer Working Group 3 criteria are eligible. Other key inclusion criteria are an Eastern Cooperative Oncology Group performance status of 0–1 and normal organ function. Key exclusion criteria are: use of anticancer therapy ≤4 weeks (wks) before randomization and use of bone-seeking radiopharmaceuticals or chemotherapy in the castration-resistant setting, and bulky visceral metastases (≥3 lung and/or liver or a lesion ≥2 cm in the previous 8 wks). Subjects receive docetaxel 75 mg/m2 IV q3w for 10 doses or docetaxel 60 mg/m2 IV q3w for 10 doses + Ra-223 55 kBq/kg IV q6w for 6 doses. The primary endpoint is overall survival. Secondary and exploratory endpoints include: radiographic progression-free survival, symptomatic skeletal event-free survival, safety, markers of bone metabolism, alterations in circulating tumor cells and DNA, detection of androgen-receptor splice variant 7, changes in automated bone scan index (aBSI), and assessment of patient-reported outcome instruments (FACT-P, Brief Pain Inventory, Brief Fatigue Inventory). The study is open at 32 sites in the US and Netherlands and has 170 subjects enrolled. The study is sponsored by Memorial Sloan Kettering Cancer Center, and managed by the Prostate Cancer Clinical Trials Consortium. Clinical trial information: NCT03574571
+
+--------------------------------------------------
+Search Results Summary:
+

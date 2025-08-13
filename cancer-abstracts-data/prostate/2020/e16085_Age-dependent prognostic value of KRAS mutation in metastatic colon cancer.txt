@@ -1,0 +1,18 @@
+Title: Age-dependent prognostic value of KRAS mutation in metastatic colon cancer.
+Abstract Number: e16085
+URL: https://meetings.asco.org/abstracts-presentations/188593
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Muhammet Ozer, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Muhammet Ozer Capital Health Regional Medical Center, Trenton, NJ info_outline Muhammet Ozer, Suleyman Yasin Goksu, Nina Niu Sanford, Todd Anthony Aguilera, Radhika Kainthla, Amy Little Jones, Aravind Sanjeevaiah, Muhammad Shaalan Beg, Syed Mohammad Ali Kazmi Organizations Capital Health Regional Medical Center, Trenton, NJ; The University of Texas Southwestern Medical Center, Dallas, TX; University of Texas Southwestern Medical Center, Dallas, TX Abstract Disclosures Research Funding No funding received None Background: KRAS mutation is associated with poor prognosis in metastatic colon cancer (mCC). However, the age-dependent prognostic value of KRAS status is unknown. We aimed to confirm if the prognostic impact of KRAS is dependent on the age of diagnosis in mCC. Methods: We identified adult patients with mCC diagnosed between 2004 and 2016 using the NCDB. We compared patients with KRAS mutation and KRAS wild type, stratified according to age group < 50, 50-70, and ≥70. Categorical variables were compared using the chi-square test. We performed the Kaplan-Meier and Cox regression methods for survival analyses. We adjusted for patient and tumor characteristics (included KRAS status, MSI, 18q loss of heterozygosity, side of the primary tumor). Results: A Total of 19,875 patients had KRAS status reported; 43% had KRAS mutation, and 57% were KRAS wild type. Patients with KRAS mutation were more likely to be female, black, have elevated CEA, and have right-sided tumors (all p < .001). In the overall population, patients with KRAS mutation had significantly worse OS compared to patients with KRAS wild type (20 vs. 22 months, p < .001), and this difference was maintained after multivariable Cox regression analysis (p < .001) (Table). Young patients ( < 50 years) with KRAS mutation had a worse prognosis than those with KRAS wild type in the tumor (23 vs. 29 months, p < .001). KRAS status did not maintain its prognostic value among older age (≥70 years) patients (14 vs. 14 months, p = NS). Conclusions: In this analysis of a national cancer registry, we confirmed that KRAS mutation was an independent poor prognostic factor for mCC. This effect persisted after adjusting for patient and tumor characteristics, including sidedness and MSI status. However, we identified that this prognostic value of KRAS mutation is significant in young mCC patients < 50 years, as compared to older patients. KRAS mutated KRAS wild type p-value Median OS (months) 20 22 < .001 HR (95% CI) 1.05 (1.02-1.09) Ref .001 Age < 50 Median OS (months) 23 29 < .001 HR (95% CI) 1.22 (1.11-1.33) Ref < .001 Age≥70 years Median OS (months) 14 14 NS
+
+--------------------------------------------------
+Search Results Summary:
+KRAS mutation is associated with poor prognosis in metastatic colon cancer (mCC). However, the age-dependent prognostic value of KRAS status is unknown. We aimed to confirm if the prognostic impact of KRAS is dependent on the age of diagnosis in mCC.

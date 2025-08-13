@@ -1,0 +1,41 @@
+Title: An open-label, pharmacokinetic study to determine the bioavailability, safety and tolerability of single dose oral docetaxel in metastatic prostate cancer (mPC) patients treated with IV docetaxel.
+Abstract Number: 197746
+URL: https://meetings.asco.org/abstracts-presentations/197746
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Christopher G. C. A. Jackson, MBChB
+
+================================================================================
+
+Full Abstract:
+Background:
+Docetaxel has poor oral bioavailability in part due to extrusion by intestinal p-glycoprotein. To improve IV solubility, it is fomulated with the nonionic surfactant polysorbate 80, requiring steroid premedication to manage hypersensitivity type reactions. Oral administration has the potential to improve tolerability, reduce day-stay utilization and improve patient convenience and allows investigation of alternative dosing schedules. Oradoxel is a new combination of oral docetaxel capsules plus the novel gut-selective P-glycoprotein inhibitor encequidar (HM30181A).
+Methods:
+Patients with mPC receiving IV docetaxel were enrolled in 3 cohorts with a dose escalation schedule of Oradoxel 75 mg/m2 in Cohort 1, 150 mg/m2 in Cohort 2, 300mg/m2 in Cohort 3. Oradoxel was given 3 weeks before or after IV docetaxel treatment. Intensive PK samples were taken on days 1-5 for Oradoxel and days 1-4 for IV docetaxel. Dose limiting toxicity (DLT) or serious adverse events (SAE) were assessed per CTCAE v4.03.
+Results:
+3 evaluable patients in each Cohort were studied. No DLT, MTD, or drug-related SAE were observed. PK parameters of Oradoxel vs IV docetaxel are summarized in the table below. Mean absolute bioavailability of Oradoxel was 15.9% (range 8-25%). PK became non linear at 300mg/m2.
+Conclusions:
+Oradoxel was well tolerated. Based on the results of this and related studies, Oradoxel 300mg/m2 in divided doses is being further evaluated in phase 2 studies. Clinical trial information: 12616000983404.
+Docetaxel
+Dose (mg/m2)
+Oradoxel (N = 3/group)
+IV (N = 9)
+75
+150
+300
+57 (49 – 74)a
+Absolute bioavail. F (%) 18.4±6.4 18.1±5.7 11.0±3.0 N/A
+Cmax (ng/mL) 103±19 192±69 264±120 1388±237
+AUC0-t (ng·h/mL) 395±78 918±385 1213±422 1965±336
+AUC0-∞ (ng·h/mL) 478±98 1003±383 1346±451 2053±325
+tmax (h)b 2.00 (1.00-2.50) 2.75 (0.75-3.00) 2.50 (2.50-6.00) 1.00 (0.67-1.07)
+t½ (h) 21.1±4.6 19.7±7.4 30.0±4.3 21.5±6.1
+Results are in mean ± SD or otherwise specified. aMean (range). bMedian (range).
+
+--------------------------------------------------
+Search Results Summary:
+

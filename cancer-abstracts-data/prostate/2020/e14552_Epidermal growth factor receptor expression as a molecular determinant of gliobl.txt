@@ -1,0 +1,18 @@
+Title: Epidermal growth factor receptor expression as a molecular determinant of glioblastoma response to the dopamine receptor D2 antagonist, ONC201.
+Abstract Number: e14552
+URL: https://meetings.asco.org/abstracts-presentations/189352
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Yuyu He
+
+================================================================================
+
+Full Abstract:
+Authors person Yuyu He Department of Neurosurgery, University of Minnesota, Minneapolis, MN info_outline Yuyu He, Jun Ma, Sanjay Dhawan, Tomoyuki Koga, Frank Furnari, Varun Vijay Prabhu, Joshua E. Allen, Clark C Chen Organizations Department of Neurosurgery, University of Minnesota, Minneapolis, MN; Ludwig Cancer Research, San Diego Branch, La Jolla, CA; Oncoceutics Inc, Philadelphia, PA; Oncoceutics Inc., Philadelphia, PA Abstract Disclosures Research Funding No funding received None Background: Durable response in glioblastoma patients have been reported in phase I/II clinical trials for the blood-brain penetrant dopamine receptor D2 (DRD2) antagonist, ONC201. Here we examine potential molecular determinants of response to DRD2 inhibition. Methods: The Cancer Genome Atlas (TCGA) glioblastoma database and other published mRNA profiles were used to analyze the DRD2 expression pattern. In vitro and in vivo responses to ONC201 were determined using patient derived xenograft glioblastoma models. Immunohistochemical studies were performed on clinically annotated glioblastoma samples derived from phase I/II clinical trials involving ONC201. Results: For the majority of clinical glioblastoma specimens in both the TCGA and non-TCGA dataset, epidermal growth factor receptor (EGFR) expression was inversely correlated with DRD2. This observation was recapitulated in a panel of patient-derived glioblastoma lines. In this panel of DRD2 expressing lines, high EGFR expression was associated with poor response to ONC201 in vitro and in vivo. Moreover, ectopic expression of EGFR reduced DRD2 expression and ONC201 sensitivity, suggesting functional redundancy between DRD2 and EGFR. In cell lines and clinical glioblastoma samples, DRD2 expression closely associated with the expression of rate-limiting enzymes for dopamine synthesis, suggesting dependency of a subset of glioblastomas on autocrine DRD2 signaling. Analysis of specimens from patients treated with ONC201 (n = 15) showed an inverse correlation between the intensity of EGFR staining and clinical response. The median overall survival for patients with high and low EGFR staining was 162 and 373 days, respectively (p = 0.037). All patients who exhibited progression free survival beyond 200 days showed low to no EGFR expression. Conclusions: Our results suggest EGFR expression as a determinant of response to ONC201 in glioblastoma patients and should inform the design of future clinical trials.
+
+--------------------------------------------------
+Search Results Summary:
+Durable response in glioblastoma patients have been reported in phase I/II clinical trials for the blood-brain penetrant dopamine receptor D2 (DRD2) antagonist, ONC201. Here we examine potential molecular determinants of response to DRD2 inhibition.

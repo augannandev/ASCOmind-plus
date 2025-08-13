@@ -1,0 +1,26 @@
+Title: Predicting benefit of radium 223 based on biochemical response and site of metastasis: A real life multicenter UK study.
+Abstract Number: 198453
+URL: https://meetings.asco.org/abstracts-presentations/198453
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Prantik Das, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Studies have shown an improvement in overall survival (OS) and symptom control in metastatic castration-resistant prostate cancer (mCRPC) with Radium-223 treatment. However, there is little information about predicting outcomes using either PSA or Alkaline Phosphatase (ALP) response or comparing bone only disease to bone and lymph node (LN) involvement.
+Methods:
+335 patients receiving Radium 223 at 6 UK centres between March 2014 and June 2020 were included. The primary endpoint was overall survival, secondary endpoints were toxicity, symptomatic benefit and skeletal-related events(SRE)
+Results:
+The median age was 75, with 71% having bone only metastases and 29% also having lymph node involvement. Those with PSA response (30%) had a statistically significant improvement in OS, compared to non-responders (18.2 vs 13.8 months, p = 0.026). They also showed highest rate of imaging response/stable disease (54% vs 34%). ALP response was seen in 82%. This did not translate to significantly improved OS, but did correlate with better symptomatic benefit (40% vs 29%). Those with bone only disease showed a survival benefit compared to those with LN involvement (19.4 vs 11.4 months, p = 0.046). Other than anaemia (23.5%), Grade 2 or above toxicities were uncommon including thrombocytopenia and neutropenia(5.5 and 6.2% respectively ) . 14% patients required at-least one blood transfusion. SRE were seen in 24% overall, but lower of in PSA responders(18%).
+Conclusions:
+Real life multicentre data suggests that PSA response and bone only disease could be predictors for better survival following Radium-223, whereas ALP response correlates better with symptomatic benefit.
+
+--------------------------------------------------
+Search Results Summary:
+

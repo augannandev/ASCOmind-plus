@@ -1,0 +1,18 @@
+Title: Presence of circulating tumor cells is more significant than tumor stage in characterizing cellular local immunity in colorectal cancer.
+Abstract Number: e16073
+URL: https://meetings.asco.org/abstracts-presentations/189494
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Anastasia Grankina
+
+================================================================================
+
+Full Abstract:
+Authors person Anastasia O. Sitkovskaya Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation info_outline Anastasia O. Sitkovskaya, Oleg I. Kit, Elena Yu. Zlatnik, Inna A. Novikova, Aleksandr B. Sagakyants, Elena P. Ulianova, Oksana G. Shulgina, Vladimir E. Kolesnikov, Nairi B. Oganyan, Vladislav K. Pavlov, Timofey S. Karasev, Elena A. Dzhenkova, Alexander V. Shaposhnikov, Aleksandr V. Snezhko, Roman E. Tolmakh, Yuriy A. Fomenko, Dmitry S. Petrov Organizations Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation Abstract Disclosures Research Funding No funding received None Background: The purpose of the study was a correlation analysis of parameters of local immunity and markers of the epithelial-mesenchymal transition (EMT) with the number of circulating tumor cells (CTCs) in patients with stage II-IV colorectal cancer (CRC). Methods: The study included 60 patients newly diagnosed with stage II-IV CRC. CTCs were detected with the Cell Search System (Janssen Diagnostics, LLC) prior to surgery. CTC≤3 were considered negative, CTC > 3 – positive. After surgery, IHC analysis of tumor infiltration with immune system cells was performed with monoclonal antibodies for human CD3, CD4, CD8, CD20 and CD56; expression of EMT-associated proteins (E-cadherin, N-cadherin) was measured. All patients were informed of the goal of the study and provided informed consent. Results: CTC-negative patients with later cancer stages showed the loss of connection between the local levels of CD4+ and CD8+, and in stage IV - between CD3+ and CD4+. Starting from stage III, a negative correlation was observed between the expressions of E- and N-cadherin, not associated with the studied indices of local cellular immunity. The presence of CTCs in all 3 investigated stages of CRC, apparently, causes the loss of many connections between the indicators of the 3 units of local cellular immunity. While negative correlations were revealed between T-, B- and NK-cells in CTC-negative status, in CTC+ their number decreased to 1. An important positive correlation was between local levels of CD3+ and CD8+, indicating the predominance of cytotoxic T cells in the tumor and detected at all stages in CTC-negative patients, losing significance in the presence of CTCs regardless of the stage. In stage II, the only correlation (inverse one) was observed between the parameters of local (CD4+) immunity and the expression of cadherins (E-cadherin), which probably reflected the presence of immunosuppressive and growth-stimulating Tregs fraction among these cells. Conclusions: In general, the presence of CTCs was more significant for the number and nature of interconnections of cellular parameters of the local immunity than the tumor stage.
+
+--------------------------------------------------
+Search Results Summary:
+The purpose of the study was a correlation analysis of parameters of local immunity and markers of the epithelial-mesenchymal transition (EMT) with the number of circulating tumor cells (CTCs) in patients with stage II-IV colorectal cancer (CRC).

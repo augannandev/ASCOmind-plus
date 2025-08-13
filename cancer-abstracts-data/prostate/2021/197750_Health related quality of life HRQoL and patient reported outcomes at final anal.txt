@@ -1,0 +1,38 @@
+Title: Health-related quality of life (HRQoL) and patient-reported outcomes at final analysis of the TITAN study of apalutamide (APA) versus placebo (PBO) in patients (pts) with metastatic castration-sensitive prostate cancer (mCSPC) receiving androgen deprivation therapy (ADT).
+Abstract Number: 197750
+URL: https://meetings.asco.org/abstracts-presentations/197750
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Neeraj Agarwal, MD, FASCO
+
+================================================================================
+
+Full Abstract:
+Background:
+The phase 3 TITAN study evaluated APA vs PBO in pts with mCSPC receiving ADT. At primary analysis with 22.7 mo median follow-up, APA significantly improved overall survival (OS) and radiographic progression-free survival vs PBO (Chi NEJM 2019) while preserving HRQoL (Agarwal Lancet Oncol 2019). The study was unblinded; pts on PBO were allowed to cross over to APA. At final analysis with 44 mo median follow-up, APA significantly improved OS vs PBO, reducing risk of death by 35% despite crossover (Chi ASCO GU 2021). We evaluated HRQoL and treatment bother at final analysis.
+Methods:
+mCSPC pts (N = 1052) were randomized 1:1 to APA (240 mg QD; n = 525) or PBO (n = 527). All pts received ADT. Patient-reported outcomes were assessed using Brief Pain Inventory-Short Form (BPI-SF) and Functional Assessment of Cancer Therapy-Prostate (FACT-P). BPI was completed for 7d consecutively (Days -6 to 1 of each 28-d cycle [C]) through end of treatment (EOT). FACT-P was completed at baseline (BL), C2-C7, then every other C through EOT. Mean scores were reported by treatment group and over time. Time to deterioration on BPI and FACT-P scores was calculated by Kaplan-Meier methods and compared between groups by fitting proportional hazards regression models.
+Results:
+Of eligible pts per C, > 62% completed BPI through C32 and > 50% completed FACT-P through C31. Pts were relatively asymptomatic with good BL HRQoL: on 0-10 worst pain severity scale (BPI), median scores were 1.1 (APA) and 1.0 (PBO); on 0-156 HRQoL scale (FACT-P total; higher score = better HRQoL), median scores were 113.0 (APA) and 113.3 (PBO). Low BL BPI scores remained stable over time in both groups. On average, favorable BL FACT-P scores did not notably worsen over time in APA or PBO groups. There were no significant differences between groups in median time to deterioration in any BPI or FACT-P scores (Table). At each C at least 86% (APA) and 85% (PBO) of pts were either “not at all” or “a little bit” bothered by side effects. At BL, 76% (APA) and 72% (PBO) had favorable energy levels (reporting lack of energy “not at all” or “a little bit”). Energy levels remained stable or improved at each C for > 78% (APA) and > 71% (PBO) of pts.
+Conclusions:
+In the final analysis of TITAN, survival benefit with addition of APA to ADT was achieved without significant patient-reported side effect burden or reduced HRQoL compared with PBO in pts with mCSPC. Clinical trial information: NCT02489318
+Median time to deterioration, months
+APA
+PBO
+p Value
+BPI worst pain 19.3 12.0 0.17
+BPI pain interferencea NE NE 0.32
+FACT-P total 9.0 9.2 0.76
+FACT-P physical wellbeing 5.6 11.0 0.62
+FACT-P emotional wellbeing 12.9 10.2 0.20
+FACT-P functional wellbeing 4.6 5.7 0.65
+FACT-P social/family wellbeing 5.6 6.5 0.60
+a25th percentile pain interference: APA, 9.2; PBO, 6.2. NE, not estimable.
+
+--------------------------------------------------
+Search Results Summary:
+

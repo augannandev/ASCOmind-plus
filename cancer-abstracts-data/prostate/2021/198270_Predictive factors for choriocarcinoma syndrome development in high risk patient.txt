@@ -1,0 +1,26 @@
+Title: Predictive factors for choriocarcinoma syndrome development in high-risk patients with germ cell tumors (GCTs).
+Abstract Number: 198270
+URL: https://meetings.asco.org/abstracts-presentations/198270
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Katarina Rejlekova, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Germ cell tumors (GCTs) represent a highly curable cancer. However, a small proportion of patients with super-high-risk characteristics can develop choriocarcinoma syndrome (CS) connected with acute respiratory distress syndrome (ARDS). CS is defined as a syndrome with hemorrhage from metastatic sites in patients with advanced GCTs with high-volume of choriocarcinoma elements, especially those with a choriogonadotropin level over 50,000 IU/l. CS typically develop shortly after the chemotherapy start with high mortality rate. Our retrospective study aimed to determine the risk factors of high-risk GCTs susceptible to CS development.
+Methods:
+Using a computerized database and a systematic chart review, we identified the records of 532 patients with GCTs treated in NCI through 2000 to 2018, and 90 eligible patients with high-risk GCTs relying on IGCCCG classification, were identified. All patients were treated with platinum-based induction chemotherapy. Clinicopathological variables were collected and analyzed in correlation to CS development.
+Results:
+Nine (10 %) of 90 patients developed CS in a median of 1 day (1- 9 days) after the chemotherapy administration. All patients died shortly after the chemotherapy start with median of 4 days (3-35 days) due to consecutive ARDS development. Predictive factors for CS development were metastatic lung involvement ≥50% of lung parenchyma, choriocarcinoma elements in histology specimen, dyspnea, cough, hemoptysis, ECOG PS ≥2, weight loss and hemoglobin ≤100 g/l at the time of presentation. In multivariate analysis, ECOG PS ≥2 and metastatic lung involvement ≥50% were independently associated with CS. All patients with these two characteristics developed CS compared to 0% with one or zero of these predictive factors (P < 0.000001).
+Conclusions:
+In our study we identified predictive factors for CS development. These factors might improve the risk stratification of the patients susceptible to CS development connected with ARDS as well as to find optimal treatment approach for them.
+
+--------------------------------------------------
+Search Results Summary:
+

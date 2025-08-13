@@ -1,0 +1,18 @@
+Title: Leptomeningeal metastasis from non-small cell lung cancer- outcomes from a tertiary care center.
+Abstract Number: e14508
+URL: https://meetings.asco.org/abstracts-presentations/190120
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Dilip Harindran Harindran Vallathol, MD, DM, MBBS
+
+================================================================================
+
+Full Abstract:
+Authors person Dilip Harindran Vallathol Tata Memorial Centre, Mumbai, India info_outline Dilip Harindran Vallathol, Vijay Maruti Patil, Vanita Noronha, Amit Joshi, Nandini Sharrel Menon, Kumar Prabhash Organizations Tata Memorial Centre, Mumbai, India; Tata Memorial Centre, Mumbai, NY, India; Tata Memorial Hospital, Mumbai, India Abstract Disclosures Research Funding No funding received None Background: Leptomeningeal metastasis from Non-Small Cell Lung Cancer is often an underdiagnosed entity. Despite advances in treatment, the outcomes of Leptomeningeal Metastasis continues to be dismal. The data on outcomes of leptomeningeal metastasis from a tertiary care centre is limited. Methods: Data collected from the 4 prospective randomised controlled trials conducted on Non Small cell Lung cancer patients at our centre in the last decade was used in the analysis. These included 1. Patients who had EGFR sensitizing mutations enrolled in the Pemetrexed versus Gefitinib maintenance trial and Gefitinib versus Gefitinib plus chemotherapy trial. 2. Patients who were diagnosed as Squamous Cell Carcinoma of lung enrolled in the Low Dose Gemcitabine versus Standard-Dose Gemcitabine trial. 3. Patients with adenocarcinoma who were enrolled in the Pemetrexed versus Erlotinib maintenance trial. We separated the patients who developed Leptomeningeal Metastasis from these trials and studied its incidence, presenting features and outcomes. Statistical analysis was done using cox regression analysis and kaplan meier plots. Results: Out of 1148 patients, 36 patients (0.031%; 95%CI 0.022-0.043) developed leptomeningeal metastasis. In these patients, the median time to development of LM was 14.92 months (IQR 7.7-21.84). The median overall survival after development of LM was 61 days (95%CI 38.95-83.05). None of the tested factors- Age (Hazard ratio-0.886; 95% CI 0.424-1.851, P-value = 0.747), ECOG PS (Hazard ratio-0.719; 95%CI 0.299-1.729) or driver mutation status ( Hazard ratio-2.080, 95%CI 0.739-5.855) had an impact on OS. The median OS in driver mutated patients was 66 days (95% CI 14.74-117.26) versus 51 days (95% CI 14.5-87.5) (P-value = 0.201). Conclusions: In our study, there was no single factor which impacted survival in patients who developed Leptomeningeal Metastasis. The median survival was in the range of 2 months. This reiterates the overall poor prognosis of development of Leptomeningeal Metastasis in Non small Cell Lung Cancer even with the development of newer therapeutic modalities. Keywords- Leptomeningeal metastasis, Non small cell lung cancer, Incidence, Survival.
+
+--------------------------------------------------
+Search Results Summary:
+Leptomeningeal metastasis from Non-Small Cell Lung Cancer is often an underdiagnosed entity. Despite advances in treatment, the outcomes of Leptomeningeal Metastasis continues to be dismal. The data on outcomes of leptomeningeal metastasis from a tertiary care centre is limited.

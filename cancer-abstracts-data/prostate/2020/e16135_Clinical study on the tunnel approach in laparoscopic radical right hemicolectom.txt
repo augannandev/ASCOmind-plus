@@ -1,0 +1,18 @@
+Title: Clinical study on the tunnel approach in laparoscopic radical right hemicolectomy.
+Abstract Number: e16135
+URL: https://meetings.asco.org/abstracts-presentations/188390
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Xijie Zhang
+
+================================================================================
+
+Full Abstract:
+Authors person Xijie Zhang Department of Surgical Oncology, Affiliated Cancer Hospital of Zhengzhou University, Zhengzhou, China info_outline Xijie Zhang, Junli Zhang, Yuzhou Zhao Organizations Department of Surgical Oncology, Affiliated Cancer Hospital of Zhengzhou University, Zhengzhou, China Abstract Disclosures Research Funding No funding received None Background: The medial to lateral approach Laparoscopic right hemicolectomy complies with the “no-touch” principle, but need a demanding procedure with a steep learning curve. This study was designed to assess the superiority of the tunnel approach compared to traditional medial-to-lateral approach in laparoscopic right hemicolectomy for patients with right-sided colon cancer. Methods: The new method was called Tunnel Approach: The tunnel was formed with Toldt's gap was dissociated upward from the attachment of ileocecal part and retroperitoneum, then the right mesocolon was lifted to expose and divide the superior mesenteric blood vessel. We analyzed retrospectively the patients with resectable right-sided colon cancer confirmed by colonoscope and imaging who received the laparoscopic radical right hemicolectomy. The patients were divided into the tunnel approach (group A) and the traditional medial-to-lateral approach (group B) according to the surgical maneuver performed. Results: A total of 84 patients who received laparoscopic radical right hemicolectomy were assigned to group A (n = 42) or group B (n = 42) between January 2016 to June 2017. There was no difference in baseline characteristics including demographics, body mass index (BMI), tumor stage, tumor location and differentiation. The operation time and intraoperative blood loss in group A were significantly better than group B (137.74±22.7 vs. 153.1±28.8min, p< 0.05; 49.0±40.7 vs. 142.9±87.4ml, p< 0.05, respectively).There was no difference in tumor size(5.7±2.1 vs. 5.7±2.1cm, p>0.05), conversion to laparotomy rate(0 vs. 3, p>0.05), lymph node yield(30.5±14.4 vs. 27.9±12.7, p>0.05), time to first flatus(3.4±1.3 vs. 4.0±1.3d, p>0.05), postoperative hospital stays(10.0±2.2 vs. 12.3±3.0d, p>0.05) and complications(2 vs. 3, p>0.05) between two groups. There was no treatment-related death in both groups. Conclusions: The characteristic of “tunnel” approach is to convert the anatomy from a two-dimensional to a three-dimensional view, it showed the benefits of both speed and safety with low intraoperative conversion to laparotomy rate and mortality. This new tunnel approach right hemicolectomy is worth recommended.
+
+--------------------------------------------------
+Search Results Summary:
+The medial to lateral approach Laparoscopic right hemicolectomy complies with the “no-touch” principle, but need a demanding procedure with a steep learning curve. This study was designed to assess the superiority of the tunnel approach compared to traditional medial-to-lateral approach in laparoscopic right hemicolectomy for patients with right-sided colon cancer.

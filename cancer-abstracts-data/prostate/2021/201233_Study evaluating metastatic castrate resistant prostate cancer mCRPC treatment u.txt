@@ -1,0 +1,22 @@
+Title: Study evaluating metastatic castrate resistant prostate cancer (mCRPC) treatment using 177Lu-PNT2002 PSMA therapy after second-line hormonal treatment (SPLASH).
+Abstract Number: 201233
+URL: https://meetings.asco.org/abstracts-presentations/201233
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Kim N. Chi, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Treatment options with minimal toxicity and novel mechanisms of action are urgently needed to improve clinical outcomes from mCRPC. Prostate-specific membrane antigen (PSMA)-targeted radioligand therapy (RLT) represents a new treatment for patients with PSMA-avid mCRPC. 177Lu-PNT2002 (also known as [Lu-177]-PSMA-I&T) is a PSMA-targeting agent and studies have shown demonstrable promising initial data. This trial seeks to prospectively evaluate the efficacy of 177Lu-PNT2002 for men with progressive mCRPC after androgen receptor axis-targeted (ARAT) therapy.
+Methods:
+This is a multi-center, open-label, phase III study. All patients must be at least 18 years of age, have documented progressive mCRPC at time of screening, high PSMA expression by PSMA PET/CT per blinded independent central review (BICR), chemotherapy naïve for CRPC and unfit or unwilling to receive chemotherapy. The study will commence with a 25-patient dosimetry lead-in. In the dosimetry phase, patients will receive up to four cycles of 177Lu-PNT2002 at 6.8 GBq every 8 weeks. In the randomization phase, approximately 390 patients will be randomized in a 2:1 ratio to receive 177Lu-PNT2002 (Arm A) versus enzalutamide or abiraterone (with prednisone or dexamethasone) (Arm B). Patients randomized to Arm B have an option to crossover to 177Lu-PNT2002 treatment after BICR-assessed radiologic progression. The primary endpoint is Radiological progression-free survival (rPFS) assessed by BICR using Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 (soft tissue) and Prostate Cancer Working Group 3 (PCWG3) (bone) criteria. Key secondary endpoints include objective response rate, duration of response, PSA response, and overall survival. The study is powered at 90% to test the alternative hypothesis of a hazard ratio (HR) ≤ 0.66 at an α of 0.025. ClinicalTrials.gov identifier: NCT04647526. Clinical trial information: NCT04647526
+
+--------------------------------------------------
+Search Results Summary:
+

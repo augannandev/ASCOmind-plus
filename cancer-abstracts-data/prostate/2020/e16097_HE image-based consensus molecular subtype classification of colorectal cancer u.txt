@@ -1,0 +1,18 @@
+Title: H&E image-based consensus molecular subtype classification of colorectal cancer using weak labeling.
+Abstract Number: e16097
+URL: https://meetings.asco.org/abstracts-presentations/189186
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Andrew J Kruger
+
+================================================================================
+
+Full Abstract:
+Authors person Andrew J. Kruger Tempus Labs, Inc., Chicago, IL info_outline Andrew J. Kruger, Lingdao Sha, Madhavi Kannan, Rohan P. Joshi, Benjamin D. Leibowitz, Renyu Zhang, Aly A. Khan, Martin Stumpe Organizations Tempus Labs, Inc., Chicago, IL; Stanford Hospital & Clinics, Stanford, CA Abstract Disclosures Research Funding Pharmaceutical/Biotech Company Tempus Labs, Inc. Background: Using gene-expression, consensus molecular subtypes (CMS) divide colorectal cancers (CRC) into four categories with prognostic and therapy-predictive clinical utilities. These subtypes also manifest as different morphological phenotypes in whole-slide images (WSIs). Here, we implemented and trained a novel deep multiple instance learning (MIL) framework that requires only a single label per WSI to identify morphological biomarkers and accelerate CMS classification. Methods: Deep learning models can be trained by MIL frameworks to classify tissue in localized tiles from large ( > 1 Gb) WSIs using only weakly supervised, slide-level classification labels. Here we demonstrate a novel framework that advances on instance-based MIL by using a multi-phase approach to training deep learning models. The framework allows us to train on WSIs that contain multiple CMS classes while further identifying previously undiscovered tissue features that have low or no correlation with any subtype. Identification of these uncorrelated features results in improved insights into the specific tissue features that are most associated with the four CMS classes and a more accurate classification of CMS status. Results: We trained and validated (n = 735 WSIs and 184 withheld WSIs, respectively) a ResNet34 convolutional neural network to classify 224x224 pixel tiles distributed across tumor, lymphocyte, and stroma tissue regions. The slide-level CMS classification probability was calculated by an aggregation of the tiles correlated with each one of the four subtypes. The receiver operating characteristic curves had the following one-vs-all AUCs: CMS1 = 0.854, CMS2 = 0.921, CMS3 = 0.850, and CMS4 = 0.866, resulting in an average AUC of 0.873. Initial tests to generalize to other data sets, such as TCGA, are promising and constitute one of the future directions of this work. Conclusions: The MIL framework robustly identified tissue features correlated with CMS groups, allowing for a more efficient classification of CRC samples. We also demonstrated that the morphological features indicative of different molecular subtypes can be identified from the deep neural network.
+
+--------------------------------------------------
+Search Results Summary:
+Using gene-expression, consensus molecular subtypes (CMS) divide colorectal cancers (CRC) into four categories with prognostic and therapy-predictive clinical utilities. These subtypes also manifest as different morphological phenotypes in whole-slide images (WSIs). Here, we implemented and trained a novel deep multiple instance learning (MIL) framework that requires only a single label per WSI to identify morphological biomarkers and accelerate CMS classification.

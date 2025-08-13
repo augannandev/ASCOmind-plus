@@ -1,0 +1,18 @@
+Title: The clinical impact of MicroRNA-21 in low rectal cancers treated with curative radiotherapy in the organ preserving setting.
+Abstract Number: e16120
+URL: https://meetings.asco.org/abstracts-presentations/188242
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Torben Hansen, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Torben Hansen Danish Colorectal Cancer Center South, Vejle University Hospital, Vejle, Denmark info_outline Torben Hansen, Caroline Brenner Thomsen, Rikke Fredslund Andersen, Lars Henrik Jensen, Anders Kristian Moeller Jakobsen Organizations Danish Colorectal Cancer Center South, Vejle University Hospital, Vejle, Denmark; Department of Biochemistry, Vejle Hospital, University Hospital of Southern Denmark, Vejle, Denmark Abstract Disclosures Research Funding Other The research councel of Lillebaelt Hospital, Denmark Background: Neoadjuvant chemoradiotherapy (CRT) in curatively intended doses may result in clinical complete response (cCR) in selected patients, allowing for non-surgical management (NSM) of patients with low rectal cancers. MicroRNA-21-5p (miR-21), ubiquitous upregulated in cancer, has been associated with treatment response in rectal cancers treated with standard preoperative CRT. The aim of the present study was to investigate this association in low rectal cancers treated in the NSM setting. Methods: Forty eight patients from our single-arm phase II trial (NCT00952926) were available for analyses. All patients had resectable, T2 or T3, N0–N1, low adenocarcinomas and received 65Gy (intensity-modulated radiotherapy plus brachytherapy boost) and oral tegafur-uracil. Patients with cCR 6 weeks after treatment (clinical examination, magnetic-resonance imaging and biopsy) were referred to observation and followed closely. The miR expression, in the diagnostic biopsies, was measured by qPCR in 20 µl reactions using TaqMan MicroRNA Assays. The protocol using custom RT and preamplification pools was followed. The miR-193a-5p, -27a and –let7g were used for normalization based on previous recommendations from our group. The relationship between miR-21 expression and cCR was assessed using the Wilcoxon rank-sum tests. Results: Thirty-eight patients achieved cCR after treatment and were followed in observation while 10 patients proceeded to surgery due to a non-cCR. MicroRNA-21 was successfully analyzed in all samples. The median tumor expression of miR-21 in patients proceeding to surgery was significantly higher compared to patients achieving cCR, 24.3 (95% confidence interval (CI) 17.1-36.8) and 16.6 (95% CI 13.9-21.1), p = 0.02, respectively. Conclusions: The present results support a clinical impact of miR-21 in rectal cancer treated with CRT, comparable with results seen in patients treated in the standard preoperative setting, and may assist in the selection of patients for an organ preserving approach.
+
+--------------------------------------------------
+Search Results Summary:
+Neoadjuvant chemoradiotherapy (CRT) in curatively intended doses may result in clinical complete response (cCR) in selected patients, allowing for non-surgical management (NSM) of patients with low rectal cancers. MicroRNA-21-5p (miR-21), ubiquitous upregulated in cancer, has been associated with treatment response in rectal cancers treated with standard preoperative CRT. The aim of the present study was to investigate this association in low rectal cancers treated in the NSM setting.

@@ -1,0 +1,18 @@
+Title: DCE-MRI Evaluation of 10 patients with brain metastases treated with RRx-001, a Myc inhibitor and a CD47 and PD-L1 downregulator, in a phase I/II trial called BRAINSTORM.
+Abstract Number: e14509
+URL: https://meetings.asco.org/abstracts-presentations/190026
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Michelle Miran Kim, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Michelle Miran Kim Univ of Texas MD Anderson Cancer Ctr, Novi, MI info_outline Michelle Miran Kim, Hemant Parmar, Madhava P Aryal, Scott Caroen, Theresa Devasia, Matthew J Schipper, Aki Morikawa, Daniel Eidelberg Spratt, James Hayman, Larry Junck, Theodore Steven Lawrence, Christopher D. Lao, Yue Cao Organizations Univ of Texas MD Anderson Cancer Ctr, Novi, MI; University of Michigan, Ann Arbor, MI; EpicentRx, Inc., Mountain View, CA; Department of Radiation Oncology, University of Michigan Health System, Ann Arbor, MI; Memorial Sloan Kettering Cancer Center, New York, NY Abstract Disclosures Research Funding Pharmaceutical/Biotech Company EpicentRx Background: In a Phase 1/2 trial called BRAINSTORM (NCT02215512) for brain metastases from any histology, quantitative changes in perfusion MRI after administration of RRx-001, a mic inhibitor and CD47 and PD-L1 downregulator with vascular normalizing properties, were determined and correlated with response. Methods: Ten patients with 64 total lesions evaluable at baseline, 24 hours, and end of radiotherapy (RT) that participated in BRAINSTORM were subjected to a correlative dynamic contrast-enhanced magnetic resonance imaging (DCE-MRI) examination four days prior to the start of whole brain radiotherapy (WBRT) that evaluated Ktrans (capillary permeability) and Vp (plasma volume). The treatment comprised RRx-001 on Day -4, pre-WBRT then twice weekly during WBRT. Four dose levels were administered (5 mg/m2, 8.4 mg/m2, 16.5 mg/m2, and 27.5 mg/m2. Results: 10 patients underwent DCE-MRI scans and eight patients with 44 total evaluable lesions had available imaging at 1 month, and 6 patients with 29 total evaluable lesions had imaging at 4 months. On univariate analysis, only a decrease in 24-hour Vp from baseline after a single dose of RRx-001 was marginally associated with absolute tumor volume response 1 month after treatment (p-0.07). In a multivariate model, only Vp prior to therapy and 24-hour change in Vp were retained in the model after stepwise selection. A reduction in Vp 24 hours after RRx-001 (prior to WBRT) was associated with reduced tumor volume at 1 month (Estimate 0.88, 95% CI 0.37-1.40, p = 0.001) and 4 months (Estimate 1.51, 95% CI 0.58-2.43, p = 0.003). Likewise, a lower Vp prior to therapy was associated with reduced tumor volume at 1 month (Estimate 0.73, 95% CI 0.29-1.17, p = 0.002) and 4 months (Estimate 1.8, 95% CI 0.95-2.65, p = 0.0002), suggesting anti-angiogenic activity and early potential vascular normalization after a single dose of RRx-001 predictive of longer-term tumor response. Conclusions: RRx-001 induced a reduction in blood plasma volume, which was associated with tumor response and which suggests a vascular normalizing effect that merits further investigation in future planned studies. Clinical trial information: NCT02215512
+
+--------------------------------------------------
+Search Results Summary:
+In a Phase 1/2 trial called BRAINSTORM (NCT02215512) for brain metastases from any histology, quantitative changes in perfusion MRI after administration of RRx-001, a mic inhibitor and CD47 and PD-L1 downregulator with vascular normalizing properties, were determined and correlated with response.

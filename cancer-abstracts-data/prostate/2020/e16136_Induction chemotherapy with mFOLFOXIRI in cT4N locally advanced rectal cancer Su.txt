@@ -1,0 +1,18 @@
+Title: Induction chemotherapy with mFOLFOXIRI in cT4N+ locally advanced rectal cancer: Subgroup analysis from a prospective trial.
+Abstract Number: e16136
+URL: https://meetings.asco.org/abstracts-presentations/188465
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Jianwei Zhang, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Jianwei Zhang The Sixth Affiliated Hospital of Sun Yat-sen University, Guangzhou, China info_outline Jianwei Zhang, Huabin Hu, Yue Cai, Xiaoyu Xie, Zehua Wu, Jiayu Ling, Yanhong Deng Organizations The Sixth Affiliated Hospital of Sun Yat-sen University, Guangzhou, China; Sixth Affiliated Hospital of Sun Yat-sen University, Guangzhou, China; Sun Yat-sen University, Guangzhou, China Abstract Disclosures Research Funding No funding received None Background: FOLFOXIRI had been recommended as induction treatment for patients with T4N+ rectal cancer in the latest NCCN guideline. However, no prospective study to support this recommendation in his population. Here, we tried to analyze the efficacy of FOLFOXIRI as induction chemotherapy in the subgroup of rectal cancer patients with T4N+ from a prospective trial. Methods: A phase II trial exploring the efficacy of mFOLFOXIRI as neoadjuvant chemotherapy in locally advanced rectal cancer had been conducted in our center recently. The subgroups of patients with clinical T4N+ rectal cancer were extracted for further analysis. All candidates were to receive 4 to 6 cycles of mFOLFOXIRI. MRI will be performed every two cycles to assess clinical responses. And then the patients would receive total mesorectal excision directly or proceed to chemoradiotherapy according to the result of restaging evaluation. Postoperative FOLFOX chemotherapy was recommended. The primary endpoint is the ratio of tumor downstaging to ypT0-2N0M0. Results: There were 27 patients with cT4N+. There were twenty male and 7 female, with the median age of 46 years old. MRF involved was observed in 14 patients. Neoadjuvant chemotherapy with mFOLFOXIRI was performed for at least 4 cycles. Six patients received radiotherapy before total mesorectal excision, including short-term radiation in 1 patient. R0 resection was achieved in all the patients (100%) and 24 (88.9%) of patients had received sphincter-saving operation. According to the pathologic result, all patients showed regression in the primary tumor (ypT0-3). The pCR rate was 22.2% (6/27) and the tumor downstaging (ypStage 0-I) rate was 29.6%. Another 13 (48.1%) patients showed downstaging to ypStage II. The main grade 3/4 adverse event was neutropenia (35.7%). With a median follow-up of 25 months, no local recurrence was observed. Only 3 patients developed distant metastasis. The 2-year survival rate for this group of population was 85.0%. Conclusions: mFOLFOXIRI showed high tumor downstaging rate in locally advanced rectal cancer. It could be reasonable to use mFOLFOXIRI as induction chemotherapy for cT4N+ rectal cancer patients. Clinical trial information: NCT02217020. Variable N = 27(%) pCR 6 (22.2) ypStage 0-I 8 (29.6) ypStage II 13 (48.1) ypT stage ypT0 6 (22.2) ypT1 1 (3.7) ypT2 1 (3.7) ypT3 19 (70.4) ypN stage ypN0 21 (77.8) ypN1 3 (11.1) ypN3 3 (11.1)
+
+--------------------------------------------------
+Search Results Summary:
+FOLFOXIRI had been recommended as induction treatment for patients with T4N+ rectal cancer in the latest NCCN guideline. However, no prospective study to support this recommendation in his population. Here, we tried to analyze the efficacy of FOLFOXIRI as induction chemotherapy in the subgroup of rectal cancer patients with T4N+ from a prospective trial.

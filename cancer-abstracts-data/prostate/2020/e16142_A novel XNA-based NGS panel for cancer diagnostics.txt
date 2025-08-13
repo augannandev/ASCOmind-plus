@@ -1,0 +1,18 @@
+Title: A novel XNA-based NGS panel for cancer diagnostics.
+Abstract Number: e16142
+URL: https://meetings.asco.org/abstracts-presentations/188984
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Qiang Gan, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Qiang Gan DiaCarta, Inc., Richmond, CA info_outline Qiang Gan, Zhen Cui, Simin Tang, Michael Joseph Powell, Aiguo Zhang, Michael Y. Sha Organizations DiaCarta, Inc., Richmond, CA Abstract Disclosures Research Funding Pharmaceutical/Biotech Company DiaCarta Background: Identification of genetic variants with low allelic frequency using NGS method is confounded by the complexity of the human genome sequence and by bias and errors that arise during library preparation, sequencing and analysis. To overcome this, we developed a novel NGS approach employing a modified backbone nucleic acid molecule, Xenonucleic Acid (XNA) to enrich the target mutant before the sequencing. XNA enables to efficiently and selectively suppress wild type targeted DNA amplification but amplify targeted mutant alleles. Methods: We developed this XNA-based NGS for detection of mutations in lung and colorectal cancer which includes 8 genes (KRAS, NRAS, EGFR, BRAF, PIK3CA, APC, CTNNB1 and TP53) and 19 hotspots. Results: With as low as 10 ng input DNA, low allelic frequency mutant analysis powered by the XNAs in the library preparation increased the sensitivity of detection dramatically. There were, on average, 32, 24, 25 and 18-fold enrichment in variant allele frequency (VAF) for samples with original 0.10%, 0.25%, 0.50% and 1.25% VAF mutants, respectively. The analytical specificity is about 92% and analytical sensitivity (LOD) can be down to 0.10% VAF with 1000-2000X on Illumina MiSeq. The reproducibility results were obtained for intra-assays, inter-assays and inter-operator assays, and the CVs of detected VAF% were investigated. These 19 actionable mutants were validated by testing cfDNA and FFPE. Preliminary clinical sensitivity for FFPE sample is about 100% for lung cancer and colorectal cancer samples respectively, comparing to without XNA NGS about 85.7% for lung cancer and 70% for colon cancer. For cfDNA sample its clinical sensitivity is about 100% for lung and colon cancer, but without XNA mediated enrichment NGS is only about 70% for lung cancer and undetectable for early colon cancer. Conclusions: The result demonstrated that XNA can selectively block amplification of wild type alleles and leads to enrich of mutants read, and significantly increases the assay sensitivity without the requirement for NGS deeper sequencing.
+
+--------------------------------------------------
+Search Results Summary:
+Identification of genetic variants with low allelic frequency using NGS method is confounded by the complexity of the human genome sequence and by bias and errors that arise during library preparation, sequencing and analysis. To overcome this, we developed a novel NGS approach employing a modified backbone nucleic acid molecule, Xenonucleic Acid (XNA) to enrich the target mutant before the sequencing. XNA enables to efficiently and selectively suppress wild type targeted DNA amplification but amplify targeted mutant alleles.

@@ -1,0 +1,22 @@
+Title: A phase 3 trial with a 2x2 factorial design of abiraterone acetate plus prednisone and/or local radiotherapy in men with de novo metastatic castration-sensitive prostate cancer (mCSPC): First results of PEACE-1.
+Abstract Number: 196406
+URL: https://meetings.asco.org/abstracts-presentations/196406
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Karim Fizazi, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Historically, androgen deprivation therapy (ADT) was the standard of care (SOC) for men with mCSPC. Since 2015, combining ADT with either docetaxel, novel hormonal therapies, or radiotherapy to the primary tumor (RXT) (for those with low burden metastases) was shown to improve overall survival (OS) and thus has become the new SOC. It is unknown whether combining these new treatments on top of ADT further increments outcomes.
+Methods:
+Men with de novo mCSPC were randomized to SOC, SOC + abiraterone acetate-prednisone (abiraterone), SOC + RXT, or SOC + abiraterone + RXT. SOC was initially ADT alone, then from Oct 2015 onwards the use of docetaxel was authorized as part of SOC (at the investigator’s discretion until 2017, then, following the publication of the LATITUDE and STAMPEDE trials, accrual was restricted to men receiving ADT+docetaxel). The trial has two co-primary endpoints of radiographic progression-free survival (rPFS) and OS with type I error of 0.1% and 4.9%, respectively. The required number of rPFS events to achieve 80% power has been reached for the abiraterone question (not yet for the RXT question). The interaction between abiraterone and RXT was first tested using a Cox model adjusted for stratification factors (performance status, type of castration, metastatic burden, and when applicable, docetaxel). A hierarchical testing was used to test the effect of abiraterone: overall population, then ADT+docetaxel population. Results: From Nov 2013 to Dec 2018, 1173 men were enrolled (SOC was ADT+docetaxel in 710 pts and ADT alone in 463 pts), median age 67y (IQR: 60-72), high volume 57%, low volume 43%. The median follow-up is 3.5y. No interaction was detected between the effect of abiraterone and that of RXT (p = 0.64), allowing to pool abiraterone arms for comparisons. rPFS was significantly improved in the abiraterone arm in the overall population (HR: 0.54 (0.46-0.64), p < 0.0001; medians: 2.2 vs 4.5 years) and in the ADT+docetaxel population: (HR: 0.50 (0.40-0.62), p < 0.0001; medians: 2.0 vs 4.5 years). bPFS (PFS including PSA progression as an event) also significantly favored abiraterone in the overall population (HR: 0.40 (0.35-0.47), p < 0.0001; medians: 1.5 vs 3.8 years) and in the ADT+docetaxel population (HR: 0.38 (0.31-0.47), p < 0.0001; medians: 1.5 vs 3.2 years). OS is maturing. Grade 3-4 adverse events reported in > 5% of pts within the first 6 months in the ADT+docetaxel population included neutropenic fever (4.5% vs 5.4%), liver toxicity (19.7% vs 13%), and hypertension (12.2% vs 8.6%) in the abiraterone and control arms, respectively. Conclusion: Adding abiraterone to ADT + docetaxel significantly improves rPFS in men with de novo metastatic prostate cancer, with about 2.5 years of absolute benefit in medians, and no meaningful additional short-term toxicity. Clinical trial information: NCT01957436
+
+--------------------------------------------------
+Search Results Summary:
+

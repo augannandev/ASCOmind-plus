@@ -1,0 +1,18 @@
+Title: Racial and socioeconomic disparities in overall survival in colorectal cancer (CRC) at West Cancer Center & Research Institute (WCCRI), Memphis, TN.
+Abstract Number: e16122
+URL: https://meetings.asco.org/abstracts-presentations/188437
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Vanessa Wookey, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Vanessa Wookey West Cancer Center and Research Institute/University of Tennesse Health Science Center, Germantown, TN info_outline Vanessa Wookey, Gabriella Bufalino, Gregory A. Vidal, Bradley G. Somer, Lee S. Schwartzberg, Axel Grothey Organizations West Cancer Center and Research Institute/University of Tennesse Health Science Center, Germantown, TN; West Cancer Center and Research Institute, Germantown, TN; West Cancer Center, Germantown, TN Abstract Disclosures Research Funding No funding received None Background: WCCRI, a comprehensive regional community oncology center in Memphis, Tennessee and the Mid-South region, serves a racially, geographically and socioeconomically diverse patient cohort. We sought to evaluate disparity of outcomes in survival by race and socioeconomic status, in addition to patient and tumor characteristics. Methods: All consecutive patients referred to and treated at WCCRI with colorectal adenocarcinoma from 2007-2013 were included. Individual chart review was performed to verify diagnosis, stage, and date and cause of death. Kaplan-Meier Overall Survival curves were generated for the entire cohort and by race, sex, tumor location and income derived from zip code. WCCRI survival data were compared to SEER data. Results: From 2007-2013, 1,176 patients were included in the analysis: 405 blacks, 757 whites, 14 others. Median age at diagnosis: Blacks 58 yrs, whites 61 yrs. Stage distribution at diagnosis: stage 1: 100, stage 2: 275, stage 3: 425, stage 4: 376. All stages combined, blacks trended towards shorter OS vs whites (5-year OS: 52.8% vs 58.3%; median survival 71.0 mos vs 98.6 mos; p= 0.095). Blacks presented at later stages (71.4% at stage 3 or 4 vs 66.3% for whites) but no statistically significant OS differences were seen when compared by stage. Patients at or below the median income of $39,590 for WCC had worse 5-year OS (51.6% vs. 61.1%; p= 0.006), as did patients without private insurance (5-year OS: uninsured: 48.0%, Medicare/Medicaid: 50.0%, private: 62.0%; p< 0.001). Adjusted for stage, 5-year OS was statistically significant for stage 4 (private: 18.0%, Medicare/Medicaid: 9.4%, uninsured: 8.3%; p= 0.020). A higher proportion of blacks were below the median income (69% vs 39%) but no statistically significant OS differences were seen when adjusted by race. Overall, cancer survival outcomes were similar to SEER results. Conclusions: At WCCRI, black patients with CRC presented at a later stage than whites, however, adjusted for stage, no significant racial difference in OS was found. Income and insurance status influenced survival outcomes. Overall, our results reveal racial and socioeconomic disparities in colorectal cancer in a diverse US population and further detailed multivariate data analyses are underway.
+
+--------------------------------------------------
+Search Results Summary:
+WCCRI, a comprehensive regional community oncology center in Memphis, Tennessee and the Mid-South region, serves a racially, geographically and socioeconomically diverse patient cohort. We sought to evaluate disparity of outcomes in survival by race and socioeconomic status, in addition to patient and tumor characteristics.

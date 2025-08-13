@@ -1,0 +1,18 @@
+Title: Nanoliposomal irinotecan and metronomic temozolomide for patients with recurrent glioblastoma: BrUOG329, A phase IB/IIA Brown University Oncology Research Group (BrUOG) trial.
+Abstract Number: e14548
+URL: https://meetings.asco.org/abstracts-presentations/189937
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Heinrich Elinzano, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Heinrich Elinzano Rhode Island Hospital, Providence, RI info_outline Heinrich Elinzano, Jessica B. McMahon, Alex B. Mohler, Jordan B. Robison, Arieana B. Carcieri, Steven A Toms, Deus B. Cielo, Wendy B. Turchetti, John Vatkevich, Roxanne Wood, Amy Webber, Howard Safran Organizations Rhode Island Hospital, Providence, RI; Rhode Island Hospital-The Warren Alpert Medical School of Brown University, Providence, RI; Brown University Oncology Research Group, Providence, RI Abstract Disclosures Research Funding Pharmaceutical/Biotech Company Ipsen Background: Nanoliposomal irinotecan (nal-IRI)) is a novel formulation of irinotecan, encapsulating drug molecules within long-circulating liposome-based nanoparticles with resulting favorable pharmacokinetic and biodistribution properties. Nanoliposomes improve the solubility and bioavailability of drugs and potentially increase their ability to cross the blood brain barrier. We performed a phase I study to determine the maximum tolerated dose (MTD) and preliminary efficacy of nal-IRI in combination with metronomic temozolomide (TMZ) in patients with recurrent glioblastoma. Methods: Patients with recurrent glioblastoma who had progressed after at least 1 line of therapy with a KPS of > 60 were eligible. All patients received TMZ 50 mg/m2 PO daily with nal-IRI IV every 2 weeks until disease progression. Three dose levels of nal-IRI were planned, 50 mg/m2, 70 mg/m2 and 80 mg/m2. Dose limiting toxicities (DLTs) were defined as those occurring during the first 2 cycles (28 days) of treatment. Patients were accrued in a 3+3 design. Accrual at the MTD level was to be expanded to 25 patients, unless the study was terminated early if 0-1 responses were observed in the first 13 evaluable patients. Results: Twelve patients were treated over 2 dose levels (nal-IRI 50-70 mg/m2). At dose level 2, nal-IRI 70mg/m2, 2 of 3 patients developed DLTs, including one patient who developed grade 4 neutropenia, grade 2 diarrhea and grade 3 anorexia and one patient with grade 3 diarrhea, grade 3 hypokalemia and grade 3 anorexia. Accrual at nal-IRI 50 mg/m2, defined as the MTD, was expanded to 9 patients. Treatment-related toxicities at this dose level included grade 3 ALT (N = 1). As there were no responses seen in the initial 12 patients (0/12, 0%), the BrUOG Data Safety Monitoring Board terminated the study. Conclusions: The MTD of nal-IRI was 50 mg/m2 every 2 weeks with TMZ 50mg/m2/day. DLTs were grade 3 diarrhea and anorexia. No antitumor activity was seen in the first 12 patients and the study was terminated. Clinical trial information: NCT03119064
+
+--------------------------------------------------
+Search Results Summary:
+Nanoliposomal irinotecan (nal-IRI)) is a novel formulation of irinotecan, encapsulating drug molecules within long-circulating liposome-based nanoparticles with resulting favorable pharmacokinetic and biodistribution properties. Nanoliposomes improve the solubility and bioavailability of drugs and potentially increase their ability to cross the blood brain barrier. We performed a phase I study to determine the maximum tolerated dose (MTD) and preliminary efficacy of nal-IRI in combination with metronomic temozolomide (TMZ) in patients with recurrent glioblastoma.

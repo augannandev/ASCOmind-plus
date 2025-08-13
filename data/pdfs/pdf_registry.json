@@ -1,0 +1,196 @@
+{
+  "1454a653b7c4ad04": {
+    "file_hash": "1454a653b7c4ad04",
+    "filename": "ASCO_2024_ABS_TEST001_Test_ASCO_Abstract_-_Multiple_Myeloma_Study_1454a653b7c4ad04.pdf",
+    "local_path": "data/pdfs/conferences/asco/2024/ASCO_2024_ABS_TEST001_Test_ASCO_Abstract_-_Multiple_Myeloma_Study_1454a653b7c4ad04.pdf",
+    "storage_category": "conferences",
+    "file_size": 44,
+    "metadata": {
+      "title": "Test ASCO Abstract - Multiple Myeloma Study",
+      "authors": "Test Author, Another Author",
+      "year": 2024,
+      "conference": "ASCO",
+      "abstract_number": "TEST001",
+      "indication": "multiple_myeloma"
+    },
+    "stored_at": "2025-06-18T00:05:41.098291",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "f9ae04d7ea9a969f": {
+    "file_hash": "f9ae04d7ea9a969f",
+    "filename": "ASCO_2023_ABS_None_Chimeric_Antigen_Receptor_T-Cell_and_Bispecific_An_f9ae04d7ea9a969f.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Chimeric_Antigen_Receptor_T-Cell_and_Bispecific_An_f9ae04d7ea9a969f.pdf",
+    "storage_category": "conferences",
+    "file_size": 1927,
+    "metadata": {
+      "title": "Chimeric Antigen Receptor T-Cell and Bispecific Antibody Therapy in Multiple Myeloma: Moving Into the Future.",
+      "authors": "Sarah A Holstein; Shakira J Grant; Tanya M Wildes",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "37471687",
+      "doi": "10.1200/JCO.23.00512",
+      "scraped_at": "2025-06-18T00:05:42.867018"
+    },
+    "stored_at": "2025-06-18T00:05:45.372923",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "13310d267500ef31": {
+    "file_hash": "13310d267500ef31",
+    "filename": "ASCO_2023_ABS_None_Epcoritamab_a_Novel_Subcutaneous_CD3xCD20_Bispec_13310d267500ef31.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Epcoritamab_a_Novel_Subcutaneous_CD3xCD20_Bispec_13310d267500ef31.pdf",
+    "storage_category": "conferences",
+    "file_size": 900,
+    "metadata": {
+      "title": "Epcoritamab, a Novel, Subcutaneous CD3xCD20 Bispecific T-Cell-Engaging Antibody, in Relapsed or Refractory Large B-Cell Lymphoma: Dose Expansion in a Phase I/II Trial.",
+      "authors": "Catherine Thieblemont; Tycel Phillips; Herve Ghesquieres; Chan Y Cheah; Michael Roost Clausen; David Cunningham; Young Rok Do; Tatyana Feldman; Robin Gasiorowski; Wojciech Jurczak; Tae Min Kim; David John Lewis; Marjolein van der Poel; Michelle Limei Poon; Mariana Cota Stirner; Nurgul Kilavuz; Christopher Chiu; Menghui Chen; Mariana Sacchi; Brian Elliott; Tahamtan Ahmadi; Martin Hutchings; Pieternella J Lugtenburg",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "36548927",
+      "doi": "10.1200/JCO.22.01725",
+      "scraped_at": "2025-06-18T00:05:42.867108"
+    },
+    "stored_at": "2025-06-18T00:05:45.373713",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "8ce94f8f8b740213": {
+    "file_hash": "8ce94f8f8b740213",
+    "filename": "ASCO_2023_ABS_None_Niraparib_and_Abiraterone_Acetate_for_Metastatic_C_8ce94f8f8b740213.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Niraparib_and_Abiraterone_Acetate_for_Metastatic_C_8ce94f8f8b740213.pdf",
+    "storage_category": "conferences",
+    "file_size": 760,
+    "metadata": {
+      "title": "Niraparib and Abiraterone Acetate for Metastatic Castration-Resistant Prostate Cancer.",
+      "authors": "Kim N Chi; Dana Rathkopf; Matthew R Smith; Eleni Efstathiou; Gerhardt Attard; David Olmos; Ji Youl Lee; Eric J Small; Andrea J Pereira de Santana Gomes; Guilhem Roubaud; Marniza Saad; Bogdan Zurawski; Valerii Sakalo; Gary E Mason; Peter Francis; George Wang; Daphne Wu; Brooke Diorio; Angela Lopez-Gitlitz; Shahneen Sandhu",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "36952634",
+      "doi": "10.1200/JCO.22.01649",
+      "scraped_at": "2025-06-18T00:05:42.867211"
+    },
+    "stored_at": "2025-06-18T00:05:45.374381",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "af5f35dda5c95259": {
+    "file_hash": "af5f35dda5c95259",
+    "filename": "ASCO_2023_ABS_None_Bispecific_antibodies_targeting_BCMA_GPRC5D_and__af5f35dda5c95259.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Bispecific_antibodies_targeting_BCMA_GPRC5D_and__af5f35dda5c95259.pdf",
+    "storage_category": "conferences",
+    "file_size": 805,
+    "metadata": {
+      "title": "Bispecific antibodies targeting BCMA, GPRC5D, and FcRH5 for multiple myeloma therapy: latest updates from ASCO 2023 Annual Meeting.",
+      "authors": "Juanjuan Zhao; Quan Ren; Xinyuan Liu; Xiangqian Guo; Yongping Song",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "37537597",
+      "doi": "10.1186/s13045-023-01489-3",
+      "scraped_at": "2025-06-18T00:05:42.867246"
+    },
+    "stored_at": "2025-06-18T00:05:45.375025",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "ffed9d78ce119781": {
+    "file_hash": "ffed9d78ce119781",
+    "filename": "ASCO_2023_ABS_None_Overall_Survival_With_Daratumumab_Bortezomib_and_ffed9d78ce119781.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Overall_Survival_With_Daratumumab_Bortezomib_and_ffed9d78ce119781.pdf",
+    "storage_category": "conferences",
+    "file_size": 968,
+    "metadata": {
+      "title": "Overall Survival With Daratumumab, Bortezomib, and Dexamethasone in Previously Treated Multiple Myeloma (CASTOR): A Randomized, Open-Label, Phase III Trial.",
+      "authors": "Pieter Sonneveld; Asher Chanan-Khan; Katja Weisel; Ajay K Nooka; Tamas Masszi; Meral Beksac; Ivan Spicka; Vania Hungria; Markus Munder; Maria-Victoria Mateos; Tomer M Mark; Mark-David Levin; Tahamtan Ahmadi; Xiang Qin; Wendy Garvin Mayo; Xue Gai; Jodi Carey; Robin Carson; Andrew Spencer",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "36413710",
+      "doi": "10.1200/JCO.21.02734",
+      "scraped_at": "2025-06-18T00:05:42.867292"
+    },
+    "stored_at": "2025-06-18T00:05:45.376187",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "19f68cbedf9a4081": {
+    "file_hash": "19f68cbedf9a4081",
+    "filename": "ASCO_2023_ABS_None_Chimeric_Antigen_Receptor_T-Cell_and_Bispecific_An_19f68cbedf9a4081.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Chimeric_Antigen_Receptor_T-Cell_and_Bispecific_An_19f68cbedf9a4081.pdf",
+    "storage_category": "conferences",
+    "file_size": 1927,
+    "metadata": {
+      "title": "Chimeric Antigen Receptor T-Cell and Bispecific Antibody Therapy in Multiple Myeloma: Moving Into the Future.",
+      "authors": "Sarah A Holstein; Shakira J Grant; Tanya M Wildes",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "37471687",
+      "doi": "10.1200/JCO.23.00512",
+      "scraped_at": "2025-06-18T00:07:11.978349"
+    },
+    "stored_at": "2025-06-18T00:07:14.489510",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "d839f268b3c029eb": {
+    "file_hash": "d839f268b3c029eb",
+    "filename": "ASCO_2023_ABS_None_Epcoritamab_a_Novel_Subcutaneous_CD3xCD20_Bispec_d839f268b3c029eb.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Epcoritamab_a_Novel_Subcutaneous_CD3xCD20_Bispec_d839f268b3c029eb.pdf",
+    "storage_category": "conferences",
+    "file_size": 900,
+    "metadata": {
+      "title": "Epcoritamab, a Novel, Subcutaneous CD3xCD20 Bispecific T-Cell-Engaging Antibody, in Relapsed or Refractory Large B-Cell Lymphoma: Dose Expansion in a Phase I/II Trial.",
+      "authors": "Catherine Thieblemont; Tycel Phillips; Herve Ghesquieres; Chan Y Cheah; Michael Roost Clausen; David Cunningham; Young Rok Do; Tatyana Feldman; Robin Gasiorowski; Wojciech Jurczak; Tae Min Kim; David John Lewis; Marjolein van der Poel; Michelle Limei Poon; Mariana Cota Stirner; Nurgul Kilavuz; Christopher Chiu; Menghui Chen; Mariana Sacchi; Brian Elliott; Tahamtan Ahmadi; Martin Hutchings; Pieternella J Lugtenburg",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "36548927",
+      "doi": "10.1200/JCO.22.01725",
+      "scraped_at": "2025-06-18T00:07:11.978407"
+    },
+    "stored_at": "2025-06-18T00:07:14.491811",
+    "access_count": 0,
+    "last_accessed": null
+  },
+  "c98f29508a49361b": {
+    "file_hash": "c98f29508a49361b",
+    "filename": "ASCO_2023_ABS_None_Niraparib_and_Abiraterone_Acetate_for_Metastatic_C_c98f29508a49361b.pdf",
+    "local_path": "data/pdfs/conferences/asco/2023/ASCO_2023_ABS_None_Niraparib_and_Abiraterone_Acetate_for_Metastatic_C_c98f29508a49361b.pdf",
+    "storage_category": "conferences",
+    "file_size": 760,
+    "metadata": {
+      "title": "Niraparib and Abiraterone Acetate for Metastatic Castration-Resistant Prostate Cancer.",
+      "authors": "Kim N Chi; Dana Rathkopf; Matthew R Smith; Eleni Efstathiou; Gerhardt Attard; David Olmos; Ji Youl Lee; Eric J Small; Andrea J Pereira de Santana Gomes; Guilhem Roubaud; Marniza Saad; Bogdan Zurawski; Valerii Sakalo; Gary E Mason; Peter Francis; George Wang; Daphne Wu; Brooke Diorio; Angela Lopez-Gitlitz; Shahneen Sandhu",
+      "year": 2023,
+      "conference": "ASCO",
+      "abstract_number": null,
+      "indication": "multiple_myeloma",
+      "source": "pubmed",
+      "pmid": "36952634",
+      "doi": "10.1200/JCO.22.01649",
+      "scraped_at": "2025-06-18T00:07:11.978480"
+    },
+    "stored_at": "2025-06-18T00:07:14.493389",
+    "access_count": 0,
+    "last_accessed": null
+  }
+}

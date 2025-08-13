@@ -1,0 +1,22 @@
+Title: Open label phase II trial of cabozantinib (cabo) in patients with metastatic castrate resistant prostate cancer (mCRPC) and known amplifications or activating mutations in gene targets who have received prior anti-androgen therapy.
+Abstract Number: 201204
+URL: https://meetings.asco.org/abstracts-presentations/201204
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Jones T. Nauseef, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Despite a variety of therapy classes extending survival in mCRPC – and excepting select population eligible for PARP inhibitors – no molecularly selected drugs are FDA approved in mCRPC. Previously, cabo, an inhibitor of multiple tyrosine kinases (e.g. MET, VEGFRs 1-3, RET, KIT, TRKB, FLT-3, AXL, TIE-2), was evaluated in phase III trials (COMET-1, COMET-2) in mCRPC. Despite initial promising results, particularly in bone scan responses and rPFS benefit, further application of cabo in mCRPC was halted after improvement in OS was not observed. It is unclear why prolonged rPFS in COMET-1 (vs. prednisone) did not translate into improved OS. Previous failures may reflect inclusion of relatively cabo-insensitive tumors due to an unselected population with regard to presumed cabo activity. Given that mCRPC specimens from our precision medicine cohort have increased expression of target genes MET and KIT, and qualifying genomic alterations (amplifications, activating mutations) are reported in ̃15% of a publicly-available mCRPC cohort, we developed this rationally-designed study. We predict a molecularly-defined mCRPC cohort will identify the population that most benefits from cabo therapy, as reflected by prolonged rPFS and OS, and more frequent PSA declines and CTC conversions.
+Methods:
+We have activated a phase II non-randomized, open label trial designed to evaluate treatment response and survival of patients with mCRPC who harbor evidence of increased signaling of the targets of cabo. Study population will have progressed on an ARSI; prior taxane therapy in castration-sensitive PC or CRPC (beyond 12 mos) will be eligible. Molecular eligibility: DNA (tumor or cfDNA) evidence of amplification or activating mutation in selected targets of cabo. Alternatively, IHC confirming high expression (2 or 3+) via CLIA-approved assay is allowed. Overexpression via RNAseq, validated by CLIA-approved IHC, is permitted. All patients will receive 40 mg/d of cabo, with dose-reductions allowed (to 20 mg/d, then 20 mg EOD). Repeat biopsy after 3 weeks on treatment is mandated. Primary endpoint is rPFS. Using median of 5.6 mos (COMET-1) to guide our H0 (50% rPFS rate at 6 mo), the H1 is ≥75% rPFS at 6 mo. Sample size (30) provides 90% power with one-sided alpha of 0.05 via chi-square test. Secondary endpoints include PSA decline by PCWG3, objective radiographic response proportion, OS, and CTC response rate. Exploratory studies will include serial evaluation of cfDNA (via PCF-SELECT); immune tumor microenvironment response via on-treatment biopsy and collection of plasma for circulating immune markers; and exploration of baseline and on-treatment tumor genomic alterations. This trial is multicentered via the Prostate Cancer Clinical Trials Consortium (PCCTC c20-254). Clinical trial information: NCT04631744
+
+--------------------------------------------------
+Search Results Summary:
+

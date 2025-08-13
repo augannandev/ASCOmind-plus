@@ -1,0 +1,18 @@
+Title: Safety and efficacy of bevacizumab biosimilar in glioma.
+Abstract Number: e14541
+URL: https://meetings.asco.org/abstracts-presentations/189860
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Gunjesh Kumar Singh, DM
+
+================================================================================
+
+Full Abstract:
+Authors person Gunjesh Kumar Singh Tata Memorial Hospital, Mumbai, India info_outline Gunjesh Kumar Singh, Hollis D'souza, Sujay Srinivas, Dilip Harindran Vallathol, Mounika Boppana, Annu Rajpurohit, Abhishek Mahajan, Amit Janu, Abhishek Chatterjee, Rahul Krishnatry, Tejpal Gupta, Rakesh Jalali, Vijay Maruti Patil Organizations Tata Memorial Hospital, Mumbai, India; TMH, Thane, India; Tata Memorial Centre, Mumbai, India; Krishna Institute of Medical Sciences, Hyderabad, India; Assistant Professor, Department of Radiation Oncology, Toronto, ON, Canada; Apollo Hospital, Chennai, India Abstract Disclosures Research Funding No funding received None Background: Anti-VEGF antibody Bevacizumab (Avastin: Roche Pharma AG) is the recommended drug for recurrent glioma. Multiple low-cost bio-similars of this drug are now available however their clinical efficacy has never been compared against the original molecule. The aim of the current analysis is to compare the overall survival (OS) between recurrent glioma patients with bio-similar and innovator molecule. Methods: Adult recurrent glioma patients treated with bevacizumab from 1st July 2015 to 30th July 2019 were identified from the Neuro-Medical Oncology database. These patients were either offered Avastin or Bevacizumab biosimilar (BevaciRel: Reliance Life sciences or Bryta: Zydus Oncosciences) depending upon the financial affordability. The primary endpoint of the study was OS. It was defined as the time in months from the start of bevacizumab to death. Progression-free survival (PFS) was defined as the time in months from the start of bevacizumab to progression or death. The time to event variables was estimated using Kaplan Meier method. The median with its 95% confidence interval (CI) was calculated using Brookmeyer and Crowley method. The estimates were compared between the original and bio-similar bevacizumab cohort using the log-rank test. The hazard ratio was calculated using COX regression analysis. Results: There were 82 patients, out of which 57 received innovator and 25 received bio-similar bevacizumab. At median follow up of 26 months, 76 patients had an event for progression. The median PFS was 3.66 (95% CI 2.08 to 5.25) and 3.3 months (95% CI 2.38 to 4.21) in innovator and bio-similar arm respectively (Log-rank test P-value = 0.072). The hazard ratio for progression was 0.61 (95% CI 0.35 to 1.05; P-value = 0.075). At the time of data cutoff, there were 69 deaths. The median OS was 5.53 (95% CI, 5.07 to 5.99) vs 7.33 months (95% CI, 5.63 to 9.03) in innovator and bio-similar arm respectively (Log-rank test P-value = 0.51). The hazard ratio for death was 1.21 (95% CI, 0.67 to 2.17; p-value = 0.51). Conclusions: In the brain tumor patients, both innovator and bio-similar bevacizumab seem to have similar clinical efficacy.
+
+--------------------------------------------------
+Search Results Summary:
+Anti-VEGF antibody Bevacizumab (Avastin: Roche Pharma AG) is the recommended drug for recurrent glioma. Multiple low-cost bio-similars of this drug are now available however their clinical efficacy has never been compared against the original molecule. The aim of the current analysis is to compare the overall survival (OS) between recurrent glioma patients with bio-similar and innovator molecule.

@@ -1,0 +1,22 @@
+Title: The fluciclovine (FACBC) PET/CT site-directed therapy of oligometastatic prostate cancer (Flu-BLAST-PC) trial.
+Abstract Number: 201224
+URL: https://meetings.asco.org/abstracts-presentations/201224
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Risa Liang Wong, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Patients with biochemical recurrence (BCR) after local definitive therapy for prostate cancer (PC) represent the largest group of patients alive with PC in the United States. For patients with BCR after both radical prostatectomy and radiation, no further definitive treatment options currently exist as standard of care. FACBC PET/CT is a next-generation imaging modality approved in 2016 for suspected PC recurrence based on elevated PSA levels following prior treatment. FACBC PET/CT allows for earlier detection at lower PSA levels of oligometastatic PC in patients who would otherwise be considered as having micro-metastatic disease. FACBC PET/CT may provide potential targets for site-directed therapy; however, it is unknown whether this approach leads to improvement in clinically relevant outcomes.
+Methods:
+Flu-BLAST-PC (ClinicalTrials.gov Identifier: NCT0417543) is a prospective, interventional study enrolling men with PC and BCR who have previously undergone both radical prostatectomy and adjuvant or salvage radiation to the prostatic fossa, with PSA ≥0.5 to < 10 ng/mL, PSA doubling time > 3 to < 18 months, and no radiographically detectable metastases by conventional CT and bone scan imaging. Enrolled patients undergo FACBC PET/CT imaging, and those with no PC metastases detected (Group 1) undergo observation with repeat FACBC PET/CT performed at PSA thresholds of > 2 and > 5 ng/mL, with eligibility for the trial ending at PSA ≥10 ng/mL if FACBC PET/CT remains negative. Those with 1-3 PC regions (defined as radiation fields) detected on FACBC PET/CT (Group 2) undergo site-directed therapy with surgery (e.g. lymphadenectomy) and/or radiation, as well as six months of systemic treatment with androgen deprivation therapy (ADT) and abiraterone acetate with prednisone. Patients with ≥4 PC regions detected on FACBC PET/CT (Group 3) undergo six months of ADT and abiraterone acetate with prednisone without any site-directed therapy. Patients initially in Group 1 who subsequently have PC metastases detected on repeat FACBC PET/CT imaging per protocol join Group 2 or Group 3 based on the number of PC regions involved. Given the long anticipated survival of patients with PC and BCR, the primary endpoint of the study is undetectable PSA ( < 0.2 ng/mL) rate in Group 2 at two years beyond study treatment, with secondary endpoints including the same outcome measure for Group 3, undetectable PSA rate two years after testosterone recovery from ADT in Groups 2 and 3, time to re-initiation of ADT, overall survival, and safety and tolerability. Assuming a null hypothesis of 15% undetectable PSA rate for patients with BCR two years after completing ADT and alternative hypothesis of improvement to 40% in Group 2, planned enrollment is 65 patients in Group 2. This will provide 90% power at the two-sided significance level of 0.05. Five patients have enrolled to date. Clinical trial information: NCT0417543.
+
+--------------------------------------------------
+Search Results Summary:
+

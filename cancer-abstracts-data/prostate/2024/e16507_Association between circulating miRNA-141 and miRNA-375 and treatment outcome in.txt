@@ -1,0 +1,18 @@
+Title: Association between circulating miRNA-141 and miRNA-375 and treatment outcome in metastatic castration-resistant prostate cancer.
+Abstract Number: e16507
+URL: https://meetings.asco.org/abstracts-presentations/177566
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Ahmed Hussien Zedan, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Ahmed Hussien Zedan Department of Oncology, Vejle Hospital, Institute of Regional Health Research, University of Southern Denmark, Vejle, Denmark info_outline Ahmed Hussien Zedan, Palle Jörn Sloth Osther, Jannie Assenholt, Jonna Skov Madsen, Torben Hansen Organizations Department of Oncology, Vejle Hospital, Institute of Regional Health Research, University of Southern Denmark, Vejle, Denmark; Department of Urology, Vejle Hospital, Denmark, Vejle, Denmark; Department of Biochemistry and Clinical Immunology, Vejle Hospital, Denmark, Vejle, Denmark; Danish Colorectal Cancer Center South, Vejle Hospital, Vejle, Denmark Abstract Disclosures Research Funding Other The Japanese-Swedish Research Foundation Background: Metastatic castration resistant prostate cancer (mCRPC) is associated with high mortality. Monitoring of disease activity at this stage, with lack of validated prognostic models, is still a major clinical challenge. The role of microRNAs (miRNAs) has been widely investigated in prostate cancer with both diagnostic and prognostic potential. The aim of this study was to investigate the relationship between circulating miRNAs and treatment outcome in mCRPC patients. Methods: The relative expression of four miRNAs was investigated in plasma samples from 84 mCRPC patients; 40 patients were treated with docetaxel and 44 patients with abiraterone. Real-time polymerase chain reaction was used for analysis. Blood was sampled at baseline, before the second treatment cycle, and at radiological progression (RP). Associations to prognoses were analyzed using the Cox Regression analyses. Results: The plasma levels of all four miRNAs decreased significantly after treatment initiation in patients receiving docetaxel, and for miRNA-141 and miRNA-375 the level increased again at the time of RP. High baseline levels of miRNA-141 were significantly associated with a shorter time to RP in patients receiving both abiraterone, hazard ratio (HR) 3.18 (95% confidence interval (CI) 1.31-7.32), p < 0.01, and docetaxel HR 2.56 (95% CI 1.45-4.50), p < 0.01, and a shorter overall survival (OS), HR 3.20 (95% CI 1.25-9.37), p = 0.02, and HR 1.77 (95% CI 1.07-2.83), p = 0.02, respectively. Likewise, high baseline levels of miRNA-375 were also significantly associated with a shorter time to RP in both cohorts and OS in patients receiving docetaxel. Conclusions: Plasma levels of miRNA-141 and miRNA-375 were of prognostic importance in patients with mCRPC receiving both abiraterone and docetaxel and may be used in treatment monitoring irrespective of treatment modality.
+
+--------------------------------------------------
+Search Results Summary:
+Metastatic castration resistant prostate cancer (mCRPC) is associated with high mortality. Monitoring of disease activity at this stage, with lack of validated prognostic models, is still a major clinical challenge. The role of microRNAs (miRNAs) has been widely investigated in prostate cancer with both diagnostic and prognostic potential. The aim of this study was to investigate the relationship between circulating miRNAs and treatment outcome in mCRPC patients.

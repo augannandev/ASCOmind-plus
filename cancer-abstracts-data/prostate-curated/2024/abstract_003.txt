@@ -1,0 +1,18 @@
+Title: A phase II study of enzalutamide (Enz) with dutasteride (Dut) or finasteride (Fin) in men ≥ 65 years with hormone-naive systemic prostate cancer (HNSPCa): Tolerability and geriatric asssessment (GA) results.
+Abstract Number: e16518
+URL: https://meetings.asco.org/abstracts-presentations/177544
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Jason Zittel, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Jason Zittel University of Rochester Medical Center, Rochester, NY info_outline Jason Zittel, Chunkit Fung, Dilip Sankar Babu, Elizabeth A. Guancial, Deepak M. Sahasrabudhe, Kathryn A. Bylow, John D. Burfeind, Kaylinn Musto, Bokai Wang, Amita Patil, Edward M. Messing, Supriya Gupta Mohile, Deepak Kilari Organizations University of Rochester Medical Center, Rochester, NY; Florida Cancer Specialists, Sarasota, FL; Wilmot Cancer Center, Rochester, NY; Medical College of Wisconsin, Milwaukee, WI Abstract Disclosures Research Funding Pharmaceutical/Biotech Company Background: Older men are at a high risk for adverse events (AEs) from androgen deprivation therapy (ADT). In this phase II study, we evaluated Enz and Dut/Fin in lieu of ADT for at-risk older patients with HNSPCa. Methods: Eligible patients were ≥65 years (y); at high risk of AEs from ADT by GA or treating physicians; metastatic (M1) or non-metastatic (M0) HNSPCa with a PSA doubling time ≤ 9 months and testosterone > 50ng/dl. They received Enz 160 mg/day and Dut 0.5 mg/day or Fin 5 mg/day until disease progression. GA was performed at baseline and week (wk) 61 and/or at the time of progression. GA included validated tests: Instrumental Activities of Daily Living (IADL), fall history, Short Physical Performance Battery (SPPB), Geriatric Depression Scale (GDS), and Montreal Cognitive Assessment (MOCA). The prevalence of impairment for each assessment was calculated; change in prevalence from baseline to wk 61 was analyzed using paired sample t-test. Results: 43 patients were enrolled in the study. Median age at enrollment was 78 y (range 66-94) and 93% were ECOG 0-1; 37% (n = 16) had M0 and 63% (n = 27) had M1 HNSPCa, with the majority (67%) having Gleason 6 or 7 disease. At baseline, 18.6% met the cutoff for impairment for IADLs, 53.7% for SPPB, 7.9% for GDS and 64.3% for MOCA; 9.8% had a recent fall. Median baseline PSA was 11.38 ng/ml (range: 2-145). At the time of analysis, 29 men (67.4%) remain on study treatment. 95.3%, 74.4% and 46.5% of patients reported at least one Grade 1, 2 or 3 AE respectively. No patient had a Grade 4 AE and one Grade 5 AE was reported but was an unrelated event. The most common Grade 3 AEs were hypertension (27.8%), GI (19.4%), and cardiac (8.3%); all Grade 3 GI AEs reported were deemed unrelated to the study drugs. Only impairment in ≥ 1 IADL showed a statistically significant increase in prevalence at wk 61 of treatment (40.6%) compared to baseline (18.6%, p = 0.036). Conclusions: For older men with HNSPCa, Enz with Dut/Fin demonstrated efficacy with reasonable toxicity profile, and no significant impact on the majority of GA domains. Clinical trial information: NCT02213107
+
+--------------------------------------------------
+Search Results Summary:
+Older men are at a high risk for adverse events (AEs) from androgen deprivation therapy (ADT). In this phase II study, we evaluated Enz and Dut/Fin in lieu of ADT for at-risk older patients with HNSPCa.

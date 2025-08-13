@@ -1,0 +1,26 @@
+Title: Genomic characteristics of homologous recombination deficiency in prostate cancer.
+Abstract Number: 198429
+URL: https://meetings.asco.org/abstracts-presentations/198429
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Yu Wei
+
+================================================================================
+
+Full Abstract:
+Background:
+PARP inhibitors (PARPi) have been approved in the treatment of metastatic castration-resistant prostate cancer with deleterious or suspected deleterious alterations in homologous recombination repair (HRR) genes. Patients carrying alterations of different HRR genes showed diverse response to PARPi, while the underlying mechanism is unrevealed. Homologous recombination deficiency (HRD) score serves as a promising way to interpret the genomic instability by targeted next-generation sequencing (NGS). In this study, we analyzed HRD score and its relationship to genomic characteristics in a prostate cancer (PC) cohort.
+Methods:
+Tumor tissue and matched white blood cells from 295 PC patients were analyzed by NGS-based assays, which target over 10,000 single-nucleotide polymorphisms distributed across human genome to characterize genomic instability, as well as the whole coding region of 733 or 233 genes. HRD score was derived by the sum of three indexes, including loss-of-heterozygosity, telomeric allelic imbalance, and large-scale state transitions. Deleterious or suspected deleterious mutations were included for analysis. Tumor mutation burden (TMB) was calculated by the number of somatic single nucleotide variants and indels in examined coding regions, with driver mutations excluded. An ovarian and fallopian tube cancer cohort, carrying deleterious or suspected deleterious mutations in BRCA1/2, was also included.
+Results:
+In PC cohort, 25 patients (8.47%) had BRCA1/2 mutations, with additional 39 patients (13.2%) carrying mutations in HRR genes other than BRCA1/2. HRD score was similar among tumors with germline BRCA1/2 mutation (n = 9), somatic BRCA1/2 mutation (n = 14) or both (n = 2) (median HRD score 38.0, 32.5 and 49.5; P = 0.281). In BRCA1/2 mutation carriers, HRD score in PC cohort was lower than ovarian cancer (n = 222) and fallopian tube cancer (n = 8) (median HRD score 36, 54 and 67; P < 0.001). PC samples with CDK12 (n = 35), ATM (n = 13) and PALB2 (n = 2) mutations had lower HRD score compared with BRCA1/2 mutants (median HRD score 24, 14, 11 and 36; P < 0.001). In PC patients without HRR mutation, HRD score was higher in TP53 mutants compared with TP53 wildtype (median HRD score 25 and 14; P < 0.001), while tumors with ERG fusion had lower HRD score than ERG fusion absent tumors (median HRD score 8 and 18.5; P = 0.029). In four TP53 mutated PC patients treated with PARPi in our center, three patients achieved PSA response. Furthermore, no linear correlation was discovered between TMB and HRD score, while tumors with higher HRD score (HRD score ≥ 30) had a bit lower TMB (median TMB 3.07 vs 3.91, P = 0.002).
+Conclusions:
+HRD score was affected by alterations in different HRR genes, TP53 mutation and ERG fusion, which should be taken into consideration of the future clinical trials and research on intrinsic mechanisms. Patients carrying alterations other than HRR genes might benefit from PARPi. Further studies are needed.
+
+--------------------------------------------------
+Search Results Summary:
+

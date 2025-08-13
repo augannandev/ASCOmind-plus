@@ -1,0 +1,18 @@
+Title: Evaluation of molecular pathogenesis of colon cancer in Kerala using high-throughput expression, signaling pathways, and network analyses.
+Abstract Number: e16065
+URL: https://meetings.asco.org/abstracts-presentations/188638
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Prasanth Ariyannur, MD, MBBS
+
+================================================================================
+
+Full Abstract:
+Authors person Prasanth Ariyannur Amrita Institute of Medical Sciences, Amrita Vishwa Vidyapeetham, Kochi, India info_outline Prasanth Ariyannur, Pavithran Keechilat, Roopa Paulose, Damodaran M Vasudevan Organizations Amrita Institute of Medical Sciences, Amrita Vishwa Vidyapeetham, Kochi, India Abstract Disclosures Research Funding Other Amrita Vishwa Vidyapeetham Internal Seed Grant Background: The molecular pathogenesis of colon adenocarcinoma (COAD) is attributed to large molecular changes such as Chromosomal Instability and high somatic copy number variation or defective DNA mismatch repair and consequent microsatellite instability (MSI). The prevalence of this type of cancer is increasing in the state of Kerala, India. A detailed study of the signaling pathways could lead to a better understanding of the central molecular pathological changes and potential biomarkers particular to this population. Methods: High throughput somatic expression analysis using Nanostring PanCancer pathway panel assay was performed. Differentially expressed (DE) genes were selected and KEGG pathway enrichment analysis was performed for assessment of canonical signaling pathways. Expression profiles were compared against the public database, Colon Adenocarcinoma cohort of the Cancer Genome Atlas (TCGA-COAD), using the Genome Expression Profiling Interactive Analysis (GEPIA). Protein-protein interaction network analysis was done using Cytoscape. DE genes were compared against immune cell infiltration in the TCGA-COAD from Tumor Immune Estimation Resource (TIMER) databases. Results: Nanostring assay was performed in 10 Tumor-Normal paired FFPE samples of stage II/III colon adenocarcinoma. Out of > 700 genes, significant difference in expression was found in 83 genes (FDR adjusted p -value < 0.01) with fold-change |fc(log2)| of at least one. Fold-change |fc(log2)| ≥ 2 was found in 19/83 genes. Network analysis clustered 13 out of 17 upregulated genes. Superimposition of the current data on TCGA study showed that among the three genes, four (MET, MCM2, ETV4 and MMP7), were common. DE Genes which were not significant in TCGA COAD study such as INHBA, COL1A1, COL11A1, COMP, SFRP4, SPP1, IL11, LIF, WT1 and DDIT4, were found to be significant in the current study. A few of the unique genes identified in the current study were found to have significant correlation with antigen presenting cells infiltration in the TCGA-COAD studies. Conclusions: Many DE genes from the study population were found to be different from previous large cohort studies in other population. This may suggest a different pathogenesis of COAD in this population, warranting a detailed study on the pathogenesis.
+
+--------------------------------------------------
+Search Results Summary:
+The molecular pathogenesis of colon adenocarcinoma (COAD) is attributed to large molecular changes such as Chromosomal Instability and high somatic copy number variation or defective DNA mismatch repair and consequent microsatellite instability (MSI). The prevalence of this type of cancer is increasing in the state of Kerala, India. A detailed study of the signaling pathways could lead to a better understanding of the central molecular pathological changes and potential biomarkers particular to this population.

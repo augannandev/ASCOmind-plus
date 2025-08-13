@@ -1,0 +1,18 @@
+Title: A novel xenonucleic acid mediated molecular clamping technology for early colorectal cancer diagnostics.
+Abstract Number: e16106
+URL: https://meetings.asco.org/abstracts-presentations/188221
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Qing Sun
+
+================================================================================
+
+Full Abstract:
+Authors person Qing Sun DiaCarta, Inc., Richmond, CA info_outline Qing Sun, Larry Pastor, Jinwei Du, Michael Joseph Powell, Aiguo Zhang, Walter Bodmer, Michael Y. Sha Organizations DiaCarta, Inc., Richmond, CA; Weatherall Institute of Molecular Medicine, Oxford, United Kingdom Abstract Disclosures Research Funding Pharmaceutical/Biotech Company DiaCarta Background: Colorectal cancer (CRC) is one of the leading causes of cancer-related death. Early detection is critical to reduce CRC morbidity and mortality. In order to meet this need, we developed a molecular clamping assay called ColoScape for early colorectal cancer diagnostics. Methods: Nineteen mutations in four genes APC, KRAS, BRAF and CTNNB1 associated with early events in CRC pathogenesis are targeted in the ColoScape assay. Xenonucleic Acid (XNA) mediated qPCR clamping technology was applied to minimize the wild-type background amplification in order to improve assay sensitivity of CRC mutation detection. The assay analytical performance was verified and validated, cfDNA and FFPE CRC patient samples were assessed for clinical performance, and a ROC curve was applied to evaluate its performance. Results: The data showed that the assay analytical sensitivity is 0.5% Variant Allele Frequency, corresponding to ~7-8 copies of mutant DNA with 5ng total DNA input per test. This assay is highly reproducible with intra-assay CV < 3% and inter-assay CV < 5%. We have investigated 380 clinical samples including plasma cfDNA and FFPE samples from patients with different stages of CRC. The preliminary assay clinical specificity and sensitivity for cfDNA were 100% (95% CI, 80.3-97.5%) and 92.2% (95% CI, 94.7-100%) respectively with AUC being about 0.96; and 96% (95% CI, 77.6-99.7%) specificity and 92% (95% CI, 86.1-95.6%) sensitivity with AUC 0.94 for FFPE. Conclusions: XNA mediated molecular clamping assay is a rapid, precise, and sensitive assay for the detection of CRC mutations in cfDNA or FFPE samples.
+
+--------------------------------------------------
+Search Results Summary:
+Colorectal cancer (CRC) is one of the leading causes of cancer-related death. Early detection is critical to reduce CRC morbidity and mortality. In order to meet this need, we developed a molecular clamping assay called ColoScape for early colorectal cancer diagnostics.

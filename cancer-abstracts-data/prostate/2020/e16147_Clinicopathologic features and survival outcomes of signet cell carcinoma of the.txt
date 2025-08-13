@@ -1,0 +1,18 @@
+Title: Clinicopathologic features and survival outcomes of signet cell carcinoma of the appendix: Analysis of the SEER database.
+Abstract Number: e16147
+URL: https://meetings.asco.org/abstracts-presentations/187861
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Kamelah Abushalha, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Kamelah Abushalha Doctors Without Borders, Amman, Jordan info_outline Kamelah Abushalha, Wa'el Tuqan, Sara Albagoush, Sawsan Abulaimoun, Peter T. Silberstein Organizations Doctors Without Borders, Amman, Jordan; Ochsner Health System, New Orleans, LA; Creighton University Medical Center, Omaha, NE; Creighton University, Omaha, NE Abstract Disclosures Research Funding No funding received None Background: Signet ring cell carcinoma of the appendix (SRCCA) is an exceedingly rare tumor, and limited data are available on the characteristics and survival probabilities of this tumor. Methods: Surveillance, Epidemiology, and End Results (SEER) database was used to identify 527 patients diagnosed with SRCCA between 2000 and 2015. The database was used to examine demographic information. Survival analysis was made by Kaplan-Meier and compared by log-rank test. Cox proportional hazards model was adopted for prognostic variable evaluation. Results: The majority of SRCCA patients were female (63.9%) and white (83.8%), with a mean age at diagnosis of 56 years. Histologically; 60% of the tumors were of high grade (poorly-differentiated and undifferentiated). The majority of patients were diagnosed with metastatic disease (61.3%) and received surgical treatment (86.5%), with sub-total colectomy was the most common surgery performed (45.6%). Median overall survival was 26 months, with a cancer-specific survival at three-year and five-years of 39% and 18.4%, respectively. There was a 10-year difference in median survival time based on sex (females vs males; 23 vs 33 months respectively). On bivariate analysis; factors associated with significantly increased mortality (p < 0.05), include increased age (HR 1.02), female gender (HR 1.33), AJCC T category (T4 compared to T0; HR 1.96), AJCC N category (N1 compared to N0; HR 1.9) and AJCC M category (M1 compared to M0: HR 2.62). Factors associated with improved survival (p < 0.05) included treatment by surgical resection; total colectomy (HR 0.47) and sub-total colectomy (HR 0.45) . Conclusions: This is the largest study to date on SRCCA. Older white females are most commonly affected and often diagnosed at advanced stage and grade.
+
+--------------------------------------------------
+Search Results Summary:
+Signet ring cell carcinoma of the appendix (SRCCA) is an exceedingly rare tumor, and limited data are available on the characteristics and survival probabilities of this tumor.

@@ -1,0 +1,18 @@
+Title: FLT1 amplification predicts poor response in metastatic colorectal cancer patients treated with apatinib as 3rd line treatment.
+Abstract Number: e16033
+URL: https://meetings.asco.org/abstracts-presentations/189112
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Ma Dong
+
+================================================================================
+
+Full Abstract:
+Authors person Ma Dong Guangdong General Hospital, Guangzhou, China info_outline Ma Dong, Dongyang Yang, Fei Xu, Xiaorong Lai, Han Han-Zhang, Chunxiang Chen, Lin Shao, Shuyin Chen, Lu Zhang Organizations Guangdong General Hospital, Guangzhou, China; Burning Rock Biotech, Guangzhou, China Abstract Disclosures Research Funding No funding received None Background: Apatinib, a selective vascular endothelial growth factor receptor-2 (VEGFR2) inhibitor, has demonstrated encouraging anticancer activity across a broad range of malignancies. Recent studies have shown efficacy of apatinib as a third-line treatment for patients with refractory colorectal cancer. In this study, we characterized the genomic profile and explored predictive and prognostic biomarkers in metastatic colorectal cancer (mCRC) patients treated with apatinib as the 3rd line treatment. Methods: We retrospectively recruited 19 mCRC patients, with a median age of 53, treated with apatinib as the third-line regimen. The cohort consisted of 10 female and 9 male patients with 13 and 6 patietns with left-seide and right-sided CRC, respectively. Tissue samples prior to apatinib treatment were profiled using a 520-cancer-related gene panel. Results: This cohort achieved an ORR of 16% (3/19) and DCR of 53% (10/19). The median PFS and OS were 5 and 8.7 months, respectively, comparable with published studies. The genomic profile of 19 patients showed that 57% of alterations were missense, and 18% and 12% were copy number variations (CNV) and frameshift, respectively. All 19 patients were microsatellite stable (MSS). Most frequently mutated genes were TP53 (95%), APC (53%) and KRAS (53%). Other commonly mutated genes included PI3KCA (26%), FAT3 (16%), LPR1B (16%), FLT1(16%), SAMD4 (16%), TCF7L2 (16%) and TCNNB1 (16%). Univariate Cox analysis revealed a shorter PFS in patients harboring FLT1 amplification (n = 3) versus those without (P = 0.0007). All 3 patients with FLT1 amplification had progressive diease as their best response, with an average PFS of 1.4 months. Furthermore, we also revealed that APC mutation was significantly associated with older age (P = 0.02) and lymph node metastasis (P = 0.01). Patients with pulmonary metastasis were more likely to haveTP53 disruptive mutation (P = 0.02). Conclusions: Our study explored the potential predictive biomerkers for apatinib and revealed that FLT1 amplification might be a potential predictive biomarker for poor efficacy in mCRC patients treated with apatinib. FLT1 encodes VEGFR1, which could compete with VEGFR2 for binding with VEGF, potentially explaining the inferior response to apatinib observed in pateints harboring FLT1 amplification. Larger cohorts are needed to validate the finding.
+
+--------------------------------------------------
+Search Results Summary:
+Apatinib, a selective vascular endothelial growth factor receptor-2 (VEGFR2) inhibitor, has demonstrated encouraging anticancer activity across a broad range of malignancies. Recent studies have shown efficacy of apatinib as a third-line treatment for patients with refractory colorectal cancer. In this study, we characterized the genomic profile and explored predictive and prognostic biomarkers in metastatic colorectal cancer (mCRC) patients treated with apatinib as the 3rd line treatment.

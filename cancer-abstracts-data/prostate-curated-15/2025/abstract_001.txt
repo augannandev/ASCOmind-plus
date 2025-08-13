@@ -1,0 +1,18 @@
+Title: Dietary polyphenols and the risk of prostate cancer in the prospective Southern Community Cohort Study.
+Abstract Number: 10518
+URL: https://meetings.asco.org/abstracts-presentations/247767
+Source: ASCO Selenium Scraper
+Year: 2025
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Grace Xu, BS
+
+================================================================================
+
+Full Abstract:
+Authors person Grace Xu Vanderbilt University, Nashville, TN info_outline Grace Xu, Heather Munro, Qi Dai, Danxia Yu, Landon Fike, Martha Shrubsole Organizations Vanderbilt University, Nashville, TN; Vanderbilt-Ingram Cancer Center, Nashville, TN Abstract Disclosures Research Funding Meharry Vanderbilt Tennessee Cancer Partnership National Cancer Institute Background: In the US, prostate cancer incidence is highest among underrepresented and underserved populations, including Black and low-income populations. Polyphenols, common in plant-based foods, are biologically active compounds previously associated with decreased risk of prostate cancer. Objectives: We examined intake of total polyphenols, classes, and subclasses with risk of prostate cancer in the Southern Community Cohort Study (SCCS), a large prospective cohort study established in 2002-2009 to study the causes of racial and income cancer disparities in 12 southern states. Methods: Polyphenol intakes (mg/day) derived from food frequency questionnaires were grouped into quintiles. Prostate cancer diagnosis was obtained from state cancer registries and death records. Cox proportional hazard models were used to estimate hazard ratios and 95% confidence intervals to determine associations between polyphenol intakes and prostate cancer risk. Analyses included 29,325 participants, including 1,145 incident prostate cancer cases. Results: Higher total polyphenol intake was associated with a modestly decreased risk of prostate cancer compared to the lowest intake except in the highest quintile. 8 subclasses of polyphenols derived primarily from tea, fruit juices, and red wine were associated with a statistically significant decreased risk of prostate cancer comparing the highest to lowest quintiles (e.g. HR 0.58; 0.47-0.72, ptrend< 0.001 for flavanols). Most associations were similar between Black and White individuals, but flavonoids (HR 0.42; 0.28-0.63, p = 0.0005) and hydroxybenzoic acids (HR 0.45; 0.30-0.67, p = 0.0001) were statistically significant only among White participants. In stratified analyses by smoking status and household income, only flavones were associated with a statistically decreased risk of prostate cancer, specifically among current smokers and participants with an income < $15000. Conclusions: Polyphenol intakes were associated with decreased prostate cancer risk among both Black and White participants. Further studies should evaluate whether polyphenol intake is associated with decreased risk for later stages of prostate cancers.
+
+--------------------------------------------------
+Search Results Summary:
+In the US, prostate cancer incidence is highest among underrepresented and underserved populations, including Black and low-income populations. Polyphenols, common in plant-based foods, are biologically active compounds previously associated with decreased risk of prostate cancer. Objectives: We examined intake of total polyphenols, classes, and subclasses with risk of prostate cancer in the Southern Community Cohort Study (SCCS), a large prospective cohort study established in 2002-2009 to study the causes of racial and income cancer disparities in 12 southern states.

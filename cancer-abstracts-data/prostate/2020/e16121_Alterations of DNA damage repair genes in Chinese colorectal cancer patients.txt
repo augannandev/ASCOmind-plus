@@ -1,0 +1,18 @@
+Title: Alterations of DNA damage repair genes in Chinese colorectal cancer patients.
+Abstract Number: e16121
+URL: https://meetings.asco.org/abstracts-presentations/187923
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Wenliang Li
+
+================================================================================
+
+Full Abstract:
+Authors person Wenliang Li The First Affiliated Hospital of Kunming Medical University, Kunming, China info_outline Wenliang Li, Zhu Zhu, Ning Xu, Wei Huang, Junping Shi, Jiaochun Shi, Weifeng Wang, Samuel J Klempner, Juan Zhao, Jialiang Gan Organizations The First Affiliated Hospital of Kunming Medical University, Kunming, China; The First Affiliated Hospital of Guangxi Medical University, Nanning, China; OrigiMed, Shanghai, China; Massachusetts General Hospital, Boston, MA Abstract Disclosures Research Funding No funding received None Background: Colorectal cancer (CRC) is the second most common cancer in women and third in men. DNA damage repair (DDR) deficiency has emerged as a predictive biomarker for chemotherapy, PARP and immune checkpoint inhibitors. However, comprehensive molecular characteristics of DDR variants in Chinese CRC patients is lacking. Methods: Formalin fixed, paraffin embedded (FFPE) tumor tissues and matched blood samples were collected for targeted next-generation sequencing (NGS) assay. The testing was carried out in a College of American Pathologists (CAP) accredited and Clinical Laboratory Improvement Amendments (CLIA) certified laboratory. Alterations of six functional gene sets involved in DDR pathways: homologous recombination (HR), mismatch repair (MMR), base excision repair (BER), nonhomologous end-joining (NHEJ), checkpoint factors (CPF) and Fanconi anemia (FA) were analyzed. The association of DDR gene mutations with TMB/MSI was assessed. Results: In total, 319 CRC patients were recruited, 127 female and 192 male with a median age of 59 (range 23-92). Over one third (36%,115/319) patients had at least one mutation in DDR genes. Mutation rates varied in different DDR pathway: HR (20.7%), CPF (15.1%), FA (11.3%), MMR (10.3%), BER (8.8%), and NHEJ (5.3%). The most frequently mutated DDR genes were ARID1A (13.4%), ATM (10.2%), BRCA2 (6.8%), MLH1 (5.6%), MSH6 (5.6%), POLE (5.0%). Germline mutations in MLH1 (2.5%), BRCA2 (1.2%), MSH2 (0.9%), MSH6 (0.9%), FANCA (0.9%), ATM (0.6%), BRCA1 (0.3%), and CHEK2 (0.3%) were detected in 24 patients. DDR variations were enriched in the right-side CRC compared to the left side CRC (50% vs. 32.8%, p= 0.024). Early stage (I-II) harbored more DDR variations. 20.1% of patients had high TMB (≥10 muts/Mb) with a median of 51 muts/Mb (10-326.7 mus/Mb). Patients with DDR mutations had a significantly higher TMB than patients with wild type DDR (8.5 vs. 4.6 muts/Mb, p< 0.001). All CRC tumors with high MSI harbored DDR mutations. Importantly, the mutations in “HM” (HR/MMR), but not BER/CPF/NHEJ/FA mutations, were significantly correlated with high MSI (p< 0.001). Conclusions: DDR gene alterations occurred in 36% of Chinese CRC patients and were enriched in right sided tumors. DDR pathway alterations are relatively frequent in CRC and consideration for biomarker-enriched clinical trials with PARP, immune checkpoint inhibitors, and novel combinations are warranted.
+
+--------------------------------------------------
+Search Results Summary:
+Colorectal cancer (CRC) is the second most common cancer in women and third in men. DNA damage repair (DDR) deficiency has emerged as a predictive biomarker for chemotherapy, PARP and immune checkpoint inhibitors. However, comprehensive molecular characteristics of DDR variants in Chinese CRC patients is lacking.

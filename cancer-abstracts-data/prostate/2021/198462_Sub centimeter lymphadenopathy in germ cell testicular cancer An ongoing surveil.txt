@@ -1,0 +1,26 @@
+Title: Sub-centimeter lymphadenopathy in germ cell testicular cancer: An ongoing surveillance challenge.
+Abstract Number: 198462
+URL: https://meetings.asco.org/abstracts-presentations/198462
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Ruth Kieran, BA, BCh, MSc, MRCP
+
+================================================================================
+
+Full Abstract:
+Background:
+Correct identification of retroperitoneal disease is essential for proper staging and management in germ cell tumors. A size threshold of a 10mm diameter has high specificity in assessing nodal metastases, but sensitivity can be poor at this level and many patients have sub-centimeter lymphadenopathy on post-orchidectomy staging. As many staging scans are done soon after surgery, these may represent reactive lymph nodes. We aimed to assess the prevalence of sub-centimeter lymphadenopathy on baseline imaging in our patients, and its association with recurrence.
+Methods:
+Records of patients diagnosed with testicular germ cell cancer in a tertiary cancer center (n = 55, 2015-2020) were reviewed (median followup of 26 months, range 1-59). Lymphadenopathy size measurements were taken from the scan report, which had been authorized by a radiology consultant.
+Results:
+Patients had a median age of 34 (range 19-63). 37 (67%) had pure seminomas, 2 (4%) pure embryonal tumors, 12 (22%) mixed tumors with a primarily (> 50%) embryonal component, and 4 (7%) other mixed types. 48 (87%) had stage 1 disease, 3 (6%) stage 2 and 4 (7%) stage 3 disease. 26 (47%) had CT staging preoperatively, of the remainder 69% (n = 20) were staged in the first 48 postoperative hours. 28 (51%) had no lymphadenopathy, 15 (27%) had sub-centimeter lymphadenopathy within the landing zone, 8 (15%) had lymphadenopathy measuring > 1 cm within the landing zone, 4 (7%) had lymphadenopathy elsewhere. 7 had immediate chemotherapy, 48 entered surveillance. For the 14 with sub-centimeter lymphadenopathy within the landing zone who did not have immediate chemotherapy, 3 regressed, 8 were stable. 2 underwent a PET for further assessment, 1 a biopsy. 3 increased in size. 6 patients on surveillance had a recurrence – of these 2 had seminomas with no baseline lymphadenopathy, 4 had mixed primarily embryonal tumors (3 with sub-centimeter lymphadenopathy (0.6, 0.7 and 0.9 cm each), one with a 1.3cm para-aortic lymph node). Of those 4, only 1 had significantly elevated HCG pre-operatively, all recurred in the sites of previously noted lymphadenopathy. Those with mixed, primarily embryonal disease with lymphadenopathy (representing 50% of such patients on surveillance) had a higher recurrence risk than other patients on surveillance (OR: 153, 95% CI 6-3709, p= 0.002) Those undergoing preoperative/delayed postoperative imaging (n = 28) were equally likely to have lymphadenopathy to those having imaging in the first 7 postoperative days (X2 (3, N= 27) = 2.9, p= 0.4). 1 patient had died (unrelated causes), all others were disease-free at most recent followup.
+Conclusions:
+Sub-centimeter lymphadenopathy is more likely to be benign in those with seminomas, but even small volume lymphadenopathy in those with mixed tumors with a primarily embryonal component may represent metastatic disease, and should be monitored closely.
+
+--------------------------------------------------
+Search Results Summary:
+

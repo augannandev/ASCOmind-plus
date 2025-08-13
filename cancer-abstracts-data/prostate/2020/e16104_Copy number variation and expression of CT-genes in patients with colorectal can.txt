@@ -1,0 +1,18 @@
+Title: Copy number variation and expression of CT-genes in patients with colorectal cancer.
+Abstract Number: e16104
+URL: https://meetings.asco.org/abstracts-presentations/188767
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Yuri Gevorkyan
+
+================================================================================
+
+Full Abstract:
+Authors person Yuriy A. Gevorkyan Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation info_outline Yuriy A. Gevorkyan, Denis S. Kutilin, Oleg I. Kit, Natalya V. Soldatkina, Dmitry A. Kharagezov, Andrey V. Dashkov, Dmitry O. Kaymakchi, Sergey I. Poluektov, Vladimir E. Kolesnikov, Vladimir A. Dontsov, Roman E. Tolmakh, Sergei A. Ilchenko, Oleg N. Stateshny, Dmitry S. Petrov, Fedor N. Grechkin, Nairi B. Oganyan, Ellada Mirzoyan, Yuriy A. Fomenko Organizations Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation Abstract Disclosures Research Funding No funding received None Background: Cancer-testis antigens (CTAs) can be used for immunotherapeutic approaches and early detection of malignant tumors. Despite numerous studies of CTA expression in various tumors, including colon tumors, the mechanisms of transcriptional activity regulation in colorectal cancer (CRC) remain poorly studied. One of the possible mechanisms of regulation of gene expression is a change in their copy number (CNV). The aim of the study was to analyze the changes in the copy number and expression of CT-genes in patients with CRC. Methods: Tumor and normal colon tissues of 81 patients were used in the study. DNA was isolated by phenol-chloroform extraction. RNA was isolated by the Chomczynski&Sacchi method (2006). The REVERTA-L reagent kit was used for the cDNA synthesis. Determination of expression and copy number of 16 CT genes (MAGE-A1, -A2, -A3, -A4, MAGE-B1, -B2, GAGE-1, -3, -4, MAGEC1, BAGE, XAGE3, NYESO1, SSX2, SCP1, PRAME1) was performed using the Real-Time qPCR method (reference genes - GAPDH and GUSB). Differences were evaluated using the Mann-Whitney test, correlation analysis - using Spearman's rank correlation coefficient (r). Results: An analysis of CT-gene expression and CNV in tumor and normal colon tissues (n = 81) revealed a statistically significant (p < 0.05) difference between these parameters in tumor tissue relative to normal one: for MAGEB1 an increase of 2.0 and 2.7 times, GAGE3 an increase of 2.0 and 2.5 times, GAGE4 decreased by 5.0 and 6.8 times, BAGE decreased by 2.4 and 1.7 times, SSX2 increased by 1.8 and 2.1 times, SCP1 increased copy number by 4.4 times and PRAME1 increased expression and copy number by 2.9 and 2.3 times, respectively. When comparing CNV and expression of 16 CT genes, a positive correlation was observed (r = 0.875). Conclusions: Thus, the aberrant expression of MAGEB1, GAGE3, GAGE4, BAGE, SSX2 and PRAME1 found in the tumor tissue of CRC patients depends on the copy number of these CT-genes.
+
+--------------------------------------------------
+Search Results Summary:
+Cancer-testis antigens (CTAs) can be used for immunotherapeutic approaches and early detection of malignant tumors. Despite numerous studies of CTA expression in various tumors, including colon tumors, the mechanisms of transcriptional activity regulation in colorectal cancer (CRC) remain poorly studied. One of the possible mechanisms of regulation of gene expression is a change in their copy number (CNV). The aim of the study was to analyze the changes in the copy number and expression of CT-genes in patients with CRC.

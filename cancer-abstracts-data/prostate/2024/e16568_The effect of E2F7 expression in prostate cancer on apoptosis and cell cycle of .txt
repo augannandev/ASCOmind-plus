@@ -1,0 +1,18 @@
+Title: The effect of E2F7 expression in prostate cancer on apoptosis and cell cycle of prostate cancer cells.
+Abstract Number: e16568
+URL: https://meetings.asco.org/abstracts-presentations/177075
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Ying Wang
+
+================================================================================
+
+Full Abstract:
+Authors person Ying Wang Oncology Department, Shenzhen Hospital, Southern Medical University, Shenzhen, China info_outline Ying Wang Organizations Oncology Department, Shenzhen Hospital, Southern Medical University, Shenzhen, China Abstract Disclosures Research Funding Other Government Agency Background: Prostate cancer (PCa) is a leading cause of illness and death among men in the United States and Western Europe. However, the molecular mechanisms by which PCa developed has not been fully illustrated. Methods: Here, the expression of E2F7 in PCa was examined using IHC method and western blotting assay, and the expression of miR-30c was measured using qRT-PCR method. The cell cycle and apoptosis was determined by FACS. Cell Counting Kit-8 was used to testify cell proliferation. miR-30c mimics, miR-30c inhibitors and E2F7 siRNA transfections were performed to study the loss- and gain-function. Duel-luciferase reporter assay was performed to verify that E2F7 was one of the potential targets of miR-30c. Results: It was found that E2F7 was overexpressed in PCa cells and tissues compared with normal ones. Inhibition of E2F7 in PCa cells led to significant decreased proliferation rates, increased G1 phase percentage, and higher apoptosis rates of PCa. Duel-luciferase reporter assay showed that E2F7 was one of the targets of miR-30c. Moreover, introduction of miR-30c resulted in decreased proliferation rates, increased G1 phase percentage, and higher apoptosis rates of PCa cells while miR-30c inhibitor led to lower apoptosis rates of PCa cells. Conclusions: In conclusion, our study demonstrated that E2F7 may play a tumorigenesis promoting role of PCa cells, and that E2F7 was regulated via miR-30c, indicating that E2F7 and miR-30c might be viable therapeutic targets for PCa.
+
+--------------------------------------------------
+Search Results Summary:
+Prostate cancer (PCa) is a leading cause of illness and death among men in the United States and Western Europe. However, the molecular mechanisms by which PCa developed has not been fully illustrated.

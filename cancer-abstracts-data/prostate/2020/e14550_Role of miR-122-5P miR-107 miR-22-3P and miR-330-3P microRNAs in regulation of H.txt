@@ -1,0 +1,18 @@
+Title: Role of miR-122-5P, miR-107, miR-22-3P, and miR-330-3P microRNAs in regulation of HIF1A expression in high-grade gliomas.
+Abstract Number: e14550
+URL: https://meetings.asco.org/abstracts-presentations/190089
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Anton Pushkin
+
+================================================================================
+
+Full Abstract:
+Authors person Anton A. Pushkin Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation info_outline Anton A. Pushkin, Ilya A. Alliluev, Eduard E. Rostorguev, Sergey E. Kavitskiy, Natalya S. Kuznetsova, Natalya N. Timoshkina, Oleg I. Kit Organizations Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation Abstract Disclosures Research Funding No funding received None Background: HIF1-alfa is a powerful regulator of angiogenesis and cell invasion activating a wide range of oncogenes. Control of the HIF1-alpha transcription is strictly regulated by many molecular pathways, including miRNAs which can become targets for gene therapy of cancer. Methods: The study included 30 patients with histologically verified high-grade gliomas. RNAs were isolated from 30 paired (tumor and control) samples using the TRIzol reagent (Thermo Fisher, USA). The cDNA synthesis was performed using the Reverta MMLV kit (Sintol, Russia). Expression of miRNAs and HIF1A was evaluated by RT-PCR using the CFX96 system (Bio-Rad, USA). The 2−ΔΔСt method was used to analyze the qPCR data. Statisical processing of the results was performed with the Statistica 10 program (StatSoft Inc., USA). Results: Using analysis of TargetScan and miRTarBase databases and appropriate literature, miRNAs (miR-122-5p, miR-107, miR-22-5p and miR-330-3p) able to regulate HIF1A expression were selected. The HIF1A expression in the tumor was 1.8 times higher, compared to normal tissue (p = 0.0031). The 2−ΔΔСt value for miR-122-5p, miR-107, miR-22-3p and miR-330-3p decreased by 40%, 45%, 36%, and 91.5%, respectively, in tumor samples relative to the control point (p < 0.05 in all cases). A correlation was found between the expression of miRNA 122-5p and HIF1A (Spearman’s r = -0.46 at p < 0.05). Conclusions: An increase in the HIF1A miRNA level was found, together with a decrease in the expression of four potentially targeting miRNAs in high-grade gliomas. A negative correlation between the expression of miR-122-5p and HIF1A in high-grade gliomas was revealed, which can be used for the development of new therapy options.
+
+--------------------------------------------------
+Search Results Summary:
+HIF1-alfa is a powerful regulator of angiogenesis and cell invasion activating a wide range of oncogenes. Control of the HIF1-alpha transcription is strictly regulated by many molecular pathways, including miRNAs which can become targets for gene therapy of cancer.

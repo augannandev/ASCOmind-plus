@@ -1,0 +1,26 @@
+Title: Rate of skeletal-related events (SREs) for abiraterone acetate (AA) versus enzalutamide (ENZ) in prostate cancer: A population-based study using the SEER-Medicare database.
+Abstract Number: 198454
+URL: https://meetings.asco.org/abstracts-presentations/198454
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Daniel H Kwon, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+Skeletal-related events are common in men with prostate cancer, and are associated with significant morbidity and mortality. AA and ENZ are novel androgen signaling inhibitors used in the treatment of metastatic prostate castration-resistant prostate cancer (mCRPC). As directly comparative efficacy data do not exist between AA and ENZ, the differing toxicity profiles inform treatment selection. It is unknown whether SRE rates differ in a real-world population between AA, which is given with corticosteroids, and ENZ, which is associated with imbalance and falls.
+Methods:
+The national SEER-Medicare linked database was used to identify men with prostate cancer who received AA or ENZ between 2011-2015; approval during this period was solely for mCRPC. Inclusion criteria included Medicare Part A+B coverage 1 year before and after first receipt of AA/ENZ, without any HMO enrollment. Baseline demographic and comorbidity data were gathered. Diagnosis and procedure claims codes were used to identify SREs, defined as pathologic fracture, surgery to bone, radiation to bone, or spinal cord compression. The time to SRE was defined as time from first receipt of AA/ENZ to the first SRE of any type. A multivariable competing risk regression analysis including death as a competing risk was performed.
+Results:
+5,856 men with prostate cancer who first received AA (N = 4,207) or ENZ (N = 1,649) were identified. The median age at initiation of AA/ENZ was 70 years (range 65-101); 78% were White, 12% Black, 4% Hispanic, 3% Asian, and 4% Other. The median follow-up was 14 months. The overall SRE rate was 13.1% after AA/ENZ start: 574 (13.6%) AA and 194 (11.8%) ENZ, with a cumulative incidence of 11.9% at 2 years. Median overall survival was 16 months (14.4 months for AA and 18.3 months for ENZ). Age, stage at diagnosis, race/ethnicity, baseline comorbidities, and prior history of SRE were balanced between AA vs ENZ, aside from baseline osteoarthritis or rheumatoid arthritis (48.0% AA vs 53.2% ENZ, P < 0.001) and baseline Alzheimer’s dementia (9.2% AA vs 11.1% ENZ, P = 0.03). After controlling for these potential risk factors, receipt of AA versus ENZ was not associated with time to SRE (relative risk ratio [RR] = 0.90, 95% CI 0.77-1.06, P = 0.22). Osteoporosis (RR 1.22, 95% CI 1.01-1.49, P = 0.04), osteoarthritis or rheumatoid arthritis (RR 1.23, 95% CI 1.06-1.43, P < 0.01), and prior history of SRE (RR 1.31, 95% CI 1.07-1.59, P < 0.01) were statistically significant risk factors for SRE.
+Conclusions:
+In this real-world population of men with prostate cancer, there was no difference in time to SRE between AA and ENZ. Clinical decision-making on whether to prescribe AA or ENZ should be informed by other potential toxicities as well as cross-resistance with sequencing of these therapies. Analysis of impact of bone protective agent use is underway.
+
+--------------------------------------------------
+Search Results Summary:
+

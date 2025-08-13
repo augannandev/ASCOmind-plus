@@ -1,0 +1,18 @@
+Title: In Vivo-like model of glial tumors: Creation of primary cell lines.
+Abstract Number: e14515
+URL: https://meetings.asco.org/abstracts-presentations/189908
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Sofia V. Timofeeva
+
+================================================================================
+
+Full Abstract:
+Authors person Sofia V. Timofeeva Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation info_outline Sofia V. Timofeeva, Oleg I. Kit, Anastasia O. Sitkovskaya, Irina V. Mezhevova, Svetlana Yu. Filippova, Tatiana V. Shamova, Eduard E. Rostorguev, Sergey N. Ignatov, Natalya S. Kuznetsova, Dmitriy P. Atmachidi, Sergey E. Kavitskiy, Inna A. Novikova Organizations Rostov Research Institute of Oncology, Rostov-on-Don, Russian Federation Abstract Disclosures Research Funding No funding received None Background: The choice of cell source for 3D bioprinting of in vivo-like models of glial tumors is crucial and must take into account the ability to proliferation and stable metabolism. Oral administration of 5-aminolevulinic acid (5-ALA) in patients prior to surgery increases the fluorescent contrast between tumor and surrounding tissue, but the effect of contrast agents on cells in vitro is unknown. The aim of the study was obtaining viable glial tumor tissues using 5-ALA, as well as the development of a stable primary cell culture for 3D bioprinting. Methods: Tumor tissue was obtained from patients with glioblastoma during surgery under visual control using the Opmi Pentero Blue E400 microscope and 5-ALA. Material was disaggregated on a BD Machine using Medicons 50 μm (BD). Glioblastoma cells were cultured in DMEM/F12 medium with L-glutamine (Gibco) containing 10% fetal bovine serum (Biolot, Russia), 1% non-essential amino acids (NEAA, Sigma-Aldrich) and 0.5% penicillin-streptomycin (Biolot) at 37C. Glial cell lines were characterized immunohistochemically using antibodies to the glial fibrillary acidic protein (GFAP) and proliferation index (Ki-67). Microsatellite analysis was performed using three dinucleotide repeat markers D2S123, D17S250, D5S346 and five mononucleotide loci BAT25, BAT26, NR21, NR24 and NR27. Results: The positive expression of GFAP on the cell processes of the star-like shape was clearly visualized, indicating a morphological feature of glial tumors. The Ki-67 labeling index was 70%. Changes were observed at the D17S250 locus (148-148/148-152) for the glial tumor primary cells after the sixth passage. Microsatellite instability was not observed in the primary cell culture. Conclusions: The accumulation of porphyrins from 5-ALA in glial tumor cells does not prevent the in vitro creation of a cell culture from tumor tissue. Microsatellite analysis showed that the obtained glioblastoma cell lines remain stable for at least 10 passages. Material obtained during resection using 5-ALA is a reliable source of stable glial tumor cell lines.
+
+--------------------------------------------------
+Search Results Summary:
+The choice of cell source for 3D bioprinting of in vivo-like models of glial tumors is crucial and must take into account the ability to proliferation and stable metabolism. Oral administration of 5-aminolevulinic acid (5-ALA) in patients prior to surgery increases the fluorescent contrast between tumor and surrounding tissue, but the effect of contrast agents on cells in vitro is unknown. The aim of the study was obtaining viable glial tumor tissues using 5-ALA, as well as the development of a stable primary cell culture for 3D bioprinting.

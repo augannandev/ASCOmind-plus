@@ -1,0 +1,18 @@
+Title: Targeting differential response using molecular guided biopsies in bone-metastatic prostate cancer.
+Abstract Number: e16516
+URL: https://meetings.asco.org/abstracts-presentations/176979
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Alison Roth, MS
+
+================================================================================
+
+Full Abstract:
+Authors person Alison Roth University of Wisconsin, Madison, WI info_outline Alison Roth, Scott A. Tomlins, Michael Tuite, Glenn Liu, Robert Jeraj Organizations University of Wisconsin, Madison, WI; University of Michigan, Ann Arbor, MI; Department of Radiology, University of Wisconsin School of Medicine and Public Health, Madison, WI; University of Wisconsin Carbone Cancer Center, Madison, WI; Department of Medical Physics, University of Wisconsin, Madison, WI Abstract Disclosures Research Funding Other Foundation Background: Methods for molecular image-guided biopsies have been limited to targeting lesions with high radiotracer uptake. The purpose of this study is to determine the value of using molecular imaging response to select lesions for biopsy. Methods: 7 metastatic prostate cancer patients received 18F-NaF PET/CT scans at baseline and after 12 weeks of enzalutamide therapy. Lesion uptake was quantified semi-automatically. Lesions were classified as partially responding (PR, significantly decreased uptake), stable disease (SD, no significant change), and progressing disease (PD, significantly increased uptake) using test-retest limits of agreement for the relative change in SUVtotal. In the case that response was stable by SUVtotal, the relative change of SUVmax (and corresponding limits of agreement) were used to reclassify response. 3 candidate lesions from each response category (PR, PD) were selected, including SD lesions if needed. Interventional radiologists biopsied two lesions from different response categories per patient within 7 days of the week 12 scan. Up to 3 needle cores and aspirate were taken per biopsy. Core and aspirate samples were subjected to multiplexed PCR using custom Ampliseq panels targeted to common mutations (DNA) and alterations (RNA) in prostate cancer. The presence of androgen receptor splice variant 7 (AR-V7) was determined for each sample. Results: 8/13 lesions biopsied contained tumor, but one patient’s samples were not tracked (one lesion contained tumor). 7/11 tracked lesions contained tumor including 2/3 PR lesions, 1/4 SD lesions, and 4/4 PD lesions. The average tumor content in successful needle passes was 30.0% for PR (3/6 passes), 20.0% for SD (1/8 passes), and 35.7% for PD lesions (7/8 passes). Aspirate samples were acquired for 1 PR and 3 PD lesions; all 4 contained tumor. AR-V7 was identified in 0/2 PR, 0/1 SD, and 3/4 PD lesions. 3/7 patients had two biopsy lesions that contained tumor. Two patients had PR and PD biopsies and one patient had SD and PD biopsies). AR-V7 was identified in the PD lesions of one of the PR/PD patients and the SD/PD patient. Conclusions: Molecular imaging response has the potential to increase the success of difficult biopsy scenarios. Additional information about developing therapy resistance can be gathered by preferentially sampling PD lesions. Clinical trial information: NCT02677376
+
+--------------------------------------------------
+Search Results Summary:
+Methods for molecular image-guided biopsies have been limited to targeting lesions with high radiotracer uptake. The purpose of this study is to determine the value of using molecular imaging response to select lesions for biopsy.

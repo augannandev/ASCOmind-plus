@@ -1,0 +1,18 @@
+Title: Oncolytic HSV and PI3K inhibitor BKM120 synergize to promote killing of prostate cancer stem-like cells.
+Abstract Number: e16503
+URL: https://meetings.asco.org/abstracts-presentations/177069
+Source: ASCO Selenium Scraper
+Year: 2024
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: LEI WANG
+
+================================================================================
+
+Full Abstract:
+Authors person LEI WANG Zhongnan Hospital of Wuhan University, Wuhan, China info_outline LEI WANG Organizations Zhongnan Hospital of Wuhan University, Wuhan, China Abstract Disclosures Research Funding U.S. National Institutes of Health Background: Novel therapies to override chemo-radiation resistance in prostate cancer (PCa) are needed. Prostate cancer sphere-forming cells (PCSCs) (also termed prostate cancer stem-like cells) likely participate in tumor progression and recurrence and are important therapeutic targets. Methods: We established PCSC-enriched spheres by culturing human (DU145) and murine (TRAMP-C2) PCa cells in growth factor-defined serum-free medium, and characterized stem-like properties of clonogenicity and tumorigenicity in vivo. The efficacy of two different oHSVs (G47∆ and MG18L) in PCSCs was tested alone and in combination with radiation, chemotherapy, and inhibitors of PI3K, Wnt, and NOTCH in vitro, and G47∆ with BKM120 in a PCSC-derived tumor model in vivo. Results: PCSCs were more tumorigenic than serum-cultured parental cells. Human and murine PCSCs were sensitive to oHSV and BKM120 killing in vitro, while the combination was synergistic. In contrast, oHSV combined with radiation, docetaxel, Wnt, or NOTCH inhibitors was not. In athymic mice bearing DU145 PCSC-derived tumors, combination intra-tumoral G47∆ and systemic BKM120 induced complete regression of tumors in 2 of 7 animals, and exhibited superior anti-tumor activity compared to either monotherapy alone, with no detectable toxicity. Conclusions: oHSV synergizes with BKM120 in killing PCSCs in vitro and the combination markedly inhibits tumor growth even inducing regression in vivo.
+
+--------------------------------------------------
+Search Results Summary:
+Novel therapies to override chemo-radiation resistance in prostate cancer (PCa) are needed. Prostate cancer sphere-forming cells (PCSCs) (also termed prostate cancer stem-like cells) likely participate in tumor progression and recurrence and are important therapeutic targets.

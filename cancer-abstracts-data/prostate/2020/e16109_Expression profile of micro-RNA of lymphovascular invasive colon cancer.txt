@@ -1,0 +1,18 @@
+Title: Expression profile of micro-RNA of lymphovascular invasive colon cancer.
+Abstract Number: e16109
+URL: https://meetings.asco.org/abstracts-presentations/187975
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Jim Zhongning Chen, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Zhongning Chen University of Arkansas for Medical Sciences, Little Rock, AR info_outline Zhongning Chen, Tyler Fugere, Yadav Pandey Organizations University of Arkansas for Medical Sciences, Little Rock, AR Abstract Disclosures Research Funding No funding received None Background: Lymphovascular invasion (LVI) is an independent predictor of disease progression in patients with colorectal cancer, and is often associated with high tumor grade and advanced tumor stage. In concordance, micro-RNA(miRNA), which are small non-coding RNA that regulate post-transcriptional gene expression, have also recently been shown to be promising biomarkers to predict disease prognosis. The purpose of this study is to investigate [1] potential mechanism of tumor invasion by identifying miRNA that are differentially expressed with respect to LVI status, and [2] create a model to predict likelihood of SVI. Methods: Data was obtained from the TCGA database. Patients were selected based on biopsy proven diagnosis of adenocarcinoma of the colon. Patients were divided into based on the status of lymphovascular invasion (209 patients LVI negative, and 145 patients positive). A total of 130 miRNA were analyzed after filtering out miRNA expression counts < 10. The differential expression profile of the miRNA between the two groups were analyzed using a quasi-likelihood F test implemented by bioconductor package, edgeR. This package is well documented for analyzing RNA-seq data due to adjustment for biological variations and measuring error using a negative binomial distribution. After adjusting for gender, the expression of miRNA |Log2FC| > .3 and P value < 0.05 were obtained. A model was created using support vector machine (SVM) using miRNA that are differentially expressed. Results: Compared to negative LVI group, the positive LVI group has a miRNA profile with the down regulation of hsa-let-7f-1, hsa-let-7f-2, hsa-mir-200c, hsa-mir-92a-1, hsa-mir-92a-2, hsa-mir-378a, hsa-mir-374a, hsa-mir-361, hsa-mir-128-1, and hsa-mir-200b, and up regulation of hsa-mir-142, hsa-mir-199b, hsa-mir-199a-1, and hsa-mir-199a-2. A support vector machine classifier with a predict power of 70% was created using the miRNA described as above. Conclusions: This miRNA expression profile unifies known pathways for LVI, such as over expression of myosin heavy chain 9 gene, or dysregulation of zinc finger E-box binding homeobox 1. They also act as biomarkers to predict the likelihood of LVI.
+
+--------------------------------------------------
+Search Results Summary:
+Lymphovascular invasion (LVI) is an independent predictor of disease progression in patients with colorectal cancer, and is often associated with high tumor grade and advanced tumor stage. In concordance, micro-RNA(miRNA), which are small non-coding RNA that regulate post-transcriptional gene expression, have also recently been shown to be promising biomarkers to predict disease prognosis. The purpose of this study is to investigate [1] potential mechanism of tumor invasion by identifying miRNA that are differentially expressed with respect to LVI status, and [2] create a model to predict likelihood of SVI.

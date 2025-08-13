@@ -1,0 +1,18 @@
+Title: Prognostic significance of adipose tissue distribution and metabolic activity in PET-CT images of patients with metastatic colorectal cancer.
+Abstract Number: e16038
+URL: https://meetings.asco.org/abstracts-presentations/188557
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Tuba Karacelik
+
+================================================================================
+
+Full Abstract:
+Authors person Tuba Karacelik Necmettin Erbakan University, Meram Faculty of Medicine, Department of Internal Medicine, Konya, Turkey info_outline Tuba Karacelik, Bugra Kaya, Mustafa Karaagac, Murat Araz, Melek Karakurt Eryılmaz, Hakan Sat Bozcuk, Mehmet Artac Organizations Necmettin Erbakan University, Meram Faculty of Medicine, Department of Internal Medicine, Konya, Turkey; Necmettin Erbakan University, Meram Faculty of Medicine, Department of Nuclear Medicine, Konya, Turkey; Necmettin Erbakan University, Meram Faculty of Medicine, Department of Medical Oncology, Konya, Turkey; Medical Park Antalya Hospital, Department of Medical Oncology, Antalya, Turkey Abstract Disclosures Research Funding No funding received None Background: The metabolic activity in visceral and subcutaneous adipose tissue have different metabolic risk profiles for colorectal cancer. The aim of this study was to investigate the prognostic significance of adipose tıssue distribution and metabolic activity in PET-CT and predict the overall survival in patients with metastatic colorectal cancer (mCRC). Methods: A total of 83 patients diagnosed with mCRC between 2010-2018 were evaluated retrospectively. Pretreatment PET-CT images were reevaluated to determine adipose tissue distribution and metabolic activity. Volume and metabolic activity of subcutaneous adipose tissue (SAT) and visceral adipose tissue (VAT) on FDG PET-CT images were measured. SAT volume, SAT density (HU), SAT ratio (SAT volume/ SAT density) were calculated. The maximum standardized uptake (SUV) of tumor tissue was measured. The relationship between adipose tissue and overall survival was examined. Results: 53 patients died during follow-up and the median overall survival was 33.76 months (95% CI: 28.185-39.349). According to univariate analysis results, tumor location (HR:2.5; 95% CI 1.27-4.98, p = 0.008) and SAT ratio (HR:0.5; 95% CI 0.34-1.00, p = 0.053) were the significant parameters for the OAS. VAT volume (p = 0.774), VAT density (p = 0.899), VAT suv mean (p = 0.831) and SAT volume (p = 0.423), SAT density (p = 0.353), SAT suv mean (p = 0.575), tumor suv max (p = 0.589) values were not correlated with OAS. In the multivariate analysis, SAT ratio (p = 0.011) and tumor location (p = 0.001) were correlated significantly with OAS. The median OAS for the patients with SAT ratio value < -1.1 and -1.1 were 38.5 (95% CI 31.54-45.58) and 24.5 (95% CI 14.13-34.93) months, respectively (p = 0.05). Conclusions: This study showed that SAT ratio was an independent prognostic factor for OAS in patients with mCRC. We need prospective studies for to observe the relationship between adipose tissue distribution and response to treatment in mCRC.
+
+--------------------------------------------------
+Search Results Summary:
+The metabolic activity in visceral and subcutaneous adipose tissue have different metabolic risk profiles for colorectal cancer. The aim of this study was to investigate the prognostic significance of adipose tıssue distribution and metabolic activity in PET-CT and predict the overall survival in patients with metastatic colorectal cancer (mCRC).

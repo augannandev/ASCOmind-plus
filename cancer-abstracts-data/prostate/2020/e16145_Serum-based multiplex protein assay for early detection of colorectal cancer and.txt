@@ -1,0 +1,18 @@
+Title: Serum-based multiplex protein assay for early detection of colorectal cancer and precancerous lesions in a FIT positive population.
+Abstract Number: e16145
+URL: https://meetings.asco.org/abstracts-presentations/187823
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Herbert A. Fritsche, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Herbert A. Fritsche Fritsche Consulting Services, Houston, TX info_outline Herbert A. Fritsche, Jason Lee Liggett, Hong Zhang, Linnea Ferm, Ib Jarle Christensen, Hans J. Nielsen Organizations Fritsche Consulting Services, Houston, TX; EDP Biotech Corporation, Knoxville, TN; Department of Computer Science, Georgia Southern University, Statesboro, GA; Department of Surgical Gastroenterology, Hvidovre Hospital, Hvidovre, Denmark Abstract Disclosures Research Funding Other EDP Biotech Corporation Background: Colorectal cancer (CRC) is the second leading cancer worldwide in terms of incidence, 5-year prevalence and mortality for both women and men ages 45 years old and up. The current screening method for many countries with organized screening programs is the FIT test for fecal occult blood; however, this test can result in false positive rates as high as 65%. A FIT reflex test could reduce unnecessary colonoscopies while reducing wait times for those patients that need confirmatory colonoscopies the most. Methods: Danish FIT positive colonoscopy confirmed serum samples (n = 1,499) were divided into training and validation sets maintaining approximately equivalent percentages of clean colonoscopy (40%), low risk adenomas (16%), medium risk adenomas (19%), high risk adenomas (13%), stage I CRC (5%), stage II CRC (2%), stage III CRC (4%), and stage IV CRC (0.5%). Proteins were quantified by custom 16-plex immunoassays utilizing the Luminex xMAP platform. A support vector machine supervised machine learning algorithm was trained with the 16 biomarkers plus age and FIT concentration using 1,291 samples for the outcome medium risk adenoma, high risk adenoma, and CRC. Then this algorithm was tested on a blind 208 sample validation set. Results: The training set was 90% sensitive and 27% specific (AUC = 0.68) and the validation set was 93% sensitive and 21% specific (AUC = 0.63). The sensitivities of the validation by risk/stage was as follows: medium risk adenoma 91%, high risk adenomas 92%, stage I CRC 100%, stage II CRC 100%, stage III CRC 100%, stage IV CRC 93%. Conclusions: This study demonstrates feasibility of a novel blood-based multiplex protein immunoassay for use as a reflex to FIT positive results in population wide screening. It detected nearly all adenomas and carcinomas while reducing FIT false positives and thus unnecessary colonoscopies by more than 20%. A FIT reflex test could alleviate endoscopy burden experienced in countries with organized cancer screening programs, while providing better patient outcomes by detecting polyps and early-stage CRC with high sensitivity.
+
+--------------------------------------------------
+Search Results Summary:
+Colorectal cancer (CRC) is the second leading cancer worldwide in terms of incidence, 5-year prevalence and mortality for both women and men ages 45 years old and up. The current screening method for many countries with organized screening programs is the FIT test for fecal occult blood; however, this test can result in false positive rates as high as 65%. A FIT reflex test could reduce unnecessary colonoscopies while reducing wait times for those patients that need confirmatory colonoscopies the most.

@@ -1,0 +1,18 @@
+Title: Therapeutic effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy with concomitant temozolomide alone in children with DIPG: A single-center experience with 82 cases.
+Abstract Number: e14518
+URL: https://meetings.asco.org/abstracts-presentations/190015
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Mingyao Lai, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Mingyao Lai Department of Neuro-Oncology, Guangdong San Jiu Brain Hospital, Guangzhou, China info_outline Mingyao Lai, Juan Li, Qingjun Hu, Shaoqun Li, Jiangfen Zhou, Cheng Zhou, Lei Wen, Zhaoming Zhou, Changguo Shan, Linbo Cai Organizations Department of Neuro-Oncology, Guangdong San Jiu Brain Hospital, Guangzhou, China; Department of Neuro-Oncology, Guangdong Sanjiu Brain Hospital, Guangzhou, China; Department of Neuro-oncology, Guangdong Sanjiu Brain Hospital, Guangzhou, China Abstract Disclosures Research Funding Other Nature Science Foundation of Guangdong Province Background: To retrospectively analyze the therapeutic effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy with concomitant temozolomide alone for pediatric diffuse intrinsic pontine glioma (DIPG), and to evaluate the value of temozolomide in the treatment of pediatric DIPG. Methods: The clinical data of children with confirmed DIPG in Guangdong Sanjiu Brain Hospital between January 1, 2010 and December 30, 2019 were collected. The inclusive criteria included (1) receiving a total radiotherapy dose of 54 Gy in 27 fractions, (2) treated with concomitant temozolomide chemotherapy, and (3) with or without adjuvant temozolomide chemotherapy. Results: A total of 82 pediatric patients were eligible for the study, with a median age of 7 years (range 2-16 years). The median follow-up was 8.6 months (range 2-28 months) and the median survival time was 9.4 months. The median survival time of 66 patients treated with radiotherapy with concomitant and adjuvant temozolomide was 9.8 months, longer than 7.5 months of the other 16 patients treated with radiotherapy with concomitant temozolomide alone, with statistical differences (P= 0.010). Moreover, bevacizumab and nimotuzumab didn't bring survival benefits to patients with disease recurrence or progression. Hematological toxicity (Grade IV) was not found. Conclusions: Radiotherapy with concomitant and adjuvant temozolomide prolongs the survival time of children with DIPG.
+
+--------------------------------------------------
+Search Results Summary:
+To retrospectively analyze the therapeutic effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy with concomitant temozolomide alone for pediatric diffuse intrinsic pontine glioma (DIPG), and to evaluate the value of temozolomide in the treatment of pediatric DIPG.

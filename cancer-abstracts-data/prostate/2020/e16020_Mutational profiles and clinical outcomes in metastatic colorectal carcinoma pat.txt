@@ -1,0 +1,18 @@
+Title: Mutational profiles and clinical outcomes in metastatic colorectal carcinoma patients with different metastases sites.
+Abstract Number: e16020
+URL: https://meetings.asco.org/abstracts-presentations/188690
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Xi Zhang, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Authors person Xi Zhang The Third Xiangya Hospital of Central South University, Changsha, China info_outline Xi Zhang, Zhang Jing, Yingmei Li, Shifu Chen Organizations The Third Xiangya Hospital of Central South University, Changsha, China; HaploX Biotechnology, Shenzhen, China Abstract Disclosures Research Funding No funding received None Background: To compare the difference of genomic and survival of first metastases site between first metastases site of metastatic colorectal cancer (mCRC) in liver and other sites (bone, brain, lung, and so on). Methods: Genomic mutations and clinic data of 113,4 CRCs (consisting of 533 metastases) were collected from TCGA database. According to first site(s) of metastases, patients were categorized into group 1 (liver as first metastases site, n = 405) and group 2 (other organs as first metastases site, n = 128). OS curves were estimated with Kaplan-Meier method, p values were calculated by fisher exact test. Results: Mutation frequency in GNAS (2.34%), KRAS (37.78%), BRAF (16.41%) and proportion of MSI-high (8.5%) was significantly higher in group2. Compared with group2, group1 showed significantly higher mutation rate of APC (78.52%) and TP53 (77.28%). We assessed overall survival in the two groups. OS was significantly better for patients in group1 than in group2 (HR 0.57, 95% CI 0.41-0.79, p = 0.00075). Conclusions: According to the results of this study, mCRC patients showed different mutational signatures with respect to the site of first metastases, and presented higher OS rate in liver metastases group. Our findings provided new knowledge to understand the biological progress of different metastases and develop new prognostic markers for metastatic colorectal cancer.
+
+--------------------------------------------------
+Search Results Summary:
+To compare the difference of genomic and survival of first metastases site between first metastases site of metastatic colorectal cancer (mCRC) in liver and other sites (bone, brain, lung, and so on).

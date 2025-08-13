@@ -1,0 +1,18 @@
+Title: Patient-initiated approach to prevent oxaliplatin induced peripheral neuropathy: A social media experiment.
+Abstract Number: e16140
+URL: https://meetings.asco.org/abstracts-presentations/188651
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Dana Cardinas
+
+================================================================================
+
+Full Abstract:
+Authors person Dana Cardinas Colontown, Justin info_outline Dana Cardinas, Manju George, Amber Norton, Renee Gentzel Organizations Colontown, Justin; Colontown, Omaha, NE; West Cancer Center and Research Institute, Germantown, TN; Colontown, Justin, TX Abstract Disclosures Research Funding No funding received None Background: Oxaliplatin continues to be the standard of care in the adjuvant and palliative setting in colorectal cancer (CRC). Although effective in CRC treatment, it is associated with a high risk of chemotherapy induced peripheral neuropathy (CIPN), which can debilitate the patient, prevent completion of care, and deteriorate their quality of life. Methods: Colontown is a Facebook-based CRC patient and caregiver support, education and advocacy group. Live Wire, a Colontown neighborhood that was formed in 2018 to help members manage CIPN, consists of over 700 CRC patients. One member of this group applied ice on hands and feet (‘icing’) during oxaliplatin infusion to limit exposure to chemotherapy via cold-induced vasoconstriction. The member was able to prevent CIPN, gaining the attention of the entire group. Results: Subsequently, popularization of icing occurred, as administrators communicated patient experiences and relayed published results on the effect of oral icing to patients. Several Colontown members voluntarily tried it during their chemotherapy, and reported successful outcomes. Live Wire created an “icing protocol” and distributed it to patients, oncologists, and care teams, both in-person and on social media (sm). Conclusions: This real-world example highlights the role of educated patient advocates on sm. Working with these groups directly can provide insights for the medical community on measures patients can do to prevent chemotherapy-associated side effects. The limited publications on icing to prevent CIPN, although promising, have not been enough to make it a recommended standard practice. Meanwhile, voluntary participation using icing for CIPN is growing in Colontown. At this time, Colontown is discussing with oncologists and cancer centers the potential of creating a clinical trial to verify the efficacy icing has during oxaliplatin infusion as a strategy to counter CIPN. Our hope is that this patient-informed icing protocol will be able to guide the design of a clinical trial on icing. Furthermore, with this “experiment”, we hope to illustrate the advantages of serious engagement with a large patient population through the modern use of social media.
+
+--------------------------------------------------
+Search Results Summary:
+Oxaliplatin continues to be the standard of care in the adjuvant and palliative setting in colorectal cancer (CRC). Although effective in CRC treatment, it is associated with a high risk of chemotherapy induced peripheral neuropathy (CIPN), which can debilitate the patient, prevent completion of care, and deteriorate their quality of life.

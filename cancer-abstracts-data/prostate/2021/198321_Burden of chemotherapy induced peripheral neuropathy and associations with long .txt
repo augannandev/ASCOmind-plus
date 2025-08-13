@@ -1,0 +1,37 @@
+Title: Burden of chemotherapy-induced peripheral neuropathy and associations with long-term sexual impairment in testicular germ cell tumor survivors.
+Abstract Number: 198321
+URL: https://meetings.asco.org/abstracts-presentations/198321
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Michal Chovanec, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+Chemotherapy-induced peripheral neuropathy (CIPN20) after curative treatment for testicular germ cell tumors (GCTs) has been previously reported. The association of CIPN with long-term sexual function in GCT survivors remains unclear.
+Methods:
+European Organization for Research and Treatment of Cancer (EORTC) CIPN20 and PROMIS modified sexual function (SexF) questionnaires were prospectively completed by GCT survivors (N = 128) at National Cancer Institute in Slovakia during their annual follow-up visit. The median follow-up after completion of treatment was 10 years (range 4-25). Upon obtaining the scores from each questionnaire per recommended guidelines, each score from SexF was correlated with CIPN defined as high or low (above and below median) as obtained from CIPN20. Survivors were treated with cisplatin-based chemotherapy, radiotherapy to the retroperitoneum or both.
+Results:
+GCT survivors with CIPN reported a self-perceived sexual impairment. The overall perceived sexual impairment was higher in survivors with high vs low CIPN (mean score ± SEM: 7.44 ± 0.24 vs. 6.76 ± 0.21, P = 0.05). However, the overall perceived sexual abilities were not significantly different in CIPN high vs low (16.9 ± 0.68 vs. 16.8 ± 0.59, P = 0.97). The trend towards higher difficulty in maintaining erection was seen in CIPN high vs low survivors (3.94 ± 0.21 vs. 4.12 ± 0.18, P = 0.07). Furthermore, survivors with CIPN high were more disappointed with the quality of their sex life compared to those with CIPN low (1.96 ± 0.12 vs. 1.47 ± 0.11, P = 0.01). Patients with CIPN high had trend towards more anxiety from sexual relationships compared to CIPN low survivors (1.66 ± 0.11 vs. 1.33 ± 0.10, P = 0.06). The level of sexual desire, number of attempts to initiate sexual intercourse, ability to achieve erection, achieve orgasm were not different (P all > 0.05).
+Conclusions:
+GCT survivors with higher burden of CIPN have certain impairment in sexual functioning. We hypothesize there may be a common pathogenetic mechanism of induction in these long-term toxicities of curative treatments.
+
+--------------------------------------------------
+Full Abstract:
+Background:
+Chemotherapy-induced peripheral neuropathy (CIPN20) after curative treatment for testicular germ cell tumors (GCTs) has been previously reported. The association of CIPN with long-term sexual function in GCT survivors remains unclear.
+Methods:
+European Organization for Research and Treatment of Cancer (EORTC) CIPN20 and PROMIS modified sexual function (SexF) questionnaires were prospectively completed by GCT survivors (N = 128) at National Cancer Institute in Slovakia during their annual follow-up visit. The median follow-up after completion of treatment was 10 years (range 4-25). Upon obtaining the scores from each questionnaire per recommended guidelines, each score from SexF was correlated with CIPN defined as high or low (above and below median) as obtained from CIPN20. Survivors were treated with cisplatin-based chemotherapy, radiotherapy to the retroperitoneum or both.
+Results:
+GCT survivors with CIPN reported a self-perceived sexual impairment. The overall perceived sexual impairment was higher in survivors with high vs low CIPN (mean score ± SEM: 7.44 ± 0.24 vs. 6.76 ± 0.21, P = 0.05). However, the overall perceived sexual abilities were not significantly different in CIPN high vs low (16.9 ± 0.68 vs. 16.8 ± 0.59, P = 0.97). The trend towards higher difficulty in maintaining erection was seen in CIPN high vs low survivors (3.94 ± 0.21 vs. 4.12 ± 0.18, P = 0.07). Furthermore, survivors with CIPN high were more disappointed with the quality of their sex life compared to those with CIPN low (1.96 ± 0.12 vs. 1.47 ± 0.11, P = 0.01). Patients with CIPN high had trend towards more anxiety from sexual relationships compared to CIPN low survivors (1.66 ± 0.11 vs. 1.33 ± 0.10, P = 0.06). The level of sexual desire, number of attempts to initiate sexual intercourse, ability to achieve erection, achieve orgasm were not different (P all > 0.05).
+Conclusions:
+GCT survivors with higher burden of CIPN have certain impairment in sexual functioning. We hypothesize there may be a common pathogenetic mechanism of induction in these long-term toxicities of curative treatments.
+
+--------------------------------------------------
+Search Results Summary:
+

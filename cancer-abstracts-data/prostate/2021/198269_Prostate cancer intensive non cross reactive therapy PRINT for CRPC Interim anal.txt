@@ -1,0 +1,49 @@
+Title: Prostate cancer intensive, non-cross reactive therapy (PRINT) for CRPC: Interim analysis of efficacy endpoints.
+Abstract Number: 198269
+URL: https://meetings.asco.org/abstracts-presentations/198269
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Bobby Chi-Hung Liaw, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+The standard mCRPC treatment paradigm, with sequential single agents administered until resistance, may be limited due to heterogenous tumors comprised of clones differentially sensitive to available therapies. An alternative approach involves rapid cycling of non-cross resistant therapies in an attempt to efficiently eradicate sensitive clones, mitigate resistance, and minimize toxicity.
+Methods:
+Patients with mCRPC received 3 consecutive treatment modules, each lasting 12 weeks: 1. abiraterone acetate 1000 mg PO daily + prednisone 5 mg PO BID; 2. cabazitaxel 20 mg/m2 IV + carboplatin AUC 4 IV q3 weeks; 3. enzalutamide 160 mg PO daily + radium-223 55 kBq/kg IV q4 weeks (in those with bone metastases). Upon completion of the 9-month study regimen, patients continued ADT alone. The primary endpoint is time to progression (TTP). A sample size of 33 patients will provide 90% power for a one-sided test at the 5% level to detect increase in TTP compared with historical control. Secondary endpoints include PSA response (>90%, >50%) with each module, and changes to alkaline phosphatase levels.
+Results:
+From 3/2017 to 11/2020, 40 mCRPC patients were enrolled. As of the data cut-off of 1/03/2021, 31 patients have completed the 9-month study regimen and are evaluable for TTP analysis. With a median follow up of 20.7 months, the median time to PSA progression is 3.8 months (95%CI; 2.1-6.3 mo). PSA declines >90% from baseline was achieved in 35.5% after module 1, 41.9% after module 2, 58.1% after module 3. Of the patients with bone metastasis and elevated alkaline phosphatase levels at baseline (9/31), 78% had normalization of alkaline phosphatase upon completion of study regimen. Five of 31 patients (16%) were able to be maintained on ADT alone for over a year during the post-study surveillance period: three patients were subsequently restarted on a mCRPC agent at time of disease progression (14.4 mo, 17.0 mo, 24.8 mo), two patients demonstrate sustained disease control and remain on ADT alone (16.3+ mo, 21.5+ mo). Shared baseline clinical features of the 5 patients with prolonged control include PSA of <10 ng/mL and normal alkaline phosphatase levels (< 126 IU/L); Gleason score and presence of bone and nodal metastases varied.
+Conclusions:
+Treatment of mCRPC with a rapidly-cycling non-cross resistant regimen is feasible and a subset of patients achieve prolonged disease control on ADT alone after completion of study treatment. Rapid cycling of available CRPC therapies may eliminate castration-resistant clones in a subset of patients, a concept warranting further preclinical and clinical evaluation. Clinical trial information: NCT02903160
+PSA response rates compared to baseline by treatment module.
+Module 1
+Abiraterone
+Module 2
+Cabazitaxel + Carboplatin
+Module 3
+Enzalutamide + Radium-223
+>90% PSA Reduction
+35.5%
+41.9%
+58.1%
+>50% PSA Reduction
+83.9%
+87.1%
+96.8%
+Stable Disease
+9.7%
+9.7%
+0%
+Progression
+6.5%
+3.2%
+3.2%
+
+--------------------------------------------------
+Search Results Summary:
+

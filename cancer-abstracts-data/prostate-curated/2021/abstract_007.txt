@@ -1,0 +1,28 @@
+Title: Effect of immunotherapy on survival outcomes in prostate cancer: Systematic review and meta-analysis.
+Abstract Number: 198380
+URL: https://meetings.asco.org/abstracts-presentations/198380
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+First Author:
+Vinod Solipuram, MBBS
+
+================================================================================
+
+Full Abstract:
+Background:
+Prostate cancer is one of the leading cancers in men with an estimated 191,930 new cases in 2020 in the USA alone. Treatment options for metastatic castration resistant prostate cancer (mCRPC) have evolved in recent years. Immunotherapy involving vaccines like sipuleucel-T, PROSTVAC and immune checkpoint inhibitors have been evaluated in these patients. We present a systematic review and meta-analysis of the randomized controlled trials (RCTs) testing the effect of immunotherapy in mCRPC.
+Methods:
+A systematic search was performed using PubMed, Embase and the Cochrane library without language limitations from inception to January 3, 2021. The primary outcome was overall survival (OS) and secondary outcomes were progression free survival (PFS), prostate specific antigen (PSA) reduction ≥ 50% and incidence of grade 3-4 adverse events. The analysis of OS, PFS was done using random effects hazard ratio (HR) by generic inverse variance method and analysis of PSA reduction ≥ 50% and grade 3-4 adverse events was done using random effects risk ratio (RR) by the Mantel-Haenszel method.
+Results:
+12 RCTs comprising 4109 patients were included in the analysis
+.
+There was a statistically significant improvement in OS (HR 0.89; 95% CI (0.81, 0.97)) and PFS (HR 0.83; 95% CI (0.76, 0.92)) in the immunotherapy arm compared to placebo or standard treatment arms with moderate quality of evidence. Patients in the immunotherapy group had significant reduction in PSA ≥ 50% (RR 1.71; 95% CI (1.09, 2.68)) but also had statistically significant increased risk of grade 3-4 adverse events (RR (1.25; 95% CI (1.02, 1.54)) when compared to placebo and the standard treatment group. Subgroup analysis showed that the use of vaccine therapy in prostate cancer leads to significant improvement in OS (HR 0.83; 95% CI (0.74, 0.93)) and PFS (HR 0.80; 95% CI (0.67, 0.95)) compared to placebo and standard treatment. The use of immune checkpoint inhibitors was not associated with statistically significant improvement in OS (HR 0.98; 95% CI (0.88, 1.09)) but is associated with improvement in PFS (HR 0.87; 95%CI (0.81, 0.94)).
+Conclusions:
+This meta-analysis showed that immunotherapy led to significant improvement in OS, PFS and PSA reduction of ≥ 50%. However, there is an increased incidence of grade 3-4 adverse events with the use of immunotherapy when compared to other standard therapies and placebo. The improvement in overall survival is limited to the use of vaccine therapy and not to immune checkpoint inhibitors. Careful use of selective forms of immunotherapy in mCRPC can lead to greater improvement in survival.
+
+--------------------------------------------------
+Search Results Summary:
+

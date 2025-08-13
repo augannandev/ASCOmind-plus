@@ -1,0 +1,22 @@
+Title: Phase I study of CCW702, a bispecific small molecule-antibody conjugate targeting PSMA and CD3 in patients with metastatic castration-resistant prostate cancer (mCRPC).
+Abstract Number: 201216
+URL: https://meetings.asco.org/abstracts-presentations/201216
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Mark Christopher Markowski, MD, PhD
+
+================================================================================
+
+Full Abstract:
+Background:
+CCW702 is a novel bispecific antibody comprised of a small molecule imaging agent ligand (DUPA) with specificity for prostate specific membrane antigen (PSMA) conjugated to an anti-CD3 antibody via an unnatural amino acid. This format has the structure of an antibody drug conjugate with the activity of a CD3-engaging bispecific antibody. The design of CCW702 was leveraged to optimize the structure and function of T cell redirected cytotoxicity against PSMA-positive prostate cancer tumors in preclinical development.
+Methods:
+This is a first-in-human, open-label, multi-center phase 1 study evaluating the safety and tolerability of CCW702 when administered via subcutaneous (SC) injection in men with mCPRC. This study will be conducted in two parts: Part I, a dose escalation to determine the maximum tolerated dose (MTD) and recommended phase 2 dose (R2PD); Part II, a dose expansion to determine efficacy at the R2PD. Safety, pharmacokinetics (PK), pharmacodynamics (PD), immunogenicity, and preliminary efficacy will be evaluated. Efficacy will be assessed by change in circulating tumor cells (CTC), PSA50 response rate, and objective tumor response by RECIST v1.1. Key biomarkers include characterization of CTC, T cell phenotyping in peripheral blood, chemokines and cytokines over time, and evaluation of available tumor biopsies by IHC. Key inclusion criteria include men age ≥ 18 years with histologically or cytologically confirmed adenocarcinoma who, in the metastatic setting, have progressed on at least one novel AR-targeted therapy. Up to 1 prior chemotherapy regimen is allowed. This study will enroll 20-30 patients in Part 1 and approximately 40 patients in Part 2. The study opened in December 2019 and is currently enrolling in the dose escalation phase. Clinical trial information: NCT04077021
+
+--------------------------------------------------
+Search Results Summary:
+

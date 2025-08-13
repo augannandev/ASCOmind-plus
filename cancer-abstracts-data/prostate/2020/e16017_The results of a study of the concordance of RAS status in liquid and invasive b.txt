@@ -1,0 +1,18 @@
+Title: The results of a study of the concordance of RAS status in liquid and invasive biopsies in patients with metastatic colorectal cancer in the Republic of Kazakhstan.
+Abstract Number: e16017
+URL: https://meetings.asco.org/abstracts-presentations/188885
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Kaldigul Smagulova
+
+================================================================================
+
+Full Abstract:
+Authors person Kaldigul Smagulova Kazakh Scientific Research Institute of Oncology and Radiology, Almaty, Kazakhstan info_outline Kaldigul Smagulova, Dilyara Kaidarova, Yelena Ukolova, Madina Orazgalieva, Anel Kurmankulova Organizations Kazakh Scientific Research Institute of Oncology and Radiology, Almaty, Kazakhstan; Kazakh Institute of Oncology and Radiology, Almaty, Kazakhstan; Kazakh Research Institute of Oncology and Radiology, Almaty, Kazakhstan Abstract Disclosures Research Funding Other Government Agency Ministry of Education and Science of the Republic of Kazakhstan Background: Liquid biopsy is increasingly of interest as an alternative to invasive biopsy of solid tumors for predicting, making decisions about the treatment and monitoring of the disease. Particular preference is given to liquid biopsy in cases where it is not possible to obtain a sufficient amount of material or material of poor quality with a tumor biopsy. However, in order to find out the clinical significance of circulating tumor DNA (ctDNA), it is important to first establish the sensitivity of the method using tumor-plasma consistency studies. Methods: We selected 38 patients with a confirmed diagnosis of colorectal cancer (CRC), in whom was established the progression of the disease. All patients underwent two diagnostic methods, which we divided conditionally into 2 groups: A – invasive biopsy from available metastatic foci; to detect mutations in exons 2, 3, and 4 the KRAS gene used a reagent kit to detect 18 point mutations in codons 12,13,61,117,146 and a reagent kit to identify 10 mutations of the NRAS gene in codons 12,13,61,146 (Entrogen) on a Rotor-Gene 6000 Amplifier; B - liquid biopsy, to determine 21 mutations in the codons 12,13,59,61,117,146 of the KRAS gene, 18 mutations in the codons of 12,13,59,61,117,146 of the NRAS gene, was used Idylla automated molecular diagnostic system. Results: Of the 38 studied samples of group A: 22 (57.9%) had wild type KRAS, 16 (42.1%) were mutated, in group B: wild type had 25 (65.8%) patients, mutated - 13 (34, 2%). Thus, we see a discrepancy in the results in 3 (7.9%) of 38 cases. Conclusions: The results indicate a high degree of sensitivity (92.1%) of liquid biopsy as a diagnostic method, but confirmation of concordance with traditional tissue biopsy requires further in-depth study of this issue in a larger sample of patients.
+
+--------------------------------------------------
+Search Results Summary:
+Liquid biopsy is increasingly of interest as an alternative to invasive biopsy of solid tumors for predicting, making decisions about the treatment and monitoring of the disease. Particular preference is given to liquid biopsy in cases where it is not possible to obtain a sufficient amount of material or material of poor quality with a tumor biopsy. However, in order to find out the clinical significance of circulating tumor DNA (ctDNA), it is important to first establish the sensitivity of the method using tumor-plasma consistency studies.

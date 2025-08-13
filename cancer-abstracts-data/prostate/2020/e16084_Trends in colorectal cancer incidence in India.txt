@@ -1,0 +1,18 @@
+Title: Trends in colorectal cancer incidence in India.
+Abstract Number: e16084
+URL: https://meetings.asco.org/abstracts-presentations/188501
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Vinay Mathew Thomas, MBBS
+
+================================================================================
+
+Full Abstract:
+Authors person Vinay Mathew Thomas University of Connecticut Health Center, Farmington, CT info_outline Vinay Mathew Thomas, Basil Baby, Kevin Wang, Feitong Lei, Quan Chen, Bin Huang, Aju Mathew Organizations University of Connecticut Health Center, Farmington, CT; Malankara Orthodox Syrian Church Medical College, Kochi, India; University of Kentucky, Lexington, KY; University of Kentucky College of Public Health, Lexington, KY; Kentucky Cancer Registry, Lexington, KY; University of Kentucky Markey Cancer Center, Lexington, KY Abstract Disclosures Research Funding No funding received None Background: Colorectal cancer (CRC) accounts for 10% of global cancer deaths yearly. It is postulated that the incidence rates are rising in developing countries like India. We present a comprehensive overview of colorectal cancer incidence in India from various regions from 2004 to 2014. Methods: We obtained data on CRC incidence from the Population Based Cancer Registries (PBCR) of the National Cancer Registry Program. We calculated age-standardized incidence rates (to WHO World Standard Population 2000) for five-year age groups for period of diagnosis (2004-05, 2006-08, 2009-11, and 2012-14). Results: From 2004 to 2014, CRC incidence rates in India increased by 20%. During 2004-2005, the incidence rate of CRC was 5.8 per 100,000 persons. It increased to 6.9 during 2012-2014. Conclusions: CRC rates are rising in India. Even though the absolute rates are low in the Indian population, the rising rates pose a problem in rising cancer morbidity in India. The rising rates can be attributed to changing lifestyles that include consumption of calorie-rich and low fibre diet, excessive use of red meat and processed foods, and physical inactivity. There is a need for cost-effective strategies to enable early diagnosis for colorectal cancer in India. Affordable and equitable treatment will help increase the 5-year survival rates of colorectal cancers. Overall age-standardized rates for Colorectal Cancers (2004 – 2014) per 100, 000 persons. 2004- 2005 2006- 2008 2009- 2011 2012- 2014 Trend (% Change) India 5.8 (5.5 – 6.0) 6.0 (5.8 – 6.2) 6.3 (6.1 – 6.6) 6.9 (6.6 – 7.3) ↑ 20.6 % Bhopal 4.5 (3.6 – 5.5) 4.3 (3.6 – 5.1) 4.2 (3.5 – 5.1) 5.5 (4.7 – 6.5) ↑23.4% Chennai 6.0 (5.5 – 6.6) 7.5 (7.0 – 8.0) 8.0 (7.2 – 9.0) 8.2 (7.6 – 8.8) ↑35.6% Delhi 5.4 (5.0 – 5.8) 4.8 (4.5 – 5.1) 5.5 (5.2 – 5.9) 7.1 (6.6 – 7.6) ↑32.3% Kamrup 5.1 (3.9 – 6.6) 6.5 (5.3 – 7.8) 8.9 (7.7 – 10.4) 11.6 (10.2 – 13.1) ↑124.6% Kolkata 3.9 (3.3 – 4.5) 4.8 (4.3 – 5.2) 5.6 (5.1 – 6.1) 6.2 (5.6 – 7.0) ↑60.7% Mumbai 6.3 (6.0 – 6.7) 7.3 (7.0 – 7.7) 6.9 (6.5 – 7.3) 7.6 (7.1 – 8.2) ↑20.4% Sikkim 4.0 (2.6 – 5.8) 2.8 (1.9 – 3.9) 4.1 (3.1 – 5.5) 4.8 (3.6 – 6.2) ↑19.5% Thiruvananthapuram - 6.7 (6.0 – 7.5) 8.7 (7.8 – 9.7) 9.1 (8.6 – 9.7) ↑35.9%
+
+--------------------------------------------------
+Search Results Summary:
+Colorectal cancer (CRC) accounts for 10% of global cancer deaths yearly. It is postulated that the incidence rates are rising in developing countries like India. We present a comprehensive overview of colorectal cancer incidence in India from various regions from 2004 to 2014.

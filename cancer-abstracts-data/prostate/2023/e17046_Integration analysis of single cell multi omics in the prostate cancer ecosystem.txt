@@ -1,0 +1,18 @@
+Title: Integration analysis of single-cell multi-omics in the prostate cancer ecosystem.
+Abstract Number: e17046
+URL: https://meetings.asco.org/abstracts-presentations/223308
+Source: ASCO Selenium Scraper
+Year: 2023
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer—Prostate, Testicular, and Penile
+Session Type: Publication Only
+Authors: Xiaojie Bian
+
+================================================================================
+
+Full Abstract:
+Authors person Xiaojie Bian Fudan University Shanghai Cancer Center, Shanghai, Shanghai, China, Shanghai, Shanghai, China info_outline Xiaojie Bian, Wenfeng Wang, Mierxiati Abudurexiti, Zhu Yao, Min Zhang, Ding-Wei Ye, Jianhua Wang Organizations Fudan University Shanghai Cancer Center, Shanghai, Shanghai, China, Shanghai, Shanghai, China; Fudan University Shanghai Cancer Center, Shanghai, China, Shanghai, China; Fudan University Shanghai Cancer Center, Shanghai Pudong New Area Gongli Hospital, Shanghai, China, Shanghai, China; Department of Urology, Fudan University Shanghai Cancer Center, Shanghai, China, Shanghai, China; Pediatric Translational Medicine Institute and Pediatric Congenital Heart Disease Institute, Shanghai Children’s Medical Center, Shanghai Jiao Tong University School of Medicine, Shanghai, China, Shanghai, China Abstract Disclosures Research Funding Other National Science Foundation Committee of China Background: Prostate cancer (PCa) is characterized as a extensive heterogeneous disease with the complex cellular ecosystem in the tumor microenvironment (TME). However, the content of how heterogeneity is shaped by tumors and stromal cells or vice versa remains poorly understood. Methods: Single-cell RNA sequencing, spatial transcriptomics and bulk ATAC-sequence from a series of human PCa and normal control were integrated. Results: We identified a stemness subset of club cells marked with SOX9highARlow expression, which enriched significantly after neoadjuvant androgen-deprivation therapy (ADT). Furthermore, a subset of CD8+CXCR6+ T cell, functioned as effector T cell, was observed to be markedly reduced in the malignant PCa patients. Notably, immunosuppressive microenvironment in advanced PCa was associated with infiltration of regulatory T cells (Tregs), which is potentially induced by FAP+ fibroblasts (cancer-associated fibroblasts, CAFs subset). Moreover, for spatial transcriptome analysis, we comprehensively utilized machine learning and computational intelligence to identify cellular diversity of prostate and cell-cell communication with each other in situ.Importantly, we also depicted macrophage and neutrophil state transition under different biological conditions in vivo. Conclusions: We delineate the cellular heterogeneity in the stage-specific PCa microenvironment at single-cell resolution, uncover their reciprocal crosstalk with disease progression and these results will be helpful in exploring potential target for PCa therapy.
+
+--------------------------------------------------
+Search Results Summary:
+Prostate cancer (PCa) is characterized as a extensive heterogeneous disease with the complex cellular ecosystem in the tumor microenvironment (TME). However, the content of how heterogeneity is shaped by tumors and stromal cells or vice versa remains poorly understood.

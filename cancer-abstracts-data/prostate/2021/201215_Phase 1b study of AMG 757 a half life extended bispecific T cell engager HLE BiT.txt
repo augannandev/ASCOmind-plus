@@ -1,0 +1,22 @@
+Title: Phase 1b study of AMG 757, a half-life extended bispecific T-cell engager (HLE BiTE immune-oncology therapy) targeting DLL3, in de novo or treatment emergent neuroendocrine prostate cancer (NEPC).
+Abstract Number: 201215
+URL: https://meetings.asco.org/abstracts-presentations/201215
+Source: ASCO Selenium Scraper
+Year: 2021
+Meeting: ASCO Annual Meeting
+Track: Genitourinary Cancer
+Authors: person
+Presenter:
+Rahul Raj Aggarwal, MD
+
+================================================================================
+
+Full Abstract:
+Background:
+NEPC is an aggressive cancer with poor prognosis. No standard treatment approach for NEPC exists and it remains an unmet need. NEPC is usually treatment-emergent, characterized by histological transformation from adenocarcinoma to a high-grade neuroendocrine tumor (NET), and may develop in 15%–20% of patients (pts) treated with standard prostate adenocarcinoma therapies, including novel hormonal therapies. The inhibitory Notch ligand, Delta-like ligand 3 (DLL3), is highly expressed on the surface of cancer cells, including NEPC cells, making it an attractive and a promising therapeutic target. AMG 757 is an HLE BiTE immuno-oncology therapy designed to redirect cytotoxic T cells to tumor cells by binding DLL3 on cancer cells and CD3 on T cells, resulting in T cell activation and expansion and T cell-dependent killing of tumor cells. AMG 757 showed in vitro activity in DLL3-expressing NETs, including NEPC. Preliminary results of an on-going first-in-human study suggest AMG 757 is safe and effective in pts with small cell lung cancer (NCT03319940), which prompted its study in NEPC.
+Methods:
+NCT04702737 is an open-label, phase 1b study evaluating AMG 757 infusion in pts with metastatic de novo or treatment-emergent NEPC, consisting of dose exploration and then dose expansion. Key eligibility criteria include adults (≥18 y) with NEPC whose disease progressed/recurred after ≥1 treatment course including a platinum-based regimen for de novo NEPC or an androgen signaling inhibitor, measurable disease per modified RECIST 1.1 per Prostate Cancer Working Group 3 modifications, ECOG performance status ≤2, life expectancy > 3 mo, adequate organ function, and no untreated/symptomatic brain metastases. Primary objectives are to evaluate safety and tolerability and determine the maximum tolerated dose or recommended phase 2 dose of AMG 757. Secondary objectives are to evaluate antitumor activity (ie, objective response, duration of response, progression-free survival, overall response) and characterize pharmacokinetics. The starting dose for dose exploration will be based on the dose deemed safe and tolerable in the ongoing trial of AMG 757 in SCLC. The study is open to enrollment. Clinical trial information: NCT04702737
+
+--------------------------------------------------
+Search Results Summary:
+

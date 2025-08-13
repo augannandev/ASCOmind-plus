@@ -1,0 +1,18 @@
+Title: Mutation profile of colon cancer in hispanic population of central California.
+Abstract Number: e16067
+URL: https://meetings.asco.org/abstracts-presentations/187759
+Source: ASCO Selenium Scraper
+Year: 2020
+Meeting: ASCO Annual Meeting
+Track: 
+Session Type: 
+Authors: Sanjay Hinduja, MD
+
+================================================================================
+
+Full Abstract:
+Authors person Sanjay Hinduja UCSF Fresno Medical Education Program, Clovis, CA info_outline Sanjay Hinduja, Mir Ali, Mohammed SANI Bukari, Uzair Bashir Chaudhary, Tanner Mortenson, Omar Mahmood, Matthew Lee, Fihr Chaudhary Organizations UCSF Fresno Medical Education Program, Clovis, CA; UCSF Fresno (University of California, San Francisco-Fresno), Fresno, CA; UCSF Fresno, Clovis, CA; UCSF Medical Center, Fresno, CA; Kirksville College of Osteopathic Medicine, Kirksville, MO; UCSF Fresno, Fresno, CA Abstract Disclosures Research Funding No funding received None Background: The clinical and mutational profile of Hispanic patients with metastatic colon cancer is not well documented. In this retrospective study, we aim to describe the clinical and mutational profile of Hispanic patients with metastatic colon cancer in central California. Methods: We retrospectively evaluated the clinical and mutational profile of colon cancer at a single institution in Fresno, California from 2010-2019. We selected 136 patients out of which 70 patients self-identified as Hispanic and 66 self-identified as non-Hispanic. We studied clinical parameters and next-generation sequencing via Foundation one testing for these patients. Results: Among Hispanics, there were 43(61%) males and 27(38%) females. The median age at diagnosis was similar in both groups at 57. Right sided colon cancer accounted for 52% of Hispanic patients versus 40% in non-Hispanics. Fifty two percent of Hispanic patients presented with metastatic disease versus 45% in non-Hispanics. The frequency of commonly mutated genes in colon cancer in Hispanics versus non-Hispanics are as follows. KRAS (35.7% vs 37%), NRAS (11% vs 4%) BRAF (8% vs 7%), Her2/neu 0% in both groups. The frequency of other mutations such as TP53, APC, ATM, PTEN, CDKN2A, Myc amplification were also noted to be similar in both groups. PIK3CA mutation was seen in 18.6% of Hispanic patients versus 34% in non-Hispanic population which was statistically significant with a p value = 0.032. Microsatellite instability (MSI) was seen at 3.3% in Hispanics versus 10.6% in non-Hispanics. Tumor mutational burden was similar in both groups. Conclusions: The frequency of actionable mutations was similar in both Hispanic and non-Hispanic patients. Hispanics were noted to have lower PIK3CA and microsatellite instability. Metastatic disease and right sided colon cancer were seen at higher frequency in Hispanic population. Our results were similar to another population-based study which analyzed KRAS mutation with colon cancer patients in Puerto Rico[1]. Larger population based studies would be needed to further assess the differences in this patient population. Ruiz-Candelaria, Y., C. Miranda-Diaz, and R.F. Hunter-Mellado, K-RAS mutation profile in Puerto Rican patients with colorectal cancer: trends from April 2009 to January 2011. Int J Biol Markers, 2013. 28(4): p. e393-7.
+
+--------------------------------------------------
+Search Results Summary:
+The clinical and mutational profile of Hispanic patients with metastatic colon cancer is not well documented. In this retrospective study, we aim to describe the clinical and mutational profile of Hispanic patients with metastatic colon cancer in central California.
