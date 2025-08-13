@@ -3764,6 +3764,9 @@ Most commonly reported efficacy endpoints:
         # End of chat history - minimal spacing for fixed input
         st.markdown("<br><br>", unsafe_allow_html=True)
         
+        # Add a scroll anchor at the bottom
+        st.markdown('<div id="chat-bottom-anchor"></div>', unsafe_allow_html=True)
+        
         # Always show chat input, but also check for pending questions
         user_input = st.chat_input(f"Ask me anything about {cancer_config.display_name} research...")
         
@@ -3788,6 +3791,9 @@ Most commonly reported efficacy endpoints:
                 # Show user message immediately
                 with st.chat_message("user", avatar="👤"):
                     st.markdown(user_input)
+                
+                # Auto-scroll to focus on the new conversation
+                self._scroll_to_latest_message()
                 
                 # Show AI thinking with dynamic messages
                 with st.chat_message("assistant", avatar="🤖"):
@@ -3864,17 +3870,51 @@ Most commonly reported efficacy endpoints:
                             'content': enhanced_response
                         })
                         
+                        # Auto-scroll to the latest message (ChatGPT-like behavior)
+                        self._scroll_to_latest_message()
+                        
                     except Exception as e:
                         message_placeholder.markdown(f"❌ I apologize, but I encountered an error: {str(e)}. Please try again.")
                         st.session_state.chat_history.append({
                             'role': 'assistant',
                             'content': f"I apologize, but I encountered an error: {e}. Please try again with a different question."
                         })
+                        
+                        # Auto-scroll even for error messages
+                        self._scroll_to_latest_message()
             else:
                 st.error("❌ AI Assistant not available. Please check your configuration.")
         
         # Final note
         st.markdown("*💡 Tip: Use the year filters above to focus on specific time periods, and try the suggested questions for quick insights!*")
+
+    def _scroll_to_latest_message(self):
+        """Auto-scroll to the latest message for better UX (ChatGPT-like behavior)"""
+        # Simple, reliable scroll to bottom using window.location.hash
+        scroll_script = """
+        <script>
+        function scrollToBottom() {
+            // Find the bottom anchor
+            const anchor = document.getElementById('chat-bottom-anchor');
+            if (anchor) {
+                anchor.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            } else {
+                // Fallback: scroll to bottom of page
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Execute with delays to catch different render states
+        setTimeout(scrollToBottom, 100);
+        setTimeout(scrollToBottom, 300);
+        setTimeout(scrollToBottom, 600);
+        </script>
+        """
+        
+        st.markdown(scroll_script, unsafe_allow_html=True)
 
     def _enhance_response_formatting(self, response):
         """Enhance AI response with professional HTML formatting"""
