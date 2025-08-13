@@ -731,13 +731,53 @@ class CancerFirstApp:
         </style>
         """, unsafe_allow_html=True)
         
-        # Main content tabs - Analytics first for data exploration
-        tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Analytics", "📈 Visualizations", "🤖 ASCOmind+", "📋 Reports", "⚙️ Settings"])
+        # Initialize tab state persistence
+        if f'{cancer_type}_active_tab' not in st.session_state:
+            st.session_state[f'{cancer_type}_active_tab'] = "Analytics"
         
-        with tab1:
+        # Custom tab implementation with persistence
+        st.markdown("### Navigation")
+        col1, col2, col3, col4, col5 = st.columns(5)
+        
+        with col1:
+            if st.button("📊 Analytics", use_container_width=True, 
+                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Analytics" else "secondary"):
+                st.session_state[f'{cancer_type}_active_tab'] = "Analytics"
+                st.rerun()
+        
+        with col2:
+            if st.button("📈 Visualizations", use_container_width=True,
+                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Visualizations" else "secondary"):
+                st.session_state[f'{cancer_type}_active_tab'] = "Visualizations"
+                st.rerun()
+        
+        with col3:
+            if st.button("🤖 ASCOmind+", use_container_width=True,
+                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "ASCOmind+" else "secondary"):
+                st.session_state[f'{cancer_type}_active_tab'] = "ASCOmind+"
+                st.rerun()
+        
+        with col4:
+            if st.button("📋 Reports", use_container_width=True,
+                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Reports" else "secondary"):
+                st.session_state[f'{cancer_type}_active_tab'] = "Reports"
+                st.rerun()
+        
+        with col5:
+            if st.button("⚙️ Settings", use_container_width=True,
+                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Settings" else "secondary"):
+                st.session_state[f'{cancer_type}_active_tab'] = "Settings"
+                st.rerun()
+        
+        st.markdown("---")
+        
+        # Render the active tab content
+        active_tab = st.session_state[f'{cancer_type}_active_tab']
+        
+        if active_tab == "Analytics":
             self.render_analytics_dashboard(cancer_type, cancer_config, filtered_abstracts)
         
-        with tab2:
+        elif active_tab == "Visualizations":
             # Comprehensive visualizations from filtered data
             abstracts = filtered_abstracts
             
@@ -1494,13 +1534,13 @@ class CancerFirstApp:
             else:
                 st.warning(f"No data available for visualizations. Please process {cancer_type} abstracts first.")
         
-        with tab3:
+        elif active_tab == "ASCOmind+":
             self.render_enhanced_ai_assistant(cancer_type, cancer_config, filtered_abstracts)
         
-        with tab4:
+        elif active_tab == "Reports":
             self.render_insights_reports(cancer_type, cancer_config, filtered_abstracts)
         
-        with tab5:
+        elif active_tab == "Settings":
             self.render_settings(cancer_type)
     
     def _render_treatment_effectiveness_charts(self, abstracts, cancer_config):
