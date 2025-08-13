@@ -180,10 +180,23 @@ class SmartCategorizer:
         
         try:
             import json
+            # Try to extract JSON from response
+            response_text = response_text.strip()
+            
+            # If response has markdown code blocks, extract JSON
+            if "```json" in response_text:
+                start = response_text.find("```json") + 7
+                end = response_text.find("```", start)
+                response_text = response_text[start:end].strip()
+            elif "```" in response_text:
+                start = response_text.find("```") + 3
+                end = response_text.find("```", start)
+                response_text = response_text[start:end].strip()
+            
             classification = json.loads(response_text)
             return classification
-        except:
-            logger.warning("Could not parse AI classification, using fallback")
+        except Exception as e:
+            logger.warning(f"Could not parse AI classification ({str(e)}), using fallback")
             return {'study_category': 'Clinical Trial', 'confidence': 0.5}
     
     def _analyze_population(self, abstract_text: str, metadata: Optional[Dict] = None) -> Dict[str, Any]:

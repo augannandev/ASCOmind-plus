@@ -462,7 +462,7 @@ class EnhancedMetadataExtractor:
             # Build study design with safe defaults
             study_design_data = validated_data.get("study_design", {})
             study_design = StudyDesign(
-                study_type=StudyType(study_design_data.get("study_type", "Phase 2")),
+                study_type=StudyType.get_or_create(study_design_data.get("study_type", "Phase 2")),
                 trial_phase=study_design_data.get("trial_phase"),
                 randomized=study_design_data.get("randomized") if study_design_data.get("randomized") is not None else False,
                 blinded=study_design_data.get("blinded") if study_design_data.get("blinded") is not None else False,
@@ -862,8 +862,11 @@ class EnhancedMetadataExtractor:
                 total_expected += 1
                 if section == 'treatment_regimens':
                     # Special handling for list fields
-                    if section_data and len(section_data) > 0:
-                        found_fields += 1
+                    if section_data:
+                        if isinstance(section_data, list) and len(section_data) > 0:
+                            found_fields += 1
+                        elif isinstance(section_data, dict) and any(v for v in section_data.values() if v):
+                            found_fields += 1
                 else:
                     # Regular field checking
                     value = section_data.get(field)

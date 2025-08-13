@@ -22,6 +22,8 @@ class VectorMetadata(BaseModel):
     abstract_id: str
     content_hash: str
     session_id: str  # Add session isolation
+    cancer_type: str  # Add cancer type for filtering
+    publication_year: Optional[int]  # ASCO year filtering
     study_title: str
     study_acronym: Optional[str]
     nct_number: Optional[str]
@@ -181,10 +183,34 @@ class IntelligentVectorStore:
         study_id = data.study_identification.nct_number or data.study_identification.study_acronym or data.abstract_id
         content_hash = self._generate_content_hash(data.source_text or "", study_id)
         
+        # Extract cancer type from session ID or metadata
+        cancer_type = "multiple_myeloma"  # Default fallback
+        
+        # Try to extract cancer type from session ID patterns
+        if self.session_id:
+            # Pattern 1: "cancer_prostate_" or "cancer_multiple_myeloma_"
+            if "cancer_" in self.session_id:
+                cancer_type = self.session_id.split("cancer_")[1].split("_")[0]
+            # Pattern 2: "prostate_clean_" or "prostate_batch_"
+            elif "prostate_" in self.session_id:
+                cancer_type = "prostate"
+            # Pattern 3: "multiple_myeloma_" or "mm_"
+            elif "multiple_myeloma_" in self.session_id or "mm_" in self.session_id:
+                cancer_type = "multiple_myeloma"
+            # Pattern 4: Other cancer types
+            elif "breast_" in self.session_id:
+                cancer_type = "breast"
+            elif "lung_" in self.session_id:
+                cancer_type = "lung"
+            elif "colorectal_" in self.session_id:
+                cancer_type = "colorectal"
+        
         return VectorMetadata(
             abstract_id=data.abstract_id,
             content_hash=content_hash,
             session_id=self.session_id,
+            cancer_type=cancer_type,
+            publication_year=data.study_identification.publication_year,
             study_title=data.study_identification.title,
             study_acronym=data.study_identification.study_acronym,
             nct_number=data.study_identification.nct_number,
@@ -204,9 +230,36 @@ class IntelligentVectorStore:
         """Create semantic text chunks for better retrieval"""
         chunks = []
         
-        # Full abstract (primary chunk)
+        # Full abstract (primary chunk) - includes ALL text with authors, institutions, etc.
         if data.source_text:
+            # Ensure the full source text is embedded, which includes authors and institutions
             chunks.append((data.source_text, "full_abstract"))
+            
+            # Extract author and institution information for better search
+            text_lower = data.source_text.lower()
+            if 'author' in text_lower:
+                # Try to extract author section
+                lines = data.source_text.split('\n')
+                author_lines = []
+                in_author_section = False
+                
+                for line in lines:
+                    line_lower = line.lower()
+                    if 'author' in line_lower and (':' in line or 'person' in line_lower):
+                        in_author_section = True
+                        author_lines.append(line)
+                    elif in_author_section and (line.strip() == '' or 
+                                              any(keyword in line_lower for keyword in 
+                                                  ['abstract', 'background', 'method', 'result', 'conclusion'])):
+                        break
+                    elif in_author_section:
+                        author_lines.append(line)
+                
+                if author_lines:
+                    author_text = '\n'.join(author_lines).strip()
+                    if author_text:
+                        author_chunk = f"Study: {data.study_identification.title}\n{author_text}"
+                        chunks.append((author_chunk, "authors_institutions"))
         
         # Study design summary
         study_summary = f"""
@@ -337,6 +390,17 @@ class IntelligentVectorStore:
             metadata_filter = {"session_id": self.session_id}  # Always filter by session
             
             if filters:
+                if 'cancer_type' in filters:
+                    metadata_filter['cancer_type'] = filters['cancer_type']
+                if 'publication_year' in filters:
+                    if isinstance(filters['publication_year'], list):
+                        metadata_filter['publication_year'] = {"$in": filters['publication_year']}
+                    else:
+                        metadata_filter['publication_year'] = filters['publication_year']
+                if 'year_range' in filters:
+                    year_range = filters['year_range']
+                    if len(year_range) == 2:
+                        metadata_filter['publication_year'] = {"$gte": year_range[0], "$lte": year_range[1]}
                 if 'study_type' in filters:
                     metadata_filter['study_type'] = filters['study_type']
                 if 'mm_subtype' in filters:

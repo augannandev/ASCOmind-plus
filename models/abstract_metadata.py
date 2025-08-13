@@ -6,14 +6,109 @@ from enum import Enum
 from datetime import datetime
 
 class StudyType(str, Enum):
+    # Phase designations
     PHASE_1 = "Phase 1"
+    PHASE_1A = "Phase 1a"
+    PHASE_1B = "Phase 1b"
     PHASE_1_2 = "Phase 1/2"
     PHASE_2 = "Phase 2"
+    PHASE_2A = "Phase 2a"
+    PHASE_2B = "Phase 2b"
     PHASE_3 = "Phase 3"
+    PHASE_4 = "Phase 4"
+    
+    # Observational studies
     RETROSPECTIVE = "Retrospective"
+    RETROSPECTIVE_ANALYSIS = "Retrospective Analysis"
+    RETROSPECTIVE_DATABASE_ANALYSIS = "Retrospective Database Analysis"
+    PROSPECTIVE = "Prospective"
+    PROSPECTIVE_OBSERVATIONAL = "Prospective Observational"
+    PROSPECTIVE_LONGITUDINAL = "Prospective longitudinal study"
+    PROSPECTIVE_LONGITUDINAL_STUDY = "Prospective Longitudinal Study"
+    
+    # Cohort studies
+    COHORT = "Cohort Study"
+    PROSPECTIVE_COHORT = "Prospective Cohort Study"
+    RETROSPECTIVE_COHORT = "Retrospective Cohort"
+    PROSPECTIVE_COHORT_STUDY = "Prospective Cohort"
+    AMBISPECTIVE_COHORT = "Ambispective Cohort Study"
+    
+    # Analysis types
+    MOLECULAR_ANALYSIS = "Molecular Analysis Study"
     REAL_WORLD = "Real-World Evidence"
     META_ANALYSIS = "Meta-Analysis"
+    SYSTEMATIC_REVIEW = "Systematic Review"
+    OBSERVATIONAL = "Observational"
+    CASE_SERIES = "Case Series"
+    VALIDATION_STUDY = "Validation Study"
+    POPULATION_BASED = "Population-based retrospective study"
+    CLINICAL_AUDIT = "Retrospective Clinical Audit"
+    PRECLINICAL = "Preclinical"
+    IN_SILICO_ANALYSIS = "In silico analysis"
+    PROSPECTIVE_DIAGNOSTIC = "Prospective Diagnostic"
     REGISTRY = "Registry Study"
+    
+    # Catch-all for unknown types
+    OTHER = "Other"
+    
+    @classmethod
+    def get_or_create(cls, study_type_str: str) -> 'StudyType':
+        """Get StudyType enum value or return OTHER for unknown types"""
+        if not study_type_str:
+            return cls.OTHER
+            
+        # Try exact match first
+        for study_type in cls:
+            if study_type.value.lower() == study_type_str.lower():
+                return study_type
+        
+        # Try partial matches for common patterns
+        study_type_lower = study_type_str.lower()
+        
+        # Phase patterns
+        if 'phase 1b' in study_type_lower or 'phase ib' in study_type_lower:
+            return cls.PHASE_1B
+        elif 'phase 1a' in study_type_lower or 'phase ia' in study_type_lower:
+            return cls.PHASE_1A
+        elif 'phase 1/2' in study_type_lower:
+            return cls.PHASE_1_2
+        elif 'phase 1' in study_type_lower:
+            return cls.PHASE_1
+        elif 'phase 2b' in study_type_lower or 'phase iib' in study_type_lower:
+            return cls.PHASE_2B
+        elif 'phase 2a' in study_type_lower or 'phase iia' in study_type_lower:
+            return cls.PHASE_2A
+        elif 'phase 2' in study_type_lower:
+            return cls.PHASE_2
+        elif 'phase 3' in study_type_lower:
+            return cls.PHASE_3
+        elif 'phase 4' in study_type_lower:
+            return cls.PHASE_4
+            
+        # Study design patterns
+        elif 'retrospective' in study_type_lower and 'database' in study_type_lower:
+            return cls.RETROSPECTIVE_DATABASE_ANALYSIS
+        elif 'retrospective' in study_type_lower:
+            return cls.RETROSPECTIVE
+        elif 'prospective' in study_type_lower and 'longitudinal' in study_type_lower:
+            return cls.PROSPECTIVE_LONGITUDINAL
+        elif 'prospective' in study_type_lower and 'cohort' in study_type_lower:
+            return cls.PROSPECTIVE_COHORT
+        elif 'prospective' in study_type_lower:
+            return cls.PROSPECTIVE
+        elif 'cohort' in study_type_lower:
+            return cls.COHORT
+        elif 'meta-analysis' in study_type_lower or 'meta analysis' in study_type_lower:
+            return cls.META_ANALYSIS
+        elif 'systematic review' in study_type_lower:
+            return cls.SYSTEMATIC_REVIEW
+        elif 'observational' in study_type_lower:
+            return cls.OBSERVATIONAL
+        elif 'real-world' in study_type_lower or 'real world' in study_type_lower:
+            return cls.REAL_WORLD
+        
+        # Default to OTHER for unrecognized types
+        return cls.OTHER
 
 class MMSubtype(str, Enum):
     NDMM = "Newly Diagnosed"

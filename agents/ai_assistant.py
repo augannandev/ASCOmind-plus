@@ -182,15 +182,29 @@ class AdvancedAIAssistant:
 
     def _create_system_prompt(self) -> str:
         """Create comprehensive system prompt for the assistant"""
-        return """You are Dr. ASCOmind+, an advanced AI research assistant specializing in multiple myeloma clinical research and drug development. You have access to a curated database of clinical studies and research data.
+        # Get cancer type display name
+        cancer_display = {
+            'prostate': 'Prostate Cancer',
+            'multiple_myeloma': 'Multiple Myeloma',
+            'breast': 'Breast Cancer',
+            'lung': 'Lung Cancer',
+            'colorectal': 'Colorectal Cancer'
+        }.get(self.research_domain, self.research_domain.title().replace('_', ' '))
+        
+        return f"""You are Dr. ASCOmind, an advanced AI research assistant specializing in {cancer_display} clinical research and drug development. You have access to a curated database of clinical studies and research data focused specifically on {cancer_display}.
 
 **Your Expertise:**
-- Multiple myeloma pathophysiology and treatment mechanisms
+- {cancer_display} pathophysiology and treatment mechanisms
 - Clinical trial design and regulatory requirements
 - Competitive landscape analysis and market intelligence
 - Treatment sequencing and patient selection strategies
 - Safety profiling and risk-benefit analysis
 - Biomarker strategies and precision medicine approaches
+
+**Important Instructions:**
+- When asked about study authors or institutions, ALWAYS check and report the author information if available in the provided context
+- If author information is provided in the context (e.g., "Authors: Name"), you MUST include it in your response
+- Do not say author information is unavailable if it appears in the context
 
 **Your Capabilities:**
 - Search and analyze clinical study databases
@@ -216,13 +230,14 @@ class AdvancedAIAssistant:
 - Assess regulatory and commercial implications
 
 **Communication Style:**
-- Professional but approachable
-- Use medical terminology appropriately
-- Provide clear executive summaries
-- Offer multiple perspectives when relevant
-- Ask clarifying questions when needed
+- Be direct and concise - avoid repetitive greetings like "Greetings" or "As Dr. ASCOmind"
+- Start responses with the actual answer, not introductory phrases
+- Use medical terminology appropriately but keep explanations clear
+- Provide actionable insights from the actual study data
+- Reference specific studies by title when relevant
+- Be brief unless detailed analysis is specifically requested
 
-Remember: You're helping advance multiple myeloma research and improve patient outcomes through intelligent analysis and strategic insights."""
+Remember: You're helping advance {cancer_display} research by providing focused, data-driven insights from the available studies."""
 
     async def _search_relevant_studies(self, query: str, filters: Optional[Dict] = None) -> List[Dict[str, Any]]:
         """Search for relevant studies using vector similarity"""
@@ -231,17 +246,38 @@ Remember: You're helping advance multiple myeloma research and improve patient o
                 self.logger.warning("Vector store not available for search")
                 return []
             
-            # Enhance query for better medical context
-            enhanced_query = f"Multiple myeloma clinical study: {query}"
+            # Enhance query for better medical context based on research domain
+            cancer_display = {
+                'prostate': 'Prostate cancer',
+                'multiple_myeloma': 'Multiple myeloma',
+                'breast': 'Breast cancer',
+                'lung': 'Lung cancer',
+                'colorectal': 'Colorectal cancer'
+            }.get(self.research_domain, self.research_domain.replace('_', ' '))
+            
+            # Don't add prefix for author/institution queries
+            query_lower = query.lower()
+            if any(term in query_lower for term in ['author', 'wrote', 'institution', 'university', 'who wrote']):
+                enhanced_query = query  # Use original query for author searches
+            else:
+                enhanced_query = f"{cancer_display} clinical study: {query}"
+            
+            # Add cancer type to filters if not already present
+            if filters is None:
+                filters = {}
+            if 'cancer_type' not in filters:
+                filters['cancer_type'] = self.research_domain
             
             # Search with filters
             search_results = await self.vector_store.search_abstracts(
                 query=enhanced_query,
                 filters=filters,
-                top_k=5
+                top_k=15  # Increased to get more diverse results
             )
             
             self.logger.info(f"Vector search returned {len(search_results)} results for query: {query}")
+            self.logger.info(f"Enhanced query: {enhanced_query}")
+            self.logger.info(f"Filters used: {filters}")
             return search_results
             
         except Exception as e:
@@ -304,19 +340,41 @@ Remember: You're helping advance multiple myeloma research and improve patient o
             study_info = study.get('study_info', {})
             metadata = study.get('metadata', {})
             
-            context += f"**Study {i}: {study_info.get('title', 'Unknown Study')}**\n"
+            # Get the text content which contains the actual abstract text
+            text_content = metadata.get('text_content', '')
+            
+            context += f"**Study {i}: {study_info.get('title', metadata.get('study_title', 'Unknown Study'))}**\n"
+            
+            # If this is an author chunk or contains author info, include it prominently
+            if 'author' in text_content.lower():
+                # Extract author info from text
+                lines = text_content.split('\n')
+                for line in lines:
+                    if 'author' in line.lower():
+                        context += f"- {line.strip()}\n"
+                        break
+            
+            # Include abstract number if available
+            if metadata.get('abstract_id'):
+                context += f"- Abstract Number: {metadata['abstract_id']}\n"
+            
             if study_info.get('acronym'):
                 context += f"- Acronym: {study_info['acronym']}\n"
             if study_info.get('nct_number'):
                 context += f"- NCT: {study_info['nct_number']}\n"
             context += f"- Type: {study_info.get('study_type', 'Unknown')}\n"
             
+            # Include relevant population info (cancer-specific)
             if metadata.get('mm_subtype'):
                 mm_subtypes = metadata['mm_subtype']
-                if isinstance(mm_subtypes, list):
-                    context += f"- Population: {', '.join(mm_subtypes)}\n"
-                else:
-                    context += f"- Population: {mm_subtypes}\n"
+                if isinstance(mm_subtypes, list) and mm_subtypes:
+                    context += f"- Subtype/Population: {', '.join(mm_subtypes)}\n"
+                elif mm_subtypes:
+                    context += f"- Subtype/Population: {mm_subtypes}\n"
+            
+            # Include enrollment information if available
+            if metadata.get('enrollment'):
+                context += f"- Enrollment: {metadata['enrollment']} patients\n"
             
             if metadata.get('treatment_regimens'):
                 treatments = metadata['treatment_regimens']

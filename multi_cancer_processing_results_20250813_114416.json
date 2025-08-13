@@ -1,0 +1,922 @@
+{
+  "start_time": "2025-08-13T11:32:55.300679",
+  "cancer_results": {
+    "multiple_myeloma": {
+      "cancer_type": "multiple_myeloma",
+      "total_abstracts": 0,
+      "years_processed": [],
+      "processing_results": [],
+      "vector_store_session": "cancer_multiple_myeloma_20250813_113255",
+      "analytics_summary": {},
+      "visualizations": {},
+      "cache_status": {
+        "status": "success",
+        "abstracts_cached": 0,
+        "analytics_cached": false,
+        "visualizations_cached": false
+      }
+    },
+    "prostate": {
+      "cancer_type": "prostate",
+      "total_abstracts": 30,
+      "years_processed": [
+        2023,
+        2024,
+        2025
+      ],
+      "processing_results": [
+        {
+          "year": 2023,
+          "abstracts_processed": 10,
+          "extraction_success": 10,
+          "categorization_success": 10,
+          "embedding_results": {
+            "success": 10,
+            "skipped": 0,
+            "errors": 0,
+            "details": [
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "1f54b79bb1cea75f",
+                "study_title": "Treatment patterns and survival by race among men with metastatic castration-resistant prostate cancer (mCRPC) in the United States: A US electronic medical record database 2020-2023",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "ab631cee49f69bb5",
+                "study_title": "Androgen receptor\u2013specific CD8+ T cells with tumor cell cytotoxicity in patients with prostate cancer in Taiwan",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "2b1c2846f8472413",
+                "study_title": "Increasing targeted therapy options for mCRPC patients using multigene NGS panel",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "b55c909379ab3103",
+                "study_title": "Darolutamide and time to pain progression by disease volume in ARASENS",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "5d3782ae760db8ec",
+                "study_title": "Additional cycles of docetaxel in combination with androgen deprivation therapy (D-ADT) in metastatic hormone-sensitive prostate cancer (mHSPC): Efficacy and feasibility analysis",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 6,
+                "content_hash": "c73db834121ac975",
+                "study_title": "Randomized placebo-controlled trial of intravenous vitamin C plus docetaxel in metastatic prostate cancer",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy",
+                  "safety"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "b7d945c824e762cc",
+                "study_title": "Patterns of recurrence post prostatectomy in the PSMA era: What lessons can we take to daily practice from a high-volume nuclear medicine center?",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 6,
+                "content_hash": "216816fe8d1f7515",
+                "study_title": "Real-world data for predictors of PSA response to Lu177-PSMA-617 in metastatic castration resistant prostate cancer",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy",
+                  "safety"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "146e8ea3d2d93cf4",
+                "study_title": "Effect of SNPs in TMPRSS2 to severe COVID-19 in patients with prostate cancer",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "6fa90234e2cc2853",
+                "study_title": "Error in extraction",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "year": 2024,
+          "abstracts_processed": 10,
+          "extraction_success": 10,
+          "categorization_success": 10,
+          "embedding_results": {
+            "success": 10,
+            "skipped": 0,
+            "errors": 0,
+            "details": [
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "4697e5b1d8fdae6c",
+                "study_title": "Outcomes of men with prostate cancer managed with active surveillance and tested with clinical cell-cycle risk score",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "219e69eb414a5bf2",
+                "study_title": "Impact of hormone-therapy used in CRPC patients: Evaluation of abiraterone acetate/prednisone or enzalutamide on activity and cognitive functions in aged castrated mice",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "a353056932a1b92b",
+                "study_title": "Early PSA progression in abiraterone/enzalutamide-treated patients with metastatic castration-resistant prostate cancer",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "ba34289c747c3f29",
+                "study_title": "Does a food intervention makes abiraterone treatment affordable?",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "bd77d64dd1bf65af",
+                "study_title": "Evolution of androgen receptor variant (ARV) profiles in serial metastatic solid and liquid biopsies in metastatic castrate resistant prostate cancer (mCRPC) treated with abiraterone acetate/ prednisone (AA/P)",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "6d9bd2f98c409a3e",
+                "study_title": "Expression of human leukocyte antigen-a and b2-microglobulin in prostate cancer",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 6,
+                "content_hash": "c671df700c9feca6",
+                "study_title": "A phase II study of enzalutamide (Enz) with dutasteride (Dut) or finasteride (Fin) in men \u2265 65 years with hormone-naive systemic prostate cancer (HNSPCa): Tolerability and geriatric asssessment (GA) results",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy",
+                  "safety"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "d7232a7e5354cef2",
+                "study_title": "Radium 223 (Ra-223) experience in twenty-four castration resistant prostate cancer (CRPC) patients treated at West Virginia University (WVU) 2014-2018",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "b28a9f2593cb76f4",
+                "study_title": "Real-world cardiovascular outcomes with novel anti-androgen agents in prostate cancer patients",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "0d12c577327eb3de",
+                "study_title": "Oncolytic HSV and PI3K inhibitor BKM120 synergize to promote killing of prostate cancer stem-like cells",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "year": 2025,
+          "abstracts_processed": 10,
+          "extraction_success": 10,
+          "categorization_success": 10,
+          "embedding_results": {
+            "success": 10,
+            "skipped": 0,
+            "errors": 0,
+            "details": [
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "e5b1a2ede3168d34",
+                "study_title": "Prognostic impact and racial disparities of chromosome 8q gains in prostate cancer: Insights from integrated molecular profiling",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "b4eb449d37a52a1a",
+                "study_title": "Advancing prostate cancer local recurrence detection: An analysis of optimal imaging modalities",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "4ccdfa72bd8025f1",
+                "study_title": "PSMA-PET as a way to choose oligometastatic patients for intermittent androgen deprivation: Extended follow-up of a prospective cohort of patients",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "508e6447bccd85f0",
+                "study_title": "Variation in communication of cancer risk in prostate cancer treatment consultations",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "f3e050dc7dd8a421",
+                "study_title": "Utility of the PROSTest, a novel blood-based molecular assay, versus PSA for prostate cancer stratification and detection of higher grade disease",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "7043c5e3ce354079",
+                "study_title": "Dietary polyphenols and the risk of prostate cancer in the prospective Southern Community Cohort Study",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "e75a58b727322a16",
+                "study_title": "Prognostic validation of six androgen production, uptake, and conversion genes (APUC-6) in the CHAARTED prostate cancer trial",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "7802eb2766d0ce70",
+                "study_title": "Substudy F of the Canadian Cancer Trials Group (CCTG) IND.234: PC_BETS (Prostate Cancer Biomarker Enrichment and Treatment Selection)",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "7649a971b7440bad",
+                "study_title": "Google search analysis: What do people want to know about prostate cancer and where do they find answers?",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              },
+              {
+                "status": "success",
+                "vectors_created": 5,
+                "content_hash": "683a0677bc900a12",
+                "study_title": "Use of 177Lut-PSMA in metastatic castrate-resistant prostate cancer in the post-chemotherapy setting: Early vs late treatment",
+                "chunk_types": [
+                  "full_abstract",
+                  "authors_institutions",
+                  "study_design",
+                  "treatment",
+                  "efficacy"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "vector_store_session": "cancer_prostate_20250813_113259",
+      "analytics_summary": {
+        "dataset_overview": {
+          "summary_statistics": {
+            "total_studies": 30,
+            "study_types": 11,
+            "conferences": 0,
+            "avg_enrollment": 1714.9,
+            "year_range": null,
+            "avg_confidence": 0.541,
+            "avg_completeness": 0.617,
+            "randomized_percentage": 13.3,
+            "multicenter_percentage": 46.7
+          },
+          "study_type_distribution": {
+            "Retrospective": 14,
+            "Phase 2": 4,
+            "Phase 3": 2,
+            "Observational": 2,
+            "Preclinical": 2,
+            "Ambispective Cohort Study": 1,
+            "Prospective Diagnostic": 1,
+            "Prospective": 1,
+            "Prospective Cohort Study": 1,
+            "Phase 1": 1,
+            "Other": 1
+          },
+          "mm_subtype_distribution": {
+            "NDMM": 0,
+            "RRMM": 30,
+            "High-Risk": 0,
+            "Elderly": 0
+          }
+        },
+        "treatment_landscape": {
+          "regimen_analysis": [
+            {
+              "regimen": [
+                "Unknown"
+              ],
+              "study_count": 4,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 813.5
+            },
+            {
+              "regimen": [
+                "Late 177Lu-PSMA",
+                "Early 177Lu-PSMA"
+              ],
+              "study_count": 1,
+              "avg_orr": 49.0,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 164.0
+            },
+            {
+              "regimen": [
+                "Lu177-PSMA-617"
+              ],
+              "study_count": 1,
+              "avg_orr": 46.7,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 45.0
+            },
+            {
+              "regimen": [
+                "Ex vivo T cell stimulation"
+              ],
+              "study_count": 1,
+              "avg_orr": 45.0,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 25.0
+            },
+            {
+              "regimen": [
+                "Docetaxel + Vitamin C"
+              ],
+              "study_count": 1,
+              "avg_orr": 41.0,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 50.0
+            },
+            {
+              "regimen": [
+                "Standard Abiraterone",
+                "Food Intervention Abiraterone"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 14.0
+            },
+            {
+              "regimen": [
+                "Radium-223"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 24.0
+            },
+            {
+              "regimen": [
+                "Ga68-PSMA-PET-CT scanning"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 648.0
+            },
+            {
+              "regimen": [
+                "Dietary Polyphenol Intake"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 29325.0
+            },
+            {
+              "regimen": [
+                "D-ADTstand",
+                "D-ADTadd"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": 13.4,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 108.0
+            },
+            {
+              "regimen": [
+                "ADT alone - localized",
+                "ADT + Novel Antiandrogens"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 7030.0
+            },
+            {
+              "regimen": [
+                "Enzalutamide with Dutasteride/Finasteride"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 43.0
+            },
+            {
+              "regimen": [
+                "Active Surveillance"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 664.0
+            },
+            {
+              "regimen": [
+                "Immune checkpoint blockade"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 115.0
+            },
+            {
+              "regimen": [
+                "LHRH agonists"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 45.0
+            },
+            {
+              "regimen": [
+                "ARPI"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 609.0
+            },
+            {
+              "regimen": [
+                "DARO+ADT+docetaxel",
+                "PBO+ADT+docetaxel"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 1305.0
+            },
+            {
+              "regimen": [
+                "Abiraterone/Enzalutamide"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 581.0
+            },
+            {
+              "regimen": [
+                "ADT + ARPI with PSMA PET/CT-guided MDT"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 30.0
+            },
+            {
+              "regimen": [
+                "PSMA/PET CT",
+                "MRI"
+              ],
+              "study_count": 1,
+              "avg_orr": null,
+              "avg_pfs": null,
+              "avg_completion": null,
+              "line_of_therapy": null,
+              "avg_enrollment": 37.0
+            }
+          ],
+          "novel_vs_standard": {
+            "novel_regimen_percentage": 75.0,
+            "novel_orr": 44.2,
+            "standard_orr": 49.0
+          },
+          "clinical_interpretation": {
+            "regimen_patterns": {
+              "combination_trends": {},
+              "drug_class_evolution": {},
+              "mechanism_diversity": {}
+            },
+            "emerging_trends": {
+              "novel_combinations": [],
+              "mechanism_innovations": [],
+              "biomarker_directed_therapy": [],
+              "resistance_strategies": []
+            },
+            "competitive_landscape": {
+              "efficacy_leaders": [],
+              "safety_differentiation": [],
+              "unmet_medical_needs": [],
+              "market_opportunities": []
+            },
+            "clinical_recommendations": [
+              "Continue monitoring long-term safety profiles",
+              "Develop combination strategies for refractory populations",
+              "Investigate biomarker-driven treatment selection"
+            ]
+          }
+        },
+        "efficacy_benchmarks": {
+          "overall_benchmarks": [
+            {
+              "line_of_therapy": null,
+              "study_count": 4,
+              "mean_orr": 45.4,
+              "median_orr": 45.9,
+              "std_orr": 3.4,
+              "mean_cr": null,
+              "mean_pfs": null,
+              "median_pfs": null
+            }
+          ],
+          "subgroup_benchmarks": [
+            {
+              "line_of_therapy": null,
+              "subgroup": "Standard-Risk",
+              "avg_orr": 45.4,
+              "study_count": 4
+            }
+          ]
+        },
+        "safety_patterns": {
+          "safety_by_line": []
+        },
+        "patient_characteristics": {
+          "population_characteristics": {
+            "avg_age": 70.2,
+            "avg_male_percentage": 100.0,
+            "avg_ecog_0_percentage": null,
+            "avg_ecog_1_percentage": null,
+            "avg_high_risk_percentage": null,
+            "avg_prior_therapies": null
+          }
+        },
+        "clinical_insights": {
+          "prior_therapy_correlation": [],
+          "risk_stratification": [],
+          "key_insights": [
+            "Response rates decline with increased prior therapy exposure",
+            "High-risk cytogenetics impact treatment outcomes significantly",
+            "Novel combinations show promise in heavily pretreated populations",
+            "Safety profiles vary by mechanism of action and patient age"
+          ]
+        },
+        "comparative_analysis": {
+          "error": "Insufficient data for comparative analysis"
+        },
+        "temporal_trends": {
+          "error": "Insufficient temporal data for trend analysis"
+        },
+        "regulatory_landscape": {
+          "study_phase_distribution": [
+            {
+              "phase": "Retrospective",
+              "study_count": 14,
+              "avg_enrollment": 837.3,
+              "randomized_percentage": 0.0
+            },
+            {
+              "phase": "Phase 2",
+              "study_count": 4,
+              "avg_enrollment": 39.3,
+              "randomized_percentage": 50.0
+            },
+            {
+              "phase": "Phase 3",
+              "study_count": 2,
+              "avg_enrollment": 732.5,
+              "randomized_percentage": 50.0
+            },
+            {
+              "phase": "Observational",
+              "study_count": 2,
+              "avg_enrollment": 50.0,
+              "randomized_percentage": 0.0
+            },
+            {
+              "phase": "Preclinical",
+              "study_count": 2,
+              "avg_enrollment": null,
+              "randomized_percentage": 50.0
+            },
+            {
+              "phase": "Prospective Cohort Study",
+              "study_count": 1,
+              "avg_enrollment": 29325.0,
+              "randomized_percentage": 0.0
+            },
+            {
+              "phase": "Prospective",
+              "study_count": 1,
+              "avg_enrollment": null,
+              "randomized_percentage": 0.0
+            },
+            {
+              "phase": "Phase 1",
+              "study_count": 1,
+              "avg_enrollment": 14.0,
+              "randomized_percentage": 0.0
+            },
+            {
+              "phase": "Ambispective Cohort Study",
+              "study_count": 1,
+              "avg_enrollment": 30.0,
+              "randomized_percentage": 0.0
+            },
+            {
+              "phase": "Prospective Diagnostic",
+              "study_count": 1,
+              "avg_enrollment": 123.0,
+              "randomized_percentage": 0.0
+            },
+            {
+              "phase": "Other",
+              "study_count": 1,
+              "avg_enrollment": 25.0,
+              "randomized_percentage": 0.0
+            }
+          ],
+          "regulatory_insights": [
+            "Phase 2 studies dominate the landscape",
+            "Increasing trend toward randomized designs",
+            "Larger enrollment sizes in recent studies",
+            "Accelerated approval pathways being utilized"
+          ]
+        },
+        "commercial_insights": {
+          "market_leaders": [],
+          "commercial_insights": [
+            "Multiple novel combinations competing for market share",
+            "High unmet need in heavily pretreated populations",
+            "Biomarker-driven strategies emerging as differentiators",
+            "Safety profiles becoming key competitive advantages"
+          ]
+        }
+      },
+      "visualizations": {
+        "study_overview": "Figure({\n    'data': [{'domain': {'x': [0.0, 0.45], 'y': [0.0, 1.0]},\n              'hovertemplate': '<b>%{label}</b><br>Studies: %{value}<br>Percentage: %{percent}<extra></extra>',\n              'labels': [Retrospective, Other, Phase 3, Phase 2, Preclinical,\n                         Phase 1, Prospective, Ambispective Cohort Study,\n                         Observational, Prospective Diagnostic, Prospective Cohort\n                         Study],\n              'marker': {'colors': [#9b59b6, #3498db, #2ecc71, #e67e22, #95a5a6,\n                                    #95a5a6, #95a5a6, #95a5a6, #95a5a6, #95a5a6,\n                                    #95a5a6]},\n              'name': 'Study Phases',\n              'textinfo': 'label+percent',\n              'type': 'pie',\n              'values': [14, 1, 2, 4, 2, 1, 1, 1, 2, 1, 1]},\n             {'hovertemplate': '<b>%{x}</b><br>Studies: %{y}<extra></extra>',\n              'marker': {'color': ['#95a5a6']},\n              'name': 'MM Subtypes',\n              'text': [30],\n              'textposition': 'auto',\n              'type': 'bar',\n              'x': [Relapsed/Refractory],\n              'xaxis': 'x',\n              'y': [30],\n              'yaxis': 'y'}],\n    'layout': {'annotations': [{'font': {'size': 16},\n                                'showarrow': False,\n                                'text': 'Study Phase Distribution',\n                                'x': 0.225,\n                                'xanchor': 'center',\n                                'xref': 'paper',\n                                'y': 1.0,\n                                'yanchor': 'bottom',\n                                'yref': 'paper'},\n                               {'font': {'size': 16},\n                                'showarrow': False,\n                                'text': 'MM Subtype Distribution',\n                                'x': 0.775,\n                                'xanchor': 'center',\n                                'xref': 'paper',\n                                'y': 1.0,\n                                'yanchor': 'bottom',\n                                'yref': 'paper'}],\n               'height': 500,\n               'showlegend': True,\n               'template': '...',\n               'title': {'text': '\ud83d\udcca Study Overview Dashboard - 30 Studies, 42,872 Patients'},\n               'xaxis': {'anchor': 'y', 'domain': [0.55, 1.0]},\n               'yaxis': {'anchor': 'x', 'domain': [0.0, 1.0]}}\n})",
+        "mm_subtype_distribution": "Figure({\n    'data': [{'hole': 0.3,\n              'hovertemplate': '<b>%{label}</b><br>Studies: %{value}<br>Percentage: %{percent}<extra></extra>',\n              'labels': [Relapsed/Refractory],\n              'marker': {'colors': ['#e74c3c'], 'line': {'color': '#FFFFFF', 'width': 2}},\n              'textinfo': 'label+percent',\n              'textposition': 'auto',\n              'type': 'pie',\n              'values': [30]}],\n    'layout': {'annotations': [{'font': {'color': '#667eea', 'size': 20},\n                                'showarrow': False,\n                                'text': 'Total Studies: 30',\n                                'x': 0.5,\n                                'y': 0.5}],\n               'height': 500,\n               'template': '...',\n               'title': {'text': '\ud83c\udfaf Multiple Myeloma Subtype Distribution'}}\n})",
+        "phase_distribution": "Figure({\n    'data': [{'hovertemplate': '<b>%{x}</b><br>Studies: %{y}<br>Percentage: %{text}<extra></extra>',\n              'marker': {'color': [#9b59b6, #3498db, #2ecc71, #95a5a6, #95a5a6,\n                                   #95a5a6, #95a5a6, #95a5a6, #95a5a6, #95a5a6,\n                                   #95a5a6]},\n              'text': [1<br>(3.3%), 4<br>(13.3%), 2<br>(6.7%), 14<br>(46.7%),\n                       1<br>(3.3%), 2<br>(6.7%), 1<br>(3.3%), 1<br>(3.3%),\n                       2<br>(6.7%), 1<br>(3.3%), 1<br>(3.3%)],\n              'textposition': 'auto',\n              'type': 'bar',\n              'x': [Phase 1, Phase 2, Phase 3, Retrospective, Other, Preclinical,\n                    Prospective, Ambispective Cohort Study, Observational,\n                    Prospective Diagnostic, Prospective Cohort Study],\n              'y': [1, 4, 2, 14, 1, 2, 1, 1, 2, 1, 1]}],\n    'layout': {'height': 500,\n               'template': '...',\n               'title': {'text': '\ud83d\udcc8 Clinical Trial Phase Distribution (n=30)'},\n               'xaxis': {'tickangle': -45, 'title': {'text': 'Study Phase'}},\n               'yaxis': {'title': {'text': 'Number of Studies'}}}\n})",
+        "treatment_landscape": "Figure({\n    'data': [{'hovertemplate': '<b>%{y}</b><br>Studies: %{x}<extra></extra>',\n              'marker': {'color': '#667eea'},\n              'orientation': 'h',\n              'text': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],\n              'textposition': 'auto',\n              'type': 'bar',\n              'x': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],\n              'y': [ARPI, Ex vivo T cell stimulation, NGS Analysis,\n                    DARO+ADT+docetaxel, PBO+ADT+docetaxel, D-ADTstand, D-ADTadd,\n                    Docetaxel + Vitamin C, Ga68-PSMA-PET-CT scanning,\n                    Lu177-PSMA-617, LHRH agonists, Active Surveillance, AAP, ENZ,\n                    Abiraterone/Enzalutamide]}],\n    'layout': {'height': 500,\n               'margin': {'l': 200},\n               'template': '...',\n               'title': {'text': '\ud83d\udc8a Treatment Regimen Landscape (Top 15)'},\n               'xaxis': {'title': {'text': 'Number of Studies'}},\n               'yaxis': {'title': {'text': 'Treatment Regimens'}}}\n})",
+        "novel_agents_adoption": "Figure({\n    'data': [{'hovertemplate': '<b>%{y}</b><br>Studies: %{text}<br>% of Total: %{x:.1f}%<extra></extra>',\n              'marker': {'color': ['#9b59b6', '#1abc9c', '#e67e22', '#667eea', '#764ba2', '#f093fb']},\n              'orientation': 'h',\n              'text': [0 (0.0%), 0 (0.0%), 0 (0.0%), 0 (0.0%), 0 (0.0%), 0 (0.0%)],\n              'textposition': 'auto',\n              'type': 'bar',\n              'x': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n              'y': [CAR-T, Bispecific, ADC, BCL-2, SINE, HDAC]}],\n    'layout': {'height': 400,\n               'template': '...',\n               'title': {'text': '\ud83e\uddec Novel Agent Adoption (n=30 studies)'},\n               'xaxis': {'title': {'text': 'Percentage of Studies (%)'}},\n               'yaxis': {'title': {'text': 'Novel Agent Type'}}}\n})",
+        "efficacy_analysis": "Figure({\n    'data': [{'customdata': array([['Androgen receptor\u2013specific CD8+ T cells with tumor...'],\n                                   ['Randomized placebo-controlled trial of intravenous...'],\n                                   ['Real-world data for predictors of PSA response to ...'],\n                                   ['Use of 177Lut-PSMA in metastatic castrate-resistan...']], dtype=object),\n              'hovertemplate': ('Line of Therapy=Unknown<br>MM ' ... '{customdata[0]}<extra></extra>'),\n              'legendgroup': 'Unknown',\n              'marker': {'color': '#000001',\n                         'size': {'bdata': 'GQAyAC0ApAA=', 'dtype': 'i2'},\n                         'sizemode': 'area',\n                         'sizeref': 0.41,\n                         'symbol': 'circle'},\n              'mode': 'markers',\n              'name': 'Unknown',\n              'orientation': 'v',\n              'showlegend': True,\n              'type': 'scatter',\n              'x': array(['Relapsed/Refractory', 'Relapsed/Refractory', 'Relapsed/Refractory',\n                          'Relapsed/Refractory'], dtype=object),\n              'xaxis': 'x',\n              'y': {'bdata': 'AAAAAACARkAAAAAAAIBEQJqZmZmZWUdAAAAAAACASEA=', 'dtype': 'f8'},\n              'yaxis': 'y'}],\n    'layout': {'annotations': [{'showarrow': False,\n                                'text': 'Median: 45.9%',\n                                'x': 1,\n                                'xanchor': 'right',\n                                'xref': 'x domain',\n                                'y': np.float64(45.85),\n                                'yanchor': 'bottom',\n                                'yref': 'y'}],\n               'height': 600,\n               'legend': {'itemsizing': 'constant', 'title': {'text': 'Line of Therapy'}, 'tracegroupgap': 0},\n               'shapes': [{'line': {'color': 'gray', 'dash': 'dash'},\n                           'type': 'line',\n                           'x0': 0,\n                           'x1': 1,\n                           'xref': 'x domain',\n                           'y0': np.float64(45.85),\n                           'y1': np.float64(45.85),\n                           'yref': 'y'}],\n               'template': '...',\n               'title': {'text': '\ud83c\udfaf Efficacy Analysis: ORR by MM Subtype'},\n               'xaxis': {'anchor': 'y', 'domain': [0.0, 1.0], 'tickangle': -45, 'title': {'text': 'MM Subtype'}},\n               'yaxis': {'anchor': 'x', 'domain': [0.0, 1.0], 'title': {'text': 'Overall Response Rate (%)'}}}\n})",
+        "response_rates_by_line": "Figure({\n    'data': [],\n    'layout': {'annotations': [{'bgcolor': '#f8f9fa',\n                                'bordercolor': '#95a5a6',\n                                'borderwidth': 1,\n                                'font': {'color': '#95a5a6', 'size': 16},\n                                'showarrow': False,\n                                'text': 'No line of therapy data available',\n                                'x': 0.5,\n                                'xref': 'paper',\n                                'y': 0.5,\n                                'yref': 'paper'}],\n               'height': 400,\n               'template': '...',\n               'title': {'text': 'Response Rates by Line'}}\n})",
+        "safety_analysis": "Figure({\n    'data': [{'hovertemplate': '<b>%{text}</b><br>Grade 3-4 AEs: %{x}%<br>Discontinuations: %{y}%<extra></extra>',\n              'marker': {'color': {'bdata': 'AAAAAAAAGEDNzMzMzMwaQAAAAAAAwEtA', 'dtype': 'f8'},\n                         'colorbar': {'title': {'text': 'Grade 3-4 AE Rate (%)'}},\n                         'colorscale': [[0.0, 'rgb(255,245,240)'], [0.125,\n                                        'rgb(254,224,210)'], [0.25,\n                                        'rgb(252,187,161)'], [0.375,\n                                        'rgb(252,146,114)'], [0.5,\n                                        'rgb(251,106,74)'], [0.625,\n                                        'rgb(239,59,44)'], [0.75,\n                                        'rgb(203,24,29)'], [0.875,\n                                        'rgb(165,15,21)'], [1.0, 'rgb(103,0,13)']],\n                         'showscale': True,\n                         'size': 10},\n              'mode': 'markers',\n              'text': array(['Docetaxel + Vitamin C', 'Lu177-PSMA-617',\n                             'Enzalutamide with Dutasteride/Finasteride'], dtype=object),\n              'type': 'scatter',\n              'x': {'bdata': 'AAAAAAAAGEDNzMzMzMwaQAAAAAAAwEtA', 'dtype': 'f8'},\n              'y': {'bdata': 'AAAAAAAA+H8AAAAAAAD4f83MzMzMTEBA', 'dtype': 'f8'}}],\n    'layout': {'annotations': [{'showarrow': False,\n                                'text': 'High AE Rate',\n                                'x': 50,\n                                'xanchor': 'left',\n                                'xref': 'x',\n                                'y': 1,\n                                'yanchor': 'top',\n                                'yref': 'y domain'},\n                               {'showarrow': False,\n                                'text': 'High Discontinuation',\n                                'x': 1,\n                                'xanchor': 'right',\n                                'xref': 'x domain',\n                                'y': 20,\n                                'yanchor': 'bottom',\n                                'yref': 'y'}],\n               'height': 500,\n               'shapes': [{'line': {'color': 'gray', 'dash': 'dash'},\n                           'type': 'line',\n                           'x0': 50,\n                           'x1': 50,\n                           'xref': 'x',\n                           'y0': 0,\n                           'y1': 1,\n                           'yref': 'y domain'},\n                          {'line': {'color': 'gray', 'dash': 'dash'},\n                           'type': 'line',\n                           'x0': 0,\n                           'x1': 1,\n                           'xref': 'x domain',\n                           'y0': 20,\n                           'y1': 20,\n                           'yref': 'y'}],\n               'template': '...',\n               'title': {'text': '\u26a0\ufe0f Safety Profile Analysis'},\n               'xaxis': {'title': {'text': 'Grade 3-4 Adverse Event Rate (%)'}},\n               'yaxis': {'title': {'text': 'Treatment Discontinuation Rate (%)'}}}\n})",
+        "patient_demographics": "Figure({\n    'data': [{'hovertemplate': 'Age Range: %{x}<br>Studies: %{y}<extra></extra>',\n              'marker': {'color': '#667eea'},\n              'name': 'Median Age',\n              'nbinsx': 10,\n              'type': 'histogram',\n              'x': [72.0, 66.2, 74.0, 71.7, 77.0, 78.0, 69.0, 64.0, 68.0, 69.0,\n                    63.0],\n              'xaxis': 'x',\n              'yaxis': 'y'},\n             {'hovertemplate': 'Male %: %{x}<br>Studies: %{y}<extra></extra>',\n              'marker': {'color': '#764ba2'},\n              'name': 'Male %',\n              'nbinsx': 10,\n              'type': 'histogram',\n              'x': [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0,\n                    100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0,\n                    100.0, 100.0, 100.0, 100.0, 100.0],\n              'xaxis': 'x2',\n              'yaxis': 'y2'},\n             {'hovertemplate': 'Enrollment: %{x}<br>Studies: %{y}<extra></extra>',\n              'marker': {'color': '#43e97b'},\n              'name': 'Enrollment',\n              'nbinsx': 15,\n              'type': 'histogram',\n              'x': [609, 25, 75, 1305, 108, 50, 648, 45, 45, 664, 581, 14, 115,\n                    43, 24, 7030, 1577, 37, 30, 50, 123, 29325, 160, 25, 164],\n              'xaxis': 'x3',\n              'yaxis': 'y3'}],\n    'layout': {'annotations': [{'font': {'size': 16},\n                                'showarrow': False,\n                                'text': 'Age Distribution',\n                                'x': 0.14444444444444446,\n                                'xanchor': 'center',\n                                'xref': 'paper',\n                                'y': 1.0,\n                                'yanchor': 'bottom',\n                                'yref': 'paper'},\n                               {'font': {'size': 16},\n                                'showarrow': False,\n                                'text': 'Gender Distribution',\n                                'x': 0.5,\n                                'xanchor': 'center',\n                                'xref': 'paper',\n                                'y': 1.0,\n                                'yanchor': 'bottom',\n                                'yref': 'paper'},\n                               {'font': {'size': 16},\n                                'showarrow': False,\n                                'text': 'Enrollment Size',\n                                'x': 0.8555555555555556,\n                                'xanchor': 'center',\n                                'xref': 'paper',\n                                'y': 1.0,\n                                'yanchor': 'bottom',\n                                'yref': 'paper'}],\n               'height': 400,\n               'showlegend': False,\n               'template': '...',\n               'title': {'text': '\ud83d\udc65 Patient Demographics Analysis'},\n               'xaxis': {'anchor': 'y', 'domain': [0.0, 0.2888888888888889], 'title': {'text': 'Median Age (years)'}},\n               'xaxis2': {'anchor': 'y2',\n                          'domain': [0.35555555555555557, 0.6444444444444445],\n                          'title': {'text': 'Male Percentage (%)'}},\n               'xaxis3': {'anchor': 'y3', 'domain': [0.7111111111111111, 1.0], 'title': {'text': 'Total Enrollment'}},\n               'yaxis': {'anchor': 'x', 'domain': [0.0, 1.0], 'title': {'text': 'Number of Studies'}},\n               'yaxis2': {'anchor': 'x2', 'domain': [0.0, 1.0], 'title': {'text': 'Number of Studies'}},\n               'yaxis3': {'anchor': 'x3', 'domain': [0.0, 1.0], 'title': {'text': 'Number of Studies'}}}\n})",
+        "efficacy_safety_bubble": "Figure({\n    'data': [{'customdata': array([['Docetaxel + Vitamin C',\n                                    'Randomized placebo-controlled trial of i...'],\n                                   ['Lu177-PSMA-617', 'Real-world data for predictors of PSA re...']],\n                                  dtype=object),\n              'hovertemplate': ('MM Subtype=Relapsed/Refractory' ... '{customdata[1]}<extra></extra>'),\n              'legendgroup': 'Relapsed/Refractory',\n              'marker': {'color': '#000001',\n                         'size': {'bdata': 'Mi0=', 'dtype': 'i1'},\n                         'sizemode': 'area',\n                         'sizeref': 0.125,\n                         'symbol': 'circle'},\n              'mode': 'markers',\n              'name': 'Relapsed/Refractory',\n              'orientation': 'v',\n              'showlegend': True,\n              'type': 'scatter',\n              'x': {'bdata': 'AAAAAAAAGEDNzMzMzMwaQA==', 'dtype': 'f8'},\n              'xaxis': 'x',\n              'y': {'bdata': 'AAAAAACARECamZmZmVlHQA==', 'dtype': 'f8'},\n              'yaxis': 'y'}],\n    'layout': {'annotations': [{'showarrow': False,\n                                'text': 'Median ORR: 43.9%',\n                                'x': 1,\n                                'xanchor': 'right',\n                                'xref': 'x domain',\n                                'y': np.float64(43.85),\n                                'yanchor': 'bottom',\n                                'yref': 'y'},\n                               {'showarrow': False,\n                                'text': 'Median AE: 6.3%',\n                                'x': np.float64(6.35),\n                                'xanchor': 'left',\n                                'xref': 'x',\n                                'y': 1,\n                                'yanchor': 'top',\n                                'yref': 'y domain'},\n                               {'bgcolor': 'lightgreen',\n                                'bordercolor': 'green',\n                                'text': '\ud83c\udfaf Ideal<br>Quadrant',\n                                'x': 10,\n                                'y': 90},\n                               {'bgcolor': 'yellow',\n                                'bordercolor': 'orange',\n                                'text': '\u26a0\ufe0f High Efficacy<br>High Toxicity',\n                                'x': 90,\n                                'y': 90},\n                               {'bgcolor': 'lightcoral',\n                                'bordercolor': 'red',\n                                'text': '\u274c Low Efficacy<br>Low Toxicity',\n                                'x': 10,\n                                'y': 10},\n                               {'bgcolor': 'red',\n                                'bordercolor': 'darkred',\n                                'text': '\ud83d\udc80 Worst<br>Quadrant',\n                                'x': 90,\n                                'y': 10}],\n               'height': 600,\n               'legend': {'itemsizing': 'constant', 'title': {'text': 'MM Subtype'}, 'tracegroupgap': 0},\n               'shapes': [{'line': {'color': 'gray', 'dash': 'dash'},\n                           'type': 'line',\n                           'x0': 0,\n                           'x1': 1,\n                           'xref': 'x domain',\n                           'y0': np.float64(43.85),\n                           'y1': np.float64(43.85),\n                           'yref': 'y'},\n                          {'line': {'color': 'gray', 'dash': 'dash'},\n                           'type': 'line',\n                           'x0': np.float64(6.35),\n                           'x1': np.float64(6.35),\n                           'xref': 'x',\n                           'y0': 0,\n                           'y1': 1,\n                           'yref': 'y domain'}],\n               'template': '...',\n               'title': {'text': '\u2696\ufe0f Efficacy vs Safety Analysis'},\n               'xaxis': {'anchor': 'y', 'domain': [0.0, 1.0], 'title': {'text': 'Grade 3-4 Adverse Event Rate (%)'}},\n               'yaxis': {'anchor': 'x', 'domain': [0.0, 1.0], 'title': {'text': 'Overall Response Rate (%)'}}}\n})",
+        "study_size_distribution": "Figure({\n    'data': [{'hovertemplate': '<b>%{x}</b><br>Studies: %{y}<extra></extra>',\n              'marker': {'color': ['#f5576c', '#f093fb', '#667eea', '#43e97b']},\n              'text': [4, 8, 5, 8],\n              'textposition': 'auto',\n              'type': 'bar',\n              'x': [Small (<30), Medium (30-99), Large (100-299), Very Large\n                    (\u2265300)],\n              'y': [4, 8, 5, 8]}],\n    'layout': {'annotations': [{'bgcolor': 'white',\n                                'bordercolor': 'gray',\n                                'borderwidth': 1,\n                                'text': 'Total Patients: 42,872<br>Median Size: 108<br>Mean Size: 1715',\n                                'x': 0.95,\n                                'xref': 'paper',\n                                'y': 0.95,\n                                'yref': 'paper'}],\n               'height': 500,\n               'template': '...',\n               'title': {'text': '\ud83d\udccf Study Size Distribution (n=25 studies)'},\n               'xaxis': {'title': {'text': 'Study Size Category'}},\n               'yaxis': {'title': {'text': 'Number of Studies'}}}\n})"
+      },
+      "cache_status": {
+        "status": "success",
+        "abstracts_cached": 30,
+        "analytics_cached": true,
+        "visualizations_cached": true
+      }
+    }
+  },
+  "summary": {
+    "total_cancer_types": 2,
+    "successful_cancer_types": 1,
+    "total_abstracts_processed": 30,
+    "cancer_types_processed": [
+      "prostate"
+    ],
+    "end_time": "2025-08-13T11:44:16.866544"
+  },
+  "status": "success"
+}
