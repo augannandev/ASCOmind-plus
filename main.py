@@ -717,69 +717,49 @@ class CancerFirstApp:
         
 
         
-        # Add CSS for enhanced tab styling with clear selection feedback
+        # Add CSS for sleek underline tab styling (modern web app style)
         st.markdown("""
         <style>
-        /* Enhanced tab button styling */
-        .stTabs [data-baseweb="tab-list"] {
-            gap: 2px;
-        }
-        .stTabs [data-baseweb="tab"] {
-            min-width: auto;
-            flex: 1;
-            white-space: nowrap;
-        }
-        
-        /* Custom tab button styling for better visual feedback */
+        /* Clean, modern tab styling with underline indicator */
         div[data-testid="column"] .stButton > button {
-            position: relative;
-            transition: all 0.3s ease;
-            border-radius: 12px !important;
-            font-weight: 600 !important;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            padding: 12px 8px !important;
+            font-weight: 500 !important;
             font-size: 14px !important;
-            border: 2px solid transparent !important;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-        }
-        
-        /* Active/Selected tab styling (primary button) */
-        div[data-testid="column"] .stButton > button[kind="primary"] {
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
-            color: white !important;
-            border: 2px solid #1d4ed8 !important;
-            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4) !important;
-            transform: translateY(-2px) !important;
-        }
-        
-        /* Inactive/Unselected tab styling (secondary button) */
-        div[data-testid="column"] .stButton > button[kind="secondary"] {
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+            position: relative !important;
+            transition: all 0.3s ease !important;
+            border-bottom: 3px solid transparent !important;
             color: #64748b !important;
-            border: 2px solid #e2e8f0 !important;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
         }
         
-        /* Hover effects for inactive tabs */
+        /* Active/Selected tab with elegant underline */
+        div[data-testid="column"] .stButton > button[kind="primary"] {
+            color: #1e40af !important;
+            font-weight: 600 !important;
+            border-bottom: 3px solid #3b82f6 !important;
+            background: rgba(59, 130, 246, 0.05) !important;
+        }
+        
+        /* Inactive tab hover effects */
         div[data-testid="column"] .stButton > button[kind="secondary"]:hover {
-            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%) !important;
-            color: #475569 !important;
-            border: 2px solid #cbd5e1 !important;
-            transform: translateY(-1px) !important;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+            color: #1e40af !important;
+            border-bottom: 3px solid #cbd5e1 !important;
+            background: rgba(59, 130, 246, 0.02) !important;
         }
         
-        /* Active tab glow effect */
-        div[data-testid="column"] .stButton > button[kind="primary"]::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            border-radius: 14px;
-            z-index: -1;
-            opacity: 0.3;
-            filter: blur(4px);
+        /* Remove default button focus outline */
+        div[data-testid="column"] .stButton > button:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        /* Container styling for tab row */
+        .tab-container {
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
         }
         </style>
         """, unsafe_allow_html=True)
@@ -788,9 +768,11 @@ class CancerFirstApp:
         if f'{cancer_type}_active_tab' not in st.session_state:
             st.session_state[f'{cancer_type}_active_tab'] = "Analytics"
         
-        # Custom tab implementation with persistence
+        # Custom tab implementation with persistence (modern underline style)
         active_tab = st.session_state[f'{cancer_type}_active_tab']
-        st.markdown(f"### Navigation → **{active_tab}**")
+        
+        # Clean tab container
+        st.markdown('<div class="tab-container">', unsafe_allow_html=True)
         col1, col2, col3, col4, col5 = st.columns(5)
         
         with col1:
@@ -823,7 +805,7 @@ class CancerFirstApp:
                 st.session_state[f'{cancer_type}_active_tab'] = "Settings"
                 st.rerun()
         
-        st.markdown("---")
+        st.markdown('</div>', unsafe_allow_html=True)
         
         # Render the active tab content
         
