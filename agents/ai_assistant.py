@@ -237,6 +237,11 @@ class AdvancedAIAssistant:
 - Reference specific studies by title when relevant
 - Be brief unless detailed analysis is specifically requested
 
+**Retrieval Intelligence:**
+- For focused questions: I search the most relevant 15 studies to provide targeted insights
+- For comprehensive queries (using words like "all", "complete", "comprehensive"): I retrieve all available studies for exhaustive analysis
+- Always mention how many studies were analyzed in your response (e.g., "Based on analysis of 33 studies..." or "From the 15 most relevant studies...")
+
 Remember: You're helping advance {cancer_display} research by providing focused, data-driven insights from the available studies."""
 
     async def _search_relevant_studies(self, query: str, filters: Optional[Dict] = None) -> List[Dict[str, Any]]:
@@ -268,11 +273,29 @@ Remember: You're helping advance {cancer_display} research by providing focused,
             if 'cancer_type' not in filters:
                 filters['cancer_type'] = self.research_domain
             
+            # Dynamic retrieval limits based on query intent
+            comprehensive_keywords = [
+                'all', 'complete', 'comprehensive', 'every', 'entire', 'full', 'total',
+                'show me all', 'list all', 'give me all', 'all abstracts', 'all studies',
+                'complete list', 'everything', 'exhaustive', 'full dataset',
+                'all available', 'complete overview', 'comprehensive list'
+            ]
+            
+            # Check if user wants comprehensive results
+            is_comprehensive_query = any(keyword in query_lower for keyword in comprehensive_keywords)
+            
+            if is_comprehensive_query:
+                top_k = 50  # Get all available abstracts for comprehensive queries
+                self.logger.info(f"Comprehensive query detected, using top_k={top_k}")
+            else:
+                top_k = 15  # Standard focused search for specific questions
+                self.logger.info(f"Focused query detected, using top_k={top_k}")
+            
             # Search with filters
             search_results = await self.vector_store.search_abstracts(
                 query=enhanced_query,
                 filters=filters,
-                top_k=15  # Increased to get more diverse results
+                top_k=top_k
             )
             
             self.logger.info(f"Vector search returned {len(search_results)} results for query: {query}")

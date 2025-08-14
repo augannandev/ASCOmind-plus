@@ -412,9 +412,11 @@ class IntelligentVectorStore:
                     metadata_filter['treatment_regimens'] = {"$in": filters['treatment_type']}
             
             # Search vectors with session filter
+            # For comprehensive queries (top_k > 20), get more results to ensure comprehensive coverage
+            multiplier = 3 if top_k > 20 else 2
             search_results = self.index.query(
                 vector=query_embedding,
-                top_k=top_k * 2,  # Get extra results to deduplicate
+                top_k=min(top_k * multiplier, 100),  # Cap at 100 to avoid excessive API calls
                 include_metadata=True,
                 filter=metadata_filter
             )
