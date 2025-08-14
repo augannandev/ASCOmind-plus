@@ -717,9 +717,10 @@ class CancerFirstApp:
         
 
         
-        # Add CSS to handle tab width better
+        # Add CSS for enhanced tab styling with clear selection feedback
         st.markdown("""
         <style>
+        /* Enhanced tab button styling */
         .stTabs [data-baseweb="tab-list"] {
             gap: 2px;
         }
@@ -727,6 +728,58 @@ class CancerFirstApp:
             min-width: auto;
             flex: 1;
             white-space: nowrap;
+        }
+        
+        /* Custom tab button styling for better visual feedback */
+        div[data-testid="column"] .stButton > button {
+            position: relative;
+            transition: all 0.3s ease;
+            border-radius: 12px !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            border: 2px solid transparent !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+        }
+        
+        /* Active/Selected tab styling (primary button) */
+        div[data-testid="column"] .stButton > button[kind="primary"] {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+            color: white !important;
+            border: 2px solid #1d4ed8 !important;
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4) !important;
+            transform: translateY(-2px) !important;
+        }
+        
+        /* Inactive/Unselected tab styling (secondary button) */
+        div[data-testid="column"] .stButton > button[kind="secondary"] {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+            color: #64748b !important;
+            border: 2px solid #e2e8f0 !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+        }
+        
+        /* Hover effects for inactive tabs */
+        div[data-testid="column"] .stButton > button[kind="secondary"]:hover {
+            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%) !important;
+            color: #475569 !important;
+            border: 2px solid #cbd5e1 !important;
+            transform: translateY(-1px) !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+        }
+        
+        /* Active tab glow effect */
+        div[data-testid="column"] .stButton > button[kind="primary"]::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 14px;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(4px);
         }
         </style>
         """, unsafe_allow_html=True)
@@ -736,7 +789,8 @@ class CancerFirstApp:
             st.session_state[f'{cancer_type}_active_tab'] = "Analytics"
         
         # Custom tab implementation with persistence
-        st.markdown("### Navigation")
+        active_tab = st.session_state[f'{cancer_type}_active_tab']
+        st.markdown(f"### Navigation → **{active_tab}**")
         col1, col2, col3, col4, col5 = st.columns(5)
         
         with col1:
@@ -772,7 +826,6 @@ class CancerFirstApp:
         st.markdown("---")
         
         # Render the active tab content
-        active_tab = st.session_state[f'{cancer_type}_active_tab']
         
         if active_tab == "Analytics":
             self.render_analytics_dashboard(cancer_type, cancer_config, filtered_abstracts)
