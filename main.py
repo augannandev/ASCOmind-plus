@@ -717,95 +717,20 @@ class CancerFirstApp:
         
 
         
-        # Add CSS for sleek underline tab styling (modern web app style)
+        # Simple CSS for clean tab styling 
         st.markdown("""
         <style>
-        /* Force override all button styling with highest specificity */
-        div[data-testid="column"] .stButton > button,
-        div[data-testid="column"] button[kind="primary"],
-        div[data-testid="column"] button[kind="secondary"] {
-            background: white !important;
-            border: none !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-            padding: 16px 8px !important;
-            font-weight: 500 !important;
-            font-size: 15px !important;
-            position: relative !important;
-            transition: all 0.3s ease !important;
-            border-bottom: 3px solid transparent !important;
-            color: #64748b !important;
-            width: 100% !important;
-            height: auto !important;
-            min-height: 50px !important;
-        }
-        
-        /* Active/Selected tab with elegant underline - highest specificity */
-        div[data-testid="column"] button[kind="primary"],
-        div[data-testid="column"] .stButton > button[kind="primary"] {
-            color: #1e40af !important;
-            font-weight: 600 !important;
+        /* Simple tab styling - just the underline effect */
+        .tab-nav button[kind="primary"] {
             border-bottom: 3px solid #3b82f6 !important;
-            background: rgba(59, 130, 246, 0.08) !important;
+            background: rgba(59, 130, 246, 0.1) !important;
         }
-        
-        /* Inactive tab hover effects */
-        div[data-testid="column"] button[kind="secondary"]:hover,
-        div[data-testid="column"] .stButton > button[kind="secondary"]:hover {
-            color: #1e40af !important;
-            border-bottom: 3px solid #cbd5e1 !important;
-            background: rgba(59, 130, 246, 0.03) !important;
+        .tab-nav button[kind="secondary"] {
+            border-bottom: 3px solid transparent !important;
         }
-        
-        /* Remove all default Streamlit button styling */
-        div[data-testid="column"] .stButton > button:focus,
-        div[data-testid="column"] .stButton > button:active {
-            outline: none !important;
-            box-shadow: none !important;
-            border: none !important;
-        }
-        
-        /* Container styling for tab row */
-        .tab-container {
+        .tab-nav {
             border-bottom: 1px solid #e2e8f0;
             margin-bottom: 2rem;
-            background: white;
-            padding: 0;
-        }
-        
-        /* Override any inherited gradients */
-        .stButton > button {
-            background-image: none !important;
-        }
-        
-        /* Target specific tab buttons by their keys */
-        button[data-testid*="tab_analytics"], 
-        button[data-testid*="tab_visualizations"],
-        button[data-testid*="tab_ascomind"],
-        button[data-testid*="tab_reports"],
-        button[data-testid*="tab_settings"] {
-            background: white !important;
-            border: none !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-            padding: 16px 8px !important;
-            font-weight: 500 !important;
-            font-size: 15px !important;
-            border-bottom: 3px solid transparent !important;
-            color: #64748b !important;
-            background-image: none !important;
-        }
-        
-        /* Active tab specific styling */
-        button[data-testid*="tab_analytics"][kind="primary"],
-        button[data-testid*="tab_visualizations"][kind="primary"],
-        button[data-testid*="tab_ascomind"][kind="primary"],
-        button[data-testid*="tab_reports"][kind="primary"],
-        button[data-testid*="tab_settings"][kind="primary"] {
-            color: #1e40af !important;
-            font-weight: 600 !important;
-            border-bottom: 3px solid #3b82f6 !important;
-            background: rgba(59, 130, 246, 0.08) !important;
         }
         </style>
         """, unsafe_allow_html=True)
@@ -814,40 +739,40 @@ class CancerFirstApp:
         if f'{cancer_type}_active_tab' not in st.session_state:
             st.session_state[f'{cancer_type}_active_tab'] = "Analytics"
         
-        # Custom tab implementation with persistence (modern underline style)
+        # Simple, working tab navigation
         active_tab = st.session_state[f'{cancer_type}_active_tab']
         
-        # Clean tab container
-        st.markdown('<div class="tab-container">', unsafe_allow_html=True)
+        # Clean container for tabs
+        st.markdown('<div class="tab-nav">', unsafe_allow_html=True)
         col1, col2, col3, col4, col5 = st.columns(5)
         
         with col1:
             if st.button("📊 Analytics", use_container_width=True, key="tab_analytics",
-                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Analytics" else "secondary"):
+                        type="primary" if active_tab == "Analytics" else "secondary"):
                 st.session_state[f'{cancer_type}_active_tab'] = "Analytics"
                 st.rerun()
         
         with col2:
             if st.button("📈 Visualizations", use_container_width=True, key="tab_visualizations",
-                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Visualizations" else "secondary"):
+                        type="primary" if active_tab == "Visualizations" else "secondary"):
                 st.session_state[f'{cancer_type}_active_tab'] = "Visualizations"
                 st.rerun()
         
         with col3:
             if st.button("🤖 ASCOmind+", use_container_width=True, key="tab_ascomind",
-                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "ASCOmind+" else "secondary"):
+                        type="primary" if active_tab == "ASCOmind+" else "secondary"):
                 st.session_state[f'{cancer_type}_active_tab'] = "ASCOmind+"
                 st.rerun()
         
         with col4:
             if st.button("📋 Reports", use_container_width=True, key="tab_reports",
-                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Reports" else "secondary"):
+                        type="primary" if active_tab == "Reports" else "secondary"):
                 st.session_state[f'{cancer_type}_active_tab'] = "Reports"
                 st.rerun()
         
         with col5:
             if st.button("⚙️ Settings", use_container_width=True, key="tab_settings",
-                        type="primary" if st.session_state[f'{cancer_type}_active_tab'] == "Settings" else "secondary"):
+                        type="primary" if active_tab == "Settings" else "secondary"):
                 st.session_state[f'{cancer_type}_active_tab'] = "Settings"
                 st.rerun()
         
