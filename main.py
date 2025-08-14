@@ -522,7 +522,7 @@ class CancerFirstApp:
             st.metric("Cancer Types", "1", "With Data Available")
         
         with col2:
-            st.metric("ASCO Years", "2020-2025", "Available")
+            st.metric("ASCO Years", "2023-2025", "Available")
         
         with col3:
             st.metric("Features", "4", "Core modules")
@@ -563,7 +563,7 @@ class CancerFirstApp:
         
         # Current Status Section
         st.markdown("### 🚀 Current Status")
-        st.success("**👨 Prostate Cancer** - Sampled data available (2020-2025 ASCO abstracts)")
+        st.success("**👨 Prostate Cancer** - Sampled data available (2023-2025 ASCO abstracts)")
         st.info("📊 30+ processed abstracts with comprehensive metadata extraction")
         
         # Coming Soon Section
