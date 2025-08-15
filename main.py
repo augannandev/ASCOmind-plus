@@ -461,32 +461,32 @@ class CancerFirstApp:
                 st.rerun()
             
             # Show coming soon cancer types
-            st.markdown("#### 🔄 Coming Soon")
+            # st.markdown("#### 🔄 Coming Soon")
             
             # Create navigation buttons for other cancer types
-            for cancer_config in other_configs:
-                # Check if this is the currently selected cancer
-                is_selected = st.session_state.selected_cancer_type == cancer_config.id
-                
-                # Create button with different styling for selected state
-                button_class = "nav-button active" if is_selected else "nav-button"
-                
-                # Cancer type button with icon and name - grayed out for coming soon
-                button_html = f"""
-                <div class="{button_class}" style="margin-bottom: 0.5rem; opacity: 0.6;">
-                    <span class="nav-icon">{cancer_config.icon}</span>
-                    <span class="nav-text">{cancer_config.display_name}</span>
-                    <span style="color: #64748b; font-size: 0.8em; margin-left: auto;">In Development</span>
-                </div>
-                """
-                
-                st.markdown(button_html, unsafe_allow_html=True)
-                
-                # Disabled button for coming soon cancer types
-                st.button(f"{cancer_config.display_name} (Coming Soon)", 
-                         key=f"nav_{cancer_config.id}", 
-                         disabled=True,
-                         help=f"{cancer_config.description} - Data processing in development")
+            # for cancer_config in other_configs:
+            #     # Check if this is the currently selected cancer
+            #     is_selected = st.session_state.selected_cancer_type == cancer_config.id
+            #     
+            #     # Create button with different styling for selected state
+            #     button_class = "nav-button active" if is_selected else "nav-button"
+            #     
+            #     # Cancer type button with icon and name - grayed out for coming soon
+            #     button_html = f"""
+            #     <div class="{button_class}" style="margin-bottom: 0.5rem; opacity: 0.6;">
+            #         <span class="nav-icon">{cancer_config.icon}</span>
+            #         <span class="nav-text">{cancer_config.display_name}</span>
+            #         <span style="color: #64748b; font-size: 0.8em; margin-left: auto;">In Development</span>
+            #     </div>
+            #     """
+            #     
+            #     st.markdown(button_html, unsafe_allow_html=True)
+            #     
+            #     # Disabled button for coming soon cancer types
+            #     # st.button(f"{cancer_config.display_name} (Coming Soon)", 
+            #     #          key=f"nav_{cancer_config.id}", 
+            #     #          disabled=True,
+            #     #          help=f"{cancer_config.description} - Data processing in development")
             
             # Add separator
             st.markdown("---")
@@ -498,9 +498,9 @@ class CancerFirstApp:
                 st.info(f"**{current_config.icon} {current_config.display_name}**\n\n{current_config.description}")
                 
                 # Show active year filters
-                if st.session_state.selected_years:
-                    years_str = ', '.join(map(str, st.session_state.selected_years))
-                    st.success(f"📅 ASCO Years: {years_str}")
+                # if st.session_state.selected_years:
+                #     years_str = ', '.join(map(str, st.session_state.selected_years))
+                #     st.success(f"📅 ASCO Years: {years_str}")
             else:
                 st.info("👆 Select a cancer type to begin")
         
@@ -567,23 +567,23 @@ class CancerFirstApp:
         st.info("📊 30+ processed abstracts with comprehensive metadata extraction")
         
         # Coming Soon Section
-        st.markdown("### 🔄 Coming Soon")
-        coming_soon = [
-            "🩸 Multiple Myeloma",
-            "🎗️ Breast Cancer", 
-            "🫁 Lung Cancer",
-            "🎯 Colorectal Cancer",
-            "🔬 Lymphoma",
-            "💊 Leukemia",
-            "☀️ Melanoma",
-            "🌸 Ovarian Cancer",
-            "🥞 Pancreatic Cancer"
-        ]
+        # st.markdown("### 🔄 Coming Soon")
+        # coming_soon = [
+        #     "🩸 Multiple Myeloma",
+        #     "🎗️ Breast Cancer", 
+        #     "🫁 Lung Cancer",
+        #     "🎯 Colorectal Cancer",
+        #     "🔬 Lymphoma",
+        #     "💊 Leukemia",
+        #     "☀️ Melanoma",
+        #     "🌸 Ovarian Cancer",
+        #     "🥞 Pancreatic Cancer"
+        # ]
         
         # Display in columns
-        cols = st.columns(3)
-        for i, cancer_type in enumerate(coming_soon):
-            cols[i % 3].info(f"{cancer_type} - In Development")
+        # cols = st.columns(3)
+        # for i, cancer_type in enumerate(coming_soon):
+        #     cols[i % 3].info(f"{cancer_type} - In Development")
     
     def render_main_content_area(self):
         """Render the main content area for selected cancer type"""
@@ -892,154 +892,154 @@ class CancerFirstApp:
                         )
                         st.plotly_chart(fig, use_container_width=True)
                 
-                # === SECTION 3: EFFICACY & CLINICAL OUTCOMES ===
-                st.markdown("## 📈 Efficacy & Clinical Outcomes")
-                
-                # Collect efficacy data with better handling
-                efficacy_data = []
-                pfs_data = []
-                os_data = []
-                cr_data = []
-                
-                for abs in abstracts:
-                    study_name = abs.study_identification.title[:40] + "..."
-                    study_type = str(abs.study_design.study_type).replace("StudyType.", "")
-                    
-                    if hasattr(abs, 'efficacy_outcomes') and abs.efficacy_outcomes:
-                        # Overall Response Rate
-                        if hasattr(abs.efficacy_outcomes, 'overall_response_rate') and abs.efficacy_outcomes.overall_response_rate:
-                            if hasattr(abs.efficacy_outcomes.overall_response_rate, 'value') and abs.efficacy_outcomes.overall_response_rate.value is not None:
-                                efficacy_data.append({
-                                    'Study': study_name,
-                                    'Response Rate': abs.efficacy_outcomes.overall_response_rate.value,
-                                    'Study Type': study_type,
-                                    'Endpoint': 'ORR'
-                                })
-                        
-                        # Complete Response Rate
-                        if hasattr(abs.efficacy_outcomes, 'complete_response_rate') and abs.efficacy_outcomes.complete_response_rate:
-                            if hasattr(abs.efficacy_outcomes.complete_response_rate, 'value') and abs.efficacy_outcomes.complete_response_rate.value is not None:
-                                cr_data.append({
-                                    'Study': study_name,
-                                    'CR Rate': abs.efficacy_outcomes.complete_response_rate.value,
-                                    'Study Type': study_type
-                                })
-                        
-                        # PFS data
-                        if hasattr(abs.efficacy_outcomes, 'progression_free_survival') and abs.efficacy_outcomes.progression_free_survival:
-                            if hasattr(abs.efficacy_outcomes.progression_free_survival, 'median') and abs.efficacy_outcomes.progression_free_survival.median:
-                                pfs_data.append({
-                                    'Study': study_name,
-                                    'PFS_months': abs.efficacy_outcomes.progression_free_survival.median,
-                                    'Study Type': study_type
-                                })
-                        
-                        # Overall Survival data
-                        if hasattr(abs.efficacy_outcomes, 'overall_survival') and abs.efficacy_outcomes.overall_survival:
-                            if hasattr(abs.efficacy_outcomes.overall_survival, 'median') and abs.efficacy_outcomes.overall_survival.median:
-                                os_data.append({
-                                    'Study': study_name,
-                                    'OS_months': abs.efficacy_outcomes.overall_survival.median,
-                                    'Study Type': study_type
-                                })
-                
-                # Display efficacy visualizations
-                if efficacy_data or pfs_data or os_data or cr_data:
-                    col1, col2 = st.columns(2)
-                    
-                    with col1:
-                        # Response rates
-                        if efficacy_data:
-                            df_efficacy = pd.DataFrame(efficacy_data)
-                            fig = px.scatter(
-                                df_efficacy, 
-                                x='Study Type', 
-                                y='Response Rate',
-                                title="Overall Response Rates by Study Type",
-                                hover_data=['Study'],
-                                color='Study Type'
-                            )
-                            fig.update_layout(xaxis_tickangle=45)
-                            st.plotly_chart(fig, use_container_width=True)
-                        elif cr_data:
-                            df_cr = pd.DataFrame(cr_data)
-                            fig = px.bar(
-                                df_cr,
-                                x='Study Type',
-                                y='CR Rate',
-                                title="Complete Response Rates",
-                                hover_data=['Study']
-                            )
-                            st.plotly_chart(fig, use_container_width=True)
-                    
-                    with col2:
-                        # Survival data
-                        if pfs_data:
-                            df_pfs = pd.DataFrame(pfs_data)
-                            fig = px.box(
-                                df_pfs,
-                                x='Study Type',
-                                y='PFS_months',
-                                title="Progression-Free Survival (months)"
-                            )
-                            fig.update_layout(xaxis_tickangle=45)
-                            st.plotly_chart(fig, use_container_width=True)
-                        elif os_data:
-                            df_os = pd.DataFrame(os_data)
-                            fig = px.box(
-                                df_os,
-                                x='Study Type',
-                                y='OS_months',
-                                title="Overall Survival (months)"
-                            )
-                            st.plotly_chart(fig, use_container_width=True)
-                    
-                    # Combined efficacy overview if we have multiple endpoints
-                    if len([x for x in [efficacy_data, cr_data, pfs_data, os_data] if x]) >= 2:
-                        st.subheader("📊 Combined Efficacy Overview")
-                        combined_data = []
-                        
-                        for item in efficacy_data:
-                            combined_data.append({
-                                'Study': item['Study'], 
-                                'Value': item['Response Rate'],
-                                'Endpoint': 'ORR (%)',
-                                'Study Type': item['Study Type']
-                            })
-                        
-                        for item in cr_data:
-                            combined_data.append({
-                                'Study': item['Study'],
-                                'Value': item['CR Rate'],
-                                'Endpoint': 'CR (%)',
-                                'Study Type': item['Study Type']
-                            })
-                        
-                        if combined_data:
-                            df_combined = pd.DataFrame(combined_data)
-                            fig = px.bar(
-                                df_combined,
-                                x='Endpoint',
-                                y='Value',
-                                color='Study Type',
-                                title="Response Rates Comparison",
-                                barmode='group'
-                            )
-                            st.plotly_chart(fig, use_container_width=True)
-                
-                else:
-                    st.info("💡 No efficacy endpoint data found in the processed abstracts. Consider processing abstracts with reported response rates, PFS, or OS data.")
-                    
-                    # Show what efficacy fields are available but empty
-                    efficacy_fields_found = set()
-                    for abs in abstracts[:5]:
-                        if hasattr(abs, 'efficacy_outcomes') and abs.efficacy_outcomes:
-                            for field in ['overall_response_rate', 'complete_response_rate', 'progression_free_survival', 'overall_survival']:
-                                if hasattr(abs.efficacy_outcomes, field):
-                                    efficacy_fields_found.add(field)
-                    
-                    if efficacy_fields_found:
-                        st.caption(f"Found efficacy fields: {', '.join(efficacy_fields_found)} (but values are None/empty)")
+                                # === SECTION 3: EFFICACY & CLINICAL OUTCOMES ===
+                # st.markdown("## 📈 Efficacy & Clinical Outcomes")
+                # 
+                # # Collect efficacy data with better handling
+                # efficacy_data = []
+                # pfs_data = []
+                # os_data = []
+                # cr_data = []
+                # 
+                # for abs in abstracts:
+                #     study_name = abs.study_identification.title[:40] + "..."
+                #     study_type = str(abs.study_design.study_type).replace("StudyType.", "")
+                #     
+                #     if hasattr(abs, 'efficacy_outcomes') and abs.efficacy_outcomes:
+                #         # Overall Response Rate
+                #         if hasattr(abs.efficacy_outcomes, 'overall_response_rate') and abs.efficacy_outcomes.overall_response_rate:
+                #             if hasattr(abs.efficacy_outcomes.overall_response_rate, 'value') and abs.efficacy_outcomes.overall_response_rate.value is not None:
+                #                 efficacy_data.append({
+                #                     'Study': study_name,
+                #                     'Response Rate': abs.efficacy_outcomes.overall_response_rate.value,
+                #                     'Study Type': study_type,
+                #                     'Endpoint': 'ORR'
+                #                 })
+                #         
+                #         # Complete Response Rate
+                #         if hasattr(abs.efficacy_outcomes, 'complete_response_rate') and abs.efficacy_outcomes.complete_response_rate:
+                #             if hasattr(abs.efficacy_outcomes.complete_response_rate, 'value') and abs.efficacy_outcomes.complete_response_rate.value is not None:
+                #                 cr_data.append({
+                #                     'Study': study_name,
+                #                     'CR Rate': abs.efficacy_outcomes.complete_response_rate.value,
+                #                     'Study Type': study_type
+                #                 })
+                #         
+                #         # PFS data
+                #         if hasattr(abs.efficacy_outcomes, 'progression_free_survival') and abs.efficacy_outcomes.progression_free_survival:
+                #             if hasattr(abs.efficacy_outcomes.progression_free_survival, 'median') and abs.efficacy_outcomes.progression_free_survival.median:
+                #                 pfs_data.append({
+                #                     'Study': study_name,
+                #                     'PFS_months': abs.efficacy_outcomes.progression_free_survival.median,
+                #                     'Study Type': study_type
+                #                 })
+                #         
+                #         # Overall Survival data
+                #         if hasattr(abs.efficacy_outcomes, 'overall_survival') and abs.efficacy_outcomes.overall_survival:
+                #             if hasattr(abs.efficacy_outcomes.overall_survival, 'median') and abs.efficacy_outcomes.overall_survival.median:
+                #                 os_data.append({
+                #                     'Study': study_name,
+                #                     'OS_months': abs.efficacy_outcomes.overall_survival.median,
+                #                     'Study Type': study_type
+                #                 })
+
+                # # Display efficacy visualizations
+                # if efficacy_data or pfs_data or os_data or cr_data:
+                #     col1, col2 = st.columns(2)
+                #     
+                #     with col1:
+                #         # Response rates
+                #         if efficacy_data:
+                #             df_efficacy = pd.DataFrame(efficacy_data)
+                #             fig = px.scatter(
+                #                 df_efficacy, 
+                #                 x='Study Type', 
+                #                 y='Response Rate',
+                #                 title="Overall Response Rates by Study Type",
+                #                 hover_data=['Study'],
+                #                 color='Study Type'
+                #             )
+                #             fig.update_layout(xaxis_tickangle=45)
+                #             st.plotly_chart(fig, use_container_width=True)
+                #         elif cr_data:
+                #             df_cr = pd.DataFrame(cr_data)
+                #             fig = px.bar(
+                #                 df_cr,
+                #                 x='Study Type',
+                #                 y='CR Rate',
+                #                 title="Complete Response Rates",
+                #                 hover_data=['Study']
+                #             )
+                #             st.plotly_chart(fig, use_container_width=True)
+                #     
+                #     with col2:
+                #         # Survival data
+                #         if pfs_data:
+                #             df_pfs = pd.DataFrame(pfs_data)
+                #             fig = px.box(
+                #                 df_pfs,
+                #                 x='Study Type',
+                #                 y='PFS_months',
+                #                 title="Progression-Free Survival (months)"
+                #             )
+                #             fig.update_layout(xaxis_tickangle=45)
+                #             st.plotly_chart(fig, use_container_width=True)
+                #         elif os_data:
+                #             df_os = pd.DataFrame(os_data)
+                #             fig = px.box(
+                #                 df_os,
+                #                 x='Study Type',
+                #                 y='OS_months',
+                #                 title="Overall Survival (months)"
+                #             )
+                #             st.plotly_chart(fig, use_container_width=True)
+                #     
+                #     # Combined efficacy overview if we have multiple endpoints
+                #     if len([x for x in [efficacy_data, cr_data, pfs_data, os_data] if x]) >= 2:
+                #         st.subheader("📊 Combined Efficacy Overview")
+                #         combined_data = []
+                #         
+                #         for item in efficacy_data:
+                #             combined_data.append({
+                #                 'Study': item['Study'], 
+                #                 'Value': item['Response Rate'],
+                #                 'Endpoint': 'ORR (%)',
+                #                 'Study Type': item['Study Type']
+                #             })
+                #         
+                #         for item in cr_data:
+                #             combined_data.append({
+                #                 'Study': item['Study'],
+                #                 'Value': item['CR Rate'],
+                #                 'Endpoint': 'CR (%)',
+                #                 'Study Type': item['Study Type']
+                #             })
+                #         
+                #         if combined_data:
+                #             df_combined = pd.DataFrame(combined_data)
+                #             fig = px.bar(
+                #                 df_combined,
+                #                 x='Endpoint',
+                #                 y='Value',
+                #                 color='Study Type',
+                #                 title="Response Rates Comparison",
+                #                 barmode='group'
+                #             )
+                #             st.plotly_chart(fig, use_container_width=True)
+
+                # else:
+                #     st.info("💡 No efficacy endpoint data found in the processed abstracts. Consider processing abstracts with reported response rates, PFS, or OS data.")
+                #     
+                #     # Show what efficacy fields are available but empty
+                #     efficacy_fields_found = set()
+                #     for abs in abstracts[:5]:
+                #         if hasattr(abs, 'efficacy_outcomes') and abs.efficacy_outcomes:
+                #             for field in ['overall_response_rate', 'complete_response_rate', 'progression_free_survival', 'overall_survival']:
+                #                 if hasattr(abs.efficacy_outcomes, field):
+                #                     efficacy_fields_found.add(field)
+                #     
+                #     if efficacy_fields_found:
+                #         st.caption(f"Found efficacy fields: {', '.join(efficacy_fields_found)} (but values are None/empty)")
                 
                 # === SECTION 4: SAFETY PROFILE ===
                 st.markdown("## ⚠️ Safety & Adverse Events")
@@ -1449,87 +1449,87 @@ class CancerFirstApp:
                             fig.update_layout(height=400)
                             st.plotly_chart(fig, use_container_width=True)
                     
-                    with col2:
-                        # Studies with vs without efficacy data
-                        efficacy_summary = df_treatment_response['Has Efficacy Data'].value_counts()
-                        
-                        fig = px.pie(
-                            values=efficacy_summary.values,
-                            names=['With Efficacy Data' if x else 'Without Efficacy Data' for x in efficacy_summary.index],
-                            title="Studies with Reported Efficacy Data"
-                        )
-                        st.plotly_chart(fig, use_container_width=True)
+                    # with col2:
+                    #     # Studies with vs without efficacy data
+                    #     efficacy_summary = df_treatment_response['Has Efficacy Data'].value_counts()
+                    #     
+                    #     fig = px.pie(
+                    #         values=efficacy_summary.values,
+                    #         names=['With Efficacy Data' if x else 'Without Efficacy Data' for x in efficacy_summary.index],
+                    #         title="Studies with Reported Efficacy Data"
+                    #     )
+                    #     st.plotly_chart(fig, use_container_width=True)
                 
                 # === SUMMARY STATS ===
-                st.markdown("## 📋 Comprehensive Data Summary")
-                
-                # Calculate comprehensive statistics
-                total_studies = len(abstracts)
-                studies_with_treatments = len([abs for abs in abstracts if abs.treatment_regimens])
-                studies_with_efficacy = len([abs for abs in abstracts if hasattr(abs, 'efficacy_outcomes') and abs.efficacy_outcomes])
-                studies_with_safety = len([abs for abs in abstracts if hasattr(abs, 'safety_profile') and abs.safety_profile and hasattr(abs.safety_profile, 'grade_3_4_aes') and abs.safety_profile.grade_3_4_aes])
-                studies_with_demographics = len([abs for abs in abstracts if hasattr(abs, 'patient_demographics') and abs.patient_demographics])
-                studies_with_disease_char = len([abs for abs in abstracts if hasattr(abs, 'disease_characteristics') and abs.disease_characteristics])
-                
-                # Create comprehensive summary metrics
-                col1, col2, col3 = st.columns(3)
-                
-                with col1:
-                    st.metric("📊 Total Studies", total_studies)
-                    pct_treatments = (studies_with_treatments / total_studies * 100) if total_studies > 0 else 0
-                    st.metric("💊 Treatment Data", f"{studies_with_treatments} ({pct_treatments:.1f}%)")
-                
-                with col2:
-                    pct_efficacy = (studies_with_efficacy / total_studies * 100) if total_studies > 0 else 0
-                    st.metric("📈 Efficacy Data", f"{studies_with_efficacy} ({pct_efficacy:.1f}%)")
-                    pct_safety = (studies_with_safety / total_studies * 100) if total_studies > 0 else 0
-                    st.metric("⚠️ Safety Data", f"{studies_with_safety} ({pct_safety:.1f}%)")
-                
-                with col3:
-                    pct_demographics = (studies_with_demographics / total_studies * 100) if total_studies > 0 else 0
-                    st.metric("👥 Demographics", f"{studies_with_demographics} ({pct_demographics:.1f}%)")
-                    pct_disease = (studies_with_disease_char / total_studies * 100) if total_studies > 0 else 0
-                    st.metric("🎯 Disease Char.", f"{studies_with_disease_char} ({pct_disease:.1f}%)")
-                
-                # Data completeness radar chart
-                st.subheader("📊 Data Completeness Overview")
-                
-                completeness_data = {
-                    'Category': ['Treatment', 'Efficacy', 'Safety', 'Demographics', 'Disease Char.', 'Institutions'],
-                    'Percentage': [
-                        pct_treatments,
-                        pct_efficacy, 
-                        pct_safety,
-                        pct_demographics,
-                        pct_disease,
-                        len([abs for abs in abstracts if abs.study_identification.study_group]) / total_studies * 100
-                    ]
-                }
-                
-                df_completeness = pd.DataFrame(completeness_data)
-                
-                fig = px.line_polar(
-                    df_completeness,
-                    r='Percentage',
-                    theta='Category',
-                    line_close=True,
-                    title="Data Completeness Radar",
-                    range_r=[0, 100]
-                )
-                fig.update_traces(fill='toself')
-                st.plotly_chart(fig, use_container_width=True)
+                # st.markdown("## 📋 Comprehensive Data Summary")
+                # 
+                # # Calculate comprehensive statistics
+                # total_studies = len(abstracts)
+                # studies_with_treatments = len([abs for abs in abstracts if abs.treatment_regimens])
+                # studies_with_efficacy = len([abs for abs in abstracts if hasattr(abs, 'efficacy_outcomes') and abs.efficacy_outcomes])
+                # studies_with_safety = len([abs for abs in abstracts if hasattr(abs, 'safety_profile') and abs.safety_profile and hasattr(abs.safety_profile, 'grade_3_4_aes') and abs.safety_profile.grade_3_4_aes])
+                # studies_with_demographics = len([abs for abs in abstracts if hasattr(abs, 'patient_demographics') and abs.patient_demographics])
+                # studies_with_disease_char = len([abs for abs in abstracts if hasattr(abs, 'disease_characteristics') and abs.disease_characteristics])
+                # 
+                # # Create comprehensive summary metrics
+                # col1, col2, col3 = st.columns(3)
+                # 
+                # with col1:
+                #     st.metric("📊 Total Studies", total_studies)
+                #     pct_treatments = (studies_with_treatments / total_studies * 100) if total_studies > 0 else 0
+                #     st.metric("💊 Treatment Data", f"{studies_with_treatments} ({pct_treatments:.1f}%)")
+                # 
+                # with col2:
+                #     pct_efficacy = (studies_with_efficacy / total_studies * 100) if total_studies > 0 else 0
+                #     st.metric("📈 Efficacy Data", f"{studies_with_efficacy} ({pct_efficacy:.1f}%)")
+                #     pct_safety = (studies_with_safety / total_studies * 100) if total_studies > 0 else 0
+                #     st.metric("⚠️ Safety Data", f"{studies_with_safety} ({pct_safety:.1f}%)")
+                # 
+                # with col3:
+                #     pct_demographics = (studies_with_demographics / total_studies * 100) if total_studies > 0 else 0
+                #     st.metric("👥 Demographics", f"{studies_with_demographics} ({pct_demographics:.1f}%)")
+                #     pct_disease = (studies_with_disease_char / total_studies * 100) if total_studies > 0 else 0
+                #     st.metric("🎯 Disease Char.", f"{studies_with_disease_char} ({pct_disease:.1f}%)")
+                # 
+                # # Data completeness radar chart
+                # st.subheader("📊 Data Completeness Overview")
+                # 
+                # completeness_data = {
+                #     'Category': ['Treatment', 'Efficacy', 'Safety', 'Demographics', 'Disease Char.', 'Institutions'],
+                #     'Percentage': [
+                #         pct_treatments,
+                #         pct_efficacy, 
+                #         pct_safety,
+                #         pct_demographics,
+                #         pct_disease,
+                #         len([abs for abs in abstracts if abs.study_identification.study_group]) / total_studies * 100
+                #     ]
+                # }
+                # 
+                # df_completeness = pd.DataFrame(completeness_data)
+                # 
+                # fig = px.line_polar(
+                #     df_completeness,
+                #     r='Percentage',
+                #     theta='Category',
+                #     line_close=True,
+                #     title="Data Completeness Radar",
+                #     range_r=[0, 100]
+                # )
+                # fig.update_traces(fill='toself')
+                # st.plotly_chart(fig, use_container_width=True)
                 
                 # === SECTION 4: ADVANCED TREATMENT ANALYSIS ===
-                st.markdown("## 🔬 Advanced Treatment Analysis")
-                
-                # Add treatment effectiveness comparison charts
-                self._render_treatment_effectiveness_charts(abstracts, cancer_config)
-                
+                # st.markdown("## 🔬 Advanced Treatment Analysis")
+                # 
+                # # Add treatment effectiveness comparison charts
+                # self._render_treatment_effectiveness_charts(abstracts, cancer_config)
+                # 
                 # === SECTION 5: SAFETY PROFILE ANALYSIS ===
-                st.markdown("## ⚠️ Safety Profile Analysis")
-                
-                # Add safety comparison charts
-                self._render_safety_analysis_charts(abstracts, cancer_config)
+                # st.markdown("## ⚠️ Safety Profile Analysis")
+                # 
+                # # Add safety comparison charts
+                # self._render_safety_analysis_charts(abstracts, cancer_config)
                 
                 # === SECTION 6: CLINICAL TRIAL PHASE DISTRIBUTION ===
                 st.markdown("## 📊 Clinical Trial Phase Distribution")
